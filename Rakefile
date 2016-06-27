@@ -40,42 +40,8 @@ namespace :haml do
   end
 end
 
-def tidy_docs
-  Dir.glob('docs/**/*.html') do |path|
-    diff = `git diff --numstat #{path}`
-    if diff.start_with?("1\t1\t")
-      line_change = `git diff -U0 #{path} | tail -n 1`
-      if line_change =~ /<div class="book" data-level="[^\"]+" data-basepath="[^\"]+" data-revision="[^\"]+">/
-        `git checkout #{path}`
-      end
-    end
-  end
-end
-
-desc 'Build docs'
-task :docs do
-  `which gitbook`
-  unless $?.success?
-    abort "ERROR: can't find gitbook on your PATH, please install gitbook-cli:\n\n" \
-          "gem install bundler # if you don't have bundler already\n" \
-          "bundle\n" \
-          "npm install -g gitbook-cli"
-  end
-
-  system "gitbook build ./_gitbook --gitbook=2.3.2"
-
-  system "rm -rf ./docs"
-  system "mv ./_gitbook/_book ./docs"
-  tidy_docs
-end
-
-desc 'Tidy up generated gitbook files to avoid superfluous changes'
-task :'docs:tidy' do
-  tidy_docs
-end
-
 desc 'Parse all haml items'
 task haml: ['haml:layouts', 'haml:includes', 'haml:indexes']
 
 desc 'Build all haml and sass files for deployment'
-task build: [:haml, :docs]
+task build: [:haml]
