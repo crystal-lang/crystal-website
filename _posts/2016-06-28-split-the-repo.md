@@ -21,13 +21,13 @@ Lets do a quick review of some artifacts, projects and repos where you might wan
 
 ## Website
 
-[crystal-website](https://github.com/crystal-lang/crystal-website) is a [jekyll](jekyllrb.com) project where posts are written, sponsors are listed and other public resources can be accessed at [crystal-lang.org](http://crystal-lang.org).
+[crystal-website](https://github.com/crystal-lang/crystal-website) is a [jekyll](http://jekyllrb.com) project where posts are written, sponsors are listed and other public resources can be accessed at [crystal-lang.org](http://crystal-lang.org).
 
 ## Book
 
 [crystal-book](https://github.com/crystal-lang/crystal-book) is a gitbook project that serves as introduction and manual to the language. After every commit in master a copy of the book is published in [/docs](/docs).
 
-There have been already translations of many languages of the book: [ru](http://ru.crystal-lang.org/docs/), [br](http://br.crystal-lang.org/docs/), [ja](http://ja.crystal-lang.org/docs/), [tw](tw.crystal-lang.org/docs/). Thanks everybody for making crystal speak your language ♥.
+There have been already translations of many languages of the book: [ru](http://ru.crystal-lang.org/docs/), [br](http://br.crystal-lang.org/docs/), [ja](http://ja.crystal-lang.org/docs/), [tw](http://tw.crystal-lang.org/docs/). Thanks everybody for making crystal speak your language ♥.
 
 Now that it is on its own repo it might be easier to keep changes up to date.
 
