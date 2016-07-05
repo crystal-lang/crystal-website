@@ -37,4 +37,4 @@ Now that it is on its own repo it might be easier to keep changes up to date.
 
 If you jump to [/api/master/](/api/master/) you can view the reference for the code in master branch.
 
-**TIP:** Did you know that for your own shard `crystal docs` will generate those nicely pages to discribe it. So others will know how to use your shard. ♥
+**TIP:** Did you know that for your own shard `crystal docs` will generate those nicely pages to describe it. So others will know how to use your shard. ♥
