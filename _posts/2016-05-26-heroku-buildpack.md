@@ -87,7 +87,7 @@ https://sleepy-thicket-16179.herokuapp.com/ | https://git.heroku.com/sleepy-thic
 
 The above command will generate a random app name. Check the [docs](https://devcenter.heroku.com/articles/creating-apps) to give your app a name from the beginning.
 
-Before deploying, we need to make a small change. Heroku randomly assigns a port number to be used by the app. Thanks to be buildpack, this will be informed in a `--port` option when running the application.
+Before deploying, we need to make a small change. Heroku randomly assigns a port number to be used by the app. Thanks to the buildpack, this will be informed in a `--port` option when running the application.
 
 So, add a `require "option_parser"` at the beginning of `src/heroku101.cr` and override the `port` variable default with:
 
