@@ -10,57 +10,58 @@ logo,name,url,this_month,all_time,since,level
 ,Frank O'Hara,,25,300,"Aug 16, 2015",25
 ,maxdemarzi,http://twitter.com/maxdemarzi,25,300,"Aug 6, 2015",25
 ,PragTob,http://pragtob.wordpress.com,25,300,"Aug 12, 2015",25
-,Serdar Dogruyol,http://www.serdardogruyol.com,25,300,"Jul 24, 2015",25
-,Sergio Gil Pérez de la Manga,http://iamserg.io,25,260,"Jul 27, 2015",25
+,sdogruyol,https://github.com/sdogruyol,25,300,"Jul 24, 2015",25
+,Sergio Gil,https://github.com/porras,25,260,"Jul 27, 2015",25
 ,jeromegn,https://github.com/jeromegn,25,175,"Jan 28, 2016",25
-,Renich Bon Ciric,http://woralelandia.com/,25,150,"Feb 1, 2016",25
-,Oleksii Fedorov,http://tddfellow.com,25,125,"Mar 2, 2016",25
-,Benjamin Fritsch,http://abwesend.com,25,50,"Jun 3, 2016",25
-,Lorenz Vandevelde,https://github.com/LorenzV,25,50,"Jun 22, 2016",25
+,Renich,https://github.com/renich,25,150,"Feb 1, 2016",25
+,waterlink,https://github.com/waterlink,25,125,"Mar 2, 2016",25
+,beanieboi,https://github.com/beanieboi,25,50,"Jun 3, 2016",25
+,LorenzV,https://github.com/LorenzV,25,50,"Jun 22, 2016",25
 ,gaurub,https://github.com/gaurub,25,25,"Aug 4, 2016",25
-,Robert Audi,https://github.com/RobertAudi,21,84,"Jun 23, 2016",10
-,Garance A Drosehn,https://github.com/drosehn,16,124,"Dec 3, 2015",10
+,RobertAudi,https://github.com/RobertAudi,21,84,"Jun 23, 2016",10
+,drosehn,https://github.com/drosehn,16,124,"Dec 3, 2015",10
 ,gottlike,https://github.com/gottlike,15,280,"Jul 29, 2015",10
-,Tom de Bruijn,http://tomdebruijn.com,10,190,"Aug 23, 2015",10
-,Dan Minkevitch,https://danminkevitch.com,10,154,"Feb 26, 2016",10
+,opes,https://github.com/opes,10,154,"Feb 26, 2016",10
 ,havenwood,https://github.com/havenwood,10,125,"Jul 23, 2015",10
 ,chendo ,,10,120,"Aug 11, 2015",10
-,Denis Defreyne,http://stoneship.org/,10,120,"Aug 17, 2015",10
+,ddfreyne,https://github.com/ddfreyne,10,120,"Aug 17, 2015",10
 ,ucmsky,http://qiita.com/ucmsky,10,100,"Oct 23, 2015",10
-,Peter Hollows,http://dojo7.com/,10,90,"Nov 13, 2015",10
-,Myroslav Rys,http://www.stone.org.ua,10,60,"Aug 23, 2015",10
-,Vesa Kaihlavirta,https://github.com/vegai,10,60,"Aug 18, 2015",10
-,Vagmi,http://coderwall.com/vagmi,10,50,"Mar 20, 2016",10
-,yasin inat,http://www.yasininat.com,10,50,"Mar 17, 2016",10
-,Adrien Rambert,http://adrienrambert.com,10,40,"Apr 27, 2016",10
-,Sergey Makridenkov,http://msa7.ru,10,30,"May 18, 2016",10
-,Christos Zisopoulos,https://github.com/christos,10,20,"Jun 23, 2016",10
-,James Thompson,http://plainprograms.com/,10,20,"Jun 7, 2016",10
+,Peter Hollows,https://github.com/captainpete,10,90,"Nov 13, 2015",10
+,stonevil,https://github.com/stonevil,10,60,"Aug 23, 2015",10
+,vegai,https://github.com/vegai,10,60,"Aug 18, 2015",10
+,risyasin,https://github.com/risyasin,10,50,"Mar 17, 2016",10
+,vagmi,https://github.com/vagmi,10,50,"Mar 20, 2016",10
+,arambert,https://github.com/arambert,10,40,"Apr 27, 2016",10
+,msa7,https://github.com/msa7,10,30,"May 18, 2016",10
+,christos,https://github.com/christos,10,20,"Jun 23, 2016",10
+,kibs,https://github.com/kibs,10,20,"Jun 15, 2016",10
+,plainprogrammer,https://github.com/plainprogrammer,10,20,"Jun 7, 2016",10
 ,ruslux,https://github.com/ruslux,10,20,"Jun 20, 2016",10
-,Sune Kibsgaard,http://kibs.dk,10,20,"Jun 15, 2016",10
 ,masukomi,http://masukomi.org,10,10,"Aug 7, 2016",10
-,Paul Morton,https://github.com/pmorton,10,10,"Jul 10, 2016",10
+,pmorton,https://github.com/pmorton,10,10,"Jul 10, 2016",10
+,Константин Малиновский,,10,10,"Aug 16, 2016",10
 ,ayosec,,7,76,"Aug 20, 2015",5
-,Sho Kusano,http://aduca.org,5,163,"Aug 4, 2015",5
-,Pine Mizune,http://profile.pine.moe,5,65,"Jul 24, 2015",5
-,David Hofer,http://twitter.com/hofer,5,60,"Aug 6, 2015",5
-,Tommaso Patrizi,http://www.thinkingco.de,5,60,"Aug 6, 2015",5
-,David Backeus,https://github.com/dbackeus,5,55,"Aug 7, 2015",5
-,Theo Felippe,https://github.com/theocodes,5,55,"Sep 11, 2015",5
-,Joseph Method,https://github.com/tristil,5,50,"Jul 27, 2015",5
+,rosylilly,https://github.com/rosylilly,5,163,"Aug 4, 2015",5
+,pine613,https://github.com/pine,5,65,"Jul 24, 2015",5
+,dahofer,https://github.com/dahofer,5,60,"Aug 6, 2015",5
+,tommasop,https://github.com/tommasop,5,60,"Aug 6, 2015",5
+,dbackeus,https://github.com/dbackeus,5,55,"Aug 7, 2015",5
+,theocodes,https://github.com/theocodes,5,55,"Sep 11, 2015",5
+,method3000,https://github.com/tristil,5,50,"Jul 27, 2015",5
 ,nikolay,https://nikolay.com,5,50,"Oct 13, 2015",5
-,Jason Adams,http://mendicantbug.com,5,40,"Dec 29, 2015",5
-,HORINOUCHI Masato,https://github.com/thermes,5,35,"Jan 28, 2016",5
-,Ryan Helsing,http://accord-aca.com,5,35,"Jan 27, 2016",5
+,ealdent,https://github.com/ealdent,5,40,"Dec 29, 2015",5
+,rhelsing,https://github.com/rhelsing,5,35,"Jan 27, 2016",5
+,thermes,https://github.com/thermes,5,35,"Jan 28, 2016",5
 ,Raimondas Valickas,,5,30,"Feb 10, 2016",5
 ,Blumenversand,https://blumenversender.com,5,25,"Mar 14, 2016",5
-,Kyle Ashmore,https://github.com/vermosi,5,25,"Mar 21, 2016",5
-,Nic Boie,http://www.webvolta.com,5,25,"Mar 28, 2016",5
-,Luc Sarzyniec,http://www.olbat.net/,5,20,"Apr 18, 2016",5
-,Justin Mullis,http://nightiron.com/,5,15,"May 26, 2016",5
+,boie0025,https://github.com/boie0025,5,25,"Mar 28, 2016",5
+,vermosi,https://github.com/vermosi,5,25,"Mar 21, 2016",5
+,olbat,https://github.com/olbat,5,20,"Apr 18, 2016",5
+,nonadmin,https://github.com/nonadmin,5,15,"May 26, 2016",5
 ,Arugin ,,5,10,"Jun 14, 2016",5
-,Gerardo Ortega,http://g3ortega.com/,5,10,"Jun 2, 2016",5
-,bruno schmidt,https://github.com/bruno-schmidt,5,5,"Jul 21, 2016",5
+,g3ortega,https://github.com/g3ortega,5,10,"Jun 2, 2016",5
+,bruno-schmidt,https://github.com/bruno-schmidt,5,5,"Jul 21, 2016",5
+,DateinAsia,https://findmate.asia,5,5,"Aug 12, 2016",5
 ,Eran,,2,18,"Nov 2, 2015",1
 ,Brandon Zylstra,,2,14,"Dec 25, 2015",1
 ,Nickolay Abdrafikov,,2,14,"Nov 9, 2015",1
