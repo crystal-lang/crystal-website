@@ -1,75 +1,72 @@
 logo,name,url,this_month,all_time,since,level
-/images/sponsors/compose__an_ibm_company.png,"Compose, an IBM company",https://www.compose.io,250,1250,"Mar 22, 2016",250
-/images/sponsors/isaacsloan.jpg,isaacsloan,https://github.com/elorest,80,374,"Mar 24, 2016",75
-/images/sponsors/buildit__inc_.png,"BuildIt, Inc.",,80,80,"Jul 29, 2016",75
-/images/sponsors/tpberntsen.jpg,tpberntsen,https://github.com/tpberntsen,75,825,"Sep 20, 2015",75
-/images/sponsors/rhs.jpg,rhs,https://www.rainforestqa.com/,75,375,"Feb 17, 2016",75
+/images/sponsors/compose__an_ibm_company.png,"Compose, an IBM company",https://www.compose.io,250,1500,"Mar 22, 2016",250
+/images/sponsors/isaacsloan.jpg,isaacsloan,https://github.com/elorest,80,454,"Mar 24, 2016",75
+/images/sponsors/buildit__inc_.png,"BuildIt, Inc.",,80,160,"Jul 29, 2016",75
+/images/sponsors/tpberntsen.jpg,tpberntsen,https://github.com/tpberntsen,75,900,"Sep 20, 2015",75
+/images/sponsors/rhs.jpg,rhs,https://www.rainforestqa.com/,75,450,"Feb 17, 2016",75
+/images/sponsors/brooklyn_labs.png,brooklyn_labs,http://twitter.com/brooklyn_labs,75,300,"May 9, 2016",75
 /images/sponsors/jwaldrip.jpg,jwaldrip,https://github.com/jwaldrip,75,250,"Aug 7, 2015",75
-/images/sponsors/brooklyn_labs.png,brooklyn_labs,http://twitter.com/brooklyn_labs,75,225,"May 9, 2016",75
-/images/sponsors/fabio_akita.jpg,Fabio Akita,,75,75,"Jul 21, 2016",75
-,jasoncharnes,https://github.com/jasoncharnes,50,150,"May 24, 2016",25
-,Frank O'Hara,,25,300,"Aug 16, 2015",25
-,maxdemarzi,http://twitter.com/maxdemarzi,25,300,"Aug 6, 2015",25
-,PragTob,http://pragtob.wordpress.com,25,300,"Aug 12, 2015",25
-,sdogruyol,https://github.com/sdogruyol,25,300,"Jul 24, 2015",25
-,Sergio Gil,https://github.com/porras,25,260,"Jul 27, 2015",25
-,jeromegn,https://github.com/jeromegn,25,175,"Jan 28, 2016",25
-,Renich,https://github.com/renich,25,150,"Feb 1, 2016",25
-,waterlink,https://github.com/waterlink,25,125,"Mar 2, 2016",25
-,beanieboi,https://github.com/beanieboi,25,50,"Jun 3, 2016",25
-,LorenzV,https://github.com/LorenzV,25,50,"Jun 22, 2016",25
+/images/sponsors/fabio_akita.jpg,Fabio Akita,,75,150,"Jul 21, 2016",75
+,Frank O'Hara,,25,325,"Aug 16, 2015",25
+,maxdemarzi,http://twitter.com/maxdemarzi,25,325,"Aug 6, 2015",25
+,PragTob,http://pragtob.wordpress.com,25,325,"Aug 12, 2015",25
+,sdogruyol,https://github.com/sdogruyol,25,325,"Jul 24, 2015",25
+,Sergio Gil,https://github.com/porras,25,285,"Jul 27, 2015",25
+,jeromegn,https://github.com/jeromegn,25,200,"Jan 28, 2016",25
+,Renich,https://github.com/renich,25,175,"Feb 1, 2016",25
+,waterlink,https://github.com/waterlink,25,150,"Mar 2, 2016",25
+,beanieboi,https://github.com/beanieboi,25,75,"Jun 3, 2016",25
+,LorenzV,https://github.com/LorenzV,25,75,"Jun 22, 2016",25
 ,gaurub,https://github.com/gaurub,25,25,"Aug 4, 2016",25
-,RobertAudi,https://github.com/RobertAudi,21,84,"Jun 23, 2016",10
-,drosehn,https://github.com/drosehn,16,124,"Dec 3, 2015",10
-,gottlike,https://github.com/gottlike,15,280,"Jul 29, 2015",10
-,opes,https://github.com/opes,10,154,"Feb 26, 2016",10
-,havenwood,https://github.com/havenwood,10,125,"Jul 23, 2015",10
-,chendo ,,10,120,"Aug 11, 2015",10
-,ddfreyne,https://github.com/ddfreyne,10,120,"Aug 17, 2015",10
-,ucmsky,http://qiita.com/ucmsky,10,100,"Oct 23, 2015",10
-,Peter Hollows,https://github.com/captainpete,10,90,"Nov 13, 2015",10
-,stonevil,https://github.com/stonevil,10,60,"Aug 23, 2015",10
-,vegai,https://github.com/vegai,10,60,"Aug 18, 2015",10
-,risyasin,https://github.com/risyasin,10,50,"Mar 17, 2016",10
-,vagmi,https://github.com/vagmi,10,50,"Mar 20, 2016",10
-,arambert,https://github.com/arambert,10,40,"Apr 27, 2016",10
-,msa7,https://github.com/msa7,10,30,"May 18, 2016",10
-,christos,https://github.com/christos,10,20,"Jun 23, 2016",10
-,kibs,https://github.com/kibs,10,20,"Jun 15, 2016",10
-,plainprogrammer,https://github.com/plainprogrammer,10,20,"Jun 7, 2016",10
-,ruslux,https://github.com/ruslux,10,20,"Jun 20, 2016",10
+,RobertAudi,https://github.com/RobertAudi,21,105,"Jun 23, 2016",10
+,drosehn,https://github.com/drosehn,16,140,"Dec 3, 2015",10
+,gottlike,https://github.com/gottlike,15,295,"Jul 29, 2015",10
+,opes,https://github.com/opes,10,164,"Feb 26, 2016",10
+,chendo ,,10,130,"Aug 11, 2015",10
+,ddfreyne,https://github.com/ddfreyne,10,130,"Aug 17, 2015",10
+,ucmsky,http://qiita.com/ucmsky,10,110,"Oct 23, 2015",10
+,Peter Hollows,https://github.com/captainpete,10,100,"Nov 13, 2015",10
+,stonevil,https://github.com/stonevil,10,70,"Aug 23, 2015",10
+,vegai,https://github.com/vegai,10,70,"Aug 18, 2015",10
+,risyasin,https://github.com/risyasin,10,60,"Mar 17, 2016",10
+,arambert,https://github.com/arambert,10,50,"Apr 27, 2016",10
+,msa7,https://github.com/msa7,10,40,"May 18, 2016",10
+,christos,https://github.com/christos,10,30,"Jun 23, 2016",10
+,kibs,https://github.com/kibs,10,30,"Jun 15, 2016",10
+,plainprogrammer,https://github.com/plainprogrammer,10,30,"Jun 7, 2016",10
+,ruslux,https://github.com/ruslux,10,30,"Jun 20, 2016",10
+,pmorton,https://github.com/pmorton,10,20,"Jul 10, 2016",10
+,kubalasecki,https://github.com/kubalasecki,10,10,"Aug 21, 2016",10
 ,masukomi,http://masukomi.org,10,10,"Aug 7, 2016",10
-,pmorton,https://github.com/pmorton,10,10,"Jul 10, 2016",10
+,readtimeout,http://twitter.com/readtimeout,10,10,"Aug 27, 2016",10
 ,Константин Малиновский,,10,10,"Aug 16, 2016",10
-,ayosec,,7,76,"Aug 20, 2015",5
-,rosylilly,https://github.com/rosylilly,5,163,"Aug 4, 2015",5
-,pine613,https://github.com/pine,5,65,"Jul 24, 2015",5
-,dahofer,https://github.com/dahofer,5,60,"Aug 6, 2015",5
-,tommasop,https://github.com/tommasop,5,60,"Aug 6, 2015",5
-,dbackeus,https://github.com/dbackeus,5,55,"Aug 7, 2015",5
-,theocodes,https://github.com/theocodes,5,55,"Sep 11, 2015",5
-,method3000,https://github.com/tristil,5,50,"Jul 27, 2015",5
-,nikolay,https://nikolay.com,5,50,"Oct 13, 2015",5
-,ealdent,https://github.com/ealdent,5,40,"Dec 29, 2015",5
-,rhelsing,https://github.com/rhelsing,5,35,"Jan 27, 2016",5
-,thermes,https://github.com/thermes,5,35,"Jan 28, 2016",5
-,Raimondas Valickas,,5,30,"Feb 10, 2016",5
-,Blumenversand,https://blumenversender.com,5,25,"Mar 14, 2016",5
-,boie0025,https://github.com/boie0025,5,25,"Mar 28, 2016",5
-,vermosi,https://github.com/vermosi,5,25,"Mar 21, 2016",5
-,olbat,https://github.com/olbat,5,20,"Apr 18, 2016",5
-,nonadmin,https://github.com/nonadmin,5,15,"May 26, 2016",5
-,Arugin ,,5,10,"Jun 14, 2016",5
-,g3ortega,https://github.com/g3ortega,5,10,"Jun 2, 2016",5
-,bruno-schmidt,https://github.com/bruno-schmidt,5,5,"Jul 21, 2016",5
+,ayosec,,7,83,"Aug 20, 2015",5
+,rosylilly,https://github.com/rosylilly,5,168,"Aug 4, 2015",5
+,pine613,https://github.com/pine,5,70,"Jul 24, 2015",5
+,dahofer,https://github.com/dahofer,5,65,"Aug 6, 2015",5
+,tommasop,https://github.com/tommasop,5,65,"Aug 6, 2015",5
+,dbackeus,https://github.com/dbackeus,5,60,"Aug 7, 2015",5
+,theocodes,https://github.com/theocodes,5,60,"Sep 11, 2015",5
+,method3000,https://github.com/tristil,5,55,"Jul 27, 2015",5
+,nikolay,https://nikolay.com,5,55,"Oct 13, 2015",5
+,ealdent,https://github.com/ealdent,5,45,"Dec 29, 2015",5
+,Ryan Helsing,http://accord-aca.com,5,40,"Jan 27, 2016",5
+,thermes,https://github.com/thermes,5,40,"Jan 28, 2016",5
+,Raimondas Valickas,,5,35,"Feb 10, 2016",5
+,Blumenversand,https://blumenversender.com,5,30,"Mar 14, 2016",5
+,boie0025,https://github.com/boie0025,5,30,"Mar 28, 2016",5
+,vermosi,https://github.com/vermosi,5,30,"Mar 21, 2016",5
+,olbat,https://github.com/olbat,5,25,"Apr 18, 2016",5
+,Arugin ,,5,15,"Jun 14, 2016",5
+,Gerardo Ortega,http://g3ortega.com/,5,15,"Jun 2, 2016",5
 ,DateinAsia,https://findmate.asia,5,5,"Aug 12, 2016",5
-,dark-eye,,2,18,"Nov 2, 2015",1
-,iconoclast,,2,14,"Dec 25, 2015",1
-,nicck,,2,14,"Nov 9, 2015",1
-,Martin Luder,,1,12,"Aug 14, 2015",1
-,claptimes5,,1,11,"Sep 21, 2015",1
-,Shigenobu Nishikawa,,1,10,"Oct 23, 2015",1
-,premist,,1,6,"Feb 22, 2016",1
-,dpisarewski,,1,5,"Mar 12, 2016",1
-,Stuk4,,1,4,"Apr 20, 2016",1
-,Vanhecke,,1,2,"Jun 15, 2016",1
+,Joshua Richardson,https://github.com/jrichocean,5,5,"Aug 22, 2016",5
+,Eran,,2,20,"Nov 2, 2015",1
+,Nickolay Abdrafikov,,2,16,"Nov 9, 2015",1
+,Martin Luder,,1,13,"Aug 14, 2015",1
+,Avi Leavitt,,1,12,"Sep 21, 2015",1
+,Shigenobu Nishikawa,,1,11,"Oct 23, 2015",1
+,Minku Lee,,1,7,"Feb 22, 2016",1
+,Dieter Pisarewski,,1,6,"Mar 12, 2016",1
+,Carlos Daniel Larico Flores,,1,5,"Apr 20, 2016",1
+,Joris Vanhecke,,1,3,"Jun 15, 2016",1
