@@ -15,8 +15,7 @@ But if you feel like it, you can also use some object oriented programming:
 
 {% highlight ruby %}
 class Greeter
-  def initialize(name)
-    @name = name.capitalize
+  def initialize(@name : String )
   end
 
   def salute
@@ -31,7 +30,7 @@ g.salute
 Or maybe with blocks:
 
 {% highlight ruby %}
-"Hello World".each_char do |char|
+"Hello world".each_char do |char|
   print char
 end
 print '\n'
