@@ -1,16 +1,16 @@
 \---
 \---
 %section
-  %h1 Language Goals
+  %h1 Metas da Linguagem
   %ul.goals
-    %li Have a syntax similar to Ruby (but compatibility with it is not a goal)
-    %li Statically type-checked but without having to specify the type of variables or method arguments.
-    %li Be able to call C code by writing bindings to it in Crystal.
-    %li Have compile-time evaluation and generation of code, to avoid boilerplate code.
-    %li Compile to efficient native code.
+    %li Ter uma sintaxe similar a Ruby (porém a compatibilidade com ela não é uma meta)
+    %li Checagem estática de tipos, mas sem ter de especificar o tipo das variáveis ou argumentos de método.
+    %li Poder chamar código em C escrevendo bindings em Crystal.
+    %li Ter avaliação em tempo de compilação e geração de código, para evitar código repetido.
+    %li Compilar em código nativo eficiente.
 
 %section
-  %h1 How it looks
+  %h1 Como ela é
   .code_section
     {% include sample_code.md %}
 
@@ -18,11 +18,11 @@
   %h1 Status
   %p
     %ul.goals
-      %li The project is in alpha stage: we are still tweaking the language and standard library.
-      %li The compiler is written in Crystal.
+      %li O projeto está em estágio alfa: ainda estamos ajustando a linguagem e a biblioteca padrão.
+      %li O compilador é escrito em Crystal.
 
 %section.sponsors
-  %h1 Top Sponsors
+  %h1 Maiores Patrocinadores
 
   .sponsors-list
     %a(href="https://manas.tech/" target="_blank")
@@ -40,20 +40,20 @@
       Compose, an IBM company
 
   %div.footer
-    %a.all-sponsors(href="/sponsors") Meet all our sponsors
+    %a.all-sponsors(href="/sponsors") Conheça todos os nossos patrocinadores
 
 %section
-  %h1 Community
+  %h1 Comunidade
   %p
-    Post a question or suggest something in our
+    Poste uma questão ou sugira algo em nosso
     %i.ip.group
-    <a href="https://groups.google.com/forum/?fromgroups#!forum/crystal-lang" target="_blank">Google Group</a>,
-    ask on our
-    %a{href: "https://gitter.im/crystal-lang/crystal", target: "_blank"}Gitter channel
-    or join our IRC channel #crystal-lang at irc.freenode.net
+    %a{href: "https://groups.google.com/forum/?fromgroups#!forum/crystal-lang", target: "_blank"} Grupo do Google,
+    pergunte no nosso
+    %a{href: "https://gitter.im/crystal-lang/crystal", target: "_blank"}Canal do Gitter
+    ou junte-se ao nosso canal do IRC #crystal-lang em irc.freenode.net
 
 %section
-  %h1 Entries from our blog
+  %h1 Postagens em nosso blog
   .blog_roll
     {% for post in site.posts %}
     %article
