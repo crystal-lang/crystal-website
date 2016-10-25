@@ -15,8 +15,7 @@ But if you feel like it, you can also use some object oriented programming:
 
 {% highlight ruby %}
 class Greeter
-  def initialize(name)
-    @name = name.capitalize
+  def initialize(@name : String )
   end
 
   def salute
@@ -31,7 +30,7 @@ g.salute
 Or maybe with blocks:
 
 {% highlight ruby %}
-"Hello World".each_char do |char|
+"Hello world".each_char do |char|
   print char
 end
 print '\n'
@@ -40,7 +39,7 @@ print '\n'
 Each alternative might have a different performance, but luckily all of them are pretty expressive.
 
 Ok, but what's the purpose of learning a language if we cannot run the damn thing? Let's see how we do this with Crystal
-(and let's assume you already have it [installed](https://github.com/crystal-lang/crystal/wiki/Introduction#installation)).
+(and let's assume you already have it [installed](https://crystal-lang.org/docs/installation/index.html)).
 
 First create a file `hello.cr` containing your preferred choice of the previous examples.
 Then type in the console:

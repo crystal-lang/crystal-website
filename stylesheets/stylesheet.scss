@@ -226,6 +226,16 @@ section {
   }
 }
 
+.post {
+  ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    li {
+      list-style: disc;
+    }
+  }
+}
+
 .code_section {
   margin-bottom: 50px;
   margin: 0 -80px 4px -90px;
@@ -287,6 +297,7 @@ ul.spaced {
   article {
     padding-right: 30px;
     margin-bottom: 30px;
+    height: 60px;
     width: 50%;
     float: left;
 
@@ -547,6 +558,7 @@ section.sponsors {
       width: 180px;
       margin: 5px 10px;
       color: #b5b5b5;
+      vertical-align: top;
     }
 
     img {
