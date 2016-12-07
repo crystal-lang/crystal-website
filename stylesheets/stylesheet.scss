@@ -582,3 +582,22 @@ section.sponsors {
     font-weight: normal;
   }
 }
+
+body.community {
+  section:not(:first-of-type) {
+    padding: 40px 80px;
+    &.callout {
+      background-color: $grayLight;
+
+      h2 {
+        color: $black;
+        font-weight: 400;
+      }
+    }
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
