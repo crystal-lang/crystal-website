@@ -78,6 +78,14 @@ h3 {
 
 p {
   margin-bottom: 20px;
+  a {
+    font-weight: normal;
+    border-bottom: 1px solid black;
+
+    &:hover {
+      background-color: $grayLight;
+    }
+  }
 }
 
 a {
