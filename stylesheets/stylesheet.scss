@@ -460,7 +460,7 @@ i.ip {
     margin-right: auto;
   }
 
-  .badge {
+  .right {
     float: right;
 
     .text {
@@ -471,6 +471,27 @@ i.ip {
   a {
     color: #4C4C4C;
     font-weight: normal;
+
+    &.badge {
+      padding: 2px 8px;
+      margin-left: 10px;
+      text-align: center;
+      float: right;
+      box-sizing: border-box;
+      line-height: 1.2rem;
+
+      font-weight: 400;
+      font-size: 0.8rem;
+      color: #fff;
+      background-color: $gray;
+      border-radius: 4px;
+      text-shadow: 0px 1px 1px #333;
+      &:hover {
+        color: #fff !important;
+        background-color: $text;
+      }
+    }
+
   }
 }
 
