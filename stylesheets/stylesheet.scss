@@ -78,6 +78,9 @@ h3 {
 
 p {
   margin-bottom: 20px;
+}
+
+p, .post {
   a {
     font-weight: normal;
     border-bottom: 1px solid black;
@@ -85,7 +88,7 @@ p {
     &:hover {
       background-color: $grayLight;
     }
-  }
+  }  
 }
 
 a {
