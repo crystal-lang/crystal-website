@@ -43,3 +43,11 @@ After that, from the community perspective, we plan to work on **lowering the ba
 As excited as we are about all the things to come to Crystal during 2017, we don’t want to lose track of the **immediate next steps**. We will be working heavily on parallelism first, and on leveraging any existing efforts towards Windows support. From the community standpoint, we will be reviewing the contribution guidelines and rethink the Github issues labels, then re-tag issues as appropriate; we want to have issues ready for newcomers to contribute, as well as for more experienced members of the community to tackle.
 
 Please do leave us your comments either here or through any of the [community channels](https://crystal-lang.org/community/). We wish you a happy new year, and as always, happy Crystalling :-)
+
+<br/>
+
+- - - - -
+
+<br/>
+
+If you want to help us achieve this goal, please consider supporting Crystal on [BountySource](https://salt.bountysource.com/teams/crystal-lang)!
