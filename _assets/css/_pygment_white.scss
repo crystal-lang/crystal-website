@@ -1,80 +1,81 @@
-.highlight code,
-.highlight pre {color:#272822;background-color:#E5E5E5}
-.highlight .hll{background-color:#222}
-.highlight .c{color:#7f9f7f}
-.highlight .err{color:#e37170;background-color:#3d3535}
-.highlight .g{color:#7f9f7f}
-.highlight .k{color:#C7285E}
-.highlight .l{color:#ccc}
-.highlight .n{color:#272822}
-.highlight .o{color:#272822}
-.highlight .x{color:#ccc}
-.highlight .p{color:#272822}
-.highlight .cm{color:#7f9f7f}
-.highlight .cp{color:#7f9f7f}
-.highlight .c1{color:#8C8C8C}
-.highlight .cs{color:#cd0000;font-weight:bold}
-.highlight .gd{color:#cd0000}
-.highlight .ge{color:#ccc;font-style:italic}
-.highlight .gr{color:red}
-.highlight .gh{color:#dcdccc;font-weight:bold}
-.highlight .gi{color:#00cd00}
-.highlight .go{color:gray}
-.highlight .gp{color:#dcdccc;font-weight:bold}
-.highlight .gs{color:#ccc;font-weight:bold}
-.highlight .gu{color:purple;font-weight:bold}
-.highlight .gt{color:#0040D0}
-.highlight .kc{color:#dca3a3}
-.highlight .kd{color:#ffff86}
-.highlight .kn{color:#dfaf8f;font-weight:bold}
-.highlight .kp{color:#7644E4}
-.highlight .kr{color:#cdcd00}
-.highlight .kt{color:#00cd00}
-.highlight .ld{color:#cc9393}
-.highlight .m{color:#8cd0d3}
-.highlight .s{color:#cc9393}
-.highlight .na{color:#9ac39f}
-.highlight .nb{color:#5F868F}
-.highlight .nc{color:#272822}
-.highlight .no{color:#5F868F}
-.highlight .nd{color:#ccc}
-.highlight .ni{color:#c28182}
-.highlight .ne{color:#c3bf9f;font-weight:bold}
-.highlight .nf{color:#41822D}
-.highlight .nl{color:#888}
-.highlight .nn{color:#8fbede}
-.highlight .nx{color:#ccc}
-.highlight .py{color:#ccc}
-.highlight .nt{color:#9ac39f}
-.highlight .nv{color:#7644E4}
-.highlight .ow{color:#f0efd0}
-.highlight .w{color:#ccc}
-.highlight .mf{color:#8cd0d3}
-.highlight .mh{color:#7644E4}
-.highlight .mi{color:#7644E4}
-.highlight .mo{color:#8cd0d3}
-.highlight .sb{color:#cc9393}
-.highlight .sc{color:#cc9393}
-.highlight .sd{color:#cc9393}
-.highlight .s2{color:#728B14}
-.highlight .se{color:#cc9393}
-.highlight .sh{color:#cc9393}
-.highlight .si{color:#728B14}
-.highlight .sx{color:#cc9393}
-.highlight .sr{color:#728B14}
-.highlight .s1{color:#728B14}
-.highlight .ss{color:#7644E4}
-.highlight .bp{color:#efef8f}
-.highlight .vc{color:#272822}
-.highlight .vg{color:#272822}
-.highlight .vi{color:#272822}
-.highlight .il{color:#8cd0d3}
+.highlight {
+  code, pre {color:#272822;background-color:#E5E5E5}
+  .hll{background-color:#222}
+  .c{color:#7f9f7f}
+  .err{color:#e37170;background-color:#3d3535}
+  .g{color:#7f9f7f}
+  .k{color:#C7285E}
+  .l{color:#ccc}
+  .n{color:#272822}
+  .o{color:#272822}
+  .x{color:#ccc}
+  .p{color:#272822}
+  .cm{color:#7f9f7f}
+  .cp{color:#7f9f7f}
+  .c1{color:#8C8C8C}
+  .cs{color:#cd0000;font-weight:bold}
+  .gd{color:#cd0000}
+  .ge{color:#ccc;font-style:italic}
+  .gr{color:red}
+  .gh{color:#dcdccc;font-weight:bold}
+  .gi{color:#00cd00}
+  .go{color:gray}
+  .gp{color:#dcdccc;font-weight:bold}
+  .gs{color:#ccc;font-weight:bold}
+  .gu{color:purple;font-weight:bold}
+  .gt{color:#0040D0}
+  .kc{color:#dca3a3}
+  .kd{color:#ffff86}
+  .kn{color:#dfaf8f;font-weight:bold}
+  .kp{color:#7644E4}
+  .kr{color:#cdcd00}
+  .kt{color:#00cd00}
+  .ld{color:#cc9393}
+  .m{color:#8cd0d3}
+  .s{color:#cc9393}
+  .na{color:#9ac39f}
+  .nb{color:#5F868F}
+  .nc{color:#272822}
+  .no{color:#5F868F}
+  .nd{color:#ccc}
+  .ni{color:#c28182}
+  .ne{color:#c3bf9f;font-weight:bold}
+  .nf{color:#41822D}
+  .nl{color:#888}
+  .nn{color:#8fbede}
+  .nx{color:#ccc}
+  .py{color:#ccc}
+  .nt{color:#9ac39f}
+  .nv{color:#7644E4}
+  .ow{color:#f0efd0}
+  .w{color:#ccc}
+  .mf{color:#8cd0d3}
+  .mh{color:#7644E4}
+  .mi{color:#7644E4}
+  .mo{color:#8cd0d3}
+  .sb{color:#cc9393}
+  .sc{color:#cc9393}
+  .sd{color:#cc9393}
+  .s2{color:#728B14}
+  .se{color:#cc9393}
+  .sh{color:#cc9393}
+  .si{color:#728B14}
+  .sx{color:#cc9393}
+  .sr{color:#728B14}
+  .s1{color:#728B14}
+  .ss{color:#7644E4}
+  .bp{color:#efef8f}
+  .vc{color:#272822}
+  .vg{color:#272822}
+  .vi{color:#272822}
+  .il{color:#8cd0d3}
 
-.highlight .lineno {
-  border-right: 1px solid #8C8C8C;
-  color: #8C8C8C;
-  padding-right: 15px;
-  width: 17px;
-  display: inline-block;
-  text-align: right;
+  .lineno {
+    border-right: 1px solid #8C8C8C;
+    color: #8C8C8C;
+    padding-right: 15px;
+    width: 17px;
+    display: inline-block;
+    text-align: right;
+  }
 }
