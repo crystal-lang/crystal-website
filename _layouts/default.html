@@ -6,7 +6,6 @@
     {% css stylesheet %}
     <link href='/feed.xml' rel='alternate' title='Atom 1.0' type='application/atom+xml'>
     <link href='/favicon.png' rel='icon' type='image/png'>
-    <script src='/javascripts/viewer.js' type='text/javascript'></script>
     {% seo %}
   </head>
   <body>
@@ -26,7 +25,8 @@
       {{ content }}
       {% include footer.html %}
     </div>
-    {% include google_analytics.html %}
+    <script src='/javascripts/viewer.js' type='text/javascript'></script>
     <script src='/javascripts/main.js' type='text/javascript'></script>
+    {% include google_analytics.html %}
   </body>
 </html>
