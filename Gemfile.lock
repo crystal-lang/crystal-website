@@ -141,6 +141,8 @@ GEM
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uglifier (3.0.3)
+      execjs (>= 0.3.0, < 3)
 
 PLATFORMS
   ruby
@@ -152,6 +154,7 @@ DEPENDENCIES
   less
   rake
   therubyracer
+  uglifier
 
 BUNDLED WITH
    1.13.5
