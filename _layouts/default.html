@@ -2,10 +2,10 @@
 <html lang='en'>
   <head>
     <meta charset='utf-8'>
-    <link href='/stylesheets/stylesheet.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Cousine:700|Open+Sans:300,400,700" rel="stylesheet">
+    {% css stylesheet %}
     <link href='/feed.xml' rel='alternate' title='Atom 1.0' type='application/atom+xml'>
     <link href='/favicon.png' rel='icon' type='image/png'>
-    <script src='/javascripts/viewer.js' type='text/javascript'></script>
     {% seo %}
   </head>
   <body>
@@ -25,7 +25,7 @@
       {{ content }}
       {% include footer.html %}
     </div>
+    {% js bundle %}
     {% include google_analytics.html %}
-    <script src='/javascripts/main.js' type='text/javascript'></script>
   </body>
 </html>

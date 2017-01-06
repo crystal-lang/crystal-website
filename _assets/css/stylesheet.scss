@@ -1,10 +1,6 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@import url(pygment_black.css);
-@import url(pygment_white.css);
-
 @import
+        "pygment_black",
+        "pygment_white",
         "mixins",
         "reset"
 ;
@@ -33,10 +29,6 @@ $codeFont:      'Cousine', sans-serif;
 // ------------
 $icSpritePath:  "/images/icons_40x40.png";
 $ipSpritePath:  "/images/icons_18x18.png";
-
-
-@import url('//fonts.googleapis.com/css?family=Open+Sans:400,700,300');
-@import url('//fonts.googleapis.com/css?family=Cousine:400,700');
 
 
 // Classes
@@ -88,7 +80,7 @@ p, .post {
     &:hover {
       background-color: $grayLight;
     }
-  }  
+  }
 }
 
 a {
