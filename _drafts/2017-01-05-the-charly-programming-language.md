@@ -15,7 +15,7 @@ Charly is a dynamically typed and object-oriented programming language. The synt
 
 # How does it look?
 
-Below is an implementation of the [Bubblesort algorithm](https://de.wikipedia.org/wiki/Bubblesort) written in charly. It is part of the standard library which is also written in charly.
+Below is an implementation of the [Bubblesort algorithm](https://de.wikipedia.org/wiki/Bubblesort) written in Charly. It is part of the standard library which is also written in Charly.
 
 <div class="code_section">
 {% highlight javascript %}
@@ -31,7 +31,7 @@ Below is an implementation of the [Bubblesort algorithm](https://de.wikipedia.or
         left = sorted[i]
         right = sorted[y]
 
-        if (sort_function(left, right)) {
+        if sort_function(left, right) {
           sorted[i] = right
           sorted[y] = left
         }
@@ -44,7 +44,7 @@ Below is an implementation of the [Bubblesort algorithm](https://de.wikipedia.or
 {% endhighlight javascript %}
 </div>
 
-This program prints out the mandelbrot set in a 60x180 sized box.
+This program prints out the [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set) in a 60x180 sized box.
 
 <div class="code_section">
 {% highlight javascript %}
@@ -78,14 +78,13 @@ This program prints out the mandelbrot set in a 60x180 sized box.
 
 # How does it work?
 
-The first thing the Charly interpreter does is turn the source file into a list of tokens. A simple hello-world program may consist of the following tokens:
+First, Charly turns the source file into a list of tokens. A token is basically just a string with a type.
+A simple hello-world program may consist of the following tokens:
 
 <pre class="code">
 $ cat test/debug.ch
 print("Hello World")
-~/Documents/GitHub/KCreate/charly-lang
 $ charly test/debug.ch -f lint -f tokens
-
 1:1:5     │ Identifier  │ print
 1:6:1     │ LeftParen   │ (
 1:7:13    │ String      │ "Hello World"
@@ -94,9 +93,9 @@ $ charly test/debug.ch -f lint -f tokens
 2:1:1     │ EOF         │
 </pre>
 
-This part of the program is called the Lexer (Lexical Analysis). It turns the source-code into logical groups of characters. For example, the print identifier is now a token of the type Identifier, containing the string print. Same goes for the text which is being printed. It is now a token of the type String, containing the string Hello World.
+This part of the program is called the lexer (Lexical Analysis). It turns the source-code into logical groups of characters. For example, the print identifier is now a token of the type Identifier, containing the string print. Same goes for the text which is being printed. It is now a token of the type String, containing the string Hello World.
 
-After the whole program was turned into this list of tokens, the parser turns it into an AST (Abstract Syntax Tree). The AST is a way of representing a program as a tree structure. Each node has a type and 0 or more children. The expression `1 + 2 * 3` would produce an AST which looks like this:
+After the whole program was turned into a list of tokens, the parser turns them into an AST (Abstract Syntax Tree). The AST is a way of representing a program as a tree structure. Each node has a type and 0 or more children. The expression `1 + 2 * 3` would produce an AST which looks like this:
 
 <img src="/images/blog/charly-ast_1.png" class="center"/>
 
@@ -104,15 +103,22 @@ Something more sophisticated such as a method-call on an object might look like 
 
 <img src="/images/blog/charly-ast_2.png" class="center"/>
 
-Once the whole program has been turned into the AST, the interpreter starts executing the file. This procedure follows the [Visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern) to separate the AST and language logic. The interpreter part basically looks at every node and does what this node is supposed to do.
+Once the whole program has been turned into the AST, the interpreter starts to recursively traverse this structure.
+This procedure follows the [Visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern) to separate the AST and language logic.
 
-When it visits a BinaryExpression for example, it first resolves the left side, then the right side, checks which operator is being used and then applies it to the two values.
+Take a `BinaryExpression` as an example. It has three properties. The two values of the expression and an operator.
+This operator could be a plus, minus or any other operator the language supports.
+It first resolves the two values, checks what operator is being used and applies it to the two values.
+Depending on which value is on which side, this procedure might produce completly different results.
+`3 + [1, 2]` is not the same as `[1, 2] + 3` (`NAN` and `[1, 2, 3]`).
+
+A `IdentifierLiteral` would load a value from the current scope, a `CallExpression` would invoke a pre-defined function and so on.
 
 # Why Crystal?
 
 The main reasons behind using Crystal for this project were speed and simplicity.
 
-Crystal’s syntax and standard library are both inspired by Ruby. This means you can reuse a lot of knowledge and established principles and practices from the Ruby world, in your Crystal projects. A lot of the API details are pretty similar. For example, if you’re unable to find any information on how to open files in Crystal, you can even google "Ruby open file" and you’ll discover that the first answer on stackoverflow is 100% valid Crystal code. Of course this doesn’t hold up for more complicated things but you can always use it as a place of inspiration.
+Crystal’s syntax and standard library are both inspired by Ruby. This means you can reuse a lot of knowledge and established principles and practices from the Ruby world, in your Crystal projects. A lot of the API details are pretty similar. For example, if you’re unable to find any information on how to open files in Crystal, you can even google "Ruby open file" and you’ll discover that the first answer on StackOverflow is 100% valid Crystal code. Of course this doesn’t hold up for more complicated things but you can always use it as a place of inspiration.
 
 Another great thing about Crystal is that you don’t have to deal with a lot of low-level stuff. Crystal’s standard library takes care of most things you’d consider low-level, even memory management. If you really need to do low-level stuff, you have access to [raw pointers](https://crystal-lang.org/api/master/Pointer.html) and [bindings to C](https://crystal-lang.org/docs/syntax_and_semantics/c_bindings/). This is also how the regex literal is implemented in Crystal. Internally it binds to the [PCRE Library](http://www.pcre.org/) and places an easy-to-use abstraction over it. Instead of reinventing the wheel, Crystal just binds to already existing C libraries. Crystal also binds to the C standard library, [OpenSSL](https://www.openssl.org/), [LibGMP](https://gmplib.org/), [LibXML2](http://xmlsoft.org/), [LibYAML](http://pyyaml.org/wiki/LibYAML) and many others.
 
@@ -122,7 +128,7 @@ Since Crystal uses LLVM, your program runs through all of their optimization pas
 
 It took me about a week to rewrite most of the interpreter in Crystal, with only small bug fixes and changes to the standard library taking longer than that.
 
-Another great thing about developing in crystal, is that the compiler itself is also written in Crystal. This means Crystal is self-hosted. There were multiple occasions where I copied code from the crystal compiler and adapted it for my own use. Crystal’s Parser and Lexer for example were really helpful in understanding how these things work (I had never written a Parser and Lexer before).
+Another great thing about developing in Crystal, is that the compiler itself is also written in Crystal. This means Crystal is self-hosted. There were multiple occasions where I copied code from Crystal's compiler and adapted it for my own use. Crystal’s parser and lexer for example were really helpful in understanding how these things work (I had never written a parser and lexer before).
 
 # The Macro System
 
@@ -130,28 +136,32 @@ The Macro system was really handy in a lot places. It was mainly used to avoid b
 
 For some real examples of how the Macro system could be used, look at these files:
 
-* [ syntax/ast.cr](https://github.com/KCreate/charly-lang/blob/22d0d4345d63ea494a41edc633f78b96bd73ff64/src/charly/syntax/ast.cr#L99-L138)
+* [syntax/ast.cr](https://github.com/KCreate/charly-lang/blob/22d0d4345d63ea494a41edc633f78b96bd73ff64/src/charly/syntax/ast.cr#L99-L138)
 
-*  [interpreter/internals.cr](https://github.com/KCreate/charly-lang/blob/2b038e4f29ca85c4ccd7f606810c923937433a50/src/charly/interpreter/internals.cr#L19-L51)
+* [interpreter/internals.cr](https://github.com/KCreate/charly-lang/blob/2b038e4f29ca85c4ccd7f606810c923937433a50/src/charly/interpreter/internals.cr#L19-L51)
 
-The standard library for example, uses macros to provide the [property](https://crystal-lang.org/api/master/Class.html#property%28%2Anames%29-macro) method. You can use it to avoid boilerplate when introducing new instance variables to your classes.
+Crystal's standard library for example, uses macros to provide the [property](https://crystal-lang.org/api/master/Class.html#property%28%2Anames%29-macro) method. You can use it to avoid boilerplate when introducing new instance variables to your classes.
 
 # Conclusion
 
-In it’s current state, Charly is just a learning project for myself. At the moment, I wouldn’t recommend using it for anything serious beside as a learning resource on how to write an interpreter yourself. Charly is being developed on [GitHub](https://github.com/KCreate/charly-lang), so feel free to open any issues, propose new features or even send your own pull requests. I would love to hear any kind of feedback.
+In it’s current state, Charly is just a learning project for myself. At the moment, I wouldn’t recommend using it for anything serious beside as a learning resource on how to write an interpreter yourself. Charly is being developed on [GitHub](https://github.com/KCreate/charly-lang), so feel free to open any issues, propose new features or even send your own pull requests. Feedback in the comments of this article is also greatly appreciated.
 
 I’ve started using Crystal around August 2016 and I’m absolutely in love with it. It is one of the most expressive and rewarding languages I have ever written code in. If you haven’t used Crystal before, you should try it out now.
 
 # About the Author
 
-I'm Leonard Schütz. I'm a 16 year old student interested in technology and design. Right now I'm an apprentice at Siemens in the field of Healthcare. At the moment my main interest is language-design and language-development. My favorite side-project is, as you might’ve guessed, the Charly Programming Language. You can always find me on my homepage at [https://leonardschuetz.ch](https://leonardschuetz.ch).
+My name is Leonard Schütz, I'm a 16 year old student from Switzerland.
+I'm currently an apprentice at Siemens in the field of Healthcare, where I work mostly with PHP, EWS and other web technologies.
+In my spare time I like to work on side-projects, of which the Charly programming language is my current one.
+
+Feel free to follow me on [Twitter](https://twitter.com/leni4838), [GitHub](https://github.com/KCreate) or check out my website at [leonardschuetz.ch](https://leonardschuetz.ch)
 
 Thanks for reading!
 
 # Links & Sources
 
-* Leonard Schütz: [https://leonardschuetz.ch](https://leonardschuetz.ch)
-* Charly Programming Language: [https://github.com/KCreate/charly-lang](https://github.com/KCreate/charly-lang)
-* GraphViz (used for AST visualisations): [http://www.graphviz.org/](http://www.graphviz.org/)
-* "Ruby open file" on stackoverflow: [http://stackoverflow.com/questions/4475957/how-to-read-an-open-file-in-ruby](http://stackoverflow.com/questions/4475957/how-to-read-an-open-file-in-ruby)
-* Old test suite used for the ruby interpreter: [https://github.com/KCreate/charly-lang/blob/92bc26e06068bdce926f01f1cd49a5faeb01180c/test/main.ch](https://github.com/KCreate/charly-lang/blob/92bc26e06068bdce926f01f1cd49a5faeb01180c/test/main.ch)
+* Leonard Schütz: [leonardschuetz.ch](https://leonardschuetz.ch)
+* Charly Programming Language: [KCreate/charly-lang](https://github.com/KCreate/charly-lang)
+* GraphViz (used for AST visualisations): [www.graphviz.org](http://www.graphviz.org/)
+* "Ruby open file" on stackoverflow: [how-to-read-an-open-file-in-ruby](http://stackoverflow.com/questions/4475957/how-to-read-an-open-file-in-ruby)
+* Old test suite used for the ruby interpreter: [test/main.ch](https://github.com/KCreate/charly-lang/blob/92bc26e06068bdce926f01f1cd49a5faeb01180c/test/main.ch)
