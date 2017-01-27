@@ -71,3 +71,30 @@ custom_body_classes: ['community']
     ## Events
 
     There are ongoing Crystal meetups on multiple cities around the globe, as well as online meetups, and Crystal presentations on programming conferences - there’s a good chance that you’ll find a Crystal talk at your nearest Rubyconf. Stay tuned for events near your location!
+
+    <div id="calendar"></div>
+
+    [iCal](https://calendar.google.com/calendar/ical/{{ site.google_calendar_id \| uri_escape }}/public/basic.ics) - [Google Calendar](https://calendar.google.com/calendar/embed?src={{ site.google_calendar_id \| uri_escape }})
+
+  <link rel='stylesheet' href='/stylesheets/fullcalendar.css' />
+  <script src='/javascripts/fullcalendar-3.1.0/lib/jquery.min.js'></script>
+  <script src='/javascripts/fullcalendar-3.1.0/lib/moment.min.js'></script>
+  <script src='/javascripts/fullcalendar-3.1.0/fullcalendar.min.js'></script>
+  <script src='/javascripts/fullcalendar-3.1.0/gcal.min.js'></script>
+
+  :javascript
+    $(document).ready(function() {
+      $('#calendar').fullCalendar({
+        googleCalendarApiKey: '{{ site.google_calendar_api_key }}',
+        defaultView: 'listYear',
+        header: false,
+        height: 200,
+        listDayFormat: false,
+        listDayAltFormat: false,
+        timeFormat: 'dddd DD MMM YYYY',
+        noEventsMessage: "We don't have any Crystal event listed - let us know if there's one we're missing!",
+        events: {
+          googleCalendarId: '{{ site.google_calendar_id }}'
+        }
+      })
+    });
