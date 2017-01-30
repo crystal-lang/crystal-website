@@ -10,19 +10,13 @@
     %li Compile to efficient native code.
 
 %section
-  %h1 How it looks
+  %h1 Syntax
   .code_section
+    /{% capture excerpt %}"{% include sample_code.md %}"{% endcapture %}{{excerpt | puts("hello");Html2haml::HTML.new(excerpt).render}}
     {% include sample_code.md %}
 
-%section
-  %h1 Status
-  %p
-    %ul.goals
-      %li The project is in alpha stage: we are still tweaking the language and standard library.
-      %li The compiler is written in Crystal.
-
 %section.sponsors
-  %h1 Top Sponsors
+  %h1 Crystal top Sponsors
 
   .sponsors-list
     %a(href="https://manas.tech/" target="_blank")

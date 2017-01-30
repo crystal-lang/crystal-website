@@ -25,7 +25,5 @@ markdown: kramdown
 exclude: ["*.haml", "Gemfile", "Gemfile.lock", "Rakefile", "travis-build.sh", "scripts/*.cr", "vendor"]
 gems:
   - jekyll-seo-tag
-
-# Default key only works for https://crystal-lang.org/ - for dev get yours at https://console.developers.google.com/apis/credentials
-google_calendar_api_key: 'AIzaSyCv-2Npqm0mwmwVCKX8xDPhwtP_8HwCWCE'
-google_calendar_id: '0s0pa4k3fov71e4itn79atlmeg@group.calendar.google.com'
+  - jekyll-haml
+  - html2haml
