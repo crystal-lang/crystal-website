@@ -2,12 +2,16 @@
 %html{:lang => "en"}
   %head
     %meta{:charset => "utf-8"}
+    / Import Google Icon Font
+    %link{:href => "http://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}/
     %link{:href => "/stylesheets/stylesheet.css", :rel => "stylesheet"}
     %link{:rel => 'alternate', :type => 'application/atom+xml', :title => 'Atom 1.0', :href => '/feed.xml'}
     %link{:rel => 'icon', :href => "/images/favico.png", :type => "image/png"}
     %link{:rel => 'shortcut icon', :href => "/images/favico.ico", :type => "image/x-icon"}
     %script{:src => '/javascripts/viewer.js', :type => 'text/javascript'}
     {% seo %}
+    / Let browser know website is optimized for mobile
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
   %body
     #fund
       .inner
