@@ -2,7 +2,7 @@ Crystal Website
 ===============
 Powered by [Jekyll](https://jekyllrb.com/)
 
-# Development setup
+## Development setup
 
 - Checkout the repositorie
 - Run `bundle install`
@@ -12,10 +12,10 @@ Powered by [Jekyll](https://jekyllrb.com/)
 or to build without starting it: `bundle exec jekyll build`
 
 
-# Thanks!
+## Thanks!
 
 As always, thanks to the community who contributes to Crystal and its infrastructure and projects.
 
-# License
+## License
 
 Crystal is licensed under the Apache License, Version 2.0
