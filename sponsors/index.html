@@ -1,51 +1,61 @@
 ---
-layout: default
+title: Sponsors
+nav_order: 3
+subtitle: These are the companies and individuals contributing a monthly amount to help sustain Crystal's development.
 ---
-<section>
-  <h1>Our sponsors</h1>
-
-  <p>
-    These are the companies and individuals contributing a monthly amount to help sustain Crystal's development. See the
-    <a href="https://salt.bountysource.com/teams/crystal-lang" target="_blank">Bountysource campaign</a>
-    for more details.
-  </p>
-
-  <dl>
-    {% for sp in site.data.sponsors %}
-      {% capture sponsor_class %}level-{{sp.level}} sponsor{% endcapture %}
-      <dt class="{{sponsor_class}}">
-        <div class="col-logo">
-          {% if sp.logo %}
-            <div class="logo">
+<div class="row">
+  <div class="col s8">
+    <table class="bordered sponsors-list">
+      <thead>
+        <th></th>
+        <th>Supporter</th>
+        <th>This month</th>
+        <th>All time</th>
+        <th>Since</th>
+      </thead>
+      <tbody>
+        {% for sp in site.data.sponsors %}
+          {% capture sponsor_class %}level-{{sp.level}} sponsor{% endcapture %}
+          <tr class="{{sponsor_class}}">
+            <td class="col-logo">
+              {% if sp.logo %}
+                <div class="logo">
+                  {% if sp.url %}
+                    <a href="{{sp.url}}" target="_blank">
+                      <img src="{{sp.logo}}" />
+                    </a>
+                  {% else %}
+                    <img src="{{sp.logo}}" />
+                  {% endif %}
+                </div>
+              {% else %}
+                &nbsp;
+              {% endif %}
+            </td>
+            <td class="name">
               {% if sp.url %}
                 <a href="{{sp.url}}" target="_blank">
-                  <img src="{{sp.logo}}" />
+                  {{sp.name}}
                 </a>
               {% else %}
-                <img src="{{sp.logo}}" />
+                {{sp.name}}
               {% endif %}
-            </div>
-          {% else %}
-            &nbsp;
-          {% endif %}
-        </div>
-        <div class="name">
-          {% if sp.url %}
-            <a href="{{sp.url}}" target="_blank">
-              {{sp.name}}
-            </a>
-          {% else %}
-            {{sp.name}}
-          {% endif %}
-        </div>
-        <div class="this_month">
-          ${{sp.this_month}}
-        </div>
-        <div class="legend">
-          ${{sp.all_time}} since {{sp.since}}
-        </div>
-      </dt>
-
-    {% endfor %}
-  </dl>
-</section>
+            </td>
+            <td class="this_month">
+              ${{sp.this_month}}
+            </td>
+            <td class="all_time">
+              ${{sp.all_time}}
+            </td>
+            <td class="since">
+              {{sp.since}}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="col s4">
+    <h3>Want to become a sponsor?</h3>
+  </div>
+</div>

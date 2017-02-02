@@ -158,3 +158,10 @@
     clear: both;
   }
 }
+
+// Grayscale
+// ---------
+@mixin grayscale($percentage) {
+  -webkit-filter: grayscale($percentage); /* Safari 6.0 - 9.0 */
+  filter: grayscale($percentage);
+}

@@ -1,0 +1,72 @@
+table.sponsors-list {
+  th {
+    color: $black;
+  }
+  .sponsor {
+    .logo {
+      img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        @include grayscale(100%);
+        @include opacity(60);
+      }
+    }
+    .legend {
+      font-size: 13px;
+      color: #b5b5b5;
+      text-transform: uppercase;
+    }
+    a {
+      font-weight: normal;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// This goes in home page. Just cleaning now
+// section.sponsors {
+//   background-color: $grayLight;
+//   padding: 20px 80px;
+
+//   h1 {
+//     text-align: center;
+//     font-size: 15px;
+//     font-weight: bold;
+//     margin-bottom: 5px;
+//   }
+
+//   .sponsors-list {
+//     text-align: center;
+//     a {
+//       display: inline-block;
+//       width: 180px;
+//       margin: 5px 10px;
+//       color: #b5b5b5;
+//       vertical-align: top;
+//     }
+
+//     img {
+//       width: 160px;
+//       border-radius: 50%;
+//       max-width: none;
+//       margin: 4px;
+
+//       -webkit-filter: grayscale(100%);
+//       filter: grayscale(100%);
+//     }
+//   }
+
+//   .footer {
+//     @include clearfix;
+//   }
+
+//   .all-sponsors {
+//     color: #b5b5b5;
+//     float: right;
+//     font-weight: normal;
+//   }
+// }
+
