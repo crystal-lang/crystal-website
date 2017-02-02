@@ -1,33 +1,19 @@
 ---
+title: Crystal
+nav_title: Home
+nav_order: 1
+subtitle: Fast as C, slick as Ruby
+custom_body_classes:
+  - main
 ---
-<section>
-  <h1>Language Goals</h1>
-  <ul class='goals'>
-    <li>Have a syntax similar to Ruby (but compatibility with it is not a goal)</li>
-    <li>Statically type-checked but without having to specify the type of variables or method arguments.</li>
-    <li>Be able to call C code by writing bindings to it in Crystal.</li>
-    <li>Have compile-time evaluation and generation of code, to avoid boilerplate code.</li>
-    <li>Compile to efficient native code.</li>
-  </ul>
-</section>
-<section>
-  <h1>How it looks</h1>
+<div class='row'>
+  <h1>Syntax</h1>
   <div class='code_section'>
-    <!-- {% capture excerpt %}"{% include sample_code.md %}"{% endcapture %}{{excerpt | puts("hello");Html2haml::HTML.new(excerpt).render}} -->
     {% include sample_code.md %}
   </div>
-</section>
-<section>
-  <h1>Status</h1>
-  <p>
-    <ul class='goals'>
-      <li>The project is in alpha stage: we are still tweaking the language and standard library.</li>
-      <li>The compiler is written in Crystal.</li>
-    </ul>
-  </p>
-</section>
-<section class='sponsors'>
-  <h1>Top Sponsors</h1>
+</div>
+<div class='row sponsors'>
+  <h1>Crystal top Sponsors</h1>
   <div class='sponsors-list'>
     <a href='https://manas.tech/' target='_blank'>
       <img src='/images/sponsors/manas.png' title='Manas'>
@@ -50,16 +36,16 @@
   <div class='footer'>
     <a class='all-sponsors' href='/sponsors'>Meet all our sponsors</a>
   </div>
-</section>
-<section>
+</div>
+<div class='row'>
   <h1>Community</h1>
   <p>
     <p>Crystal wouldn't be the same without the great community that gathered around it. And you can be part of it, too.</p>
-    
+
     <p>You can <a href="/community/">check here</a> how to get involved.</p>
   </p>
-</section>
-<section>
+</div>
+<div class='row'>
   <h1 id='blog'>Entries from our blog</h1>
   <div class='blog_roll'>
     {% for post in site.posts %}
@@ -74,4 +60,4 @@
     </article>
     {% endfor %}
   </div>
-</section>
+</div>

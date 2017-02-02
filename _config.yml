@@ -22,7 +22,7 @@ twitter:
 
 highlighter: rouge
 markdown: kramdown
-exclude: ["*.haml", "Gemfile", "Gemfile.lock", "Rakefile", "travis-build.sh", "scripts/*.cr", "vendor"]
+exclude: ["Gemfile", "Gemfile.lock", "Rakefile", "travis-build.sh", "scripts/*.cr", "vendor"]
 gems:
   - jekyll-seo-tag
   - jekyll-haml

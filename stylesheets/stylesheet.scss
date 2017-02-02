@@ -3,7 +3,7 @@
 ---
 @import url(pygment_black.css);
 @import url(pygment_white.css);
-@import url(materalize.css);
+@import url(materialize.css);
 
 @import
         "mixins",
@@ -14,6 +14,10 @@
 // --------------------------------------------------
 $white:         #ffffff;
 $black:         #000000;
+$primary-text:  #777777;
+$separator:     #EBEBEB;
+
+
 $gray:          #5a5a5a;
 $grayLight:     #e5e5e5;
 $grayDark:      #999999;
@@ -27,7 +31,7 @@ $link:          black;
 
 // Fonts
 // -----------
-$sans:          'Open Sans', Arial, Helvetica, sans-serif;
+$sans:          'Roboto', Arial, Helvetica, sans-serif;
 $codeFont:      'Cousine', sans-serif;
 
 // Image paths
@@ -36,626 +40,424 @@ $icSpritePath:  "/images/icons_40x40.png";
 $ipSpritePath:  "/images/icons_18x18.png";
 
 
-@import url('//fonts.googleapis.com/css?family=Open+Sans:400,700,300');
 @import url('//fonts.googleapis.com/css?family=Cousine:400,700');
 
+// Imports for specific pages
+// ----------------------------
+@import "sponsors";
 
-// Classes
+
+// Generic classes: navigation and default layout
 // --------------------------------------------------
-html {
+html, .wrapper {
   height: 100%;
 }
 
 body {
-  background: $black;
-  color: $text;
+  background: $white;
+  color: $primary-text;
   font-family: $sans;
   height: 100%;
   margin: 0px;
 }
 
-div, p, a, ul, li, header, section, article, nav, footer {
-  @include box-sizing(border-box);
-}
+// div, p, a, ul, li, header, section, article, nav, footer {
+//   @include box-sizing(border-box);
+// }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
-  color: $version;
-}
+// h1, h2, h3, h4, h5, h6 {
+//   font-weight: 300;
+//   color: $version;
+// }
 
-h1 {
-  font-size: 40px;
-}
+// h1 {
+//   font-size: 40px;
+// }
 
-h2 {
-  font-size: 32px;
-  margin-top: 30px;
-}
+// h2 {
+//   font-size: 32px;
+//   margin-top: 30px;
+// }
 
-h3 {
-  font-size: 24px;
-  margin-top: 30px;
-}
+// h3 {
+//   font-size: 24px;
+//   margin-top: 30px;
+// }
 
-p {
-  margin-bottom: 20px;
-}
+// p {
+//   margin-bottom: 20px;
+// }
 
-p, .post {
-  a {
-    font-weight: normal;
-    border-bottom: 1px solid black;
+// p, .post {
+//   a {
+//     font-weight: normal;
+//     border-bottom: 1px solid black;
 
-    &:hover {
-      background-color: $grayLight;
-    }
-  }
-}
+//     &:hover {
+//       background-color: $grayLight;
+//     }
+//   }
+// }
 
-a {
-  color: $link;
-  font-weight: bold;
-  text-decoration: none;
+// a {
+//   color: $link;
+//   font-weight: bold;
+//   text-decoration: none;
 
-  &:hover {
-    color: $text !important;
-    text-decoration: none;
-  }
-}
-.wrapper {
-  background: $white;
-  width: 960px;
-  margin: 0 auto;
-}
+//   &:hover {
+//     color: $text !important;
+//     text-decoration: none;
+//   }
+// }
 
-header {
-  @include clearfix;
-  padding: 35px 20px 20px;
-  border-bottom: 1px solid $grayLight;
-  height: 250px;
+//   img {
+//     margin-left: auto;
+//     margin-right: auto;
+//     display: block;
+//   }
 
-  img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
+//   a.ico {
+//     color: $version;
+//     float: right;
+//     margin-top: 160px;
+//     margin-right: -40px;
+//   }
+// }
+.wrapper nav {
+  height: 96px;
+  background-color: $white;
+  @include box-shadow(none);
+  border-bottom: 1px solid $separator;
 
-  a.ico {
-    color: $version;
-    float: right;
-    margin-top: 160px;
-    margin-right: -40px;
-  }
-}
+  #logo-container {
+    background-color: $white;
+    @include border-radius(50%);
+    margin: 15px;
+    height: 66px;
+    width: 66px;
+    padding: 3px;
 
-nav {
-  float: right;
-
-  ul.menu {
-
-    li {
-        margin-bottom: 12px;
-        position: relative;
-
-      a {
-        display: block;
-        font-weight: bold;
-        font-size: 10px;
-        font-family: "Open Sans";
-        text-align: center;
-        color: #b5b5b5;
-
-        &:hover {
-          color: black;
-
-          .git       { background-position:   0px  -40px }
-          .download  { background-position: -40px  -40px }
-          .bookmark  { background-position: -80px  -40px }
-        }
-      }
-
-      .arrow {
-        @include transition(all ease .3s);
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        width: 0px;
-        height: 46px;
-        overflow: hidden;
-
-          &:hover {
-          width:160px;
-          left: -160px;
-          }
-
-      }
-
-      .download-options {
-        background: $grayLight;
-        width: 140px;
-        height: 46px;
-        position: relative;
-
-        div {
-          line-height: 14px;
-          text-align: center;
-          display: inline-block;
-          width: 70px;
-          height: 46px;
-          padding: 5px;
-          span {
-          font-size: 10px;
-          }
-          a {
-            font-size: 14px;
-            font-weight: bold;
-          }
-
-          &:first-child {
-            border-right: 1px solid $white;
-          }
-        }
-
-        &:after {
-          content:'';
-          display: table;
-          width: 0px;
-          height: 0px;
-          position: absolute;
-          right: -19px;
-          top: 0px;
-          border-style: solid;
-          border-width: 23px 0 23px 20px;
-          border-color: transparent transparent transparent $grayLight;
-        }
-      }
-
-      &.menu:hover {
-        i { background-position: -40px -40px }
-        .arrow {
-          width:160px;
-          left: -160px;
-        }
-      }
-    }
-  }
-
-}
-
-
-section {
-  padding: 50px 80px 70px;
-  border-bottom: 1px solid $grayLight;
-
-  h1 {
-    margin-bottom: 40px;
-  }
-
-  .meta {
-    margin-top: -40px;
-    margin-bottom: 40px;
-    color: $version;
-  }
-}
-
-.post {
-  ul {
-    margin-left: 30px;
-    margin-bottom: 20px;
-    li {
-      list-style: disc;
-    }
-  }
-}
-
-.code_section {
-  margin-bottom: 50px;
-  margin: 0 -80px 4px -90px;
-  border-left: 10px solid $version;
-}
-
-.code_section pre {
-  padding: 20px 0 20px 80px;
-  margin: 0;
-  border: 0;
-}
-
-code {
-  font-family: $codeFont;
-  font-weight: bold;
-  font-size: 14px;
-  // &:before {
-  //   content: '"';
-  // }
-  // &:after {
-  //   content: '"';
-  // }
-}
-
-pre {
-  padding: 20px;
-}
-
-pre.code {
-  background-color: $grayLight;
-}
-
-ul.goals li {
-  padding-left: 22px;
-  margin-bottom: 6px;
-  position: relative;
-
-  &:before {
-    content:'';
-    display: table;
-    background: url($ipSpritePath) no-repeat 0px 0px;
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
-    position: absolute;
-    left: 0px;
-    top: 4px;
-  }
-}
-
-ul.spaced {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.blog_roll {
-  @include clearfix;
-
-  article {
-    padding-right: 30px;
-    margin-bottom: 30px;
-    height: 60px;
-    width: 50%;
-    float: left;
-
-    .thumbnail {
-      background: $version;
-      text-align: center;
+    #logo-canvas {
       width: 60px;
       height: 60px;
-      margin-right: 16px;
-      float: left;
-      position: relative;
-
-      p {
-        font-family: "Consolas", courier, monotype;
-        font-size: 35px;
-        line-height: 65px;
-        color: $white;
-        text-shadow: 0px 2px rgba(0,0,0,.5);
-        position: relative;
-      }
-
-      &:before {
-        content:'';
-        display: table;
-        position: absolute;
-        width: 0px;
-        height: 0px;
-        border-style: solid;
-        border-width: 0 0 60px 60px;
-        border-color: transparent transparent #a4a4a4 transparent;
-      }
     }
+  }
 
-    h3 {
-      color: $black;
-      font-size: 18px;
-      font-weight: normal;
-      margin-top: -4px;
-    }
+  ul#nav-desktop li a {
+    height: 96px;
+    line-height: 96px;
+    color: $black;
+    padding: 0;
+    margin: 0 15px;
 
-    p {
-      font-size: 13px;
+    &.selected {
+      border-bottom: 5px solid $black;
     }
   }
 }
 
-
-footer {
-  background: $grayLight;
-  font-size: 9px;
-  padding: 20px 80px;
-  text-align: right;
-
-  a {
-    color: $grayDark;
-    text-align: left;
-    display: inline-block;
-    margin-left: 20px;
-    &:hover {
-      color: $grayDark !important;
-    }
-  }
-  img {
-    display: block;
-  }
-}
-
-
-
-
-// Sprites
-// --------------------------------------------------
-
-i.ic {
-  background: url($icSpritePath) no-repeat 40px 40px;
-  background-size: 120px 80px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-
-  &.git       { background-position:   0px  0px }
-  &.download  { background-position: -40px  0px }
-  &.bookmark  { background-position: -80px  0px }
-}
-
-i.ip {
-  background: url($ipSpritePath) no-repeat 18px 18px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 18px;
-  height: 18px;
-  line-height: 18px;
-  margin-right: -3px;
-
-  &.ok        { background-position:   0px  0px }
-  &.document  { background-position: -18px  0px }
-  &.group     { background-position: -36px  0px }
-  &.info      { background-position: -54px  0px }
-  &.down      { background-position: -72px  0px }
-  &.downg     { background-position: -90px  0px }
-
-}
-
-.logo {
-  float: left;
-  margin-left: 35px;
-}
-
-.logo > * {
-  display:inline-block;
-  vertical-align:middle;
-}
-.logo {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-
-#logo-text {
-  font-size: 12px;
-  color: #b5b5b5;
-  position: absolute;
-  right: 50%;
-  margin-right: 152px;
-  margin-top: 93px;
-}
-
-#logo-canvas {
-  width: 108px;
-  height: 108px;
-}
-
-#disqus_thread {
-  margin-top: 40px;
-}
-
-#fund {
-  background-color: #B0B0B0;
-  color: #4C4C4C;
-  font-family: $sans;
+.header-section {
+  min-height: 75%;
   width: 100%;
-  height: 40px;
-  padding-top: 8px;
 
-  .inner {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+  .title {
+    color: $black;
+    font-size: 72px;
+    margin: 30px auto;
   }
-
-  .right {
-    float: right;
-
-    .text {
-      margin-right: 10px;
-    }
+  .subtitle {
+    font-size: 18px;
+    max-width: 500px;
+    margin: 0 auto;
   }
-
-  a {
-    color: #4C4C4C;
-    font-weight: normal;
-
-    &.badge {
-      padding: 2px 8px;
-      margin-left: 10px;
-      text-align: center;
-      float: right;
-      box-sizing: border-box;
-      line-height: 1.2rem;
-
-      font-weight: 400;
-      font-size: 0.8rem;
-      color: #fff;
-      background-color: $gray;
-      border-radius: 4px;
-      text-shadow: 0px 1px 1px #333;
-      &:hover {
-        color: #fff !important;
-        background-color: $text;
-      }
-    }
-
+  #content {
+    display: block;
+    width: 100%;
   }
 }
 
-.sponsor {
-  @include clearfix;
-  position: relative;
-  clear: both;
-  margin-bottom: 30px;
-
-  .col-logo {
-    width: 160px;
-    position: relative;
-    .logo {
-      float: right;
-      margin-right: 10px;
-    }
-    img {
-      border-radius: 50%;
-      max-width: none;
-    }
-  }
-  .col-logo, .name {
-    float: left;
-  }
-  .this_month, .legend {
-    float: right;
-    clear: right;
-  }
-  .legend {
-    font-size: 13px;
-    color: #b5b5b5;
-    text-transform: uppercase;
-  }
-  a {
-    font-weight: normal;
-    &:hover {
-      text-decoration: underline;
+// Changes to the default layout for main page
+.wrapper.main {
+  .header-section {
+    background-color: $black;
+    h1.title {
+      color: $white;
     }
   }
 
-  &.level-250 {
-    img {
-      height: 150px;
-      width: 150px;
-    }
-    .name, .this_month {
-      line-height: 130px;
-      height: 70px;
-      font-size: 24px;
-    }
-    .legend {
-      margin-top: 7px;
-    }
-  }
+  nav {
+    background-color: $black;
+    border-bottom: 0px;
 
-  &.level-75 {
-    img {
-      height: 75px;
-      width: 75px;
-    }
-    .name, .this_month {
-      line-height: 65px;
-      height: 35px;
-      font-size: 20px;
-    }
-    .legend {
-      margin-top: 4px;
-    }
-  }
-
-  &.level-25, &.level-10 {
-    .name, .name a {
-      font-weight: bold;
-    }
-  }
-}
-
-section.sponsors {
-  background-color: $grayLight;
-  padding: 20px 80px;
-
-  h1 {
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-
-  .sponsors-list {
-    text-align: center;
-    a {
-      display: inline-block;
-      width: 180px;
-      margin: 5px 10px;
-      color: #b5b5b5;
-      vertical-align: top;
-    }
-
-    img {
-      width: 160px;
-      border-radius: 50%;
-      max-width: none;
-      margin: 4px;
-
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-    }
-  }
-
-  .footer {
-    @include clearfix;
-  }
-
-  .all-sponsors {
-    color: #b5b5b5;
-    float: right;
-    font-weight: normal;
-  }
-}
-
-body.community {
-  section:not(:first-of-type) {
-    padding: 40px 80px;
-    &.callout {
-      background-color: $grayLight;
-
-      h2 {
-        color: $black;
-        font-weight: 400;
+    ul#nav-desktop li a {
+      color: $white;
+      &.selected {
+        border-bottom: 5px solid $white;
       }
     }
   }
-
-  h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-  }
 }
 
-// fullCalendar customization
-.fc {
-  .fc-list-view { // borde de todo el componente
+// section {
+//   padding: 50px 80px 70px;
+//   border-bottom: 1px solid $grayLight;
 
-  }
-  .fc-list-heading, .fc-event-dot {
-    display: none;
-  }
-  tbody tr:nth-of-type(2) td {
-    border-top-width: 0;
-  }
+//   h1 {
+//     margin-bottom: 40px;
+//   }
 
-  // if there are more than 6 events, the view scrolls
-  // then you have 12 tr's (invisible heading + item)
-  // so we don't show double border then
-  
-  // see http://stackoverflow.com/a/10316325/641451 for CSS rule
-  tbody tr:last-of-type:nth-of-type(n+12) td {
-    border-bottom-width: 0;
-  }
-  .fc-list-item td {
-    border-bottom-width: 1px;
-  }
-}
+//   .meta {
+//     margin-top: -40px;
+//     margin-bottom: 40px;
+//     color: $version;
+//   }
+// }
+
+// .post {
+//   ul {
+//     margin-left: 30px;
+//     margin-bottom: 20px;
+//     li {
+//       list-style: disc;
+//     }
+//   }
+// }
+
+// .code_section {
+//   margin-bottom: 50px;
+//   margin: 0 -80px 4px -90px;
+//   border-left: 10px solid $version;
+// }
+
+// .code_section pre {
+//   padding: 20px 0 20px 80px;
+//   margin: 0;
+//   border: 0;
+// }
+
+// code {
+//   font-family: $codeFont;
+//   font-weight: bold;
+//   font-size: 14px;
+//   // &:before {
+//   //   content: '"';
+//   // }
+//   // &:after {
+//   //   content: '"';
+//   // }
+// }
+
+// pre {
+//   padding: 20px;
+// }
+
+// pre.code {
+//   background-color: $grayLight;
+// }
+
+// ul.goals li {
+//   padding-left: 22px;
+//   margin-bottom: 6px;
+//   position: relative;
+
+//   &:before {
+//     content:'';
+//     display: table;
+//     background: url($ipSpritePath) no-repeat 0px 0px;
+//     width: 18px;
+//     height: 18px;
+//     line-height: 18px;
+//     position: absolute;
+//     left: 0px;
+//     top: 4px;
+//   }
+// }
+
+// ul.spaced {
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+// }
+
+// .blog_roll {
+//   @include clearfix;
+
+//   article {
+//     padding-right: 30px;
+//     margin-bottom: 30px;
+//     height: 60px;
+//     width: 50%;
+//     float: left;
+
+//     .thumbnail {
+//       background: $version;
+//       text-align: center;
+//       width: 60px;
+//       height: 60px;
+//       margin-right: 16px;
+//       float: left;
+//       position: relative;
+
+//       p {
+//         font-family: "Consolas", courier, monotype;
+//         font-size: 35px;
+//         line-height: 65px;
+//         color: $white;
+//         text-shadow: 0px 2px rgba(0,0,0,.5);
+//         position: relative;
+//       }
+
+//       &:before {
+//         content:'';
+//         display: table;
+//         position: absolute;
+//         width: 0px;
+//         height: 0px;
+//         border-style: solid;
+//         border-width: 0 0 60px 60px;
+//         border-color: transparent transparent #a4a4a4 transparent;
+//       }
+//     }
+
+//     h3 {
+//       color: $black;
+//       font-size: 18px;
+//       font-weight: normal;
+//       margin-top: -4px;
+//     }
+
+//     p {
+//       font-size: 13px;
+//     }
+//   }
+// }
+
+
+// footer {
+//   background: $grayLight;
+//   font-size: 9px;
+//   padding: 20px 80px;
+//   text-align: right;
+
+//   a {
+//     color: $grayDark;
+//     text-align: left;
+//     display: inline-block;
+//     margin-left: 20px;
+//     &:hover {
+//       color: $grayDark !important;
+//     }
+//   }
+//   img {
+//     display: block;
+//   }
+// }
+
+
+
+
+// // Sprites
+// // --------------------------------------------------
+
+// i.ic {
+//   background: url($icSpritePath) no-repeat 40px 40px;
+//   background-size: 120px 80px;
+//   display: inline-block;
+//   vertical-align: middle;
+//   width: 40px;
+//   height: 40px;
+//   line-height: 40px;
+
+//   &.git       { background-position:   0px  0px }
+//   &.download  { background-position: -40px  0px }
+//   &.bookmark  { background-position: -80px  0px }
+// }
+
+// i.ip {
+//   background: url($ipSpritePath) no-repeat 18px 18px;
+//   display: inline-block;
+//   vertical-align: middle;
+//   width: 18px;
+//   height: 18px;
+//   line-height: 18px;
+//   margin-right: -3px;
+
+//   &.ok        { background-position:   0px  0px }
+//   &.document  { background-position: -18px  0px }
+//   &.group     { background-position: -36px  0px }
+//   &.info      { background-position: -54px  0px }
+//   &.down      { background-position: -72px  0px }
+//   &.downg     { background-position: -90px  0px }
+
+// }
+
+// #disqus_thread {
+//   margin-top: 40px;
+// }
+
+// #fund {
+//   background-color: #B0B0B0;
+//   color: #4C4C4C;
+//   font-family: $sans;
+//   width: 100%;
+//   height: 40px;
+//   padding-top: 8px;
+
+//   .inner {
+//     width: 960px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+
+//   .right {
+//     float: right;
+
+//     .text {
+//       margin-right: 10px;
+//     }
+//   }
+
+//   a {
+//     color: #4C4C4C;
+//     font-weight: normal;
+
+//     &.badge {
+//       padding: 2px 8px;
+//       margin-left: 10px;
+//       text-align: center;
+//       float: right;
+//       box-sizing: border-box;
+//       line-height: 1.2rem;
+
+//       font-weight: 400;
+//       font-size: 0.8rem;
+//       color: #fff;
+//       background-color: $gray;
+//       border-radius: 4px;
+//       text-shadow: 0px 1px 1px #333;
+//       &:hover {
+//         color: #fff !important;
+//         background-color: $primary-text;
+//       }
+//     }
+
+//   }
+// }
+
+// body.community {
+//   section:not(:first-of-type) {
+//     padding: 40px 80px;
+//     &.callout {
+//       background-color: $grayLight;
+
+//       h2 {
+//         color: $black;
+//         font-weight: 400;
+//       }
+//     }
+//   }
+
+//   h2 {
+//     margin-bottom: 20px;
+//     font-size: 24px;
+//   }
+// }
