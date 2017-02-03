@@ -1,14 +1,8 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@import url(pygment_black.css);
-@import url(pygment_white.css);
-@import url(materialize.css);
-
-@import
+@import "pygment_black",
+        "pygment_white",
+        "materialize",
         "mixins",
-        "reset"
-;
+        "reset";
 
 // Variables
 // --------------------------------------------------
@@ -33,7 +27,7 @@ $link:          black;
 // -----------
 $sans:          'Roboto', Arial, Helvetica, sans-serif;
 $codeFont:      'Cousine', sans-serif;
-@import url('//fonts.googleapis.com/css?family=Cousine:400,700');
+
 
 // Image paths
 // ------------

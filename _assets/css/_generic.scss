@@ -60,6 +60,10 @@ a {
   }
 }
 
+p a {
+  border-bottom: 1px solid $primary-text;
+}
+
 // h3 {
 //   font-size: 24px;
 //   margin-top: 30px;
