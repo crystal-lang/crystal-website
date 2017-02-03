@@ -1,0 +1,17 @@
+<div class="row {% if include.continues %}no-bottom-margin{% endif %}">
+  <div class="col">
+    <h2>{{ include.title }}</h2>
+
+    <p>{{ include.content }}</p>
+
+    <p>
+      <a href="{{ include.url }}" class="with-icon">
+        <i class="material-icons">{{ include.icon }}</i>
+        <span>{{ include.link_text }}</span>
+      </a>
+    </p>
+    {% unless include.continues %}
+      <hr class="squares" />
+    {% endunless %}
+  </div>
+</div>
