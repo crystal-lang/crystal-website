@@ -1,0 +1,22 @@
+footer {
+  margin-top: 60px;
+  border-top: 1px solid $light-gray;
+  height: 78px;
+  padding: 27px;
+  p.inline {
+    display: inline-block;
+  }
+  p.manas {
+    color: $black;
+    a {
+      color: $black;
+      &:hover {
+        color: $black;
+      }
+    }
+    a.logo {
+      margin-left: 10px;
+      border-bottom: 0;
+    }
+  }
+}
