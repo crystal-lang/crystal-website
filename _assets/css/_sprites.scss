@@ -33,6 +33,15 @@
 
 // }
 
+i.manas {
+  background: url(asset_path("m.svg"));
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
 .material-icons {
   vertical-align: bottom;
 }
