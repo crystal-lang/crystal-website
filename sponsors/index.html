@@ -22,10 +22,10 @@ subtitle: These are the companies and individuals contributing a monthly amount 
                 <div class="logo">
                   {% if sp.url %}
                     <a href="{{sp.url}}" target="_blank">
-                      <img src="{{sp.logo}}" />
+                      {% img '{{ assets[sp.logo].filename }}' %}
                     </a>
                   {% else %}
-                    <img src="{{sp.logo}}" />
+                    {% img '{{ assets[sp.logo].filename }}' %}
                   {% endif %}
                 </div>
               {% else %}
