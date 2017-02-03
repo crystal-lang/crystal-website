@@ -1,0 +1,17 @@
+a.with-icon {
+  color: $black;
+  text-decoration: none;
+  border-bottom: 0;
+
+  &:hover {
+    color: $black;
+    text-decoration: none;
+    span {
+      border-bottom: 1px solid $black;
+    }
+  }
+}
+
+.row.no-bottom-margin {
+  margin-bottom: 0;
+}

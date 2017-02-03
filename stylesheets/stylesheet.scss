@@ -16,7 +16,7 @@ $white:         #ffffff;
 $black:         #000000;
 $primary-text:  #777777;
 $separator:     #EBEBEB;
-
+$light-gray:    #D7D7D7;
 
 $gray:          #5a5a5a;
 $grayLight:     #e5e5e5;
@@ -33,6 +33,7 @@ $link:          black;
 // -----------
 $sans:          'Roboto', Arial, Helvetica, sans-serif;
 $codeFont:      'Cousine', sans-serif;
+@import url('//fonts.googleapis.com/css?family=Cousine:400,700');
 
 // Image paths
 // ------------
@@ -40,178 +41,17 @@ $icSpritePath:  "/images/icons_40x40.png";
 $ipSpritePath:  "/images/icons_18x18.png";
 
 
-@import url('//fonts.googleapis.com/css?family=Cousine:400,700');
-
-// Imports for specific pages
-// ----------------------------
-@import "sponsors";
-
-
 // Generic classes: navigation and default layout
 // --------------------------------------------------
-html, .wrapper {
-  height: 100%;
-}
+@import "generic";
 
-body {
-  background: $white;
-  color: $primary-text;
-  font-family: $sans;
-  height: 100%;
-  margin: 0px;
-}
 
-// div, p, a, ul, li, header, section, article, nav, footer {
-//   @include box-sizing(border-box);
-// }
+// Imports for specific pages and details
+// -----------------------------------------
+@import "sponsors",
+        "sprites",
+        "community";
 
-// h1, h2, h3, h4, h5, h6 {
-//   font-weight: 300;
-//   color: $version;
-// }
-
-// h1 {
-//   font-size: 40px;
-// }
-
-// h2 {
-//   font-size: 32px;
-//   margin-top: 30px;
-// }
-
-// h3 {
-//   font-size: 24px;
-//   margin-top: 30px;
-// }
-
-// p {
-//   margin-bottom: 20px;
-// }
-
-// p, .post {
-//   a {
-//     font-weight: normal;
-//     border-bottom: 1px solid black;
-
-//     &:hover {
-//       background-color: $grayLight;
-//     }
-//   }
-// }
-
-// a {
-//   color: $link;
-//   font-weight: bold;
-//   text-decoration: none;
-
-//   &:hover {
-//     color: $text !important;
-//     text-decoration: none;
-//   }
-// }
-
-//   img {
-//     margin-left: auto;
-//     margin-right: auto;
-//     display: block;
-//   }
-
-//   a.ico {
-//     color: $version;
-//     float: right;
-//     margin-top: 160px;
-//     margin-right: -40px;
-//   }
-// }
-.wrapper nav {
-  height: 96px;
-  background-color: $white;
-  @include box-shadow(none);
-  border-bottom: 1px solid $separator;
-
-  #logo-container {
-    background-color: $white;
-    @include border-radius(50%);
-    margin: 15px;
-    height: 66px;
-    width: 66px;
-    padding: 3px;
-
-    #logo-canvas {
-      width: 60px;
-      height: 60px;
-    }
-  }
-
-  ul#nav-desktop li a {
-    height: 96px;
-    line-height: 96px;
-    color: $black;
-    padding: 0;
-    margin: 0 15px;
-
-    &.selected {
-      border-bottom: 5px solid $black;
-    }
-  }
-}
-
-.header-section {
-  min-height: 75%;
-  width: 100%;
-
-  .title {
-    color: $black;
-    font-size: 72px;
-    margin: 30px auto;
-  }
-  .subtitle {
-    font-size: 18px;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  #content {
-    display: block;
-    width: 100%;
-  }
-}
-
-// Changes to the default layout for main page
-.wrapper.main {
-  .header-section {
-    background-color: $black;
-    h1.title {
-      color: $white;
-    }
-  }
-
-  nav {
-    background-color: $black;
-    border-bottom: 0px;
-
-    ul#nav-desktop li a {
-      color: $white;
-      &.selected {
-        border-bottom: 5px solid $white;
-      }
-    }
-  }
-}
-
-// section {
-//   padding: 50px 80px 70px;
-//   border-bottom: 1px solid $grayLight;
-
-//   h1 {
-//     margin-bottom: 40px;
-//   }
-
-//   .meta {
-//     margin-top: -40px;
-//     margin-bottom: 40px;
-//     color: $version;
-//   }
-// }
 
 // .post {
 //   ul {
@@ -352,44 +192,6 @@ body {
 //   }
 // }
 
-
-
-
-// // Sprites
-// // --------------------------------------------------
-
-// i.ic {
-//   background: url($icSpritePath) no-repeat 40px 40px;
-//   background-size: 120px 80px;
-//   display: inline-block;
-//   vertical-align: middle;
-//   width: 40px;
-//   height: 40px;
-//   line-height: 40px;
-
-//   &.git       { background-position:   0px  0px }
-//   &.download  { background-position: -40px  0px }
-//   &.bookmark  { background-position: -80px  0px }
-// }
-
-// i.ip {
-//   background: url($ipSpritePath) no-repeat 18px 18px;
-//   display: inline-block;
-//   vertical-align: middle;
-//   width: 18px;
-//   height: 18px;
-//   line-height: 18px;
-//   margin-right: -3px;
-
-//   &.ok        { background-position:   0px  0px }
-//   &.document  { background-position: -18px  0px }
-//   &.group     { background-position: -36px  0px }
-//   &.info      { background-position: -54px  0px }
-//   &.down      { background-position: -72px  0px }
-//   &.downg     { background-position: -90px  0px }
-
-// }
-
 // #disqus_thread {
 //   margin-top: 40px;
 // }
@@ -440,24 +242,5 @@ body {
 //       }
 //     }
 
-//   }
-// }
-
-// body.community {
-//   section:not(:first-of-type) {
-//     padding: 40px 80px;
-//     &.callout {
-//       background-color: $grayLight;
-
-//       h2 {
-//         color: $black;
-//         font-weight: 400;
-//       }
-//     }
-//   }
-
-//   h2 {
-//     margin-bottom: 20px;
-//     font-size: 24px;
 //   }
 // }
