@@ -22,6 +22,14 @@ h2 {
   margin: 30px 0;
 }
 
+h3 {
+  font-size: 100%;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: $black;
+}
+
 hr.squares {
   border-bottom: 1px solid $light-gray;
   border-top: 0;
@@ -62,20 +70,6 @@ a {
 p > a, td > a {
   border-bottom: 1px solid $primary-text;
 }
-
-// h3 {
-//   font-size: 24px;
-//   margin-top: 30px;
-// }
-
-//   a.ico {
-//     color: $version;
-//     float: right;
-//     margin-top: 160px;
-//     margin-right: -40px;
-//   }
-// }
-
 
 .wrapper nav {
   height: 96px;
@@ -154,25 +148,3 @@ p > a, td > a {
   }
 }
 
-footer {
-  margin-top: 60px;
-  border-top: 1px solid $light-gray;
-  height: 78px;
-  padding: 27px;
-  p.inline {
-    display: inline-block;
-  }
-  p.manas {
-    color: $black;
-    a {
-      color: $black;
-      &:hover {
-        color: $black;
-      }
-    }
-    a.logo {
-      margin-left: 10px;
-      border-bottom: 0;
-    }
-  }
-}
