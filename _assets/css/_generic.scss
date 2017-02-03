@@ -52,7 +52,6 @@ hr.squares {
 a {
   color: $primary-text;
   text-decoration: none;
-  border-bottom: 1px solid $primary-text;
 
   &:hover {
     color: $primary-text;
@@ -60,7 +59,7 @@ a {
   }
 }
 
-p a {
+p > a, td > a {
   border-bottom: 1px solid $primary-text;
 }
 
