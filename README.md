@@ -4,7 +4,7 @@ Powered by [Jekyll](https://jekyllrb.com/)
 
 ## Development setup
 
-- Checkout the repositorie
+- Checkout the repository
 - Run `bundle install`
 - Start the server with `bundle exec jekyll serve`
 - Open a broswer in `localhost:4000`
