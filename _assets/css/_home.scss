@@ -16,6 +16,24 @@
   }
 }
 
+.community-list {
+  text-align: center;
+
+  .item {
+    display: inline-block;
+    margin: 30px;
+    text-align: left;
+    span.small {
+      display: block;
+    }
+    span.with_icon {
+      margin: 5px 0;
+      display: block;
+      color: $black;
+    }
+  }
+}
+
 .banner {
   border-bottom: 1px solid $light-gray;
 
