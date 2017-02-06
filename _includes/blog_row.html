@@ -1,0 +1,19 @@
+<div class="row blog-post">
+  <div class="col s12">
+    <div class="author small">
+      <span class="author_name">{{ include.post.author }}</span>
+      <span class="date">{{ include.post.date | date_to_string }}</span>
+    </div>
+
+    <a href="{{ include.post.url }}">
+      <h3 class="title">{{ include.post.title }}</h3>
+      <p class="summary">{{ include.post.summary }}</p>
+    </a>
+
+    <p>
+      <i class="material-icons">chat_bubble_outline</i>
+      <span class="disqus-comment-count" data-disqus-identifier="{{include.post.id}}"></span>
+    </p>
+    <hr class="squares" />
+  </div>
+</div>

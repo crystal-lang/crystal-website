@@ -48,25 +48,55 @@ custom_body_classes:
 
 <div class="row">
   <div class="col s12">
-    <h2 id='blog'>Entries from our blog</h2>
-    <div class='blog_roll'>
-      {% for post in site.posts[0..2] %}
-      <article>
-        <div class='thumbnail'>
-          <p>{{ post.thumbnail }}</p>
-        </div>
-        <h3>
-          <a href='{{post.url}}'>{{ post.title }}</a>
-        </h3>
-        <p>{{ post.summary }}</p>
-      </article>
-      {% endfor %}
-    </div>
+    <h2>Articles from our blog</h2>
+    {% for post in site.posts limit: 3 | sort 'page.date' %}
+    {% include blog_row.html post=post %}
+    {% endfor %}
+    <p><a href="/blog">More articles</a></p>
   </div>
 </div>
 
 <div class="row">
   <div class="col s12">
     <h2>Release Notes</h2>
+    <table class="bordered">
+      <tbody>
+        {% for post in site.posts limit: 10 | sort 'page.date' %}
+          <tr>
+            <td></td>
+            <td>{{ post.title }}</td>
+            <td>{{ post.date | date_to_string }}</td>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row banner">
+  <div class="col s12">
+    <div class="line-through">
+      <div class="flag">
+        <h3>Community channels</h3>
+        <a href="/community">Show all</a>
+      </div>
+    </div>
+    <div class='community-list'>
+      <a href='https://github.com/crystal-lang/crystal/' target='_blank' class="item">
+        <span class="small">Code repository</span>
+        <span class="with_icon">crystal-lang/crystal</span>
+      </a>
+      <a href='https://groups.google.com/forum/#!forum/crystal-lang' target='_blank' class="item">
+        <span class="small">General discussion</span>
+        <span class="with_icon">crystal-lang</span>
+      </a>
+      <a href='https://gitter.im/crystal-lang/crystal' target='_blank' class="item">
+        <span class="small">Chat room</span>
+        <span class="with_icon">crystal-lang/crystal</span>
+      </a>
+      <a href='https://twitter.com/CrystalLanguage' target='_blank' class="item">
+        <span class="small">General announcements and events</span>
+        <span class="with_icon">@CrystalLanguage</span>
+      </a>
+    </div>
   </div>
 </div>
