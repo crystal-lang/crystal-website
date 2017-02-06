@@ -1,92 +1,94 @@
-.sponsors-list {
-  text-align: center;
-}
-.sponsor {
-  display: inline-block;
-  margin: 40px 90px;
-  text-align: center;
-  position: relative;
-  img {
-    width: 96px;
-    height: 96px;
-    display: block;
-    @include grayscale(100%);
-    @include border-radius(50%);
-    margin: 20px auto 50px auto;
+.main {
+  .sponsors-list {
+    text-align: center;
   }
-}
-
-.community-list {
-  text-align: center;
-
-  .item {
+  .sponsor {
     display: inline-block;
-    margin: 30px;
-    text-align: left;
-    span.small {
+    margin: 40px 90px;
+    text-align: center;
+    position: relative;
+    img {
+      width: 96px;
+      height: 96px;
       display: block;
-    }
-    span.with_icon {
-      margin: 5px 0;
-      display: block;
-      color: $black;
+      @include grayscale(100%);
+      @include border-radius(50%);
+      margin: 20px auto 50px auto;
     }
   }
-}
 
-.banner {
-  border-bottom: 1px solid $light-gray;
+  .community-list {
+    text-align: center;
 
-  .line-through {
-    width: 100%;
-    position: relative;
-    &:before {
-      border-top: 1px solid $light-gray;
-      content:"";
-      position: absolute;
-      top: 50%; left: 0; right: 0; bottom: 0;
-      width: 100%;
-      z-index: -1;
-    }
-  }
-  .flag {
-    border-top: 1px solid $light-gray;
-    border-bottom: 1px solid $light-gray;
-    z-index: 1;
-    display: inline;
-    padding: 8px 5px;
-    background-color: $white;
-    margin: 0 40%;
-    line-height: 36px;
-    position: relative;
-    top: -9px;
-    h3 {
+    .item {
       display: inline-block;
+      margin: 30px;
+      text-align: left;
+      span.small {
+        display: block;
+      }
+      span.with_icon {
+        margin: 5px 0;
+        display: block;
+        color: $black;
+      }
+    }
+  }
+
+  .banner {
+    border-bottom: 1px solid $light-gray;
+
+    .line-through {
+      width: 100%;
+      position: relative;
+      &:before {
+        border-top: 1px solid $light-gray;
+        content:"";
+        position: absolute;
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 100%;
+        z-index: -1;
+      }
+    }
+    .flag {
+      border-top: 1px solid $light-gray;
+      border-bottom: 1px solid $light-gray;
+      z-index: 1;
+      display: inline;
+      padding: 8px 5px;
       background-color: $white;
-    }
-    a {
-      border-bottom: 1px solid $primary-text;
-      margin-left: 8px;
-    }
-    &:before, &:after {
-      content: "";
-      border: 1px solid $light-gray;
-      background-color: $white;
-      height: 37px;
-      width: 39px;
-      position: absolute;
-      bottom: -1px;
-      z-index: -1;
-    }
-    &:before {
-      border-right: 0;
-      @include border-radius(50% 0 0 50%);
-      left: -16px;
-    }
-    &:after {
-      border-left: 0;
-      @include border-radius(0 50% 50% 0);
-      right: -16px;
+      margin: 0 40%;
+      line-height: 36px;
+      position: relative;
+      top: -9px;
+      h3 {
+        display: inline-block;
+        background-color: $white;
+      }
+      a {
+        border-bottom: 1px solid $primary-text;
+        margin-left: 8px;
+      }
+      &:before, &:after {
+        content: "";
+        border: 1px solid $light-gray;
+        background-color: $white;
+        height: 37px;
+        width: 39px;
+        position: absolute;
+        bottom: -1px;
+        z-index: -1;
+      }
+      &:before {
+        border-right: 0;
+        @include border-radius(50% 0 0 50%);
+        left: -16px;
+      }
+      &:after {
+        border-left: 0;
+        @include border-radius(0 50% 50% 0);
+        right: -16px;
+      }
     }
   }
 }
