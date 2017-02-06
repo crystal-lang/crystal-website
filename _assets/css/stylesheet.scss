@@ -1,4 +1,4 @@
-@import "pygment_black",
+@import
         "pygment_white",
         "materialize",
         "mixins",
@@ -45,7 +45,9 @@ $ipSpritePath:  "/images/icons_18x18.png";
 // -----------------------------------------
 @import "sponsors",
         "sprites",
-        "community";
+        "community",
+        "pygment_overrides",
+        "home";
 
 
 // .post {

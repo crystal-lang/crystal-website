@@ -6,58 +6,67 @@ subtitle: Fast as C, slick as Ruby
 custom_body_classes:
   - main
 ---
-<div class='row'>
-  <h1>Syntax</h1>
-  <div class='code_section'>
-    {% include sample_code.md %}
+<div class="row">
+  <div class="col s12">
+    <h2>Syntax</h2>
+    <div class='code_section'>
+      {% include sample_code.md %}
+    </div>
   </div>
 </div>
-<div class='row sponsors'>
-  <h1>Crystal top Sponsors</h1>
-  <div class='sponsors-list'>
-    <a href='https://manas.tech/' target='_blank'>
-      <img src='/images/sponsors/manas.png' title='Manas'>
-      <br>
-      Manas Technology Solutions
-    </a>
-    <a href='http://www.protel.com.tr' target='_blank'>
-      <img src='/images/sponsors/protel.png' title='Protel'>
-      <br>
-      Protel
-      <br>
-    </a>
-    <a href='https://openredis.com' target='_blank'>
-      <img src='/images/sponsors/openredis.png' title='openredis'>
-      <br>
-      openredis
-      <br>
-    </a>
-  </div>
-  <div class='footer'>
-    <a class='all-sponsors' href='/sponsors'>Meet all our sponsors</a>
-  </div>
-</div>
-<div class='row'>
-  <h1>Community</h1>
-  <p>
-    <p>Crystal wouldn't be the same without the great community that gathered around it. And you can be part of it, too.</p>
 
-    <p>You can <a href="/community/">check here</a> how to get involved.</p>
-  </p>
+<div class="row">
+  <div class="col s12">
+    <h2>Performance</h2>
+  </div>
 </div>
-<div class='row'>
-  <h1 id='blog'>Entries from our blog</h1>
-  <div class='blog_roll'>
-    {% for post in site.posts %}
-    <article>
-      <div class='thumbnail'>
-        <p>{{ post.thumbnail }}</p>
+
+<div class="row banner">
+  <div class="col s12">
+    <div class="line-through">
+      <div class="flag">
+        <h3>Crystal top Sponsors</h3>
+        <a href="/sponsors">Meet all</a>
       </div>
-      <h3>
-        <a href='{{post.url}}'>{{ post.title }}</a>
-      </h3>
-      <p>{{ post.summary }}</p>
-    </article>
-    {% endfor %}
+    </div>
+    <div class='sponsors-list'>
+      <a href='https://manas.tech/' target='_blank' class="sponsor">
+        {% img '{{ assets["sponsors/manas.png"].filename }}' %}
+        <span class="small">Manas Technology Solutions</span>
+      </a>
+      <a href='http://www.protel.com.tr' target='_blank' class="sponsor">
+        {% img '{{ assets["sponsors/protel.png"].filename }}' %}
+        <span class="small">Protel</span>
+      </a>
+      <a href='https://openredis.com' target='_blank' class="sponsor">
+        {% img '{{ assets["sponsors/openredis.png"].filename }}' %}
+        <span class="small">openredis</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <h2 id='blog'>Entries from our blog</h2>
+    <div class='blog_roll'>
+      {% for post in site.posts[0..2] %}
+      <article>
+        <div class='thumbnail'>
+          <p>{{ post.thumbnail }}</p>
+        </div>
+        <h3>
+          <a href='{{post.url}}'>{{ post.title }}</a>
+        </h3>
+        <p>{{ post.summary }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <h2>Release Notes</h2>
   </div>
 </div>

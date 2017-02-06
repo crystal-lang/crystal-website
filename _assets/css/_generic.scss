@@ -71,6 +71,10 @@ p > a, td > a {
   border-bottom: 1px solid $primary-text;
 }
 
+.small {
+  font-size: 85%;
+}
+
 .wrapper nav {
   height: 96px;
   background-color: $white;
