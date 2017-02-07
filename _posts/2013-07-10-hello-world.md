@@ -2,7 +2,7 @@
 title: Hello World
 thumbnail: Hi
 summary: The famous Hello World program written in different ways in Crystal
-author: asterite, waj
+author: asterite,waj
 ---
 
 This is the simplest way to write the Hello World program in Crystal:

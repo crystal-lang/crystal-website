@@ -1,7 +1,10 @@
 <div class="row blog-post">
   <div class="col s12">
     <div class="author small">
-      <span class="author_name">{{ include.post.author }}</span>
+      {% assign authors = include.post.author | split: ',' %}
+      {% for author in authors %}
+        <span class="author_name">{{ site.data.blog_authors[author].name }}</span>
+      {% endfor %}
       <span class="date">{{ include.post.date | date_to_string }}</span>
     </div>
 

@@ -67,7 +67,7 @@ a {
   }
 }
 
-p > a, td > a {
+p > a {
   border-bottom: 1px solid $primary-text;
 }
 
@@ -105,6 +105,10 @@ p > a, td > a {
     border-bottom: 0;
 
     &.selected {
+      border-bottom: 5px solid $black;
+    }
+    &:hover {
+      background-color: transparent;
       border-bottom: 5px solid $black;
     }
   }
