@@ -1,18 +1,34 @@
-.blog-post{
-  .author {
-    .author_name {
-      color: $black;
-      display: block;
-    }
-    .date {
-      display: block;
-    }
+.author {
+  .author_name {
+    color: $black;
+    display: block;
   }
+  .date {
+    display: block;
+  }
+}
 
+.blog-post {
   .title {
     font-size: 22px;
   }
   p.summary {
     margin-top: 5px;
   }
+}
+
+.post-header {
+  width: 70%;
+  min-height: 50%;
+  margin: 0 auto;
+
+  .title {
+    width: 600px;
+    color: $black;
+    font-size: 48px;
+  }
+}
+
+.post-layout {
+  color: black;
 }
