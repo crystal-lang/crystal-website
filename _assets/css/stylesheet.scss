@@ -26,7 +26,7 @@ $link:          black;
 // Fonts
 // -----------
 $sans:          'Roboto', Arial, Helvetica, sans-serif;
-$codeFont:      'Cousine', sans-serif;
+$codeFont:      'Roboto Mono', monospace;
 
 
 // Image paths
@@ -46,6 +46,7 @@ $ipSpritePath:  "/images/icons_18x18.png";
 @import "sponsors",
         "sprites",
         "blog",
+        "media",
         "community",
         "pygment_overrides",
         "home";
