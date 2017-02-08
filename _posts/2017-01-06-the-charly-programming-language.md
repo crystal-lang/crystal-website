@@ -136,15 +136,15 @@ The Macro system was really handy in a lot places. It was mainly used to avoid b
 
 For some real examples of how the Macro system could be used, look at these files:
 
-* [syntax/ast.cr](https://github.com/KCreate/charly-lang/blob/22d0d4345d63ea494a41edc633f78b96bd73ff64/src/charly/syntax/ast.cr#L99-L138)
+* [syntax/ast.cr](https://github.com/charly-lang/charly/blob/c8827b1e52b844afc705d1a00033044d5d49f444/src/charly/syntax/ast.cr#L72-L85)
 
-* [interpreter/internals.cr](https://github.com/KCreate/charly-lang/blob/2b038e4f29ca85c4ccd7f606810c923937433a50/src/charly/interpreter/internals.cr#L19-L51)
+* [interpreter/internals.cr](https://github.com/charly-lang/charly/blob/67342f7430602ee89bfa8d10b2784f354c1c9d42/src/charly/interpreter/internals.cr#L19-L51)
 
 Crystal's standard library for example, uses macros to provide the [property](https://crystal-lang.org/api/master/Class.html#property%28%2Anames%29-macro) method. You can use it to avoid boilerplate when introducing new instance variables to your classes.
 
 # Conclusion
 
-In it’s current state, Charly is just a learning project for myself. At the moment, I wouldn’t recommend using it for anything serious beside as a learning resource on how to write an interpreter yourself. Charly is being developed on [GitHub](https://github.com/KCreate/charly-lang), so feel free to open any issues, propose new features or even send your own pull requests. Feedback in the comments of this article is also greatly appreciated.
+In it’s current state, Charly is just a learning project for myself. At the moment, I wouldn’t recommend using it for anything serious beside as a learning resource on how to write an interpreter yourself. Charly is being developed on [GitHub](https://github.com/charly-lang), so feel free to open any issues, propose new features or even send your own pull requests. Feedback in the comments of this article is also greatly appreciated.
 
 I’ve started using Crystal around August 2016 and I’m absolutely in love with it. It is one of the most expressive and rewarding languages I have ever written code in. If you haven’t used Crystal before, you should try it out now.
 
@@ -161,7 +161,7 @@ Thanks for reading!
 # Links & Sources
 
 * Leonard Schütz: [leonardschuetz.ch](https://leonardschuetz.ch)
-* Charly Programming Language: [KCreate/charly-lang](https://github.com/KCreate/charly-lang)
+* Charly Programming Language: [charly-lang/charly](https://github.com/charly-lang/charly)
 * GraphViz (used for AST visualisations): [www.graphviz.org](http://www.graphviz.org/)
 * "Ruby open file" on stackoverflow: [how-to-read-an-open-file-in-ruby](http://stackoverflow.com/questions/4475957/how-to-read-an-open-file-in-ruby)
-* Old test suite used for the ruby interpreter: [test/main.ch](https://github.com/KCreate/charly-lang/blob/92bc26e06068bdce926f01f1cd49a5faeb01180c/test/main.ch)
+* Old test suite used for the ruby interpreter: [test/main.ch](https://github.com/charly-lang/charly/blob/92bc26e06068bdce926f01f1cd49a5faeb01180c/test/main.ch)
