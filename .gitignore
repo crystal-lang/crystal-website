@@ -6,3 +6,4 @@ vendor/bundle
 .crystal
 .sass-cache
 .asset-cache
+.DS_store
