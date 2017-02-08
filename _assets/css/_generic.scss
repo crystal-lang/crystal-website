@@ -71,6 +71,13 @@ p > a {
   border-bottom: 1px solid $primary-text;
 }
 
+p.no-underline > a {
+  border-bottom: 0;
+  &:hover span {
+    border-bottom: 1px solid $primary-text;
+  }
+}
+
 .small {
   font-size: 85%;
 }

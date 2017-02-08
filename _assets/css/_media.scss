@@ -108,3 +108,38 @@
     }
   }
 }
+
+.media-guidelines {
+  ul.guidelines.general {
+    line-height: 1.8;
+    li {
+      list-style-type: square;
+      list-style-position: outside;
+      padding-left: 0.5em;
+      margin-left: 2em;
+    }
+  }
+
+  ul.guidelines.dos, ul.guidelines.donts {
+    list-style: none;
+    padding: 0;
+    li {
+      padding-left: 2.5em;
+    }
+    li:before {
+      font-family: 'Material Icons';
+      display: inline-block;
+      margin-left: -1.8em; /* same as padding-left set on li */
+      width: 1.8em; /* same as padding-left set on li */
+      top: 3px;
+      font-size: 18px;
+      position: relative;
+    }
+  }
+  ul.dos li:before {
+    content: "check";
+  }
+  ul.donts li:before {
+    content: "clear";
+  }
+}
