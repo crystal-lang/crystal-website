@@ -17,10 +17,10 @@ The whole program AST is traversed while the type inference binds AST nodes in o
 
 These are easy. Booleans, numbers, chars and values that are explicitly written have the type determined directly by syntax.
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 true # : Boolean
 1    # : Int32
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 **Variables**
 
@@ -30,9 +30,9 @@ Type inference algorithm register on each context which variables exist. So comp
 
 The very basic statement that determines the type of a variable is an assigment.
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 v = true
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 The AST node of the assignement has 1) a target (left hand side), 2) an expression (right hand side). When the type of the rhs is determined, the type inference algorithm states that the lhs should be able to store a value of that type.
 
@@ -46,13 +46,13 @@ The next picture shows the AST nodes, the context where the variables and their 
 
 Crystal supports [union types](http://en.wikipedia.org/wiki/Union_type). When a variable is assigned multiple times in the same context (but in different branches) its expected type is the one that can handle all the assignments. So if the following code is given:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 if false
   v = false
 else
   v = 2
 end
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 At the end of it `v` should be of type `Int32 | Boolean`.
 
