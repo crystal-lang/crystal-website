@@ -8,17 +8,17 @@ Previously on part 1 we saw the very basics of how the type inference algorithm 
 
 The next step is to introduce functions. _defs_ in crystal don't need to have type annotations. So a programmer could write the following:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 def dup(x)
   x + x
 end
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 `dup` definition does not generates any program by itself. Only when it is called the body is analyzed. Also, each time `dup` is called it could end up calling actually different versions of the compiled function. Wait... What? You could see every def as a _C++ template function_. At every invoke, thanks to the context information of the arguments the type inference (and the codegen later) will find or create a _typed def_. So each _typed def_ could be seen as a _C++ overload_.
 
 A _typed def_ is an specialization of the original _def_ for a given types of arguments. The next code use `dup` both for `String` and `Int32`.
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 def dup(x)
   x + x
 end
@@ -28,7 +28,7 @@ b = dup(a)
 
 n = 1
 m = dup(n)
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 <hr>
 
@@ -61,7 +61,7 @@ There is cache of _typed defs_ that allow to reuse them **if the types of the ar
 
 We will continue with a mutual recursive example to compute parity of a number.
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 def even(x)
   if x == 0
     true
@@ -79,4 +79,4 @@ def odd(x)
 end
 
 p = even(7)
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>

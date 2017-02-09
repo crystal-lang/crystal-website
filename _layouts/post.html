@@ -2,12 +2,22 @@
 layout: default
 ---
 <div class="row post-layout">
-  <div class="col s12">
+  <div class="col m2">
+    Share
+  </div>
+  <div class="col s12 m9">
     {{ content }}
   </div>
+  <div class="col m1"></div>
 </div>
 
-<div class="row" id='disqus_thread'></div>
+<div class="row disqus">
+  <div class="col m2"></div>
+  <div class="col s12 m9" id='disqus_thread'>
+    {{ content }}
+  </div>
+  <div class="col m1"></div>
+</div>
 <script>
   /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
   var disqus_shortname = 'crystal-lang'; // required: replace example with your forum shortname

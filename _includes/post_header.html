@@ -1,13 +1,17 @@
-<div class='post-header valign-wrapper'>
-  <div class='valign'>
-    <div class="author small">
-      {% assign authors = page.author | split: ',' %}
-      {% for author in authors %}
-        <span class="author_name">{{ site.data.blog_authors[author].name }}</span>
-      {% endfor %}
-      <span class="date">{{ page.date | date_to_string }}</span>
-    </div>
+<div class='post-header container'>
+  <div class='valign row'>
+    <div class="col m2"></div>
+    <div class="col s12 m9">
+      <div class="author small">
+        {% assign authors = page.author | split: ',' %}
+        {% for author in authors %}
+          <span class="author_name">{{ site.data.blog_authors[author].name }}</span>
+        {% endfor %}
+        <span class="date">{{ page.date | date_to_string }}</span>
+      </div>
 
-    <h1 class='title'>{{ page.title }}</h1>
+      <h1 class='title'>{{ page.title }}</h1>
+    </div>
+    <div class="col m1"></div>
   </div>
 </div>

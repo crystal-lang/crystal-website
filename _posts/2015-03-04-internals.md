@@ -22,10 +22,10 @@ These are Nil, Bool, Char and the various number types (Int32, Float64, etc.), S
 
 Let's check how a Bool is represented. For this, let's write this small program:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 # test.cr
 x = true
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 To see the generated LLVM we can use this command:
 
@@ -71,9 +71,9 @@ That is, the compiler represents a Bool as a single bit, which is pretty efficie
 
 Let's do the same for an int:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 x = 1
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 For `x` this time we will get:
 
@@ -91,10 +91,10 @@ is as efficient as possible.
 
 Let's see Symbol now:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 x = :one
 y = :two
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 Let's see the full LLVM IR code this time:
 
@@ -144,11 +144,11 @@ This makes symbols very attractive to use for small groups of constants, because
 
 A Pointer is a generic type that represents a typed pointer to some memory location. For example:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 x = Pointer(Int32).malloc(1_u64)
 x.value = 1
 x.value #=> 1
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 If you look at the generated LLVM IR code you will see a bunch of code. First, `x` is represented like this:
 
@@ -165,9 +165,9 @@ is very similar to what would be generated in C.
 
 A Tuple is a fixed-size, immutable sequence of values, where the types at each position are known at compile time.
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 x = {1, true}
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 Pieces of LLVM IR code for the above are:
 
@@ -181,11 +181,11 @@ As we can see, a tuple is represented as an [LLVM structure](http://llvm.org/doc
 packs values sequentially. This representation of tuples allows us, for example, to decompose an Int32 into its bytes,
 in this way:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 x = 1234
 ptr = pointerof(x) as {UInt8, UInt8, UInt8, UInt8}*
 puts ptr.value #=> {21, 205, 91, 7}
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 ### StaticArray
 
@@ -193,9 +193,9 @@ A StaticArray is a fixed-size, mutable sequence of values of a same type, alloca
 The prelude includes safe ways to create them, but since we are using a bare-bones prelude an unsafe (will be initialized
 to data containing garbage) way to create them is this:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 x = uninitialized Int32[8]
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 Its LLVM representation:
 
@@ -210,7 +210,7 @@ recommended type for all other operations.
 
 Here's an enum:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 enum Color
   Red
   Green
@@ -218,25 +218,25 @@ enum Color
 end
 
 x = Color::Green
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 An enum is, in a way, similar to Symbol: numbers associated to names so we can use names in our code instead of
 magic numbers. As expected, an enum is represented as an i32, that is four bytes, unless specified otherwise
 in its declaration:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 enum Color : UInt8
   Red
   Green
   Blue
 end
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 The nice thing about enums is that you can print them and you get their name, not their value:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 puts Color::Green #=> Green
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 This is done in a different way than with Symbol, [using compile-time reflection and macros](https://github.com/crystal-lang/crystal/blob/965d6959163717d72cd3703159d60004ebf7f266/src/enum.cr#L4).
 But, basically, an enum's `to_s` method is generated only when needed. But it's nice that an enum is memory and speed efficient
@@ -246,9 +246,9 @@ and also comfortable to use and to debug with (like, you get names instead of nu
 
 A Proc is a function pointer with an optional closure data information. For example:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 f = ->(x : Int32) { x + 1 }
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 This is a function pointer that receives an Int32 and returns an Int32. Since it doesn't capture any local variables
 it's not a closure. But the compiler still represents it like this:
@@ -304,10 +304,10 @@ entry:
 A bit harder to digest than the above examples, but it's basically assining a pointer to `~fun_literal_1` in the first
 position and `null` in the second. If our Proc captures a local variable:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 a = 1
 f = ->(x : Int32) { x + a }
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 The LLVM IR code changes:
 
@@ -370,17 +370,17 @@ will be allocated by the GC and released when no longer needed.
 
 Classes are objects too:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 x = Int32
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 Not surprisingly, a class is represented as an Int32:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 %x = alloca i32
 ...
 store i32 45, i32* %x
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 Because classes can't be created at runtime, and the compiler knows all classes, it assigns a type id to them
 and that way it can identify them.
@@ -393,14 +393,14 @@ struct's value is passed, copied, across variables and methods.
 
 Let's try it:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 class Point
   def initialize(@x, @y)
   end
 end
 
 x = Point.new(1, 2)
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 The LLVM IR code contains:
 
@@ -416,14 +416,14 @@ right now, but when we'll talk about how unions are represented it will make mor
 
 Let's see the same for a struct:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 struct Point
   def initialize(@x, @y)
   end
 end
 
 x = Point.new(1, 2)
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 The LLVM IR code contains:
 
@@ -441,13 +441,13 @@ Now comes the fun part: unions!
 
 Crystal supports unions of arbitrary types. For example you can have a variable that has either an Int32 or a Bool:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 if 1 == 2
   x = 3
 else
   x = false
 end
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 At the end of the `if` the variable `x` will either be `3` or `false`, which makes it type an Int32 or a Bool.
 The Crystal way to talk about a union is using a pipe, like this: `Int32 | Bool`. In the LLVM IR code we can find:
@@ -481,19 +481,19 @@ that are very common: nilable types.
 We didn't talk about Nil previously, but since it can only contain a single value, and you can't use `void` for a value,
 its represented as i1:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 x = nil # %x = alloca i1
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 Let's make now a union of nil and a class:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 if 1 == 2
   x = nil
 else
   x = Point.new(1, 2)
 end
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 If we check the LLVM IR code we will see this for x:
 
@@ -523,7 +523,7 @@ talked before). We try to minimize the runtime data needed for a program to work
 execution, sometimes sacrificing the resulting binary size (which doesn't grow a lot, either). For example, let's
 consider this class hierarchy:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 module Moo
   def foo
     1
@@ -544,7 +544,7 @@ class Baz < Bar
 end
 
 Baz.new.foo #=> 1
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 Wow, a big class hierarchy and even an included module, and two definitions for `foo`. By looking at the code,
 can you know which `foo` method will get invoked in this case?
@@ -570,10 +570,10 @@ entry:
 
 What happens if we create an instance of Bar and we invoke `foo` on it too:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 Bar.new.foo
 Baz.new.foo
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 Now the LLVM IR code contains this:
 
@@ -610,7 +610,7 @@ All of the above is possible because the compiler knows the exact type of `Bar.n
 if the compiler doesn't know this? Let's start with a simple union where types are not classes
 in the same hierarchy:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 class Foo
   def foo
     1
@@ -629,7 +629,7 @@ else
   obj = Bar.new
 end
 obj.foo
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 This time the compiler will generate code that more or less does this: before invoking `foo` on `obj`,
 check what type is `obj`. This can be known by loading the first field (the type id) of the pointer
@@ -650,12 +650,12 @@ Although you can do this without a class hierarchy, they are a very common way o
 
 Consider this class hierarchy:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 class Foo; end
 class Bar < Foo; end
 class Baz < Bar; end
 class Qux < Bar; end
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 Considering these types only, the compiler assigns type ids in a post-order way: first Baz gets assigned
 1, then Qux gets assigned 2, then Bar gets assigned 3, and finally Foo gets assigned 4. Also, the compiler
@@ -664,7 +664,7 @@ range 1-3, and for Foo it assigns the range 1-4.
 
 Now, consider this:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 class Foo
   def foo
     1
@@ -682,7 +682,7 @@ class Qux < Bar; end
 
 obj = # ... a union of the above types
 obj.foo
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 First, the compiler will type `obj` as `Foo+`, meaning it can be Foo or one of its sublcasses (read
 more about this [here](http://crystal-lang.org/docs/syntax_and_semantics/virtual_and_abstract_types.html)).
@@ -696,7 +696,7 @@ or one of its subclasses, we can solve this with at most two comparisons.
 
 Finally, an interesting aspect of Crystal is that method dispatch happens based on possibly many types:
 
-{% highlight ruby %}
+<div class="code_section">{% highlight ruby %}
 def foo(x : Int32, y : Char)
 end
 
@@ -707,7 +707,7 @@ def foo(x, y)
 end
 
 foo 1, 'a'
-{% endhighlight ruby %}
+{% endhighlight ruby %}</div>
 
 And this also works if the type of all arguments is not known at compile time. But... this blog post is getting a bit
 long and complex by now: there are many more micro-optimizations that we apply to your

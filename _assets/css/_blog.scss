@@ -18,12 +18,18 @@
 }
 
 .post-header {
-  width: 70%;
-  min-height: 50%;
-  margin: 0 auto;
+  min-height: 380px;
+  // Vertical align materialize helpers was breaking with font size changes
+  // So this is a hack to vertically align + add the margin that gets lost on changing the display property
+  // Container limits width to 70%, this is half that (left side) + the padding being ignored.
+  display: inline-flex;
+  margin-left: calc(15% + 12px);
+
+  .row {
+    margin: auto 5px;
+  }
 
   .title {
-    width: 600px;
     color: $black;
     font-size: 48px;
   }
@@ -31,4 +37,45 @@
 
 .post-layout {
   color: black;
+  a {
+    color: black;
+  }
+
+  ol {
+    padding: 0;
+    counter-reset: item;
+    list-style-type: none;
+    li {
+      padding-left: 2.5em;
+    }
+    li:before {
+      display: inline-block;
+      content: counter(item) ".";
+      counter-increment: item;
+      width: 1.5em;
+      margin-left: -1.5em;
+      font-weight: 500;
+      color: $primary-text;
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+    li {
+      padding-left: 2.5em;
+    }
+    li:before {
+      display: inline-block;
+      content: "▪";
+      width: 1.5em;
+      margin-left: -1.5em;
+      font-weight: 500;
+      color: $primary-text;
+    }
+  }
+}
+
+.disqus {
+  margin-top: 100px;
 }
