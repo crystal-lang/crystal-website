@@ -28,4 +28,4 @@ gems:
 
 # Default key only works for https://crystal-lang.org/ - for dev get yours at https://console.developers.google.com/apis/credentials
 google_calendar_api_key: 'AIzaSyCv-2Npqm0mwmwVCKX8xDPhwtP_8HwCWCE'
-google_calendar_id: 'manas.com.ar_jb15sr9uhrtjtge4jq94rb51kk@group.calendar.google.com'
+google_calendar_id: '0s0pa4k3fov71e4itn79atlmeg@group.calendar.google.com'
