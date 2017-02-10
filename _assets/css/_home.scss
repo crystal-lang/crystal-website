@@ -1,4 +1,10 @@
 .main {
+  canvas.delaunay {
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+  }
+
   .sponsors-list {
     text-align: center;
   }
