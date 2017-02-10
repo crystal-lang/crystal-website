@@ -74,6 +74,10 @@
       color: $primary-text;
     }
   }
+  h1 {
+    @extend h2;
+    margin-top: 100px;
+  }
 }
 
 .disqus {
