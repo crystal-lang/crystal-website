@@ -19,12 +19,9 @@
 
 .post-header {
   min-height: 380px;
-  // Vertical align materialize helpers was breaking with font size changes
-  // So this is a hack to vertically align + add the margin that gets lost on changing the display property
-  // Container limits width to 70%, this is half that (left side) + the padding being ignored.
-  display: inline-flex;
-  margin-left: calc(15% + 12px);
-
+  // Set it arbitrarily because helpers for vertical align (and alternatives I tried) all messed
+  // up with the alignement of the columns
+  padding-top: 120px;
   .row {
     margin: auto 5px;
   }
@@ -74,12 +71,28 @@
       color: $primary-text;
     }
   }
-  h1 {
+  h1, h2 {
     @extend h2;
     margin-top: 100px;
   }
 }
 
+pre {
+  margin: 0 2em;
+}
+
 .disqus {
   margin-top: 100px;
+}
+
+.share {
+  color: $primary-text;
+  .title {
+    text-transform: uppercase;
+  }
+}
+
+code {
+  font-family: $codeFont;
+  font-weight: 500;
 }
