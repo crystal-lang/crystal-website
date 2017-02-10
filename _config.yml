@@ -27,3 +27,4 @@ exclude: ["Gemfile", "Gemfile.lock", "Rakefile", "travis-build.sh", "scripts/*.c
 gems:
   - jekyll-seo-tag
   - jekyll-assets
+  - jekyll-timeago
