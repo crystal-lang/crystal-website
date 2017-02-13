@@ -77,14 +77,13 @@
 
     .item {
       display: inline-block;
-      margin: 30px;
+      margin: 45px 0 0 0;
       text-align: left;
       span.small {
         display: block;
+        margin: 5px 0;
       }
       span.with_icon {
-        margin: 5px 0;
-        display: block;
         color: $black;
       }
     }
@@ -116,7 +115,7 @@
       display: inline;
       padding: 8px 5px;
       background-color: $white;
-      margin: 0 40%;
+      margin: 0 calc(50% - 100px);
       line-height: 36px;
       position: relative;
       top: -9px;
