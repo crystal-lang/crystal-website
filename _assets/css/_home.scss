@@ -1,8 +1,51 @@
 .main {
+  // Changes to the default layout for main page
+  .header-section {
+    background-color: transparent;
+    h1.title {
+      color: $white;
+    }
+    .subtitle {
+      margin-bottom: 40px;
+    }
+    p.main-actions {
+      .btn {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  nav {
+    background-color: transparent;
+    border-bottom: 0px;
+
+    ul#nav-desktop li a {
+      color: $white;
+      &:hover {
+        border-color: $white;
+      }
+      &.selected {
+        border-bottom: 5px solid $white;
+      }
+    }
+  }
+
   canvas.delaunay {
-    opacity: 0.2;
     position: absolute;
     top: 0;
+    background-color: $black;
+    z-index: -1;
+  }
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+  .container > .row:not(.banner) {
+    // Removed container width for the banners,
+    // so this is making up for it.
+    width: 70%;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 
   .sponsors-list {
@@ -95,6 +138,19 @@
         @include border-radius(0 50% 50% 0);
         right: -16px;
       }
+    }
+  }
+
+  .btn-flat {
+    border: 2px solid $white;
+    color: $white;
+    padding: 0 42px;
+    &:active {
+      background-color: $black;
+    }
+    &:hover {
+      color: $black;
+      background-color: $white;
     }
   }
 }

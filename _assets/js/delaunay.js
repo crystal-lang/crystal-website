@@ -30,11 +30,10 @@ $(function() {
 
     var links = voronoi.links(nodes);
 
-    var canvas = d3.select(".header-section").append("canvas")
+    var canvas = d3.select("#delaunay").append("canvas")
         .attr("width", width)
         .attr("height", height)
         .attr("class", "delaunay")
-        .style("opacity", .2)
         .on("ontouchstart" in document ? "touchmove" : "mousemove", moved);
 
     var context = canvas.node().getContext("2d");
@@ -73,7 +72,7 @@ $(function() {
         context.lineTo(link.target.x, link.target.y);
       }
       context.lineWidth = 1;
-      context.strokeStyle = "#fff";
+      context.strokeStyle = "#444444";
       context.stroke();
 
       context.beginPath();
@@ -83,9 +82,9 @@ $(function() {
         context.rect(node.x - 2, node.y - 2, 4, 4);
       }
       context.lineWidth = 3;
-      context.strokeStyle = "#fff";
+      context.strokeStyle = "#444444";
       context.stroke();
-      context.fillStyle = "#000";
+      context.fillStyle = "#000000";
       context.fill();
     }
 

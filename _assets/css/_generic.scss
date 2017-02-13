@@ -141,28 +141,6 @@ p.no-underline > a {
   }
 }
 
-// Changes to the default layout for main page
-.wrapper.main {
-  .header-section {
-    background-color: $black;
-    h1.title {
-      color: $white;
-    }
-  }
-
-  nav {
-    background-color: $black;
-    border-bottom: 0px;
-
-    ul#nav-desktop li a {
-      color: $white;
-      &.selected {
-        border-bottom: 5px solid $white;
-      }
-    }
-  }
-}
-
 .btn-large {
   font-size: 20px;
   line-height: 51px;
