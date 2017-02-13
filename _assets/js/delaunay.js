@@ -1,5 +1,5 @@
 $(function() {
-  if('.wrapper.main') {
+  if($('.wrapper.main').length > 0) {
     var width = window.innerWidth,
         height = $('.header-section').height() + $('nav').height(),
         τ = 2 * Math.PI,

@@ -1,17 +1,20 @@
 <div class="row blog-post">
   <div class="col s12">
-    <div class="author small">
       {% assign authors = include.post.author | split: ',' %}
       {% for author in authors %}
-        <span class="author_name">{{ site.data.blog_authors[author].name }}</span>
+        <div class="author small">
+          {% img 'authors/{{ author }}.jpg' %}
+          <span class="author_name">{{ site.data.blog_authors[author].name }}</span>
+          {% if author == authors.last %}
+            {% assign date = include.post.date | timeago %}
+            {% if date contains "month" or date contains "year" %}
+              <span class="date">{{ include.post.date | date_to_string }}</span>
+            {% else %}
+              <span class="date">{{ date }}</span>
+            {% endif %}
+          {% endif %}
+        </div>
       {% endfor %}
-      {% assign date = include.post.date | timeago %}
-      {% if date contains "month" or date contains "year" %}
-        <span class="date">{{ include.post.date | date_to_string }}</span>
-      {% else %}
-        <span class="date">{{ date }}</span>
-      {% endif %}
-    </div>
 
     <a href="{{ include.post.url }}">
       <h3 class="title">{{ include.post.title }}</h3>
