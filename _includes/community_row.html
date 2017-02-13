@@ -6,7 +6,11 @@
 
     <p>
       <a href="{{ include.url }}" class="with-icon">
-        <i class="material-icons">{{ include.icon }}</i>
+        {% if include.custom_icon %}
+          <i class="extra-icons {{ include.icon }}"></i>
+        {% else %}
+          <i class="material-icons">{{ include.icon }}</i>
+        {% endif %}
         <span>{{ include.link_text }}</span>
       </a>
     </p>

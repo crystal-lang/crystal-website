@@ -1,37 +1,24 @@
-// // Sprites
-// // --------------------------------------------------
+// Sprites
+// --------------------------------------------------
 
-// i.ic {
-//   background: url($icSpritePath) no-repeat 40px 40px;
-//   background-size: 120px 80px;
-//   display: inline-block;
-//   vertical-align: middle;
-//   width: 40px;
-//   height: 40px;
-//   line-height: 40px;
+i.extra-icons {
+  background: url(asset_path("icons.svg")) no-repeat 40px 40px;
+  background-size: 120px 120px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 26px;
+  height: 23px;
+  line-height: 20px;
 
-//   &.git       { background-position:   0px  0px }
-//   &.download  { background-position: -40px  0px }
-//   &.bookmark  { background-position: -80px  0px }
-// }
-
-// i.ip {
-//   background: url($ipSpritePath) no-repeat 18px 18px;
-//   display: inline-block;
-//   vertical-align: middle;
-//   width: 18px;
-//   height: 18px;
-//   line-height: 18px;
-//   margin-right: -3px;
-
-//   &.ok        { background-position:   0px  0px }
-//   &.document  { background-position: -18px  0px }
-//   &.group     { background-position: -36px  0px }
-//   &.info      { background-position: -54px  0px }
-//   &.down      { background-position: -72px  0px }
-//   &.downg     { background-position: -90px  0px }
-
-// }
+  &.github          { background-position: 0px -24px; }
+  &.stack_overflow  { background-position: 1px -1px; }
+  &.gitter          { background-position: -24px -24px; }
+  &.google          { background-position: -47px -24px; }
+  &.twitter         { background-position: -24px -1px; }
+  &.reddit          { background-position: -72px -1px; }
+  &.awesome         { background-position: -72px -47px; }
+  &.google_fonts    { background-position: -72px -25px; }
+}
 
 i.manas {
   background: url(asset_path("m.svg"));
