@@ -5,6 +5,9 @@
       <div class="author small">
         {% assign authors = page.author | split: ',' %}
         {% for author in authors %}
+          {% img 'authors/{{ author }}.jpg' %}
+        {% endfor %}
+        {% for author in authors %}
           <span class="author_name">{{ site.data.blog_authors[author].name }}</span>
         {% endfor %}
         {% assign date = page.date | timeago %}
