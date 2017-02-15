@@ -18,6 +18,12 @@ i.extra-icons {
   &.reddit          { background-position: -72px -1px; }
   &.awesome         { background-position: -72px -47px; }
   &.google_fonts    { background-position: -72px -25px; }
+  &.google_plus     { background-position: -24px -47px; }
+  &.facebook        { background-position: 1px -48px; }
+}
+
+i.extra-icons.gray {
+  @include opacity(55);
 }
 
 i.manas {

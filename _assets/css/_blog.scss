@@ -100,9 +100,16 @@ pre {
   .title {
     text-transform: uppercase;
   }
+  .share-item {
+    margin: 30px 7px;
+  }
 }
 
 code {
   font-family: $codeFont;
   font-weight: 500;
+}
+
+.hidden {
+  display: none;
 }
