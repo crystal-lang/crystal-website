@@ -1,7 +1,7 @@
 $(function() {
   if($('.wrapper.main').length > 0) {
     var width = window.innerWidth,
-        height = $('.header-section').height() + $('nav').height(),
+        height = $('.header-section').height() + $('nav').height() + $('.banner.bountysource').height()/2 + 1,
         τ = 2 * Math.PI,
         gravity = .005;
 
@@ -11,22 +11,9 @@ $(function() {
 
     while (s = sample()) nodes.push(s);
 
-    var force = d3.layout.force()
-        .size([width, height])
-        .nodes(nodes.slice())
-        .gravity(0)
-        .charge(function(d, i) { return i ? -30 : -250; })
-        .on("tick", ticked)
-        .alpha(10)
-        .start();
-
     var voronoi = d3.geom.voronoi()
         .x(function(d) { return d.x; })
         .y(function(d) { return d.y; });
-
-    var root = nodes.shift();
-
-    root.fixed = true;
 
     var links = voronoi.links(nodes);
 
@@ -34,29 +21,10 @@ $(function() {
         .attr("width", width)
         .attr("height", height)
         .attr("class", "delaunay")
-        .on("ontouchstart" in document ? "touchmove" : "mousemove", moved);
 
     var context = canvas.node().getContext("2d");
 
-    function moved() {
-      var p1 = d3.mouse(this);
-      root.px = p1[0];
-      root.py = p1[1];
-      force.resume();
-    }
-
-    function random() {
-      setTimeout(function () {
-        root.px = Math.random() * width;
-        root.py = Math.random() * height;
-        force.resume();
-        random();
-      }, Math.random()*1000);
-    }
-
-    function ticked() {
-      force.resume();
-
+    function draw() {
       for (var i = 0, n = nodes.length; i < n; ++i) {
         var node = nodes[i];
         node.y += (node.cy - node.y) * gravity;
@@ -159,7 +127,6 @@ $(function() {
       }
     }
 
-    random();
-    //mode pointer with transition, update x, y on amination
+    draw();
   }
 });

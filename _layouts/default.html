@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
+    <title>{% if page.nav_title %}{{ page.nav_title }}
+      {% else %}{{ page.title }}
+      {% endif %} - The Crystal Programming Language
+    </title>
     <meta charset='utf-8'>
     <!-- Import Google Icon Font -->
     <link href='http://fonts.googleapis.com/icon?family=Material+Icons|Roboto+Mono' rel='stylesheet'>
@@ -13,13 +17,6 @@
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   </head>
   <body>
-    <!-- #fund -->
-    <!-- .inner -->
-    <!-- .right -->
-    <!-- %a.text{:href => "https://www.bountysource.com/teams/crystal-lang/fundraisers/702-crystal-language", :target => "_blank"} Fund Crystal and help it become production-ready! -->
-    <!-- %a.text{:href => "/sponsors"} Meet our sponsors -->
-    <!-- %a.badge{:href => "https://www.bountysource.com/teams/crystal-lang/fundraisers/702-crystal-language", :target => "_blank"} -->
-    <!-- bountysource -->
     <div class="wrapper {{page.custom_body_classes | join: ' '}}">
       {% include nav.html %}
       {% if page.is_post %}
