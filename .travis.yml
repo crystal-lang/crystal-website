@@ -10,11 +10,23 @@ script: test $TRAVIS_PULL_REQUEST != "false" || bundle exec jekyll build
 branches:
   only:
     - master
+    - redesign
 deploy:
-  provider: s3
-  access_key_id: AKIAIRL4BWFPN7P54TBQ
-  secret_access_key:
-    secure: G566sxEWDq1MxuC/PYRxwCxH9VRoaJ/2pa7623N6LvCNOKTXNxyLHpgwAZUGp3JFApP45BvBi0xRhtnKJj5IwbmZv1VEjQ5SFeqIngPr0kCAyrNItGwznSgwGpgNvUusuEa7MBkf83VSgo2gjZHF/M3xAU81Zu4dI/AtDEDU/D0ee9SCnow6RE0re1r8HjnrOUf7+osMi12jX8GTVZw10gsCPAMAmZHGULTjFCLijDpVsDVoTRKZp634qDKNeK3bak7cWDniXUkIB6Um9EMnRsrImOH7o9zHDD6TFvXKUqEWY4v5mYkI5L4P7q3JWiF4ElqaIsFi3/45vTrFNrYQW73R+M2hjmvwCHbsFyxFk+Evzs0yVh4YFHVG7qua9+4GO1w4WRPDFwWdg83LPUnihoZfBbJnXSpWczZei8yjx/2GB9a2SZ1Eb9ASMt91AnRTc/rhxYZ2IAJD8dtO0mCOTaaDvQ3RVQnkIHVnp6knHBdKmMPy6vaPZU4ZHOTNix8Tq/IhPDVQxIymEPX4UK15LtK68hjW0195XafH+QO4d0e78KZzdYjRvck1cA5fSQEZukBaGR1MkWO3kaVJuI7CgkoP2ZfwPvNpvzNplM2PiQmnB/8tOLUMz9fcjufKrkaVCqlpWLgonxvizlRTn1ODAhKVOfDbF2b1EPKgkkKlfi4=
-  bucket: "crystal-website"
-  local_dir: _site
-  skip_cleanup: true
+  - provider: s3
+    access_key_id: AKIAIRL4BWFPN7P54TBQ
+    secret_access_key:
+      secure: G566sxEWDq1MxuC/PYRxwCxH9VRoaJ/2pa7623N6LvCNOKTXNxyLHpgwAZUGp3JFApP45BvBi0xRhtnKJj5IwbmZv1VEjQ5SFeqIngPr0kCAyrNItGwznSgwGpgNvUusuEa7MBkf83VSgo2gjZHF/M3xAU81Zu4dI/AtDEDU/D0ee9SCnow6RE0re1r8HjnrOUf7+osMi12jX8GTVZw10gsCPAMAmZHGULTjFCLijDpVsDVoTRKZp634qDKNeK3bak7cWDniXUkIB6Um9EMnRsrImOH7o9zHDD6TFvXKUqEWY4v5mYkI5L4P7q3JWiF4ElqaIsFi3/45vTrFNrYQW73R+M2hjmvwCHbsFyxFk+Evzs0yVh4YFHVG7qua9+4GO1w4WRPDFwWdg83LPUnihoZfBbJnXSpWczZei8yjx/2GB9a2SZ1Eb9ASMt91AnRTc/rhxYZ2IAJD8dtO0mCOTaaDvQ3RVQnkIHVnp6knHBdKmMPy6vaPZU4ZHOTNix8Tq/IhPDVQxIymEPX4UK15LtK68hjW0195XafH+QO4d0e78KZzdYjRvck1cA5fSQEZukBaGR1MkWO3kaVJuI7CgkoP2ZfwPvNpvzNplM2PiQmnB/8tOLUMz9fcjufKrkaVCqlpWLgonxvizlRTn1ODAhKVOfDbF2b1EPKgkkKlfi4=
+    bucket: "crystal-website"
+    local_dir: _site
+    skip_cleanup: true
+    on:
+      branch: master
+  - provider: s3
+    access_key_id: AKIAIRL4BWFPN7P54TBQ
+    secret_access_key:
+      secure: G566sxEWDq1MxuC/PYRxwCxH9VRoaJ/2pa7623N6LvCNOKTXNxyLHpgwAZUGp3JFApP45BvBi0xRhtnKJj5IwbmZv1VEjQ5SFeqIngPr0kCAyrNItGwznSgwGpgNvUusuEa7MBkf83VSgo2gjZHF/M3xAU81Zu4dI/AtDEDU/D0ee9SCnow6RE0re1r8HjnrOUf7+osMi12jX8GTVZw10gsCPAMAmZHGULTjFCLijDpVsDVoTRKZp634qDKNeK3bak7cWDniXUkIB6Um9EMnRsrImOH7o9zHDD6TFvXKUqEWY4v5mYkI5L4P7q3JWiF4ElqaIsFi3/45vTrFNrYQW73R+M2hjmvwCHbsFyxFk+Evzs0yVh4YFHVG7qua9+4GO1w4WRPDFwWdg83LPUnihoZfBbJnXSpWczZei8yjx/2GB9a2SZ1Eb9ASMt91AnRTc/rhxYZ2IAJD8dtO0mCOTaaDvQ3RVQnkIHVnp6knHBdKmMPy6vaPZU4ZHOTNix8Tq/IhPDVQxIymEPX4UK15LtK68hjW0195XafH+QO4d0e78KZzdYjRvck1cA5fSQEZukBaGR1MkWO3kaVJuI7CgkoP2ZfwPvNpvzNplM2PiQmnB/8tOLUMz9fcjufKrkaVCqlpWLgonxvizlRTn1ODAhKVOfDbF2b1EPKgkkKlfi4=
+    bucket: "stg.crystal-lang.org"
+    local_dir: _site
+    skip_cleanup: true
+    on:
+      branch: redesign
