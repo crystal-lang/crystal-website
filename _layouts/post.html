@@ -5,11 +5,19 @@ layout: default
   <div class="col m2 share">
     <p class="title small">Share</p>
     <div class="share-list">
-      <div class="share-item"><i class="ic twitter"></i></div>
-      <div class="share-item"><i class="ic facebook"></i></div>
-      <div class="share-item"><i class="ic gplus"></i></div>
+      {% assign share_url = 'https://' | append: site.host | append: page.url | cgi_escape %}
+      <a href="https://twitter.com/intent/tweet?url={{ share_url }}&text={{ page.title | cgi_escape }}&via=CrystalLanguage" target="_blank">
+        <div class="share-item"><i class="extra-icons twitter gray"></i></div>
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank">
+        <div class="share-item"><i class="extra-icons facebook gray"></i></div>
+      </a>
+      <a href="https://plus.google.com/share?url={{ share_url }}" target="_blank">
+        <div class="share-item"><i class="extra-icons google_plus gray"></i></div>
+        </a>
     </div>
   </div>
+
   <div class="col s12 m9">
     {{ content }}
   </div>
