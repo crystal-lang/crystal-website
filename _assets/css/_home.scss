@@ -118,10 +118,10 @@
       margin: 0 calc(50% - 100px);
       line-height: 36px;
       position: relative;
-      top: -9px;
       h3 {
         display: inline-block;
         background-color: $white;
+        margin-top: 0;
       }
       a {
         border-bottom: 1px solid $primary-text;
@@ -147,6 +147,20 @@
         @include border-radius(0 50% 50% 0);
         right: -16px;
       }
+    }
+  }
+
+  .banner.bountysource {
+    // Height of the banner + the nav
+    // top: calc(75% + 96px);
+    // position: absolute;
+    margin-top: 0;
+    .bountysource-logo {
+      height: 25px;
+    }
+    .flag {
+      margin: 0 calc(50% - 230px);
+      a { border-bottom: 0; }
     }
   }
 
