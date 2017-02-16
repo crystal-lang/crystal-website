@@ -28,6 +28,9 @@
         border-bottom: 5px solid $white;
       }
     }
+    a.button-collapse {
+      color: $white;
+    }
   }
 
   canvas.delaunay {
@@ -46,6 +49,13 @@
     width: 70%;
     max-width: 1280px;
     margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 992px) {
+    // The 70% fix for container should be undone in mobile.
+    .container > .row:not(.banner) {
+      width: 90%;
+    }
   }
 
   .sponsors-list {
@@ -174,6 +184,14 @@
     &:hover {
       color: $black;
       background-color: $white;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .btn-flat {
+      display: block;
+      width: 100%;
+      border: 0;
     }
   }
 }
