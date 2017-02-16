@@ -40,7 +40,7 @@ the [default prelude file](https://github.com/crystal-lang/crystal/blob/master/s
 
 In this way we can get a very simple and clean LLVM IR code file with just the code we write:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 ; ModuleID = 'main_module'
 
 %String = type { i32, i32, i32, i8 }
@@ -64,7 +64,7 @@ entry:
   %0 = call i1 @__crystal_main(i32 %argc, i8** %argv)
   ret i32 0
 }
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 The gist is in `__crystal_main`: we can see the compiler allocates an `i1` in the stack for `x` and then stores `true` in it.
 That is, the compiler represents a Bool as a single bit, which is pretty efficient.
@@ -77,9 +77,9 @@ x = 1
 
 For `x` this time we will get:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 %x = alloca i32
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 In LLVM, and i32 is an int represented with 32 bits, which, again, is pretty efficient and what we would expect the representation
 of `Int32` to be.
@@ -98,7 +98,7 @@ y = :two
 
 Let's see the full LLVM IR code this time:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 ; ModuleID = 'main_module'
 target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-apple-darwin14.1.0"
@@ -128,7 +128,7 @@ entry:
   %0 = call i32 @__crystal_main(i32 %argc, i8** %argv)
   ret i32 0
 }
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 Three things are important here. First, we can see that a Symbol is represented as `i32`, that is, with four bytes. Second,
 we can see `x` is assigned a value of 0 and `y` is assigned a value of 1. Third, we can see some constants at the top:
@@ -152,9 +152,9 @@ x.value #=> 1
 
 If you look at the generated LLVM IR code you will see a bunch of code. First, `x` is represented like this:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 %x = alloca i32*
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 Again, this is just a pointer to an int32, as it should be. Next you will see a call to `malloc` (will ask memory from the GC
 using the regular prelude) and `memset` to clear the memory, and then some instructions to assign 1 in that memory address.
@@ -171,11 +171,11 @@ x = {1, true}
 
 Pieces of LLVM IR code for the above are:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 %"{Int32, Bool}" = type { i32, i1 }
 ...
 %x = alloca %"{Int32, Bool}"
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 As we can see, a tuple is represented as an [LLVM structure](http://llvm.org/docs/LangRef.html#structure-type), which just
 packs values sequentially. This representation of tuples allows us, for example, to decompose an Int32 into its bytes,
@@ -199,9 +199,9 @@ x = uninitialized Int32[8]
 
 Its LLVM representation:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 %x = alloca [8 x i32]
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 We won't talk much more about this type because it's not used that much, mostly for IO buffers and such: Array is the
 recommended type for all other operations.
@@ -253,16 +253,16 @@ f = ->(x : Int32) { x + 1 }
 This is a function pointer that receives an Int32 and returns an Int32. Since it doesn't capture any local variables
 it's not a closure. But the compiler still represents it like this:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 %"->" = type { i8*, i8* }
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 That is a pair of pointers: one containing the pointer to the real function, another one containing a pointer to the
 closured data.
 
 The LLVM IR code for the above is:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 ; ModuleID = 'main_module'
 
 %String = type { i32, i32, i32, i8 }
@@ -299,7 +299,7 @@ entry:
   %0 = add i32 %x, 1
   ret i32 %0
 }
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 A bit harder to digest than the above examples, but it's basically assining a pointer to `~fun_literal_1` in the first
 position and `null` in the second. If our Proc captures a local variable:
@@ -311,7 +311,7 @@ f = ->(x : Int32) { x + a }
 
 The LLVM IR code changes:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 ; ModuleID = 'main_module'
 
 %String = type { i32, i32, i32, i8 }
@@ -360,7 +360,7 @@ entry:
   %4 = add i32 %x, %3
   ret i32 %4
 }
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 This is even harder to digest, but basically some memory is asked that will contain the value of the variable `a`, and
 the Proc receives it and uses it. In this case the memory is asked with `malloc`, but with the regular prelude the memory
@@ -404,11 +404,11 @@ x = Point.new(1, 2)
 
 The LLVM IR code contains:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 %Point = type { i32, i32, i32 }
 ...
 %x = alloca %Point*
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 Mmm... wait! A Point has just two instance variables, `@x` and `@y`, both of type Int32, so why there's another `i32`
 there? Well, it turns out Crystal adds an Int32 to store a type id associated with the class. This doesn't make much sense
@@ -427,11 +427,11 @@ x = Point.new(1, 2)
 
 The LLVM IR code contains:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 %Point = type { i32, i32 }
 ...
 %x = alloca %Point
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 In this case a struct doesn't contain the extra Int32 field for the type id.
 
@@ -452,18 +452,18 @@ end
 At the end of the `if` the variable `x` will either be `3` or `false`, which makes it type an Int32 or a Bool.
 The Crystal way to talk about a union is using a pipe, like this: `Int32 | Bool`. In the LLVM IR code we can find:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 %"(Int32 | Bool)" = type { i32, [1 x i64] }
 ...
 %x = alloca %"(Int32 | Bool)"
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 We can see that the representation of this particular union is an LLVM structure containing two fields. The first
 one will contain the type id of the value. The second one is the value itself, which is a bit array as large as
 the largest type in that union (due to some alignment concerns, the size is extended to 64 bits boundaries in 64 bit
 architectures). In C it would be:
 
-{% highlight c %}
+<div class="code_section">{% highlight c %}
 struct Int32OrBool {
   int type_id;
   union {
@@ -471,7 +471,7 @@ struct Int32OrBool {
     bool bool_value;
   };
 }
-{% endhighlight c %}
+{% endhighlight c %}</div>
 
 The first field, the type id, will be used by the compiler when you invoke a method on `x`.
 
@@ -497,9 +497,9 @@ end
 
 If we check the LLVM IR code we will see this for x:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 %x = alloca %Point*
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 So a union of `Point | Nil`, where Point is a class, is represented in the same was as the Point class. How can
 we tell if x is Nil or Point? Easy: a null pointer means it's Nil, a non-null pointer means it's a Point.
@@ -554,7 +554,7 @@ can you know which `foo` method will get invoked in this case?
 Well, it's `Moo#foo`, right? Yes, indeed. Well, it turns out the compiler knows this too, and if you take a look
 at the generated code you will see something like this:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 ; Create a Bar
 %0 = call %Baz* @"*Baz::new:Baz"()
 ; Invoke Moo#foo: no method lookup
@@ -566,7 +566,7 @@ define internal i32 @"*Baz@Moo#foo<Baz>:Int32"(%Baz* %self) {
 entry:
   ret i32 1
 }
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 What happens if we create an instance of Bar and we invoke `foo` on it too:
 
@@ -577,7 +577,7 @@ Baz.new.foo
 
 Now the LLVM IR code contains this:
 
-{% highlight llvm %}
+<div class="code_section">{% highlight llvm %}
 %0 = call %Bar* @"*Bar::new:Bar"()
 %1 = call i32 @"*Bar@Moo#foo<Bar>:Int32"(%Bar* %0)
 %2 = call %Baz* @"*Baz::new:Baz"()
@@ -592,7 +592,7 @@ define internal i32 @"*Baz@Moo#foo<Baz>:Int32"(%Baz* %self) {
 entry:
   ret i32 1
 }
-{% endhighlight llvm %}
+{% endhighlight llvm %}</div>
 
 Oops, isn't there a duplicated definition of `foo` there? Well, yes. You can think as if the compiler
 copied foo's definition into each class, and so there will be, indeed, many copies of the same method.
