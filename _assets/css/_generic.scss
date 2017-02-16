@@ -119,6 +119,21 @@ p.no-underline > a {
       border-bottom: 5px solid $black;
     }
   }
+
+  a.button-collapse {
+    color: $black;
+    float: right;
+    i {
+      font-size: 2.5em;
+      line-height: 96px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 10%;
+  }
 }
 
 .header-section {
