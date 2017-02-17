@@ -5,7 +5,7 @@
     <p>{{ include.content }}</p>
 
     <p>
-      <a href="{{ include.url }}" class="with-icon">
+      <a href="{{ include.url }}" {% unless include.internal_link %}target="_blank"{% endunless %}class="with-icon">
         {% if include.custom_icon %}
           <i class="extra-icons {{ include.icon }}"></i>
         {% else %}
