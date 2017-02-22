@@ -15,7 +15,7 @@ Charly is a dynamically typed and object-oriented programming language. The synt
 
 # How does it look?
 
-Below is an implementation of the [Bubblesort algorithm](https://de.wikipedia.org/wiki/Bubblesort) written in Charly. It is part of the standard library which is also written in Charly.
+Below is an implementation of the [Bubblesort algorithm](https://en.wikipedia.org/wiki/Bubblesort) written in Charly. It is part of the standard library which is also written in Charly.
 
 <div class="code_section">
 {% highlight javascript %}
