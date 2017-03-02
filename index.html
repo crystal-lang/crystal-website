@@ -32,6 +32,7 @@ custom_body_classes:
   <div class="col s12">
     <h2>Compiled</h2>
     <p>Crystal is a compiled language, allowing it to run blazingly fast with a very low memory footprint. It relies on LLVM for emitting native code, thus making use all the optimisations built into the toolchain.</p>
+    <h3>Web server throughput<hr class="squares"/></h3>
     <p id="benchmark"></p>
     <p>Read more: <a href="https://crystal-lang.org/docs/using_the_compiler/">https://crystal-lang.org/docs/using_the_compiler/</a></p>
   </div>
@@ -62,7 +63,25 @@ custom_body_classes:
   <div class="col s12">
     <h2>Null reference checks</h2>
     <p>All types are non-nilable in Crystal, and nilable variables are represented as an union between the type and nil. As a consequence, the compiler will automatically check for null references in compile time, helping prevent the dreadful <a href="https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare" target="_blank">billion-dollar mistake</a>.</p>
-    <p><img src="{{ 'home/types.jpg' | asset_path }}"></p>
+    <div class="code_section">
+    {% highlight ruby %}
+    if rand(2) > 0
+      my_string = "hello world"
+    end
+
+    puts my_string.upcase
+    {% endhighlight %}
+    </div>
+    <p>Running the previous file:</p>
+    <div class="code_section">
+    <figure class="highlight console"><pre><code>
+    $ crystal hello_world.cr
+    Error in hello_world.cr:5: undefined method 'upcase' for <span class="type">Nil (compile-time type is (String | Nil))</span>
+
+    puts my_string.upcase
+                   <span class="marker">^~~~~~</span>
+    </code></pre></figure>
+    </div>
   </div>
 </div>
 
