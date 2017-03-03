@@ -58,6 +58,10 @@
     }
   }
 
+  p.read-more > a {
+    word-break: break-all;
+  }
+
   .sponsors-list {
     text-align: center;
     border-bottom: 1px solid $light-gray;
