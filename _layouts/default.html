@@ -14,10 +14,11 @@
     <link href='/images/favico.ico' rel='shortcut icon' type='image/x-icon'>
     {% seo %}
     <!-- Let browser know website is optimized for mobile -->
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js' type='text/javascript'></script>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   </head>
   <body>
-    <div class="wrapper {{page.custom_body_classes | join: ' '}}">
+    <div id="Home" class="wrapper {{page.custom_body_classes | join: ' '}}">
       {% include nav.html %}
       {% if page.is_post %}
         {% include post_header.html %}
@@ -30,7 +31,6 @@
       {% include footer.html %}
     </div>
 
-    <script src='https://code.jquery.com/jquery-3.1.1.min.js' type='text/javascript'></script>
     <script id="dsq-count-scr" src="//crystal-lang.disqus.com/count.js" async></script>
     {% js bundle %}
     {% include google_analytics.html %}

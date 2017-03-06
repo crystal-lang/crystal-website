@@ -6,71 +6,41 @@ subtitle: Fast as C, slick as Ruby
 custom_body_classes:
   - main
 ---
-<div class="banner bountysource hide-on-med-and-down">
-  <div class="line-through">
-    <div class="flag">
-      <a href="https://www.bountysource.com/teams/crystal-lang/fundraisers/702-crystal-language" target="_blank">
-        Fund Crystal and help it become production-ready at
-        <img src="{{ 'bountysource.png' | asset_path }}" class="bountysource-logo">
-        </a>
-    </div>
+
+<div class="row">
+  <div class="col s12">
+    <h2>Speakers</h2>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col s12">
+    <h2 id="Speakers">Speakers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col s4 center-align speaker center-align">
+    {% img authors/waj.jpg %}
+    <h2>Juan Wajnerman</h3>
+    <p>Lorem ipsum dolor amet lobortis em cursus varius</p>
+  </div>
+  <div class="col s4 center-align speaker">
+    {% img authors/bcardiff.jpg %}
+    <h2>Brian J. Cardiff</h3>
+    <p>Lorem ipsum dolor amet lobortis em cursus varius</p>
+  </div>
+  <div class="col s4 center-align speaker">
+    {% img authors/asterite.jpg %}
+    <h2>Ary Borenszweig</h3>
+    <p>Lorem ipsum dolor amet lobortis em cursus varius</p>
   </div>
 </div>
 
 <div class="row">
   <div class="col s12">
-    <h2>Syntax</h2>
-    <div class='code_section'>
-      {% include sample_code.md %}
-    </div>
-  </div>
-</div>
-
-<!-- <div class="row">
-  <div class="col s12">
-    <h2>Performance</h2>
-  </div>
-</div>
- -->
-<div class="row banner">
-  <div class="col s12">
-    <div class="line-through">
-      <div class="flag">
-        <h3>Crystal top sponsors</h3>
-        <a href="/sponsors">Meet all</a>
-      </div>
-    </div>
-    <div class='sponsors-list'>
-      <a href='https://manas.tech/' target='_blank' class="sponsor">
-        {% img m.svg %}
-        <span class="small">Manas Technology Solutions</span>
-      </a>
-      <a href='http://www.protel.com.tr' target='_blank' class="sponsor">
-        {% img home/protel.svg %}
-        <span class="small">Protel</span>
-      </a>
-      <a href='https://openredis.com' target='_blank' class="sponsor">
-        {% img home/openredis.svg %}
-        <span class="small">openredis</span>
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col s12">
-    <h2>Articles from our blog</h2>
-    {% assign articles = site.posts | where: "release_notes",nil %}
-    {% for post in articles limit: 3 %}
-    {% include blog_row.html post=post %}
-    {% endfor %}
-    <p><a href="/blog">More articles</a></p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col s12">
-    <h2>Release Notes</h2>
+    <h2 id="Programme">Programme</h2>
     <table class="bordered">
       <tbody>
         {% assign releases = site.posts | where: "release_notes",true %}
@@ -88,45 +58,51 @@ custom_body_classes:
   </div>
 </div>
 
-<div class="row banner">
+
+<div class="row">
   <div class="col s12">
-    <div class="line-through">
-      <div class="flag">
-        <h3>Community channels</h3>
-        <a href="/community">Show all</a>
-      </div>
+    <div id="Location">
+      {% img map.jpg %}
     </div>
-    <div class='row community-list'>
-      <div class="col s12 m3">
-        <a href='https://github.com/crystal-lang/crystal/' target='_blank' class="item">
-          <span class="small">Code repository</span>
-          <i class="extra-icons github"></i>
-          <span class="with_icon">crystal-lang/crystal</span>
-        </a>
-      </div>
-      <div class="col s12 m3">
-        <a href='https://groups.google.com/forum/#!forum/crystal-lang' target='_blank' class="item">
-          <span class="small">General discussion</span>
-          <i class="extra-icons google"></i>
-          <span class="with_icon">crystal-lang</span>
-        </a>
-      </div>
-      <div class="col s12 m3">
-        <a href='https://gitter.im/crystal-lang/crystal' target='_blank' class="item">
-          <span class="small">Chat room</span>
-          <i class="extra-icons gitter"></i>
-          <span class="with_icon">crystal-lang/crystal</span>
-        </a>
-      </div>
-      <div class="col s12 m3">
-        <a href='https://twitter.com/CrystalLanguage' target='_blank' class="item">
-          <span class="small">General announcements and events</span>
-          <i class="extra-icons twitter"></i>
-          <span class="with_icon">@CrystalLanguage</span>
-        </a>
-      </div>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col s12">
+    <div id="Sponsors" class="center-align">
+      <h2 class="grey-text">
+        Gold Sponsor
+      </h1>
+      {% img sponsors/heroku@2x.png width="429px" height="120px" %}
+      <hr>
+      <h2 class="grey-text">
+        Silver Sponsors
+      </h1>
+      {% img sponsors/oreilly@2x.png width="248px" height="44px" %}
+      {% img sponsors/docker@2x.png width="325px" height="75px" %}
+      <hr>
+      <h2 class="grey-text">
+        Other Sponsors
+      </h1>
+      {% img sponsors/sentry@2x.png width="165px" height="37px" %}
+      {% img sponsors/klarna@2x.png width="121px" height="33px" %}
+      {% img sponsors/snap@2x.png width="163px" height="44px" %}
     </div>
   </div>
 </div>
 
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+  $(document).on('click', 'a', function(event){
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+  });
+</script>

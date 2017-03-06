@@ -1,0 +1,64 @@
+.wrapper.main {
+  background: url(asset_path("media/back-sf2017.png")) no-repeat $black;
+  background-size: 100% auto;
+}
+
+.header-section {
+  height: 648px;
+  min-height: auto;
+}
+.speaker img {
+  filter: brightness(95%);
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+
+  + h2 {
+    text-transform: capitalize;
+    margin-top: 3rem;
+    margin-bottom: 0;
+
+    + p {
+      @extend .black-text;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      padding: 0 10%;
+    }
+  }
+}
+#Sponsors {
+  img {
+    margin: 3rem 2rem 1rem;
+  }
+  h2 {
+    margin-top: 1rem;
+  }
+  hr {
+    @extend .grey, .lighten-1;
+    border: none;
+    height: 1px;
+    width: 70%;
+    margin: 5rem auto;
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+     &:before,
+     &:after {
+      content: '';
+      @extend .white;
+      display: block;
+      width: 3px;
+      height: 3px;
+      border: 1px solid #999;
+      position: absolute;
+      top: -2px;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
+  }
+}
