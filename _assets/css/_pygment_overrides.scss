@@ -26,6 +26,25 @@
       color: darkseagreen;
     }
   }
+
+  code.language-javascript {
+    span.nx, span.err {
+      color: #E45546;
+      background-color: white;
+    }
+    span.kr {
+      color: #4F72B7;
+    }
+    span.mi {
+      color: #9F3D96;
+    }
+    span.kd, span.k {
+      color: #51A24D;
+    }
+    span.s2 {
+      color: #4D70B6;
+    }
+  }
 }
 
 .code_section {

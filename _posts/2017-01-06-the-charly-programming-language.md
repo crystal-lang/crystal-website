@@ -136,9 +136,8 @@ The Macro system was really handy in a lot places. It was mainly used to avoid b
 
 For some real examples of how the Macro system could be used, look at these files:
 
-* [syntax/ast.cr](https://github.com/charly-lang/charly/blob/c8827b1e52b844afc705d1a00033044d5d49f444/src/charly/syntax/ast.cr#L72-L85)
-
-* [interpreter/internals.cr](https://github.com/charly-lang/charly/blob/67342f7430602ee89bfa8d10b2784f354c1c9d42/src/charly/interpreter/internals.cr#L19-L51)
+- [syntax/ast.cr](https://github.com/charly-lang/charly/blob/c8827b1e52b844afc705d1a00033044d5d49f444/src/charly/syntax/ast.cr#L72-L85)
+- [interpreter/internals.cr](https://github.com/charly-lang/charly/blob/67342f7430602ee89bfa8d10b2784f354c1c9d42/src/charly/interpreter/internals.cr#L19-L51)
 
 Crystal's standard library for example, uses macros to provide the [property](https://crystal-lang.org/api/master/Class.html#property%28%2Anames%29-macro) method. You can use it to avoid boilerplate when introducing new instance variables to your classes.
 
