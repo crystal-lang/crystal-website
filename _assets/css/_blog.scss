@@ -110,6 +110,21 @@ pre {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .share-title {
+    display: inline-block;
+  }
+  .share-list {
+    display: inline-block;
+    a {
+      display: inline-block;
+    }
+    .share-item {
+      margin: 7px 30px;
+    }
+  }
+}
+
 code {
   font-family: $codeFont;
   font-weight: 500;
