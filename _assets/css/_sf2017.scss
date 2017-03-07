@@ -1,10 +1,19 @@
-.wrapper.main {
-  background: url(asset_path("media/back-sf2017.png")) no-repeat $black;
-  background-size: 100% auto;
+.wrapper.main.fixed {
+  padding-top: 7rem;
+  nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+
+  }
 }
 
 .header-section {
-  height: 648px;
+  background: url(asset_path("media/back-sf2017.png")) no-repeat $black;
+  background-size: 100% auto;
+  height: 565px;
   min-height: auto;
 }
 .speaker img {
