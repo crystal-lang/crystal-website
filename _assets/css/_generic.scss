@@ -83,9 +83,8 @@ p.no-underline > a {
 }
 
 .wrapper nav {
-  height: 96px;
-  background-color: $black;
   @include box-shadow(none);
+  height: 96px;
   border-bottom: 1px solid $separator;
 
   #logo-container {

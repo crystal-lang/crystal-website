@@ -17,7 +17,7 @@ $(document).on('click', 'a', function(event){
 
 $(document).scroll(function(e){
     var scrollTop = $(document).scrollTop();
-    if(scrollTop > 620){
+    if(scrollTop > 616){
         //console.log(scrollTop);
         $('.wrapper.main').addClass("fixed");
     } else {

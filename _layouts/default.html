@@ -7,7 +7,7 @@
     </title>
     <meta charset='utf-8'>
     <!-- Import Google Icon Font -->
-    <link href='http://fonts.googleapis.com/icon?family=Material+Icons|Roboto+Mono' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
     {% css stylesheet %}
     <link href='/feed.xml' rel='alternate' title='Atom 1.0' type='application/atom+xml'>
     <link href='/images/favico.png' rel='icon' type='image/png'>
@@ -20,11 +20,7 @@
   <body>
     <div id="Home" class="wrapper {{page.custom_body_classes | join: ' '}}">
       {% include nav.html %}
-      {% if page.is_post %}
-        {% include post_header.html %}
-      {% else %}
-        {% include header.html %}
-      {% endif %}
+      {% include header.html %}
       <div class='container'>
         {{ content }}
       </div>
