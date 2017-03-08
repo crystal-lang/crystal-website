@@ -5,8 +5,11 @@
 
 
 $( document ).ready(function(){
-  $(".button-collapse").sideNav();
-})
+  $('.button-collapse').sideNav({
+      closeOnClick: true
+    }
+  );
+});
 
 $(document).on('click', 'a', function(event){
   event.preventDefault();

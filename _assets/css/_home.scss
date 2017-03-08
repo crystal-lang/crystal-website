@@ -47,7 +47,8 @@
     // so this is making up for it.
     width: 70%;
     max-width: 1280px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media only screen and (max-width: 992px) {
