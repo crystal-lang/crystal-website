@@ -1,15 +1,17 @@
 <div class='header-section'>
   <div class='center-align'>
-    <!-- This assign is to replace sponsors title with the actual count. Variables aren't allowed in Front Matter -->
-    {% assign replaced_title = page.title | replace: 'SPONSOR_COUNT', site.data.sponsors.size %}
     <h1 class='title'>Crystal <span>| SF2017</span></h1>
     <div class='subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel varius mi, ut ornare nisl. Quisque at nisl nec enim faucibus.</div>
-    {% if page.url == "/" %}
       <p class="main-actions">
-        <a href="https://crystal-lang.org/docs/installation/" target="_blank" class="btn btn-large btn-flat">
+        <a href="https://www.eventbrite.com/l/registration-online/" target="_blank" class="btn btn-large btn-flat white-text">
           Register at
           {% img media/evenbrite@2x.png width="99px" height="16px" %}
         </a>
-    {% endif %}
+      </p>
+      <div class="picture-credit">
+        <i class="material-icons">info_outline</i>
+        Picture taken by
+        <a href="https://www.flickr.com/photos/christopher_brown/" target="_blank">Thoper</a>
+      </div>
   </div>
 </div>

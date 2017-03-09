@@ -12,7 +12,6 @@ $( document ).ready(function(){
 });
 
 $(document).on('click', 'a', function(event){
-  event.preventDefault();
   $('html, body').animate({
       scrollTop: $( $.attr(this, 'href') ).offset().top - 100
   }, 500);
@@ -21,7 +20,6 @@ $(document).on('click', 'a', function(event){
 $(document).scroll(function(e){
     var scrollTop = $(document).scrollTop();
     if(scrollTop > 616){
-        //console.log(scrollTop);
         $('.wrapper.main').addClass("fixed");
     } else {
         $('.wrapper.main').removeClass("fixed");
