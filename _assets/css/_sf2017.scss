@@ -200,6 +200,24 @@ table.programme {
   }
 }
 
+/*
+The other rule has more precedence, so the notice will be visible as long as we
+keep the `draft` class
+*/
+.draft-notice {
+  display: none;
+}
+
+.wrapper.draft .draft-notice {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
 
 @media all and (max-width: 993px) {
   .wrapper.main.fixed {
@@ -226,4 +244,3 @@ table.programme {
     max-width: 100%;
   }
 }
-
