@@ -180,6 +180,9 @@ table.programme {
   }
   td {
     @extend .grey-text;
+    &:first-child {
+      white-space: nowrap;
+    }
     .small-text {
       font-size: .85rem;
     }
