@@ -193,6 +193,7 @@ table.programme {
     @extend .grey-text;
     &:first-child {
       white-space: nowrap;
+      padding: 15px;
     }
     .small-text {
       font-size: .85rem;
