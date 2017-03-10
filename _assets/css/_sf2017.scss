@@ -110,6 +110,17 @@
       }
     }
   }
+
+  #Location {
+    .map-overlay {
+      background: transparent;
+      position: relative;
+      width: 100%;
+      height: 500px;
+      top: 500px;
+      margin-top: -500px;
+    }
+  }
 }
 
 .speaker img {
