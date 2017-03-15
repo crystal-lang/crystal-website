@@ -1,7 +1,7 @@
-name: The Crystal Programming Language
-description: A compiled language with Ruby like syntax and type inference
-url: https://crystal-lang.org
 logo: /images/crystal-h.png
+name: "Crystal \\| SF2017"
+description: "A 2 day hands-on training dictated by the language's core team"
+url: https://codecamp.crystal-lang.org
 defaults:
   -
     scope:
@@ -10,14 +10,6 @@ defaults:
     values:
       image: /images/icon.png
       layout: default
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      image: /images/icon.png
-      layout: post
-      is_post: true
 twitter:
   username: CrystalLanguage
 
