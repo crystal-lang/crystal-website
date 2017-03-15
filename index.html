@@ -26,49 +26,42 @@ custom_body_classes:
         <th colspan="2">Day 1</th>
       </thead>
       <tbody>
-          <tr>
-            <td>09:00 - 10:00</td>
-            <td><div class="title">Breakfast & Registration</div></td>
-          </tr>
-          <tr>
-            <td>10:00 - 11:30</td>
-            <td>
-              <div class="title">From 0 to 100 and beyond</div>
-              <div>A quick guide to the language and its ecosystem. Boost your macro-fu capabilities.</div>
-            </td>
-          </tr>
-          <tr>
-            <td>11:30 - 12:30</td>
-            <td>
-              <div class="title">Into the wild </div>
-              <div>Play with JSON and other data coming from the web, databases, and other sources. Make the first steps in performant use of IO.</div>
-            </td>
-          </tr>
-          <tr>
-            <td>12:30 - 13:30</td>
-            <td><div class="title">Lunch</div></td>
-          </tr>
-          <tr>
-            <td>13:30 - 14:30</td>
-            <td>
-              <div class="title">Concurrency & Processes</div>
-              <div>Grasp the design of IO. Feel how fibers boost the language’s runtime performance. Make fibers and processes talk to each other.</div>
-            </td>
-          </tr>
-          <tr>
-            <td>14:30 - 15:00</td>
-            <td><div class="title">Coffee Break</div></td>
-          </tr>
-          <tr>
-            <td>15:00 - 16:30</td>
-            <td><div class="title">Hands on Lab: CLI & Graphics</div>
-              <div>The world is not just about <code>http://</code>, there are command line tools and UI that can be built. Let’s build some sample apps.</div>
-            </td>
-          </tr>
-          <tr>
-            <td>16:30 - 17:30</td>
-            <td><div class="title">Networking Session</div></td>
-          </tr>
+        {% include programme_row.html
+          time="09:00 - 10:00"
+          content='<div class="title">Breakfast & Registration</div>'
+        %}
+        {% include programme_row.html
+          time="10:00 - 11:30"
+          content='<div class="title">From 0 to 100 and beyond</div>
+          <div>A quick guide to the language and its ecosystem. Boost your macro-fu capabilities.</div>'
+        %}
+        {% include programme_row.html
+          time="11:30 - 12:30"
+          content='<div class="title">Into the wild </div>
+          <div>Play with JSON and other data coming from the web, databases, and other sources. Make the first steps in performant use of IO.</div>'
+        %}
+        {% include programme_row.html
+          time="12:30 - 13:30"
+          content='<div class="title">Lunch</div>'
+        %}
+        {% include programme_row.html
+          time="13:30 - 14:30"
+          content='<div class="title">Concurrency & Processes</div>
+          <div>Grasp the design of IO. Feel how fibers boost the language’s runtime performance. Make fibers and processes talk to each other.</div>'
+        %}
+        {% include programme_row.html
+          time="14:30 - 15:00"
+          content='<div class="title">Coffee Break</div>'
+        %}
+        {% include programme_row.html
+          time="15:00 - 16:30"
+          content='<div class="title">Hands on Lab: CLI & Graphics</div>
+            <div>The world is not just about <code>http://</code>, there are command line tools and UI that can be built. Let’s build some sample apps.</div>'
+        %}
+        {% include programme_row.html
+          time="16:30 - 17:30"
+          content='<div class="title">Networking Session</div>'
+        %}
       </tbody>
     </table>
   </div>
@@ -81,69 +74,57 @@ custom_body_classes:
         <th colspan="2">Day 2</th>
       </thead>
       <tbody>
-          <tr>
-            <td>09:00 - 10:00</td>
-            <td><div class="title">Breakfast</div></td>
-          </tr>
-          <tr>
-            <td>10:00 - 11:00</td>
-            <td>
-              <div class="title">That good old lib</div>
-              <div>Down the rabbit hole with C bindings to bring that loved library to the party.</div>
-            </td>
-          </tr>
-          <tr>
-            <td>11:00 - 12:00</td>
-            <td>
-              <div class="title">Oh my compiler</div>
-              <div>Meet face to face with the compiler. Experience the phases the code goes through to generate the desired executable. Unleash the skills you have for building dev tools.</div>
-            </td>
-          </tr>
-          <tr>
-            <td>12:00 - 12:30</td>
-            <td>
-              <div>Guest speaker: Serdar Doğruyol</div>
-              <div class="title">Kemal: Fast, Effective, Simple Web Framework.</div>
-              <div>Kemal is a modular web framework for Crystal. With Kemal you can build web apps, APIs in a matter of time. It's fast yet really effective on your precious resources (CPU, Memory e.g)</div>
-            </td>
-          </tr>
-          <tr>
-            <td>12:30 - 13:30</td>
-            <td><div class="title">Lunch</div></td>
-          </tr>
-          <tr>
-            <td>13.30 - 14:15</td>
-            <td>
-              <div class="title">Care to share?</div>
-              <div>How to create a shareable library, going through the common tasks for testing, CI, publishing, and using it.</div>
-            </td>
-          </tr>
-          <tr>
-            <td>14:15 - 15:00</td>
-            <td>
-              <div class="title">It works NOT ONLY in my machine</div>
-              <div>Build & deployment alternatives. Review state of the art platform support.</div>
-            </td>
-          </tr>
-          <tr>
-            <td>15:00 - 15:30</td>
-            <td><div class="title">Coffee Break</div></td>
-          </tr>
-          <tr>
-            <td>15:30 - 17:00</td>
-            <td>
-              <div class="title">Hands on Lab: .as(HTTP::Server) </div>
-              <div>Use the built in capabilities or the framework you choose to create a neat http server process. All the static typing at your service.</div>
-            </td>
-          </tr>
-          <tr>
-            <td>17:00 - 17:30</td>
-            <td><div class="title">Q&A</div></td>
-          </tr>
-          <tr>
-            <td>17:30 - 18:30</td>
-            <td><div class="title">Snacks + Networking session</div></td>
-          </tr>
+        {% include programme_row.html
+          time="09:00 - 10:00"
+          content='<div class="title">Breakfast</div>'
+        %}
+        {% include programme_row.html
+          time="10:00 - 11:00"
+          content='<div class="title">That good old lib</div>
+          <div>Down the rabbit hole with C bindings to bring that loved library to the party.</div>'
+        %}
+        {% include programme_row.html
+          time="11:00 - 12:00"
+          content='<div class="title">Oh my compiler</div>
+          <div>Meet face to face with the compiler. Experience the phases the code goes through to generate the desired executable. Unleash the skills you have for building dev tools.</div>'
+        %}
+        {% include programme_row.html
+          time="12:00 - 12:30"
+          content='<div>Guest speaker: Serdar Doğruyol</div>
+          <div class="title">Kemal: Fast, Effective, Simple Web Framework.</div>
+          <div>Kemal is a modular web framework for Crystal. With Kemal you can build web apps, APIs in a matter of time. It\'s fast yet really effective on your precious resources (CPU, Memory e.g)</div>'
+        %}
+        {% include programme_row.html
+          time="12:30 - 13:30"
+          content='<div class="title">Lunch</div>'
+        %}
+        {% include programme_row.html
+          time="13:30 - 14:15"
+          content='<div class="title">Care to share?</div>
+          <div>How to create a shareable library, going through the common tasks for testing, CI, publishing, and using it.</div>'
+        %}
+        {% include programme_row.html
+          time="14:15 - 15:00"
+          content='<div class="title">It works NOT ONLY in my machine</div>
+          <div>Build & deployment alternatives. Review state of the art platform support.</div>'
+        %}
+        {% include programme_row.html
+          time="15:00 - 15:30"
+          content='<div class="title">Coffee Break</div>'
+        %}
+        {% include programme_row.html
+          time="15:30 - 17:00"
+          content='<div class="title">Hands on Lab: .as(HTTP::Server) </div>
+          <div>Use the built in capabilities or the framework you choose to create a neat http server process. All the static typing at your service.</div>'
+        %}
+        {% include programme_row.html
+          time="17:00 - 17:30"
+          content='<div class="title">Q&A</div>'
+        %}
+        {% include programme_row.html
+          time="17:30 - 18:30"
+          content='<div class="title">Snacks + Networking session</div>'
+        %}
       </tbody>
     </table>
   </div>

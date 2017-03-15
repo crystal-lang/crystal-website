@@ -217,6 +217,9 @@ table.programme {
       padding: 0 .5rem;
       height: auto;
     }
+    span.time {
+      display: none;
+    }
   }
 }
 
@@ -263,5 +266,13 @@ keep the `draft` class
     padding-left: 5px;
     padding-right: 5px;
     max-width: 100%;
+  }
+  table.programme td {
+    &:first-child {
+      display: none;
+    }
+    span.time {
+      display: inline;
+    }
   }
 }
