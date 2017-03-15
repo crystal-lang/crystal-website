@@ -278,4 +278,9 @@ keep the `draft` class
       display: inline;
     }
   }
+  .wrapper.main .header-section .main-actions a.btn-flat {
+    border: 2px solid white;
+    display: inline-block;
+    width: auto;
+  }
 }
