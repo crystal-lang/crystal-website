@@ -8,7 +8,7 @@ defaults:
       path: ""
       type: pages
     values:
-      image: /images/icon.png
+      image: /sf2017.jpg
       layout: default
 twitter:
   username: CrystalLanguage
