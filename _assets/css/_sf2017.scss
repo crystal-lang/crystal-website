@@ -111,6 +111,10 @@
     }
   }
 
+  #Programme {
+    margin-top: 0;
+  }
+
   #Location {
     margin: 4em 0;
     .map-overlay {
@@ -135,7 +139,7 @@
   + h2 {
     text-transform: capitalize;
     margin-top: 3rem;
-    margin-bottom: 0;
+    margin-bottom: 6rem;
 
     + p {
       @extend .black-text;
