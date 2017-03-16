@@ -6,205 +6,213 @@ subtitle: Fast as C, slick as Ruby
 custom_body_classes:
   - main
 ---
-<div class="banner bountysource hide-on-med-and-down">
-  <div class="line-through">
+<div class="banner center bountysource hide-on-med-and-down">
     <div class="flag">
       <a href="https://www.bountysource.com/teams/crystal-lang/fundraisers/702-crystal-language" target="_blank">
         Fund Crystal and help it become production-ready at
         <img src="{{ 'bountysource.png' | asset_path }}" class="bountysource-logo">
         </a>
     </div>
-  </div>
 </div>
 
-<div class="row">
-  <div class="col s12">
-    <h2>Syntax</h2>
-    <p>Crystal’s syntax is heavily inspired on Ruby’s, so it feels natural to read and easy to write, and has the added benefit of a lower learning curve for experienced Ruby devs.</p>
-    <div class='code_section'>
-      {% include sample_server.md %}
-    </div>
-    <p class="read-more">Read more: <a href="https://crystal-lang.org/docs/overview/">https://crystal-lang.org/docs/overview/</a></p>
-  </div>
-</div>
+<div class="container">
 
-<div class="row">
-  <div class="col s12">
-    <h2>Compiled</h2>
-    <p>Crystal is a compiled language, allowing it to run blazingly fast with a very low memory footprint. It relies on LLVM for emitting native code, thus making use all the optimisations built into the toolchain.</p>
-    <h3>Web server throughput<hr class="squares"/></h3>
-    <p id="benchmark"></p>
-    <p class="read-more">Source: <a href="https://github.com/costajob/app-servers#results" target="_blank">costajobs/app-servers</a><br />
-    Read more: <a href="https://crystal-lang.org/docs/using_the_compiler/">https://crystal-lang.org/docs/using_the_compiler/</a></p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col s12">
-    <h2>Type system</h2>
-    <p>Crystal is statically type checked, so any type errors will be caught early by the compiler rather than fail on runtime. Moreover, and to keep the language clean, Crystal has built-in type inference, so most type annotations are unneeded.</p>
-    <div class="code_section">
-      {% include sample_type_system.md %}
-    </div>
-    <p class="read-more">Read more: <a href="https://crystal-lang.org/docs/syntax_and_semantics/types_and_methods.html">https://crystal-lang.org/docs/syntax_and_semantics/types_and_methods.html</a></p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col s12">
-    <h2>Null reference checks</h2>
-    <p>All types are non-nilable in Crystal, and nilable variables are represented as an union between the type and nil. As a consequence, the compiler will automatically check for null references in compile time, helping prevent the dreadful <a href="https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare" target="_blank">billion-dollar mistake</a>.</p>
-    <div class="code_section">
-      {% include sample_null.md %}
-    </div>
-    <p>Running the previous file:</p>
-    <div class="code_section">
-    <figure class="highlight console">
-      {% include sample_null_refs.html %}
-    </figure>
+  <div class="row">
+    <div class="col s12">
+      <h2>Syntax</h2>
+      <p>Crystal’s syntax is heavily inspired on Ruby’s, so it feels natural to read and easy to write, and has the added benefit of a lower learning curve for experienced Ruby devs.</p>
+      <div class='code_section'>
+        {% include sample_server.md %}
+      </div>
+      <p class="read-more">Read more: <a href="https://crystal-lang.org/docs/overview/">https://crystal-lang.org/docs/overview/</a></p>
     </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="col s12">
-    <h2>Macros</h2>
-    <p>Crystal’s answer to metaprogramming is a powerful macro system, which ranges from basic templating and AST inspection, to types inspection and running arbitrary external programs.</p>
-    <div class="code_section">
-      {% include sample_macros.md %}
+  <div class="row">
+    <div class="col s12">
+      <h2>Compiled</h2>
+      <p>Crystal is a compiled language, allowing it to run blazingly fast with a very low memory footprint. It relies on LLVM for emitting native code, thus making use all the optimisations built into the toolchain.</p>
+      <h3>Web server throughput<hr class="squares"/></h3>
+      <p id="benchmark"></p>
+      <p class="read-more">Source: <a href="https://github.com/costajob/app-servers#results" target="_blank">costajobs/app-servers</a><br />
+      Read more: <a href="https://crystal-lang.org/docs/using_the_compiler/">https://crystal-lang.org/docs/using_the_compiler/</a></p>
     </div>
-    <p class="read-more">Read more: <a href="https://crystal-lang.org/docs/syntax_and_semantics/macros.html">https://crystal-lang.org/docs/syntax_and_semantics/macros.html</a></p>
   </div>
-</div>
 
-<div class="row">
-  <div class="col s12">
-    <h2>Concurrency Model</h2>
-    <p>Crystal uses green threads, called fibers, to achieve concurrency. Fibers communicate with each other using channels, as in Go or Clojure, without having to turn to shared memory or locks. </p>
-    <div class="code_section">
-      {% include sample_concurrency.md %}
+  <div class="row">
+    <div class="col s12">
+      <h2>Type system</h2>
+      <p>Crystal is statically type checked, so any type errors will be caught early by the compiler rather than fail on runtime. Moreover, and to keep the language clean, Crystal has built-in type inference, so most type annotations are unneeded.</p>
+      <div class="code_section">
+        {% include sample_type_system.md %}
+      </div>
+      <p class="read-more">Read more: <a href="https://crystal-lang.org/docs/syntax_and_semantics/types_and_methods.html">https://crystal-lang.org/docs/syntax_and_semantics/types_and_methods.html</a></p>
     </div>
-    <p class="read-more">Read more: <a href="https://crystal-lang.org/docs/guides/concurrency.html">https://crystal-lang.org/docs/guides/concurrency.html</a></p>
   </div>
-</div>
 
-<div class="row">
-  <div class="col s12">
-    <h2>C-bindings</h2>
-    <p>Crystal has a dedicated syntax to easily call native libraries, eliminating the need to reimplement low-level tasks.</p>
-    <div class="code_section">
-    {% include sample_bindings.md %}
+  <div class="row">
+    <div class="col s12">
+      <h2>Null reference checks</h2>
+      <p>All types are non-nilable in Crystal, and nilable variables are represented as an union between the type and nil. As a consequence, the compiler will automatically check for null references in compile time, helping prevent the dreadful <a href="https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare" target="_blank">billion-dollar mistake</a>.</p>
+      <div class="code_section">
+        {% include sample_null.md %}
+      </div>
+      <p>Running the previous file:</p>
+      <div class="code_section">
+      <figure class="highlight console">
+        {% include sample_null_refs.html %}
+      </figure>
+      </div>
     </div>
-    <p class="read-more">Read more: <a href="https://crystal-lang.org/docs/syntax_and_semantics/c_bindings/">https://crystal-lang.org/docs/syntax_and_semantics/c_bindings/</a></p>
   </div>
-</div>
 
-<div class="row">
-  <div class="col s12">
-    <h2>Dependencies</h2>
-    <p>Crystal libraries are packed as Shards, and distributed via git without needing a centralised repository. Built in commands allow dependencies to be easily specified through a YAML file and fetched from their respective repositories.</p>
-    <div class="code_section">
-    {% include sample_dependencies.md %}
+  <div class="row">
+    <div class="col s12">
+      <h2>Macros</h2>
+      <p>Crystal’s answer to metaprogramming is a powerful macro system, which ranges from basic templating and AST inspection, to types inspection and running arbitrary external programs.</p>
+      <div class="code_section">
+        {% include sample_macros.md %}
+      </div>
+      <p class="read-more">Read more: <a href="https://crystal-lang.org/docs/syntax_and_semantics/macros.html">https://crystal-lang.org/docs/syntax_and_semantics/macros.html</a></p>
     </div>
-    <p class="read-more"><a href="https://github.com/crystal-lang/shards">https://github.com/crystal-lang/shards</a></p>
   </div>
-</div>
 
-<div class="row banner">
-  <div class="col s12">
-    <div class="line-through">
+  <div class="row">
+    <div class="col s12">
+      <h2>Concurrency Model</h2>
+      <p>Crystal uses green threads, called fibers, to achieve concurrency. Fibers communicate with each other using channels, as in Go or Clojure, without having to turn to shared memory or locks. </p>
+      <div class="code_section">
+        {% include sample_concurrency.md %}
+      </div>
+      <p class="read-more">Read more: <a href="https://crystal-lang.org/docs/guides/concurrency.html">https://crystal-lang.org/docs/guides/concurrency.html</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>C-bindings</h2>
+      <p>Crystal has a dedicated syntax to easily call native libraries, eliminating the need to reimplement low-level tasks.</p>
+      <div class="code_section">
+      {% include sample_bindings.md %}
+      </div>
+      <p class="read-more">Read more: <a href="https://crystal-lang.org/docs/syntax_and_semantics/c_bindings/">https://crystal-lang.org/docs/syntax_and_semantics/c_bindings/</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>Dependencies</h2>
+      <p>Crystal libraries are packed as Shards, and distributed via git without needing a centralised repository. Built in commands allow dependencies to be easily specified through a YAML file and fetched from their respective repositories.</p>
+      <div class="code_section">
+      {% include sample_dependencies.md %}
+      </div>
+      <p class="read-more"><a href="https://github.com/crystal-lang/shards">https://github.com/crystal-lang/shards</a></p>
+    </div>
+  </div>
+
+  <div class="row center">
+    <div class="col s12">
       <div class="flag">
         <h3>Crystal top sponsors</h3>
         <a href="/sponsors">Meet all</a>
       </div>
     </div>
-    <div class='sponsors-list'>
-      <a href='https://manas.tech/' target='_blank' class="sponsor">
-        {% img m.svg %}
-        <span class="small">Manas Technology Solutions</span>
-      </a>
-      <a href='http://www.protel.com.tr' target='_blank' class="sponsor">
-        {% img home/protel.svg %}
-        <span class="small">Protel</span>
-      </a>
-      <a href='https://openredis.com' target='_blank' class="sponsor">
-        {% img home/openredis.svg %}
-        <span class="small">openredis</span>
-      </a>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <div class='sponsors-list'>
+        <a href='https://manas.tech/' target='_blank' class="sponsor">
+          {% img m.svg %}
+          <span class="small">Manas Technology Solutions</span>
+        </a>
+        <a href='http://www.protel.com.tr' target='_blank' class="sponsor">
+          {% img home/protel.svg %}
+          <span class="small">Protel</span>
+        </a>
+        <a href='https://openredis.com' target='_blank' class="sponsor">
+          {% img home/openredis.svg %}
+          <span class="small">openredis</span>
+        </a>
+      </div>
     </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="col s12">
-    <h2>Articles from our blog</h2>
-    {% assign articles = site.posts | where: "release_notes",nil %}
-    {% for post in articles limit: 3 %}
-    {% include blog_row.html post=post %}
-    {% endfor %}
-    <p><a href="/blog">More articles</a></p>
+  <hr class="fullwidth">
+  <div class="row">
+    <div class="col s12">
+      <h2>Articles from our blog</h2>
+      {% assign articles = site.posts | where: "release_notes",nil %}
+      {% for post in articles limit: 3 %}
+      {% include blog_row.html post=post %}
+      {% endfor %}
+      <p><a href="/blog">More articles</a></p>
+    </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="col s12">
-    <h2>Release Notes</h2>
-    <table class="bordered">
-      <tbody>
-        {% assign releases = site.posts | where: "release_notes",true %}
-        {% for post in releases limit: 10 %}
-          <tr>
-            <td></td>
-            <td><a href="{{ post.url }}">
-              {{ post.title }}
-            </a></td>
-            <td>{{ post.date | date_to_string }}</td>
-        {% endfor %}
-      </tbody>
-    </table>
-    <p><a href="/blog#release_notes">More release notes</a></p>
+  <div class="row">
+    <div class="col s12">
+      <h2>Release Notes</h2>
+      <table class="bordered">
+        <tbody>
+          {% assign releases = site.posts | where: "release_notes",true %}
+          {% for post in releases limit: 10 %}
+            <tr>
+              <td></td>
+              <td><a href="{{ post.url }}">
+                {{ post.title }}
+              </a></td>
+              <td>{{ post.date | date_to_string }}</td>
+          {% endfor %}
+        </tbody>
+      </table>
+      <p><a href="/blog#release_notes">More release notes</a></p>
+    </div>
   </div>
-</div>
 
-<div class="row banner">
-  <div class="col s12">
-    <div class="line-through">
+  <div class="row center">
+    <div class="col s12">
       <div class="flag">
         <h3>Community channels</h3>
         <a href="/community">Show all</a>
       </div>
     </div>
-    <div class='row community-list'>
-      <div class="col s12 m3">
-        <a href='https://github.com/crystal-lang/crystal/' target='_blank' class="item">
-          <span class="small">Code repository</span>
-          <i class="extra-icons github"></i>
-          <span class="with_icon">crystal-lang/crystal</span>
-        </a>
-      </div>
-      <div class="col s12 m3">
-        <a href='https://groups.google.com/forum/#!forum/crystal-lang' target='_blank' class="item">
-          <span class="small">General discussion</span>
-          <i class="extra-icons google"></i>
-          <span class="with_icon">crystal-lang</span>
-        </a>
-      </div>
-      <div class="col s12 m3">
-        <a href='https://gitter.im/crystal-lang/crystal' target='_blank' class="item">
-          <span class="small">Chat room</span>
-          <i class="extra-icons gitter"></i>
-          <span class="with_icon">crystal-lang/crystal</span>
-        </a>
-      </div>
-      <div class="col s12 m3">
-        <a href='https://twitter.com/CrystalLanguage' target='_blank' class="item">
-          <span class="small">General announcements and events</span>
-          <i class="extra-icons twitter"></i>
-          <span class="with_icon">@CrystalLanguage</span>
-        </a>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <div class='row community-list center'>
+        <div class="col s12 m3">
+          <a href='https://github.com/crystal-lang/crystal/' target='_blank' class="item">
+            <span class="small">Code repository</span>
+            <i class="extra-icons github"></i>
+            <span class="with_icon">crystal-lang/crystal</span>
+          </a>
+        </div>
+        <div class="col s12 m3">
+          <a href='https://groups.google.com/forum/#!forum/crystal-lang' target='_blank' class="item">
+            <span class="small">General discussion</span>
+            <i class="extra-icons google"></i>
+            <span class="with_icon">crystal-lang</span>
+          </a>
+        </div>
+        <div class="col s12 m3">
+          <a href='https://gitter.im/crystal-lang/crystal' target='_blank' class="item">
+            <span class="small">Chat room</span>
+            <i class="extra-icons gitter"></i>
+            <span class="with_icon">crystal-lang/crystal</span>
+          </a>
+        </div>
+        <div class="col s12 m3">
+          <a href='https://twitter.com/CrystalLanguage' target='_blank' class="item">
+            <span class="small">General announcements and events</span>
+            <i class="extra-icons twitter"></i>
+            <span class="with_icon">@CrystalLanguage</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
+
 </div>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>

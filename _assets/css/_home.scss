@@ -39,11 +39,8 @@
     background-color: $black;
     z-index: -1;
   }
+
   .container {
-    width: 100%;
-    max-width: none;
-  }
-  .container > .row:not(.banner) {
     // Removed container width for the banners,
     // so this is making up for it.
     width: 70%;
@@ -53,7 +50,7 @@
 
   @media only screen and (max-width: 992px) {
     // The 70% fix for container should be undone in mobile.
-    .container > .row:not(.banner) {
+    .container {
       width: 90%;
     }
   }
@@ -64,7 +61,7 @@
 
   .sponsors-list {
     text-align: center;
-    border-bottom: 1px solid $light-gray;
+    // border-bottom: 1px solid $light-gray;
   }
   .sponsor {
     display: inline-block;
@@ -106,74 +103,52 @@
   h2 {
     margin: 100px 0 30px 0;
   }
+  hr.fullwidth {
+    background: $light-gray;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border: none;
+    height: 1px;
+  }
 
-  .banner {
-    margin-top: 100px;
-
-    .line-through {
-      width: 100%;
-      position: relative;
-      &:before {
-        border-top: 1px solid $light-gray;
-        content:"";
-        position: absolute;
-        top: 50%; left: 0; right: 0; bottom: 0;
-        width: 100%;
-        z-index: -1;
-      }
-    }
-    .flag {
-      border-top: 1px solid $light-gray;
-      border-bottom: 1px solid $light-gray;
-      z-index: 1;
-      display: inline;
-      padding: 8px 5px;
+  .flag {
+    background-color: $white;
+    line-height: 30px;
+    border-radius: 35px;
+    border: 1px solid $light-gray;
+    display: inline-block;
+    padding: 2px 25px;
+    white-space: nowrap;
+    z-index: 1;
+    h3 {
+      display: inline-block;
       background-color: $white;
-      margin: 0 calc(50% - 100px);
-      line-height: 36px;
-      position: relative;
-      h3 {
-        display: inline-block;
-        background-color: $white;
-        margin-top: 0;
-      }
-      a {
-        border-bottom: 1px solid $primary-text;
-        margin-left: 8px;
-      }
-      &:before, &:after {
-        content: "";
-        border: 1px solid $light-gray;
-        background-color: $white;
-        height: 37px;
-        width: 39px;
-        position: absolute;
-        bottom: -1px;
-        z-index: -1;
-      }
-      &:before {
-        border-right: 0;
-        @include border-radius(50% 0 0 50%);
-        left: -16px;
-      }
-      &:after {
-        border-left: 0;
-        @include border-radius(0 50% 50% 0);
-        right: -16px;
-      }
+      margin-top: 0;
+    }
+    a {
+      border-bottom: 1px solid $primary-text;
+      margin-left: 8px;
+    }
+    &:before {
+      content:"";
+      display: block;
+      border-top: 1px solid $light-gray;
+      position: absolute;
+      margin-top: 15px;
+      width: 100%;
+      left: 0;
+      z-index: -1;
     }
   }
 
+
   .banner.bountysource {
-    // Height of the banner + the nav
-    // top: calc(75% + 96px);
-    // position: absolute;
     margin-top: 0;
     .bountysource-logo {
       height: 25px;
     }
     .flag {
-      margin: 0 calc(50% - 230px);
       a { border-bottom: 0; }
     }
   }

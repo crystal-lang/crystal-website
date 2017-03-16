@@ -3,36 +3,37 @@ title: Blog
 subtitle: Here you can find detailed announcements for new releases, some interesting use cases, and the rationale behind some of the language's design decisions.
 nav_order: 2
 ---
-
-<div class="row">
-  <div class="col s12">
-    <h2>Articles</h2>
-    {% assign articles = site.posts | where: "release_notes",nil %}
-    <div class='post-list'>
-      {% for post in articles %}
-      {% include blog_row.html post=post %}
-      {% endfor %}
-    </div>
-    <p><a href="javascript:void(0)" id="more-articles">More articles</a></p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col s12">
-    <h2 name="release_notes">Release Notes</h2>
-    <table class="bordered">
-      <tbody class="notes-list">
-        {% assign releases = site.posts | where: "release_notes",true %}
-        {% for post in releases %}
-          <tr>
-            <td></td>
-            <td><a href="{{ post.url }}">
-              {{ post.title }}
-            </a></td>
-            <td>{{ post.date | date_to_string }}</td>
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <h2>Articles</h2>
+      {% assign articles = site.posts | where: "release_notes",nil %}
+      <div class='post-list'>
+        {% for post in articles %}
+        {% include blog_row.html post=post %}
         {% endfor %}
-      </tbody>
-    </table>
-    <p><a href="javascript:void(0)" id="more-notes">More release notes</a></p>
+      </div>
+      <p><a href="javascript:void(0)" id="more-articles">More articles</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2 name="release_notes">Release Notes</h2>
+      <table class="bordered">
+        <tbody class="notes-list">
+          {% assign releases = site.posts | where: "release_notes",true %}
+          {% for post in releases %}
+            <tr>
+              <td></td>
+              <td><a href="{{ post.url }}">
+                {{ post.title }}
+              </a></td>
+              <td>{{ post.date | date_to_string }}</td>
+          {% endfor %}
+        </tbody>
+      </table>
+      <p><a href="javascript:void(0)" id="more-notes">More release notes</a></p>
+    </div>
   </div>
 </div>
