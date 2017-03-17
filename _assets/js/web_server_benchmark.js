@@ -27,7 +27,8 @@ max = d3.max(data.map(function(i){
 svg = d3.select(chart)
   .append("svg")
   .attr("width", width)
-  .attr("height", height);
+  .attr("height", height)
+
 
 
 bar = svg.selectAll("g")
@@ -84,7 +85,20 @@ svg.append("text")
   .text("Throughput (req/s)")
   .attr("y",height - axisLabelHeight /2)
   .attr("x",labelWidth -3);
+
+  function setWidth (value) {
+      width = value;
+      scale.range([0, width - margin*2 - labelWidth]);
+      bar.selectAll("rect")
+          .attr("width", function(d) { return scale(d[1]);});
+      svg.select(".axis")
+          .call(xAxis);
+  }
+  window.addEventListener('resize', function(){
+    setWidth(chart.offsetWidth);
+  });
 }
+
 
 $(function() {
   if($('#benchmark').length > 0) {

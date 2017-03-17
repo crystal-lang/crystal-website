@@ -131,14 +131,9 @@ p.no-underline > a {
   }
 }
 
-@media only screen and (max-width: 992px) {
-  nav .brand-logo {
-    left: 10%;
-  }
-}
 
 .header-section {
-  min-height: 75%;
+  min-height: 465px;
   width: 100%;
 
   .title {
@@ -148,12 +143,12 @@ p.no-underline > a {
   }
   .subtitle {
     font-size: 18px;
-    max-width: 500px;
-    margin: 0 auto;
+    padding: 0 5%;
   }
   #content {
     display: block;
     width: 100%;
+    margin-top: -30px
   }
 }
 
@@ -179,5 +174,31 @@ p.no-underline > a {
     font-weight: 400;
     font-size: 20px;
     height: 60px;
+  }
+}
+
+
+@media only screen and (min-width: 993px) {
+  .header-section .subtitle {
+    padding: 0 20%;
+  }
+  .main .community-list .item {
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 10%;
+  }
+  .main .community-list a.item {
+    display: block;
+    text-align: center;
+  }
+  footer {
+    text-align: center !important;
+    .right-align {
+      text-align: inherit;
+    }
   }
 }

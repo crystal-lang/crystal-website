@@ -2,6 +2,8 @@
   // Changes to the default layout for main page
   .header-section {
     background-color: transparent;
+    height: calc(70vh - 115px);
+    min-height: 485px;
     h1.title {
       color: $white;
     }
@@ -18,6 +20,8 @@
   nav {
     background-color: transparent;
     border-bottom: 0px;
+    position: relative;
+    z-index: 1000;
 
     ul#nav-desktop li a {
       color: $white;
@@ -33,11 +37,20 @@
     }
   }
 
-  canvas.delaunay {
+  #delaunay {
+    @extend .black;
     position: absolute;
     top: 0;
-    background-color: $black;
+    right: 0;
+    min-height: 600px;
+    height: 70vh;
+    left: 0;
     z-index: -1;
+  }
+
+  canvas.delaunay {
+    position: absolute;
+    background-color: $black;
   }
 
   .container {
@@ -177,6 +190,7 @@
   #benchmark {
     svg {
       shape-rendering: crispEdges;
+      width: 100% !important;
 
       h1 {
         margin: 0;

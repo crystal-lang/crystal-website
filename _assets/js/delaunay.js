@@ -1,59 +1,61 @@
 $(function() {
   if($('.wrapper.main').length > 0) {
-    var width = window.innerWidth,
-        height = $('.header-section').height() + $('nav').height() + $('.banner.bountysource').height()/2 + 1,
-        τ = 2 * Math.PI,
-        gravity = .005;
-
-    var sample = poissonDiscSampler(width, height, 100),
-        nodes = [{x: 0, y: 0}],
-        s;
-
-    while (s = sample()) nodes.push(s);
-
-    var voronoi = d3.geom.voronoi()
-        .x(function(d) { return d.x; })
-        .y(function(d) { return d.y; });
-
-    var links = voronoi.links(nodes);
-
-    var canvas = d3.select("#delaunay").append("canvas")
-        .attr("width", width)
-        .attr("height", height)
-        .attr("class", "delaunay")
-
-    var context = canvas.node().getContext("2d");
+    var canvas = d3.select("#delaunay").append("canvas");
 
     function draw() {
-      for (var i = 0, n = nodes.length; i < n; ++i) {
-        var node = nodes[i];
-        node.y += (node.cy - node.y) * gravity;
-        node.x += (node.cx - node.x) * gravity;
-      }
+      var width = window.innerWidth,
+          height = $('.header-section').height() + $('nav').height() + 1,
+          τ = 2 * Math.PI,
+          gravity = .005;
 
-      context.clearRect(0, 0, width, height);
+      var sample = poissonDiscSampler(width, height, 100),
+          nodes = [{x: 0, y: 0}],
+          s;
 
-      context.beginPath();
-      for (var i = 0, n = links.length; i < n; ++i) {
-        var link = links[i];
-        context.moveTo(link.source.x, link.source.y);
-        context.lineTo(link.target.x, link.target.y);
-      }
-      context.lineWidth = 1;
-      context.strokeStyle = "#444444";
-      context.stroke();
+      while (s = sample()) nodes.push(s);
 
-      context.beginPath();
-      for (var i = 0, n = nodes.length; i < n; ++i) {
-        var node = nodes[i];
-        context.moveTo(node.x, node.y);
-        context.rect(node.x - 2, node.y - 2, 4, 4);
-      }
-      context.lineWidth = 3;
-      context.strokeStyle = "#444444";
-      context.stroke();
-      context.fillStyle = "#000000";
-      context.fill();
+      var voronoi = d3.geom.voronoi()
+          .x(function(d) { return d.x; })
+          .y(function(d) { return d.y; });
+
+      var links = voronoi.links(nodes);
+
+      canvas
+          .attr("width", width)
+          .attr("height", height)
+          .attr("class", "delaunay")
+
+      var context = canvas.node().getContext("2d");
+
+        for (var i = 0, n = nodes.length; i < n; ++i) {
+          var node = nodes[i];
+          node.y += (node.cy - node.y) * gravity;
+          node.x += (node.cx - node.x) * gravity;
+        }
+
+        context.clearRect(0, 0, width, height);
+
+        context.beginPath();
+        for (var i = 0, n = links.length; i < n; ++i) {
+          var link = links[i];
+          context.moveTo(link.source.x, link.source.y);
+          context.lineTo(link.target.x, link.target.y);
+        }
+        context.lineWidth = 1;
+        context.strokeStyle = "#444444";
+        context.stroke();
+
+        context.beginPath();
+        for (var i = 0, n = nodes.length; i < n; ++i) {
+          var node = nodes[i];
+          context.moveTo(node.x, node.y);
+          context.rect(node.x - 2, node.y - 2, 4, 4);
+        }
+        context.lineWidth = 3;
+        context.strokeStyle = "#444444";
+        context.stroke();
+        context.fillStyle = "#000000";
+        context.fill();
     }
 
     // Based on https://www.jasondavies.com/poisson-disc/
@@ -128,5 +130,12 @@ $(function() {
     }
 
     draw();
+
+    var interval;
+    window.addEventListener('resize', function(){
+      window.clearInterval(interval);
+      interval = window.setInterval(function() { draw(); window.clearInterval(interval); }, 500);
+    });
+
   }
 });
