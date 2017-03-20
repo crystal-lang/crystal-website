@@ -67,7 +67,7 @@ a {
   }
 }
 
-p > a, td > a {
+p > a, td > a, li > a {
   border-bottom: 1px solid $primary-text;
 }
 
