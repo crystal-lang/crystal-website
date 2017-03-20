@@ -17,4 +17,4 @@ We’re looking for sponsors who want to support the event, so if you’re inter
 
 We hope this is the first of many Crystal CodeCamps around the world, so we’re open for suggestions about where we should go next.
 
-PD: This blogpost will be updated as new sponsors join us, we want to thank the companies supporting Crystal in this new event series.
+PS: This blogpost will be updated as new sponsors join us, we want to thank the companies supporting Crystal in this new event series.
