@@ -1,7 +1,7 @@
 {% highlight ruby %}
 class Object
   def has_instance_var?(name) : Bool
-    {{ @type.instance_vars.map &.name.stringify }}.includes? name
+    {% raw %}{{ @type.instance_vars.map &.name.stringify }}{% endraw %}.includes? name
   end
 end
 
