@@ -71,7 +71,8 @@ p > a, td > a, li > a {
   border-bottom: 1px solid $primary-text;
 }
 
-p.no-underline > a {
+p.no-underline > a,
+table.no-underline a {
   border-bottom: 0;
   &:hover span {
     border-bottom: 1px solid $primary-text;
