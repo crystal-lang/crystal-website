@@ -88,6 +88,12 @@ p.no-underline > a {
   @include box-shadow(none);
   border-bottom: 1px solid $separator;
 
+  .brand-logo {
+    position: relative;
+  }
+
+
+
   #logo-container {
     background-color: $white;
     @include border-radius(50%);
