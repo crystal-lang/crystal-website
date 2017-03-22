@@ -67,7 +67,7 @@ a {
   }
 }
 
-p > a, td > a, li > a {
+p > a, td > a, ul:not(#nav-mobile) li > a {
   border-bottom: 1px solid $primary-text;
 }
 
