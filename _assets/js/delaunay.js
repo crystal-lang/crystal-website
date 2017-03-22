@@ -134,7 +134,7 @@ $(function() {
     var interval;
     window.addEventListener('resize', function(){
       window.clearInterval(interval);
-      interval = window.setInterval(function() { draw(); window.clearInterval(interval); }, 500);
+      interval = window.setInterval(function() { draw(); window.clearInterval(interval); }, 30);
     });
 
   }
