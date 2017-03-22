@@ -211,9 +211,30 @@ table.no-underline a {
 }
 
 @media only screen and (max-width: 600px) {
-  .header-section {
-    .title {
-      font-size: 3.4rem;
+  .wrapper {
+    .header-section {
+      .title {
+        font-size: 3.4rem;
+      }
+    }
+    nav {
+      a.button-collapse i {
+        font-size: 1.8rem;
+        line-height: 72px;
+      }
+    }
+    &:not(.main) {
+      #logo-container {
+        margin: 5px 0 0 5px;
+        height: 75px;
+        width: 75px;
+
+        #logo-canvas {
+          width: 75px;
+          height: 75px;
+        }
+      }
     }
   }
 }
+
