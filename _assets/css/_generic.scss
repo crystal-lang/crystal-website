@@ -202,3 +202,11 @@ p.no-underline > a {
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .header-section {
+    .title {
+      font-size: 3.4rem;
+    }
+  }
+}
