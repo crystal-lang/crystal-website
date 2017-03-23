@@ -249,9 +249,12 @@
 .sf2017 {
   @extend .white-text;
   background: #828282;
-  line-height: 60px;
+  line-height: 56px;
   padding: 0 0 0 .3rem;
   height: 60px;
+  .row {
+    margin-bottom: 0;
+  }
   .col {
     padding-right: 0;
   }
