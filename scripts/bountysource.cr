@@ -190,8 +190,8 @@ support_levels.each do |support_level|
               else
                 raise "not implemented image type #{logo_request.content_type}"
               end
-        logo = "/images/sponsors/#{name.downcase.gsub(/\W/, "_")}.#{ext}"
-        local_file = logo[1..-1]
+        logo = "sponsors/#{name.downcase.gsub(/\W/, "_")}.#{ext}"
+        local_file = "_assets/img/#{logo}"
         unless File.exists?(local_file)
           File.open(local_file, "w") do |f|
             IO.copy logo_request.body_io, f
