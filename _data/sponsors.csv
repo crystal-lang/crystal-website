@@ -1,10 +1,10 @@
 logo,name,url,this_month,all_time,since,level
-/images/sponsors/openredis.png,openredis,https://openredis.com,250,500,"Dec 7, 2016",250
-/images/sponsors/buildit__inc_.png,"BuildIt, Inc.",,80,560,"Jul 29, 2016",75
-/images/sponsors/tpberntsen.jpg,tpberntsen,https://github.com/tpberntsen,75,1275,"Sep 20, 2015",75
-/images/sponsors/rhs.jpg,rhs,https://www.rainforestqa.com/,75,825,"Feb 17, 2016",75
-/images/sponsors/brooklyn_labs.png,brooklyn_labs,http://twitter.com/brooklyn_labs,75,675,"May 9, 2016",75
-/images/sponsors/fabio_akita.jpg,Fabio Akita,http://www.codeminer42.com,75,525,"Jul 21, 2016",75
+sponsors/openredis.png,openredis,https://openredis.com,250,500,"Dec 7, 2016",250
+sponsors/buildit__inc_.png,"BuildIt, Inc.",,80,560,"Jul 29, 2016",75
+sponsors/tpberntsen.jpg,tpberntsen,https://github.com/tpberntsen,75,1275,"Sep 20, 2015",75
+sponsors/rhs.jpg,rhs,https://www.rainforestqa.com/,75,825,"Feb 17, 2016",75
+sponsors/brooklyn_labs.png,brooklyn_labs,http://twitter.com/brooklyn_labs,75,675,"May 9, 2016",75
+sponsors/fabio_akita.jpg,Fabio Akita,http://www.codeminer42.com,75,525,"Jul 21, 2016",75
 ,Frank O'Hara,,25,450,"Aug 16, 2015",25
 ,maxdemarzi,http://twitter.com/maxdemarzi,25,450,"Aug 6, 2015",25
 ,PragTob,http://pragtob.wordpress.com,25,450,"Aug 12, 2015",25
