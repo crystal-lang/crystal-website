@@ -50,7 +50,9 @@
     content: '';
     background: url(asset_path("media/27039658100_575e78dbb2_o.jpg")) no-repeat center 30% $black;
     background-size: cover;
-    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     filter: brightness(60%);
     position: absolute;
     top: 0;
