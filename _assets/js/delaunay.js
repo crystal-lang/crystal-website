@@ -3,7 +3,7 @@ $(function() {
     var canvas = d3.select("#delaunay").append("canvas");
 
     function draw() {
-      var width = window.innerWidth,
+      var width = $(window).width(),
           height = $('.header-section').height() + $('nav').height() + 1,
           τ = 2 * Math.PI,
           gravity = .005;
