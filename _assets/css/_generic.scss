@@ -83,14 +83,15 @@ table.no-underline a {
   font-size: 85%;
 }
 
-.wrapper nav {
-  height: 96px;
-  background-color: $white;
-  @include box-shadow(none);
-  border-bottom: 1px solid $separator;
+.wrapper {
 
   .brand-logo {
     position: relative;
+    color: #fff;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+    white-space: nowrap;
   }
 
 
@@ -109,31 +110,38 @@ table.no-underline a {
       height: 60px;
     }
   }
-
-  ul#nav-desktop li a {
+  nav {
     height: 96px;
-    line-height: 96px;
-    color: $black;
-    padding: 0;
-    margin: 0 15px;
-    border-bottom: 0;
-    user-select: none;
+    background-color: $white;
+    @include box-shadow(none);
+    border-bottom: 1px solid $separator;
 
-    &.selected {
-      border-bottom: 5px solid $black;
-    }
-    &:hover {
-      background-color: transparent;
-      border-bottom: 5px solid $black;
-    }
-  }
 
-  a.button-collapse {
-    color: $black;
-    float: right;
-    i {
-      font-size: 2.5em;
+    ul#nav-desktop li a {
+      height: 96px;
       line-height: 96px;
+      color: $black;
+      padding: 0;
+      margin: 0 15px;
+      border-bottom: 0;
+      user-select: none;
+
+      &.selected {
+        border-bottom: 5px solid $black;
+      }
+      &:hover {
+        background-color: transparent;
+        border-bottom: 5px solid $black;
+      }
+    }
+
+    a.button-collapse {
+      color: $black;
+      float: right;
+      i {
+        font-size: 2.5em;
+        line-height: 96px;
+      }
     }
   }
 }
@@ -155,7 +163,6 @@ table.no-underline a {
   #content {
     display: block;
     width: 100%;
-    margin-top: -30px
   }
 }
 

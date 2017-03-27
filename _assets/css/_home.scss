@@ -5,7 +5,7 @@
     // height: calc(70vh - 175px); // without codecamp banner
     height: calc(70vh - 160px); // with codecamp banner
     // min-height: 485px; // without codecamp banner
-    min-height: 440px; // with codecamp banner
+    min-height: 534px; // with codecamp banner
     h1.title {
       color: $white;
     }
@@ -23,20 +23,41 @@
     background-color: transparent;
     border-bottom: 0px;
     position: relative;
+    text-align: center;
     z-index: 1000;
 
 
-    ul#nav-desktop li a {
-      color: $white;
-      &:hover {
-        border-color: $white;
-      }
-      &.selected {
-        border-bottom: 5px solid $white;
+    ul#nav-desktop {
+      display: inline-block;
+      float: none !important;
+      margin: 0 auto !important;
+      li a {
+        color: $white;
+        &:hover {
+          border-color: $white;
+        }
+        &.selected {
+          border-bottom: 5px solid $white;
+        }
       }
     }
     a.button-collapse {
       color: $white;
+    }
+  }
+  #crystal-container {
+    text-align: center;
+    margin-bottom: 15px;
+    #Crystal {
+      fill: #ffffff;
+    }
+  }
+  #logo-container {
+    width: 160px;
+    height: 160px;
+    #logo-canvas {
+      width: 150px;
+      height: 150px;
     }
   }
 
@@ -47,7 +68,7 @@
     top: 60px; // with codecamp banner
     right: 0;
     // min-height: 600px; // without codecamp banner
-    min-height: 540px; // with codecamp banner
+    min-height: 630px; // with codecamp banner
     // height: 70vh; // with codecamp banner
     height: calc(70vh - 60px); // with codecamp banner
     left: 0;
@@ -347,6 +368,24 @@
         position: absolute;
         left: calc(50% - 15px);
         top: 2rem;
+      }
+    }
+    .header-section.valign-wrapper {
+      display: block;
+    }
+    #crystal-container {
+      margin-bottom: 5px;
+      #Crystal {
+        width: 150px !important;
+        height: auto !important;
+      }
+    }
+    #logo-container {
+      width: 110px;
+      height: 110px;
+      #logo-canvas {
+        width: 100px;
+        height: 100px;
       }
     }
   }
