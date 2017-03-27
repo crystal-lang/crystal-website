@@ -10,7 +10,7 @@ script: test $TRAVIS_PULL_REQUEST != "false" || bundle exec jekyll build
 branches:
   only:
     - master
-    - redesign
+    - unstable
 deploy:
   - provider: s3
     access_key_id: AKIAIRL4BWFPN7P54TBQ
@@ -29,4 +29,4 @@ deploy:
     local_dir: _site
     skip_cleanup: true
     on:
-      branch: redesign
+      branch: unstable
