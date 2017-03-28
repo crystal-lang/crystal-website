@@ -7,5 +7,16 @@
 
 
 $( document ).ready(function(){
-  $(".button-collapse").sideNav();
-})
+  $('.button-collapse').sideNav({
+      closeOnClick: true
+    }
+  );
+
+  $("#nav-mobile a").click(function(e) {
+    e.preventDefault();
+    $("#nav-mobile, #sidenav-overlay, .drag-target").remove();
+    window.setTimeout(function() {
+      window.location = $(e.target).attr("href");
+    }, 0);
+  });
+});
