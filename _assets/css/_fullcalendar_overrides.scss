@@ -1,0 +1,27 @@
+// fullCalendar customization
+.fc {
+  .fc-list-heading, .fc-event-dot {
+    display: none;
+  }
+  tbody tr:nth-of-type(2) td {
+    border-top-width: 0;
+  }
+
+  // if there are more than 6 events, the view scrolls
+  // then you have 12 tr's (invisible heading + item)
+  // so we don't show double border then
+
+  // see http://stackoverflow.com/a/10316325/641451 for CSS rule
+  tbody tr:last-of-type:nth-of-type(n+12) td {
+    border-bottom-width: 0;
+  }
+  .fc-list-item td {
+    border-bottom-width: 1px;
+  }
+
+  table {
+    td:first-child:before, th:first-child:before, td:last-child:after, th:last-child:after {
+      border: none;
+    }
+  }
+}
