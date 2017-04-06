@@ -1,5 +1,5 @@
 $(function() {
-  if($('.wrapper.main').length > 0) {
+  if($('#delaunay').length > 0) {
     var canvas = d3.select("#delaunay").append("canvas");
 
     function draw() {
