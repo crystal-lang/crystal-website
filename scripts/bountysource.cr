@@ -22,7 +22,7 @@ module BountySource
       Array(SupportLevel).from_json(response)
     end
 
-    def supporters
+    def supporters(page)
       headers = HTTP::Headers{
         "Accept"        => "application/vnd.bountysource+json; version=2",
         "Authorization" => "token #{@token}",
@@ -30,7 +30,7 @@ module BountySource
         "Referer"       => "https://salt.bountysource.com/teams/crystal-lang/admin/supporters",
         "Origin"        => "https://salt.bountysource.com",
       }
-      response = @client.get("/supporters?order=monthly&per_page=200&team_slug=#{@team}", headers: headers).body
+      response = @client.get("/supporters?order=monthly&page=#{page}&per_page=50&team_slug=#{@team}", headers: headers).body
       Array(Supporters).from_json(response)
     end
 
@@ -55,6 +55,8 @@ module BountySource
       alltime_amount:  Float64,
       created_at:      String,
     })
+
+    def_equals_and_hash id
   end
 
   class SupportLevel
@@ -141,7 +143,15 @@ bountysource = BountySource::API.new(team, token)
 
 github = GitHub::API.new
 
-supporters = bountysource.supporters
+# paginate sponsors until repeat of empty page.
+supporters = [] of BountySource::Supporters
+page_index = 1
+while (page = bountysource.supporters(page_index)) &&
+      (new_supporters = page.select { |s| !supporters.includes?(s) }) &&
+      new_supporters.size > 0
+  supporters.concat(new_supporters)
+  page_index += 1
+end
 
 support_levels = bountysource.support_levels
 support_levels.select! { |s| s.status == "active" && s.owner.display_name != "Anonymous" }
