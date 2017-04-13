@@ -220,18 +220,18 @@ end
 
 sponsors.sort_by! { |s| {-s.this_month, -s.all_time, s.name.downcase} }.uniq!
 
-result = CSV.build do |csv|
-  csv.row "logo", "name", "url", "this_month", "all_time", "since", "level"
+File.open("#{__DIR__}/../_data/sponsors.csv", "w") do |file|
+  CSV.build(file) do |csv|
+    csv.row "logo", "name", "url", "this_month", "all_time", "since", "level"
 
-  sponsors.each do |sponsor|
-    csv.row (sponsor.logo unless sponsor.logo.empty?),
-      sponsor.name,
-      (sponsor.url unless sponsor.url.empty?),
-      sponsor.this_month.to_i,
-      sponsor.all_time.to_i,
-      sponsor.since.to_s("%b %-d, %Y"),
-      levels.find { |amount| amount <= sponsor.this_month.to_i }.not_nil!
+    sponsors.each do |sponsor|
+      csv.row (sponsor.logo unless sponsor.logo.empty?),
+        sponsor.name,
+        (sponsor.url unless sponsor.url.empty?),
+        sponsor.this_month.to_i,
+        sponsor.all_time.to_i,
+        sponsor.since.to_s("%b %-d, %Y"),
+        levels.find { |amount| amount <= sponsor.this_month.to_i }.not_nil!
+    end
   end
 end
-
-puts result
