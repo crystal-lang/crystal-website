@@ -1,84 +1,93 @@
 logo,name,url,this_month,all_time,since,level
-sponsors/openredis.png,openredis,https://openredis.com,250,750,"Dec 7, 2016",250
-sponsors/buildit__inc_.png,"BuildIt, Inc.",,80,640,"Jul 29, 2016",75
-sponsors/tpberntsen.jpg,tpberntsen,https://github.com/tpberntsen,75,1350,"Sep 20, 2015",75
-sponsors/rhs.jpg,rhs,https://www.rainforestqa.com/,75,900,"Feb 17, 2016",75
-sponsors/fabio_akita.jpg,Fabio Akita,http://www.codeminer42.com,75,600,"Jul 21, 2016",75
+sponsors/openredis.png,openredis,https://openredis.com,250,1000,"Dec 7, 2016",250
+sponsors/buildit__inc_.png,"BuildIt, Inc.",,80,720,"Jul 29, 2016",75
+sponsors/tpberntsen.jpg,tpberntsen,https://github.com/tpberntsen,75,1425,"Sep 20, 2015",75
+sponsors/rhs.jpg,rhs,https://www.rainforestqa.com/,75,975,"Feb 17, 2016",75
+sponsors/fabio_akita.jpg,Fabio Akita,http://www.codeminer42.com,75,675,"Jul 21, 2016",75
+sponsors/forsbergplustwo.jpg,forsbergplustwo,https://github.com/forsbergplustwo,75,75,"Apr 2, 2017",75
 ,isaacsloan,https://github.com/elorest,26,560,"Mar 24, 2016",25
-,Frank O'Hara,,25,475,"Aug 16, 2015",25
-,maxdemarzi,http://twitter.com/maxdemarzi,25,475,"Aug 6, 2015",25
-,PragTob,http://pragtob.wordpress.com,25,475,"Aug 12, 2015",25
-,sdogruyol,https://github.com/sdogruyol,25,475,"Jul 24, 2015",25
-,Sergio Gil,https://github.com/porras,25,435,"Jul 27, 2015",25
-,jeromegn,https://github.com/jeromegn,25,350,"Jan 28, 2016",25
-,Renich,https://github.com/renich,25,325,"Feb 1, 2016",25
-,waterlink,https://github.com/waterlink,25,300,"Mar 2, 2016",25
-,beanieboi,https://github.com/beanieboi,25,225,"Jun 3, 2016",25
-,gaurub,https://github.com/gaurub,25,175,"Aug 4, 2016",25
-,Blitline LLC,http://www.blitline.com,25,75,"Dec 1, 2016",25
-,drosehn,https://github.com/drosehn,16,236,"Dec 3, 2015",10
-,gottlike,https://github.com/gottlike,15,385,"Jul 29, 2015",10
-,opes,https://github.com/opes,10,224,"Feb 26, 2016",10
-,chendo ,,10,190,"Aug 11, 2015",10
-,ddfreyne,https://github.com/ddfreyne,10,190,"Aug 17, 2015",10
-,ucmsky,http://qiita.com/ucmsky,10,170,"Oct 23, 2015",10
-,arambert,https://github.com/arambert,10,110,"Apr 27, 2016",10
-,msa7,https://github.com/msa7,10,100,"May 18, 2016",10
-,christos,https://github.com/christos,10,90,"Jun 23, 2016",10
-,kibs,https://github.com/kibs,10,90,"Jun 15, 2016",10
-,pmorton,https://github.com/pmorton,10,80,"Jul 10, 2016",10
-,masukomi,http://masukomi.org,10,70,"Aug 7, 2016",10
-,Константин Малиновский,,10,70,"Aug 16, 2016",10
-,ettomatic,https://github.com/ettomatic,10,55,"Sep 26, 2016",10
-,International,https://github.com/International,10,40,"Nov 2, 2016",10
-,jasdeepsingh,https://github.com/jasdeepsingh,10,40,"Nov 3, 2016",10
-,kubalasecki,https://github.com/kubalasecki,10,40,"Aug 21, 2016",10
-,Neocities,https://neocities.org,10,40,"Nov 29, 2016",10
-,drakmail,https://github.com/drakmail,10,30,"Dec 15, 2016",10
-,fridgerator,https://github.com/fridgerator,10,30,"Dec 21, 2016",10
-,rohanthewiz,https://github.com/rohanthewiz,10,30,"Dec 2, 2016",10
-,Rousseau Alexandre,,10,30,"Dec 7, 2016",10
-,bararchy,https://github.com/bararchy,10,20,"Jan 1, 2017",10
-,liothen,https://github.com/liothen,10,20,"Jan 19, 2017",10
-,metacortex,https://github.com/metacortex,10,10,"Feb 24, 2017",10
-,yxhuvud,https://github.com/yxhuvud,10,10,"Feb 21, 2017",10
-,jwaldrip,https://github.com/jwaldrip,5,630,"Aug 7, 2015",5
-,rosylilly,https://github.com/rosylilly,5,198,"Aug 4, 2015",5
-,pine613,https://github.com/pine,5,100,"Jul 24, 2015",5
-,dahofer,https://github.com/dahofer,5,95,"Aug 6, 2015",5
-,tommasop,https://github.com/tommasop,5,95,"Aug 6, 2015",5
-,method3000,https://github.com/tristil,5,85,"Jul 27, 2015",5
-,ealdent,https://github.com/ealdent,5,75,"Dec 29, 2015",5
-,rhelsing,https://github.com/rhelsing,5,70,"Jan 27, 2016",5
-,thermes,https://github.com/thermes,5,70,"Jan 28, 2016",5
-,TPei,https://github.com/TPei,5,63,"May 27, 2016",5
-,Blumenversand,https://blumenversender.com,5,60,"Mar 14, 2016",5
-,boie0025,https://github.com/boie0025,5,60,"Mar 28, 2016",5
-,vermosi,https://github.com/vermosi,5,60,"Mar 21, 2016",5
-,olbat,https://github.com/olbat,5,55,"Apr 18, 2016",5
-,DateinAsia,https://findmate.asia,5,35,"Aug 12, 2016",5
-,jrichocean,https://github.com/jrichocean,5,35,"Aug 22, 2016",5
-,dimroc,https://github.com/dimroc,5,25,"Oct 29, 2016",5
-,metacollin,https://github.com/metacollin,5,20,"Nov 4, 2016",5
-,bradleyd,https://github.com/bradleyd,5,15,"Dec 22, 2016",5
-,netmask,https://github.com/netmask,5,15,"Dec 20, 2016",5
-,andyfleming,https://github.com/andyfleming,5,10,"Jan 7, 2017",5
-,arcage,https://github.com/arcage,5,10,"Jan 6, 2017",5
-,Christian Bagley,http://christianbagley.me,5,10,"Jan 8, 2017",5
-,Clément Joubert,http://www.levups.com,5,10,"Jan 3, 2017",5
-,szymonwlochowski,https://github.com/szymonwlochowski,5,10,"Jan 15, 2017",5
+,Frank O'Hara,,25,500,"Aug 16, 2015",25
+,maxdemarzi,http://twitter.com/maxdemarzi,25,500,"Aug 6, 2015",25
+,PragTob,http://pragtob.wordpress.com,25,500,"Aug 12, 2015",25
+,sdogruyol,https://github.com/sdogruyol,25,500,"Jul 24, 2015",25
+,Sergio Gil,https://github.com/porras,25,460,"Jul 27, 2015",25
+,jeromegn,https://github.com/jeromegn,25,375,"Jan 28, 2016",25
+,Renich,https://github.com/renich,25,350,"Feb 1, 2016",25
+,waterlink,https://github.com/waterlink,25,325,"Mar 2, 2016",25
+,beanieboi,https://github.com/beanieboi,25,250,"Jun 3, 2016",25
+,gaurub,https://github.com/gaurub,25,200,"Aug 4, 2016",25
+,Blitline LLC,http://www.blitline.com,25,100,"Dec 1, 2016",25
+,drosehn,https://github.com/drosehn,16,252,"Dec 3, 2015",10
+,gottlike,https://github.com/gottlike,15,400,"Jul 29, 2015",10
+,opes,https://github.com/opes,10,234,"Feb 26, 2016",10
+,chendo ,,10,200,"Aug 11, 2015",10
+,ddfreyne,https://github.com/ddfreyne,10,200,"Aug 17, 2015",10
+,ucmsky,http://qiita.com/ucmsky,10,180,"Oct 23, 2015",10
+,arambert,https://github.com/arambert,10,120,"Apr 27, 2016",10
+,msa7,https://github.com/msa7,10,110,"May 18, 2016",10
+,tommasop,,10,105,"Aug 6, 2015",10
+,christos,https://github.com/christos,10,100,"Jun 23, 2016",10
+,kibs,https://github.com/kibs,10,100,"Jun 15, 2016",10
+,pmorton,https://github.com/pmorton,10,90,"Jul 10, 2016",10
+,schovi,https://github.com/schovi,10,90,"Jul 22, 2016",10
+,masukomi,http://masukomi.org,10,80,"Aug 7, 2016",10
+,Константин Малиновский,,10,80,"Aug 16, 2016",10
+,olbat,http://olbat.net/,10,70,"Apr 18, 2016",10
+,ettomatic,https://github.com/ettomatic,10,65,"Sep 26, 2016",10
+,International,https://github.com/International,10,50,"Nov 2, 2016",10
+,Jasdeep Singh,https://metawarelabs.com,10,50,"Nov 3, 2016",10
+,kubalasecki,https://github.com/kubalasecki,10,50,"Aug 21, 2016",10
+,Neocities,https://neocities.org,10,50,"Nov 29, 2016",10
+,drakmail,https://github.com/drakmail,10,40,"Dec 15, 2016",10
+,fridgerator,https://github.com/fridgerator,10,40,"Dec 21, 2016",10
+,rohanthewiz,https://github.com/rohanthewiz,10,40,"Dec 2, 2016",10
+,Rousseau Alexandre,,10,40,"Dec 7, 2016",10
+,bararchy,https://github.com/bararchy,10,30,"Jan 1, 2017",10
+,liothen,https://github.com/liothen,10,30,"Jan 19, 2017",10
+,metacortex,https://github.com/metacortex,10,20,"Feb 24, 2017",10
+,yxhuvud,https://github.com/yxhuvud,10,20,"Feb 21, 2017",10
+,calmbirdapp,http://twitter.com/calmbirdapp,10,10,"Apr 13, 2017",10
+,Eduardo Jezierski,,10,10,"Apr 13, 2017",10
+,Ivo Balbaert,,10,10,"Apr 13, 2017",10
+,sroller,https://github.com/sroller,10,10,"Apr 4, 2017",10
+,jwaldrip,https://github.com/jwaldrip,5,635,"Aug 7, 2015",5
+,rosylilly,https://github.com/rosylilly,5,203,"Aug 4, 2015",5
+,pine613,https://github.com/pine,5,105,"Jul 24, 2015",5
+,dahofer,https://github.com/dahofer,5,100,"Aug 6, 2015",5
+,method3000,https://github.com/tristil,5,90,"Jul 27, 2015",5
+,ealdent,https://github.com/ealdent,5,80,"Dec 29, 2015",5
+,rhelsing,https://github.com/rhelsing,5,75,"Jan 27, 2016",5
+,thermes,https://github.com/thermes,5,75,"Jan 28, 2016",5
+,TPei,https://github.com/TPei,5,68,"May 27, 2016",5
+,Blumenversand,https://blumenversender.com,5,65,"Mar 14, 2016",5
+,boie0025,https://github.com/boie0025,5,65,"Mar 28, 2016",5
+,vermosi,https://github.com/vermosi,5,65,"Mar 21, 2016",5
+,DateinAsia,https://findmate.asia,5,40,"Aug 12, 2016",5
+,jrichocean,https://github.com/jrichocean,5,40,"Aug 22, 2016",5
+,dimroc,https://github.com/dimroc,5,30,"Oct 29, 2016",5
+,metacollin,https://github.com/metacollin,5,25,"Nov 4, 2016",5
+,bradleyd,https://github.com/bradleyd,5,20,"Dec 22, 2016",5
+,netmask,https://github.com/netmask,5,20,"Dec 20, 2016",5
+,andyfleming,https://github.com/andyfleming,5,15,"Jan 7, 2017",5
+,arcage,https://github.com/arcage,5,15,"Jan 6, 2017",5
+,Christian Bagley,http://christianbagley.me,5,15,"Jan 8, 2017",5
+,Clément Joubert,http://www.levups.com,5,15,"Jan 3, 2017",5
+,Rich Henry,,5,15,"Mar 17, 2016",5
+,szymonwlochowski,https://github.com/szymonwlochowski,5,15,"Jan 15, 2017",5
+,Larder,https://larder.io,5,10,"Feb 27, 2017",5
+,aleonmon,https://github.com/aleonmon,5,5,"Mar 24, 2017",5
 ,Buy Youtube Views,http://woorke.com/buy/youtube-services/,5,5,"Mar 1, 2017",5
+,Hyper Room,,5,5,"Mar 24, 2017",5
 ,Rocket Wristbands,https://www.rocketwristbands.com/,5,5,"Mar 19, 2017",5
-,tzekid,https://github.com/tzekid,5,5,"Feb 27, 2017",5
-,dark-eye,,2,32,"Nov 2, 2015",1
-,nicck,,2,28,"Nov 9, 2015",1
-,Martin Luder,,1,19,"Aug 14, 2015",1
-,Shigenobu Nishikawa,,1,17,"Oct 23, 2015",1
-,Dieter Pisarewski,,1,12,"Mar 12, 2016",1
-,Vanhecke,,1,9,"Jun 15, 2016",1
-,piedoom,,1,6,"Sep 18, 2016",1
-,Michael Kohl,,1,5,"Oct 25, 2016",1
-,Harm Aarts,,1,4,"Nov 10, 2016",1
-,Mike Serchenya,,1,3,"Dec 18, 2016",1
-,faustinoaq,,1,1,"Feb 15, 2017",1
-,Tano Abeleyra,,1,1,"Mar 15, 2017",1
+,SleekWristbands.com,,5,5,"Mar 24, 2017",5
+,dark-eye,,2,34,"Nov 2, 2015",1
+,nicck,,2,30,"Nov 9, 2015",1
+,Martin Luder,,1,20,"Aug 14, 2015",1
+,Shigenobu Nishikawa,,1,18,"Oct 23, 2015",1
+,dpisarewski,,1,13,"Mar 12, 2016",1
+,Vanhecke,,1,10,"Jun 15, 2016",1
+,piedoom,,1,7,"Sep 18, 2016",1
+,citizen428,,1,6,"Oct 25, 2016",1
+,haarts,,1,5,"Nov 10, 2016",1
+,Mike Serchenya,,1,4,"Dec 18, 2016",1
+,faustinoaq,,1,2,"Feb 15, 2017",1
