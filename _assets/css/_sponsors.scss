@@ -9,8 +9,6 @@ table {
         border-radius: 50%;
         width: 40px;
         height: 40px;
-        @include grayscale(100%);
-        @include opacity(60);
         object-fit: contain;
       }
     }
@@ -18,6 +16,11 @@ table {
       font-size: 13px;
       color: #b5b5b5;
       text-transform: uppercase;
+    }
+    &:not(:hover) .logo img {
+      @include grayscale(100%);
+      @include opacity(60);
+      @include transition(all .25s ease);
     }
   }
   td:first-child, th:first-child {
