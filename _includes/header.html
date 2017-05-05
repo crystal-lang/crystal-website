@@ -9,7 +9,7 @@
         <div class='brand-logo' id='logo-container'>
           <canvas height='300' id='logo-canvas' style='cursor:move' width='300'></canvas>
         </div>
-        <div class='subtitle'>{{ page.subtitle }}</div>
+        <div class='subtitle'>{{ page.description }}</div>
         <p class="main-actions">
           <a href="https://crystal-lang.org/docs/installation/" target="_blank" class="btn btn-large btn-flat">Install</a>
           <a href="https://crystal-lang.org/docs/overview/" target="_blank" class="btn btn-large btn-flat">Learn</a>
@@ -21,7 +21,7 @@
         {% else %}
           <h1 class='title'>{{ page.title }}</h1>
         {% endif %}
-        <div class='subtitle'>{{ page.subtitle }}</div>
+        <div class='subtitle'>{{ page.description }}</div>
       {% endif %}
     </div>
   </div>
