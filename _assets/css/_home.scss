@@ -2,10 +2,8 @@
   // Changes to the default layout for main page
   .header-section {
     background-color: transparent;
-    // height: calc(70vh - 175px); // without codecamp banner
-    height: calc(70vh - 160px); // with codecamp banner
-    // min-height: 485px; // without codecamp banner
-    min-height: 534px; // with codecamp banner
+    height: calc(70vh - 175px);
+    min-height: 485px;
     h1.title {
       color: $white;
     }
@@ -64,13 +62,10 @@
   #delaunay {
     @extend .black;
     position: absolute;
-    // top: 0;// without codecamp banner
-    top: 60px; // with codecamp banner
+    top: 0;
     right: 0;
-    // min-height: 600px; // without codecamp banner
-    min-height: 630px; // with codecamp banner
-    // height: 70vh; // with codecamp banner
-    height: calc(70vh - 60px); // with codecamp banner
+    min-height: 600px;
+    height: 70vh;
     left: 0;
     z-index: -1;
   }
@@ -184,7 +179,7 @@
 
 
   .banner.bountysource {
-    margin-top: -18px;
+    margin-top: 0;
     .bountysource-logo {
       height: 25px;
     }
@@ -259,55 +254,6 @@
   }
 }
 
-.sf2017 {
-  background: #828282;
-  a {
-    @extend .white-text;
-    line-height: 56px;
-    padding: 0 0 0 .3rem;
-    height: 60px;
-    display: block;
-  }
-  .row {
-    margin-bottom: 0;
-  }
-  .col {
-    padding-right: 0;
-  }
-  .crystal-codecamp {
-    font-size: 1.15rem;
-  }
-  .sf {
-    font-size: 1.15rem;
-    font-weight: 200;
-  }
-  .date {
-    font-size: .9rem;
-  }
-  .register {
-    background: #9d9d9d;
-    font-family: "Roboto Mono", monospace;
-    font-size: 1.3rem;
-    display: inline-block;
-    height: 60px;
-    padding: 0 1rem;
-    margin-left: 1rem;
-    box-sizing: border-box;
-  }
-  .register-mobile {
-    @extend .white-text;
-    background: #9d9d9d;
-    font-family: "Roboto Mono", monospace;
-    font-size: 1rem;
-    padding: 5px;
-    margin: 5px 0 0;
-    box-sizing: border-box;
-    span {
-      font-style: italic;
-    }
-  }
-}
-
 @media only screen and (max-width: 992px) {
   .btn-flat {
     display: block;
@@ -326,45 +272,6 @@
       &:before {
         display: none;
       }
-    }
-  }
-}
-
-@media only screen and (max-width: 840px) {
-  // The 70% fix for container should be undone in mobile.
-  .sf2017 {
-    a {
-      line-height: 1.2;
-      height: auto;
-      text-align: center;
-      padding: 0;
-    }
-
-    .row {
-      margin-bottom: 0;
-    }
-
-    .col {
-      padding: 8px 0 0 !important;
-    }
-
-    .crystal-codecamp {
-      font-size: 1rem !important;
-    }
-    .sf {
-        font-size: 1rem !important;
-      }
-    .date {
-      display: none;
-    }
-    .right {
-      float: none !important;
-    }
-    .register-mobile {
-      display: block;
-    }
-    .register {
-      display: none;
     }
   }
 }
