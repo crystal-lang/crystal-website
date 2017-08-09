@@ -96,13 +96,22 @@ nav_order: 4
 %}
 
 {% include community_row.html
-          title="Curated List of Crystal Shards, Tools and Tutorials"
-          divId="awesome"
+          title="Crystal Shards, Tools and Tutorials"
+          divId="shards"
           content="Following the awesome-lists tradition, the awesome-crystal GitHub repository contains a curated list of Crystal shards, tools and tutorials. If you want your contribution to Crystal to be listed here, fork the repository, add it to the list and send a pull request."
           link_text="awesome-crystal"
           url="https://github.com/veelenga/awesome-crystal"
           icon="awesome"
+          continues=true
           custom_icon=true
+%}
+
+{% include community_row.html
+          title=""
+          content="The crystalshards.xyz service provides an uncurated view of all repositories on GitHub that have Crystal code in them.  With its search capability you can find the shard or application you're looking for."
+          link_text="crystalshards.xyz"
+          url="https://crystalshards.xyz"
+          icon="play_arrow"
 %}
 
 {% include community_row.html
