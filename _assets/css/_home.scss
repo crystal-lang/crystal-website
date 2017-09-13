@@ -200,58 +200,6 @@
       background-color: $white;
     }
   }
-
-
-  #benchmark {
-    svg {
-      shape-rendering: crispEdges;
-      width: 100% !important;
-
-      h1 {
-        margin: 0;
-        padding: 0.1rem 0.4rem;
-        font-size: 1rem;
-        font-weight: 500;
-        text-align: right;
-      }
-
-      .widget {
-        display: inline-block;
-        border: 1px solid #AAA;
-        background: white;
-      }
-
-      .bar {
-        fill: $chart;
-      }
-
-      .label {
-        font-size: 12px;
-        fill: #333333;
-      }
-
-      .axis-name {
-        font-size: 11px;
-        text-transform: uppercase;
-      }
-
-      .axis {
-        text {
-          font-size: 11px;
-        }
-        path {
-          fill: none;
-          opacity: 1;
-          stroke: #E3E3E3;
-        }
-        .tick line {
-          stroke-width: 1;
-          stroke: #E3E3E3;
-          opacity: 1;
-        }
-      }
-    }
-  }
 }
 
 .bountysource-link:hover {
