@@ -1,9 +1,12 @@
 ---
 title: "Diploid and Crystal"
-author: peter schols - ivo balbaert
+author: peter-schols,ivo-balbaert
+
 ---
 
-> _This is a guest post from Peter Schols at [Diploid](http://www.diploid.com/), telling his Crystal in Production story. We'd like to thank him for taking the time to share their experience, and to invite any other companies or individuals using Crystal in a production environment to share theirs too - [**reach out**](/community/) if you'd like to!_
+> _This guest post is an interview that Ivo Balbaert had with Peter Schols from [Diploid](http://www.diploid.com/) about their Crystal in Production story. This interview will also be part of the [**Programming Crystal** book](https://pragprog.com/book/crystal/crystal) that Ivo is writting - and we can't wait to read!_
+>
+> _We'd like to thank both of them for taking the time to share their experience, and to invite any other companies or individuals using Crystal in a production environment to share theirs too - [**reach out**](/community/) if you'd like to!_
 
 At [Diploid](http://www.diploid.com/), we have been using Crystal for quite some time now.
 We would like to share our experience in this interview, answering questions relevant to companies wanting to use Crystal for production.
@@ -19,6 +22,8 @@ Before Moon, geneticists had to manually filter and rank mutations using special
 
 Moon has been written mostly in Ruby. We’ve chosen Ruby for several reasons: rapid development, expressive syntax, lots of available libraries and a great ecosystem. All of this results in developer happiness and faster development cycles. But while Ruby is fast enough for most parts of Moon, it can be slow for the most performance critical areas of our codebase. That’s why we evaluated Crystal, among others, and eventually decided to develop in Crystal.
 
+<img src="{{ 'blog/diploid-moon.png' | asset_path }}" class="center"/>
+
 # Why did you decide to use Crystal for these applications?
 When looking for a language that we could use to replace performance critical code in our Ruby codebase, we evaluated many options: Swift, Elixir, Go and Crystal. We specifically evaluated performance, syntax and ease-of-use. Performance was assessed using a small benchmark script that includes the performance critical
 operations that are typical for genome analysis (mostly string operations). Go topped the performance list, followed by Crystal. Surprisingly, Ruby outperformed Swift. Go clearly won the performance criterium. Performance is not everything, however: infrastructure is very cheap compared to developer time. While Go is an interesting
@@ -30,14 +35,14 @@ combines it with the best of Go (concurrency model, performance).
 # What kinds of problems does Crystal solve best?
 Any problem that is currently being solved by Ruby, Python, Go or Rust could potentially be solved in Crystal.
 Given its similarity to Ruby, web frameworks will be an important part of the Crystal ecosystem. However, Crystal has a lot of potential in other fields too. Python is popular in data science, but it’s far from the fastest language. With Crystal, data scientists could have the ease-of-use of Python/Ruby combined with the performance
-of C. These advantages could make Crystal very suitable for domains like bioinformatics, where performance is really important. 
+of C. These advantages could make Crystal very suitable for domains like bioinformatics, where performance is really important.
 
 As many people in the bioinformatics field don’t have a formal CS/engineering background, having a language that is
 easy to learn is important as well. Crystal does very well on both fronts.
 In addition, due to its expressive nature and low barrier to entry - traits it inherited from Ruby - Crystal is a great tool for general scripting and systems software.
 
 # How was your experience of developing with Crystal?
-When coming from Ruby, working in Crystal feels like coming home. Syntactically, Crystal is highly similar: the only major difference is the static typing. While this takes a bit to get used to, the transition was really smooth and easy. Many lines of code can literally be copied from a Ruby project and pasted into a Crystal project and they will just work. Some lines do need additional type annotations, however. 
+When coming from Ruby, working in Crystal feels like coming home. Syntactically, Crystal is highly similar: the only major difference is the static typing. While this takes a bit to get used to, the transition was really smooth and easy. Many lines of code can literally be copied from a Ruby project and pasted into a Crystal project and they will just work. Some lines do need additional type annotations, however.
 
 Apart from that, the only major difference is that the rubygems (Ruby libraries) ecosystem is very expansive. Crystal has its own version of gems, called shards. While the number of shards has grown exponentially in the past few months, it’s still way behind the rubygems ecosystem, or the Go ecosystem for that matter.
 

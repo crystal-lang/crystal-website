@@ -22,5 +22,11 @@
   },
   "neuralegion": {
     "name": "NeuraLegion"
+  },
+  "ivo-balbaert": {
+    "name": "Ivo Balbaert"
+  },
+  "peter-schols": {
+    "name": "Peter Schols"
   }
 }
