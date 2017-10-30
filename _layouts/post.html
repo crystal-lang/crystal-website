@@ -6,7 +6,7 @@ layout: default
     <div class="col m2 share">
       <p class="title small share-title">Share</p>
       <div class="share-list">
-        {% assign share_url = 'https://' | append: site.host | append: page.url | cgi_escape %}
+        {% assign share_url = site.url | append: page.url | cgi_escape %}
         <a href="https://twitter.com/intent/tweet?url={{ share_url }}&text={{ page.title | cgi_escape }}&via=CrystalLanguage" target="_blank">
           <div class="share-item"><i class="extra-icons twitter gray"></i></div>
         </a>
