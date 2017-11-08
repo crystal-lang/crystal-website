@@ -19,7 +19,15 @@ module BountySource
         "Origin"        => "https://salt.bountysource.com",
       }
       response = @client.get("/support_levels?supporters_for_team=#{@team}", headers: headers).body
-      Array(SupportLevel).from_json(response)
+      begin
+        Array(SupportLevel).from_json(response)
+      rescue ex : JSON::ParseException
+        puts "Error trying to parse BountySource JSON Response from /support_levels"
+        puts response
+        puts headers
+        raise ex
+      end
+
     end
 
     def supporters(page)
@@ -31,7 +39,14 @@ module BountySource
         "Origin"        => "https://salt.bountysource.com",
       }
       response = @client.get("/supporters?order=monthly&page=#{page}&per_page=50&team_slug=#{@team}", headers: headers).body
-      Array(Supporters).from_json(response)
+      begin
+        Array(Supporters).from_json(response)
+      rescue ex : JSON::ParseException
+        puts "Error trying to parse BountySource JSON Response from /supporters"
+        puts response
+        puts headers
+        raise ex
+      end
     end
 
     def user(slug)
@@ -40,7 +55,14 @@ module BountySource
         "User-Agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36",
       }
       response = @client.get("/users/#{slug}?access_token=#{@token}", headers: headers).body
-      User.from_json(response)
+      begin
+        User.from_json(response)
+      rescue ex : JSON::ParseException
+        puts "Error trying to parse BountySource JSON Response from /users"
+        puts response
+        puts headers
+        raise ex
+      end
     end
   end
 
@@ -112,7 +134,13 @@ module GitHub
 
     def user(username)
       response = @client.get("/users/#{username}").body
-      User.from_json(response)
+      begin
+        User.from_json(response)
+      rescue ex : JSON::ParseException
+        puts "Error trying to parse GitHub JSON Response from /users/#{username}"
+        puts response
+        raise ex
+      end
     end
 
     class User
