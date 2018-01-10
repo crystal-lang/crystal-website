@@ -67,6 +67,11 @@
     right: -3px;
   }
 
+  ul + & {
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+  }
+
   // This is a hack. Since I can't have 4 shapes in the code_section
   // I'm setting the lower two squares to be for the element inside
   .highlight {
