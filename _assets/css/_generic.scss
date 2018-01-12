@@ -67,7 +67,7 @@ a {
   }
 }
 
-p > a, td > a, ul:not(#nav-mobile) li > a {
+p > a, td > a, ul:not(#nav-mobile) li > a, dd > a {
   border-bottom: 1px solid $primary-text;
 }
 
@@ -249,3 +249,11 @@ table.no-underline a {
   }
 }
 
+dt {
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+dd {
+  margin-left: 0;
+}
