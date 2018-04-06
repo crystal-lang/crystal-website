@@ -8,3 +8,5 @@ vendor/bundle
 .asset-cache
 .DS_store
 .idea
+.jekyll-cache/
+.jekyll-metadata
