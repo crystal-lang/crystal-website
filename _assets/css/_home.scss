@@ -200,6 +200,15 @@
       background-color: $white;
     }
   }
+
+  .latest-release {
+    font-family: "Roboto Mono", monospace;
+    text-transform: inherit;
+    margin-top: 70px;
+    font-size: 48px;
+    color: #999999;
+    a { color: #000000; }
+  }
 }
 
 .bountysource-link:hover {
