@@ -27,7 +27,6 @@ module BountySource
         puts headers
         raise ex
       end
-
     end
 
     def supporters(page)
@@ -239,7 +238,7 @@ support_levels.each do |support_level|
     end
 
     all_time = supporter.alltime_amount
-    since = Time.parse(supporter.created_at[0..10], "%F")
+    since = Time.parse(supporter.created_at[0..10], "%F", location: Time::Location::UTC)
   else
     raise "unable to match: #{support_level.owner.display_name} in supporters"
   end
