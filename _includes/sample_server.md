@@ -1,4 +1,4 @@
-{% highlight ruby %}
+{% highlight crystal %}
 # A very basic HTTP server
 require "http/server"
 

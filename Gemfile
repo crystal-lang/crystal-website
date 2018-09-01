@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'jekyll-assets'
+gem 'jekyll-assets', '~> 2.4.0'
 gem 'jekyll-timeago'
-gem 'github-pages'
+gem 'jekyll-seo-tag'
 gem 'haml'
-gem 'therubyracer'
-gem 'uglifier'
+gem 'rouge', '~> 3.2.0'

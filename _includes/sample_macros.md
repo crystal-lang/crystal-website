@@ -1,4 +1,4 @@
-{% highlight ruby %}
+{% highlight crystal %}
 class Object
   def has_instance_var?(name) : Bool
     {% raw %}{{ @type.instance_vars.map &.name.stringify }}{% endraw %}.includes? name

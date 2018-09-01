@@ -1,4 +1,4 @@
-{% highlight ruby %}
+{% highlight crystal %}
 if rand(2) > 0
   my_string = "hello world"
 end

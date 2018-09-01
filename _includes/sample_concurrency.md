@@ -1,4 +1,4 @@
-{% highlight ruby %}
+{% highlight crystal %}
 channel = Channel(Int32).new
 total_lines = 0
 files = Dir.glob("*.txt")

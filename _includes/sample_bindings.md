@@ -1,4 +1,4 @@
-{% highlight ruby %}
+{% highlight crystal %}
 # Fragment of the BigInt implementation that uses GMP
 @[Link("gmp")]
 lib LibGMP
