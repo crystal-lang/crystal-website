@@ -1,5 +1,5 @@
 language: ruby
-rvm: 2.2.6
+rvm: 2.5.1
 sudo: false
 cache:
   directories:

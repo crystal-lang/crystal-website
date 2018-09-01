@@ -2,11 +2,12 @@ version: '2'
 
 services:
   web:
-    image: ruby:2.2
+    image: ruby:2.5
     working_dir: /src
-    command: /bin/bash -c "bundle install --jobs=3 && jekyll serve --host=0.0.0.0 --incremental"
+    command: /bin/bash -c "(bundle check || bundle install --jobs=3) && jekyll serve --host=0.0.0.0 --incremental --livereload"
     ports:
       - "4000:4000"
+      - "35729:35729"
     volumes:
       - .:/src
       - bundle:/usr/local/bundle

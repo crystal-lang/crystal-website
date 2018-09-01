@@ -1,11 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rake'
-
+gem 'jekyll'
+gem 'jekyll-assets'
+gem 'jekyll-timeago'
 gem 'github-pages'
 gem 'haml'
-gem 'jekyll-assets'
-gem 'less'
 gem 'therubyracer'
 gem 'uglifier'
-gem 'jekyll-timeago'

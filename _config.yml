@@ -24,10 +24,11 @@ twitter:
 highlighter: rouge
 markdown: kramdown
 exclude: ["Gemfile", "Gemfile.lock", "Rakefile", "*.haml", "scripts/*.cr", "vendor", "docker-compose.yml"]
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-assets
   - jekyll-timeago
+  - uglifier
 
 google_calendar_api_key: 'AIzaSyCv-2Npqm0mwmwVCKX8xDPhwtP_8HwCWCE'
 google_calendar_id: '0s0pa4k3fov71e4itn79atlmeg@group.calendar.google.com'

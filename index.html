@@ -143,7 +143,7 @@ custom_body_classes:
   <div class="row">
     <div class="col s12">
       <h2>Articles from our blog</h2>
-      {% assign articles = site.posts | where: "release_notes",nil %}
+      {% assign articles = site.posts | where_exp: "item","item.release_notes != true" %}
       {% for post in articles limit: 3 %}
       {% include blog_row.html post=post %}
       {% endfor %}
