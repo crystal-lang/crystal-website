@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/manastech/rouge.git
+  revision: fb0ac75b5e28497baeff5df660f16e77591f8167
+  branch: crystal
+  specs:
+    rouge (3.2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -64,7 +71,6 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    rouge (3.2.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
     sass (3.5.7)
@@ -87,7 +93,7 @@ DEPENDENCIES
   jekyll-assets (~> 2.4.0)
   jekyll-seo-tag
   jekyll-timeago
-  rouge (~> 3.2.0)
+  rouge!
 
 BUNDLED WITH
    1.16.4
