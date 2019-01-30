@@ -224,6 +224,8 @@ support_levels.each do |support_level|
                 "jpg"
               when "image/png"
                 "png"
+              when "image/svg+xml"
+                "svg"
               else
                 raise "not implemented image type #{logo_request.content_type}"
               end

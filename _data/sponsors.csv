@@ -1,119 +1,128 @@
 logo,name,url,this_month,all_time,since,level
-sponsors/84.png,84 codes,https://www.84codes.com/,2000,12000,"Apr 1, 2018",2000
-sponsors/openredis.png,openredis,https://openredis.com,250,5750,"Dec 7, 2016",250
-sponsors/fly_io_.png,Fly.io ,https://fly.io,250,4250,"Jun 12, 2017",250
-sponsors/paulcsmith.png,paulcsmith,https://github.com/paulcsmith,150,1910,"Jul 10, 2017",150
-sponsors/jeffrey_crochet.png,Jeffrey Crochet,,100,1400,"Jul 17, 2018",75
-sponsors/diegogub.png,diegogub,https://github.com/diegogub,100,300,"Aug 30, 2018",75
-sponsors/tpberntsen.jpg,tpberntsen,https://github.com/tpberntsen,75,2850,"Sep 20, 2015",75
-sponsors/fabio_akita.jpg,Fabio Akita,http://www.codeminer42.com,75,2100,"Jul 21, 2016",75
-sponsors/sikoba.png,Sikoba,http://www.sikoba.com,75,825,"Dec 29, 2017",75
-sponsors/snapcase.png,snapcase,https://github.com/snapcase,75,825,"Dec 23, 2017",75
-sponsors/cpunion.png,cpunion,https://github.com/cpunion,75,535,"Mar 30, 2018",75
-sponsors/carl_fredrik_samson.png,Carl Fredrik Samson,,75,400,"Jul 22, 2018",75
-,isaacsloan,https://isaacsloan.com,36,1174,"Mar 24, 2016",25
-,Frank O'Hara,,25,975,"Aug 16, 2015",25
-,jeromegn,https://github.com/jeromegn,25,850,"Jan 28, 2016",25
-,Steffen Roller,http://,25,415,"Apr 4, 2017",25
-,Carl Fredrik Samson,,25,400,"Jul 22, 2018",25
-,yxhuvud,https://github.com/yxhuvud,25,395,"Feb 21, 2017",25
-,Knut Franke,,25,275,"Dec 7, 2017",25
-,Dave Doyle,http://twitter.com/meraxes,25,200,"Mar 28, 2018",25
-,Vladimir,http://,25,150,"Jun 18, 2018",25
-,Garance A Drosehn,http://,16,556,"Dec 3, 2015",10
-,Engelbert Bachfischer,,15,90,"May 27, 2018",10
-,Mateus Rodrigues Alves,http://,15,60,"Jul 7, 2018",10
-,Adrien Rambert,http://adrienrambert.com,10,310,"Apr 27, 2016",10
-,christos,,10,290,"Jun 23, 2016",10
-,Paul Morton,http://,10,280,"Jul 10, 2016",10
-,Sergey Makridenkov,http://msa7.ru,10,280,"May 18, 2016",10
-,masukomi,http://masukomi.org,10,270,"Aug 7, 2016",10
-,olbat,http://olbat.net/,10,250,"Apr 18, 2016",10
-,OldhamMade,http://oldhammade.net,10,245,"Sep 30, 2017",10
-,Rohan Allison,http://,10,230,"Dec 2, 2016",10
-,Eduardo Jezierski,,10,190,"Apr 13, 2017",10
-,londoed,,10,190,"Apr 9, 2018",10
-,Ronie Uliana,http://,10,190,"Apr 22, 2017",10
-,Greg Walker,http://learnmeabitcoin.com,10,180,"Nov 21, 2016",10
-,dtakahas,https://github.com/dtakahas,10,170,"Jun 6, 2017",10
-,Micah Frazier,,10,130,"Oct 26, 2017",10
-,Slava Dzyba,,10,90,"Nov 23, 2017",10
-,Florin Lipan,https://lipanski.github.io,10,80,"Mar 1, 2018",10
-,Jacob Hollenbeck,http://,10,80,"Mar 31, 2018",10
-,Sam Wang,http://5am.works,10,70,"Mar 28, 2018",10
-,Stefan,http://,10,70,"Apr 19, 2018",10
-,infinitary,https://infinitary.org,10,50,"Jun 11, 2018",10
-,Keith Gautreaux,http://keithgautreaux.com,10,50,"Jun 6, 2018",10
-,Noriyo Akita,http://hyperneetprogrammer.hatenablog.com/,10,40,"Jul 21, 2018",10
-,Aharon sharim,,10,30,"Aug 25, 2018",10
-,Antonio B De Leon,https://www.linkedin.com/in/antoniobdeleon/,10,30,"Aug 6, 2018",10
-,Iain McNulty,http://,10,20,"Sep 2, 2018",10
-,QUELARD xavier,,10,20,"Sep 1, 2018",10
-,Harrison Bachrach,http://harrisonbachrach.com,10,10,"Oct 9, 2018",10
-,Vlad Faust,,7,7,"Oct 28, 2018",5
-,chova,http://,5,810,"Aug 20, 2017",5
-,Ettore Berardi,http://www.ettomatic.com,5,300,"Sep 26, 2016",5
-,Sho Kusano,http://aduca.org,5,298,"Aug 4, 2015",5
-,msky026,http://qiita.com/msky026,5,265,"Oct 23, 2015",5
-,David Hofer,http://twitter.com/hofer,5,195,"Aug 6, 2015",5
-,Joseph Method,http://,5,185,"Jul 27, 2015",5
-,Mark,http://,5,175,"Aug 29, 2017",5
-,Ryan Helsing,http://accord-aca.com,5,170,"Jan 27, 2016",5
-,TPei,http://,5,163,"May 27, 2016",5
-,Blumenversand,https://blumenversender.com,5,160,"Mar 14, 2016",5
-,Nic Boie,http://www.webvolta.com,5,160,"Mar 28, 2016",5
-,Shink,http://,5,140,"Sep 24, 2017",5
-,Zhomart Mukhamejanov,http://joma.pw,5,135,"Mar 19, 2017",5
-,pitosalas,,5,125,"Dec 20, 2017",5
-,Bradley D Smith,http://,5,115,"Dec 22, 2016",5
-,ʕ·ᴥ·ʔAKJ,http://,5,110,"Jan 6, 2017",5
-,Badoo,https://findmate.app,5,105,"Aug 12, 2016",5
-,Hyper Room,,5,100,"Mar 24, 2017",5
-,bbnnt,http://twitter.com/bbnnt,5,75,"Aug 29, 2017",5
-,Chet Bortz,http://,5,70,"Sep 25, 2017",5
-,Anton Maminov,http://,5,65,"Oct 20, 2017",5
-,igorkasyanchuk,https://phototo.com.ua/,5,65,"Nov 2, 2017",5
-,Will Lewis,,5,60,"Nov 17, 2017",5
-,clouw,http://,5,55,"Dec 20, 2017",5
-,evanrblack,https://www.erblack.com,5,55,"Dec 27, 2017",5
-,Tyler Hampton,http://,5,55,"Dec 3, 2017",5
-,Steve Frank,,5,50,"Jan 13, 2018",5
-,Andrey A. Konovalov,http://sysadminblog.ru,5,40,"Mar 6, 2018",5
-,bigbenz8,http://www.crystal-lang.top,5,40,"Mar 13, 2018",5
-,jtianling,http://www.jtianling.com,5,40,"Mar 16, 2018",5
-,Masaaki Aoyagi,http://,5,40,"Mar 26, 2018",5
-,Meyer Lobl,,5,40,"Mar 13, 2018",5
-,seanlerner,http://smallcity.ca,5,35,"Apr 29, 2018",5
-,Broderick,https://crnbrdrck.xyz,5,25,"Jun 28, 2018",5
-,comomac,http://,5,25,"Jun 17, 2018",5
-,rogics,http://,5,25,"Jul 8, 2018",5
-,magmallegus,http://twitter.com/magmallegus,5,22,"Jun 21, 2017",5
-,Felix Bünemann,https://keybase.io/felixbuenemann,5,20,"Jul 13, 2018",5
-,fravelcj,http://twitter.com/fravelcj,5,20,"Jul 18, 2018",5
-,Karim Kiatlottiavi,http://www.constxife.ru,5,20,"Jul 31, 2018",5
-,Martin Honermeyer,,5,20,"Jul 24, 2018",5
-,Edward Loveall,https://edwardloveall.com,5,15,"Aug 26, 2018",5
-,Fausto Ribeiro,https://angstrom.com.br,5,10,"Sep 1, 2018",5
-,Mikias Abera,https://mikias.net,5,10,"Sep 22, 2018",5
-,Whaxion,https://whaxion.be/,5,10,"Sep 13, 2018",5
-,Kentaro Tanaka,http://kentarotanaka.blogspot.jp,5,5,"Oct 27, 2018",5
-,Nikolai Abdrafikov,,2,68,"Nov 9, 2015",1
-,Aleksander Kwiatkowski,,2,6,"Aug 16, 2018",1
-,Eran,,1,50,"Nov 2, 2015",1
-,Martin Luder,,1,39,"Aug 14, 2015",1
-,Shigenobu Nishikawa,,1,37,"Oct 23, 2015",1
-,Joris Vanhecke,,1,29,"Jun 15, 2016",1
-,doomy,,1,26,"Sep 18, 2016",1
-,Michael Kohl,,1,25,"Oct 25, 2016",1
-,Harm Aarts,,1,24,"Nov 10, 2016",1
-,magmallegus,,1,22,"Jun 21, 2017",1
-,Piotr Żurek,,1,16,"Jul 19, 2017",1
-,rumenzu,,1,16,"Jul 14, 2017",1
-,Jeremy Jung,,1,11,"Dec 20, 2017",1
-,Samuel Brandão,,1,10,"Jan 12, 2018",1
-,Eric Gillet,,1,9,"Feb 16, 2018",1
-,zitrone44,,1,7,"May 17, 2018",1
-,Manpreet Singh Narang,,1,4,"Jul 24, 2018",1
-,Thanatat Tamtan,,1,4,"Jul 12, 2018",1
-,Mark Murphy,,1,3,"Aug 5, 2018",1
-,sci4me,,1,1,"Oct 29, 2018",1
+sponsors/84.png,84 codes,https://www.84codes.com/,2000,18000,"Apr 1, 2018",2000
+sponsors/fengguang.png,fengguang,https://github.com/fengguang,500,500,"Jan 2, 2019",250
+sponsors/openredis.png,openredis,https://openredis.com,250,6250,"Dec 7, 2016",250
+sponsors/texenergo.svg,Texenergo,https://www.texenergo.com,250,250,"Dec 15, 2018",250
+sponsors/nikola_motor_company.png,Nikola Motor Company,https://nikolamotor.com/careers/jobs,200,200,"Jan 21, 2019",150
+sponsors/paulcsmith.png,paulcsmith,https://github.com/paulcsmith,150,2210,"Jul 10, 2017",150
+sponsors/tpberntsen.jpg,tpberntsen,https://github.com/tpberntsen,75,3000,"Sep 20, 2015",75
+sponsors/fabio_akita.jpg,Fabio Akita,http://www.codeminer42.com,75,2250,"Jul 21, 2016",75
+sponsors/sikoba.png,Sikoba,http://www.sikoba.com,75,975,"Dec 29, 2017",75
+sponsors/snapcase.png,snapcase,https://github.com/snapcase,75,975,"Dec 23, 2017",75
+,isaacsloan,https://isaacsloan.com,36,1246,"Mar 24, 2016",25
+,Frank O'Hara,,25,1025,"Aug 16, 2015",25
+,jeromegn,https://github.com/jeromegn,25,900,"Jan 28, 2016",25
+,cpunion,https://github.com/cpunion,25,635,"Mar 30, 2018",25
+,sroller,https://github.com/sroller,25,465,"Apr 4, 2017",25
+,yxhuvud,https://github.com/yxhuvud,25,445,"Feb 21, 2017",25
+,Knut Franke,,25,325,"Dec 7, 2017",25
+,Dave Doyle,http://twitter.com/meraxes,25,250,"Mar 28, 2018",25
+,nordborn,https://github.com/nordborn,25,200,"Jun 18, 2018",25
+,Engelbert Bachfischer,http://twitter.com/bbert75,25,145,"May 27, 2018",25
+,drosehn,https://github.com/drosehn,16,588,"Dec 3, 2015",10
+,mralves,https://github.com/mralves,15,90,"Jul 7, 2018",10
+,Hinrik,https://github.com/hinrik,15,65,"Dec 20, 2017",10
+,arambert,https://github.com/arambert,10,330,"Apr 27, 2016",10
+,christos,,10,310,"Jun 23, 2016",10
+,msa7,https://github.com/msa7,10,300,"May 18, 2016",10
+,masukomi,http://masukomi.org,10,290,"Aug 7, 2016",10
+,OldhamMade,https://github.com/OldhamMade,10,265,"Sep 30, 2017",10
+,rohanthewiz,https://github.com/rohanthewiz,10,250,"Dec 2, 2016",10
+,Eduardo Jezierski,,10,210,"Apr 13, 2017",10
+,ruliana,https://github.com/ruliana,10,210,"Apr 22, 2017",10
+,Greg Walker,http://learnmeabitcoin.com,10,200,"Nov 21, 2016",10
+,dtakahas,https://github.com/dtakahas,10,190,"Jun 6, 2017",10
+,Micah Frazier,,10,150,"Oct 26, 2017",10
+,pitosalas,,10,145,"Dec 20, 2017",10
+,Florin Lipan,https://lipanski.github.io,10,100,"Mar 1, 2018",10
+,grioja,https://github.com/grioja,10,100,"Mar 31, 2018",10
+,fuegito,https://github.com/fuegito,10,90,"Apr 19, 2018",10
+,infinitary,https://infinitary.org,10,70,"Jun 11, 2018",10
+,kgautreaux,https://github.com/kgautreaux,10,70,"Jun 6, 2018",10
+,noriyotcp,https://github.com/noriyotcp,10,60,"Jul 21, 2018",10
+,Aharon sharim,,10,50,"Aug 25, 2018",10
+,Antonio B De Leon,https://www.linkedin.com/in/antoniobdeleon/,10,50,"Aug 6, 2018",10
+,nulty,https://github.com/nulty,10,40,"Sep 2, 2018",10
+,HarrisonB,https://github.com/HarrisonB,10,30,"Oct 9, 2018",10
+,codematix,https://github.com/codematix,10,10,"Dec 9, 2018",10
+,dam,https://github.com/dam,10,10,"Dec 18, 2018",10
+,gildub,https://github.com/gildub,10,10,"Jan 23, 2019",10
+,Serge Merzliakov,,10,10,"Jan 13, 2019",10
+,Vincent van Gemert,,10,10,"Dec 10, 2018",10
+,posthumanism,https://github.com/chovaism,5,820,"Aug 20, 2017",5
+,ettomatic,https://github.com/ettomatic,5,310,"Sep 26, 2016",5
+,rosylilly,https://github.com/rosylilly,5,308,"Aug 4, 2015",5
+,msky026,http://qiita.com/msky026,5,275,"Oct 23, 2015",5
+,dahofer,https://github.com/dahofer,5,205,"Aug 6, 2015",5
+,method3000,https://github.com/tristil,5,195,"Jul 27, 2015",5
+,marksiemers,https://github.com/marksiemers,5,185,"Aug 29, 2017",5
+,rhelsing,https://github.com/rhelsing,5,180,"Jan 27, 2016",5
+,TPei,https://github.com/TPei,5,173,"May 27, 2016",5
+,Blumenversand,https://blumenversender.com,5,170,"Mar 14, 2016",5
+,boie0025,https://github.com/boie0025,5,170,"Mar 28, 2016",5
+,shinkxw,https://github.com/shinkxw,5,150,"Sep 24, 2017",5
+,Zhomart,https://github.com/Zhomart,5,145,"Mar 19, 2017",5
+,bradleyd,https://github.com/bradleyd,5,125,"Dec 22, 2016",5
+,arcage,https://github.com/arcage,5,120,"Jan 6, 2017",5
+,Badoo,https://findmate.app,5,115,"Aug 12, 2016",5
+,Hyper Room,,5,110,"Mar 24, 2017",5
+,bbnnt,http://twitter.com/bbnnt,5,85,"Aug 29, 2017",5
+,Anton Maminov,https://github.com/mamantoha,5,75,"Oct 20, 2017",5
+,igorkasyanchuk,https://phototo.com.ua/,5,75,"Nov 2, 2017",5
+,Will Lewis,,5,70,"Nov 17, 2017",5
+,clouw,https://github.com/clouw,5,65,"Dec 20, 2017",5
+,evanrblack,https://www.erblack.com,5,65,"Dec 27, 2017",5
+,howdoicomputer,https://github.com/howdoicomputer,5,65,"Dec 3, 2017",5
+,grillermo,https://github.com/grillermo,5,60,"Sep 6, 2017",5
+,Steve Frank,,5,60,"Jan 13, 2018",5
+,bigbenz8,http://www.crystal-lang.top,5,50,"Mar 13, 2018",5
+,DRVTiny,https://github.com/DRVTiny,5,50,"Mar 6, 2018",5
+,jtianling,https://github.com/jtianling,5,50,"Mar 16, 2018",5
+,masaakiaoyagi,https://github.com/masaakiaoyagi,5,50,"Mar 26, 2018",5
+,Meyer Lobl,,5,50,"Mar 13, 2018",5
+,rogics,https://github.com/rogics,5,45,"Jul 8, 2018",5
+,seanlerner,http://smallcity.ca,5,45,"Apr 29, 2018",5
+,comomac,https://github.com/comomac,5,35,"Jun 17, 2018",5
+,crnbrdrck,https://github.com/crnbrdrck,5,35,"Jun 28, 2018",5
+,magmallegus,http://twitter.com/magmallegus,5,34,"Jun 21, 2017",5
+,constXife,https://github.com/constXife,5,30,"Jul 31, 2018",5
+,felixbuenemann,https://github.com/felixbuenemann,5,30,"Jul 13, 2018",5
+,fravelcj,http://twitter.com/fravelcj,5,30,"Jul 18, 2018",5
+,Martin Honermeyer,,5,30,"Jul 24, 2018",5
+,Edward Loveall,https://github.com/edwardloveall,5,25,"Aug 26, 2018",5
+,mikeeus,https://github.com/mikeeus,5,20,"Sep 22, 2018",5
+,Whaxion,https://whaxion.be/,5,20,"Sep 13, 2018",5
+,KTanaka101,https://github.com/KTanaka101,5,15,"Oct 27, 2018",5
+,plambert,https://github.com/plambert,5,10,"Nov 2, 2018",5
+,amscotti,https://github.com/amscotti,5,5,"Jan 2, 2019",5
+,devtrackers.gg,https://devtrackers.gg,5,5,"Dec 9, 2018",5
+,elliot,,5,5,"Dec 9, 2018",5
+,Jason Nishi,,5,5,"Dec 8, 2018",5
+,Mauro Giannandrea,,5,5,"Dec 1, 2018",5
+,mavu,https://github.com/mavu,5,5,"Jan 23, 2019",5
+,nilsding,https://nilsding.org,5,5,"Jan 18, 2019",5
+,Sceptique ,,5,5,"Dec 9, 2018",5
+,stevo,https://github.com/stevo,5,5,"Jan 1, 2019",5
+,Aleksander Kwiatkowski,,2,10,"Aug 16, 2018",1
+,dark-eye,,1,52,"Nov 2, 2015",1
+,Martin Luder,,1,41,"Aug 14, 2015",1
+,Shigenobu Nishikawa,,1,39,"Oct 23, 2015",1
+,magmallegus,,1,34,"Jun 21, 2017",1
+,Vanhecke,,1,31,"Jun 15, 2016",1
+,piedoom,,1,28,"Sep 18, 2016",1
+,citizen428,,1,27,"Oct 25, 2016",1
+,haarts,,1,26,"Nov 10, 2016",1
+,Piotr Żurek,,1,18,"Jul 19, 2017",1
+,rumenzu,,1,18,"Jul 14, 2017",1
+,Jeremy Jung,,1,13,"Dec 20, 2017",1
+,khamusa,,1,12,"Jan 12, 2018",1
+,Eric Gillet,,1,11,"Feb 16, 2018",1
+,zitrone44,,1,9,"May 17, 2018",1
+,acoshift,,1,6,"Jul 12, 2018",1
+,Manpreet Singh Narang,,1,6,"Jul 24, 2018",1
+,MarkMurphy,,1,5,"Aug 5, 2018",1
+,sci4me,,1,3,"Oct 29, 2018",1
+,jorjeb,,1,2,"Nov 15, 2018",1
+,KendallPark,,1,2,"Nov 22, 2018",1
+,Rob Fors,,1,2,"Nov 18, 2018",1
+,Mateusz Wieloch,,1,1,"Dec 3, 2018",1
