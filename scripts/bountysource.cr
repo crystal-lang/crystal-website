@@ -1,8 +1,4 @@
-require "http/client"
-require "json"
-require "csv"
-
-levels = [250, 150, 75, 25, 10, 5, 1]
+require "./sponsors"
 
 module BountySource
   class API
@@ -151,8 +147,6 @@ module GitHub
   end
 end
 
-record Sponsor, name : String, url : String, logo : String, this_month : Float64, all_time : Float64, since : Time
-
 token = ARGV[0]?
 unless token
   puts <<-USAGE
@@ -184,7 +178,7 @@ support_levels = bountysource.support_levels
 support_levels.select! { |s| s.status == "active" && s.owner.display_name != "Anonymous" }
 support_levels.sort_by! &.amount
 
-sponsors = [] of Sponsor
+sponsors = SponsorsBuilder.new
 
 support_levels.each do |support_level|
   name = support_level.owner.display_name
@@ -208,59 +202,18 @@ support_levels.each do |support_level|
   end
 
   amount = support_level.amount
-
-  show_url = url && amount >= 5
-
-  url = show_url ? url.not_nil! : ""
+  url ||= ""
 
   supporter = supporters.find { |s| s.display_name == support_level.owner.display_name }
-  if supporter
-    show_logo = amount >= 75
-    logo = ""
-    if show_logo
-      HTTP::Client.get(supporter.image_url_large) do |logo_request|
-        ext = case logo_request.content_type
-              when "image/jpeg"
-                "jpg"
-              when "image/png"
-                "png"
-              when "image/svg+xml"
-                "svg"
-              else
-                raise "not implemented image type #{logo_request.content_type}"
-              end
-        logo = "sponsors/#{name.downcase.gsub(/\W/, "_")}.#{ext}"
-        local_file = "_assets/img/#{logo}"
-        unless File.exists?(local_file)
-          File.open(local_file, "w") do |f|
-            IO.copy logo_request.body_io, f
-          end
-        end
-      end
-    end
+  raise "unable to match: #{support_level.owner.display_name} in supporters" unless supporter
 
-    all_time = supporter.alltime_amount
-    since = Time.parse(supporter.created_at[0..10], "%F", location: Time::Location::UTC)
-  else
-    raise "unable to match: #{support_level.owner.display_name} in supporters"
-  end
-  sponsors << Sponsor.new(name, url, logo, amount, all_time, since)
+  logo = supporter.image_url_large
+  all_time = supporter.alltime_amount
+  since = Time.parse(supporter.created_at[0..10], "%F", location: Time::Location::UTC)
+
+  sponsors.add Sponsor.new(name, url, logo, amount, all_time, since)
 end
 
-sponsors.sort_by! { |s| {-s.this_month, -s.all_time, s.name.downcase} }.uniq!
-
-File.open("#{__DIR__}/../_data/sponsors.csv", "w") do |file|
-  CSV.build(file) do |csv|
-    csv.row "logo", "name", "url", "this_month", "all_time", "since", "level"
-
-    sponsors.each do |sponsor|
-      csv.row (sponsor.logo unless sponsor.logo.empty?),
-        sponsor.name,
-        (sponsor.url unless sponsor.url.empty?),
-        sponsor.this_month.to_i,
-        sponsor.all_time.to_i,
-        sponsor.since.to_s("%b %-d, %Y"),
-        levels.find { |amount| amount <= sponsor.this_month.to_i }.not_nil!
-    end
-  end
+File.open("#{__DIR__}/../_data/bountysource.json", "w") do |file|
+  sponsors.save(file)
 end
