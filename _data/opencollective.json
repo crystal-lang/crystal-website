@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Tom Metge",
+    "logo": "sponsors/tom_metge.jpg",
+    "this_month": 100.0,
+    "all_time": 100.0,
+    "since": "Jan 15, 2019"
+  },
+  {
+    "name": "Kristine Robison",
+    "this_month": 10.0,
+    "all_time": 10.0,
+    "since": "Jan 14, 2019"
+  },
+  {
+    "name": "Roman Pushkin",
+    "url": "https://github.com/ro31337",
+    "this_month": 100.0,
+    "all_time": 100.0,
+    "since": "Jan 11, 2019"
+  },
+  {
+    "name": "epergo",
+    "this_month": 10.0,
+    "all_time": 10.0,
+    "since": "Jan 2, 2019"
+  },
+  {
+    "name": "Mark Sinclair",
+    "this_month": 50.0,
+    "all_time": 50.0,
+    "since": "Dec 28, 2018"
+  },
+  {
+    "name": "Tumbler Lock",
+    "url": "http://tumblerlock.io",
+    "this_month": 150.0,
+    "all_time": 450.0,
+    "since": "Dec 27, 2018"
+  },
+  {
+    "name": "David García Alonso",
+    "url": "https://twitter.com/zdavidlnx",
+    "this_month": 10.0,
+    "all_time": 10.0,
+    "since": "Dec 19, 2018"
+  },
+  {
+    "name": "Julien Reichardt",
+    "url": "https://blog.jrei.ch/",
+    "this_month": 25.0,
+    "all_time": 75.0,
+    "since": "Dec 13, 2018"
+  },
+  {
+    "name": "Blitline",
+    "url": "https://www.blitline.com",
+    "logo": "sponsors/blitline.png",
+    "this_month": 75.0,
+    "all_time": 225.0,
+    "since": "Dec 12, 2018"
+  }
+]

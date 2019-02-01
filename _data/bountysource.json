@@ -1,0 +1,828 @@
+[
+  {
+    "name": "mavu",
+    "url": "https://github.com/mavu",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "Jan 23, 2019"
+  },
+  {
+    "name": "gildub",
+    "url": "https://github.com/gildub",
+    "this_month": 10.0,
+    "all_time": 10.0,
+    "since": "Jan 23, 2019"
+  },
+  {
+    "name": "Nikola Motor Company",
+    "url": "https://nikolamotor.com/careers/jobs",
+    "logo": "sponsors/nikola_motor_company.png",
+    "this_month": 200.0,
+    "all_time": 200.0,
+    "since": "Jan 21, 2019"
+  },
+  {
+    "name": "nilsding",
+    "url": "https://nilsding.org",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "Jan 18, 2019"
+  },
+  {
+    "name": "Serge Merzliakov",
+    "url": "",
+    "this_month": 10.0,
+    "all_time": 10.0,
+    "since": "Jan 13, 2019"
+  },
+  {
+    "name": "fengguang",
+    "url": "https://github.com/fengguang",
+    "logo": "sponsors/fengguang.png",
+    "this_month": 500.0,
+    "all_time": 500.0,
+    "since": "Jan 2, 2019"
+  },
+  {
+    "name": "amscotti",
+    "url": "https://github.com/amscotti",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "Jan 2, 2019"
+  },
+  {
+    "name": "stevo",
+    "url": "https://github.com/stevo",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "Jan 1, 2019"
+  },
+  {
+    "name": "dam",
+    "url": "https://github.com/dam",
+    "this_month": 10.0,
+    "all_time": 20.0,
+    "since": "Dec 18, 2018"
+  },
+  {
+    "name": "Texenergo",
+    "url": "https://www.texenergo.com",
+    "logo": "sponsors/texenergo.svg",
+    "this_month": 250.0,
+    "all_time": 500.0,
+    "since": "Dec 15, 2018"
+  },
+  {
+    "name": "Vincent van Gemert",
+    "url": "",
+    "this_month": 10.0,
+    "all_time": 20.0,
+    "since": "Dec 10, 2018"
+  },
+  {
+    "name": "Sceptique ",
+    "url": "",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Dec 9, 2018"
+  },
+  {
+    "name": "codematix",
+    "url": "https://github.com/codematix",
+    "this_month": 10.0,
+    "all_time": 20.0,
+    "since": "Dec 9, 2018"
+  },
+  {
+    "name": "elliot",
+    "url": "",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Dec 9, 2018"
+  },
+  {
+    "name": "devtrackers.gg",
+    "url": "https://devtrackers.gg",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Dec 9, 2018"
+  },
+  {
+    "name": "Jason Nishi",
+    "url": "",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Dec 8, 2018"
+  },
+  {
+    "name": "Mateusz Wieloch",
+    "this_month": 1.0,
+    "all_time": 2.0,
+    "since": "Dec 3, 2018"
+  },
+  {
+    "name": "Mauro Giannandrea",
+    "url": "",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Dec 1, 2018"
+  },
+  {
+    "name": "KendallPark",
+    "this_month": 1.0,
+    "all_time": 3.0,
+    "since": "Nov 22, 2018"
+  },
+  {
+    "name": "Rob Fors",
+    "this_month": 1.0,
+    "all_time": 3.0,
+    "since": "Nov 18, 2018"
+  },
+  {
+    "name": "jorjeb",
+    "this_month": 1.0,
+    "all_time": 3.0,
+    "since": "Nov 15, 2018"
+  },
+  {
+    "name": "plambert",
+    "url": "https://github.com/plambert",
+    "this_month": 5.0,
+    "all_time": 15.0,
+    "since": "Nov 2, 2018"
+  },
+  {
+    "name": "sci4me",
+    "this_month": 1.0,
+    "all_time": 4.0,
+    "since": "Oct 29, 2018"
+  },
+  {
+    "name": "KTanaka101",
+    "url": "https://github.com/KTanaka101",
+    "this_month": 5.0,
+    "all_time": 20.0,
+    "since": "Oct 27, 2018"
+  },
+  {
+    "name": "HarrisonB",
+    "url": "https://github.com/HarrisonB",
+    "this_month": 10.0,
+    "all_time": 40.0,
+    "since": "Oct 9, 2018"
+  },
+  {
+    "name": "mikeeus",
+    "url": "https://github.com/mikeeus",
+    "this_month": 5.0,
+    "all_time": 25.0,
+    "since": "Sep 22, 2018"
+  },
+  {
+    "name": "nulty",
+    "url": "https://github.com/nulty",
+    "this_month": 10.0,
+    "all_time": 50.0,
+    "since": "Sep 2, 2018"
+  },
+  {
+    "name": "Edward Loveall",
+    "url": "https://github.com/edwardloveall",
+    "this_month": 5.0,
+    "all_time": 25.0,
+    "since": "Aug 26, 2018"
+  },
+  {
+    "name": "Aharon sharim",
+    "url": "",
+    "this_month": 10.0,
+    "all_time": 60.0,
+    "since": "Aug 25, 2018"
+  },
+  {
+    "name": "Antonio B De Leon",
+    "url": "https://www.linkedin.com/in/antoniobdeleon/",
+    "this_month": 10.0,
+    "all_time": 60.0,
+    "since": "Aug 6, 2018"
+  },
+  {
+    "name": "MarkMurphy",
+    "this_month": 1.0,
+    "all_time": 6.0,
+    "since": "Aug 5, 2018"
+  },
+  {
+    "name": "constXife",
+    "url": "https://github.com/constXife",
+    "this_month": 5.0,
+    "all_time": 35.0,
+    "since": "Jul 31, 2018"
+  },
+  {
+    "name": "Manpreet Singh Narang",
+    "this_month": 1.0,
+    "all_time": 7.0,
+    "since": "Jul 24, 2018"
+  },
+  {
+    "name": "Martin Honermeyer",
+    "url": "",
+    "this_month": 5.0,
+    "all_time": 35.0,
+    "since": "Jul 24, 2018"
+  },
+  {
+    "name": "noriyotcp",
+    "url": "https://github.com/noriyotcp",
+    "this_month": 10.0,
+    "all_time": 70.0,
+    "since": "Jul 21, 2018"
+  },
+  {
+    "name": "fravelcj",
+    "url": "http://twitter.com/fravelcj",
+    "this_month": 5.0,
+    "all_time": 35.0,
+    "since": "Jul 18, 2018"
+  },
+  {
+    "name": "felixbuenemann",
+    "url": "https://github.com/felixbuenemann",
+    "this_month": 5.0,
+    "all_time": 35.0,
+    "since": "Jul 13, 2018"
+  },
+  {
+    "name": "acoshift",
+    "this_month": 1.0,
+    "all_time": 7.0,
+    "since": "Jul 12, 2018"
+  },
+  {
+    "name": "rogics",
+    "url": "https://github.com/rogics",
+    "this_month": 5.0,
+    "all_time": 55.0,
+    "since": "Jul 8, 2018"
+  },
+  {
+    "name": "rogics",
+    "url": "https://github.com/rogics",
+    "this_month": 5.0,
+    "all_time": 55.0,
+    "since": "Jul 8, 2018"
+  },
+  {
+    "name": "mralves",
+    "url": "https://github.com/mralves",
+    "this_month": 15.0,
+    "all_time": 105.0,
+    "since": "Jul 7, 2018"
+  },
+  {
+    "name": "crnbrdrck",
+    "url": "https://github.com/crnbrdrck",
+    "this_month": 5.0,
+    "all_time": 40.0,
+    "since": "Jun 28, 2018"
+  },
+  {
+    "name": "comomac",
+    "url": "https://github.com/comomac",
+    "this_month": 5.0,
+    "all_time": 40.0,
+    "since": "Jun 17, 2018"
+  },
+  {
+    "name": "infinitary",
+    "url": "https://infinitary.org",
+    "this_month": 10.0,
+    "all_time": 80.0,
+    "since": "Jun 11, 2018"
+  },
+  {
+    "name": "kgautreaux",
+    "url": "https://github.com/kgautreaux",
+    "this_month": 10.0,
+    "all_time": 80.0,
+    "since": "Jun 6, 2018"
+  },
+  {
+    "name": "Engelbert Bachfischer",
+    "url": "http://twitter.com/bbert75",
+    "this_month": 25.0,
+    "all_time": 145.0,
+    "since": "May 27, 2018"
+  },
+  {
+    "name": "zitrone44",
+    "this_month": 1.0,
+    "all_time": 10.0,
+    "since": "May 17, 2018"
+  },
+  {
+    "name": "seanlerner",
+    "url": "http://smallcity.ca",
+    "this_month": 5.0,
+    "all_time": 50.0,
+    "since": "Apr 29, 2018"
+  },
+  {
+    "name": "fuegito",
+    "url": "https://github.com/fuegito",
+    "this_month": 10.0,
+    "all_time": 100.0,
+    "since": "Apr 19, 2018"
+  },
+  {
+    "name": "grioja",
+    "url": "https://github.com/grioja",
+    "this_month": 10.0,
+    "all_time": 110.0,
+    "since": "Mar 31, 2018"
+  },
+  {
+    "name": "cpunion",
+    "url": "https://github.com/cpunion",
+    "this_month": 25.0,
+    "all_time": 660.0,
+    "since": "Mar 30, 2018"
+  },
+  {
+    "name": "Dave Doyle",
+    "url": "http://twitter.com/meraxes",
+    "this_month": 25.0,
+    "all_time": 275.0,
+    "since": "Mar 28, 2018"
+  },
+  {
+    "name": "masaakiaoyagi",
+    "url": "https://github.com/masaakiaoyagi",
+    "this_month": 5.0,
+    "all_time": 55.0,
+    "since": "Mar 26, 2018"
+  },
+  {
+    "name": "jtianling",
+    "url": "https://github.com/jtianling",
+    "this_month": 5.0,
+    "all_time": 55.0,
+    "since": "Mar 16, 2018"
+  },
+  {
+    "name": "Meyer Lobl",
+    "url": "",
+    "this_month": 5.0,
+    "all_time": 55.0,
+    "since": "Mar 13, 2018"
+  },
+  {
+    "name": "bigbenz8",
+    "url": "http://www.crystal-lang.top",
+    "this_month": 5.0,
+    "all_time": 55.0,
+    "since": "Mar 13, 2018"
+  },
+  {
+    "name": "Florin Lipan",
+    "url": "https://lipanski.github.io",
+    "this_month": 10.0,
+    "all_time": 110.0,
+    "since": "Mar 1, 2018"
+  },
+  {
+    "name": "Eric Gillet",
+    "this_month": 1.0,
+    "all_time": 12.0,
+    "since": "Feb 16, 2018"
+  },
+  {
+    "name": "Steve Frank",
+    "url": "",
+    "this_month": 5.0,
+    "all_time": 65.0,
+    "since": "Jan 13, 2018"
+  },
+  {
+    "name": "khamusa",
+    "this_month": 1.0,
+    "all_time": 13.0,
+    "since": "Jan 12, 2018"
+  },
+  {
+    "name": "Sikoba",
+    "url": "http://www.sikoba.com",
+    "logo": "sponsors/sikoba.png",
+    "this_month": 75.0,
+    "all_time": 1050.0,
+    "since": "Dec 29, 2017"
+  },
+  {
+    "name": "evanrblack",
+    "url": "https://www.erblack.com",
+    "this_month": 5.0,
+    "all_time": 70.0,
+    "since": "Dec 27, 2017"
+  },
+  {
+    "name": "snapcase",
+    "url": "https://github.com/snapcase",
+    "logo": "sponsors/snapcase.png",
+    "this_month": 75.0,
+    "all_time": 1050.0,
+    "since": "Dec 23, 2017"
+  },
+  {
+    "name": "pitosalas",
+    "url": "",
+    "this_month": 10.0,
+    "all_time": 155.0,
+    "since": "Dec 20, 2017"
+  },
+  {
+    "name": "Hinrik",
+    "url": "https://github.com/hinrik",
+    "this_month": 15.0,
+    "all_time": 80.0,
+    "since": "Dec 20, 2017"
+  },
+  {
+    "name": "clouw",
+    "url": "https://github.com/clouw",
+    "this_month": 5.0,
+    "all_time": 70.0,
+    "since": "Dec 20, 2017"
+  },
+  {
+    "name": "Jeremy Jung",
+    "this_month": 1.0,
+    "all_time": 14.0,
+    "since": "Dec 20, 2017"
+  },
+  {
+    "name": "Knut Franke",
+    "url": "",
+    "this_month": 25.0,
+    "all_time": 350.0,
+    "since": "Dec 7, 2017"
+  },
+  {
+    "name": "howdoicomputer",
+    "url": "https://github.com/howdoicomputer",
+    "this_month": 5.0,
+    "all_time": 70.0,
+    "since": "Dec 3, 2017"
+  },
+  {
+    "name": "Will Lewis",
+    "url": "",
+    "this_month": 5.0,
+    "all_time": 75.0,
+    "since": "Nov 17, 2017"
+  },
+  {
+    "name": "Micah Frazier",
+    "url": "",
+    "this_month": 10.0,
+    "all_time": 160.0,
+    "since": "Oct 26, 2017"
+  },
+  {
+    "name": "Anton Maminov",
+    "url": "https://github.com/mamantoha",
+    "this_month": 5.0,
+    "all_time": 75.0,
+    "since": "Oct 20, 2017"
+  },
+  {
+    "name": "OldhamMade",
+    "url": "https://github.com/OldhamMade",
+    "this_month": 10.0,
+    "all_time": 275.0,
+    "since": "Sep 30, 2017"
+  },
+  {
+    "name": "shinkxw",
+    "url": "https://github.com/shinkxw",
+    "this_month": 5.0,
+    "all_time": 155.0,
+    "since": "Sep 24, 2017"
+  },
+  {
+    "name": "grillermo",
+    "url": "https://github.com/grillermo",
+    "this_month": 5.0,
+    "all_time": 65.0,
+    "since": "Sep 6, 2017"
+  },
+  {
+    "name": "marksiemers",
+    "url": "https://github.com/marksiemers",
+    "this_month": 5.0,
+    "all_time": 190.0,
+    "since": "Aug 29, 2017"
+  },
+  {
+    "name": "bbnnt",
+    "url": "http://twitter.com/bbnnt",
+    "this_month": 5.0,
+    "all_time": 90.0,
+    "since": "Aug 29, 2017"
+  },
+  {
+    "name": "posthumanism",
+    "url": "https://github.com/chovaism",
+    "this_month": 5.0,
+    "all_time": 825.0,
+    "since": "Aug 20, 2017"
+  },
+  {
+    "name": "Piotr Żurek",
+    "this_month": 1.0,
+    "all_time": 19.0,
+    "since": "Jul 19, 2017"
+  },
+  {
+    "name": "rumenzu",
+    "this_month": 1.0,
+    "all_time": 19.0,
+    "since": "Jul 14, 2017"
+  },
+  {
+    "name": "magmallegus",
+    "this_month": 1.0,
+    "all_time": 40.0,
+    "since": "Jun 21, 2017"
+  },
+  {
+    "name": "magmallegus",
+    "url": "http://twitter.com/magmallegus",
+    "this_month": 5.0,
+    "all_time": 40.0,
+    "since": "Jun 21, 2017"
+  },
+  {
+    "name": "dtakahas",
+    "url": "https://github.com/dtakahas",
+    "this_month": 10.0,
+    "all_time": 200.0,
+    "since": "Jun 6, 2017"
+  },
+  {
+    "name": "ruliana",
+    "url": "https://github.com/ruliana",
+    "this_month": 10.0,
+    "all_time": 220.0,
+    "since": "Apr 22, 2017"
+  },
+  {
+    "name": "Eduardo Jezierski",
+    "url": "",
+    "this_month": 10.0,
+    "all_time": 220.0,
+    "since": "Apr 13, 2017"
+  },
+  {
+    "name": "sroller",
+    "url": "https://github.com/sroller",
+    "this_month": 25.0,
+    "all_time": 490.0,
+    "since": "Apr 4, 2017"
+  },
+  {
+    "name": "Hyper Room",
+    "url": "",
+    "this_month": 5.0,
+    "all_time": 115.0,
+    "since": "Mar 24, 2017"
+  },
+  {
+    "name": "Zhomart",
+    "url": "https://github.com/Zhomart",
+    "this_month": 5.0,
+    "all_time": 150.0,
+    "since": "Mar 19, 2017"
+  },
+  {
+    "name": "yxhuvud",
+    "url": "https://github.com/yxhuvud",
+    "this_month": 25.0,
+    "all_time": 470.0,
+    "since": "Feb 21, 2017"
+  },
+  {
+    "name": "arcage",
+    "url": "https://github.com/arcage",
+    "this_month": 5.0,
+    "all_time": 125.0,
+    "since": "Jan 6, 2017"
+  },
+  {
+    "name": "bradleyd",
+    "url": "https://github.com/bradleyd",
+    "this_month": 5.0,
+    "all_time": 130.0,
+    "since": "Dec 22, 2016"
+  },
+  {
+    "name": "openredis",
+    "url": "https://openredis.com",
+    "logo": "sponsors/openredis.png",
+    "this_month": 250.0,
+    "all_time": 6500.0,
+    "since": "Dec 7, 2016"
+  },
+  {
+    "name": "rohanthewiz",
+    "url": "https://github.com/rohanthewiz",
+    "this_month": 10.0,
+    "all_time": 260.0,
+    "since": "Dec 2, 2016"
+  },
+  {
+    "name": "Greg Walker",
+    "url": "http://learnmeabitcoin.com",
+    "this_month": 10.0,
+    "all_time": 210.0,
+    "since": "Nov 21, 2016"
+  },
+  {
+    "name": "haarts",
+    "this_month": 1.0,
+    "all_time": 27.0,
+    "since": "Nov 10, 2016"
+  },
+  {
+    "name": "citizen428",
+    "this_month": 1.0,
+    "all_time": 28.0,
+    "since": "Oct 25, 2016"
+  },
+  {
+    "name": "ettomatic",
+    "url": "https://github.com/ettomatic",
+    "this_month": 5.0,
+    "all_time": 315.0,
+    "since": "Sep 26, 2016"
+  },
+  {
+    "name": "piedoom",
+    "this_month": 1.0,
+    "all_time": 29.0,
+    "since": "Sep 18, 2016"
+  },
+  {
+    "name": "Badoo",
+    "url": "https://findmate.app",
+    "this_month": 5.0,
+    "all_time": 120.0,
+    "since": "Aug 12, 2016"
+  },
+  {
+    "name": "masukomi",
+    "url": "http://masukomi.org",
+    "this_month": 10.0,
+    "all_time": 300.0,
+    "since": "Aug 7, 2016"
+  },
+  {
+    "name": "Fabio Akita",
+    "url": "http://www.codeminer42.com",
+    "logo": "sponsors/fabio_akita.jpg",
+    "this_month": 75.0,
+    "all_time": 2325.0,
+    "since": "Jul 21, 2016"
+  },
+  {
+    "name": "christos",
+    "url": "",
+    "this_month": 10.0,
+    "all_time": 320.0,
+    "since": "Jun 23, 2016"
+  },
+  {
+    "name": "Vanhecke",
+    "this_month": 1.0,
+    "all_time": 32.0,
+    "since": "Jun 15, 2016"
+  },
+  {
+    "name": "TPei",
+    "url": "https://github.com/TPei",
+    "this_month": 5.0,
+    "all_time": 178.0,
+    "since": "May 27, 2016"
+  },
+  {
+    "name": "msa7",
+    "url": "https://github.com/msa7",
+    "this_month": 10.0,
+    "all_time": 310.0,
+    "since": "May 18, 2016"
+  },
+  {
+    "name": "boie0025",
+    "url": "https://github.com/boie0025",
+    "this_month": 5.0,
+    "all_time": 175.0,
+    "since": "Mar 28, 2016"
+  },
+  {
+    "name": "isaacsloan",
+    "url": "https://isaacsloan.com",
+    "this_month": 36.0,
+    "all_time": 1282.0,
+    "since": "Mar 24, 2016"
+  },
+  {
+    "name": "Blumenversand",
+    "url": "https://blumenversender.com",
+    "this_month": 5.0,
+    "all_time": 175.0,
+    "since": "Mar 14, 2016"
+  },
+  {
+    "name": "jeromegn",
+    "url": "https://github.com/jeromegn",
+    "this_month": 25.0,
+    "all_time": 925.0,
+    "since": "Jan 28, 2016"
+  },
+  {
+    "name": "rhelsing",
+    "url": "https://github.com/rhelsing",
+    "this_month": 5.0,
+    "all_time": 185.0,
+    "since": "Jan 27, 2016"
+  },
+  {
+    "name": "drosehn",
+    "url": "https://github.com/drosehn",
+    "this_month": 16.0,
+    "all_time": 604.0,
+    "since": "Dec 3, 2015"
+  },
+  {
+    "name": "dark-eye",
+    "this_month": 1.0,
+    "all_time": 53.0,
+    "since": "Nov 2, 2015"
+  },
+  {
+    "name": "Shigenobu Nishikawa",
+    "this_month": 1.0,
+    "all_time": 40.0,
+    "since": "Oct 23, 2015"
+  },
+  {
+    "name": "msky026",
+    "url": "http://qiita.com/msky026",
+    "this_month": 5.0,
+    "all_time": 280.0,
+    "since": "Oct 23, 2015"
+  },
+  {
+    "name": "tpberntsen",
+    "url": "https://github.com/tpberntsen",
+    "logo": "sponsors/tpberntsen.jpg",
+    "this_month": 75.0,
+    "all_time": 3075.0,
+    "since": "Sep 20, 2015"
+  },
+  {
+    "name": "Frank O'Hara",
+    "url": "",
+    "this_month": 25.0,
+    "all_time": 1050.0,
+    "since": "Aug 16, 2015"
+  },
+  {
+    "name": "Martin Luder",
+    "this_month": 1.0,
+    "all_time": 42.0,
+    "since": "Aug 14, 2015"
+  },
+  {
+    "name": "dahofer",
+    "url": "https://github.com/dahofer",
+    "this_month": 5.0,
+    "all_time": 210.0,
+    "since": "Aug 6, 2015"
+  },
+  {
+    "name": "rosylilly",
+    "url": "https://github.com/rosylilly",
+    "this_month": 5.0,
+    "all_time": 313.0,
+    "since": "Aug 4, 2015"
+  },
+  {
+    "name": "method3000",
+    "url": "https://github.com/tristil",
+    "this_month": 5.0,
+    "all_time": 200.0,
+    "since": "Jul 27, 2015"
+  }
+]
