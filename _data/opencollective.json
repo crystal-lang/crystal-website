@@ -1,5 +1,19 @@
 [
   {
+    "name": "Daniel Sokil",
+    "url": "https://twitter.com/s0kil",
+    "this_month": 20.0,
+    "all_time": 20.0,
+    "since": "Feb 23, 2019"
+  },
+  {
+    "name": "George Protacio-Karaszi",
+    "url": "http://hellogeorge.io",
+    "this_month": 10.0,
+    "all_time": 20.0,
+    "since": "Feb 6, 2019"
+  },
+  {
     "name": "Tom Metge",
     "logo": "sponsors/tom_metge.jpg",
     "this_month": 100.0,
@@ -22,7 +36,7 @@
   {
     "name": "epergo",
     "this_month": 10.0,
-    "all_time": 10.0,
+    "all_time": 20.0,
     "since": "Jan 2, 2019"
   },
   {
@@ -50,6 +64,13 @@
     "url": "https://blog.jrei.ch/",
     "this_month": 25.0,
     "all_time": 75.0,
+    "since": "Dec 13, 2018"
+  },
+  {
+    "name": "Hendrik Mans",
+    "url": "https://hmans.io",
+    "this_month": 10.0,
+    "all_time": 30.0,
     "since": "Dec 13, 2018"
   },
   {
