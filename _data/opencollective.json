@@ -1,5 +1,23 @@
 [
   {
+    "name": "Kentaro Tanaka",
+    "this_month": 10.0,
+    "all_time": 10.0,
+    "since": "Apr 1, 2019"
+  },
+  {
+    "name": "Junyi Wang",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Mar 22, 2019"
+  },
+  {
+    "name": "Alex Malone",
+    "this_month": 25.0,
+    "all_time": 275.0,
+    "since": "Mar 15, 2019"
+  },
+  {
     "name": "Daniel Sokil",
     "url": "https://twitter.com/s0kil",
     "this_month": 20.0,
@@ -10,7 +28,7 @@
     "name": "George Protacio-Karaszi",
     "url": "http://hellogeorge.io",
     "this_month": 10.0,
-    "all_time": 20.0,
+    "all_time": 40.0,
     "since": "Feb 6, 2019"
   },
   {
@@ -34,12 +52,6 @@
     "since": "Jan 11, 2019"
   },
   {
-    "name": "epergo",
-    "this_month": 10.0,
-    "all_time": 20.0,
-    "since": "Jan 2, 2019"
-  },
-  {
     "name": "Mark Sinclair",
     "this_month": 50.0,
     "all_time": 50.0,
@@ -49,7 +61,7 @@
     "name": "Tumbler Lock",
     "url": "http://tumblerlock.io",
     "this_month": 150.0,
-    "all_time": 450.0,
+    "all_time": 750.0,
     "since": "Dec 27, 2018"
   },
   {
@@ -63,14 +75,14 @@
     "name": "Julien Reichardt",
     "url": "https://blog.jrei.ch/",
     "this_month": 25.0,
-    "all_time": 75.0,
+    "all_time": 125.0,
     "since": "Dec 13, 2018"
   },
   {
     "name": "Hendrik Mans",
     "url": "https://hmans.io",
     "this_month": 10.0,
-    "all_time": 30.0,
+    "all_time": 50.0,
     "since": "Dec 13, 2018"
   },
   {
@@ -78,7 +90,7 @@
     "url": "https://www.blitline.com",
     "logo": "sponsors/blitline.png",
     "this_month": 75.0,
-    "all_time": 225.0,
+    "all_time": 375.0,
     "since": "Dec 12, 2018"
   }
 ]
