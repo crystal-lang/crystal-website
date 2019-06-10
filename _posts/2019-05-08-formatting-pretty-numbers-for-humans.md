@@ -46,7 +46,7 @@ The number of decimal places can be configured directly in the `#format` method:
 
 <div class="code_section">{% highlight crystal %}
 123_456.789.format(decimal_places: 2) # => "123,456.79"
-123_456.789.format(decimal_places: 0) # => "123,456"
+123_456.789.format(decimal_places: 0) # => "123,457"
 123_456.789.format(decimal_places: 4) # => "123,456.7890"
 {% endhighlight crystal %}</div>
 
