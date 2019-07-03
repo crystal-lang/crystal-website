@@ -3,18 +3,18 @@ require "json"
 
 record Sponsor, name : String, url : String?, logo : String?, this_month : Float64, all_time : Float64, since : Time do
   JSON.mapping({
-    name: String,
-    url: String?,
-    logo: String?,
+    name:       String,
+    url:        String?,
+    logo:       String?,
     this_month: Float64,
-    all_time: Float64,
-    since: {type: Time, converter: Time::Format.new("%b %-d, %Y")},
+    all_time:   Float64,
+    since:      {type: Time, converter: Time::Format.new("%b %-d, %Y")},
   })
 end
 
 class SponsorsBuilder
   SHOW_LOGO_FROM = 75
-  SHOW_URL_FROM = 5
+  SHOW_URL_FROM  =  5
 
   def initialize
     @sponsors = [] of Sponsor

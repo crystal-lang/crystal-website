@@ -53,7 +53,23 @@ module BountySource
       begin
         User.from_json(response)
       rescue ex : JSON::ParseException
-        puts "Error trying to parse BountySource JSON Response from /users"
+        puts "Error trying to parse BountySource JSON Response from /users/#{slug}"
+        puts response
+        puts headers
+        raise ex
+      end
+    end
+
+    def team(slug)
+      headers = HTTP::Headers{
+        "Accept"     => "application/vnd.bountysource+json; version=1",
+        "User-Agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36",
+      }
+      response = @client.get("/teams/#{slug}?access_token=#{@token}", headers: headers).body
+      begin
+        Team.from_json(response)
+      rescue ex : JSON::ParseException
+        puts "Error trying to parse BountySource JSON Response from /teams/#{slug}"
         puts response
         puts headers
         raise ex
@@ -90,6 +106,7 @@ module BountySource
       JSON.mapping({
         display_name: String,
         slug:         {type: String, nilable: true},
+        type:         {type: String, nilable: true},
       })
     end
 
@@ -118,6 +135,15 @@ module BountySource
         display_name: String,
       })
     end
+  end
+
+  class Team
+    JSON.mapping({
+      id:   Int64,
+      slug: String,
+      name: String,
+      url:  {type: String, nilable: true},
+    })
   end
 end
 
@@ -181,19 +207,29 @@ support_levels.sort_by! &.amount
 sponsors = SponsorsBuilder.new
 
 support_levels.each do |support_level|
-  name = support_level.owner.display_name
+  name = nil
   url = nil
   if slug = support_level.owner.slug
-    user = bountysource.user(slug)
-    url = user.url
-    unless url
-      if (github_account = user.github_account)
-        github_user = github.user(github_account.display_name)
-        name = github_user.name || name
-        url = github_user.blog || "https://github.com/#{github_account.display_name}"
-      elsif (twitter_account = user.twitter_account)
-        url = "http://twitter.com/#{twitter_account.display_name}"
+    case support_level.owner.type
+    when "Person"
+      name = support_level.owner.display_name
+      user = bountysource.user(slug)
+      url = user.url
+      unless url
+        if (github_account = user.github_account)
+          github_user = github.user(github_account.display_name)
+          name = github_user.name || name
+          url = github_user.blog || "https://github.com/#{github_account.display_name}"
+        elsif (twitter_account = user.twitter_account)
+          url = "http://twitter.com/#{twitter_account.display_name}"
+        end
       end
+    when "Team"
+      team = bountysource.team(slug)
+      url = team.url
+      name = team.name
+    else
+      raise "unhandled owner type for #{support_level.owner}"
     end
   end
 
@@ -203,6 +239,8 @@ support_levels.each do |support_level|
 
   amount = support_level.amount
   url ||= ""
+
+  raise "unable to determine name for #{support_level.owner}" unless name
 
   supporter = supporters.find { |s| s.display_name == support_level.owner.display_name }
   raise "unable to match: #{support_level.owner.display_name} in supporters" unless supporter
