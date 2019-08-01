@@ -48,7 +48,7 @@ A bonus point is that our package repository will not get traffic from CI builds
 
 ## Packaging your Crystal app as a snap
 
-Once [snapcraft#2598](https://github.com/snapcore/snapcraft/pull/2598) is merged and released, building a snap that will package the application will be easy. If you are unfamiliar with snapcraft don't miss [its introduction](https://snapcraft.io/blog/introduction-to-snapcraft).
+Once [snapcraft#2598](https://github.com/snapcore/snapcraft/pull/2598) ~~is merged and released~~ (Edit: it was been released in Snapcraft 3.7!), building a snap that will package the application will be easy. If you are unfamiliar with snapcraft don't miss [its introduction](https://snapcraft.io/blog/introduction-to-snapcraft).
 
 Assuming there is a `shard.yml` that declares targets, dependencies, etc.
 
