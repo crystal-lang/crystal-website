@@ -1,26 +1,39 @@
 [
   {
+    "name": "Max Fierke",
+    "url": "https://www.maxfierke.com",
+    "this_month": 10.0,
+    "all_time": 20.0,
+    "since": "Jul 21, 2019"
+  },
+  {
+    "name": "Ben Morrison",
+    "this_month": 15.0,
+    "all_time": 15.0,
+    "since": "Jul 20, 2019"
+  },
+  {
     "name": "Alexis Anand",
     "this_month": 5.0,
-    "all_time": 10.0,
+    "all_time": 15.0,
     "since": "Jun 29, 2019"
   },
   {
     "name": "Bernardo Anderson",
     "this_month": 2.0,
-    "all_time": 4.0,
+    "all_time": 6.0,
     "since": "Jun 1, 2019"
   },
   {
     "name": "Liu Chong",
     "this_month": 5.0,
-    "all_time": 15.0,
+    "all_time": 20.0,
     "since": "May 27, 2019"
   },
   {
     "name": "Junyi Wang",
     "this_month": 5.0,
-    "all_time": 25.0,
+    "all_time": 30.0,
     "since": "Mar 22, 2019"
   },
   {
@@ -34,7 +47,7 @@
     "name": "George Protacio-Karaszi",
     "url": "http://hellogeorge.io",
     "this_month": 10.0,
-    "all_time": 70.0,
+    "all_time": 80.0,
     "since": "Feb 6, 2019"
   },
   {
@@ -67,7 +80,7 @@
     "name": "Tumbler Lock",
     "url": "https://tumblerlock.io",
     "this_month": 150.0,
-    "all_time": 1200.0,
+    "all_time": 1350.0,
     "since": "Dec 27, 2018"
   },
   {
@@ -81,14 +94,14 @@
     "name": "Julien Reichardt",
     "url": "https://blog.jrei.ch/",
     "this_month": 25.0,
-    "all_time": 200.0,
+    "all_time": 225.0,
     "since": "Dec 13, 2018"
   },
   {
     "name": "Hendrik Mans",
     "url": "https://hmans.io",
     "this_month": 10.0,
-    "all_time": 80.0,
+    "all_time": 90.0,
     "since": "Dec 13, 2018"
   },
   {
@@ -96,7 +109,7 @@
     "url": "https://www.blitline.com",
     "logo": "sponsors/blitline.png",
     "this_month": 75.0,
-    "all_time": 600.0,
+    "all_time": 675.0,
     "since": "Dec 12, 2018"
   }
 ]
