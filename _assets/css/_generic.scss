@@ -157,11 +157,22 @@ table.no-underline a {
   }
   .subtitle {
     font-size: 18px;
-    padding: 0 5%;
   }
   #content {
     display: block;
-    width: 100%;
+    width: 90%;
+    margin: auto;
+  }
+  @media only screen and (min-width: 601px) {
+    #content {
+      width: 85%;
+    }
+  }
+  
+  @media only screen and (min-width: 993px) {
+    #content {
+      width: 70%;
+    }
   }
 }
 
@@ -193,9 +204,6 @@ table.no-underline a {
 
 
 @media only screen and (min-width: 993px) {
-  .header-section .subtitle {
-    padding: 0 20%;
-  }
   .main .community-list .item {
     white-space: nowrap;
   }
