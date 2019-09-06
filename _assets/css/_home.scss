@@ -178,13 +178,28 @@
   }
 
 
-  .banner.bountysource {
+  .banner.sponsorship {
     margin-top: 0;
-    .bountysource-logo {
-      height: 25px;
+    .flag-logos {
+      display: inline;
+      span {
+        margin: 0 3px;
+      }
+    }
+    .sponsorship-logo{
+      height: 28px;
+    }
+    .oc-logo {
+      height: 18px;
     }
     .flag {
       a { border-bottom: 0; }
+    }
+    @media only screen and (max-width: 768px) {
+      .flag-logos {
+        display: block;
+        text-align: center;
+      }
     }
   }
 
