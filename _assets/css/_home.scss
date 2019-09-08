@@ -2,8 +2,8 @@
   // Changes to the default layout for main page
   .header-section {
     background-color: transparent;
-    height: calc(70vh - 114px);
     min-height: 485px;
+    position: relative;
     h1.title {
       color: $white;
     }
@@ -62,10 +62,9 @@
   #delaunay {
     @extend .black;
     position: absolute;
-    top: 0;
+    top: -94px;
     right: 0;
-    min-height: 600px;
-    height: 70vh;
+    bottom: 0;
     left: 0;
     z-index: -1;
   }
@@ -73,6 +72,7 @@
   canvas.delaunay {
     position: absolute;
     background-color: $black;
+    bottom: 0;
   }
 
   .container {
@@ -156,6 +156,7 @@
     padding: 2px 25px;
     white-space: nowrap;
     z-index: 1;
+    transform: translateY(-50%);
     h3 {
       display: inline-block;
       background-color: $white;
@@ -165,21 +166,13 @@
       border-bottom: 1px solid $primary-text;
       margin-left: 8px;
     }
-    &:before {
-      content:"";
-      display: block;
-      border-top: 1px solid $light-gray;
-      position: absolute;
-      margin-top: 15px;
-      width: 100%;
-      left: 0;
-      z-index: -1;
-    }
   }
 
 
   .banner.sponsorship {
     margin-top: 0;
+    border-top: 1px solid $light-gray;
+
     .flag-logos {
       display: inline;
       span {
