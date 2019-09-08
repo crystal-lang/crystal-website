@@ -72,7 +72,8 @@
   canvas.delaunay {
     position: absolute;
     background-color: $black;
-    bottom: 0;
+    top: 0;
+    bottom: 15px;
   }
 
   .container {
