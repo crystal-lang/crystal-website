@@ -150,6 +150,13 @@ table.no-underline a {
   min-height: 465px;
   width: 100%;
 
+  // This padding makes room for .banner.sponsorship to overlap into .header-section
+  padding-bottom: 30px;
+  @media only screen and (max-width: 768px) {
+    // On small width, .banner.sponsorship spans over two lines, needing more space
+    padding-bottom: 45px;
+  }
+
   .title {
     color: $black;
     font-size: 72px;
