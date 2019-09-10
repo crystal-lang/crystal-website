@@ -227,11 +227,14 @@
 @media only screen and (max-width: 992px) {
   .btn-flat {
     display: block;
-    width: 70%;
+    width: 80%;
     margin-right: 0;
     margin: 0 auto 1rem !important;
   }
-  .main .banner.bountysource {
+  .btn-large {
+    font-size: 18px;
+  }
+  .main .banner.sponsorship {
     margin-top: 0px;
     .flag {
       line-height: 1.3;
@@ -241,6 +244,9 @@
       display: block;
       &:before {
         display: none;
+      }
+      .flag-logos {
+        line-height: 1.6;
       }
     }
   }
