@@ -18,11 +18,14 @@
   <body>
     <div class="wrapper {{page.custom_body_classes | join: ' '}}">
       {% include nav.html %}
-      {% if page.is_post %}
-        {% include post_header.html %}
-      {% else %}
-        {% include header.html %}
-      {% endif %}
+      {% unless page.distro %}
+        {% if page.is_post %}
+          {% include post_header.html %}
+        {% else %}
+          {% include header.html %}
+        {% endif %}
+      {% endunless %}
+
       <main>
         {{ content }}
       </main>

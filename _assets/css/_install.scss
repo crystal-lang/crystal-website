@@ -1,0 +1,34 @@
+.container.install {
+  padding: 5rem 0;
+  h2 {
+    text-transform: none;
+  }
+  pre {
+    background: none;
+    border: 1px solid #999;
+    padding: 1.5rem;
+    margin: 0;
+    code {
+      background: none;
+    }
+  }
+  code.highlighter-rouge {
+    @extend .grey, .lighten-2;
+  }
+}
+
+.distro-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-row-gap: 2rem;
+  > div {
+    padding: 2rem;
+    text-align: center;
+    img {
+      width: 30px;
+    }
+    a {
+      color: $black;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+---
+title: Install
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare mauris mi, nec mattis enim mattis id. Aliquam hendrerit felis id elit varius ultricies. Proin auctor eros mauris.
+exclude: true
+---
+<div class="container">
+  <div class="row">
+    <div class="col offset-m1 m10 s12">
+      <div class="distro-list">
+        {% for page in site.pages %}
+          {% if page.layout == 'install' %} 
+            {% assign page_url = page.external_url | default: page.url %}
+            <div>
+              <a href="{{ page_url }}">
+                <div class="distro-icon">
+                  <img src="{{ page.icon | asset_path }}">
+                </div>
+                {{page.distro}}
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
