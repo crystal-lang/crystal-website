@@ -82,7 +82,10 @@ table.no-underline a {
 .small {
   font-size: 85%;
 }
-
+.hr-light {
+  border-style: solid;
+  border-color: $lighter-gray;
+}
 .wrapper {
 
   .brand-logo {
