@@ -1,22 +1,22 @@
 [
   {
+    "name": "jlnr",
+    "url": "https://github.com/jlnr",
+    "this_month": 30.0,
+    "all_time": 30.0,
+    "since": "Sep 22, 2019"
+  },
+  {
     "name": "Daniel Spiridione",
     "this_month": 1.0,
     "all_time": 1.0,
     "since": "Aug 29, 2019"
   },
   {
-    "name": "Eric Mantooth",
-    "url": "",
-    "this_month": 10.0,
-    "all_time": 10.0,
-    "since": "Aug 19, 2019"
-  },
-  {
     "name": "Szymon Madeja",
     "url": "https://github.com/smadeja",
     "this_month": 5.0,
-    "all_time": 5.0,
+    "all_time": 10.0,
     "since": "Aug 2, 2019"
   },
   {
@@ -42,8 +42,8 @@
   {
     "name": "Andrzej Skalski",
     "url": "",
-    "this_month": 10.0,
-    "all_time": 30.0,
+    "this_month": 30.0,
+    "all_time": 60.0,
     "since": "Jun 22, 2019"
   },
   {
@@ -103,14 +103,6 @@
     "since": "May 2, 2019"
   },
   {
-    "name": "Arsenal Camera Assistant",
-    "url": "https://witharsenal.com",
-    "logo": "sponsors/arsenal_camera_assistant.jpg",
-    "this_month": 500.0,
-    "all_time": 2500.0,
-    "since": "Apr 16, 2019"
-  },
-  {
     "name": "Bookyourdata",
     "url": "https://www.bookyourdata.com",
     "this_month": 17.0,
@@ -150,13 +142,6 @@
     "this_month": 10.0,
     "all_time": 60.0,
     "since": "Mar 3, 2019"
-  },
-  {
-    "name": "arctic-fox",
-    "url": "https://github.com/icy-arctic-fox",
-    "this_month": 10.0,
-    "all_time": 60.0,
-    "since": "Mar 1, 2019"
   },
   {
     "name": "gildub",
@@ -259,6 +244,13 @@
     "this_month": 1.0,
     "all_time": 10.0,
     "since": "Nov 15, 2018"
+  },
+  {
+    "name": "ktanaka101",
+    "url": "https://github.com/KTanaka101",
+    "this_month": 25.0,
+    "all_time": 55.0,
+    "since": "Oct 27, 2018"
   },
   {
     "name": "HarrisonB",
@@ -432,15 +424,15 @@
     "since": "Mar 16, 2018"
   },
   {
-    "name": "bigbenz8",
-    "url": "http://www.crystal-lang.top",
+    "name": "Meyer Lobl",
+    "url": "",
     "this_month": 5.0,
     "all_time": 90.0,
     "since": "Mar 13, 2018"
   },
   {
-    "name": "Meyer Lobl",
-    "url": "",
+    "name": "bigbenz8",
+    "url": "http://www.crystal-lang.top",
     "this_month": 5.0,
     "all_time": 90.0,
     "since": "Mar 13, 2018"
@@ -494,6 +486,13 @@
     "since": "Dec 27, 2017"
   },
   {
+    "name": "clouw",
+    "url": "https://github.com/clouw",
+    "this_month": 5.0,
+    "all_time": 105.0,
+    "since": "Dec 20, 2017"
+  },
+  {
     "name": "Jeremy Jung",
     "this_month": 1.0,
     "all_time": 21.0,
@@ -504,13 +503,6 @@
     "url": "",
     "this_month": 20.0,
     "all_time": 285.0,
-    "since": "Dec 20, 2017"
-  },
-  {
-    "name": "clouw",
-    "url": "https://github.com/clouw",
-    "this_month": 5.0,
-    "all_time": 105.0,
     "since": "Dec 20, 2017"
   },
   {
@@ -576,7 +568,7 @@
     "since": "Jul 19, 2017"
   },
   {
-    "name": "Romain Franceschini",
+    "name": "rumenzu",
     "this_month": 1.0,
     "all_time": 26.0,
     "since": "Jul 14, 2017"
@@ -618,6 +610,13 @@
     "since": "Mar 19, 2017"
   },
   {
+    "name": "Woorke",
+    "url": "https://woorke.com",
+    "this_month": 5.0,
+    "all_time": 65.0,
+    "since": "Mar 1, 2017"
+  },
+  {
     "name": "yxhuvud",
     "url": "https://github.com/yxhuvud",
     "this_month": 25.0,
@@ -653,7 +652,7 @@
     "since": "Nov 21, 2016"
   },
   {
-    "name": "Harm Aarts",
+    "name": "haarts",
     "this_month": 1.0,
     "all_time": 34.0,
     "since": "Nov 10, 2016"

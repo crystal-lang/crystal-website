@@ -1,5 +1,18 @@
 [
   {
+    "name": "Michael Lang",
+    "logo": "sponsors/michael_lang.png",
+    "this_month": 75.0,
+    "all_time": 75.0,
+    "since": "Sep 30, 2019"
+  },
+  {
+    "name": "Eric",
+    "this_month": 75.0,
+    "all_time": 75.0,
+    "since": "Sep 26, 2019"
+  },
+  {
     "name": "WPsetup",
     "url": "https://wpsetup.org",
     "this_month": 5.0,
@@ -103,6 +116,13 @@
     "this_month": 10.0,
     "all_time": 10.0,
     "since": "Dec 19, 2018"
+  },
+  {
+    "name": "Julien Reichardt",
+    "url": "https://github.com/j8r",
+    "this_month": 25.0,
+    "all_time": 250.0,
+    "since": "Dec 13, 2018"
   },
   {
     "name": "Hendrik Mans",
