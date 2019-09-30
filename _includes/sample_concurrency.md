@@ -5,8 +5,8 @@ files = Dir.glob("*.txt")
 
 files.each do |f|
   spawn do
-    lines = File.read(f).lines.size
-    channel.send lines
+    lines = File.read_lines(f)
+    channel.send lines.size
   end
 end
 
