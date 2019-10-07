@@ -8,18 +8,6 @@
   h2 {
     text-transform: none;
   }
-  pre {
-    background: none;
-    border: 1px solid #999;
-    padding: 1.5rem;
-    margin: 0;
-    code {
-      background: none;
-    }
-  }
-  code.highlighter-rouge {
-    @extend .grey, .lighten-2;
-  }
   @media only screen and (max-width: 600px) {
     padding: 5rem 0;
     h1 {
@@ -28,6 +16,9 @@
         margin-bottom: 2rem;
       }
     }
+  }
+  h1 a:hover {
+    @extend .black-text;
   }
 }
 
@@ -53,15 +44,27 @@
   text-align: center;
   padding: 4rem 0 3rem;
 
-  h1 {
+  h1, h2 {
     @extend .grey-text;
     font-family: $codeFont;
-    font-size: 48px;
     margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    margin-top: 3.5rem;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: none;
   }
   @media only screen and (max-width: 600px) {
     h1 {
       font-size: 2.3rem;
+    }
+    h2 {
+      font-size: 1.8rem;
     }
   }
 }

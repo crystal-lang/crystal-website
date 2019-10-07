@@ -1,0 +1,20 @@
+-
+  url: /install/from_sources
+  caption: from sources
+  icon: install/sources@2x.png
+-
+  url: /install/from_targz
+  caption: from .tar.gz
+  icon: install/targz@2x.png
+-
+  url: /install/on_mac_os
+  caption: macOS
+  icon: install/macos@2x.png
+-
+  url: /install/on_ubuntu
+  caption: Ubuntu
+  icon: install/ubuntu@2x.png
+-
+  url: /install/on_debian
+  caption: Debian
+  icon: install/debian@2x.png
