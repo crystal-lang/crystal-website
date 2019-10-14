@@ -26,3 +26,7 @@
   url: /install/on_centos
   caption: CentOS
   icon: install/centos@2x.png
+-
+  url: /install/on_opensuse
+  caption: OpenSUSE
+  icon: install/opensuse@2x.png
