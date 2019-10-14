@@ -30,3 +30,7 @@
   url: /install/on_opensuse
   caption: OpenSUSE
   icon: install/opensuse@2x.png
+-
+  url: /install/on_arch_linux
+  caption: Arch Linux
+  icon: install/arch@2x.png
