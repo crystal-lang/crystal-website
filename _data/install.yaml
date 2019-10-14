@@ -18,3 +18,11 @@
   url: /install/on_debian
   caption: Debian
   icon: install/debian@2x.png
+-
+  url: /install/on_redhat
+  caption: RedHat
+  icon: install/redhat@2x.png
+-
+  url: /install/on_centos
+  caption: CentOS
+  icon: install/centos@2x.png
