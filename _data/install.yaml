@@ -54,3 +54,7 @@
   url: /install/on_manjaro
   caption: Manjaro
   icon: install/manjaro@2x.png
+-
+  url: /install/on_linux_mint
+  caption: Linux Mint
+  icon: install/linuxmint@2x.png
