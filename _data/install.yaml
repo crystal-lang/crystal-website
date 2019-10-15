@@ -38,3 +38,7 @@
   url: /install/on_elementary_os
   caption: Elementary OS
   icon: install/elementary@2x.png
+-
+  url: /install/on_fedora
+  caption: Fedora
+  icon: install/fedora@2x.png
