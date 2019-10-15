@@ -34,3 +34,7 @@
   url: /install/on_arch_linux
   caption: Arch Linux
   icon: install/arch@2x.png
+-
+  url: /install/on_elementary_os
+  caption: Elementary OS
+  icon: install/elementary@2x.png
