@@ -42,3 +42,7 @@
   url: /install/on_fedora
   caption: Fedora
   icon: install/fedora@2x.png
+-
+  url: /install/on_kde_neon
+  caption: KDE Neon
+  icon: install/kde@2x.png
