@@ -58,3 +58,8 @@
   url: /install/on_linux_mint
   caption: Linux Mint
   icon: install/linuxmint@2x.png
+-
+  url: /install/on_gentoo_linux
+  caption: Gentoo Linux
+  icon: install/gentoo@2x.png
+
