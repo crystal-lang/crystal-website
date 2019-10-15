@@ -1,7 +1,6 @@
 ---
 layout: install
-distro: On Alpine Linux
-icon: install/alpine@2x.png
+subtitle: On Alpine Linux
 exclude: true
 ---
 
@@ -11,6 +10,8 @@ Currently, the package is only available for `aarch64` and `x86_64` platforms.
 
 ## Install
 
-```bash
+<div class="code_section">
+{% highlight bash %}
 apk add crystal shards
-```
+{% endhighlight bash %}
+</div>

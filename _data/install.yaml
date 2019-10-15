@@ -62,4 +62,8 @@
   url: /install/on_gentoo_linux
   caption: Gentoo Linux
   icon: install/gentoo@2x.png
+-
+  url: /install/on_alpine_linux
+  caption: Alpine Linux
+  icon: install/alpine@2x.png
 
