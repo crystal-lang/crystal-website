@@ -50,3 +50,7 @@
   url: /install/on_kubuntu
   caption: Kubuntu
   icon: install/freebsd@2x.png
+-
+  url: /install/on_manjaro
+  caption: Manjaro
+  icon: install/manjaro@2x.png
