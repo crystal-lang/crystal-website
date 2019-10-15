@@ -66,4 +66,8 @@
   url: /install/on_alpine_linux
   caption: Alpine Linux
   icon: install/alpine@2x.png
+-
+  url: /install/on_freebsd
+  caption: FreeBSD
+  icon: install/freebsd@2x.png
 
