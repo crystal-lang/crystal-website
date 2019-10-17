@@ -1,0 +1,76 @@
+-
+  url: /install/from_sources
+  caption: from sources
+  icon: install/sources@2x.png
+-
+  url: /install/from_targz
+  caption: from .tar.gz
+  icon: install/targz@2x.png
+-
+  url: /install/on_mac_os
+  caption: macOS
+  icon: install/macos@2x.png
+-
+  url: /install/on_ubuntu
+  caption: Ubuntu
+  icon: install/ubuntu@2x.png
+-
+  url: /install/on_kubuntu
+  caption: Kubuntu
+  icon: install/kubuntu@2x.png
+-
+  url: /install/on_debian
+  caption: Debian
+  icon: install/debian@2x.png
+-
+  url: /install/on_redhat
+  caption: RedHat
+  icon: install/redhat@2x.png
+-
+  url: /install/on_centos
+  caption: CentOS
+  icon: install/centos@2x.png
+-
+  url: /install/on_opensuse
+  caption: OpenSUSE
+  icon: install/opensuse@2x.png
+-
+  url: /install/on_arch_linux
+  caption: Arch Linux
+  icon: install/arch@2x.png
+-
+  url: /install/on_elementary_os
+  caption: Elementary OS
+  icon: install/elementary@2x.png
+-
+  url: /install/on_fedora
+  caption: Fedora
+  icon: install/fedora@2x.png
+-
+  url: /install/on_kde_neon
+  caption: KDE Neon
+  icon: install/kde@2x.png
+-
+  url: /install/on_manjaro
+  caption: Manjaro
+  icon: install/manjaro@2x.png
+-
+  url: /install/on_linux_mint
+  caption: Linux Mint
+  icon: install/linuxmint@2x.png
+-
+  url: /install/on_gentoo_linux
+  caption: Gentoo Linux
+  icon: install/gentoo@2x.png
+-
+  url: /install/on_alpine_linux
+  caption: Alpine Linux
+  icon: install/alpine@2x.png
+-
+  url: /install/on_freebsd
+  caption: FreeBSD
+  icon: install/freebsd@2x.png
+-
+  url: /install/on_wsl
+  caption: Windows Subsystem for Linux
+  icon: install/windows@2x.png

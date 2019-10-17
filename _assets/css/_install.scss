@@ -1,0 +1,70 @@
+.container.install {
+  padding: 8rem 0 5rem;
+  .distro-title {
+    @extend .black-text;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  h2 {
+    text-transform: none;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 5rem 0;
+    h1 {
+      font-size: 3.4rem;
+      &.distro-title {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  h1 a:hover {
+    @extend .black-text;
+  }
+}
+
+.distro-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 5rem 0;
+  > div {
+    text-align: center;
+    .distro-icon {
+      height: 40px;
+    }
+    img {
+      width: 30px;
+    }
+    a {
+      color: $black;
+    }
+  }
+}
+
+.done-install {
+  text-align: center;
+  padding: 4rem 0 3rem;
+
+  h1, h2 {
+    @extend .grey-text;
+    font-family: $codeFont;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    margin-top: 3.5rem;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: none;
+  }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 2.3rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+}
