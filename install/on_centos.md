@@ -2,6 +2,7 @@
 layout: install
 subtitle: On CentOS
 exclude: true
+permalink: /install/on_centos/
 ---
 
 In RedHat derived distributions, you can use the official Crystal repository.

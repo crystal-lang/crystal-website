@@ -2,6 +2,7 @@
 layout: install
 subtitle: On RedHat
 exclude: true
+permalink: /install/on_redhat/
 ---
 
 In RedHat derived distributions, you can use the official Crystal repository.

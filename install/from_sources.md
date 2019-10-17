@@ -2,6 +2,7 @@
 layout: install
 subtitle: From sources
 exclude: true
+permalink: /install/from_sources/
 ---
 
 If you want to contribute then you might want to install Crystal from sources.

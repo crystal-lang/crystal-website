@@ -2,6 +2,7 @@
 layout: install
 subtitle: On OpenSUSE
 exclude: true
+permalink: /install/on_opensuse/
 ---
 
 On OpenSUSE, Crystal can be installed from the official rpm package using Zypper.

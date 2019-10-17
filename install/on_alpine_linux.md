@@ -2,6 +2,7 @@
 layout: install
 subtitle: On Alpine Linux
 exclude: true
+permalink: /install/on_alpine_linux/
 ---
 
 Alpine Linux includes the Crystal compiler in the community repository, starting from version Alpine 3.7.

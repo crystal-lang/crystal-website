@@ -2,6 +2,7 @@
 layout: install
 subtitle: On Windows Subsystem for Linux
 exclude: true
+permalink: /install/on_wsl/
 ---
 
 The Crystal compiler doesn't run on Windows _yet_. But Crystal can be used with the [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about), a compatibility-layer for Linux executables running natively on Windows 10.

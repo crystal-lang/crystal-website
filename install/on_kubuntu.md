@@ -2,6 +2,7 @@
 layout: install
 subtitle: On Kubuntu
 exclude: true
+permalink: /install/on_kubuntu/
 ---
 
 In Ubuntu derived distributions, you can use the official Crystal repository. [Snapcraft](#snapcraft) and [Linuxbrew](#linuxbrew) are also available.

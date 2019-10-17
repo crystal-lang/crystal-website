@@ -2,6 +2,7 @@
 layout: install
 subtitle: On Gentoo Linux
 exclude: true
+permalink: /install/on_gentoo_linux/
 ---
 
 Gentoo Linux includes the Crystal compiler in the main overlay.

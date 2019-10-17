@@ -2,6 +2,7 @@
 layout: install
 subtitle: On FreeBSD
 exclude: true
+permalink: /install/on_freebsd/
 ---
 
 FreeBSD includes the Crystal compiler in the ports tree, starting from version FreeBSD 11.0.
