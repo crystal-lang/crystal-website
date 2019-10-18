@@ -170,5 +170,5 @@ This is both expressive and executes faster, because it's not needed to check fo
 
 To conclude this post, one last thing left to say is that while porting the Crystal parser from
 Ruby to
-[Crystal](https://github.com/crystal-lang/crystal/blob/master/src/compiler/crystal/parser.cr), Crystal refused to compile
+[Crystal](https://github.com/crystal-lang/crystal/blob/dbe4137444592b0cd30df7170f50f2d0abc2cde2/src/compiler/crystal/parser.cr), Crystal refused to compile
 because of a possible null pointer exception. And it was correct. So in a way, Crystal found a bug in itself :-)

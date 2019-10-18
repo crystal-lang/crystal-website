@@ -198,7 +198,7 @@ e = {} of String => Bool # e is a Hash(String, Bool), same as doing Hash(String,
 {% endhighlight ruby %}</div>
 
 And yes, [Array](https://github.com/crystal-lang/crystal/blob/master/src/array.cr) and
-[Hash](https://github.com/crystal-lang/crystal/blob/master/std/hash.cr) are completely
+[Hash](https://github.com/crystal-lang/crystal/blob/fd6c0238f6e7725d307d4c010d8c860e38a46d72/std/hash.cr) are completely
 implemented in Crystal. This makes it very easy for anyone to collaborate on those classes.
 
 We really wanted to avoid having to specify type variables. In fact, we wanted to
@@ -255,7 +255,7 @@ values = Pointer(Int32).malloc(10) # Ask for 10 ints
 ### Regular expressions
 
 Regular expressions are implemented, for now, with C bindings to the PCRE library. Again,
-[Regexp](https://github.com/crystal-lang/crystal/blob/master/src/regexp.cr) is entirely written in Crystal.
+[Regexp](https://github.com/crystal-lang/crystal/blob/fd6c0238f6e7725d307d4c010d8c860e38a46d72/src/regexp.cr) is entirely written in Crystal.
 
 <div class="code_section">{% highlight ruby %}
 "foobarbaz" =~ /(.+)bar(.+)/ #=> 0

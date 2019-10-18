@@ -7,7 +7,7 @@ author: bcardiff
 
 Type inference is a feature every programmer should love. It keep the programmer out of specifying types in the code, and is just so nice.
 
-Here we try to explain the basis on how Crystal infers types of a program. Also aim for a little documentation on how to understand the [type_inference](https://github.com/crystal-lang/crystal/blob/master/src/compiler/crystal/type_inference.cr).
+Here we try to explain the basis on how Crystal infers types of a program. Also aim for a little documentation on how to understand the [type_inference](https://github.com/crystal-lang/crystal/blob/fd6c0238f6e7725d307d4c010d8c860e38a46d72/src/compiler/crystal/type_inference.cr).
 
 Like most type inference algorithms, the explanation is guided by the AST. Each AST node will have an associated type which corresponds to the type of the expression.
 
