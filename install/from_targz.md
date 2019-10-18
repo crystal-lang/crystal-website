@@ -1,10 +1,11 @@
 ---
-subtitle: From tar.gz
+subtitle: From .tar.gz
 ---
 
 You can download Crystal in a standalone `.tar.gz` file with everything you need to get started.
 
 The latest files can be found on the [Releases page at GitHub](https://github.com/crystal-lang/crystal/releases).
+There are generic builds for Linux and macOS available.
 
 Download the file for your platform and uncompress it. Inside it you will have a `bin/crystal` executable.
 
