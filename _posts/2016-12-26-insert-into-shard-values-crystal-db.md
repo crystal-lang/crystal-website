@@ -36,7 +36,7 @@ However, keep in mind that the role is not to abstract the particularities of di
 
 ## Next steps
 
-We need to improve [the documentation](http://crystal-lang.github.io/crystal-db/api/latest/). Besides using `crystal docs`, [a new section was added](https://crystal-lang.org/docs/database/index.html) to [crystal-book](https://github.com/crystal-lang/crystal-book) that will continue to grow in the near future.
+We need to improve [the documentation](http://crystal-lang.github.io/crystal-db/api/latest/). Besides using `crystal docs`, [a new section was added](https://crystal-lang.org/reference/database/index.html) to [crystal-book](https://github.com/crystal-lang/crystal-book) that will continue to grow in the near future.
 
 We hope this will help build DB tools and shards that work with multiple drivers, and that it will encourage more people to build their own drivers.
 
