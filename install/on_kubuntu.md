@@ -4,7 +4,9 @@ subtitle: On Kubuntu
 
 In Ubuntu derived distributions, you can use the official Crystal repository. [Snapcraft](#snapcraft) and [Linuxbrew](#linuxbrew) are also available.
 
-## Setup repository
+## Install from the Crystal APT repository
+
+### Setup repository
 
 First you have to add the repository to your APT configuration. For easy setup just run in your command line:
 
@@ -20,7 +22,7 @@ echo "deb https://dist.crystal-lang.org/apt crystal main" | sudo tee /etc/apt/so
 sudo apt-get update
 {% endhighlight bash %}</div>
 
-## Install
+### Install
 
 Once the repository is configured you're ready to install Crystal:
 
@@ -39,7 +41,7 @@ sudo apt install libreadline-dev # for using Readline
 sudo apt install libz-dev        # for using crystal play
 {% endhighlight bash %}</div>
 
-## Upgrade
+### Upgrade
 
 When a new Crystal version is released you can upgrade your system using:
 
@@ -48,5 +50,7 @@ sudo apt update
 sudo apt install crystal
 {% endhighlight bash %}</div>
 
+<hr class="install-separator" />
 {% include install_from_snapcraft.md distro="kubuntu" %}
+<hr class="install-separator" />
 {% include install_from_linuxbrew.md %}

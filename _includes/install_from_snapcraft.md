@@ -1,4 +1,6 @@
-## Snapcraft
+<a id="snapcraft" />
+
+## Install with Snapcraft
 
 The Crystal snap requires to be run in classic confinement. If you have `snapd` installed you're ready to install Crystal:
 
