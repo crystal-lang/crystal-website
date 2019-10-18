@@ -10,11 +10,9 @@ permalink: /install/
       <div class="distro-list">
         {% for item in site.data.install %}
         <div>
-          <a href="{{ item.url }}">
-            <div class="distro-icon">
-              <img src="{{ item.icon | asset_path }}">
-            </div>
-            {{item.caption}}
+          <a href="{{ item.url }}" class="distro-icon">
+            <img src="{{ item.icon | asset_path }}" alt="{{item.caption}}">
+            <span>{{item.caption}}</span>
           </a>
         </div>
         {% endfor %}

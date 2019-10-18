@@ -27,15 +27,29 @@
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-gap: 5rem 0;
   > div {
-    text-align: center;
     .distro-icon {
-      height: 40px;
-    }
-    img {
-      width: 30px;
-    }
-    a {
-      color: $black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #444;
+      font-weight: 500;
+
+      &:hover {
+        color: $black;
+
+        > img {
+          transform: translateY(-2px) scale(0.98);
+        }
+      }
+
+      > img {
+        height: 60px;
+      }
+      > span {
+        margin-top: 1rem;
+        font-size: 110%;
+      }
     }
   }
 }
