@@ -14,7 +14,7 @@ brew install crystal
 
 You should be able to install the latest version from homebrew. Crystal's core-team help maintain that formula.
 
-Alternative there are `.tar.gz` and `.pkg` files in each [release](https://github.com/crystal-lang/crystal/releases) targeted for darwin. See [Install from a tar.gz](/install/from_a_targz)
+Alternative there are `.tar.gz` and `.pkg` files in each [release](https://github.com/crystal-lang/crystal/releases) targeted for darwin. See [Install from a tar.gz](/install/from_targz)
 
 ## Upgrade
 

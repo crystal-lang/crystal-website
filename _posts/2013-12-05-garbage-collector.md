@@ -5,7 +5,7 @@ thumbnail: gc
 author: waj
 ---
 
-Finally Crystal will start giving some memory back to the operating system! Today we managed to fit the [Boehm-Demers-Weiser conservative garbage collector](http://www.hpl.hp.com/personal/Hans_Boehm/gc/) into the language.
+Finally Crystal will start giving some memory back to the operating system! Today we managed to fit the [Boehm-Demers-Weiser conservative garbage collector](https://www.hboehm.info/gc/) into the language.
 
 Although we plan to implement a more appropriate and custom garbage collector in the future, it's a really good starting point to make the language more robust and usable.
 
