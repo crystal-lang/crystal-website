@@ -5,7 +5,7 @@ exclude: true
 permalink: /install/on_centos/
 ---
 
-In RedHat derived distributions, you can use the official Crystal repository.
+In Red Hat derived distributions, you can use the official Crystal repository.
 [Snapcraft](#snapcraft) and [Linuxbrew](#linuxbrew) are also available.
 
 ## Setup repository
