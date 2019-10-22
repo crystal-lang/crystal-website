@@ -1,11 +1,11 @@
 ---
 layout: install
-subtitle: On RedHat
+subtitle: On Red Hat
 exclude: true
 permalink: /install/on_redhat/
 ---
 
-In RedHat derived distributions, you can use the official Crystal repository.
+In Red Hat derived distributions, you can use the official Crystal repository.
 [Linuxbrew](#linuxbrew) is also available.
 
 ## Setup repository
