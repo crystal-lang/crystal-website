@@ -1,7 +1,5 @@
 ---
-layout: install
 subtitle: On Red Hat
-permalink: /install/on_redhat/
 ---
 
 In Red Hat derived distributions, you can use the official Crystal repository.
