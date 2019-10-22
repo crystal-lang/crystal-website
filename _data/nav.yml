@@ -1,0 +1,19 @@
+main:
+- label: Home
+  url: /
+- label: Forum
+  url: https://crystal-lang.org/forum/
+- label: Blog
+  url: /blog/
+- label: Sponsors
+  url: /sponsors/
+- label: Community
+  url: /community/
+- label: Media
+  url: /media/
+- label: Docs
+  url: https://crystal-lang.org/reference/
+- label: API
+  url: https://crystal-lang.org/api/
+- label: GitHub
+  url: https://github.com/crystal-lang/crystal

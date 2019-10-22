@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On Fedora
-exclude: true
 permalink: /install/on_fedora/
 ---
 

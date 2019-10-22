@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On Red Hat
-exclude: true
 permalink: /install/on_redhat/
 ---
 

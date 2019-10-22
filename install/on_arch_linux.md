@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On Arch Linux
-exclude: true
 permalink: /install/on_arch_linux/
 ---
 

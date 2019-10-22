@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On Gentoo Linux
-exclude: true
 permalink: /install/on_gentoo_linux/
 ---
 

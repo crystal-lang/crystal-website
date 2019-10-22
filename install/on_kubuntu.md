@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On Kubuntu
-exclude: true
 permalink: /install/on_kubuntu/
 ---
 

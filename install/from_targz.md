@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: From tar.gz
-exclude: true
 permalink: /install/from_targz/
 ---
 

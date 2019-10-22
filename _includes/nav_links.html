@@ -1,15 +1,9 @@
-{% assign navigation_pages = site.html_pages | sort: 'nav_order' %}
-{% for p in navigation_pages %}
-  {% unless p.exclude %}
-    {% assign page_url = p.external_url | default: p.url %}
-    <li>
-      <a href="{{ page_url }}" {% if page_url == page.url %}class="selected"{% endif %} {% if p.external_url %}target="_blank"{% endif %}>
-        {% if p.nav_title %}
-          {{ p.nav_title }}
-        {% else %}
-          {{ p.title }}
-        {% endif %}
-      </a>
-    </li>
-  {% endunless %}
+{% assign navigation_pages = site.data.nav.main %}
+{% for item in navigation_pages %}
+  {%- assign proto = item.url | slice: 0, 8 -%}
+  <li>
+    <a href="{{ item.url }}"{% if item.url == page.url %} class="selected"{% endif %}{% if proto == "https://" %} target="_blank"{% endif %}>
+      {{ item.label }}
+    </a>
+  </li>
 {% endfor %}
