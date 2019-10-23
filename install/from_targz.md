@@ -1,7 +1,5 @@
 ---
-layout: install
 subtitle: From tar.gz
-permalink: /install/from_targz/
 ---
 
 You can download Crystal in a standalone `.tar.gz` file with everything you need to get started.

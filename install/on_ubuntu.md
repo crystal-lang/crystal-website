@@ -1,7 +1,5 @@
 ---
-layout: install
 subtitle: On Ubuntu
-permalink: /install/on_ubuntu/
 ---
 
 In Ubuntu derived distributions, you can use the official Crystal repository. [Snapcraft](#snapcraft) and [Linuxbrew](#linuxbrew) are also available.

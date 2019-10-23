@@ -18,6 +18,14 @@ defaults:
       image: /images/icon.png
       layout: post
       is_post: true
+  -
+    scope:
+      path: "install"
+      type: pages
+    values:
+      image: /images/icon.png
+      layout: install
+      permalink: /install/:basename/
 twitter:
   username: CrystalLanguage
 

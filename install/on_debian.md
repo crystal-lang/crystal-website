@@ -1,7 +1,5 @@
 ---
-layout: install
 subtitle: On Debian
-permalink: /install/on_debian/
 ---
 
 In Debian derived distributions, you can use the official Crystal repository. [Snapcraft](#snapcraft) and [Linuxbrew](#linuxbrew) are also available.

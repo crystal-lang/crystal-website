@@ -1,7 +1,5 @@
 ---
-layout: install
 subtitle: On CentOS
-permalink: /install/on_centos/
 ---
 
 In Red Hat derived distributions, you can use the official Crystal repository.
