@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On Alpine Linux
-exclude: true
 permalink: /install/on_alpine_linux/
 ---
 

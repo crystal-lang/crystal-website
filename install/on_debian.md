@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On Debian
-exclude: true
 permalink: /install/on_debian/
 ---
 

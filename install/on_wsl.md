@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On Windows Subsystem for Linux
-exclude: true
 permalink: /install/on_wsl/
 ---
 

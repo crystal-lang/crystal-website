@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On Ubuntu
-exclude: true
 permalink: /install/on_ubuntu/
 ---
 

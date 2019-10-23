@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On CentOS
-exclude: true
 permalink: /install/on_centos/
 ---
 

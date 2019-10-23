@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On macOS
-exclude: true
 permalink: /install/on_mac_os/
 ---
 

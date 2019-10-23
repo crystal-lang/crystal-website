@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: From sources
-exclude: true
 permalink: /install/from_sources/
 ---
 

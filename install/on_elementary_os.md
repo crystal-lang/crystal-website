@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On Elementary OS
-exclude: true
 permalink: /install/on_elementary_os/
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: install
 subtitle: On FreeBSD
-exclude: true
 permalink: /install/on_freebsd/
 ---
 
