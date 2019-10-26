@@ -4,7 +4,7 @@ subtitle: On OpenBSD
 
 OpenBSD includes the Crystal compiler in the ports tree, starting from version OpenBSD 6.4.
 
-Currently, it is only available for the `amd64` platforms.
+Currently, it is only available for the `amd64` platform.
 
 ## Install Package
 
