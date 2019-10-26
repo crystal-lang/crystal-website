@@ -20,7 +20,7 @@ doas pkg_add crystal
 
 For building Crystal yourself, the required installation is available in the ports tree.
 
-If the ports collection is not already installed, instructions to installing it can be found in the[ ]OpenBSD Ports guide](https://www.openbsd.org/faq/ports/ports.html).
+If the ports collection is not already installed, instructions to installing it can be found in the [OpenBSD Ports guide](https://www.openbsd.org/faq/ports/ports.html).
 
 <div class="code_section">
 {% highlight bash %}
