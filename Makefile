@@ -10,7 +10,7 @@ $(OUTPUT_DIR):
 check_html: $(OUTPUT_DIR)
 	htmlproofer $(OUTPUT_DIR) \
 		--assume-extension \
-		--url-swap "\A\/(api|docs|images|reference):https://crystal-lang.org/\1" \
+		--url-swap "\A\/(images):https://crystal-lang.org/\1" \
 		--disable_external \
 		--allow-hash-href \
 		--checks-to-ignore ImageCheck \

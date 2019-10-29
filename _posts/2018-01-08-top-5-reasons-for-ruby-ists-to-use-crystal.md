@@ -42,7 +42,7 @@ See more examples of code similarities [here](https://github.com/marksiemers/rub
 
 This doesn't mean that all Ruby code will work in Crystal (and vice-versa), but you can do an awful lot with Crystal immediately and be productive on day one, even minute one.
 
-How does Crystal (a strongly-typed & compiled language) act like Ruby (a dynamic & duck-typed language)? Crystal’s compiler uses a combination of two powerful techniques: [type inference](https://crystal-lang.org/docs/syntax_and_semantics/type_inference.html) and [union types](https://crystal-lang.org/docs/syntax_and_semantics/union_types.html). This allows the compiler to read your ruby-like code and figure out (infer) the correct types to use.
+How does Crystal (a strongly-typed & compiled language) act like Ruby (a dynamic & duck-typed language)? Crystal’s compiler uses a combination of two powerful techniques: [type inference](https://crystal-lang.org/reference/syntax_and_semantics/type_inference.html) and [union types](https://crystal-lang.org/reference/syntax_and_semantics/union_types.html). This allows the compiler to read your ruby-like code and figure out (infer) the correct types to use.
 
 Beyond the similarities, Crystal offers some core advantages over Ruby. Advantages like...
 
@@ -179,7 +179,7 @@ Reading, understanding, and contributing to Crystal is easier than just about an
 If you’re looking to try out the Crystal programming language, here are some good resources to get started:
 
 - [Crystal Play](https://play.crystal-lang.org/#/cr) - an online REPL-like tool for Crystal
-- [Install Crystal](https://crystal-lang.org/docs/installation/)
+- [Install Crystal](/install)
 - [Crystal for Rubyists](http://www.crystalforrubyists.com/)
 - [Crystal Exercisms](http://exercism.io/languages/crystal/about)
-- [Create your own HTTP Server in minutes](https://crystal-lang.org/docs/overview/http_server.html)
+- [Create your own HTTP Server in minutes](https://crystal-lang.org/reference/overview/http_server.html)

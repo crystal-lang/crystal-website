@@ -31,7 +31,16 @@ twitter:
 
 highlighter: rouge
 markdown: kramdown
-exclude: ["Gemfile", "Gemfile.lock", "Rakefile", "*.haml", "scripts/*.cr", "vendor", "docker-compose.yml"]
+exclude:
+- "*.haml"
+- docker-compose.yml
+- Gemfile
+- Gemfile.lock
+- Makefile
+- Rakefile
+- scripts/*.cr
+- vendor
+
 plugins:
   - jekyll-seo-tag
   - jekyll-assets

@@ -18,6 +18,6 @@ If you want to contribute then you might want to install Crystal from sources.
 
 7. Use `bin/crystal` to run your crystal files.
 
-If you would like more information about `bin/crystal`, check out the [using the compiler](https://crystal-lang.org/docs/using_the_compiler/) documentation.
+If you would like more information about `bin/crystal`, check out the [using the compiler](https://crystal-lang.org/reference/using_the_compiler/) documentation.
 
 Note: The actual binary is built in to `.build/crystal`, but the `bin/crystal` wrapper script is what you should use to run crystal.

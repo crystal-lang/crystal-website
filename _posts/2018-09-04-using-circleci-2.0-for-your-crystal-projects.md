@@ -4,7 +4,7 @@ author: bcardiff
 description: "An up to date article showing how to use CircleCI 2.0 for your Crystal projects."
 ---
 
-It’s been a while since we wrote [Using CircleCI for your Crystal projects](https://manas.tech/blog/2016/06/13/using-circleci-for-your-crystal-projects.html). Since then the following things happened:
+It’s been a while since we wrote [Using CircleCI for your Crystal projects](https://manas.tech/blog/2016/06/13/using-circleci-for-your-crystal-projects/). Since then the following things happened:
 
 * [CircleCI 2.0](https://circleci.com/docs/2.0/) was announced and 1.0 is deprecated.
 * Crystal build process is partially [automated in CircleCI](/2018/03/09/crystal-automated-release.html)
