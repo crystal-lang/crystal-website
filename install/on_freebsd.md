@@ -32,6 +32,7 @@ FreeBSD: {
 {% endhighlight ucl %}
 </div>
 
+<hr class="install-separator" />
 ## Install Port
 
 For building Crystal yourself, the required installation is available in the ports tree.

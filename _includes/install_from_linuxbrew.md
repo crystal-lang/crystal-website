@@ -1,4 +1,6 @@
-## Linuxbrew
+<a id="linuxbrew" />
+
+## Install with Linuxbrew
 
 If you have [Linuxbrew](https://linuxbrew.sh) installed you're ready to install Crystal:
 
