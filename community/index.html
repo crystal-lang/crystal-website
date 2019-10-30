@@ -121,6 +121,15 @@ description: There are so many ways to get involved in Crystal. Here's a list of
           icon="mail_outline"
 %}
 
+{% include community_row.html
+          title="Friends of Crystal"
+          divId="friends-of-crystal"
+          content="Friends of Crystal is an association of organizations that use Crystal in production and want to spread the word."
+          link_text="Friends of Crystal"
+          url="https://friendsofcrystal.com/"
+          icon="people"
+%}
+
 {% capture events_ical_url %}https://calendar.google.com/calendar/ical/{{ site.google_calendar_id | uri_escape }}/public/basic.ics{% endcapture %}
 
 {% include community_row.html
