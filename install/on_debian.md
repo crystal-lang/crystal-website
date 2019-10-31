@@ -20,6 +20,12 @@ echo "deb https://dist.crystal-lang.org/apt crystal main" | sudo tee /etc/apt/so
 sudo apt-get update
 {% endhighlight bash %}</div>
 
+This script requires certain packages that are likely to be installed. In case something goes wrong you can do:
+
+<div class="code_section">{% highlight bash %}
+sudo apt install -y apt-transport-https gnupg2 ca-certificates
+{% endhighlight bash %}</div>
+
 ## Install
 
 Once the repository is configured you're ready to install Crystal:
