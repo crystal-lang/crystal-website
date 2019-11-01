@@ -33,6 +33,6 @@ To avoid building dependencies from source (which can take a long time), you can
 
 <div class="code_section">
 {% highlight bash %}
-doad pkg_add llvm libiconv boehm-gc libevent2 pcre libyaml
+doas pkg_add llvm libiconv boehm-gc libevent2 pcre libyaml
 {% endhighlight bash %}
 </div>
