@@ -214,7 +214,7 @@ support_levels.each do |support_level|
     when "Person"
       name = support_level.owner.display_name
       user = bountysource.user(slug)
-      url = user.url
+      url = user.url.presence
       unless url
         if (github_account = user.github_account)
           github_user = github.user(github_account.display_name)
@@ -226,7 +226,7 @@ support_levels.each do |support_level|
       end
     when "Team"
       team = bountysource.team(slug)
-      url = team.url
+      url = team.url.presence
       name = team.name
     else
       raise "unhandled owner type for #{support_level.owner}"
@@ -249,7 +249,7 @@ support_levels.each do |support_level|
   all_time = supporter.alltime_amount
   since = Time.parse(supporter.created_at[0..10], "%F", location: Time::Location::UTC)
 
-  sponsors.add Sponsor.new(name, url, logo, amount, all_time, since)
+  sponsors.add Sponsor.new(name, url, logo, amount, all_time, nil, since)
 end
 
 File.open("#{__DIR__}/../_data/bountysource.json", "w") do |file|

@@ -15,18 +15,20 @@ all_sponsors = Array(Sponsor).new
   end
 end
 
-all_sponsors.sort_by! { |s| {-level(s), -s.all_time,s.since, s.name} }
+all_sponsors.sort_by! { |s| {-level(s), -s.all_time, s.since, s.name} }
 
 File.open("#{__DIR__}/../_data/sponsors.csv", "w") do |file|
   CSV.build(file) do |csv|
     csv.row "logo", "name", "url", "this_month", "all_time", "since", "level"
 
     all_sponsors.each do |sponsor|
+      currency = sponsor.currency || "$"
+
       csv.row sponsor.logo,
         sponsor.name,
         sponsor.url,
-        sponsor.this_month.to_i,
-        sponsor.all_time.to_i,
+        "#{currency}#{sponsor.this_month.to_i}",
+        "#{currency}#{sponsor.all_time.to_i}",
         sponsor.since.to_s("%b %-d, %Y"),
         level(sponsor)
     end

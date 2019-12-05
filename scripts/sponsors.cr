@@ -1,13 +1,14 @@
 require "http/client"
 require "json"
 
-record Sponsor, name : String, url : String?, logo : String?, this_month : Float64, all_time : Float64, since : Time do
+record Sponsor, name : String, url : String?, logo : String?, this_month : Float64, all_time : Float64, currency : String?, since : Time do
   JSON.mapping({
     name:       String,
     url:        String?,
     logo:       String?,
     this_month: Float64,
     all_time:   Float64,
+    currency:   String?,
     since:      {type: Time, converter: Time::Format.new("%b %-d, %Y")},
   })
 end
