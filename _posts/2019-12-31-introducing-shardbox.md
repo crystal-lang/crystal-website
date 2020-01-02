@@ -4,9 +4,10 @@ summary: A platform for discovering the shards ecosystem.
 author: straight-shoota
 ---
 
-We're happy to announce the launch of [shardbox.org](https://shardbox.org), a database for discovering shards.
+I'm happy to announce the launch of [shardbox.org](https://shardbox.org), a database for discovering shards.
 
-To be clear: Shardbox is not a shards registry. It won't serve as part of shards' dependency resolution, which works entirely decentralized. It just collects information about publicly available shards and serves as a catalog for the shards ecosystem. It's a tool for developers to help find existing shards they might want to use. Think of it more like [The Ruby Toolbox](https://www.ruby-toolbox.com/) than [Rubygems](https://rubygems.org/).
+To be clear: Shardbox is not a shards registry. It won't serve as part of shards' dependency resolution, which works entirely decentralized. It just collects information about publicly available shards and serves as a catalog for the shards ecosystem. It's a tool for developers to help find existing shards they might want to use.
+If you're familiar with Ruby, think of it more like [The Ruby Toolbox](https://www.ruby-toolbox.com/) than [Rubygems](https://rubygems.org/).
 
 There are already services providing a similar functionality such as [crystalshards.org](https://crystalshards.org/) or [shards.info](https://shards.info/). So why do we need another one?
 The existing services work as a relatively simple wrapper around the GitHub API and don't maintain their own database. While being relatively easy to implement, this approach can't fully support the capabilities of shards and provide in-depth information about shards and the relations inside the ecosystem.
