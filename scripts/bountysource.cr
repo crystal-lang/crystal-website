@@ -233,7 +233,7 @@ support_levels.each do |support_level|
     end
   end
 
-  if url && !(url.starts_with?("http://") || url.starts_with?("https://"))
+  if url && !url.blank? && !(url.starts_with?("http://") || url.starts_with?("https://"))
     url = "http://#{url}"
   end
 

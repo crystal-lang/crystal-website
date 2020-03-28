@@ -32,7 +32,7 @@ module OpenCollective
       github:                String?,
       website:               String?,
       image:                 String?,
-      createdAt:             {type: Time, converter: Time::Format.new("%Y-%m-%d %H:%M")}
+      createdAt:             {type: Time, converter: Time::Format.new("%Y-%m-%d %H:%M")},
     })
   end
 end
@@ -53,7 +53,7 @@ opencollective.members.each do |member|
   logo = member.image
   amount = member.lastTransactionAmount
   all_time = member.totalAmountDonated
-  sponsors.add Sponsor.new(member.name, url, logo, amount, all_time, member.createdAt)
+  sponsors.add Sponsor.new(member.name, url, logo, amount, all_time, nil, member.createdAt)
 end
 
 File.open("#{__DIR__}/../_data/opencollective.json", "w") do |file|
