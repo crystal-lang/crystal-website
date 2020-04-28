@@ -71,6 +71,17 @@ p > a, td > a, ul:not(#nav-mobile) li > a, dd > a {
   border-bottom: 1px solid $primary-text;
 }
 
+p:not(.read-more) {
+  & > a:not(.gray-link):not(.btn):not(.with-icon) {
+    color: #03A9F4;
+    border-bottom: 0;
+    &:hover {
+      color: #03A9F4;
+      border-bottom: 1px solid #03A9F4;
+    }
+  }
+}
+
 p.no-underline > a,
 table.no-underline a {
   border-bottom: 0;
@@ -179,7 +190,7 @@ table.no-underline a {
       width: 85%;
     }
   }
-  
+
   @media only screen and (min-width: 993px) {
     #content {
       width: 70%;
