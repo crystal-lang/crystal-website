@@ -72,7 +72,7 @@ p > a, td > a, ul:not(#nav-mobile) li > a, dd > a {
 }
 
 p:not(.read-more) {
-  & > a:not(.btn):not(.with-icon) {
+  & > a:not(.gray-link):not(.btn):not(.with-icon) {
     color: #03A9F4;
     border-bottom: 0;
     &:hover {
