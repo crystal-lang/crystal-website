@@ -220,8 +220,13 @@
   }
 }
 
-.bountysource-link:hover {
-  text-decoration: underline;
+.bountysource-link {
+  color: #03A9F4;
+  border-bottom: 0;
+  &:hover {
+    color: #03A9F4;
+    border-bottom: 1px solid #03A9F4;
+  }
 }
 
 @media only screen and (max-width: 992px) {
