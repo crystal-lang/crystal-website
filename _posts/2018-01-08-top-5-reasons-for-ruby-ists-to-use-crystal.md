@@ -182,4 +182,4 @@ If you’re looking to try out the Crystal programming language, here are some g
 - [Install Crystal](/install)
 - [Crystal for Rubyists](http://www.crystalforrubyists.com/)
 - [Crystal Exercisms](http://exercism.io/languages/crystal/about)
-- [Create your own HTTP Server in minutes](https://crystal-lang.org/reference/overview/http_server.html)
+- [Create your own HTTP Server in minutes](https://crystal-lang.org/reference/getting_started/http_server.html)
