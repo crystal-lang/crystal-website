@@ -1,5 +1,68 @@
 [
   {
+    "name": "Artem Napolskih",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "May 22, 2020"
+  },
+  {
+    "name": "Kevin Sjöberg",
+    "this_month": 25.0,
+    "all_time": 25.0,
+    "since": "May 22, 2020"
+  },
+  {
+    "name": "Crescer",
+    "url": "https://crescer.net",
+    "this_month": 10.0,
+    "all_time": 10.0,
+    "since": "May 10, 2020"
+  },
+  {
+    "name": "Rodrigo Pereira de Mendonça",
+    "url": "https://crescer.net",
+    "this_month": 10.0,
+    "all_time": 10.0,
+    "since": "May 9, 2020"
+  },
+  {
+    "name": "Glen Aultman-Bettridge",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "May 5, 2020"
+  },
+  {
+    "name": "Szymon Madeja",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "May 5, 2020"
+  },
+  {
+    "name": "Karel Pavlíček",
+    "this_month": 20.0,
+    "all_time": 20.0,
+    "since": "Apr 20, 2020"
+  },
+  {
+    "name": "Kagi",
+    "url": "https://kagi.com",
+    "this_month": 25.0,
+    "all_time": 50.0,
+    "since": "Apr 8, 2020"
+  },
+  {
+    "name": "Jared Smith",
+    "this_month": 25.0,
+    "all_time": 25.0,
+    "since": "Apr 6, 2020"
+  },
+  {
+    "name": "Darwin",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Apr 5, 2020"
+  },
+  {
     "name": "Mehdi Drissi",
     "this_month": 25.0,
     "all_time": 25.0,
@@ -9,7 +72,7 @@
     "name": "Hotmagma",
     "url": "https://sinulaen.ee",
     "this_month": 5.0,
-    "all_time": 5.0,
+    "all_time": 10.0,
     "since": "Mar 16, 2020"
   },
   {
@@ -21,34 +84,28 @@
   {
     "name": "Kasper Holbek Jensen",
     "this_month": 5.0,
-    "all_time": 5.0,
+    "all_time": 15.0,
     "since": "Mar 11, 2020"
   },
   {
     "name": "Braydon Kains",
     "url": "https://github.com/BKains",
     "this_month": 5.0,
-    "all_time": 5.0,
+    "all_time": 15.0,
     "since": "Mar 8, 2020"
   },
   {
     "name": "RemoteTeam.com",
     "url": "https://www.remoteteam.com",
     "this_month": 5.0,
-    "all_time": 5.0,
+    "all_time": 15.0,
     "since": "Feb 29, 2020"
-  },
-  {
-    "name": "incognito",
-    "this_month": 2.0,
-    "all_time": 2.0,
-    "since": "Feb 13, 2020"
   },
   {
     "name": "Digital Bank Guide",
     "url": "https://digitalbankguide.com",
     "this_month": 5.0,
-    "all_time": 10.0,
+    "all_time": 20.0,
     "since": "Jan 29, 2020"
   },
   {
@@ -69,32 +126,32 @@
     "name": "Shield My IP",
     "url": "https://shieldmyip.com",
     "this_month": 5.0,
-    "all_time": 25.0,
+    "all_time": 35.0,
     "since": "Nov 10, 2019"
   },
   {
     "name": "Wesley Moore",
     "this_month": 5.0,
-    "all_time": 25.0,
+    "all_time": 35.0,
     "since": "Nov 4, 2019"
   },
   {
     "name": "Jonathan Gnagy",
     "this_month": 5.0,
-    "all_time": 25.0,
+    "all_time": 35.0,
     "since": "Oct 31, 2019"
   },
   {
     "name": "Raels Koder",
     "this_month": 25.0,
-    "all_time": 125.0,
+    "all_time": 175.0,
     "since": "Oct 30, 2019"
   },
   {
     "name": "Patric Vormstein",
     "url": "https://github.com/pvormste",
     "this_month": 5.0,
-    "all_time": 25.0,
+    "all_time": 35.0,
     "since": "Oct 25, 2019"
   },
   {
@@ -106,15 +163,15 @@
   },
   {
     "name": "Ryan Prior",
-    "url": "http://ryanprior.com",
+    "url": "http://www.ryanprior.com",
     "this_month": 5.0,
-    "all_time": 30.0,
+    "all_time": 40.0,
     "since": "Oct 7, 2019"
   },
   {
     "name": "Austin Vecchio",
     "this_month": 5.0,
-    "all_time": 30.0,
+    "all_time": 40.0,
     "since": "Oct 4, 2019"
   },
   {
@@ -134,21 +191,21 @@
     "name": "WPsetup",
     "url": "https://wpsetup.org",
     "this_month": 5.0,
-    "all_time": 35.0,
+    "all_time": 45.0,
     "since": "Sep 2, 2019"
   },
   {
     "name": "Level UP Solutions",
     "url": "https://www.levups.com",
     "this_month": 5.0,
-    "all_time": 35.0,
+    "all_time": 45.0,
     "since": "Sep 1, 2019"
   },
   {
     "name": "Max Fierke",
     "url": "https://www.maxfierke.com",
     "this_month": 10.0,
-    "all_time": 90.0,
+    "all_time": 110.0,
     "since": "Jul 21, 2019"
   },
   {
@@ -158,15 +215,9 @@
     "since": "Jul 20, 2019"
   },
   {
-    "name": "Alexis Anand",
-    "this_month": 5.0,
-    "all_time": 50.0,
-    "since": "Jun 29, 2019"
-  },
-  {
     "name": "Bernardo Anderson",
     "this_month": 2.0,
-    "all_time": 20.0,
+    "all_time": 24.0,
     "since": "Jun 1, 2019"
   },
   {
@@ -180,7 +231,7 @@
     "name": "George Protacio-Karaszi",
     "url": "http://hellogeorge.io",
     "this_month": 10.0,
-    "all_time": 150.0,
+    "all_time": 170.0,
     "since": "Feb 6, 2019"
   },
   {
@@ -220,7 +271,7 @@
     "name": "Julien Reichardt",
     "url": "https://github.com/j8r",
     "this_month": 25.0,
-    "all_time": 400.0,
+    "all_time": 450.0,
     "since": "Dec 13, 2018"
   },
   {
@@ -228,7 +279,7 @@
     "url": "https://www.blitline.com",
     "logo": "sponsors/blitline.png",
     "this_month": 75.0,
-    "all_time": 1200.0,
+    "all_time": 1350.0,
     "since": "Dec 12, 2018"
   }
 ]
