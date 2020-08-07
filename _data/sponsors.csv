@@ -1,10 +1,11 @@
 logo,name,url,this_month,all_time,since,level
 sponsors/84.png,84 codes,https://www.84codes.com/,€5000,€46000,"Apr 1, 2018",5000
 sponsors/nikola_motor_company.png,Nikola Motor Company,https://nikolamotor.com/,$5000,$5000,"Apr 1, 2020",5000
-sponsors/fly_io_.png,Fly.io ,https://fly.io,$250,$6500,"Jun 12, 2017",250
+sponsors/andrew_lewman.jpg,Andrew Lewman,https://lewman.com,$150,$150,"Aug 6, 2020",150
 sponsors/sikoba___iou_economy_on_blockchain.png,Sikoba - IOU economy on blockchain,http://www.sikoba.com,$75,$1950,"Dec 29, 2017",75
-sponsors/blitline.png,Blitline,https://www.blitline.com,$75,$1350,"Dec 12, 2018",75
+sponsors/blitline.png,Blitline,https://www.blitline.com,$75,$1575,"Dec 12, 2018",75
 sponsors/docspring_.png,DocSpring ,https://docspring.com,$75,$550,"Dec 2, 2019",75
+sponsors/docspring.png,DocSpring,https://docspring.com,$75,$225,"Jun 1, 2020",75
 ,Roman Pushkin,https://github.com/ro31337,$100,$100,"Jan 11, 2019",75
 sponsors/tom_metge.jpg,Tom Metge,,$100,$100,"Jan 15, 2019",75
 ,Eric,,$75,$75,"Sep 26, 2019",75
@@ -16,17 +17,17 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,Linus Sellberg,,$25,$845,"Feb 21, 2017",25
 ,Knut Franke,,$25,$725,"Dec 7, 2017",25
 ,Dave Doyle,http://twitter.com/meraxes,$25,$650,"Mar 28, 2018",25
+,Julien Reichardt,https://github.com/j8r,$25,$525,"Dec 13, 2018",25
 ,Qard,http://stephenbelanger.com,$25,$490,"Aug 21, 2015",25
-,Julien Reichardt,https://github.com/j8r,$25,$450,"Dec 13, 2018",25
 ,Noriyo Akita,http://hyperneetprogrammer.hatenablog.com/,$25,$295,"Jul 21, 2018",25
-,Raels Koder,,$25,$175,"Oct 30, 2019",25
+,Raels Koder,,$25,$250,"Oct 30, 2019",25
+,Kagi,https://kagi.com,$25,$125,"Apr 8, 2020",25
 ,Mauricio Gomes,https://hiremav.com,$25,$75,"Feb 12, 2020",25
+,Kevin Sjöberg,,$25,$75,"May 22, 2020",25
 ,Algolia,http://algolia.com,$51,$51,"Dec 19, 2019",25
 ,Mark Sinclair,,$50,$50,"Dec 28, 2018",25
-,Kagi,https://kagi.com,$25,$50,"Apr 8, 2020",25
 ,Mehdi Drissi,,$25,$25,"Mar 27, 2020",25
 ,Jared Smith,,$25,$25,"Apr 6, 2020",25
-,Kevin Sjöberg,,$25,$25,"May 22, 2020",25
 ,Garance A Drosehn,,$12,$788,"Dec 3, 2015",10
 ,Sergio Gil Pérez de la Manga,http://iamserg.io,$10,$695,"Jul 27, 2015",10
 ,christos,,$10,$470,"Jun 23, 2016",10
@@ -48,26 +49,27 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,Will Lewis,,$10,$215,"Nov 17, 2017",10
 ,Anton Maminov,,$10,$210,"Oct 20, 2017",10
 ,Iain McNulty,,$10,$200,"Sep 2, 2018",10
+,George Protacio-Karaszi,http://hellogeorge.io,$10,$200,"Feb 6, 2019",10
 ,Harrison Bachrach,http://harrisonbachrach.com,$10,$190,"Oct 9, 2018",10
 ,Vincent van Gemert,,$10,$170,"Dec 10, 2018",10
-,George Protacio-Karaszi,http://hellogeorge.io,$10,$170,"Feb 6, 2019",10
 ,Andrey A. Konovalov,http://sysadminblog.ru,$14,$148,"Mar 6, 2018",10
 ,hutchike,http://twitter.com/hutchike,$10,$140,"Mar 3, 2019",10
+,Max Fierke,https://www.maxfierke.com,$10,$140,"Jul 21, 2019",10
 ,rigani,https://twitter.com/rigani_c,$10,$120,"Dec 28, 2018",10
 ,Jack Thorne,,$10,$120,"May 23, 2019",10
 ,Ricardo Tomasi,http://ricardo.cc/,$10,$110,"Jun 22, 2019",10
-,Max Fierke,https://www.maxfierke.com,$10,$110,"Jul 21, 2019",10
 ,Vijay Dhama,https://medium.com/@vjdhama,$10,$100,"Mar 22, 2016",10
 ,Doug Ramsay,,$10,$30,"Feb 15, 2020",10
+,NekoIT,https://nekoit.xyz,$10,$30,"May 31, 2020",10
 ,Daniel Sokil,https://twitter.com/s0kil,$20,$20,"Feb 23, 2019",10
 ,Julien Elbaz,https://github.com/elbywan,$20,$20,"Jan 11, 2020",10
 ,Håkan Nylén,,$10,$20,"Mar 26, 2020",10
 ,Karel Pavlíček,,$20,$20,"Apr 20, 2020",10
 ,Ben Morrison,,$15,$15,"Jul 20, 2019",10
+,Guoliang Cao,,$15,$15,"Jun 14, 2020",10
 ,David García Alonso,https://twitter.com/zdavidlnx,$10,$10,"Dec 19, 2018",10
 ,Kristine Robison,,$10,$10,"Jan 14, 2019",10
-,Rodrigo Pereira de Mendonça,https://crescer.net,$10,$10,"May 9, 2020",10
-,Crescer,https://crescer.net,$10,$10,"May 10, 2020",10
+,Andrea Manzini,,$10,$10,"Jun 18, 2020",10
 ,jeron,,$5,$1065,"Jan 18, 2018",5
 ,Sho Kusano,https://aduca.org,$5,$388,"Aug 4, 2015",5
 ,msky026,http://qiita.com/msky026,$5,$355,"Oct 23, 2015",5
@@ -99,47 +101,51 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,D1ceWard,https://www.d1ceward.com,$6,$77,"May 2, 2019",5
 ,Saku Erla,,$5,$70,"Mar 27, 2019",5
 ,karupanerura,http://karupas.org/,$5,$60,"May 4, 2019",5
+,Level UP Solutions,https://www.levups.com,$5,$60,"Sep 1, 2019",5
+,WPsetup,https://wpsetup.org,$5,$60,"Sep 2, 2019",5
 ,Holden Omans,,$5,$55,"Jun 21, 2019",5
-,Level UP Solutions,https://www.levups.com,$5,$45,"Sep 1, 2019",5
-,WPsetup,https://wpsetup.org,$5,$45,"Sep 2, 2019",5
-,Austin Vecchio,,$5,$40,"Oct 4, 2019",5
-,Ryan Prior,http://www.ryanprior.com,$5,$40,"Oct 7, 2019",5
+,Ryan Prior,http://www.ryanprior.com,$5,$55,"Oct 7, 2019",5
+,Patric Vormstein,https://github.com/pvormste,$5,$50,"Oct 25, 2019",5
+,Wesley Moore,,$5,$50,"Nov 4, 2019",5
 ,Lukas Svoboda,,$5,$35,"Sep 21, 2015",5
 ,Caspian Baska,,$5,$35,"Oct 11, 2019",5
-,Patric Vormstein,https://github.com/pvormste,$5,$35,"Oct 25, 2019",5
-,Jonathan Gnagy,,$5,$35,"Oct 31, 2019",5
-,Wesley Moore,,$5,$35,"Nov 4, 2019",5
-,Shield My IP,https://shieldmyip.com,$5,$35,"Nov 10, 2019",5
 ,Digital Bank Guide,https://digitalbankguide.com,$5,$30,"Nov 26, 2019",5
 ,Shield My IP,https://shieldmyip.com,$5,$30,"Nov 27, 2019",5
+,RemoteTeam.com,https://www.remoteteam.com,$5,$30,"Feb 29, 2020",5
+,Braydon Kains,https://github.com/BKains,$5,$30,"Mar 8, 2020",5
+,Kasper Holbek Jensen,,$5,$30,"Mar 11, 2020",5
 ,Matt Berry,https://mattrb.com,$5,$25,"Dec 21, 2019",5
+,Hotmagma,https://sinulaen.ee,$5,$25,"Mar 16, 2020",5
+,Darwin,,$5,$25,"Apr 5, 2020",5
 ,ryan-senn,https://tt.edu.au,$5,$20,"Jan 4, 2020",5
-,Digital Bank Guide,https://digitalbankguide.com,$5,$20,"Jan 29, 2020",5
 ,Petr Fischer,,$5,$20,"Jan 29, 2020",5
+,Glen Aultman-Bettridge,,$5,$20,"May 5, 2020",5
+,Szymon Madeja,,$5,$20,"May 5, 2020",5
 ,goodness_plus,http://twitter.com/goodness_plus,$5,$15,"Feb 8, 2020",5
-,RemoteTeam.com,https://www.remoteteam.com,$5,$15,"Feb 29, 2020",5
-,Braydon Kains,https://github.com/BKains,$5,$15,"Mar 8, 2020",5
-,Kasper Holbek Jensen,,$5,$15,"Mar 11, 2020",5
+,Artem Napolskih,,$5,$15,"May 22, 2020",5
+,Oleksii Neishchenko,,$5,$15,"Jun 9, 2020",5
+,Nobuaki Tanaka,https://twitter.com/tomerun,$5,$15,"Jun 10, 2020",5
 ,Marco Roth,https://marcoroth.dev,$5,$10,"Mar 4, 2020",5
 ,Wolfgang Klinger,,$5,$10,"Mar 9, 2020",5
 ,Levvvel,https://levvvel.com/,$5,$10,"Mar 12, 2020",5
-,Hotmagma,https://sinulaen.ee,$5,$10,"Mar 16, 2020",5
-,Darwin,,$5,$10,"Apr 5, 2020",5
 ,Alvin Lau,,$5,$10,"May 2, 2020",5
+,vinit joshi,,$5,$10,"Jul 14, 2020",5
 ,Takuya Matsunaga,https://github.com/takanotume24,$5,$5,"Oct 24, 2019",5
-,Glen Aultman-Bettridge,,$5,$5,"May 5, 2020",5
-,Szymon Madeja,,$5,$5,"May 5, 2020",5
-,Artem Napolskih,,$5,$5,"May 22, 2020",5
+,Aanand Natarajan,,$5,$5,"Jun 12, 2020",5
+,Gabriel Sales Seixas,,$5,$5,"Jul 30, 2020",5
+,Matt Berry,https://mattrb.com,$5,$5,"Aug 7, 2020",5
+,Randy Diaz,,$5,$5,"Aug 7, 2020",5
 ,Martin Luder,,$1,$57,"Aug 14, 2015",1
 ,Shigenobu Nishikawa,,$1,$55,"Oct 23, 2015",1
 ,Joris Vanhecke,,$1,$47,"Jun 15, 2016",1
+,Jonathan Gnagy,,$1,$46,"Oct 31, 2019",1
 ,Harm Aarts,,$1,$42,"Nov 10, 2016",1
 ,Romain Franceschini,,$1,$34,"Jul 14, 2017",1
 ,Piotr Żurek,,$1,$34,"Jul 19, 2017",1
+,Bernardo Anderson,,$2,$30,"Jun 1, 2019",1
 ,Jeremy Jung,,$1,$29,"Dec 20, 2017",1
 ,Eric Gillet,,$1,$27,"Feb 16, 2018",1
 ,zitrone44,,$1,$25,"May 17, 2018",1
-,Bernardo Anderson,,$2,$24,"Jun 1, 2019",1
 ,Mark Murphy,,$1,$21,"Aug 5, 2018",1
 ,Jorje Barrera,,$1,$18,"Nov 15, 2018",1
 ,Rob Fors,,$1,$18,"Nov 18, 2018",1
@@ -150,4 +156,6 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,Daniel Spiridione,,$1,$9,"Aug 29, 2019",1
 ,Sergey Kojin,,$1,$7,"Oct 7, 2019",1
 ,N Atta Kusi Adusei,,$1,$3,"Feb 17, 2020",1
+,Luan Dias,,$1,$3,"May 28, 2020",1
 ,Doxford,,$1,$1,"Mar 14, 2020",1
+,Andra Antariksa Prihadi,,$1,$1,"Jul 5, 2020",1
