@@ -33,11 +33,13 @@ highlighter: rouge
 markdown: kramdown
 exclude:
 - "*.haml"
+- "*.nix"
 - docker-compose.yml
 - Gemfile
 - Gemfile.lock
 - Makefile
 - Rakefile
+- README.md
 - scripts/*.cr
 - vendor
 
