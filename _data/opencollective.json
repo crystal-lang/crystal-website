@@ -1,15 +1,128 @@
 [
   {
-    "name": "Randy Diaz",
+    "name": "Edward Loveall",
     "this_month": 5.0,
     "all_time": 5.0,
+    "since": "Sep 29, 2020"
+  },
+  {
+    "name": "Will Lewis",
+    "this_month": 10.0,
+    "all_time": 10.0,
+    "since": "Sep 25, 2020"
+  },
+  {
+    "name": "SwissDev Jobs",
+    "url": "https://swissdevjobs.ch/jobs/Java/All",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "Sep 24, 2020"
+  },
+  {
+    "name": "Claudio G Macedo Jr",
+    "this_month": 3.0,
+    "all_time": 3.0,
+    "since": "Sep 18, 2020"
+  },
+  {
+    "name": "Andrew Larin",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Sep 15, 2020"
+  },
+  {
+    "name": "Vulk Cooperative",
+    "url": "https://www.vulk.coop",
+    "logo": "sponsors/vulk_cooperative.png",
+    "this_month": 75.0,
+    "all_time": 150.0,
+    "since": "Sep 10, 2020"
+  },
+  {
+    "name": "Kalle Jillheden",
+    "url": "https://github.com/jilleJr",
+    "this_month": 20.0,
+    "all_time": 20.0,
+    "since": "Sep 10, 2020"
+  },
+  {
+    "name": "Leonardo Kewitz",
+    "url": "https://kewitz.js.org",
+    "this_month": 5.0,
+    "all_time": 60.0,
+    "since": "Sep 9, 2020"
+  },
+  {
+    "name": "James Hill",
+    "this_month": 100.0,
+    "all_time": 100.0,
+    "since": "Sep 8, 2020"
+  },
+  {
+    "name": "Turun Sahkomies",
+    "url": "https://www.turunsahkomies.fi",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Sep 8, 2020"
+  },
+  {
+    "name": "Xiuzhong Li",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Aug 31, 2020"
+  },
+  {
+    "name": "Philipp Claßen",
+    "this_month": 10.0,
+    "all_time": 20.0,
+    "since": "Aug 27, 2020"
+  },
+  {
+    "name": "Nookwit",
+    "url": "https://www.nookwit.com/",
+    "logo": "sponsors/nookwit.png",
+    "this_month": 75.0,
+    "all_time": 150.0,
+    "since": "Aug 27, 2020"
+  },
+  {
+    "name": "Leonardo Kewitz",
+    "url": "https://kewitz.js.org",
+    "this_month": 5.0,
+    "all_time": 60.0,
+    "since": "Aug 24, 2020"
+  },
+  {
+    "name": "Evtimiy Mihaylov",
+    "url": "https://github.com/evvo",
+    "this_month": 10.0,
+    "all_time": 10.0,
+    "since": "Aug 22, 2020"
+  },
+  {
+    "name": "Speekify",
+    "url": "https://speekify.com",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Aug 20, 2020"
+  },
+  {
+    "name": "omerakgoz34",
+    "this_month": 1.0,
+    "all_time": 1.0,
+    "since": "Aug 13, 2020"
+  },
+  {
+    "name": "Randy Diaz",
+    "this_month": 5.0,
+    "all_time": 15.0,
     "since": "Aug 7, 2020"
   },
   {
     "name": "Matt Berry",
     "url": "https://mattrb.com",
     "this_month": 5.0,
-    "all_time": 5.0,
+    "all_time": 15.0,
     "since": "Aug 7, 2020"
   },
   {
@@ -17,19 +130,13 @@
     "url": "https://lewman.com",
     "logo": "sponsors/andrew_lewman.jpg",
     "this_month": 150.0,
-    "all_time": 150.0,
+    "all_time": 450.0,
     "since": "Aug 6, 2020"
-  },
-  {
-    "name": "Gabriel Sales Seixas",
-    "this_month": 5.0,
-    "all_time": 5.0,
-    "since": "Jul 30, 2020"
   },
   {
     "name": "vinit joshi",
     "this_month": 5.0,
-    "all_time": 10.0,
+    "all_time": 20.0,
     "since": "Jul 14, 2020"
   },
   {
@@ -60,13 +167,13 @@
     "name": "Nobuaki Tanaka",
     "url": "https://twitter.com/tomerun",
     "this_month": 5.0,
-    "all_time": 15.0,
+    "all_time": 25.0,
     "since": "Jun 10, 2020"
   },
   {
     "name": "Oleksii Neishchenko",
     "this_month": 5.0,
-    "all_time": 15.0,
+    "all_time": 25.0,
     "since": "Jun 9, 2020"
   },
   {
@@ -74,44 +181,38 @@
     "url": "https://docspring.com",
     "logo": "sponsors/docspring.png",
     "this_month": 75.0,
-    "all_time": 225.0,
+    "all_time": 375.0,
     "since": "Jun 1, 2020"
   },
   {
     "name": "NekoIT",
     "url": "https://nekoit.xyz",
     "this_month": 10.0,
-    "all_time": 30.0,
+    "all_time": 50.0,
     "since": "May 31, 2020"
   },
   {
     "name": "Luan Dias",
     "this_month": 1.0,
-    "all_time": 3.0,
+    "all_time": 5.0,
     "since": "May 28, 2020"
   },
   {
     "name": "Artem Napolskih",
     "this_month": 5.0,
-    "all_time": 15.0,
-    "since": "May 22, 2020"
-  },
-  {
-    "name": "Kevin Sjöberg",
-    "this_month": 25.0,
-    "all_time": 75.0,
+    "all_time": 25.0,
     "since": "May 22, 2020"
   },
   {
     "name": "Glen Aultman-Bettridge",
     "this_month": 5.0,
-    "all_time": 20.0,
+    "all_time": 30.0,
     "since": "May 5, 2020"
   },
   {
     "name": "Szymon Madeja",
     "this_month": 5.0,
-    "all_time": 20.0,
+    "all_time": 30.0,
     "since": "May 5, 2020"
   },
   {
@@ -124,7 +225,7 @@
     "name": "Kagi",
     "url": "https://kagi.com",
     "this_month": 25.0,
-    "all_time": 125.0,
+    "all_time": 175.0,
     "since": "Apr 8, 2020"
   },
   {
@@ -136,7 +237,7 @@
   {
     "name": "Darwin",
     "this_month": 5.0,
-    "all_time": 25.0,
+    "all_time": 35.0,
     "since": "Apr 5, 2020"
   },
   {
@@ -149,7 +250,7 @@
     "name": "Hotmagma",
     "url": "https://sinulaen.ee",
     "this_month": 5.0,
-    "all_time": 25.0,
+    "all_time": 35.0,
     "since": "Mar 16, 2020"
   },
   {
@@ -161,21 +262,21 @@
   {
     "name": "Kasper Holbek Jensen",
     "this_month": 5.0,
-    "all_time": 30.0,
+    "all_time": 40.0,
     "since": "Mar 11, 2020"
   },
   {
     "name": "Braydon Kains",
     "url": "https://github.com/BKains",
     "this_month": 5.0,
-    "all_time": 30.0,
+    "all_time": 40.0,
     "since": "Mar 8, 2020"
   },
   {
     "name": "RemoteTeam.com",
     "url": "https://www.remoteteam.com",
     "this_month": 5.0,
-    "all_time": 30.0,
+    "all_time": 40.0,
     "since": "Feb 29, 2020"
   },
   {
@@ -187,34 +288,28 @@
   },
   {
     "name": "Algolia",
-    "url": "http://algolia.com",
+    "url": "https://algolia.com",
     "this_month": 51.0,
     "all_time": 51.0,
     "since": "Dec 19, 2019"
   },
   {
-    "name": "Wesley Moore",
-    "this_month": 5.0,
-    "all_time": 50.0,
-    "since": "Nov 4, 2019"
-  },
-  {
     "name": "Jonathan Gnagy",
     "this_month": 1.0,
-    "all_time": 46.0,
+    "all_time": 48.0,
     "since": "Oct 31, 2019"
   },
   {
     "name": "Raels Koder",
     "this_month": 25.0,
-    "all_time": 250.0,
+    "all_time": 300.0,
     "since": "Oct 30, 2019"
   },
   {
     "name": "Patric Vormstein",
     "url": "https://github.com/pvormste",
     "this_month": 5.0,
-    "all_time": 50.0,
+    "all_time": 60.0,
     "since": "Oct 25, 2019"
   },
   {
@@ -226,10 +321,16 @@
   },
   {
     "name": "Ryan Prior",
-    "url": "http://www.ryanprior.com",
+    "url": "https://www.ryanprior.com",
     "this_month": 5.0,
-    "all_time": 55.0,
+    "all_time": 65.0,
     "since": "Oct 7, 2019"
+  },
+  {
+    "name": "Austin Vecchio",
+    "this_month": 5.0,
+    "all_time": 65.0,
+    "since": "Oct 4, 2019"
   },
   {
     "name": "Michael Lang",
@@ -248,21 +349,21 @@
     "name": "WPsetup",
     "url": "https://wpsetup.org",
     "this_month": 5.0,
-    "all_time": 60.0,
+    "all_time": 70.0,
     "since": "Sep 2, 2019"
   },
   {
     "name": "Level UP Solutions",
     "url": "https://www.levups.com",
     "this_month": 5.0,
-    "all_time": 60.0,
+    "all_time": 70.0,
     "since": "Sep 1, 2019"
   },
   {
     "name": "Max Fierke",
     "url": "https://www.maxfierke.com",
     "this_month": 10.0,
-    "all_time": 140.0,
+    "all_time": 160.0,
     "since": "Jul 21, 2019"
   },
   {
@@ -274,7 +375,7 @@
   {
     "name": "Bernardo Anderson",
     "this_month": 2.0,
-    "all_time": 30.0,
+    "all_time": 34.0,
     "since": "Jun 1, 2019"
   },
   {
@@ -286,9 +387,9 @@
   },
   {
     "name": "George Protacio-Karaszi",
-    "url": "http://hellogeorge.io",
+    "url": "https://hellogeorge.io",
     "this_month": 10.0,
-    "all_time": 200.0,
+    "all_time": 220.0,
     "since": "Feb 6, 2019"
   },
   {
@@ -328,7 +429,7 @@
     "name": "Julien Reichardt",
     "url": "https://github.com/j8r",
     "this_month": 25.0,
-    "all_time": 525.0,
+    "all_time": 575.0,
     "since": "Dec 13, 2018"
   },
   {
@@ -336,7 +437,7 @@
     "url": "https://www.blitline.com",
     "logo": "sponsors/blitline.png",
     "this_month": 75.0,
-    "all_time": 1575.0,
+    "all_time": 1725.0,
     "since": "Dec 12, 2018"
   }
 ]

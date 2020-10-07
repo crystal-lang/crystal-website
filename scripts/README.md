@@ -7,7 +7,7 @@ Sponsors data is grabbed from Bountysource API, OpenCollective API and manual en
 2. Update `_data/bountysource.json`. Extract `BS_TOKEN` from a browser ajax request. header: `Authorization: token ....`
 
 ```
-$ crystal scripts/bountysource.cr -- $BS_TOKEN
+$ crystal scripts/bountysource.cr $BS_TOKEN
 ```
 
 3. Update `_data/opencollective.json`
