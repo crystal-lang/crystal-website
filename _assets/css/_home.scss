@@ -292,3 +292,65 @@
     }
   }
 }
+
+.top-banner {
+  background: #828282;
+
+  a {
+    color: $white;
+
+    line-height: 60px;
+    padding: 0;
+    height: 120px;
+
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+  }
+
+  .tb-register {
+    background: #9d9d9d;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.3rem;
+    font-style: italic;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .tb-title {
+    font-size: 1.15rem;
+    padding: 0 0.5em;
+    text-align: center;
+  }
+
+  .tb-thin {
+    font-weight: 200;
+  }
+
+  .tb-gap {
+    flex-grow: 1;
+  }
+
+  .tb-date {
+    font-size: .9rem;
+    padding: 0 0.5em;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 841px) {
+  .top-banner {
+    a {
+      flex-flow: row;
+      height: 60px;
+    }
+
+    .tb-title {
+      text-align: left;
+    }
+
+    .tb-date {
+      display: flex;
+    }
+  }
+}
