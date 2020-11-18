@@ -42,7 +42,7 @@ I decided to make a choice based on the following constraints:
 
 I also reviewed geo data related to users of my personal blog and to users of my YouTube channel. This reminded me that Crystal has a significant number of friends in North America.
 
-Based on all the above, I decided to go for a 6-hour-long conference starting at 8 am PST.
+Based on all the above, I decided to go for a 6-hour-long conference starting at 16:00 UTC.
 <img src="{{ 'blog/2020-11-raw-crystal-schedule.png' | asset_path }}" width="617"  class="center" alt="Event schedule: the event will start at 8 am PST on Friday 11, December 2020, and close around 1 pm PST on the same day."/>
 
 If these times don't work for you, then despair not! I will be sharing the recording of the talks on YouTube after the event.
