@@ -35,7 +35,7 @@ Once the repository is configured you're ready to install Crystal:
 
 <div class="code_section">
 {% highlight bash %}
-sudo yum install crystal
+sudo dnf install crystal
 {% endhighlight bash %}
 </div>
 
@@ -45,7 +45,7 @@ When a new Crystal version is released you can upgrade your system using:
 
 <div class="code_section">
 {% highlight bash %}
-sudo yum update crystal
+sudo dnf update crystal
 {% endhighlight bash %}
 </div>
 
