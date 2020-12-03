@@ -20,7 +20,7 @@ jobs:
       - name: Build website
         run: |
           mv docker-compose.ci.yml docker-compose.override.yml
-          docker-compose run --rm web /bin/bash -c "gem install html-proofer && (bundle check || bundle install --jobs=3)"
+          docker-compose run --rm web /bin/bash -c "bundle check || bundle install --jobs=3"
           docker-compose run --rm web make check_html
           docker-compose run --rm web /bin/bash -c "make check_external_links || true" # allowed to fail
       - name: Configure AWS Credentials
