@@ -35,6 +35,7 @@ exclude:
 - "*.haml"
 - "*.nix"
 - docker-compose.yml
+- docker-compose.*.yml
 - Gemfile
 - Gemfile.lock
 - Makefile

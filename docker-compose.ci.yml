@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  web:
+    environment:
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    volumes:
+      - .:/src
+      - ~/.cache/bundle:/usr/local/bundle
