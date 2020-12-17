@@ -1,5 +1,26 @@
 [
   {
+    "name": "Alberto Corbi",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "Dec 14, 2020"
+  },
+  {
+    "name": "ATNOS",
+    "url": "https://atnos.com",
+    "logo": "sponsors/atnos.png",
+    "this_month": 75.0,
+    "all_time": 75.0,
+    "since": "Dec 11, 2020"
+  },
+  {
+    "name": "OvrClock",
+    "url": "https://ovrclock.com",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "Dec 11, 2020"
+  },
+  {
     "name": "anapsix",
     "url": "https://blog.random.io",
     "this_month": 5.0,
@@ -145,13 +166,6 @@
     "this_month": 100.0,
     "all_time": 100.0,
     "since": "Sep 8, 2020"
-  },
-  {
-    "name": "Pro Tech Reviewer",
-    "url": "https://www.protechreviewer.com/",
-    "this_month": 5.0,
-    "all_time": 10.0,
-    "since": "Sep 3, 2020"
   },
   {
     "name": "Philipp Claßen",
