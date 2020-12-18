@@ -1,4 +1,8 @@
 -
+  url: /install/from_asdf
+  caption: from asdf
+  icon: install/asdf@2x.png
+-
   url: /install/from_sources
   caption: from sources
   icon: install/sources@2x.png
