@@ -1,6 +1,6 @@
 ## Official Crystal deb repository
 
-To install latest stable Crystal release from the official Crystal repository hosted in [Bintray](https://bintray.com/beta/#/crystal/deb?tab=packages) run in your command line:
+To install latest stable Crystal release from the official Crystal repository hosted on [Bintray](https://bintray.com/beta/#/crystal/deb?tab=packages) run in your command line:
 
 <div class="code_section">
 {% highlight bash %}
@@ -18,6 +18,8 @@ The install script accepts optional arguments to install or update to a release 
 curl -fsSL https://crystal-lang.org/install.sh | sudo bash -s -- --channel=nightly
 {% endhighlight bash %}
 </div>
+
+You can find more detailed information at the [announcement post](/2020/08/24/announcing-new-apt-and-rpm-repositories.html).
 
 ### Manual setup
 
