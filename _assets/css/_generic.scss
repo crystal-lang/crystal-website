@@ -216,16 +216,17 @@ table.no-underline a {
 }
 
 .btn-flat-white {
-  border: 2px solid $white;
+  border: 2px solid $black;
   padding: 0 42px;
+  margin: 0 10px;
   color: $black;
   background-color: $white;
   &:active {
-    background-color: $black;
+    background-color: $white;
   }
   &:hover {
-    color: $black;
-    background-color: $white;
+    color: $white;
+    background-color: $black;
   }
 }
 
