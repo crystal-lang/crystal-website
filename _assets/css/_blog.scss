@@ -96,6 +96,11 @@
     @extend h2;
     margin-top: 100px;
   }
+
+  hr {
+    border: none;
+    border-top: 1px solid #D7D7D7;
+  }
 }
 
 pre {
