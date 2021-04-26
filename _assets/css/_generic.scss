@@ -215,6 +215,21 @@ table.no-underline a {
   }
 }
 
+.btn-flat-white {
+  border: 2px solid $black;
+  padding: 0 42px;
+  margin: 0 10px;
+  color: $black;
+  background-color: $white;
+  &:active {
+    background-color: $white;
+  }
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
+}
+
 .side-nav#nav-mobile {
   text-align: left !important;
   a {
