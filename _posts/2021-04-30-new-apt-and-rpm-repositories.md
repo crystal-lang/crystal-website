@@ -14,7 +14,7 @@ For now we continue to provide deb and rpm repositories for x86_64 and i686,
 but more platforms and architectures will follow.
 
 All packages are available on OBS at [build.opensuse.org/package/show/devel:languages:crystal](https://build.opensuse.org/package/show/devel:languages:crystal).
-It offers an [installation page](https://software.opensuse.org//download.html?project=devel%3Alanguages%3Acrystal&package=crystal) with detailed instructions for the many different
+It offers an [installation page](https://software.opensuse.org/download.html?project=devel%3Alanguages%3Acrystal&package=crystal) with detailed instructions for the many different
 target systems.
 Our own installation instructions at [crystal-lang.org/install](/install) have been updated,
 including the automatic installer script.
