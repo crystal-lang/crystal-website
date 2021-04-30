@@ -1,6 +1,6 @@
 ## Official Crystal rpm repository
 
-To install latest stable Crystal release from the official Crystal repository hosted on [Bintray](https://bintray.com/beta/#/crystal/rpm?tab=packages) run in your command line:
+To install latest stable Crystal release from the official Crystal repository hosted on the [Open Build Service](https://build.opensuse.org) run in your command line:
 
 <div class="code_section">
 {% highlight bash %}
@@ -19,27 +19,23 @@ curl -fsSL https://crystal-lang.org/install.sh | sudo bash -s -- --channel=night
 {% endhighlight bash %}
 </div>
 
-You can find more detailed information at the [announcement post](/2020/08/24/announcing-new-apt-and-rpm-repositories.html).
+You can find more detailed information at the [announcement post](/2021/04/30/new-apt-and-rpm-repositories.html).
 
 ### Manual setup
 
-The url of the repo is `https://dl.bintray.com/crystal/rpm/{DISTRO}/{ARCH}/{CHANNEL}`.
-
-- The valid `{DISTRO}` values are `el6` and `all`.
-- The only supported `{ARCH}` for rpm is `x86_64`.
-- The valid `{CHANNEL}` values are `stable`, `unstable`, or `nightly`.
-
-Replace the desired `{DISTRO}` and `{CHANNEL}` in the following script and you are all set.
+Insert your distribution name and release as `{REPOSITORY}` in the following script and you are all set.
+You can find available options on the [installation page at OBS](https://software.opensuse.org//download.html?project=devel%3Alanguages%3Acrystal&package=crystal).
 
 <div class="code_section">
 {% highlight bash %}
 cat > /etc/yum.repos.d/crystal.repo <<END
 [crystal]
 name=Crystal
-baseurl=https://dl.bintray.com/crystal/rpm/{DISTRO}/x86_64/{CHANNEL}
-gpgcheck=0
-repo_gpgcheck=1
-gpgkey=http://bintray.com/user/downloadSubjectPublicKey?username=bintray
+type=rpm-md
+baseurl=https://download.opensuse.org/repositories/devel:languages:crystal/{REPOSITORY}/
+gpgcheck=1
+gpgkey=https://download.opensuse.org/repositories/devel:languages:crystal/{REPOSITORY}/repodata/repomd.xml.key
+enabled=1
 END
 
 {% endhighlight bash %}
