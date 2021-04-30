@@ -1,6 +1,6 @@
 ## Official Crystal deb repository
 
-To install latest stable Crystal release from the official Crystal repository hosted on [Bintray](https://bintray.com/beta/#/crystal/deb?tab=packages) run in your command line:
+To install latest stable Crystal release from the official Crystal repository hosted on the [Open Build Service](https://build.opensuse.org) run in your command line:
 
 <div class="code_section">
 {% highlight bash %}
@@ -19,29 +19,26 @@ curl -fsSL https://crystal-lang.org/install.sh | sudo bash -s -- --channel=night
 {% endhighlight bash %}
 </div>
 
-You can find more detailed information at the [announcement post](/2020/08/24/announcing-new-apt-and-rpm-repositories.html).
+You can find more detailed information at the [announcement post](/2021/04/30/new-apt-and-rpm-repositories.html).
 
 ### Manual setup
 
-The deb repository declared with `deb_distribution=all` and `deb_component` is used for the channel.
-
-- The valid channels are `stable`, `unstable`, or `nightly`.
-
-Replace the desired `{CHANNEL}` in the following script and you are all set.
+Insert your distribution name and release as `{REPOSITORY}` in the following script and you are all set.
+You can find available options on the [installation page at OBS](https://software.opensuse.org/download.html?project=devel%3Alanguages%3Acrystal&package=crystal).
 
 <div class="code_section">
 {% highlight bash %}
-echo "deb https://dl.bintray.com/crystal/deb all {CHANNEL}" | tee /etc/apt/sources.list.d/crystal.list
+echo "deb http://download.opensuse.org/repositories/devel:/languages:/crystal/{REPOSITORY}/ /" | tee /etc/apt/sources.list.d/crystal.list
 
-# Add repo metadata signign key (shared bintray signing key)
-apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
-apt-get update
+# Add signing key
+curl -fsSL https://download.opensuse.org/repositories/devel:languages:crystal/{REPOSITORY}/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/crystal.gpg > /dev/null
 {% endhighlight bash %}
 </div>
 
 Once the repository is configured you're ready to install Crystal:
 
 <div class="code_section">{% highlight bash %}
+sudo apt update
 sudo apt install crystal
 {% endhighlight bash %}</div>
 
