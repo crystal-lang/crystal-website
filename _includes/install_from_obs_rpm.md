@@ -24,7 +24,7 @@ You can find more detailed information at the [announcement post](/2021/04/30/ne
 ### Manual setup
 
 Insert your distribution name and release as `{REPOSITORY}` in the following script and you are all set.
-You can find available options on the [installation page at OBS](https://software.opensuse.org//download.html?project=devel%3Alanguages%3Acrystal&package=crystal).
+You can find available options on the [installation page at OBS](https://software.opensuse.org/download.html?project=devel%3Alanguages%3Acrystal&package=crystal).
 
 <div class="code_section">
 {% highlight bash %}
