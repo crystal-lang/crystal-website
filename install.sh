@@ -7,7 +7,7 @@ USAGE
 
     $ ./install.sh [--crystal=<crystal-version>] [--channel=stable|unstable|nightly]
 
-  - crystal-version: latest, 1.0.0 etc. (Default: latest)
+  - crystal-version: latest, 1.0.0, 1.1 etc. (Default: latest)
   - channel: stable, unstable, nightly. (Default: stable)
 
 REQUIREMENTS
