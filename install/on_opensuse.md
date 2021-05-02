@@ -2,7 +2,7 @@
 subtitle: On OpenSUSE and SUSE Linux Enterprise (SLE)
 ---
 
-On OpenSUSE, Crystal can be installed from the official repo using Zypper.
+On OpenSUSE, Crystal can be installed from the official repository hosted on the [Open Build Service](https://build.opensuse.org) using Zypper.
 [Snapcraft](#snapcraft) is also available.
 
 ## Setup repository
