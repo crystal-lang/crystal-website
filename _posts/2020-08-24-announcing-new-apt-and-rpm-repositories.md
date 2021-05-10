@@ -5,6 +5,9 @@ thumbnail: +
 author: bcardiff
 ---
 
+**UPDATE:** As of 2021-05-01, the bintray repositories are no longer available. The distribution packages are now hosted
+on the Open Build Service, see recent [blog post](https://crystal-lang.org/2021/04/30/new-apt-and-rpm-repositories.html).
+
 We've been working on improving the state of the art of the official deb and rpm repositories.
 
 The main outcome is that we will be able to:

@@ -106,12 +106,36 @@ _discover_distro_repo() {
       _check_version_id
       DISTRO_REPO="openSUSE_Leap_${VERSION_ID}"
       ;;
-    *)
+    "")
       _error "Unable to identify distribution. You may specify one with environment variable DISTRO_REPO"
       _error "Please, report to https://forum.crystal-lang.org/c/help-support/11"
       exit 1
       ;;
+    *)
+      # If there's no dedicated repository for the distro, try to figure out
+      # if the distro is apt or rpm based and use a default repository.
+      _discover_distro_type
+
+      case "$DISTRO_TYPE" in
+      deb)
+        DISTRO_REPO="Debian_Unstable"
+        ;;
+      rpm)
+        DISTRO_REPO="RHEL_7"
+        ;;
+      *)
+        _error "Unable to identify distribution type ($ID). You may specify a repository with the environment variable DISTRO_REPO"
+        _error "Please, report to https://forum.crystal-lang.org/c/help-support/11"
+        exit 1
+        ;;
+      esac
   esac
+}
+
+_discover_distro_type() {
+  DISTRO_TYPE=""
+  [[ $(command -v apt-get) ]] && DISTRO_TYPE="deb" && return
+  [[ $(command -v yum) ]]     && DISTRO_TYPE="rpm" && return
 }
 
 if [[ $EUID -ne 0 ]]; then
@@ -130,7 +154,6 @@ case $i in
     ;;
     --channel=*)
     CHANNEL="${i#*=}"
-    _warn "Currently, only stable channel is available"
     shift
     ;;
     --help)
@@ -144,12 +167,25 @@ case $i in
 esac
 done
 
+case $CHANNEL in
+  stable)
+    ;;
+  nightly | unstable)
+    OBS_PROJECT="${OBS_PROJECT}:${CHANNEL}"
+    ;;
+  *)
+    _error "Unsupported channel $CHANNEL"
+    exit 1
+    ;;
+esac
+
 if [[ -z "${DISTRO_REPO}" ]]; then
   _discover_distro_repo
 fi
 
 _install_apt() {
   if [[ -z $(command -v wget &> /dev/null) ]] || [[ -z $(command -v gpg &> /dev/null) ]]; then
+    [[ -f /etc/apt/sources.list.d/crystal.list ]] && rm -f /etc/apt/sources.list.d/crystal.list
     apt-get update
     apt-get install -y wget gpg
   fi
