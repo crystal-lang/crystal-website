@@ -2,15 +2,16 @@ require "http/client"
 require "json"
 
 record Sponsor, name : String, url : String?, logo : String?, this_month : Float64, all_time : Float64, currency : String?, since : Time do
-  JSON.mapping({
-    name:       String,
-    url:        String?,
-    logo:       String?,
-    this_month: Float64,
-    all_time:   Float64,
-    currency:   String?,
-    since:      {type: Time, converter: Time::Format.new("%b %-d, %Y")},
-  })
+  include JSON::Serializable
+
+  property name : String
+  property url : String?
+  property logo : String?
+  property this_month : Float64
+  property all_time : Float64
+  property currency : String?
+  @[JSON::Field(converter: Time::Format.new("%b %-d, %Y"))]
+  property since : Time
 end
 
 class SponsorsBuilder

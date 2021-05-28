@@ -21,19 +21,21 @@ module OpenCollective
   end
 
   class Member
-    JSON.mapping({
-      name:                  String,
-      type:                  String,
-      role:                  String,
-      isActive:              Bool,
-      totalAmountDonated:    Float64,
-      lastTransactionAmount: Float64,
-      twitter:               String?,
-      github:                String?,
-      website:               String?,
-      image:                 String?,
-      createdAt:             {type: Time, converter: Time::Format.new("%Y-%m-%d %H:%M")},
-    })
+    include JSON::Serializable
+
+    property name : String
+    property type : String
+    property role : String
+    property isActive : Bool
+    property totalAmountDonated : Float64
+    property lastTransactionAmount : Float64
+    property twitter : String?
+    property github : String?
+    property website : String?
+    property image : String?
+
+    @[JSON::Field(converter: Time::Format.new("%Y-%m-%d %H:%M"))]
+    property createdAt : Time
   end
 end
 
