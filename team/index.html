@@ -1,0 +1,152 @@
+---
+title: Crystal Team
+description: >
+  Crystal is an open-source project based on the incredible efforts of a large
+  community. Meet the people behind Crystal.
+---
+
+<div class="container">
+  <section class="row">
+    <p>
+      This page introduces some of the most notable members, especially the
+      Core Team, and the Steering Council. Their roles are defined by the
+      <a href="https://crystal-lang.org/reference/governance.html">Crystal Governance document</a>.
+    </p>
+  </section>
+
+  <section class="row">
+    <h2>Core Team</h2>
+
+    <p>
+      The Core Team manages the development of Crystal and its ecosystem.
+    </p>
+
+    <div class="team-members team-members--core">
+      {% for member in site.data.team.core %}
+        {% if member[1].status == "active" %}
+          <div class="team-member">
+            {% img 'authors/{{ member[0] }}.jpg' %}
+            <div class="team-member__inner">
+              <span class="member_name">{{ member[1].name }}</span>
+              <span class="handles">
+                <span class="github_handle"><a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" title="GitHub profile"><i class="extra-icons github"></i> {{ member[1].github_handle | default: member[0] }}</a></span>
+                <span class="forum_handle"><a href="https://forum.crystal-lang.org/u/{{ member[1].forum_handle | default: member[0] }}" title="Crystal Forum profile"><i class="material-icons">forum</i> {{ member[1].forum_handle | default: member[0] }}</a></span>
+              </span>
+              {% if member[1].role %}
+                <span class="member_role">{{ member[1].role }}</span>
+              {% endif %}
+              {% if member[1].affiliation %}
+                <span class="member_affiliation">{{ member[1].affiliation }}</span>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+
+      {% for member in site.data.team.core %}
+        {% if member[1].status == "inactive" %}
+          <div class="team-member inactive">
+            {% img 'authors/{{ member[0] }}.jpg' %}
+            <div class="team-member__inner">
+              <span class="member_name">{{ member[1].name }}</span>
+              <span class="handles">
+                <span class="github_handle"><a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" title="GitHub profile"><i class="extra-icons github"></i> {{ member[1].github_handle | default: member[0] }}</a></span>
+                <span class="forum_handle"><a href="https://forum.crystal-lang.org/u/{{ member[1].forum_handle | default: member[0] }}" title="Crystal Forum profile"><i class="material-icons">forum</i> {{ member[1].forum_handle | default: member[0] }}</a></span>
+              </span>
+              {% if member[1].role %}
+                <span class="member_role">{{ member[1].role }}</span>
+              {% endif %}
+              {% if member[1].affiliation %}
+                <span class="member_affiliation">{{ member[1].affiliation }}</span>
+              {% endif %}
+              <span class="status">inactive</span>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="row">
+    <h2>Core Team Alumni</h2>
+
+    <p>These awesome people have served as core team members in the past. They are listed here to record and honor their contributions.</p>
+
+    <div class="core-team-alumni">
+      {% for member in site.data.team.alumni %}
+        <div class="team-member">
+          {% img 'authors/{{ member[0] }}.jpg' %}
+          <div class="team-member__inner">
+            <span class="member_name">{{ member[1].name }}</span>
+            <span class="handles">
+              <span class="github_handle"><a href="https://github.com/{{ member[1].github_handle | default: member[0] }}"><i class="extra-icons github"></i> {{ member[1].github_handle | default: member[0] }}</a></span>
+            </span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="row">
+
+    <h2>Administrators</h2>
+
+    <p>
+      Some people help with administrative duties, for example related to the
+      management of assets and infrastructure, and communications.
+    </p>
+    <p>
+      They have access to some resources and may participate as representatives
+      of Crystal, but are not Core Team members. They do not take part in project
+      decisions.
+    </p>
+
+    <div class="team-members team-members--admin">
+      {% for member in site.data.team.admin %}
+        <div class="team-member">
+          {% img 'authors/{{ member[0] }}.jpg' %}
+          <div class="team-member__inner">
+            <span class="member_name">{{ member[1].name }}</span>
+            <span class="handles">
+              <span class="github_handle"><a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" title="GitHub profile"><i class="extra-icons github"></i> {{ member[1].github_handle | default: member[0] }}</a></span>
+              <span class="forum_handle"><a href="https://forum.crystal-lang.org/u/{{ member[1].forum_handle | default: member[0] }}" title="Crystal Forum profile"><i class="material-icons">forum</i> {{ member[1].forum_handle | default: member[0] }}</a></span>
+            </span>
+            {% if member[1].role %}
+              <span class="member_role">{{ member[1].role }}</span>
+            {% endif %}
+            {% if member[1].affiliation %}
+              <span class="member_affiliation">{{ member[1].affiliation }}</span>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="row">
+    <h2>450+ Contributors</h2>
+
+    <p>
+      Besides those that are explicitly named, this is a call out to
+      <a href="https://github.com/crystal-lang/crystal/graphs/contributors">hundreds more contributors</a>
+      who put their work into the project.
+    </p>
+
+    <img src="https://opencollective.com/crystal-lang/contributors.svg?width=960">
+
+  </section>
+
+  <section class="row">
+    <h2>Our sponsors</h2>
+    <p>
+      All this is only possible through our generous <a href="/sponsors">sponsors</a>
+      which help sustaining the project.
+    </p>
+    <p>
+      Check out our sponsorship page at <a href="https://opencollective.com/crystal-lang">OpenCollective</a> if you want to become one of them.
+    </p>
+    <p>
+      Corporate sponsors please reach out to <a href="mailto:crystal@manas.tech">crystal@manas.tech</a>. We're happy to work with you.
+    </p>
+  </section>
+</div>

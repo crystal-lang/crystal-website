@@ -1,0 +1,72 @@
+core:
+  beta-ziliani:
+    name: Beta Ziliani
+    status: active
+    role: Team lead
+    affiliation: Manas.Tech
+
+  asterite:
+    name: Ary Borenzweig
+    role: Co-Creator, Steering Council
+    status: active
+
+  bcardiff:
+    name: Brian J. Cardiff
+    role: Co-Creator, Steering Council
+    status: active
+
+  waj:
+    name: Juan Wajnerman
+    role: Co-Creator, Steering Council
+    status: active
+
+  jhass:
+    name: Jonne Haß
+    status: active
+
+  sdogruyol:
+    name: Serdar Doğruyol
+    status: active
+
+  straight-shoota:
+    name: Johannes Müller
+    status: active
+    affiliation: Manas.Tech
+
+  oprypin:
+    name: Oleh Prypin
+    status: active
+
+admin:
+  nditada:
+    name: Nicolás di Tada
+    role: CTO
+    affiliation: Manas.Tech
+
+  mgarcia:
+    name: Matías García Isaía
+    role: Infrastructure
+    affiliation: Manas.Tech
+    forum_handle: matiasgarciaisaia
+    github_handle: matiasgarciaisaia
+
+  pettimart:
+    name: Martin Pettinati
+    role: Communication
+    affiliation: Manas.Tech
+
+alumni:
+  ggiraldez:
+    name: Gustavo Giraldez
+
+  ysbaddaden:
+    name: Julien Portalier
+
+  mverzilli:
+    name: Martin Verzilli
+
+  spalladino:
+    name: Santiago Palladino
+
+  RX14:
+    name: Stephanie Wilde-Hoobs
