@@ -24,21 +24,6 @@ brew upgrade crystal
 
 ## Troubleshooting
 
-### On macOS 10.11 (El Capitan)
-
-If you get an error like:
-
-<div class="code_section">{% highlight txt %}
-ld: library not found for -levent
-{% endhighlight txt %}</div>
-
-you need to reinstall the command line tools and then select the default active toolchain:
-
-<div class="code_section">{% highlight bash %}
-xcode-select --install
-xcode-select --switch /Library/Developer/CommandLineTools
-{% endhighlight bash %}</div>
-
 ### On macOS 10.14 (Mojave)
 
 If you get an error like:
