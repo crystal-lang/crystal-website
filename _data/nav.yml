@@ -9,6 +9,8 @@ main:
   url: /sponsors/
 - label: Community
   url: /community/
+- label: Team
+  url: /team/
 - label: Docs
   url: /docs/
 - label: GitHub

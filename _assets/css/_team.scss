@@ -1,0 +1,79 @@
+
+.team-member {
+  display: flex;
+  align-items: center;
+
+  > img {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+
+    .core-team-alumni > & {
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+    }
+    @include border-radius(50%);
+  }
+
+  &.inactive > img {
+    filter: grayscale(1);
+  }
+
+  .team-member__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member_name {
+    font-size: 1.2em;
+    line-height: 1.3;
+  }
+  &:not(.inactive) .member_name {
+    color: $black;
+  }
+
+  .handles {
+    i {
+      transform: scale(0.7);
+      opacity: 0.6;
+      margin-right: -5px;
+      margin-top: -3px;
+    }
+
+    + * {
+      margin-top: 5px;
+    }
+  }
+
+  .status {
+    font-style: italic;
+  }
+}
+
+.team-members {
+  margin: 2rem 0;
+
+  .team-member {
+    + .team-member {
+      margin-top: 20px;
+    }
+  }
+}
+
+.core-team-alumni {
+  @media only screen and (min-width: 540px) {
+    display: flex;
+  }
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem auto;
+  max-width: 70em;
+
+  .team-member {
+    margin: 1rem;
+  }
+}
