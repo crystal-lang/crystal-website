@@ -8,5 +8,4 @@ crystal: {{ site.latest_release.version }}
 dependencies:
   mysql:
     github: crystal-lang/crystal-mysql
-    version: ~> 0.3.1
 {% endhighlight %}
