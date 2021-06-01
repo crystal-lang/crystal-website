@@ -2,6 +2,11 @@ name: The Crystal Programming Language
 description: A compiled language with Ruby like syntax and type inference
 url: https://crystal-lang.org
 logo: /assets/media/crystal_logo.svg
+
+latest_release:
+  version: 1.0.0
+  date: 2021-03-22
+
 defaults:
   -
     scope:

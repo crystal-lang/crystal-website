@@ -3,7 +3,7 @@ name: my-project
 version: 0.1
 license: MIT
 
-crystal: 0.21.0
+crystal: {{ site.latest_release.version }}
 
 dependencies:
   mysql:
