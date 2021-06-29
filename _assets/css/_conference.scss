@@ -1,6 +1,4 @@
 .conference-session-list {
-  display: flex;
-  flex-direction: column;
   margin: 50px 0 80px 0;
 
   header {
@@ -19,26 +17,26 @@
       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     }
   }
+}
 
-  .conference-slot {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 30px;
-    
-    .conference-slot-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      align-items: start;
-      column-gap: 60px;
-    }
+.conference-sessions-grid {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 40px;
+  align-items: start;
 
     .conference-session {
       width: 100%;
       display: grid;
       row-gap: 12px;
-      height: -moz-fit-content;
-      height: fit-content;
       grid-column: 1;
+
+      border-left: 4px solid black;
+      padding-left: 10px;
+      height: 100%;
+      align-items: start;
+      grid-template-rows: auto auto auto auto 1fr;
 
       :first-child:last-child {
         max-width: 65em;
@@ -46,32 +44,48 @@
 
       @media only screen and (min-width: 900px) {
         &--track-1, &--main {
-          grid-column: 1;
-        }
-        &--track-2 {
           grid-column: 2;
         }
-        &--track-3 {
+        &--track-2 {
           grid-column: 3;
+        }
+        &--track-3 {
+          grid-column: 4;
+        }
+        &--span2 {
+          grid-row-end: 2 span;
+        }
+        &--span6 {
+          grid-row-end: 6 span;
+        }
+        &--span7 {
+          grid-row-end: 7 span;
         }
       }
     }
-  }
 
   .conference-sessions-break {
     margin-top: -4px;
     font-size: 1.4rem;
     color: $primary-text;
     font-weight: 500;
-    grid-column: 1 / -1;
+    grid-column: 1;
+
+    @media only screen and (min-width: 900px) {
+      grid-column: 2 / -1;
+    }
   }
 }
 
 .conference-slot-info {
-
+  grid-column: 1;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: start;
+
+  @media only screen and (min-width: 900px) {
+    align-items: end;
+  }
 
   time {
     text-align: right;
