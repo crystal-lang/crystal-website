@@ -36,18 +36,12 @@ custom_body_classes:
 <div class="container">
   <div class="conference-session-list">
     <header><h2>Programme</h2></header>
+    <div class="conference-sessions-grid">
     {% for session in site.data.conference_talks %}
         {% if session["Start time"] != lastStartTime %}
-          {% if lastStartTime %}
-        </div>
-        <hr class="custom-hr"/>
-      </div>
-          {% endif %}
-      <div class="conference-slot">
         <div class="conference-slot-info">
           <time class="local-time" datetime="2021-07-08T{{ session["Start time"] }}+00:00" title="2021-07-08 {{ session["Start time"] }} UTC">{{ session["Start time"] }}</time>
         </div>
-        <div class="conference-slot-inner">
         {% endif %}
         {% assign lastStartTime = session["Start time"] %}
         {% assign lastEndTime = session["End time"] %}
@@ -56,7 +50,7 @@ custom_body_classes:
             {% assign break_desc = parts | slice: 1, 1000 %}
             <div class="conference-sessions-break">{{break_desc | join: '-'}}</div>
           {% else %}
-          <div class="conference-session conference-session--{{ session['Room'] | slugify }}">
+          <div class="conference-session conference-session--{{ session['Room'] | slugify }} conference-session--span{{ session['Span rows'] }}">
               <div class="presenter">
                 {% if session["Speaker picture"] %}
                   {% assign parts = session["Speaker picture"] | split: ' (' %}
@@ -93,7 +87,6 @@ custom_body_classes:
           </div>
           {% endif %}
         {% endfor %}
-        </div>
       </div>
   </div>
 </div>
