@@ -50,7 +50,7 @@ custom_body_classes:
             {% assign break_desc = parts | slice: 1, 1000 %}
             <div class="conference-sessions-break">{{break_desc | join: '-'}}</div>
           {% else %}
-          <div class="conference-session conference-session--{{ session['Room'] | slugify }} conference-session--span{{ session['Span rows'] }}">
+          <div class="conference-session conference-session--{{ session['Room'] | slugify }} conference-session--span{{ session['Row span'] | default: 1 }}">
               <div class="presenter">
                 {% if session["Speaker picture"] %}
                   {% assign parts = session["Speaker picture"] | split: ' (' %}
