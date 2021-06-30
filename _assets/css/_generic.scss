@@ -302,3 +302,8 @@ dt {
 dd {
   margin-left: 0;
 }
+
+ul.browser-default > li {
+  list-style: inherit;
+  padding: inherit;
+}
