@@ -1,6 +1,6 @@
 ## Linuxbrew
 
-If you have [Linuxbrew](https://linuxbrew.sh) installed you're ready to install Crystal:
+If you have [Linuxbrew](https://docs.brew.sh/Homebrew-on-Linux) installed you're ready to install Crystal:
 
 <div class="code_section">{% highlight bash %}
 brew update
