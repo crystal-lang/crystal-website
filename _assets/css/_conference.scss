@@ -223,3 +223,9 @@ hr.custom-hr {
     }
   }
 }
+
+.session-links {
+  display: flex;
+  gap: .5em;
+  flex-wrap: wrap;
+}
