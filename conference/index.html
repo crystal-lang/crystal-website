@@ -81,6 +81,14 @@ custom_body_classes:
                   {{ session["Abstract"] }}
                 </p>
               {% endif %}
+              <p class="session-links">
+                {% if session["Video Link"] %}
+                  <a href="{{ session["Video Link"] }}">Recording</a>
+                {% endif %}
+                {% if session["Slides Link"] %}
+                  <a href="{{ session["Slides Link"] }}">Slides</a>
+                {% endif %}
+              </p>
           </div>
           {% endif %}
         {% endfor %}
