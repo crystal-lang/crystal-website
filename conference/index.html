@@ -73,9 +73,23 @@ custom_body_classes:
                 </div>
               {% endif %}
               <div>
-                  <i class="material-icons">schedule</i>
-                  {{ session["Duration (minutes)"] }} minutes at {{ session["Room" ] }}
-                </div>
+                <i class="material-icons">schedule</i>
+                {{ session["Duration (minutes)"] }} minutes at {{ session["Room" ] }}
+              </div>
+              <p class="session-links">
+                {% if session["Video Link"] %}
+                  <a href="{{ session["Video Link"] }}" class="with-icon">
+                    <i class="material-icons">videocam</i>
+                    Recording
+                  </a>
+                {% endif %}
+                {% if session["Slides Link"] %}
+                  <a href="{{ session["Slides Link"] }}" class="with-icon">
+                    <i class="material-icons">slideshow</i>
+                    Slides
+                  </a>
+                {% endif %}
+              </p>
               {% if session["Abstract"] %}
                 <p class="session-summary">
                   {{ session["Abstract"] }}
