@@ -4,8 +4,8 @@ url: https://crystal-lang.org
 logo: /assets/media/crystal_logo.svg
 
 latest_release:
-  version: 1.1.0
-  date: 2021-07-16
+  version: 1.1.1
+  date: 2021-07-27
 
 defaults:
   -
