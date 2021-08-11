@@ -1,5 +1,19 @@
 [
   {
+    "name": "Bookyourdata.com",
+    "url": "https://www.bookyourdata.com",
+    "this_month": 10.0,
+    "all_time": 10.0,
+    "since": "Aug 10, 2021"
+  },
+  {
+    "name": "Yann Carlen",
+    "url": "https://yanncarlen.com",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "Aug 8, 2021"
+  },
+  {
     "name": "Incognito",
     "this_month": 100.0,
     "all_time": 215.0,
@@ -55,7 +69,7 @@
   {
     "name": "Joseph Method",
     "this_month": 5.0,
-    "all_time": 5.0,
+    "all_time": 15.0,
     "since": "Jul 9, 2021"
   },
   {
@@ -104,13 +118,6 @@
     "this_month": 5.0,
     "all_time": 10.0,
     "since": "Jun 12, 2021"
-  },
-  {
-    "name": "STORED Enterprises Limited",
-    "url": "https://www.bystored.com/",
-    "this_month": 25.0,
-    "all_time": 25.0,
-    "since": "Jun 9, 2021"
   },
   {
     "name": "Windesol Sähkön Kilpailutus",
@@ -313,7 +320,7 @@
     "name": "Mamafacts",
     "url": "https://www.mamafacts.com/",
     "this_month": 5.0,
-    "all_time": 30.0,
+    "all_time": 35.0,
     "since": "Feb 9, 2021"
   },
   {
