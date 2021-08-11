@@ -15,5 +15,12 @@
     "all_time": 141000,
     "currency": "€",
     "since": "Apr 1, 2018"
+  },
+  {
+    "overrides": "Bookyourdata.com",
+    "name": "Bookyourdata.com",
+    "this_month": 0,
+    "all_time": 425,
+    "since": "Apr 14, 2019"
   }
 ]
