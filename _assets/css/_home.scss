@@ -12,14 +12,24 @@
       font-size: 32px;
       margin-bottom: 40px;
     }
-    p.main-actions {
-      .btn {
-        margin-right: 15px;
-      }
+  }
+
+  p.main-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (min-width: 601px) {
+      flex-direction: row;
+    }
+
+    .btn {
+      margin: 8px;
     }
   }
 
-  &.conference nav {
+  nav {
     background-color: transparent;
     border: none;
     ul#nav-desktop {
