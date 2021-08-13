@@ -10,7 +10,7 @@ in May 2021, only the latest release (1.0.0 at that time) was available.
 
 Since then, there have been more releases (1.1.0 and 1.1.1) but in the package repositories only the latest one was available at any time.
 
-We've now added support for installing specific releases of Crysta via OBS.
+We've now added support for installing specific releases of Crystal via OBS.
 There are individual packages for each minor release.
 
 At the moment, there are three different packages available at [build.opensuse.org/package/show/devel:languages:crystal](https://build.opensuse.org/project/show/devel:languages:crystal):
