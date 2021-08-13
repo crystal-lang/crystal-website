@@ -13,7 +13,7 @@ Since then, there have been more releases (1.1.0 and 1.1.1) but in the package r
 We've now added support for installing specific releases of Crysta via OBS.
 There are individual packages for each minor release.
 
-At the moment, there are three different packages available (see all packages at [build.opensuse.org/package/show/devel:languages:crystal](https://build.opensuse.org/project/show/devel:languages:crystal)):
+At the moment, there are three different packages available at [build.opensuse.org/package/show/devel:languages:crystal](https://build.opensuse.org/project/show/devel:languages:crystal):
 
 * `crystal1.0` (1.0.0)
 * `crystal1.1` (1.1.1)
@@ -28,4 +28,4 @@ Our own installation instructions at [crystal-lang.org/install](/install) have b
 including the automatic installer script.
 
 The installer script allows selecting the version to be installed via tha `--version=x.y` argument.
-This argument was previously called `--crystal=x.y` and while this name continues to work, it is now considered deprecated.
+This argument was previously called `--crystal` and while this name continues to work, it is now considered deprecated.
