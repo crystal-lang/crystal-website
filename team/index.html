@@ -124,6 +124,37 @@ description: >
   </section>
 
   <section class="row">
+
+    <h2>Community Moderators</h2>
+
+    <p>
+      Some experienced members of the community help moderating the community channels.
+      They have the <a href="https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization">Triage role</a> on GitHub which gives them the ability to assign labels, open & close issues/PRs, apply milestones, mark duplicates, assign issues/PRs and request reviews.
+    </p>
+
+    <div class="team-members team-members--moderator">
+      {% for member in site.data.team.moderators %}
+        <div class="team-member">
+          {% img 'authors/{{ member[0] }}.jpg' %}
+          <div class="team-member__inner">
+            <span class="member_name">{{ member[1].name }}</span>
+            <span class="handles">
+              <span class="github_handle"><a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" title="GitHub profile"><i class="extra-icons github"></i> {{ member[1].github_handle | default: member[0] }}</a></span>
+              <span class="forum_handle"><a href="https://forum.crystal-lang.org/u/{{ member[1].forum_handle | default: member[0] }}" title="Crystal Forum profile"><i class="material-icons">forum</i> {{ member[1].forum_handle | default: member[0] }}</a></span>
+            </span>
+            {% if member[1].role %}
+              <span class="member_role">{{ member[1].role }}</span>
+            {% endif %}
+            {% if member[1].affiliation %}
+              <span class="member_affiliation">{{ member[1].affiliation }}</span>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="row">
     <h2>450+ Contributors</h2>
 
     <p>
@@ -149,4 +180,16 @@ description: >
       Corporate sponsors please reach out to <a href="mailto:crystal@manas.tech">crystal@manas.tech</a>. We're happy to work with you.
     </p>
   </section>
+
+  <section class="row">
+    <h2>Join the team</h2>
+
+    <p>If you want to become a contributors, see our <a href="https://github.com/crystal-lang/crystal/blob/master/CONTRIBUTING.md">Contributing Instructions</a> and <a href="https://github.com/crystal-lang/crystal/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>.</p>
+
+    <p>
+      Community members with a good understanding of the current processes and topics in the Crystal community, can be considered to be become a moderator.
+      Respectable and helpful conduct is obviously required for that. If you think you qualify and want to apply, please don't hesitate to contact the core team at <a href="mailto:crystal@manas.tech">crystal@manas.tech</a>.
+    </p>
+  </section>
+
 </div>
