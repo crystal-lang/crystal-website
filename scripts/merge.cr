@@ -1,4 +1,5 @@
 require "csv"
+require "log"
 require "./sponsors"
 
 LEVELS = [5000, 2000, 1000, 500, 250, 150, 75, 25, 10, 5, 1]
@@ -8,10 +9,30 @@ def level(sponsor : Sponsor)
 end
 
 all_sponsors = Array(Sponsor).new
+overrides = Array(Sponsor).new
 
 %w(opencollective.json bountysource.json others.json).each do |filename|
   File.open("#{__DIR__}/../_data/#{filename}") do |file|
-    all_sponsors.concat Array(Sponsor).from_json(file)
+    sponsors = Array(Sponsor).from_json(file)
+    sponsors, overrides = sponsors.partition(&.overrides.nil?) if filename == "others.json"
+    all_sponsors.concat sponsors
+  end
+end
+
+overrides.each do |sponsor|
+  name_to_override = sponsor.overrides.not_nil!
+  if index = all_sponsors.index { |s| s.name == name_to_override }
+    to_override = all_sponsors[index]
+    to_override.name = sponsor.name # name is mandatory
+    to_override.url = sponsor.url if sponsor.url
+    to_override.logo = sponsor.logo if sponsor.logo
+    to_override.this_month = sponsor.this_month if sponsor.this_month > 0
+    to_override.all_time += sponsor.all_time if sponsor.all_time > 0
+    to_override.currency = sponsor.currency if sponsor.currency
+    to_override.since = sponsor.since if sponsor.since < to_override.since
+    all_sponsors[index] = to_override
+  else
+    Log.warn { "Can't find a sponsor named '#{name_to_override}'" }
   end
 end
 

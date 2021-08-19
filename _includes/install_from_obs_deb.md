@@ -10,7 +10,7 @@ curl -fsSL https://crystal-lang.org/install.sh | sudo bash
 
 The install script accepts optional arguments to install or update to a release of another channel.
 
-- `--crystal` with `major.minor.patch`, `major.minor`, or `major.minor.patch-iteration` values
+- `--version` with `major.minor` or `latest` value
 - `--channel` with `stable`, `unstable`, or `nightly` value
 
 <div class="code_section">
