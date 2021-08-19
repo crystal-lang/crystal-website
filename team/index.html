@@ -12,10 +12,14 @@ description: >
       Core Team, and the Steering Council. Their roles are defined by the
       <a href="https://crystal-lang.org/reference/governance.html">Crystal Governance document</a>.
     </p>
+
+    <p>
+      If you are an active contributor of the project and feel you can level up your involvement with it, you can apply to be a <a href="#core">core member</a> or to have the new <a href="#triage">Triage role</a>. If you want to apply or have questions, send us an email to <a href="mailto:crystal@manas.tech">crystal@manas.tech</a> with your desired role and GitHub handle.  The application process might take up to a month.
+    </p>
   </section>
 
   <section class="row">
-    <h2>Core Team</h2>
+    <h2 id="core">Core Team</h2>
 
     <p>
       The Core Team manages the development of Crystal and its ecosystem.
@@ -104,6 +108,36 @@ description: >
     <div class="team-members team-members--admin">
       {% for member in site.data.team.admin %}
         <div class="team-member">
+          {% img 'authors/{{ member[0] }}.jpg' %}
+          <div class="team-member__inner">
+            <span class="member_name">{{ member[1].name }}</span>
+            <span class="handles">
+              <span class="github_handle"><a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" title="GitHub profile"><i class="extra-icons github"></i> {{ member[1].github_handle | default: member[0] }}</a></span>
+              <span class="forum_handle"><a href="https://forum.crystal-lang.org/u/{{ member[1].forum_handle | default: member[0] }}" title="Crystal Forum profile"><i class="material-icons">forum</i> {{ member[1].forum_handle | default: member[0] }}</a></span>
+            </span>
+            {% if member[1].role %}
+              <span class="member_role">{{ member[1].role }}</span>
+            {% endif %}
+            {% if member[1].affiliation %}
+              <span class="member_affiliation">{{ member[1].affiliation }}</span>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="row">
+
+    <h2 id="triage">Collaborators with Triage role</h2>
+
+    <p>
+      Here we list active members of the community that decided to take a more active role in the administration of Crystal, earning the <a href="https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization">Triage role</a>.
+    </p>
+
+    <div class="triage-collaborator">
+    {% for member in site.data.team.triage %}
+    <div class="team-member">
           {% img 'authors/{{ member[0] }}.jpg' %}
           <div class="team-member__inner">
             <span class="member_name">{{ member[1].name }}</span>

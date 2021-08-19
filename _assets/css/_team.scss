@@ -16,6 +16,12 @@
       height: 60px;
       margin-right: 10px;
     }
+
+    .triage-collaborator > & {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+    }
     @include border-radius(50%);
   }
 
