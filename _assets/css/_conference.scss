@@ -1,0 +1,231 @@
+.conference-session-list {
+  margin: 50px 0 80px 0;
+
+  header {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    background-color: white;
+    z-index: 100;
+    width: 100vw;
+    padding-left: 15vw;
+    margin-left: -15vw;
+    margin-bottom: 30px;
+    transition: all 0.25s;
+
+    &.shadow {
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+  }
+}
+
+.conference-sessions-grid {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 40px;
+  align-items: start;
+
+    .conference-session {
+      width: 100%;
+      display: grid;
+      row-gap: 12px;
+      grid-column: 1;
+
+      border-left: 4px solid black;
+      padding-left: 10px;
+      height: 100%;
+      align-items: start;
+      grid-template-rows: auto auto auto auto auto 1fr;
+
+      :first-child:last-child {
+        max-width: 65em;
+      }
+
+      @media only screen and (min-width: 900px) {
+        &--track-1, &--main {
+          grid-column: 2;
+        }
+        &--track-2 {
+          grid-column: 3;
+        }
+        &--track-3 {
+          grid-column: 4;
+        }
+        &--span2 {
+          grid-row-end: 2 span;
+        }
+        &--span6 {
+          grid-row-end: 6 span;
+        }
+        &--span7 {
+          grid-row-end: 7 span;
+        }
+      }
+    }
+
+  .conference-sessions-break {
+    margin-top: -4px;
+    font-size: 1.4rem;
+    color: $primary-text;
+    font-weight: 500;
+    grid-column: 1;
+
+    @media only screen and (min-width: 900px) {
+      grid-column: 2 / -1;
+    }
+  }
+}
+
+.conference-slot-info {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  @media only screen and (min-width: 900px) {
+    align-items: end;
+  }
+
+  time {
+    text-align: right;
+    font-size: inherit;
+    font-weight: normal;
+
+    small {
+      display: block;
+    }
+  }
+}
+
+hr.custom-hr {
+  position: relative;
+  content: '';
+  border: none;
+  border-top: 1px $light-gray solid;
+  margin: 30px 0;
+  overflow: visible;
+  grid-column: 1 / -1;
+
+  &::before {
+    position: absolute;
+    bottom: -3px;
+    left: -6px;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border: 1px $light-gray solid;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -3px;
+    right: -6px;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border: 1px $light-gray solid;
+  }
+}
+
+.conference-session {
+
+  .conference-track {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $light-gray;
+    border-radius: 4px;
+    margin-right: 12px;
+    height: 1.5rem;
+    padding: 4px;
+    color: $white;
+
+    &--main {
+      display: none;
+    }
+  }
+
+  .presenter {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 12px;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    line-height: 1.2rem;
+
+    .speaker-image {
+      width: 36px;
+      height: 36px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2);
+
+      @include border-radius(50%);
+    }
+  }
+
+  > h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
+.speaker {
+  .github_handle {
+    font-size: 1rem;
+    i {
+      transform: scale(0.7);
+      opacity: 0.6;
+      margin-right: -5px;
+      margin-top: -3px;
+    }
+  }
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  padding: 0 0.5rem;
+  color: $primary-text;
+  border: 1px $primary-text solid;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  vertical-align: text-top;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 900px) {
+  .conference-session-list{
+    .conference-slot {
+      .conference-slot-inner {
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+      }
+    }
+    header {
+      position: unset;
+      padding-left: unset;
+      margin-left: unset;
+      width: unset;
+      &.shadow {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.session-links {
+  display: flex;
+  gap: .5em;
+  flex-wrap: wrap;
+}

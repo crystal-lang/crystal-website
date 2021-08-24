@@ -5,10 +5,10 @@ _help() {
 
 USAGE
 
-    $ ./install.sh [--crystal=<crystal-version>] [--channel=stable|unstable|nightly]
+    $ ./install.sh [--version=<crystal-version>] [--channel=stable|unstable|nightly]
 
-  - crystal-version: latest, 1.0.0, 1.1 etc. (Default: latest)
-  - channel: stable, unstable, nightly. (Default: stable)
+  - crystal-version: "latest", or a minor release version like 1.0 or 1.1 (Default: latest)
+  - channel: "stable", "unstable", "nightly" (Default: stable)
 
 REQUIREMENTS
 
@@ -27,7 +27,7 @@ NOTES
 
   - wget (on Debian/Ubuntu when missing)
   - curl (on openSUSE when missing)
-  - yum-utils (on CentOS/Fedora when using --crystal=x.y.z)
+  - yum-utils (on CentOS/Fedora when using --version=x.y.z)
 
   This script source and issue-tracker can be found at:
 
@@ -40,7 +40,7 @@ set -eu
 
 OBS_PROJECT=${OBS_PROJECT:-"devel:languages:crystal"}
 DISTRO_REPO=${DISTRO_REPO:-}
-CRYSTAL_VERSION="latest"
+CRYSTAL_VERSION=${CRYSTAL_VERSION:-"latest"}
 CHANNEL="stable"
 
 _error() {
@@ -70,7 +70,7 @@ _discover_distro_repo() {
 
   case "$ID" in
     debian)
-      if [[ -z "${VERSION_ID:-}" ]]; then
+      if [[ -z "${VERSION_ID:+}" ]]; then
         VERSION_ID="Unstable"
       elif [[ "$VERSION_ID" == "9" ]]; then
         VERSION_ID="$VERSION_ID.0"
@@ -143,12 +143,17 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
-# Parse --crystal=<VERSION> and --channel=<CHANNEL> arguments
+# Parse --version=<VERSION> and --channel=<CHANNEL> arguments
 
 for i in "$@"
 do
 case $i in
     --crystal=*)
+    CRYSTAL_VERSION="${i#*=}"
+    shift
+    echo "The argument --crystal= has been deprecated, please use --version= instead." >&2
+    ;;
+    --version=*)
     CRYSTAL_VERSION="${i#*=}"
     shift
     ;;
@@ -198,8 +203,7 @@ _install_apt() {
   if [[ "$CRYSTAL_VERSION" == "latest" ]]; then
     apt-get install -y crystal
   else
-    # Appending * allows --crystal=x.y and resolution of package-iteration https://askubuntu.com/a/824926/1101493
-    apt-get install -y crystal="$CRYSTAL_VERSION*"
+    apt-get install -y "crystal${CRYSTAL_VERSION}"
   fi
 }
 
@@ -223,14 +227,7 @@ EOF
   if [[ "$CRYSTAL_VERSION" == "latest" ]]; then
     yum install -y crystal
   else
-    command -v repoquery >/dev/null || yum install -y yum-utils
-    CRYSTAL_PACKAGE=$(repoquery crystal-$CRYSTAL_VERSION* | tail -n1)
-    if [ -z "$CRYSTAL_PACKAGE" ]
-    then
-      _error "Unable to find a package for crystal $CRYSTAL_VERSION"
-    else
-      yum install -y $CRYSTAL_PACKAGE
-    fi
+    yum install -y "crystal${CRYSTAL_VERSION}"
   fi
 }
 
@@ -242,14 +239,7 @@ _install_dnf() {
   if [[ "$CRYSTAL_VERSION" == "latest" ]]; then
     dnf install -y crystal
   else
-    command -v repoquery >/dev/null || dnf install -y dnf-utils
-    CRYSTAL_PACKAGE=$(repoquery crystal-$CRYSTAL_VERSION* | tail -n1)
-    if [ -z "$CRYSTAL_PACKAGE" ]
-    then
-      _error "Unable to find a package for crystal $CRYSTAL_VERSION"
-    else
-      dnf install -y $CRYSTAL_PACKAGE
-    fi
+    dnf install -y "crystal${CRYSTAL_VERSION}"
   fi
 }
 
@@ -266,7 +256,7 @@ _install_zypper() {
   if [[ "$CRYSTAL_VERSION" == "latest" ]]; then
     zypper --non-interactive install crystal
   else
-    zypper --non-interactive install crystal="$CRYSTAL_VERSION*"
+    zypper --non-interactive install "crystal${CRYSTAL_VERSION}"
   fi
 }
 

@@ -1,5 +1,5 @@
 <div class='header-section valign-wrapper no-select'>
-  {% if page.url == "/" %}<div id="delaunay"></div>{% endif %}
+  {% if page.url == "/" or page.url == "/conference/"%}<div id="delaunay"></div>{% endif %}
   <div id='content'>
     <div class='valign center-align'>
       {% if page.url == "/" %}
@@ -12,8 +12,8 @@
         </div>
         <div class='subtitle' style="margin-bottom: 20px;">{{ page.description }}</div>
         <p class="main-actions">
-          <a href="https://www.eventbrite.com/e/crystal-conference-10-launch-tickets-149153252393" target="_blank" class="btn btn-large btn-flat" style="margin-bottom: 40px;">Get your tickets!</a>
-	</p>
+          <a href="/conference" class="btn btn-large btn-flat" style="margin-bottom: 40px;">Agenda</a>
+	      </p>
       {% else %}
         {% if page.url == '/sponsors/' %}
           <div class="row">
