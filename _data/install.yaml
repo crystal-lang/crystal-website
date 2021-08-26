@@ -44,7 +44,7 @@
   icon: install/arch@2x.png
 -
   url: /install/on_elementary_os
-  caption: Elementary OS
+  caption: elementary OS
   icon: install/elementary@2x.png
 -
   url: /install/on_fedora
