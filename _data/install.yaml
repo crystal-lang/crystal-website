@@ -1,8 +1,4 @@
 -
-  url: /install/from_asdf
-  caption: from asdf
-  icon: install/linux@2x.png
--
   url: /install/from_sources
   caption: from sources
   icon: install/sources@2x.png
@@ -82,3 +78,7 @@
   url: /install/on_wsl
   caption: Windows Subsystem for Linux
   icon: install/windows@2x.png
+-
+  url: /install/from_asdf
+  caption: from asdf
+  icon: install/linux@2x.png
