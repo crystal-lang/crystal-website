@@ -15,7 +15,7 @@ description: >
   </section>
 
   <section class="row">
-    <h2>Core Team</h2>
+    <h2 id="core">Core Team</h2>
 
     <p>
       The Core Team manages the development of Crystal and its ecosystem.
@@ -68,7 +68,7 @@ description: >
   </section>
 
   <section class="row">
-    <h2>Core Team Alumni</h2>
+    <h2 id="alumni">Core Team Alumni</h2>
 
     <p>These awesome people have served as core team members in the past. They are listed here to record and honor their contributions.</p>
 
@@ -89,7 +89,7 @@ description: >
 
   <section class="row">
 
-    <h2>Administrators</h2>
+    <h2 id="admins">Administrators</h2>
 
     <p>
       Some people help with administrative duties, for example related to the
@@ -124,7 +124,38 @@ description: >
   </section>
 
   <section class="row">
-    <h2>450+ Contributors</h2>
+
+    <h2 id="moderators">Community Moderators</h2>
+
+    <p>
+      Some experienced members of the community help moderating the community channels.
+      They have the <a href="https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization">Triage role</a> on GitHub which gives them the ability to assign labels, open & close issues/PRs, apply milestones, mark duplicates, assign issues/PRs and request reviews.
+    </p>
+
+    <div class="team-members team-members--moderator">
+      {% for member in site.data.team.moderators %}
+        <div class="team-member">
+          {% img 'authors/{{ member[0] }}.jpg' %}
+          <div class="team-member__inner">
+            <span class="member_name">{{ member[1].name }}</span>
+            <span class="handles">
+              <span class="github_handle"><a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" title="GitHub profile"><i class="extra-icons github"></i> {{ member[1].github_handle | default: member[0] }}</a></span>
+              <span class="forum_handle"><a href="https://forum.crystal-lang.org/u/{{ member[1].forum_handle | default: member[0] }}" title="Crystal Forum profile"><i class="material-icons">forum</i> {{ member[1].forum_handle | default: member[0] }}</a></span>
+            </span>
+            {% if member[1].role %}
+              <span class="member_role">{{ member[1].role }}</span>
+            {% endif %}
+            {% if member[1].affiliation %}
+              <span class="member_affiliation">{{ member[1].affiliation }}</span>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="row">
+    <h2 id="contributors">450+ Contributors</h2>
 
     <p>
       Besides those that are explicitly named, this is a call out to
@@ -137,7 +168,7 @@ description: >
   </section>
 
   <section class="row">
-    <h2>Our sponsors</h2>
+    <h2 id="sponsors">Our sponsors</h2>
     <p>
       All this is only possible through our generous <a href="/sponsors">sponsors</a>
       which help sustaining the project.
@@ -149,4 +180,16 @@ description: >
       Corporate sponsors please reach out to <a href="mailto:crystal@manas.tech">crystal@manas.tech</a>. We're happy to work with you.
     </p>
   </section>
+
+  <section class="row">
+    <h2 id="join_us">Join the team</h2>
+
+    <p>If you want to become a contributors, see our <a href="https://github.com/crystal-lang/crystal/blob/master/CONTRIBUTING.md">Contributing Instructions</a> and <a href="https://github.com/crystal-lang/crystal/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>.</p>
+
+    <p>
+      Community members with a good understanding of the current processes and topics in the Crystal community, can be considered to be become a moderator.
+      Respectable and helpful conduct is obviously required for that. If you think you qualify and want to apply, please don't hesitate to contact the core team at <a href="mailto:crystal@manas.tech">crystal@manas.tech</a>.
+    </p>
+  </section>
+
 </div>
