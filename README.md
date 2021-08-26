@@ -10,6 +10,12 @@ Powered by [Jekyll](https://jekyllrb.com/)
 
 The docker container will launch jekyll with `--incremental` option.
 
+## Development setup (Nix)
+
+- Checkout the repository
+- Run `$ nix-shell`
+- Open a browser in `localhost:4000`
+
 ## Thanks!
 
 As always, thanks to the community who contributes to Crystal and its infrastructure and projects.

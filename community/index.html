@@ -1,6 +1,6 @@
 ---
 title: Community
-description: There are so many ways to get involved in Crystal. Here's a list of our main communication channels.
+description: There are so many ways to get involved in Crystal. Here's a list of our main communication channels and resources.<br/> Check out our <a href="/team">Team page</a> to meet the people.
 ---
 <div class="container">
 
@@ -48,7 +48,7 @@ description: There are so many ways to get involved in Crystal. Here's a list of
 %}
 
 {% include community_row.html
-          title="Chat Room"
+          title="Chat Rooms"
           divId="chat"
           content="The Gitter room is the official chat room for Crystal. You can drop a quick question here to try and get it answered quickly, ask for guidance, or engage on a short discussion on a feature or project you are interested in. Make sure to keep the discussion organised, and consider using the mailing list if the chat drags for too long."
           link_text="crystal-lang/crystal"
@@ -60,10 +60,30 @@ description: There are so many ways to get involved in Crystal. Here's a list of
 
 {% include community_row.html
           title=""
-          content="If you are more of an IRC kind of person, the channel at irc.freenode.net which keeps its logs in <a href=\"http://irclog.crystal-lang.org\">irclog.crystal-lang.org</a>, is bridged to the Gitter room, so anything sent on one channel is forwarded to the other one."
+          content="Our IRC channel at <a href=\"ircs://irc.libera.chat:6697#crystal-lang\">irc.libera.chat:6697#crystal-lang</a> is bridged to the Gitter room, so anything sent on one platform is forwarded to the other one. Logs are available at <a href=\"http://irclog.crystal-lang.org\">irclog.crystal-lang.org</a>."
           link_text="#crystal-lang"
-          url="https://webchat.freenode.net/?channels=%23crystal-lang"
+          url="https://web.libera.chat/#crystal-lang"
           icon="web_asset"
+          continues=true
+%}
+
+{% include community_row.html
+          title=""
+          content="The Discord server, unlike the Gitter room and the IRC channel, is unofficial, but strives not to yield to the official alternatives. There are many channels to discuss any kinds of topics related to the language."
+          link_text="Crystal Programming"
+          url="https://discord.gg/YS7YvQy"
+          icon="discord"
+          custom_icon=true
+          continues=true
+%}
+
+{% include community_row.html
+          title=""
+          content="Small but brave community to help each other with Crystal. Main language is russian but you may ask something in english too."
+          link_text="Crystal - Russian speaking community"
+          url="https://t.me/crystal_ru"
+          icon="telegram"
+          custom_icon=true
 %}
 
 {% include community_row.html

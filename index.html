@@ -1,12 +1,12 @@
 ---
 title: Crystal
-description: A language for humans and computers
+description: Livestreamed on 8 July 2021, 12:30pm – 9:30pm UTC
 custom_body_classes:
 - main
 ---
 <div class="banner center sponsorship no-select">
   <div class="flag">
-    Fund Crystal and help it become production-ready at
+    Fund Crystal and help it keep growing at
     <div class="flag-logos">
       <a href="https://opencollective.com/crystal-lang" target="_blank">
         <img src="{{ 'oc.png' | asset_path }}" class="oc-logo">
@@ -16,11 +16,15 @@ custom_body_classes:
 </div>
 
 <div class="container">
-
   <div class="row center">
     <div class="col s12">
-      <h2 class="latest-release">Latest release <a href="/2020/06/19/crystal-0.35.1-released.html">0.35.1</a></h2>
-      <p>19 June 2020 - <a href="/blog#release_notes" class="gray-link">More release notes</a></p>
+      <p class="main-actions">
+        <a href="/install/" class="btn btn-large btn-flat-white">Install</a>
+        <a href="https://crystal-lang.org/reference/" target="_blank" class="btn btn-large btn-flat-white">Learn</a>
+        <a href="https://play.crystal-lang.org/#/cr" target="_blank" class="btn btn-large btn-flat-white">Try Online</a>
+      </p>
+      <h2 class="latest-release">Latest release <a href="/2021/07/27/1.1.1-released.html">{{ site.latest_release.version }}</a></h2>
+      <p>{{ site.latest_release.date | date: "%d %B %Y" }} - <a href="/blog#release_notes" class="gray-link">More release notes</a></p>
     </div>
   </div>
 
@@ -147,13 +151,33 @@ custom_body_classes:
           {% img sponsors/nikola_motor_company.png %}
           <span class="small">Nikola Motor Company</span>
         </a>
-        <a href='https://fly.io' target='_blank' class="sponsor">
-          {% img sponsors/fly_io_.png %}
-          <span class="small">Fly.io</span>
+        <a href='https://place.technology/' target='_blank' class="sponsor">
+          {% img sponsors/placeos.png %}
+          <span class="small">PlaceOS</span>
         </a>
       </div>
     </div>
   </div>
+
+  <div class="row center">
+    <div class="col s12">
+      <div class="flag">
+        <h3>Some of our CI runs here</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <div class='sponsors-list'>
+        <a href='https://developer.arm.com/solutions/infrastructure/works-on-arm' target='_blank' class="sponsor">
+          {% img sponsors/woa.png %}
+          <span class="small">Works on Arm</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <hr class="fullwidth">
   <div class="row">
     <div class="col s12">

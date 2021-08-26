@@ -1,21 +1,26 @@
 name: The Crystal Programming Language
 description: A compiled language with Ruby like syntax and type inference
 url: https://crystal-lang.org
-logo: /images/crystal-h.png
+logo: /assets/media/crystal_logo.svg
+
+latest_release:
+  version: 1.1.1
+  date: 2021-07-27
+
 defaults:
   -
     scope:
       path: ""
       type: pages
     values:
-      image: /images/icon.png
+      image: /assets/icon.png
       layout: default
   -
     scope:
       path: ""
       type: posts
     values:
-      image: /images/icon.png
+      image: /assets/icon.png
       layout: post
       is_post: true
   -
@@ -23,7 +28,7 @@ defaults:
       path: "install"
       type: pages
     values:
-      image: /images/icon.png
+      image: /assets/icon.png
       layout: install
       permalink: /install/:basename/
 twitter:
@@ -33,13 +38,21 @@ highlighter: rouge
 markdown: kramdown
 exclude:
 - "*.haml"
+- "*.nix"
 - docker-compose.yml
+- docker-compose.*.yml
 - Gemfile
 - Gemfile.lock
 - Makefile
 - Rakefile
+- README.md
 - scripts/*.cr
 - vendor
+
+assets:
+  assets:
+    - media/crystal_logo.svg
+    - icon.png
 
 plugins:
   - jekyll-seo-tag

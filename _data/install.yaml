@@ -1,4 +1,8 @@
 -
+  url: /install/from_asdf
+  caption: from asdf
+  icon: install/linux@2x.png
+-
   url: /install/from_sources
   caption: from sources
   icon: install/sources@2x.png
@@ -40,7 +44,7 @@
   icon: install/arch@2x.png
 -
   url: /install/on_elementary_os
-  caption: Elementary OS
+  caption: elementary OS
   icon: install/elementary@2x.png
 -
   url: /install/on_fedora

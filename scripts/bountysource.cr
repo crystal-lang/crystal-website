@@ -78,72 +78,73 @@ module BountySource
   end
 
   class Supporters
-    JSON.mapping({
-      type:            {type: String, nilable: true},
-      id:              {type: Int64, nilable: true},
-      slug:            {type: String, nilable: true},
-      display_name:    String,
-      image_url_large: String,
-      monthly_amount:  Float64,
-      alltime_amount:  Float64,
-      created_at:      String,
-    })
+    include JSON::Serializable
+
+    property type : String?
+    property id : Int64?
+    property slug : String?
+    property display_name : String
+    property image_url_large : String
+    property monthly_amount : Float64
+    property alltime_amount : Float64
+    property created_at : String
 
     def_equals_and_hash id
   end
 
   class SupportLevel
-    JSON.mapping({
-      id:         Int64,
-      amount:     Float64,
-      status:     String,
-      created_at: {type: Time, converter: Time::Format.new("%FT%T.%LZ")},
-      owner:      Owner,
-      reward:     {type: Reward, nilable: true},
-    })
+    include JSON::Serializable
+
+    property id : Int64
+    property amount : Float64
+    property status : String
+    @[JSON::Field(converter: Time::Format.new("%FT%T.%LZ"))]
+    property created_at : Time
+    property owner : Owner
+    property reward : Reward?
 
     class Owner
-      JSON.mapping({
-        display_name: String,
-        slug:         {type: String, nilable: true},
-        type:         {type: String, nilable: true},
-      })
+      include JSON::Serializable
+
+      property display_name : String
+      property slug : String?
+      property type : String?
     end
 
     class Reward
-      JSON.mapping({
-        id:          Int64,
-        title:       String,
-        description: String,
-        amount:      Float64,
-      })
+      include JSON::Serializable
+
+      property id : Int64
+      property title : String
+      property description : String
+      property amount : Float64
     end
   end
 
   class User
-    JSON.mapping({
-      id:              Int64,
-      slug:            String,
-      display_name:    String,
-      url:             {type: String, nilable: true},
-      github_account:  {type: Account, nilable: true},
-      twitter_account: {type: Account, nilable: true},
-    })
+    include JSON::Serializable
+
+    property id : Int64
+    property slug : String
+    property display_name : String
+    property url : String?
+    property github_account : Account?
+    property twitter_account : Account?
 
     class Account
-      JSON.mapping({
-        display_name: String,
-      })
+      include JSON::Serializable
+
+      property display_name : String
     end
   end
 
   class Team
-    JSON.mapping({
-      id:   Int64,
-      slug: String,
-      name: String,
-      url:  {type: String, nilable: true},
-    })
+    include JSON::Serializable
+
+    property id : Int64
+    property slug : String
+    property name : String
+    property url : String?
   end
 end
 
@@ -165,10 +166,10 @@ module GitHub
     end
 
     class User
-      JSON.mapping({
-        name: {type: String, nilable: true},
-        blog: {type: String, nilable: true},
-      })
+      include JSON::Serializable
+
+      property name : String?
+      property blog : String?
     end
   end
 end
