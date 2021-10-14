@@ -23,7 +23,7 @@ custom_body_classes:
         <a href="https://crystal-lang.org/reference/" target="_blank" class="btn btn-large btn-flat-white">Learn</a>
         <a href="https://play.crystal-lang.org/#/cr" target="_blank" class="btn btn-large btn-flat-white">Try Online</a>
       </p>
-      <h2 class="latest-release">Latest release <a href="/2021/07/27/{{site.latest_release.version}}-released.html">{{ site.latest_release.version }}</a></h2>
+      <h2 class="latest-release">Latest release <a href="/{{site.latest_release.date | date: '%Y/%m/%d'}}/{{site.latest_release.version}}-released.html">{{ site.latest_release.version }}</a></h2>
       <p>{{ site.latest_release.date | date: "%d %B %Y" }} - <a href="/blog#release_notes" class="gray-link">More release notes</a></p>
     </div>
   </div>
