@@ -4,7 +4,13 @@ Sponsors data is grabbed from Bountysource API, OpenCollective API and manual en
 
 1. Manually update `_data/others.json`
 
-2. Update `_data/bountysource.json`. Extract `BS_TOKEN` from a browser ajax request. header: `Authorization: token ....`
+2. Update `_data/bountysource.json`.
+
+  1. With a team member account, go to https://salt.bountysource.com/teams/crystal-lang/admin/updates.
+  2. Open the browser's dev tools on the Network tab to see requests and reload.
+  3. Find an ajax request to https://api.bountysource.com
+  4. Extract `BS_TOKEN` from its header: `Authorization: token ....`
+  5. Update data with:
 
 ```
 $ crystal scripts/bountysource.cr $BS_TOKEN
