@@ -56,7 +56,7 @@ opencollective.members.each do |member|
   logo = member.image
   amount = member.lastTransactionAmount
   all_time = member.totalAmountDonated
-  sponsors.add Sponsor.new(member.name, url, logo, amount, all_time, nil, member.createdAt)
+  sponsors.add Sponsor.new(member.name, url, logo, amount, all_time, nil, member.createdAt, nil)
 end
 
 File.open("#{__DIR__}/../_data/opencollective.json", "w") do |file|
