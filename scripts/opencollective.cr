@@ -48,11 +48,11 @@ sponsors = SponsorsBuilder.new
 
 dateOfGrace = Time.utc - 3.months
 opencollective.members.each do |member|
-  # Let's not consider inactive a member that sponsored in the last 3 months
-  member.isActive ||= member.lastTransactionAt > dateOfGrace
-
   next unless member.role == "BACKER"
-  next unless member.isActive
+
+  # Let's not consider inactive a member that sponsored in the last 3 months
+  next unless member.isActive || member.lastTransactionAt > dateOfGrace
+
   # organizations that provides gift cards to backers seems
   # to appear with lastTransactionAmount == 0
   # but with totalAmountDonated > 0
