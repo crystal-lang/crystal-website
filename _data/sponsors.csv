@@ -8,12 +8,14 @@ sponsors/roman_pushkin.jpg,Roman Pushkin,https://github.com/ro31337,$200,$300,"J
 sponsors/blitline.png,Blitline,https://www.blitline.com,$75,$2625,"Dec 12, 2018",75
 sponsors/vulk_cooperative.png,Vulk Cooperative,https://www.vulk.coop,$75,$1425,"Sep 10, 2020",75
 sponsors/ryan_maki.png,Ryan Maki,,$75,$825,"Dec 2, 2020",75
+sponsors/atnos.png,ATNOS,https://atnos.com,$75,$675,"Dec 11, 2020",75
 ,lowkey,,$75,$240,"Jun 12, 2021",75
 sponsors/tom_metge.jpg,Tom Metge,,$100,$100,"Jan 15, 2019",75
 ,James Hill,,$100,$100,"Sep 8, 2020",75
 ,Dale C Earl,,$100,$100,"Nov 23, 2020",75
 ,Eric,,$75,$75,"Sep 26, 2019",75
 sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
+sponsors/slotoking.png,SlotoKing,https://slotoking.org.ua/,$75,$75,"Aug 18, 2021",75
 ,Thomas Peter Berntsen,https://twitter.com/tpberntsen,$25,$4325,"Sep 20, 2015",25
 ,isaacsloan,https://isaacsloan.com,$36,$2434,"Mar 24, 2016",25
 ,Frank O'Hara,,$25,$1850,"Aug 16, 2015",25
@@ -25,8 +27,6 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,Kagi,https://kagi.com,$25,$475,"Apr 8, 2020",25
 ,Max Fierke,https://www.maxfierke.com,$25,$325,"Jul 21, 2019",25
 ,Ricardo Tomasi,https://ricardo.cc,$25,$325,"Oct 9, 2020",25
-,Incognito,,$25,$265,"Jan 23, 2021",25
-,Incognito,,$25,$265,"Jul 27, 2021",25
 ,Writers Per Hour,https://writersperhour.com,$25,$200,"Mar 6, 2021",25
 ,Svetlin Simonyan,https://github.com/svetlins,$25,$175,"Mar 25, 2021",25
 ,Casinoonlineaams.com,https://www.casinoonlineaams.com,$25,$125,"May 26, 2021",25
@@ -63,6 +63,7 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,Werner Stein,,$10,$90,"Jan 24, 2021",10
 ,Fabien LEFEBVRE,https://www.d1ceward.com,$10,$90,"Jan 25, 2021",10
 ,Lampros Chaidas,,$10,$70,"Mar 29, 2021",10
+,Bilal Budhani,https://bilalbudhani.com,$10,$50,"Apr 3, 2021",10
 ,NoAccountCasinos,https://noaccountcasinos.io,$10,$40,"Jul 1, 2021",10
 ,Liberatys,,$10,$40,"Jul 10, 2021",10
 ,Daniel Sokil,https://twitter.com/s0kil,$20,$20,"Feb 23, 2019",10
@@ -124,6 +125,7 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,Oleksii Neishchenko,,$5,$85,"Jun 9, 2020",5
 ,Nobuaki Tanaka,https://twitter.com/tomerun,$5,$85,"Jun 10, 2020",5
 ,Matt Berry,https://mattrb.com,$5,$75,"Aug 7, 2020",5
+,vinit joshi,,$5,$70,"Jul 14, 2020",5
 ,vinit joshi,,$5,$70,"Feb 3, 2021",5
 ,Edward Loveall,,$5,$65,"Sep 29, 2020",5
 ,anapsix,https://blog.random.io,$5,$55,"Dec 2, 2020",5
@@ -135,6 +137,8 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,Guillermo Siliceo Trueba,,$5,$35,"Mar 26, 2021",5
 ,salt rock lamp,,$5,$30,"Apr 11, 2021",5
 ,Mikihiro Hamaguchi,https://github.com/machida4,$5,$30,"Apr 26, 2021",5
+,Askhat Saiapov,,$5,$25,"Mar 23, 2021",5
+,萌太,https://twitter.com/________l____l_,$5,$25,"Mar 29, 2021",5
 ,Netin nopeustesti,https://netinnopeustesti.com/,$5,$25,"May 27, 2021",5
 ,Windesol Sähkön Kilpailutus,https://windesol.fi,$5,$25,"Jun 8, 2021",5
 ,Provided.io,https://provided.io,$5,$25,"Jun 15, 2021",5
@@ -142,19 +146,19 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,Renkaatsopivasti,https://renkaatsopivasti.fi,$5,$20,"Jul 2, 2021",5
 ,Daiki Sato,https://twitter.com/doew_,$5,$20,"Jul 3, 2021",5
 ,Agloks,,$5,$20,"Jul 8, 2021",5
-,Incognito,,$5,$20,"Jul 14, 2021",5
+,Ismael Abreu,https://ismaelga.com,$5,$20,"Jul 23, 2021",5
 ,Bromine0x23,https://twitter.com/bromine0x23,$5,$17,"Feb 27, 2021",5
-,Ismael Abreu,https://ismaelga.com,$5,$15,"Jul 23, 2021",5
 ,Billigstbredbaand.dk,https://billigstbredbaand.dk,$5,$15,"Jul 26, 2021",5
 ,Yann Carlen,https://yanncarlen.com,$5,$15,"Aug 8, 2021",5
+,Taletidskortnu,https://taletidskort.nu,$5,$15,"Aug 25, 2021",5
 ,Dedicated Stars,https://www.dedicatedstars.com,$5,$10,"Jul 5, 2021",5
-,Taletidskortnu,https://taletidskort.nu,$5,$10,"Aug 25, 2021",5
 ,xstats.gg,https://xstats.gg,$5,$10,"Sep 14, 2021",5
 ,Takuya Matsunaga,https://github.com/takanotume24,$5,$5,"Oct 24, 2019",5
 ,Aanand Natarajan,,$5,$5,"Jun 12, 2020",5
 ,Alberto Corbi,,$5,$5,"Dec 14, 2020",5
 ,Adam Zacharias,,$5,$5,"Feb 22, 2021",5
 ,Haiting Zhang,https://twitter.com/slowy_oier,$5,$5,"Mar 8, 2021",5
+,Casinos Hunter Bitcoin,https://casinoshunter.com/online-casinos/bitcoin/,$5,$5,"Aug 20, 2021",5
 ,Elvis Begluk,,$5,$5,"Aug 27, 2021",5
 ,eason.ye,https://github.com/yelanxin,$5,$5,"Sep 17, 2021",5
 ,HelppoHinta.fi,https://helppohinta.fi/,$5,$5,"Oct 1, 2021",5
