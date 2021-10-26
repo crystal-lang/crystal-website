@@ -2,10 +2,10 @@ require "csv"
 require "log"
 require "./sponsors"
 
-LEVELS = [5000, 2000, 1000, 500, 250, 150, 75, 25, 10, 5, 1]
+LEVELS = [5000, 2000, 1000, 500, 250, 150, 75, 25, 10, 5, 1, 0]
 
 def level(sponsor : Sponsor)
-  LEVELS.find { |amount| amount <= sponsor.this_month.to_i }.not_nil!
+  LEVELS.find { |amount| amount <= sponsor.last_payment.to_i }.not_nil!
 end
 
 all_sponsors = Array(Sponsor).new
@@ -26,7 +26,7 @@ overrides.each do |sponsor|
     to_override.name = sponsor.name # name is mandatory
     to_override.url = sponsor.url if sponsor.url
     to_override.logo = sponsor.logo if sponsor.logo
-    to_override.this_month = sponsor.this_month if sponsor.this_month > 0
+    to_override.last_payment = sponsor.last_payment if sponsor.last_payment > 0
     to_override.all_time += sponsor.all_time if sponsor.all_time > 0
     to_override.currency = sponsor.currency if sponsor.currency
     to_override.since = sponsor.since if sponsor.since < to_override.since
@@ -40,7 +40,7 @@ all_sponsors.sort_by! { |s| {-level(s), -s.all_time, s.since, s.name} }
 
 File.open("#{__DIR__}/../_data/sponsors.csv", "w") do |file|
   CSV.build(file) do |csv|
-    csv.row "logo", "name", "url", "this_month", "all_time", "since", "level"
+    csv.row "logo", "name", "url", "last_payment", "all_time", "since", "level"
 
     all_sponsors.each do |sponsor|
       currency = sponsor.currency || "$"
@@ -48,7 +48,7 @@ File.open("#{__DIR__}/../_data/sponsors.csv", "w") do |file|
       csv.row sponsor.logo,
         sponsor.name,
         sponsor.url,
-        "#{currency}#{sponsor.this_month.to_i}",
+        "#{currency}#{sponsor.last_payment.to_i}",
         "#{currency}#{sponsor.all_time.to_i}",
         sponsor.since.to_s("%b %-d, %Y"),
         level(sponsor)
