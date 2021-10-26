@@ -250,7 +250,7 @@ support_levels.each do |support_level|
   all_time = supporter.alltime_amount
   since = Time.parse(supporter.created_at[0..10], "%F", location: Time::Location::UTC)
 
-  sponsors.add Sponsor.new(name, url, logo, amount, all_time, nil, since, nil)
+  sponsors.add Sponsor.new(name, url, logo, amount, all_time, nil, since, nil, nil)
 end
 
 File.open("#{__DIR__}/../_data/bountysource.json", "w") do |file|
