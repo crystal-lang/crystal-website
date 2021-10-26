@@ -202,7 +202,7 @@ while (page = bountysource.supporters(page_index)) &&
 end
 
 support_levels = bountysource.support_levels
-support_levels.select! { |s| s.status == "active" && s.owner.display_name != "Anonymous" }
+support_levels.select! { |s| s.status == "active" && s.owner.display_name.downcase != "anonymous" }
 support_levels.sort_by! &.amount
 
 sponsors = SponsorsBuilder.new
