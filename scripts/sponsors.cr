@@ -26,8 +26,16 @@ class SponsorsBuilder
   end
 
   def add(sponsor : Sponsor)
-    if @sponsors.any? { |s| s.name == sponsor.name }
-      puts "WARNING: Duplicate sponsor with name #{sponsor.name}."
+    if index = @sponsors.index { |s| s.name == sponsor.name }
+      prev_sponsor = @sponsors[index]
+      # We merge them if any of the two doesn't have url, or the url is the same
+      if prev_sponsor.url.nil? || sponsor.url.nil? || prev_sponsor.url == sponsor.url
+        sponsor.all_time += prev_sponsor.all_time
+        @sponsors.delete_at index
+        puts "WARNING: Merging duplicate sponsor with name #{sponsor.name}."
+      else
+        puts "WARNING: Duplicate sponsor with name #{sponsor.name}."
+      end
     end
 
     sponsor.logo = download_logo(sponsor)
