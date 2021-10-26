@@ -2,11 +2,15 @@
 title: Sponsors
 description: These are the companies and individuals contributing a monthly amount to help sustain Crystal's development.
 ---
+<script src='/javascripts/tablesort.js'></script>
+<script src='/javascripts/sorts/tablesort.number.js'></script>
+<script src='/javascripts/sorts/tablesort.date.js'></script>
+
 <div class="container">
 
   <div class="row">
     <div class="col s12 m8">
-      <table class="bordered">
+      <table class="bordered" id="sponsors-tbl">
         <thead>
           <th></th>
           <th>Supporter</th>
@@ -70,3 +74,7 @@ description: These are the companies and individuals contributing a monthly amou
   </div>
 
 </div>
+
+<script>
+  new Tablesort(document.getElementById('sponsors-tbl'));
+</script>
