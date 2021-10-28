@@ -14,9 +14,9 @@ description: These are the companies and individuals that help sustain Crystal's
         <thead>
           <th></th>
           <th>Supporter</th>
-          <th>This month</th>
-          <th>All time</th>
-          <th>Since</th>
+          <th data-sort-method='number'>This month</th>
+          <th data-sort-method='number'>All time</th>
+          <th data-sort-method='date'>Since</th>
         </thead>
         <tbody>
           {% for sp in site.data.sponsors %}
