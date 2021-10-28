@@ -14,9 +14,9 @@ description: These are the companies and individuals that help sustain Crystal's
         <thead>
           <th></th>
           <th>Supporter</th>
-          <th data-sort-method='number'>This month</th>
-          <th data-sort-method='number'>All time</th>
-          <th data-sort-method='date'>Since</th>
+          <th class='currency' data-sort-method='number'>This month</th>
+          <th class='currency' data-sort-method='number'>All time</th>
+          <th class='since' data-sort-method='date'>Since</th>
         </thead>
         <tbody>
           {% for sp in site.data.sponsors %}
@@ -46,10 +46,10 @@ description: These are the companies and individuals that help sustain Crystal's
                   {{sp.name}}
                 {% endif %}
               </td>
-              <td class="this_month">
+              <td class="currency">
                 {{sp.last_payment}}
               </td>
-              <td class="all_time">
+              <td class="currency">
                 {{sp.all_time}}
               </td>
               <td class="since">

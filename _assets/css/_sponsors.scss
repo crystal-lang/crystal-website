@@ -3,6 +3,13 @@ table {
   th {
     color: $black;
   }
+  .currency {
+    text-align: right;
+  }
+  .since {
+    padding-left: 25px;
+  }
+
   .sponsor {
     .logo {
       img {
