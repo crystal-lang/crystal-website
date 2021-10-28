@@ -3,7 +3,7 @@
     "name": "Nikola Motor Company",
     "url": "https://nikolamotor.com/",
     "logo": "sponsors/nikola_motor_company.png",
-    "this_month": 5000,
+    "last_payment": 5000,
     "all_time": 85000,
     "since": "Mar 1, 2020"
   },
@@ -11,7 +11,7 @@
     "name": "84 codes",
     "url": "https://www.84codes.com/",
     "logo": "sponsors/84.png",
-    "this_month": 5000,
+    "last_payment": 5000,
     "all_time": 141000,
     "currency": "€",
     "since": "Apr 1, 2018"
@@ -19,7 +19,7 @@
   {
     "overrides": "Bookyourdata.com",
     "name": "Bookyourdata.com",
-    "this_month": 0,
+    "last_payment": 0,
     "all_time": 425,
     "since": "Apr 14, 2019"
   }

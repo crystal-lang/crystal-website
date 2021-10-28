@@ -57,7 +57,9 @@ opencollective.members.each do |member|
   # to appear with lastTransactionAmount == 0
   # but with totalAmountDonated > 0
   next unless member.lastTransactionAmount > 0
-  next if member.name.downcase == "incognito"
+
+  downcase_name = member.name.downcase
+  next if downcase_name == "incognito" || downcase_name == "guest"
 
   url = member.website || member.twitter || member.github
   logo = member.image
