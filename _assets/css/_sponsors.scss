@@ -1,8 +1,15 @@
-table {
+#sponsors-tbl {
   border-color: $light-gray;
   th {
     color: $black;
   }
+  .currency {
+    text-align: right;
+  }
+  .since {
+    padding-left: 25px;
+  }
+
   .sponsor {
     .logo {
       img {
@@ -46,6 +53,47 @@ table {
       bottom: -3px;
       right: -4px;
     }
+  }
+
+  th[role=columnheader]:not(.no-sort) {
+    cursor: pointer;
+  }
+
+  th[role=columnheader]:not(.no-sort) > span {
+    display: block;
+    padding-right: 11px;
+    position: relative;
+  }
+
+  th[role=columnheader]:not(.no-sort) > span:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    border-width: 0 4px 4px;
+    border-style: solid;
+    border-color: #404040 transparent;
+    visibility: hidden;
+    opacity: 0;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  th[aria-sort=ascending]:not(.no-sort) > span:after {
+    border-bottom: none;
+    border-width: 4px 4px 0;
+  }
+
+  th[aria-sort]:not(.no-sort) > span:after {
+    visibility: visible;
+    opacity: 0.4;
+  }
+
+  th[role=columnheader]:not(.no-sort):hover > span:after {
+    visibility: visible;
+    opacity: 1;
   }
 }
 

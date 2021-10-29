@@ -2,17 +2,21 @@
 title: Sponsors
 description: These are the companies and individuals that help sustain Crystal's development.
 ---
+<script src='/javascripts/tablesort-5.2.1/tablesort.js'></script>
+<script src='/javascripts/tablesort-5.2.1/sorts/tablesort.number.js'></script>
+<script src='/javascripts/tablesort-5.2.1/sorts/tablesort.date.js'></script>
+
 <div class="container">
 
   <div class="row">
     <div class="col s12 m8">
-      <table class="bordered">
+      <table class="bordered" id="sponsors-tbl">
         <thead>
           <th></th>
-          <th>Supporter</th>
-          <th>This month</th>
-          <th>All time</th>
-          <th>Since</th>
+          <th><span>Supporter</span></th>
+          <th class='currency' data-sort-method='number' aria-sort="descending"><span>This month</span></th>
+          <th class='currency' data-sort-method='number'><span>All time</span></th>
+          <th class='since' data-sort-method='date'><span>Since</span></th>
         </thead>
         <tbody>
           {% for sp in site.data.sponsors %}
@@ -42,10 +46,10 @@ description: These are the companies and individuals that help sustain Crystal's
                   {{sp.name}}
                 {% endif %}
               </td>
-              <td class="this_month">
+              <td class="currency">
                 {{sp.last_payment}}
               </td>
-              <td class="all_time">
+              <td class="currency">
                 {{sp.all_time}}
               </td>
               <td class="since">
@@ -70,3 +74,7 @@ description: These are the companies and individuals that help sustain Crystal's
   </div>
 
 </div>
+
+<script>
+  new Tablesort(document.getElementById('sponsors-tbl'));
+</script>
