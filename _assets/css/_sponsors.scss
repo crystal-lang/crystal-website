@@ -76,11 +76,14 @@
     user-select: none;
     width: 1em;
     height: 1em;
+    margin-left: 4px;
   }
 
   th.currency, th.since {
     &:not(.no-sort) > span:after {
       order: -1;
+      margin-left: 0;
+      margin-right: 4px;
     }
   }
 
