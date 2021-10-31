@@ -3,7 +3,7 @@
   th {
     color: $black;
   }
-  .currency {
+  .currency, .since {
     text-align: right;
   }
   .since {
@@ -78,8 +78,10 @@
     height: 1em;
   }
 
-  th.currency:not(.no-sort) > span:after {
-    order: -1;
+  th.currency, th.since {
+    &:not(.no-sort) > span:after {
+      order: -1;
+    }
   }
 
   th[aria-sort=ascending]:not(.no-sort) > span:after {
