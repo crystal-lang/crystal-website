@@ -28,7 +28,7 @@ You can find available options on the [installation page at OBS](https://softwar
 
 <div class="code_section">
 {% highlight bash %}
-echo "deb http://download.opensuse.org/repositories/devel:/languages:/crystal/{REPOSITORY}/ /" | tee /etc/apt/sources.list.d/crystal.list
+echo "deb http://download.opensuse.org/repositories/devel:/languages:/crystal/{REPOSITORY}/ /" | sudo tee /etc/apt/sources.list.d/crystal.list
 
 # Add signing key
 curl -fsSL https://download.opensuse.org/repositories/devel:languages:crystal/{REPOSITORY}/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/crystal.gpg > /dev/null
