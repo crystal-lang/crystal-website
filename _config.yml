@@ -5,7 +5,7 @@ logo: /assets/media/crystal_logo.svg
 
 latest_release:
   version: 1.2.2
-  date: 2021-11-09
+  date: 2021-11-10
 
 defaults:
   -
