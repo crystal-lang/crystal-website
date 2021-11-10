@@ -23,8 +23,9 @@ custom_body_classes:
         <a href="https://crystal-lang.org/reference/" target="_blank" class="btn btn-large btn-flat-white">Learn</a>
         <a href="https://play.crystal-lang.org/#/cr" target="_blank" class="btn btn-large btn-flat-white">Try Online</a>
       </p>
-      <h2 class="latest-release">Latest release <a href="/{{site.latest_release.date | date: '%Y/%m/%d'}}/{{site.latest_release.version}}-released.html">{{ site.latest_release.version }}</a></h2>
-      <p>{{ site.latest_release.date | date: "%d %B %Y" }} - <a href="/blog#release_notes" class="gray-link">More release notes</a></p>
+      {% assign latest_release = site.releases | reverse | first %}
+      <h2 class="latest-release">Latest release <a href="{{ latest_release.url }}">{{ latest_release.version }}</a></h2>
+      <p>{{ latest_release.date | date: "%d %B %Y" }} - <a href="/blog#release_notes" class="gray-link">More release notes</a></p>
     </div>
   </div>
 
@@ -182,7 +183,7 @@ custom_body_classes:
   <div class="row">
     <div class="col s12">
       <h2>Articles from our blog</h2>
-      {% assign articles = site.posts | where_exp: "item","item.release_notes != true" %}
+      {% assign articles = site.posts %}
       {% for post in articles limit: 3 %}
       {% include blog_row.html post=post %}
       {% endfor %}
@@ -195,7 +196,7 @@ custom_body_classes:
       <h2>Release Notes</h2>
       <table class="bordered no-underline">
         <tbody>
-          {% assign releases = site.posts | where: "release_notes",true %}
+          {% assign releases = site.releases | reverse %}
           {% for post in releases limit: 10 %}
           <tr>
             <td></td>

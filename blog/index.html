@@ -6,7 +6,7 @@ description: Here you can find detailed announcements for new releases, some int
   <div class="row">
     <div class="col s12">
       <h2>Articles</h2>
-      {% assign articles = site.posts | where_exp: "item","item.release_notes != true" %}
+      {% assign articles = site.posts %}
       <div class='post-list'>
         {% for post in articles %}
         {% include blog_row.html post=post %}
@@ -21,7 +21,7 @@ description: Here you can find detailed announcements for new releases, some int
       <h2 name="release_notes" id="release_notes">Release Notes</h2>
       <table class="bordered no-underline">
         <tbody class="notes-list">
-          {% assign releases = site.posts | where: "release_notes",true %}
+          {% assign releases = site.releases | reverse %}
           {% for post in releases %}
             <tr>
               <td></td>
