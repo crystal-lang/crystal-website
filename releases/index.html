@@ -1,0 +1,57 @@
+---
+title: Releases
+---
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <table class="bordered no-underline">
+        <thead>
+          <tr>
+            <th>Version</th>
+            <th>Status</th>
+            <th>Release Date</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="releases-list">
+          {% assign releases = site.releases | reverse %}
+          {% assign latest_release = true %}
+          {% for release in releases %}
+            <tr>
+              <th><a href="{{ release.url }}">
+                {{ release.version }}
+              </a></th>
+              <td>
+                {% if latest_release %}
+                  {{ release.status | default: "latest" }}
+                  {% assign latest_release = false %}
+                {% else %}
+                {{ release.status | default: "obsolete" }}
+                {% endif %}
+              </td>
+              <td>{{ release.date | date_to_string }}</td>
+              <td class="releases__links">
+                <ul class="inline-list">
+                <li><a href="{{ release.url }}">
+                  Release Notes
+                </a></li>
+                {% assign release_year = release.date | date: "%Y-%m" %}
+                {% if release_year >= "2016-06" %}
+                  <li><a href="https://crystal-lang.org/api/{{ release.version }}/">
+                    API docs
+                  </a></li>
+                {% endif %}
+                <li><a href="https://github.com/crystal-lang/crystal/blob/{{ release.version }}/CHANGELOG.md#{{ release.version | replace: ".", "" }}-{{ release.date | date: "%F" }}">
+                  Changelog
+                </a></li>
+                <li><a href="https://github.com/crystal-lang/crystal/releases/tag/{{ release.version }}">
+                  Github Release
+                </a></li>
+                </ul>
+              </td>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
