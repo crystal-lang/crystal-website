@@ -3,6 +3,8 @@ description: A compiled language with Ruby like syntax and type inference
 url: https://crystal-lang.org
 logo: /assets/media/crystal_logo.svg
 
+future: true
+
 collections:
   releases:
     output: true
