@@ -3,9 +3,9 @@ description: A compiled language with Ruby like syntax and type inference
 url: https://crystal-lang.org
 logo: /assets/media/crystal_logo.svg
 
-latest_release:
-  version: 1.2.2
-  date: 2021-11-10
+collections:
+  releases:
+    output: true
 
 defaults:
   -
@@ -31,6 +31,14 @@ defaults:
       image: /assets/icon.png
       layout: install
       permalink: /install/:basename/
+  - scope:
+      path: ""
+      type: releases
+    values:
+      layout: post
+      permalink: /:year/:month/:day/:title.html
+      image: /assets/icon.png
+
 twitter:
   username: CrystalLanguage
 

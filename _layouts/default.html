@@ -20,7 +20,7 @@
     <div class="wrapper {{page.custom_body_classes | join: ' '}}">
       {% include nav.html %}
       {% unless page.layout == "install" %}
-        {% if page.is_post %}
+        {% if page.is_post or page.collection == 'releases' %}
           {% include post_header.html %}
         {% else %}
           {% include header.html %}
