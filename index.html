@@ -1,6 +1,6 @@
 ---
 title: Crystal
-description: Livestreamed on 8 July 2021
+description: A language for humans and computers
 custom_body_classes:
 - main
 ---
@@ -18,11 +18,6 @@ custom_body_classes:
 <div class="container">
   <div class="row center">
     <div class="col s12">
-      <p class="main-actions">
-        <a href="/install/" class="btn btn-large btn-flat-white">Install</a>
-        <a href="https://crystal-lang.org/reference/" target="_blank" class="btn btn-large btn-flat-white">Learn</a>
-        <a href="https://play.crystal-lang.org/#/cr" target="_blank" class="btn btn-large btn-flat-white">Try Online</a>
-      </p>
       {% assign latest_release = site.releases | reverse | first %}
       <h2 class="latest-release">Latest release <a href="{{ latest_release.url }}">{{ latest_release.version }}</a></h2>
       <p>{{ latest_release.date | date: "%d %B %Y" }} - <a href="/blog#release_notes" class="gray-link">More release notes</a></p>
