@@ -1,1302 +1,864 @@
 [
   {
+    "name": "Jim Abraham",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "Dec 9, 2021"
+  },
+  {
+    "name": "Kanda Software",
+    "url": "https://www.kandasoft.com/",
+    "this_month": 10.0,
+    "all_time": 10.0,
+    "since": "Nov 29, 2021"
+  },
+  {
+    "name": "Screen Recorder",
+    "url": "https://www.screencapture.com/",
+    "logo": "sponsors/screen_recorder.png",
+    "this_month": 250.0,
+    "all_time": 250.0,
+    "since": "Nov 19, 2021"
+  },
+  {
+    "name": "Screen recorder",
+    "url": "https://www.movavi.com/screen-recorder/",
+    "logo": "sponsors/screen_recorder.png",
+    "this_month": 250.0,
+    "all_time": 250.0,
+    "since": "Nov 19, 2021"
+  },
+  {
+    "name": "Michael Wagner",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Nov 11, 2021"
+  },
+  {
+    "name": "Messaged",
+    "url": "https://messaged.com",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Nov 10, 2021"
+  },
+  {
+    "name": "Blackjack77russia.com",
+    "url": "https://blackjack77russia.com",
+    "this_month": 5.0,
+    "all_time": 5.0,
+    "since": "Nov 1, 2021"
+  },
+  {
+    "name": "Tommi Aaltonen",
+    "url": "https://tommiaaltonen.fi/",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Oct 28, 2021"
+  },
+  {
     "name": "maltidsbarometeret",
     "url": "https://maltidsbarometeret.dk",
-    "last_payment": 5.0,
-    "all_time": 5.0,
-    "since": "Oct 19, 2021",
-    "last_payment_at": "Oct 19, 2021"
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Oct 19, 2021"
   },
   {
     "name": "Igor Polyakov",
-    "last_payment": 5.0,
+    "this_month": 5.0,
     "all_time": 5.0,
-    "since": "Oct 16, 2021",
-    "last_payment_at": "Oct 16, 2021"
+    "since": "Oct 16, 2021"
   },
   {
     "name": "Adam Stephens",
-    "last_payment": 5.0,
-    "all_time": 5.0,
-    "since": "Oct 14, 2021",
-    "last_payment_at": "Oct 14, 2021"
+    "this_month": 5.0,
+    "all_time": 15.0,
+    "since": "Oct 14, 2021"
   },
   {
     "name": "Mauricio Gomes",
-    "last_payment": 25.0,
-    "all_time": 25.0,
-    "since": "Oct 8, 2021",
-    "last_payment_at": "Oct 8, 2021"
+    "this_month": 25.0,
+    "all_time": 75.0,
+    "since": "Oct 8, 2021"
   },
   {
-    "name": "SEO25",
+    "name": "Real Targeted Traffic",
     "url": "https://www.seo25.com/",
-    "last_payment": 10.0,
-    "all_time": 10.0,
-    "since": "Oct 7, 2021",
-    "last_payment_at": "Oct 7, 2021"
+    "this_month": 10.0,
+    "all_time": 30.0,
+    "since": "Oct 7, 2021"
   },
   {
     "name": "Targeted Web Traffic",
     "url": "https://www.targetedwebtraffic.com",
-    "last_payment": 10.0,
-    "all_time": 10.0,
-    "since": "Oct 7, 2021",
-    "last_payment_at": "Oct 7, 2021"
+    "this_month": 10.0,
+    "all_time": 30.0,
+    "since": "Oct 7, 2021"
   },
   {
     "name": "Mia Bennett",
     "url": "https://chillfox.com/",
-    "last_payment": 5.0,
-    "all_time": 5.0,
-    "since": "Oct 1, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 5.0,
+    "all_time": 15.0,
+    "since": "Oct 1, 2021"
   },
   {
     "name": "HelppoHinta.fi",
     "url": "https://helppohinta.fi/",
-    "last_payment": 5.0,
-    "all_time": 5.0,
-    "since": "Oct 1, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 5.0,
+    "all_time": 15.0,
+    "since": "Oct 1, 2021"
   },
   {
     "name": "Alexander Adam",
     "url": "https://github.com/alexanderadam/alexanderadam#-about-me",
-    "last_payment": 10.0,
-    "all_time": 10.0,
-    "since": "Oct 1, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 10.0,
+    "all_time": 30.0,
+    "since": "Oct 1, 2021"
   },
   {
     "name": "eason.ye",
     "url": "https://github.com/yelanxin",
-    "last_payment": 5.0,
-    "all_time": 5.0,
-    "since": "Sep 17, 2021",
-    "last_payment_at": "Sep 17, 2021"
+    "this_month": 5.0,
+    "all_time": 15.0,
+    "since": "Sep 17, 2021"
   },
   {
     "name": "xstats.gg",
     "url": "https://xstats.gg",
-    "last_payment": 5.0,
-    "all_time": 10.0,
-    "since": "Sep 14, 2021",
-    "last_payment_at": "Oct 2, 2021"
+    "this_month": 5.0,
+    "all_time": 20.0,
+    "since": "Sep 14, 2021"
   },
   {
     "name": "CHUNG TSAI",
-    "last_payment": 25.0,
-    "all_time": 50.0,
-    "since": "Sep 3, 2021",
-    "last_payment_at": "Oct 2, 2021"
+    "this_month": 25.0,
+    "all_time": 100.0,
+    "since": "Sep 3, 2021"
   },
   {
     "name": "Elvis Begluk",
-    "last_payment": 5.0,
+    "this_month": 5.0,
     "all_time": 5.0,
-    "since": "Aug 27, 2021",
-    "last_payment_at": "Aug 27, 2021"
+    "since": "Aug 27, 2021"
   },
   {
     "name": "Taletidskortnu",
     "url": "https://taletidskort.nu",
-    "last_payment": 5.0,
-    "all_time": 15.0,
-    "since": "Aug 25, 2021",
-    "last_payment_at": "Oct 25, 2021"
+    "this_month": 5.0,
+    "all_time": 20.0,
+    "since": "Aug 25, 2021"
   },
   {
     "name": "Dmitri Goutnik",
     "url": "https://github.com/dmgk",
-    "last_payment": 10.0,
-    "all_time": 10.0,
-    "since": "Aug 24, 2021",
-    "last_payment_at": "Aug 24, 2021"
-  },
-  {
-    "name": "Casinos Hunter Bitcoin",
-    "url": "https://casinoshunter.com/online-casinos/bitcoin/",
-    "last_payment": 5.0,
-    "all_time": 5.0,
-    "since": "Aug 20, 2021",
-    "last_payment_at": "Aug 20, 2021"
-  },
-  {
-    "name": "SlotoKing",
-    "url": "https://slotoking.org.ua/",
-    "logo": "sponsors/slotoking.png",
-    "last_payment": 75.0,
-    "all_time": 75.0,
-    "since": "Aug 18, 2021",
-    "last_payment_at": "Aug 18, 2021"
-  },
-  {
-    "name": "sol.vin",
-    "url": "https://sol.vin",
-    "last_payment": 25.0,
-    "all_time": 50.0,
-    "since": "Aug 12, 2021",
-    "last_payment_at": "Sep 2, 2021"
+    "this_month": 25.0,
+    "all_time": 35.0,
+    "since": "Aug 24, 2021"
   },
   {
     "name": "Bookyourdata.com",
     "url": "https://www.bookyourdata.com",
-    "last_payment": 10.0,
-    "all_time": 30.0,
-    "since": "Aug 10, 2021",
-    "last_payment_at": "Oct 2, 2021"
+    "this_month": 10.0,
+    "all_time": 50.0,
+    "since": "Aug 10, 2021"
   },
   {
     "name": "Yann Carlen",
     "url": "https://yanncarlen.com",
-    "last_payment": 5.0,
-    "all_time": 20.0,
-    "since": "Aug 8, 2021",
-    "last_payment_at": "Oct 2, 2021"
+    "this_month": 5.0,
+    "all_time": 25.0,
+    "since": "Aug 8, 2021"
   },
   {
     "name": "Billigstbredbaand.dk",
     "url": "https://billigstbredbaand.dk",
-    "last_payment": 5.0,
-    "all_time": 15.0,
-    "since": "Jul 26, 2021",
-    "last_payment_at": "Sep 30, 2021"
+    "this_month": 5.0,
+    "all_time": 25.0,
+    "since": "Jul 26, 2021"
   },
   {
     "name": "PlaceOS",
     "url": "https://place.technology/",
     "logo": "sponsors/placeos.png",
-    "last_payment": 250.0,
-    "all_time": 750.0,
-    "since": "Jul 26, 2021",
-    "last_payment_at": "Oct 2, 2021"
+    "this_month": 250.0,
+    "all_time": 1250.0,
+    "since": "Jul 26, 2021"
   },
   {
     "name": "Ismael Abreu",
     "url": "https://ismaelga.com",
-    "last_payment": 5.0,
-    "all_time": 20.0,
-    "since": "Jul 23, 2021",
-    "last_payment_at": "Oct 23, 2021"
+    "this_month": 5.0,
+    "all_time": 25.0,
+    "since": "Jul 23, 2021"
   },
   {
     "name": "Simon Eskildsen",
-    "last_payment": 25.0,
-    "all_time": 75.0,
-    "since": "Jul 21, 2021",
-    "last_payment_at": "Oct 2, 2021"
-  },
-  {
-    "name": "Dedicated Stars",
-    "last_payment": 0.0,
-    "all_time": 20.0,
-    "since": "Jul 19, 2021",
-    "last_payment_at": "Jul 5, 2021"
+    "this_month": 25.0,
+    "all_time": 125.0,
+    "since": "Jul 21, 2021"
   },
   {
     "name": "Liberatys",
-    "last_payment": 10.0,
+    "this_month": 10.0,
     "all_time": 40.0,
-    "since": "Jul 10, 2021",
-    "last_payment_at": "Oct 2, 2021"
+    "since": "Jul 10, 2021"
   },
   {
     "name": "Joseph Method",
-    "last_payment": 5.0,
-    "all_time": 25.0,
-    "since": "Jul 9, 2021",
-    "last_payment_at": "Oct 9, 2021"
+    "this_month": 5.0,
+    "all_time": 35.0,
+    "since": "Jul 9, 2021"
   },
   {
     "name": "Agloks",
-    "last_payment": 5.0,
-    "all_time": 20.0,
-    "since": "Jul 8, 2021",
-    "last_payment_at": "Oct 2, 2021"
+    "this_month": 5.0,
+    "all_time": 30.0,
+    "since": "Jul 8, 2021"
+  },
+  {
+    "name": "Dedicated Stars",
+    "url": "https://www.dedicatedstars.com",
+    "this_month": 5.0,
+    "all_time": 10.0,
+    "since": "Jul 5, 2021"
   },
   {
     "name": "Daiki Sato",
     "url": "https://twitter.com/doew_",
-    "last_payment": 5.0,
-    "all_time": 20.0,
-    "since": "Jul 3, 2021",
-    "last_payment_at": "Oct 2, 2021"
+    "this_month": 5.0,
+    "all_time": 30.0,
+    "since": "Jul 3, 2021"
   },
   {
     "name": "Renkaatsopivasti",
     "url": "https://renkaatsopivasti.fi",
-    "last_payment": 5.0,
-    "all_time": 20.0,
-    "since": "Jul 2, 2021",
-    "last_payment_at": "Oct 2, 2021"
+    "this_month": 5.0,
+    "all_time": 30.0,
+    "since": "Jul 2, 2021"
   },
   {
     "name": "NoAccountCasinos",
     "url": "https://noaccountcasinos.io",
-    "last_payment": 10.0,
-    "all_time": 40.0,
-    "since": "Jul 1, 2021",
-    "last_payment_at": "Oct 2, 2021"
+    "this_month": 10.0,
+    "all_time": 50.0,
+    "since": "Jul 1, 2021"
   },
   {
     "name": "Provided.io",
     "url": "https://provided.io",
-    "last_payment": 5.0,
-    "all_time": 25.0,
-    "since": "Jun 15, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 5.0,
+    "all_time": 35.0,
+    "since": "Jun 15, 2021"
   },
   {
     "name": "lowkey",
-    "last_payment": 75.0,
-    "all_time": 240.0,
-    "since": "Jun 12, 2021",
-    "last_payment_at": "Oct 18, 2021"
-  },
-  {
-    "name": "STORED Enterprises Limited",
-    "last_payment": 0.0,
-    "all_time": 25.0,
-    "since": "Jun 9, 2021",
-    "last_payment_at": "Jun 9, 2021"
+    "this_month": 75.0,
+    "all_time": 315.0,
+    "since": "Jun 12, 2021"
   },
   {
     "name": "Windesol Sähkön Kilpailutus",
     "url": "https://windesol.fi",
-    "last_payment": 5.0,
-    "all_time": 25.0,
-    "since": "Jun 8, 2021",
-    "last_payment_at": "Oct 8, 2021"
+    "this_month": 5.0,
+    "all_time": 35.0,
+    "since": "Jun 8, 2021"
   },
   {
     "name": "Netin nopeustesti",
     "url": "https://netinnopeustesti.com/",
-    "last_payment": 5.0,
-    "all_time": 25.0,
-    "since": "May 27, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 5.0,
+    "all_time": 35.0,
+    "since": "May 27, 2021"
   },
   {
     "name": "Casinoonlineaams.com",
     "url": "https://www.casinoonlineaams.com",
-    "last_payment": 25.0,
-    "all_time": 150.0,
-    "since": "May 26, 2021",
-    "last_payment_at": "Oct 26, 2021"
+    "this_month": 25.0,
+    "all_time": 175.0,
+    "since": "May 26, 2021"
   },
   {
     "name": "Matthias-Christian Ott",
-    "last_payment": 0.0,
+    "this_month": 4.0,
     "all_time": 4.0,
-    "since": "May 2, 2021",
-    "last_payment_at": "May 2, 2021"
+    "since": "May 2, 2021"
   },
   {
     "name": "Vladislav Kuznetsov",
-    "last_payment": 0.0,
+    "this_month": 20.0,
     "all_time": 20.0,
-    "since": "Apr 28, 2021",
-    "last_payment_at": "Apr 28, 2021"
+    "since": "Apr 28, 2021"
   },
   {
     "name": "Mikihiro Hamaguchi",
     "url": "https://github.com/machida4",
-    "last_payment": 5.0,
-    "all_time": 30.0,
-    "since": "Apr 26, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 5.0,
+    "all_time": 40.0,
+    "since": "Apr 26, 2021"
   },
   {
     "name": "Pavel Dušánek",
-    "last_payment": 0.0,
+    "this_month": 20.0,
     "all_time": 20.0,
-    "since": "Apr 14, 2021",
-    "last_payment_at": "Apr 14, 2021"
-  },
-  {
-    "name": "Kevin Sjöberg",
-    "last_payment": 0.0,
-    "all_time": 260.0,
-    "since": "Apr 12, 2021",
-    "last_payment_at": "May 1, 2021"
+    "since": "Apr 14, 2021"
   },
   {
     "name": "Christian Meredith",
-    "last_payment": 3.0,
-    "all_time": 31.0,
-    "since": "Apr 12, 2021",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "mointech GmbH",
-    "last_payment": 0.0,
-    "all_time": 300.0,
-    "since": "Apr 8, 2021",
-    "last_payment_at": "Jul 1, 2021"
-  },
-  {
-    "name": "Bilal Budhani",
-    "url": "https://bilalbudhani.com",
-    "last_payment": 10.0,
-    "all_time": 50.0,
-    "since": "Apr 3, 2021",
-    "last_payment_at": "Aug 1, 2021"
+    "this_month": 3.0,
+    "all_time": 37.0,
+    "since": "Apr 12, 2021"
   },
   {
     "name": "GoMage",
-    "last_payment": 0.0,
+    "this_month": 1.0,
     "all_time": 1.0,
-    "since": "Apr 1, 2021",
-    "last_payment_at": "Apr 1, 2021"
+    "since": "Apr 1, 2021"
   },
   {
     "name": "Lampros Chaidas",
-    "last_payment": 10.0,
-    "all_time": 70.0,
-    "since": "Mar 29, 2021",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "萌太",
-    "url": "https://twitter.com/________l____l_",
-    "last_payment": 5.0,
-    "all_time": 25.0,
-    "since": "Mar 29, 2021",
-    "last_payment_at": "Aug 1, 2021"
+    "this_month": 10.0,
+    "all_time": 90.0,
+    "since": "Mar 29, 2021"
   },
   {
     "name": "Guillermo Siliceo Trueba",
-    "last_payment": 5.0,
-    "all_time": 35.0,
-    "since": "Mar 26, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 5.0,
+    "all_time": 40.0,
+    "since": "Mar 26, 2021"
   },
   {
     "name": "Svetlin Simonyan",
     "url": "https://github.com/svetlins",
-    "last_payment": 25.0,
+    "this_month": 25.0,
     "all_time": 175.0,
-    "since": "Mar 25, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "since": "Mar 25, 2021"
   },
   {
     "name": "Rob Hill",
-    "last_payment": 0.0,
+    "this_month": 10.0,
     "all_time": 10.0,
-    "since": "Mar 25, 2021",
-    "last_payment_at": "Mar 25, 2021"
+    "since": "Mar 25, 2021"
   },
   {
     "name": "Auttawut Wiriyakreng",
-    "last_payment": 5.0,
-    "all_time": 35.0,
-    "since": "Mar 25, 2021",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "Askhat Saiapov",
-    "last_payment": 5.0,
-    "all_time": 25.0,
-    "since": "Mar 23, 2021",
-    "last_payment_at": "Aug 1, 2021"
+    "this_month": 5.0,
+    "all_time": 45.0,
+    "since": "Mar 25, 2021"
   },
   {
     "name": "Mykhaylo Sorochan",
-    "last_payment": 0.0,
+    "this_month": 10.0,
     "all_time": 10.0,
-    "since": "Mar 23, 2021",
-    "last_payment_at": "Mar 23, 2021"
+    "since": "Mar 23, 2021"
   },
   {
     "name": "Jared Smith",
     "url": "https://www.linkedin.com/in/jaredsmithse/",
-    "last_payment": 5.0,
-    "all_time": 60.0,
-    "since": "Mar 22, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 5.0,
+    "all_time": 70.0,
+    "since": "Mar 22, 2021"
   },
   {
     "name": "Stas Syritsyn",
-    "last_payment": 0.0,
+    "this_month": 10.0,
     "all_time": 10.0,
-    "since": "Mar 22, 2021",
-    "last_payment_at": "Mar 22, 2021"
+    "since": "Mar 22, 2021"
   },
   {
     "name": "Jaime Ortiz",
-    "last_payment": 10.0,
-    "all_time": 340.0,
-    "since": "Mar 20, 2021",
-    "last_payment_at": "Oct 8, 2021"
+    "this_month": 15.0,
+    "all_time": 365.0,
+    "since": "Mar 20, 2021"
   },
   {
     "name": "Gitpod",
-    "last_payment": 0.0,
+    "this_month": 1.0,
     "all_time": 1.0,
-    "since": "Mar 9, 2021",
-    "last_payment_at": "Mar 9, 2021"
+    "since": "Mar 9, 2021"
   },
   {
     "name": "Haiting Zhang",
-    "last_payment": 0.0,
+    "url": "https://twitter.com/slowy_oier",
+    "this_month": 5.0,
     "all_time": 5.0,
-    "since": "Mar 8, 2021",
-    "last_payment_at": "Mar 8, 2021"
+    "since": "Mar 8, 2021"
   },
   {
     "name": "Writers Per Hour",
     "url": "https://writersperhour.com",
-    "last_payment": 25.0,
-    "all_time": 200.0,
-    "since": "Mar 6, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 25.0,
+    "all_time": 250.0,
+    "since": "Mar 6, 2021"
   },
   {
     "name": "Bromine0x23",
     "url": "https://twitter.com/bromine0x23",
-    "last_payment": 5.0,
-    "all_time": 17.0,
-    "since": "Feb 27, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 5.0,
+    "all_time": 27.0,
+    "since": "Feb 27, 2021"
   },
   {
     "name": "Foxyanski",
-    "last_payment": 0.0,
+    "this_month": 1.0,
     "all_time": 1.0,
-    "since": "Feb 24, 2021",
-    "last_payment_at": "Feb 24, 2021"
+    "since": "Feb 24, 2021"
   },
   {
     "name": "Adam Zacharias",
-    "last_payment": 0.0,
+    "this_month": 5.0,
     "all_time": 5.0,
-    "since": "Feb 22, 2021",
-    "last_payment_at": "Feb 22, 2021"
+    "since": "Feb 22, 2021"
   },
   {
     "name": "Mamafacts",
     "url": "https://www.mamafacts.com/",
-    "last_payment": 5.0,
-    "all_time": 45.0,
-    "since": "Feb 9, 2021",
-    "last_payment_at": "Oct 2, 2021"
+    "this_month": 5.0,
+    "all_time": 55.0,
+    "since": "Feb 9, 2021"
   },
   {
     "name": "New Casinos Australia",
-    "last_payment": 0.0,
+    "this_month": 2.0,
     "all_time": 2.0,
-    "since": "Feb 5, 2021",
-    "last_payment_at": "Feb 5, 2021"
+    "since": "Feb 5, 2021"
   },
   {
     "name": "vinit joshi",
-    "last_payment": 0.0,
-    "all_time": 140.0,
-    "since": "Feb 3, 2021",
-    "last_payment_at": "Jul 1, 2021"
-  },
-  {
-    "name": "Book of Ra German",
-    "last_payment": 0.0,
-    "all_time": 15.0,
-    "since": "Feb 2, 2021",
-    "last_payment_at": "Apr 1, 2021"
+    "this_month": 5.0,
+    "all_time": 70.0,
+    "since": "Feb 3, 2021"
   },
   {
     "name": "Level UP Solutions",
-    "last_payment": 0.0,
-    "all_time": 270.0,
-    "since": "Feb 1, 2021",
-    "last_payment_at": "Jan 4, 2021"
+    "url": "https://www.levups.com",
+    "this_month": 5.0,
+    "all_time": 135.0,
+    "since": "Feb 1, 2021"
   },
   {
     "name": "Fabien LEFEBVRE",
     "url": "https://www.d1ceward.com",
-    "last_payment": 10.0,
+    "this_month": 10.0,
     "all_time": 90.0,
-    "since": "Jan 25, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "since": "Jan 25, 2021"
   },
   {
     "name": "Werner Stein",
-    "last_payment": 10.0,
-    "all_time": 90.0,
-    "since": "Jan 24, 2021",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 10.0,
+    "all_time": 110.0,
+    "since": "Jan 24, 2021"
   },
   {
     "name": "Leadscanner",
-    "last_payment": 0.0,
+    "this_month": 2.0,
     "all_time": 2.0,
-    "since": "Jan 21, 2021",
-    "last_payment_at": "Jan 21, 2021"
+    "since": "Jan 21, 2021"
   },
   {
     "name": "Barry Tolnas",
-    "last_payment": 0.0,
+    "this_month": 20.0,
     "all_time": 20.0,
-    "since": "Jan 17, 2021",
-    "last_payment_at": "Jan 17, 2021"
+    "since": "Jan 17, 2021"
   },
   {
     "name": "FindContinuingCare",
     "url": "https://www.findcontiuingcare.com",
-    "last_payment": 5.0,
-    "all_time": 50.0,
-    "since": "Jan 11, 2021",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "Sell Your Phoenix House Fast",
-    "last_payment": 0.0,
-    "all_time": 15.0,
-    "since": "Jan 3, 2021",
-    "last_payment_at": "Mar 1, 2021"
-  },
-  {
-    "name": "Marko Požega",
-    "last_payment": 0.0,
-    "all_time": 20.0,
-    "since": "Dec 29, 2020",
-    "last_payment_at": "Apr 1, 2021"
+    "this_month": 5.0,
+    "all_time": 60.0,
+    "since": "Jan 11, 2021"
   },
   {
     "name": "PrestoDoctor",
     "url": "https://prestodoctor.com",
     "logo": "sponsors/prestodoctor.png",
-    "last_payment": 150.0,
-    "all_time": 1500.0,
-    "since": "Dec 28, 2020",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 150.0,
+    "all_time": 1800.0,
+    "since": "Dec 28, 2020"
   },
   {
     "name": "Josh Hollenbeck",
-    "last_payment": 10.0,
-    "all_time": 100.0,
-    "since": "Dec 19, 2020",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 10.0,
+    "all_time": 120.0,
+    "since": "Dec 19, 2020"
   },
   {
     "name": "Alberto Corbi",
-    "last_payment": 0.0,
+    "this_month": 5.0,
     "all_time": 5.0,
-    "since": "Dec 14, 2020",
-    "last_payment_at": "Dec 14, 2020"
-  },
-  {
-    "name": "ATNOS",
-    "url": "https://atnos.com",
-    "logo": "sponsors/atnos.png",
-    "last_payment": 75.0,
-    "all_time": 675.0,
-    "since": "Dec 11, 2020",
-    "last_payment_at": "Aug 1, 2021"
+    "since": "Dec 14, 2020"
   },
   {
     "name": "OvrClock",
     "url": "https://ovrclock.com",
-    "last_payment": 5.0,
-    "all_time": 55.0,
-    "since": "Dec 11, 2020",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 5.0,
+    "all_time": 65.0,
+    "since": "Dec 11, 2020"
   },
   {
     "name": "anapsix",
     "url": "https://blog.random.io",
-    "last_payment": 5.0,
-    "all_time": 55.0,
-    "since": "Dec 2, 2020",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 5.0,
+    "all_time": 65.0,
+    "since": "Dec 2, 2020"
   },
   {
     "name": "Ryan Maki",
     "logo": "sponsors/ryan_maki.png",
-    "last_payment": 75.0,
-    "all_time": 825.0,
-    "since": "Dec 2, 2020",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "I.I. Jeliuc Alexandr",
-    "last_payment": 0.0,
-    "all_time": 80.0,
-    "since": "Dec 1, 2020",
-    "last_payment_at": "Jul 2, 2021"
-  },
-  {
-    "name": "JoinGames",
-    "last_payment": 0.0,
-    "all_time": 5.0,
-    "since": "Nov 25, 2020",
-    "last_payment_at": "Nov 25, 2020"
+    "this_month": 75.0,
+    "all_time": 975.0,
+    "since": "Dec 2, 2020"
   },
   {
     "name": "Dutchie",
     "url": "https://dutchie.com",
     "logo": "sponsors/dutchie.png",
-    "last_payment": 150.0,
-    "all_time": 1650.0,
-    "since": "Nov 23, 2020",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 150.0,
+    "all_time": 1950.0,
+    "since": "Nov 23, 2020"
   },
   {
     "name": "Dale C Earl",
-    "last_payment": 0.0,
+    "this_month": 100.0,
     "all_time": 100.0,
-    "since": "Nov 23, 2020",
-    "last_payment_at": "Nov 23, 2020"
-  },
-  {
-    "name": "Kiirlaenud",
-    "last_payment": 0.0,
-    "all_time": 20.0,
-    "since": "Nov 20, 2020",
-    "last_payment_at": "Mar 1, 2021"
+    "since": "Nov 23, 2020"
   },
   {
     "name": "Joppy",
-    "last_payment": 0.0,
+    "url": "https://www.joppy.me",
+    "this_month": 50.0,
     "all_time": 50.0,
-    "since": "Nov 19, 2020",
-    "last_payment_at": "Nov 19, 2020"
+    "since": "Nov 19, 2020"
   },
   {
     "name": "Thanassis Papapostolou",
-    "last_payment": 0.0,
+    "this_month": 1.0,
     "all_time": 1.0,
-    "since": "Nov 10, 2020",
-    "last_payment_at": "Nov 10, 2020"
+    "since": "Nov 10, 2020"
   },
   {
     "name": "Mark Raymond Jr.",
-    "last_payment": 0.0,
-    "all_time": 30.0,
-    "since": "Nov 9, 2020",
-    "last_payment_at": "Apr 1, 2021"
-  },
-  {
-    "name": "ParticleBrand",
-    "last_payment": 0.0,
-    "all_time": 25.0,
-    "since": "Nov 8, 2020",
-    "last_payment_at": "Mar 1, 2021"
-  },
-  {
-    "name": "Ian Rash",
-    "last_payment": 0.0,
-    "all_time": 50.0,
-    "since": "Oct 19, 2020",
-    "last_payment_at": "Oct 19, 2020"
-  },
-  {
-    "name": "GermanTechJobs",
-    "last_payment": 0.0,
-    "all_time": 5.0,
-    "since": "Oct 18, 2020",
-    "last_payment_at": "Oct 18, 2020"
+    "this_month": 5.0,
+    "all_time": 40.0,
+    "since": "Nov 9, 2020"
   },
   {
     "name": "Ricardo Tomasi",
     "url": "https://ricardo.cc",
-    "last_payment": 25.0,
-    "all_time": 325.0,
-    "since": "Oct 9, 2020",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 25.0,
+    "all_time": 375.0,
+    "since": "Oct 9, 2020"
   },
   {
     "name": "Edward Loveall",
-    "last_payment": 5.0,
-    "all_time": 65.0,
-    "since": "Sep 29, 2020",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 5.0,
+    "all_time": 75.0,
+    "since": "Sep 29, 2020"
   },
   {
     "name": "Will Lewis",
-    "last_payment": 15.0,
-    "all_time": 180.0,
-    "since": "Sep 25, 2020",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "SwissDev Jobs",
-    "last_payment": 0.0,
-    "all_time": 5.0,
-    "since": "Sep 24, 2020",
-    "last_payment_at": "Sep 24, 2020"
+    "this_month": 15.0,
+    "all_time": 210.0,
+    "since": "Sep 25, 2020"
   },
   {
     "name": "Claudio G Macedo Jr",
-    "last_payment": 0.0,
+    "this_month": 3.0,
     "all_time": 3.0,
-    "since": "Sep 18, 2020",
-    "last_payment_at": "Sep 18, 2020"
-  },
-  {
-    "name": "Andrew Larin",
-    "last_payment": 0.0,
-    "all_time": 35.0,
-    "since": "Sep 15, 2020",
-    "last_payment_at": "Mar 1, 2021"
+    "since": "Sep 18, 2020"
   },
   {
     "name": "Vulk Cooperative",
     "url": "https://www.vulk.coop",
     "logo": "sponsors/vulk_cooperative.png",
-    "last_payment": 75.0,
-    "all_time": 1425.0,
-    "since": "Sep 10, 2020",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 75.0,
+    "all_time": 1800.0,
+    "since": "Sep 10, 2020"
   },
   {
     "name": "Kalle Jillheden",
-    "last_payment": 0.0,
+    "url": "https://github.com/jilleJr",
+    "this_month": 20.0,
     "all_time": 20.0,
-    "since": "Sep 10, 2020",
-    "last_payment_at": "Sep 10, 2020"
+    "since": "Sep 10, 2020"
   },
   {
     "name": "Leonardo Kewitz",
     "url": "https://kewitz.js.org",
-    "last_payment": 5.0,
-    "all_time": 240.0,
-    "since": "Sep 9, 2020",
-    "last_payment_at": "Sep 1, 2021"
+    "this_month": 5.0,
+    "all_time": 260.0,
+    "since": "Sep 9, 2020"
   },
   {
     "name": "James Hill",
-    "last_payment": 0.0,
+    "this_month": 100.0,
     "all_time": 100.0,
-    "since": "Sep 8, 2020",
-    "last_payment_at": "Sep 8, 2020"
-  },
-  {
-    "name": "Turun Sahkomies",
-    "last_payment": 0.0,
-    "all_time": 10.0,
-    "since": "Sep 8, 2020",
-    "last_payment_at": "Oct 1, 2020"
-  },
-  {
-    "name": "Pro Tech Reviewer",
-    "last_payment": 0.0,
-    "all_time": 10.0,
-    "since": "Sep 3, 2020",
-    "last_payment_at": "Oct 8, 2020"
-  },
-  {
-    "name": "Xiuzhong Li",
-    "last_payment": 0.0,
-    "all_time": 10.0,
-    "since": "Aug 31, 2020",
-    "last_payment_at": "Oct 1, 2020"
+    "since": "Sep 8, 2020"
   },
   {
     "name": "Philipp Claßen",
-    "last_payment": 10.0,
-    "all_time": 140.0,
-    "since": "Aug 27, 2020",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "Nookwit",
-    "last_payment": 0.0,
-    "all_time": 600.0,
-    "since": "Aug 27, 2020",
-    "last_payment_at": "Apr 1, 2021"
+    "this_month": 10.0,
+    "all_time": 160.0,
+    "since": "Aug 27, 2020"
   },
   {
     "name": "Evtimiy Mihaylov",
-    "last_payment": 0.0,
+    "url": "https://github.com/evvo",
+    "this_month": 10.0,
     "all_time": 10.0,
-    "since": "Aug 22, 2020",
-    "last_payment_at": "Aug 22, 2020"
-  },
-  {
-    "name": "Speekify",
-    "last_payment": 0.0,
-    "all_time": 45.0,
-    "since": "Aug 20, 2020",
-    "last_payment_at": "May 1, 2021"
+    "since": "Aug 22, 2020"
   },
   {
     "name": "omerakgoz34",
-    "last_payment": 0.0,
+    "this_month": 1.0,
     "all_time": 1.0,
-    "since": "Aug 13, 2020",
-    "last_payment_at": "Aug 13, 2020"
-  },
-  {
-    "name": "Kunal Gurnani",
-    "last_payment": 0.0,
-    "all_time": 15.0,
-    "since": "Aug 10, 2020",
-    "last_payment_at": "Mar 22, 2021"
-  },
-  {
-    "name": "Randy Diaz",
-    "last_payment": 0.0,
-    "all_time": 30.0,
-    "since": "Aug 7, 2020",
-    "last_payment_at": "Jan 4, 2021"
+    "since": "Aug 13, 2020"
   },
   {
     "name": "Matt Berry",
     "url": "https://mattrb.com",
-    "last_payment": 5.0,
-    "all_time": 75.0,
-    "since": "Aug 7, 2020",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "Andrew Lewman",
-    "last_payment": 0.0,
-    "all_time": 1050.0,
-    "since": "Aug 6, 2020",
-    "last_payment_at": "Feb 1, 2021"
-  },
-  {
-    "name": "Gabriel Sales Seixas",
-    "last_payment": 0.0,
-    "all_time": 5.0,
-    "since": "Jul 30, 2020",
-    "last_payment_at": "Jul 30, 2020"
+    "this_month": 5.0,
+    "all_time": 85.0,
+    "since": "Aug 7, 2020"
   },
   {
     "name": "Andra Antariksa Prihadi",
-    "last_payment": 0.0,
+    "this_month": 1.0,
     "all_time": 1.0,
-    "since": "Jul 5, 2020",
-    "last_payment_at": "Jul 5, 2020"
+    "since": "Jul 5, 2020"
   },
   {
     "name": "Andrea Manzini",
-    "last_payment": 0.0,
+    "this_month": 10.0,
     "all_time": 10.0,
-    "since": "Jun 18, 2020",
-    "last_payment_at": "Jun 18, 2020"
+    "since": "Jun 18, 2020"
   },
   {
     "name": "Guoliang Cao",
-    "last_payment": 0.0,
+    "this_month": 15.0,
     "all_time": 15.0,
-    "since": "Jun 14, 2020",
-    "last_payment_at": "Jun 14, 2020"
+    "since": "Jun 14, 2020"
   },
   {
     "name": "Aanand Natarajan",
-    "last_payment": 0.0,
+    "this_month": 5.0,
     "all_time": 5.0,
-    "since": "Jun 12, 2020",
-    "last_payment_at": "Jun 12, 2020"
+    "since": "Jun 12, 2020"
   },
   {
     "name": "Nobuaki Tanaka",
     "url": "https://twitter.com/tomerun",
-    "last_payment": 5.0,
-    "all_time": 85.0,
-    "since": "Jun 10, 2020",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "Valentin Baca",
-    "last_payment": 0.0,
-    "all_time": 10.0,
-    "since": "Jun 10, 2020",
-    "last_payment_at": "Jul 2, 2020"
+    "this_month": 5.0,
+    "all_time": 95.0,
+    "since": "Jun 10, 2020"
   },
   {
     "name": "Oleksii Neishchenko",
-    "last_payment": 5.0,
-    "all_time": 85.0,
-    "since": "Jun 9, 2020",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "DocSpring",
-    "last_payment": 0.0,
-    "all_time": 450.0,
-    "since": "Jun 1, 2020",
-    "last_payment_at": "Nov 1, 2020"
+    "this_month": 5.0,
+    "all_time": 95.0,
+    "since": "Jun 9, 2020"
   },
   {
     "name": "NekoIT",
     "url": "https://nekoit.xyz",
-    "last_payment": 10.0,
-    "all_time": 170.0,
-    "since": "May 31, 2020",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 10.0,
+    "all_time": 190.0,
+    "since": "May 31, 2020"
   },
   {
     "name": "Luan Dias",
-    "last_payment": 1.0,
-    "all_time": 17.0,
-    "since": "May 28, 2020",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 1.0,
+    "all_time": 19.0,
+    "since": "May 28, 2020"
   },
   {
     "name": "Artem Napolskih",
-    "last_payment": 5.0,
-    "all_time": 85.0,
-    "since": "May 22, 2020",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "Crescer",
-    "last_payment": 0.0,
-    "all_time": 10.0,
-    "since": "May 10, 2020",
-    "last_payment_at": "May 10, 2020"
-  },
-  {
-    "name": "Rodrigo Pereira de Mendonça",
-    "last_payment": 0.0,
-    "all_time": 10.0,
-    "since": "May 9, 2020",
-    "last_payment_at": "May 9, 2020"
+    "this_month": 5.0,
+    "all_time": 95.0,
+    "since": "May 22, 2020"
   },
   {
     "name": "Glen Aultman-Bettridge",
-    "last_payment": 5.0,
-    "all_time": 90.0,
-    "since": "May 5, 2020",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "Szymon Madeja",
-    "last_payment": 0.0,
-    "all_time": 70.0,
-    "since": "May 5, 2020",
-    "last_payment_at": "Jun 1, 2021"
+    "this_month": 5.0,
+    "all_time": 100.0,
+    "since": "May 5, 2020"
   },
   {
     "name": "Karel Pavlíček",
-    "last_payment": 0.0,
+    "this_month": 20.0,
     "all_time": 20.0,
-    "since": "Apr 20, 2020",
-    "last_payment_at": "Apr 20, 2020"
-  },
-  {
-    "name": "Massimiliano Bertinetti",
-    "last_payment": 0.0,
-    "all_time": 5.0,
-    "since": "Apr 9, 2020",
-    "last_payment_at": "Apr 9, 2020"
+    "since": "Apr 20, 2020"
   },
   {
     "name": "Kagi",
     "url": "https://kagi.com",
-    "last_payment": 25.0,
-    "all_time": 475.0,
-    "since": "Apr 8, 2020",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 25.0,
+    "all_time": 525.0,
+    "since": "Apr 8, 2020"
   },
   {
     "name": "Darwin",
-    "last_payment": 5.0,
-    "all_time": 95.0,
-    "since": "Apr 5, 2020",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "epergo",
-    "last_payment": 0.0,
-    "all_time": 90.0,
-    "since": "Mar 31, 2020",
-    "last_payment_at": "Feb 4, 2019"
+    "this_month": 5.0,
+    "all_time": 105.0,
+    "since": "Apr 5, 2020"
   },
   {
     "name": "Mehdi Drissi",
-    "last_payment": 0.0,
+    "this_month": 25.0,
     "all_time": 25.0,
-    "since": "Mar 27, 2020",
-    "last_payment_at": "Mar 27, 2020"
-  },
-  {
-    "name": "Hotmagma",
-    "last_payment": 0.0,
-    "all_time": 60.0,
-    "since": "Mar 16, 2020",
-    "last_payment_at": "Mar 1, 2021"
+    "since": "Mar 27, 2020"
   },
   {
     "name": "Doxford",
-    "last_payment": 0.0,
+    "this_month": 1.0,
     "all_time": 1.0,
-    "since": "Mar 14, 2020",
-    "last_payment_at": "Mar 14, 2020"
+    "since": "Mar 14, 2020"
   },
   {
     "name": "Kasper Holbek Jensen",
-    "last_payment": 5.0,
-    "all_time": 100.0,
-    "since": "Mar 11, 2020",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 5.0,
+    "all_time": 105.0,
+    "since": "Mar 11, 2020"
   },
   {
     "name": "Braydon Kains",
     "url": "https://github.com/BKains",
-    "last_payment": 5.0,
+    "this_month": 5.0,
     "all_time": 100.0,
-    "since": "Mar 8, 2020",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "RemoteTeam.com",
-    "last_payment": 0.0,
-    "all_time": 85.0,
-    "since": "Feb 29, 2020",
-    "last_payment_at": "Jul 1, 2021"
-  },
-  {
-    "name": "Digital Bank Guide",
-    "last_payment": 0.0,
-    "all_time": 20.0,
-    "since": "Jan 29, 2020",
-    "last_payment_at": "May 2, 2020"
+    "since": "Mar 8, 2020"
   },
   {
     "name": "Julien Elbaz",
-    "last_payment": 0.0,
+    "url": "https://github.com/elbywan",
+    "this_month": 20.0,
     "all_time": 20.0,
-    "since": "Jan 11, 2020",
-    "last_payment_at": "Jan 11, 2020"
+    "since": "Jan 11, 2020"
   },
   {
     "name": "Algolia",
-    "last_payment": 0.0,
+    "url": "https://algolia.com",
+    "this_month": 51.0,
     "all_time": 51.0,
-    "since": "Dec 19, 2019",
-    "last_payment_at": "Dec 19, 2019"
-  },
-  {
-    "name": "Anton Orel",
-    "last_payment": 0.0,
-    "all_time": 75.0,
-    "since": "Nov 26, 2019",
-    "last_payment_at": "Nov 26, 2019"
-  },
-  {
-    "name": "Shield My IP",
-    "last_payment": 0.0,
-    "all_time": 35.0,
-    "since": "Nov 10, 2019",
-    "last_payment_at": "May 12, 2020"
-  },
-  {
-    "name": "Wesley Moore",
-    "last_payment": 0.0,
-    "all_time": 50.0,
-    "since": "Nov 4, 2019",
-    "last_payment_at": "Aug 2, 2020"
+    "since": "Dec 19, 2019"
   },
   {
     "name": "Jonathan Gnagy",
-    "last_payment": 1.0,
-    "all_time": 60.0,
-    "since": "Oct 31, 2019",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 1.0,
+    "all_time": 62.0,
+    "since": "Oct 31, 2019"
   },
   {
     "name": "Raels Koder",
-    "last_payment": 25.0,
-    "all_time": 600.0,
-    "since": "Oct 30, 2019",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "Patric Vormstein",
-    "last_payment": 0.0,
-    "all_time": 95.0,
-    "since": "Oct 25, 2019",
-    "last_payment_at": "May 1, 2021"
+    "this_month": 25.0,
+    "all_time": 650.0,
+    "since": "Oct 30, 2019"
   },
   {
     "name": "Takuya Matsunaga",
-    "last_payment": 0.0,
+    "url": "https://github.com/takanotume24",
+    "this_month": 5.0,
     "all_time": 5.0,
-    "since": "Oct 24, 2019",
-    "last_payment_at": "Oct 24, 2019"
+    "since": "Oct 24, 2019"
   },
   {
     "name": "Ryan Prior",
     "url": "https://www.ryanprior.com",
-    "last_payment": 5.0,
-    "all_time": 125.0,
-    "since": "Oct 7, 2019",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "Austin Vecchio",
-    "last_payment": 0.0,
-    "all_time": 65.0,
-    "since": "Oct 4, 2019",
-    "last_payment_at": "Oct 1, 2020"
+    "this_month": 5.0,
+    "all_time": 135.0,
+    "since": "Oct 7, 2019"
   },
   {
     "name": "Michael Lang",
-    "last_payment": 0.0,
+    "logo": "sponsors/michael_lang.png",
+    "this_month": 75.0,
     "all_time": 75.0,
-    "since": "Sep 30, 2019",
-    "last_payment_at": "Sep 30, 2019"
+    "since": "Sep 30, 2019"
   },
   {
     "name": "Eric",
-    "last_payment": 0.0,
+    "this_month": 75.0,
     "all_time": 75.0,
-    "since": "Sep 26, 2019",
-    "last_payment_at": "Sep 26, 2019"
+    "since": "Sep 26, 2019"
   },
   {
     "name": "WPsetup",
     "url": "https://wpsetup.org",
-    "last_payment": 5.0,
-    "all_time": 130.0,
-    "since": "Sep 2, 2019",
-    "last_payment_at": "Oct 2, 2021"
+    "this_month": 5.0,
+    "all_time": 140.0,
+    "since": "Sep 2, 2019"
   },
   {
     "name": "Max Fierke",
     "url": "https://www.maxfierke.com",
-    "last_payment": 25.0,
-    "all_time": 325.0,
-    "since": "Jul 21, 2019",
-    "last_payment_at": "Oct 1, 2021"
+    "this_month": 25.0,
+    "all_time": 375.0,
+    "since": "Jul 21, 2019"
   },
   {
     "name": "Ben Morrison",
-    "last_payment": 0.0,
+    "this_month": 15.0,
     "all_time": 15.0,
-    "since": "Jul 20, 2019",
-    "last_payment_at": "Jul 20, 2019"
-  },
-  {
-    "name": "Alexis Anand",
-    "last_payment": 0.0,
-    "all_time": 55.0,
-    "since": "Jun 29, 2019",
-    "last_payment_at": "Apr 2, 2020"
+    "since": "Jul 20, 2019"
   },
   {
     "name": "Bernardo Anderson",
-    "last_payment": 0.0,
+    "this_month": 2.0,
     "all_time": 36.0,
-    "since": "Jun 1, 2019",
-    "last_payment_at": "Nov 1, 2020"
-  },
-  {
-    "name": "Liu Chong",
-    "last_payment": 0.0,
-    "all_time": 40.0,
-    "since": "May 27, 2019",
-    "last_payment_at": "Dec 1, 2019"
-  },
-  {
-    "name": "Kentaro Tanaka",
-    "last_payment": 0.0,
-    "all_time": 10.0,
-    "since": "Apr 1, 2019",
-    "last_payment_at": "Apr 1, 2019"
-  },
-  {
-    "name": "Junyi Wang",
-    "last_payment": 0.0,
-    "all_time": 35.0,
-    "since": "Mar 22, 2019",
-    "last_payment_at": "Sep 1, 2019"
-  },
-  {
-    "name": "Alex Malone",
-    "last_payment": 0.0,
-    "all_time": 300.0,
-    "since": "Mar 15, 2019",
-    "last_payment_at": "May 1, 2019"
+    "since": "Jun 1, 2019"
   },
   {
     "name": "Daniel Sokil",
-    "last_payment": 0.0,
+    "url": "https://twitter.com/s0kil",
+    "this_month": 20.0,
     "all_time": 20.0,
-    "since": "Feb 23, 2019",
-    "last_payment_at": "Feb 23, 2019"
-  },
-  {
-    "name": "George Protacio-Karaszi",
-    "last_payment": 0.0,
-    "all_time": 220.0,
-    "since": "Feb 6, 2019",
-    "last_payment_at": "Oct 1, 2020"
+    "since": "Feb 23, 2019"
   },
   {
     "name": "Tom Metge",
-    "last_payment": 0.0,
+    "logo": "sponsors/tom_metge.jpg",
+    "this_month": 100.0,
     "all_time": 100.0,
-    "since": "Jan 15, 2019",
-    "last_payment_at": "Jan 15, 2019"
+    "since": "Jan 15, 2019"
   },
   {
     "name": "Kristine Robison",
-    "last_payment": 0.0,
+    "this_month": 10.0,
     "all_time": 10.0,
-    "since": "Jan 14, 2019",
-    "last_payment_at": "Jan 14, 2019"
+    "since": "Jan 14, 2019"
   },
   {
     "name": "Roman Pushkin",
-    "last_payment": 0.0,
+    "url": "https://github.com/ro31337",
+    "logo": "sponsors/roman_pushkin.jpg",
+    "this_month": 200.0,
     "all_time": 300.0,
-    "since": "Jan 11, 2019",
-    "last_payment_at": "Mar 25, 2021"
+    "since": "Jan 11, 2019"
   },
   {
     "name": "Mark Sinclair",
-    "last_payment": 0.0,
+    "this_month": 50.0,
     "all_time": 50.0,
-    "since": "Dec 28, 2018",
-    "last_payment_at": "Dec 28, 2018"
-  },
-  {
-    "name": "Tumbler Lock",
-    "last_payment": 0.0,
-    "all_time": 1500.0,
-    "since": "Dec 27, 2018",
-    "last_payment_at": "Sep 1, 2019"
+    "since": "Dec 28, 2018"
   },
   {
     "name": "David García Alonso",
-    "last_payment": 0.0,
+    "url": "https://twitter.com/zdavidlnx",
+    "this_month": 10.0,
     "all_time": 10.0,
-    "since": "Dec 19, 2018",
-    "last_payment_at": "Dec 19, 2018"
+    "since": "Dec 19, 2018"
   },
   {
     "name": "Julien Reichardt",
     "url": "https://github.com/j8r",
-    "last_payment": 25.0,
-    "all_time": 875.0,
-    "since": "Dec 13, 2018",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "Hendrik Mans",
-    "last_payment": 0.0,
-    "all_time": 150.0,
-    "since": "Dec 13, 2018",
-    "last_payment_at": "Feb 1, 2020"
+    "this_month": 25.0,
+    "all_time": 925.0,
+    "since": "Dec 13, 2018"
   },
   {
     "name": "Blitline",
     "url": "https://www.blitline.com",
     "logo": "sponsors/blitline.png",
-    "last_payment": 75.0,
-    "all_time": 2625.0,
-    "since": "Dec 12, 2018",
-    "last_payment_at": "Oct 1, 2021"
-  },
-  {
-    "name": "nditada",
-    "last_payment": 0.0,
-    "all_time": 30.0,
-    "since": "Dec 12, 2018",
-    "last_payment_at": "Apr 1, 2019"
+    "this_month": 75.0,
+    "all_time": 2775.0,
+    "since": "Dec 12, 2018"
   }
 ]
