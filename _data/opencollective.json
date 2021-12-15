@@ -1,5 +1,18 @@
 [
   {
+    "name": "Dan-Do",
+    "last_payment": 20.0,
+    "all_time": 20.0,
+    "since": "Dec 14, 2021"
+  },
+  {
+    "name": "prointernet.in.ua",
+    "url": "https://www.prointernet.in.ua/",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "Dec 13, 2021"
+  },
+  {
     "name": "Jim Abraham",
     "last_payment": 5.0,
     "all_time": 5.0,
