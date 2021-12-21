@@ -1,10 +1,10 @@
-name: Deploy
+name: Build
 on:
   push:
   pull_request:
 jobs:
   build:
-    name: Deploy
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Download source
@@ -24,17 +24,13 @@ jobs:
           docker-compose run --rm web make check_html
           docker-compose run --rm web /bin/bash -c "make check_external_links || true" # allowed to fail
       - name: Configure AWS Credentials
-        if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/unstable')
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master' && github.repository_owner == 'crystal-lang'
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Deploy to www.crystal-lang.org
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master' && github.repository_owner == 'crystal-lang'
         run: |
           aws s3 sync ./_site s3://crystal-website --delete
-      - name: Deploy to stg.crystal-lang.org
-        if: github.event_name == 'push' && github.ref == 'refs/heads/unstable'
-        run: |
-          aws s3 sync ./_site s3://stg.crystal-lang.org --delete
