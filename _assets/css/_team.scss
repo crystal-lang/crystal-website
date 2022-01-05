@@ -56,16 +56,17 @@
 
 .team-members {
   margin: 2rem 0;
+  display: grid;
+  grid-gap: 20px;
 
-  .team-member {
-    + .team-member {
-      margin-top: 20px;
-    }
+  grid-template-columns: 1fr;
+  @media(min-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .core-team-alumni {
-  @media only screen and (min-width: 540px) {
+  @media (min-width: 540px) {
     display: flex;
   }
   flex-wrap: wrap;
@@ -76,4 +77,8 @@
   .team-member {
     margin: 1rem;
   }
+}
+
+.forum_handle, .github_handle {
+  white-space: nowrap;
 }
