@@ -13,15 +13,15 @@ Let's play with an immutable Queue type. We want to:
 
 So something like this:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 q = build_queue  # q = {}
 new_q = q.push 2 # q = {2}
 e, old_q = new_q.pop # e = 2, q = {}
-{% endhighlight ruby %}</div>
+```
 
 If we jump into creating a Queue class we will get the following skeleton:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 class Queue
   # returns a new queue with `e` at the beginning
   def push(e)
@@ -36,19 +36,19 @@ class Queue
     # ...
   end
 end
-{% endhighlight ruby %}</div>
+```
 
 This could work. However, there are some kinds of programs that will compile, but will *always* fail to run:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 q = Queue.new
 e, q = q.pop # => EmptyQueueRuntimeError :-(
-{% endhighlight ruby %}</div>
+```
 
 
 Going in a a similar direction of the [NullPointerException](/2013/07/13/null-pointer-exception.html), we could try to split the queue values that will help us move from this `EmptyQueueRuntimeError` to a compile error. For that, we need to differentiate the `EmptyQueue` from the non-empty Queues.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 class EmptyQueue
   # Always return a Queue
   def push(e)
@@ -68,17 +68,17 @@ end
 
 q = EmptyQueue.new
 q.pop # => Compile Error :-) EmptyQueue does not have EmptyQueue#pop
-{% endhighlight ruby %}</div>
+```
 
 But is it really useful?
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 q0 = EmptyQueue.new   # q0 = {}
 q1 = q0.push 1        # q1 = {1}
 q2 = q1.push 2        # q2 = {2, 1}
 e, q3 = q2.pop        # q3 = {1}, e = 2
 e, q4 = q3.pop        # => Compile Error :-( , but *we* know q3 is not empty...
-{% endhighlight ruby %}</div>
+```
 
 The compile error is because `typeof(q3) :: EmptyQueue | Queue`.
 

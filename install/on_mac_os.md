@@ -4,10 +4,10 @@ subtitle: On macOS
 
 To easily install Crystal on macOS you can use [Homebrew](http://brew.sh/).
 
-<div class="code_section">{% highlight bash %}
+```bash
 brew update
 brew install crystal
-{% endhighlight bash %}</div>
+```
 
 You should be able to install the latest version from homebrew. Crystal's core-team help maintain that formula.
 
@@ -17,10 +17,10 @@ Alternative there are `.tar.gz` and `.pkg` files in each [release](https://githu
 
 When a new Crystal version is released you can upgrade your system using:
 
-<div class="code_section">{% highlight bash %}
+```bash
 brew update
 brew upgrade crystal
-{% endhighlight bash %}</div>
+```
 
 ## Troubleshooting
 
@@ -28,16 +28,16 @@ brew upgrade crystal
 
 If you get an error like:
 
-<div class="code_section">{% highlight txt %}
+```txt
 ld: library not found for -lssl (this usually means you need to install the development package for libssl)
-{% endhighlight txt %}</div>
+```
 
 you may need to install OpenSSL and link pkg-config to OpenSSL:
 
-<div class="code_section">{% highlight bash %}
+```bash
 brew install openssl
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/openssl/lib/pkgconfig
-{% endhighlight bash %}</div>
+```
 
 As with other keg-only formulas there are some caveats shown in `brew info <formula>` that shows how to link `pkg-config` with this library.
 

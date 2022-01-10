@@ -28,23 +28,23 @@ smart as possible and infers the types for you.
 
 Primitive types map to native machine types.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 true    # Bool
 1       # Int32
 1_u64   # UInt64
 1.5     # Float64
 1.5_f32 # Float32
 'a'     # Char
-{% endhighlight ruby %}</div>
+```
 
 ### ASCII Strings
 
 They come in many flavors, like in Ruby, and they also support interpolation.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 a = "World"
 b = "Hello #{a}" #=> "Hello World"
-{% endhighlight ruby %}</div>
+```
 
 We still need to decide what's the best way to deal with different encodings, so this
 is just a temporary implementation.
@@ -55,9 +55,9 @@ size and pointer to the chars buffers, but everything else is built on top of th
 
 ### Symbols
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 :foo
-{% endhighlight ruby %}</div>
+```
 
 At runtime, each symbol is represented by a unique integer. A table of integer to string is built for
 implementing Symbol#to_s (but there's no way right now to do String#intern).
@@ -67,7 +67,7 @@ implementing Symbol#to_s (but there's no way right now to do String#intern).
 You don't need to specify the type of a variable. If it is assigned multiple types,
 it will have those types at compile-time. At run-time it will have only one.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 if some_condition
   a = 1
 else
@@ -78,30 +78,30 @@ end
 
 a.abs  # Ok, both Int32 and Float64 define the 'abs' method without arguments
 a.succ # Error, Float64 doesn't have a 'succ' method
-{% endhighlight ruby %}</div>
+```
 
 You can use "is_a?" to check for a type:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 if a.is_a?(Int32)
   a.succ # Ok, here a can only be an Int32
 end
-{% endhighlight ruby %}</div>
+```
 
 You can even use "responds_to?":
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 if a.responds_to?(:succ)
   a.succ # Ok
 end
-{% endhighlight ruby %}</div>
+```
 
 ### Methods
 
 In Crystal methods can be overloaded. The overloads come from the number of arguments,
 type restrictions and *yieldness* of a method.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 # foo 1
 def foo(x, y)
   x + y
@@ -123,7 +123,7 @@ foo 1, 1      # Invokes foo 1
 foo 1         # Invokes foo 2
 foo 1.5       # Invokes foo 3
 foo(1) { }    # Invokes foo 4
-{% endhighlight ruby %}</div>
+```
 
 Contrast this with having to check **at runtime** the number of arguments of the method,
 whether a block was given, or which are the types of arguments: we believe this is much more
@@ -140,7 +140,7 @@ and needs to be re-thought.
 No need to specify the types of instance variables, but all types assigned to
 an instance variable will make that variable have a union type.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 class Foo
   # We prefer getter, setter and property over
   # attr_reader, attr_writer and attr_accessor
@@ -161,12 +161,12 @@ foo2 = Foo.new('a')
 
 # Because of the last line, @value is now an Int32 or Char.
 # Char doesn't have an 'abs' method, so a compile time error is issued.
-{% endhighlight ruby %}</div>
+```
 
 If you really need different Foo classes with different types for @value,
 you can use a generic class:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 class Foo(T)
   getter :value
 
@@ -182,20 +182,20 @@ foo2.value.ord            # Ok
 
 # You can also explicitly specify the generic type variable
 foo3 = Foo(String).new("hello")
-{% endhighlight ruby %}</div>
+```
 
 Array and Hash are generic classes too, but they can also be constructed using
 literals. When elements are specified, the generic type variables are inferred.
 If no element is specified, you have to tell Crystal the generic type variables.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 a = [1, 2, 3]            # a is an Array(Int32)
 b = [1, 1.5, 'a']        # b is an Array(Int32 | Float64 | Char)
 c = [] of String         # c is an Array(String), same as doing Array(String).new
 
 d = {1 => 2, 3 => 4}     # d is a Hash(Int32, Int32)
 e = {} of String => Bool # e is a Hash(String, Bool), same as doing Hash(String, Bool).new
-{% endhighlight ruby %}</div>
+```
 
 And yes, [Array](https://github.com/crystal-lang/crystal/blob/master/src/array.cr) and
 [Hash](https://github.com/crystal-lang/crystal/blob/fd6c0238f6e7725d307d4c010d8c860e38a46d72/std/hash.cr) are completely
@@ -223,7 +223,7 @@ so we need some time to think it over.
 You can declare bindings to C in Crystal, no need to use C, make wrappers or
 use another language. For example, this is part of the SDL binding:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 lib LibSDL("SDL")
   INIT_TIMER       = 0x00000001_u32
   INIT_AUDIO       = 0x00000010_u32
@@ -242,26 +242,26 @@ lib LibSDL("SDL")
 end
 
 value = LibSDL.init(LibSDL.INIT_TIMER)
-{% endhighlight ruby %}</div>
+```
 
 ### Pointers
 
 You can allocate memory and interface with C by having Pointers as a type in the language.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 values = Pointer(Int32).malloc(10) # Ask for 10 ints
-{% endhighlight ruby %}</div>
+```
 
 ### Regular expressions
 
 Regular expressions are implemented, for now, with C bindings to the PCRE library. Again,
 [Regexp](https://github.com/crystal-lang/crystal/blob/fd6c0238f6e7725d307d4c010d8c860e38a46d72/src/regexp.cr) is entirely written in Crystal.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 "foobarbaz" =~ /(.+)bar(.+)/ #=> 0
 $1                           #=> "foo"
 $2                           #=> "baz
-{% endhighlight ruby %}</div>
+```
 
 ### Ranges
 
@@ -277,18 +277,18 @@ numbers and filenames in the stacktraces.
 You can declare functions to be exported to C, so you can compile Crystal code and use it in C
 (although there's still no compiler flag to generate an object file, but it should be easy to implement).
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 fun my_c_function(x : Int32) : Int32
   "Yay, I can use string interpolation and call it #{x} times from C"
 end
-{% endhighlight ruby %}</div>
+```
 
 ### Macros
 
 This is an experimental feature of the language where you can generate source code
 from AST nodes.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 macro generate_method(name, value)
   "
   def #{name}
@@ -300,7 +300,7 @@ end
 generate_method :foo, 1
 
 puts foo # Prints: 1
-{% endhighlight ruby %}</div>
+```
 
 The macros getter, setter and property are implemented in a similar way, but we've
 been thinking of a more powerful and simpler way to achieve the same thing so this
@@ -310,7 +310,7 @@ feature might disappear.
 
 Similar to yield, but changes the implicit scope of the block.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 def foo
   # -1 becomes the default scope where methods
   # are looked up in the given block
@@ -321,7 +321,7 @@ foo do |x|
   # Invokes "abs" on -1
   puts abs + x #=> 3
 end
-{% endhighlight ruby %}</div>
+```
 
 This allows writing powerful DSLs with zero overhead: no allocations or closures
 are involved.
@@ -334,7 +334,7 @@ we find it easier to implement it this way, and maybe easier to use.
 We'be built a [very small clone of RSpec](https://github.com/crystal-lang/crystal/blob/master/src/spec.cr) and we are using it to test the standard
 library as well as the new compiler. Here's a sample spec for the Array class:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 require "spec"
 
 describe "Array" do
@@ -352,7 +352,7 @@ describe "Array" do
     end
   end
 end
-{% endhighlight ruby %}</div>
+```
 
 So Crystal makes it extremely easy to write tests, and at the same time gives you type safety.
 The best of both worlds.

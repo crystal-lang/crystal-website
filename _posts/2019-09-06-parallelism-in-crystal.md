@@ -21,11 +21,11 @@ As you will read in this document, data can be shared across workers but it’s 
 
 The first top-level change in the API is that, when spawning new fibers, you can specify if you want the new one to run in the same worker thread.
 
-<div class="code_section">{% highlight crystal %}
+```crystal
 spawn same_thread: true do
   # ...
 end
-{% endhighlight crystal %}</div>
+```
 
 This is particularly useful if you need to ensure certain thread local state or that the caller is the same thread.
 
@@ -102,22 +102,22 @@ To keep things as simple as possible, regarding the scheduling, once a fiber sta
 
 Compiling programs with multi-threading support is available behind the `preview_mt` flag for now. And check that you are using Crystal 0.31.0 (not yet released) or a local build of master.
 
-<div class="code_section">{% highlight bash %}
+```bash
 $ crystal --version
 Crystal 0.31.0
 
 $ crystal build -Dpreview_mt main.cr -o main
-{% endhighlight bash %}</div>
+```
 
 ### Setup the number of worker threads at runtime
 
 The number of worker threads can be customized via `CRYSTAL_WORKERS` env var. Its default is `4`.
 
-<div class="code_section">{% highlight bash %}
+```bash
 $ ./main # will use 4 workers
 $ CRYSTAL_WORKERS=4 ./main
 $ CRYSTAL_WORKERS=8 ./main
-{% endhighlight bash %}</div>
+```
 
 ### spawn
 
