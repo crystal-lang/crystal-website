@@ -59,7 +59,7 @@ class SponsorsBuilder
 
     # resuse logo if one with name exist
     logo_prefix = "sponsors/#{sponsor.name.downcase.gsub(/\W/, "_")}"
-    logos_dir = "#{__DIR__}/../_assets/img/"
+    logos_dir = "#{__DIR__}/../assets/"
 
     Dir["#{logos_dir}#{logo_prefix}.*"].each do |match|
       return "#{logo_prefix}#{File.extname(match)}"

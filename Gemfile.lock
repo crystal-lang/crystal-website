@@ -18,9 +18,6 @@ GEM
     ethon (0.13.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
-    extras (0.3.0)
-      forwardable-extended (~> 2.5)
-    fastimage (2.2.3)
     ffi (1.15.0)
     forwardable-extended (2.6.0)
     haml (5.2.1)
@@ -50,14 +47,6 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-assets (2.4.0)
-      concurrent-ruby (~> 1.0)
-      extras (~> 0.2)
-      fastimage (~> 2.0, >= 1.8)
-      jekyll (~> 3.1, >= 3.0)
-      pathutil (>= 0.8)
-      rack (~> 1.6)
-      sprockets (~> 3.3, < 3.8)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-seo-tag (2.7.1)
@@ -87,7 +76,6 @@ GEM
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
     racc (1.5.2)
-    rack (1.6.13)
     rainbow (3.0.0)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
@@ -99,9 +87,6 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sprockets (3.7.2)
-      concurrent-ruby (~> 1.0)
-      rack (> 1, < 3)
     temple (0.8.2)
     tilt (2.0.10)
     typhoeus (1.4.0)
@@ -115,7 +100,6 @@ DEPENDENCIES
   haml
   html-proofer
   jekyll
-  jekyll-assets (~> 2.4.0)
   jekyll-seo-tag
   jekyll-timeago
   kramdown-parser-gfm

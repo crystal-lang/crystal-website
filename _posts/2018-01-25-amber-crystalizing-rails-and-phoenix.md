@@ -83,7 +83,7 @@ These compile time checks can save your sanity when an accidental typo slips its
 The Amber project is _active_. Development on the tools, framework, libraries, and documentation is constant. Yet I've felt welcomed into the fold as an Amber contributor as the core team readily reviews and merges my pull requests, discusses framework direction and goals, and openly accepts suggestions and contributions from casual contributors as well as frequent benefactors.
 This picture is from the [Github Pulse](https://github.com/amberframework/amber/pulse/monthly) and shows how active the project has been this month:
 
-<img src="{{ 'blog/amber-pulse.png' | asset_path }}" class="center"/>
+<img src="/assets/blog/amber-pulse.png" class="center"/>
 
 # Raw Speed
 Last but certainly not least, thanks to Crystal, Amber is _**fast**_. The compiled web is real, and it’s far more friendly now than ever before.

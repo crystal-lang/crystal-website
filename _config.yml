@@ -59,14 +59,8 @@ exclude:
 - scripts/*.cr
 - vendor
 
-assets:
-  assets:
-    - media/crystal_logo.svg
-    - icon.png
-
 plugins:
   - jekyll-seo-tag
-  - jekyll-assets
   - jekyll-timeago
 
 google_calendar_api_key: 'AIzaSyCv-2Npqm0mwmwVCKX8xDPhwtP_8HwCWCE'

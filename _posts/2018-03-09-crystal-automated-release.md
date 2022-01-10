@@ -113,7 +113,7 @@ Let’s recap, what happens every night and for a proper release.
 
 Every night on master and every time a commit is tagged the following workflow will be executed.
 
-<img src="{{ 'blog/crystal-ci-workflow.png' | asset_path }}" class="center"/>
+<img src="/assets/blog/crystal-ci-workflow.png" class="center"/>
 
 That will roughly automatically:
 
