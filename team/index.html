@@ -25,7 +25,7 @@ description: >
       {% for member in site.data.team.core %}
         {% if member[1].status == "active" %}
           <div class="team-member">
-            {% img 'authors/{{ member[0] }}.jpg' %}
+            <img src="/assets/authors/{{ member[0] }}.jpg" />
             <div class="team-member__inner">
               <span class="member_name">{{ member[1].name }}</span>
               <span class="handles">
@@ -46,7 +46,7 @@ description: >
       {% for member in site.data.team.core %}
         {% if member[1].status == "inactive" %}
           <div class="team-member inactive">
-            {% img 'authors/{{ member[0] }}.jpg' %}
+            <img src="/assets/authors/{{ member[0] }}.jpg" />
             <div class="team-member__inner">
               <span class="member_name">{{ member[1].name }}</span>
               <span class="handles">
@@ -75,7 +75,7 @@ description: >
     <div class="core-team-alumni">
       {% for member in site.data.team.alumni %}
         <div class="team-member">
-          {% img 'authors/{{ member[0] }}.jpg' %}
+          <img src="/assets/authors/{{ member[0] }}.jpg" />
           <div class="team-member__inner">
             <span class="member_name">{{ member[1].name }}</span>
             <span class="handles">
@@ -104,7 +104,7 @@ description: >
     <div class="team-members team-members--admin">
       {% for member in site.data.team.admin %}
         <div class="team-member">
-          {% img 'authors/{{ member[0] }}.jpg' %}
+          <img src="/assets/authors/{{ member[0] }}.jpg" />
           <div class="team-member__inner">
             <span class="member_name">{{ member[1].name }}</span>
             <span class="handles">
@@ -135,7 +135,7 @@ description: >
     <div class="team-members team-members--moderator">
       {% for member in site.data.team.moderators %}
         <div class="team-member">
-          {% img 'authors/{{ member[0] }}.jpg' %}
+          <img src="/assets/authors/{{ member[0] }}.jpg" />
           <div class="team-member__inner">
             <span class="member_name">{{ member[1].name }}</span>
             <span class="handles">

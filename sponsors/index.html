@@ -27,10 +27,10 @@ description: These are the companies and individuals that help sustain Crystal's
                   <div class="logo">
                     {% if sp.url %}
                       <a href="{{sp.url}}" target="_blank">
-                        {% img '{{ assets[sp.logo].filename }}' %}
+                        <img src="/assets/{{ sp.logo }}" />
                       </a>
                     {% else %}
-                      {% img '{{ assets[sp.logo].filename }}' %}
+                      <img src="/assets/{{ sp.logo }}" />
                     {% endif %}
                   </div>
                 {% else %}
