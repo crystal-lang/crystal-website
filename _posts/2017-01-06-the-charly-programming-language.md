@@ -97,11 +97,11 @@ This part of the program is called the lexer (Lexical Analysis). It turns the so
 
 After the whole program was turned into a list of tokens, the parser turns them into an AST (Abstract Syntax Tree). The AST is a way of representing a program as a tree structure. Each node has a type and 0 or more children. The expression `1 + 2 * 3` would produce an AST which looks like this:
 
-<img src="{{ 'blog/charly-ast_1.png' | asset_path }}" class="center"/>
+<img src="/assets/blog/charly-ast_1.png" class="center"/>
 
 Something more sophisticated such as a method-call on an object might look like this:
 
-<img src="{{ 'blog/charly-ast_2.png' | asset_path }}" class="center"/>
+<img src="/assets/blog/charly-ast_2.png" class="center"/>
 
 Once the whole program has been turned into the AST, the interpreter starts to recursively traverse this structure.
 This procedure follows the [Visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern) to separate the AST and language logic.

@@ -1,13 +1,13 @@
 require "http/client"
 require "json"
 
-record Sponsor, name : String, url : String?, logo : String?, this_month : Float64, all_time : Float64, currency : String?, since : Time, overrides : String? do
+record Sponsor, name : String, url : String?, logo : String?, last_payment : Float64, all_time : Float64, currency : String?, since : Time, overrides : String? do
   include JSON::Serializable
 
   property name : String
   property url : String?
   property logo : String?
-  property this_month : Float64
+  property last_payment : Float64
   property all_time : Float64
   property currency : String?
   @[JSON::Field(converter: Time::Format.new("%b %-d, %Y"))]
@@ -37,7 +37,7 @@ class SponsorsBuilder
     end
 
     sponsor.logo = download_logo(sponsor)
-    sponsor.url = nil if sponsor.this_month < SHOW_URL_FROM
+    sponsor.url = nil if sponsor.last_payment < SHOW_URL_FROM
     @sponsors << sponsor
   end
 
@@ -55,11 +55,11 @@ class SponsorsBuilder
     return nil if logo.blank?
 
     # skip logo if below threshold
-    return nil if sponsor.this_month < SHOW_LOGO_FROM
+    return nil if sponsor.last_payment < SHOW_LOGO_FROM
 
     # resuse logo if one with name exist
     logo_prefix = "sponsors/#{sponsor.name.downcase.gsub(/\W/, "_")}"
-    logos_dir = "#{__DIR__}/../_assets/img/"
+    logos_dir = "#{__DIR__}/../assets/"
 
     Dir["#{logos_dir}#{logo_prefix}.*"].each do |match|
       return "#{logo_prefix}#{File.extname(match)}"

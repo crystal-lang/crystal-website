@@ -21,7 +21,7 @@ Before Moon, geneticists had to manually filter and rank mutations using special
 
 Moon has been written mostly in Ruby. We’ve chosen Ruby for several reasons: rapid development, expressive syntax, lots of available libraries and a great ecosystem. All of this results in developer happiness and faster development cycles. But while Ruby is fast enough for most parts of Moon, it can be slow for the most performance critical areas of our codebase. That’s why we evaluated Crystal, among others, and eventually decided to develop in Crystal.
 
-<img src="{{ 'blog/diploid-moon.png' | asset_path }}" class="center"/>
+<img src="/assets/blog/diploid-moon.png" class="center"/>
 
 # Why did you decide to use Crystal for these applications?
 When looking for a language that we could use to replace performance critical code in our Ruby codebase, we evaluated many options: Swift, Elixir, Go and Crystal. We specifically evaluated performance, syntax and ease-of-use. Performance was assessed using a small benchmark script that includes the performance critical

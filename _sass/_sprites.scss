@@ -2,7 +2,7 @@
 // --------------------------------------------------
 
 i.extra-icons {
-  background: url(asset_path("icons.svg")) no-repeat 40px 40px;
+  background: url("/assets/icons.svg") no-repeat 40px 40px;
   background-size: 120px 120px;
   display: inline-block;
   vertical-align: middle;
@@ -30,7 +30,7 @@ i.extra-icons.gray {
 }
 
 i.manas {
-  background: url(asset_path("m.svg"));
+  background: url("/assets/m.svg");
   width: 30px;
   height: 30px;
   display: inline-block;

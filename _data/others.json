@@ -4,7 +4,7 @@
     "url": "https://nikolamotor.com/",
     "logo": "sponsors/nikola_motor_company.png",
     "last_payment": 5000,
-    "all_time": 85000,
+    "all_time": 95000,
     "since": "Mar 1, 2020"
   },
   {
@@ -12,7 +12,7 @@
     "url": "https://www.84codes.com/",
     "logo": "sponsors/84.png",
     "last_payment": 5000,
-    "all_time": 141000,
+    "all_time": 166000,
     "currency": "€",
     "since": "Apr 1, 2018"
   },
@@ -22,5 +22,13 @@
     "last_payment": 0,
     "all_time": 425,
     "since": "Apr 14, 2019"
+  },
+  {
+    "overrides": "Screen Recorder",
+    "name": "Screen capture",
+    "logo": "sponsors/screen_recorder2.png",
+    "last_payment": 0,
+    "all_time": 0,
+    "since": "Dec 31, 2222"
   }
 ]
