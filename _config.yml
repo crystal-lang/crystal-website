@@ -61,7 +61,6 @@ exclude:
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-timeago
 
 google_calendar_api_key: 'AIzaSyCv-2Npqm0mwmwVCKX8xDPhwtP_8HwCWCE'
 google_calendar_id: '0s0pa4k3fov71e4itn79atlmeg@group.calendar.google.com'
