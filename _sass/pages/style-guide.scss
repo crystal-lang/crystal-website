@@ -1,0 +1,79 @@
+.wrapper > main > h2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.styleguide {
+  display: grid;
+  grid-template-areas: "head     code"
+                       "rendered code";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 1fr;
+
+  @media(max-width: 1200px) {
+    grid-template-areas: "head"
+                         "rendered";
+
+    grid-template-columns: 1fr;
+    &__code {
+      display: none;
+    }
+  }
+
+  border-top: 2px solid #000;
+
+  &__header {
+    padding: 1.5em;
+    grid-area: head;
+
+    h3 {
+      margin-top: 0 !important;
+    }
+
+    p {
+      margin-top: 0;
+
+      a {
+        border-bottom-width: 0;
+      }
+
+      &.entry--last {
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+  &__rendered {
+    grid-area: rendered;
+    padding: 1.5em;
+  }
+
+  &__code {
+    grid-area: code;
+    clear: both;
+    position: relative;
+
+    background-color: #f4f4f4;
+    padding: 1.5em;
+
+    > figure {
+      margin-top: 0;
+    }
+
+    > .highlight {
+      border: none;
+      padding: 0;
+      font-size: .9em;
+
+      &, > :first-child {
+        &::before, &::after {
+          content: none;
+        }
+      }
+    }
+
+    pre {
+      white-space: pre-line;
+    }
+  }
+}
