@@ -16,7 +16,7 @@
       height: 60px;
       margin-right: 10px;
     }
-    @include border-radius(50%);
+    border-radius: 50%;
   }
 
   &.inactive > img {
