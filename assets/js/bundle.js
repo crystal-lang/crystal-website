@@ -1,8 +1,12 @@
-//= require materialize.min
-//= require viewer
-//= require delaunay
-//= require main
-//= require pagination_in_place
+---
+layout: none
+---
+
+{% include_relative _materialize.min.js %}
+{% include_relative _viewer.js %}
+{% include_relative _delaunay.js %}
+{% include_relative _main.js %}
+{% include_relative _pagination_in_place.js %}
 
 $( document ).ready(function(){
   $('.button-collapse').sideNav({

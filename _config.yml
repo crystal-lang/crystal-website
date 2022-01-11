@@ -59,12 +59,5 @@ exclude:
 - scripts/*.cr
 - vendor
 
-assets:
-  assets:
-    - media/crystal_logo.svg
-    - icon.png
-
 plugins:
   - jekyll-seo-tag
-  - jekyll-assets
-  - jekyll-timeago
