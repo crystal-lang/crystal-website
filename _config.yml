@@ -47,7 +47,6 @@ twitter:
 highlighter: rouge
 markdown: kramdown
 exclude:
-- "*.haml"
 - "*.nix"
 - docker-compose.yml
 - docker-compose.*.yml
@@ -56,8 +55,9 @@ exclude:
 - Makefile
 - Rakefile
 - README.md
-- scripts/*.cr
+- /scripts/
 - vendor
+- netlify.toml
 
 google_calendar_api_key: 'AIzaSyCv-2Npqm0mwmwVCKX8xDPhwtP_8HwCWCE'
 google_calendar_id: '0s0pa4k3fov71e4itn79atlmeg@group.calendar.google.com'
