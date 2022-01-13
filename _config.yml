@@ -44,8 +44,6 @@ defaults:
 twitter:
   username: CrystalLanguage
 
-highlighter: rouge
-markdown: kramdown
 exclude:
 - "*.haml"
 - "*.nix"
@@ -58,6 +56,14 @@ exclude:
 - README.md
 - scripts/*.cr
 - vendor
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    default_lang: crystal
+    block:
+      css_class: code_section
 
 google_calendar_api_key: 'AIzaSyCv-2Npqm0mwmwVCKX8xDPhwtP_8HwCWCE'
 google_calendar_id: '0s0pa4k3fov71e4itn79atlmeg@group.calendar.google.com'
