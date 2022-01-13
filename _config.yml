@@ -59,8 +59,5 @@ exclude:
 - scripts/*.cr
 - vendor
 
-plugins:
-  - jekyll-seo-tag
-
 google_calendar_api_key: 'AIzaSyCv-2Npqm0mwmwVCKX8xDPhwtP_8HwCWCE'
 google_calendar_id: '0s0pa4k3fov71e4itn79atlmeg@group.calendar.google.com'
