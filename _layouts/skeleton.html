@@ -5,7 +5,12 @@ layout: none
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>{% if page.url != '/' %}{% unless page.layout == "install" %}{{ page.title }}{% else %}Install {{page.subtitle}}{% endunless %} - {% endif %}The Crystal Programming Language
+    <title>
+      {%- if layout.site_title -%}
+        {{ layout.site_title}}
+      {%- else -%}
+        {{ layout.page_title | liquify | default: page.title }} - The Crystal Programming Language
+      {%- endif -%}
     </title>
     <meta charset='utf-8'>
     <!-- Import Google Icon Font -->
