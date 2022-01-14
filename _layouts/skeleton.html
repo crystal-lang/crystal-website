@@ -1,3 +1,7 @@
+---
+layout: none
+# Basic HTML skeleton with only the top nav and otherwise blank content
+---
 <!DOCTYPE html>
 <html lang='en'>
   <head>
@@ -16,22 +20,7 @@
     <script src='https://code.jquery.com/jquery-3.1.1.min.js' type='text/javascript'></script>
   </head>
   <body>
-    <!-- {% include banner.html %} -->
-    <div class="wrapper {{page.custom_body_classes | join: ' '}}">
-      {% include nav.html %}
-      {% unless page.layout == "install" %}
-        {% if page.is_post or page.collection == 'releases' %}
-          {% include post_header.html %}
-        {% else %}
-          {% include header.html %}
-        {% endif %}
-      {% endunless %}
-
-      <main>
-        {{ content }}
-      </main>
-      {% include footer.html %}
-    </div>
+    {{ content }}
 
     <script id="dsq-count-scr" src="//crystal-lang.disqus.com/count.js" async></script>
     <script src="/assets/js/bundle.js"></script>
