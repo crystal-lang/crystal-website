@@ -58,6 +58,3 @@ exclude:
 - README.md
 - scripts/*.cr
 - vendor
-
-plugins:
-  - jekyll-seo-tag

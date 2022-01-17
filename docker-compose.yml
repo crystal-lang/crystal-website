@@ -2,7 +2,7 @@ version: '2'
 
 services:
   web:
-    image: ruby:2.5
+    image: ruby:3.1
     working_dir: /src
     command: /bin/bash -c "(bundle check || bundle install --jobs=3) && bundle exec jekyll serve --host=0.0.0.0 --incremental --livereload"
     ports:

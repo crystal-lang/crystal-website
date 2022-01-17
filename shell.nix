@@ -3,7 +3,7 @@ with import <nixpkgs> {};
 let
   gems_env = bundlerEnv {
     name = "gems_env";
-    ruby = ruby_2_5;
+    ruby = ruby_3_1;
     gemdir = ./.;
   };
 in
