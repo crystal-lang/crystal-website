@@ -28,7 +28,7 @@ brew upgrade crystal
 
 If you get an error like:
 
-```txt
+```text
 ld: library not found for -lssl (this usually means you need to install the development package for libssl)
 ```
 
