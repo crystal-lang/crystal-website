@@ -28,7 +28,7 @@ But there are also some downsides to this approach. Let's analyze each of them.
 Some say that without type annotations a code becomes harder to follow. Let's look
 at an example.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 def sum(values)
   count = 0
   values.each do |value|
@@ -36,7 +36,7 @@ def sum(values)
   end
   count
 end
-{% endhighlight %}</div>
+```
 
 What is the type of `values`? How can one understand this piece of code
 without knowing what type it operates on?
@@ -56,7 +56,7 @@ in understanding the method's intention and the variables' possible types.
 
 Compare this to some other language where you would have to add some types:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 interface Iterable<T>
   def each(&block : T ->)
 end
@@ -72,7 +72,7 @@ def sum(values : Iterable<T>) where T : Addable<T>
   end
   count
 end
-{% endhighlight %}</div>
+```
 
 Here we are telling the compiler that there is a type, `Iterable` that has an
 `each` method that yields elements of a generic type `T`. Then we also tell the

@@ -37,20 +37,20 @@ curl -fsSL https://download.opensuse.org/repositories/devel:languages:crystal/{R
 
 Once the repository is configured you're ready to install Crystal:
 
-<div class="code_section">{% highlight bash %}
+```bash
 sudo apt update
 sudo apt install crystal
-{% endhighlight bash %}</div>
+```
 
 The following packages are not required, but recommended for using the respective features in the standard library:
 
-<div class="code_section">{% highlight bash %}
+```bash
 sudo apt install libssl-dev      # for using OpenSSL
 sudo apt install libxml2-dev     # for using XML
 sudo apt install libyaml-dev     # for using YAML
 sudo apt install libgmp-dev      # for using Big numbers
 sudo apt install libz-dev        # for using crystal play
-{% endhighlight bash %}</div>
+```
 
 When a new Crystal version is released you can upgrade your system using:
 

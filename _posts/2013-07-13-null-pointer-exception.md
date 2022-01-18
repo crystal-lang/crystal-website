@@ -21,9 +21,9 @@ The good news? **Crystal doesn't allow you to have null pointer exceptions**.
 
 Let's start with the simplest example:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 nil.foo
-{% endhighlight %}</div>
+```
 
 Compiling the above program gives this error:
 
@@ -39,7 +39,7 @@ And since it doesn't have a method named "foo", an error is issued **at compile 
 
 Let's try with a slightly more complex, but made up, example:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 class Box
   getter :value
 
@@ -60,7 +60,7 @@ end
 n = ARGV.size
 box = make_box(n)
 puts box.value
-{% endhighlight %}</div>
+```
 
 Can you spot the bug?
 
@@ -102,7 +102,7 @@ but it also shows you where the `nil` originated. It's in the `case` expression,
 
 One last example, which might well be real code:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 require "socket"
 
 # Create a new TCPServer at port 8080
@@ -113,7 +113,7 @@ socket = server.accept
 
 # Read a line and output it capitalized
 puts socket.gets.capitalize
-{% endhighlight %}</div>
+```
 
 Can you spot the bug now? It turns out that TCPSocket#gets
 ([IO#gets](https://github.com/crystal-lang/crystal/blob/master/src/io.cr#L52), actually),
@@ -150,7 +150,7 @@ Nil trace:
 
 To prevent this error, you can do the following:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 require "socket"
 
 server = TCPServer.new(8080)
@@ -161,7 +161,7 @@ if line
 else
   puts "Nothing in the socket"
 end
-{% endhighlight %}</div>
+```
 
 This last program compiles fine. When you use a variable in an `if`'s condition, and because the only
 falsy values are `nil` and `false`, Crystal knows that `line` can't be nil inside the "then" part of the `if`.

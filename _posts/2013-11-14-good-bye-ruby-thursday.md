@@ -25,7 +25,7 @@ However, in the beginning the language was pure, very, very similar to Ruby wher
 
 So we made a small sacrifice: you sometimes have to specify the types of arrays, hashes, and other generic types.
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 a = []          # OK for Ruby, but not for Crystal
 b = [] of Int32 # OK for Crystal
 
@@ -35,7 +35,7 @@ c << "hello"    # OK for Ruby, error for Crystal (c is Array(Int32))
 
 d = [1, 2, 3] of Int32 | String
 d << "hello"    # OK for Crystal
-{% endhighlight ruby %}</div>
+```
 
 With this little change compile times were much better, growing lineraly relative to the code size.
 

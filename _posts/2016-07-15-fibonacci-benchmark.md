@@ -12,7 +12,7 @@ use the same code.
 
 Let's compare the fibonacci function:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 # fib.cr
 def fib(n)
   if n <= 1
@@ -25,7 +25,7 @@ end
 time = Time.now
 puts fib(42)
 puts Time.now - time
-{% endhighlight ruby %}</div>
+```
 
 Let's compare the times.
 
@@ -120,7 +120,7 @@ to check for overflow.
 There is, however, a way to get the correct result in Crystal, and this is similar to other languages:
 explicitly use big numbers. Let's do it:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 require "big"
 
 def fib(n)
@@ -134,7 +134,7 @@ end
 time = Time.now
 puts fib(BigInt.new(42))
 puts Time.now - time
-{% endhighlight ruby %}</div>
+```
 
 Let's run it:
 
@@ -157,7 +157,7 @@ Can we improve the performance of `fib` to match that of Ruby? We can try. One s
 thing is to use an iterative method, instead of doing it recursively, to avoid
 creating too many BigInt instances. Let's try:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 require "big"
 
 def fib(n)
@@ -173,7 +173,7 @@ end
 time = Time.now
 puts fib(42)
 puts Time.now - time
-{% endhighlight ruby %}</div>
+```
 
 Running it:
 
@@ -186,7 +186,7 @@ $ crystal fib.cr --release
 Much better! And way faster than Ruby. But, of course, we are cheating because Ruby still
 uses the old, slow algorithm. So to be fair, we must update our Ruby implementation:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 def fib(n)
   a = 1
   b = 1
@@ -200,7 +200,7 @@ end
 time = Time.now
 puts fib(42)
 puts Time.now - time
-{% endhighlight ruby %}</div>
+```
 
 Running it:
 
@@ -219,7 +219,7 @@ Yes. Crystal's `BigInt` is currently immutable, but maybe it could be changed to
 and be used like this for scenarios where performance of these operations is super important,
 or a bottleneck in the program. Let's reopen Crystal's BigInt and make some changes:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 require "big"
 
 struct BigInt
@@ -242,7 +242,7 @@ end
 time = Time.now
 puts fib(42)
 puts Time.now - time
-{% endhighlight ruby %}</div>
+```
 
 Running it:
 
