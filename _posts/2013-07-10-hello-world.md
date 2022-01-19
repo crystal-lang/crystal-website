@@ -7,13 +7,13 @@ author: asterite,waj
 
 This is the simplest way to write the Hello World program in Crystal:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 puts "Hello World"
-{% endhighlight %}</div></div>
+```</div>
 
 But if you feel like it, you can also use some object oriented programming:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 class Greeter
   def initialize(@name : String )
   end
@@ -25,16 +25,16 @@ end
 
 g = Greeter.new("world")
 g.salute
-{% endhighlight %}</div>
+```
 
 Or maybe with blocks:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 "Hello world".each_char do |char|
   print char
 end
 print '\n'
-{% endhighlight %}</div>
+```
 
 Each alternative might have a different performance, but luckily all of them are pretty expressive.
 

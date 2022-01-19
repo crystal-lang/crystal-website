@@ -10,12 +10,12 @@ Download the file for your platform and uncompress it. Inside it you will have a
 
 To make it simpler to use, you can create a symbolic link available in the path:
 
-<div class="code_section">{% highlight bash %}
+```bash
 ln -s /full/path/to/bin/crystal /usr/local/bin/crystal
-{% endhighlight bash %}</div>
+```
 
 Then you can invoke the compiler by just typing:
 
-<div class="code_section">{% highlight bash %}
+```bash
 crystal --version
-{% endhighlight bash %}</div>
+```

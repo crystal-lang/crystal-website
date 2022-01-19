@@ -74,7 +74,7 @@ You can set the `SHARDS_OPTS` environment variable to `--ignore-crystal-version`
 
 Let's revisit the whole state with a more concrete hypothetical (and pessimistic) example. We are the authors of `BelovedShard` that depends on `AwesomeShard`. So far everything is working on Crystal 0.35. `BelovedShard` is in `1.5.0` and `AwesomeShard` is in `2.2.3`.
 
-<div class="code_section">{% highlight yaml %}
+```yaml
 # BelovedShard's shard.yml file
 name: beloved_shard
 version: 1.5.0
@@ -83,16 +83,16 @@ dependencies:
     github: acme/awesome_shard
     version: ~> 2.2
 crystal: 0.35
-{% endhighlight yaml %}</div>
+```
 
 <br/>
 
-<div class="code_section">{% highlight yaml %}
+```yaml
 # AwesomeShard's shard.yml file
 name: awesome_shard
 version: 2.2.3
 crystal: 0.35
-{% endhighlight yaml %}</div>
+```
 
 When trying to use Crystal 1.0.0-dev on `BelovedShard`, we might stumble onto some issues with `AwesomeShard` and we might not be a maintainer of it. Thanks to Shards override you can fork and change the source of the awesome shard to it.
 
@@ -110,13 +110,13 @@ Now let's focus on BelovedShard where we want the same: the development branch s
 
 In our CI (or sometimes locally) we can use the following setup to accomplish that:
 
-<div class="code_section">{% highlight yaml %}
+```yaml
 # BelovedShard's override file shard.edge.yml
 dependencies:
   awesome:
     github: acme/awesome_shard
     branch: develop
-{% endhighlight yaml %}</div>
+```
 
 Set `SHARDS_OPTS=--ignore-crystal-version` and `SHARDS_OVERRIDE=shard.edge.yml`.
 

@@ -29,10 +29,10 @@ Upon tagging and releasing a new version, the package will be available also in 
 
 Since the Crystal snap runs in the *classic* confinement level (more about this later), the installation from the terminal in Ubuntu package is:
 
-<div class="code_section">{% highlight shell %}
+```shell
 $ sudo snap install crystal --classic        # For stable releases
 $ sudo snap install crystal --edge --classic # For nightly releases
-{% endhighlight crystal %}</div>
+```
 
 ## TravisCI integration
 
@@ -52,7 +52,7 @@ Once [snapcraft#2598](https://github.com/snapcore/snapcraft/pull/2598) ~~is merg
 
 Assuming there is a `shard.yml` that declares targets, dependencies, etc.
 
-<div class="code_section">{% highlight yaml %}
+```yaml
 name: hello
 
 targets:
@@ -60,11 +60,11 @@ targets:
     main: src/hello.cr
 
 # ... stripped ...
-{% endhighlight yaml %}</div>
+```
 
 A basic `snapcraft.yaml` file to declare all the parts will look as follows:
 
-<div class="code_section">{% highlight yaml %}
+```yaml
 name: crystal-hello
 version: "1.0"
 summary: Create the hello snap
@@ -80,7 +80,7 @@ apps:
 parts:
   crystal-hello:
     plugin: crystal
-{% endhighlight yaml %}</div>
+```
 
 After installing the generated snap, `$ crystal-hello` will invoke `./bin/hello`. Of course you can tweak the names and avoid the `crystal-` prefix.
 

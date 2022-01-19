@@ -44,8 +44,6 @@ defaults:
 twitter:
   username: CrystalLanguage
 
-highlighter: rouge
-markdown: kramdown
 exclude:
 - "*.haml"
 - "*.nix"
@@ -58,3 +56,12 @@ exclude:
 - README.md
 - scripts/*.cr
 - vendor
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    default_lang: crystal
+    block:
+      css_class: code_section
+
