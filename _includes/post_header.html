@@ -6,17 +6,12 @@
         <div class="author small">
           {% assign authors = page.author | split: ',' %}
           {% for author in authors %}
-            {% img 'authors/{{ author }}.jpg' %}
+            <img src="/assets/authors/{{ author }}.jpg" />
           {% endfor %}
           {% for author in authors %}
             <span class="author_name">{{ site.data.blog_authors[author].name }}</span>
           {% endfor %}
-          {% assign date = page.date | timeago %}
-          {% if date contains "month" or date contains "year" %}
-            <span class="date">{{ page.date | date_to_string }}</span>
-          {% else %}
-            <span class="date">{{ date }}</span>
-          {% endif %}
+          <span class="date">{{ page.date | date_to_string }}</span>
         </div>
 
         <h1 class='title'>{{ page.title }}</h1>

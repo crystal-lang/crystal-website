@@ -21,7 +21,7 @@ You probably use `$ shards` to install dependencies of your application and `$ c
 
 In order to do that in CircleCI using the latest release of Crystal you need to create a `.circleci/config.yml` with the following content.
 
-<div class="code_section">{% highlight yaml %}
+```yaml
 version: 2
 
 jobs:
@@ -43,7 +43,7 @@ workflows:
   ci:
     jobs:
       - test
-{% endhighlight yaml %}</div>
+```
 
 It will show the specific compiler version used thanks to `crystal --version`. And you can force a specific version using `crystallang/crystal:VERSION` docker images instead of `crystallang/crystal:latest`.
 
@@ -55,7 +55,7 @@ In CircleCI you can use [multiple docker images](https://circleci.com/docs/2.0/e
 
 Adding the `mysql:5.7` image with some environment configuration and giving it some time to start property should be enough. The resulting config is as follows:
 
-<div class="code_section">{% highlight yaml %}
+```yaml
 version: 2
 
 dry:
@@ -88,7 +88,7 @@ workflows:
   ci:
     jobs:
       - test
-{% endhighlight yaml %}</div>
+```
 
 **Note:** The `dry` key is not standard. It’s just a placeholder of values that will be used multiple times later or that helps reading the job’s steps. If prefered, you can inline their contents directly.
 
@@ -100,7 +100,7 @@ Another source of delay is downloading dependencies from scratch in every build.
 
 Adding steps to save and restore the path used as `SHARDS_CACHE_PATH` allows the build to run faster.
 
-<div class="code_section">{% highlight yaml %}
+```yaml
 version: 2
 
 dry:
@@ -150,7 +150,7 @@ workflows:
   ci:
     jobs:
       - test
-{% endhighlight yaml %}</div>
+```
 
 Notice how the cache key involves the checksum of the content of `shard.lock`. If you are using this for a shard, there should be no `shard.lock` file checked in and the `shard.yml` should be used instead.
 
@@ -164,7 +164,7 @@ The shards cache can be used for nightly builds but there is no gain in saving i
 
 So a not so minimalistic CircleCI config for a real app with dependencies, shorter build times and regular checks with Crystal nightly releases could be as follows:
 
-<div class="code_section">{% highlight yaml %}
+```yaml
 version: 2
 
 dry:
@@ -247,6 +247,6 @@ workflows:
                 - master
     jobs:
       - test-on-nightly
-{% endhighlight yaml %}</div>
+```
 
 That’s it! Thanks CircleCI for all the great features!

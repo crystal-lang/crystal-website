@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 'jekyll-assets', '~> 2.4.0'
-gem 'jekyll-timeago'
-gem 'jekyll-seo-tag'
-gem 'haml'
-gem 'rouge', git: 'https://github.com/manastech/rouge.git', branch: 'crystal'
-gem 'html-proofer'
+gem 'jekyll', '~> 4.2'
 gem 'kramdown-parser-gfm'
+
+group :jekyll_plugins do
+  gem 'jekyll-seo-tag'
+end
+
+# Webrick is used for `jekyll serve`
+gem "webrick", "~> 1.7"

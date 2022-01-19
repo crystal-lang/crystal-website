@@ -47,38 +47,28 @@
   }
 }
 
-.code_section {
-  border: 1px solid $light-gray;
+div.highlighter-rouge, figure.highlight {
   position: relative;
-  &:before, &:after {
-    content: "";
-    border: solid 1px $light-gray;
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    background-color: $white;
-  }
-  &:before {
-    top: -3px;
-    left: -3px;
-  }
-  &:after {
-    top: -3px;
-    right: -3px;
+  margin: 0;
+  border: 1px solid $light-gray;
+  padding: 1.5em 2em;
+  margin-top: 2em;
+
+  & + & {
+    border-top: none;
+    margin-top: 0;
   }
 
-  ul + & {
-    margin-top: 1.5em;
-    margin-bottom: 2.5em;
+  pre {
+    margin: 0;
+  }
+  code, pre {
+    background-color: transparent;
   }
 
   // This is a hack. Since I can't have 4 shapes in the code_section
   // I'm setting the lower two squares to be for the element inside
-  .highlight {
-    margin: 1.5em 0;
-    code, pre {
-      background-color: $white;
-    }
+  &, > :first-child {
     &:before, &:after {
       content: "";
       border: solid 1px $light-gray;
@@ -87,6 +77,17 @@
       position: absolute;
       background-color: $white;
     }
+  }
+
+  &:before {
+    top: -3px;
+    left: -3px;
+  }
+  &:after {
+    top: -3px;
+    right: -3px;
+  }
+  > :first-child {
     &:before {
       bottom: -3px;
       left: -3px;

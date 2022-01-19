@@ -9,7 +9,7 @@ Since I started exploring Crystal, I've always been impressed with how supportiv
 
 Last month, I decided to turn that feeling into action by organising a community-driven, online conference dedicated to Crystal and its users. That conference now has a name - Raw Crystal 2020 - and a date: Friday, 11 December 2020.
 
-<img src="{{ 'blog/2020-11-raw-crystal-banner.png' | asset_path }}" width="417" height="176" class="center" alt="Raw Crystal 2020 logo"/>
+<img src="/assets/blog/2020-11-raw-crystal-banner.png" width="417" height="176" class="center" alt="Raw Crystal 2020 logo"/>
 
 Let me give you an overview of what you can expect to see at the conference and share some insight on the organisation process.
 
@@ -26,7 +26,7 @@ Only a handful of talks came through over the first week, so I decided to proact
 I selected a few people based on their activity on the various Crystal channels - e.g. forum, gitter, github - and on their involvement in interesting projects - cherry-picked from shard aggregators websites such as [crystalshards.xyz](http://crystalshards.xyz).
 
 I also leveraged my network of Crystal friends. In particular, I asked Jack Thorne - of [Chicago Crystal](https://www.buzzsprout.com/1030945) fame - to look after and moderate a panel discussion to close the event - kudos Jack!
-<img src="{{ 'blog/2020-11-raw-crystal-jack.png' | asset_path }}" width="617"  class="center" alt="A couple of messages I exchanged Jack on Slack. I asked: would you be up for moderating a panel discussion at a conference, if we were to have one? He answered: yes!"/>
+<img src="/assets/blog/2020-11-raw-crystal-jack.png" width="617"  class="center" alt="A couple of messages I exchanged Jack on Slack. I asked: would you be up for moderating a panel discussion at a conference, if we were to have one? He answered: yes!"/>
 
 In parallel, I engaged with a few members of the Crystal core team to secure a keynote speaker - thanks Brian - and look for collaborators in the organisation of the event.
 
@@ -43,7 +43,7 @@ I decided to make a choice based on the following constraints:
 I also reviewed geo data related to users of my personal blog and to users of my YouTube channel. This reminded me that Crystal has a significant number of friends in North America.
 
 Based on all the above, I decided to go for a 6-hour-long conference starting at 16:00 UTC.
-<img src="{{ 'blog/2020-11-raw-crystal-schedule.png' | asset_path }}" width="617"  class="center" alt="Event schedule: the event will start at 8 am PST on Friday 11, December 2020, and close around 1 pm PST on the same day."/>
+<img src="/assets/blog/2020-11-raw-crystal-schedule.png" width="617"  class="center" alt="Event schedule: the event will start at 8 am PST on Friday 11, December 2020, and close around 1 pm PST on the same day."/>
 
 If these times don't work for you, then despair not! I will be sharing the recording of the talks on YouTube after the event.
 
@@ -56,11 +56,11 @@ You'll find the conference CoC on the closing paragraph of the [event page](http
 
 ## Registrations in numbers - so far
 As of Wednesday 18 November, 86 people have registered to the conference.
-<img src="{{ 'blog/2020-11-raw-crystal-registrations.png' | asset_path }}" width="617"  class="center" alt="Registrations by day: 24 registration on 12 Nov, 21 on the 13th, around 10 on the 14th, 15th and 16th, around 5 on the 17th and on the 18th."/>
+<img src="/assets/blog/2020-11-raw-crystal-registrations.png" width="617"  class="center" alt="Registrations by day: 24 registration on 12 Nov, 21 on the 13th, around 10 on the 14th, 15th and 16th, around 5 on the 17th and on the 18th."/>
 It was exciting to see a spike registrations as soon as the tickets were made available. The numbers have now gone down a bit, but I'm expecting to see another spike a day or two before registration closure.
 
 Attendees are registering from all over the world, with some fearless folks based in Australia, South Korea, China and India ready to tune in way past bed time.
-<img src="{{ 'blog/2020-11-raw-crystal-geo.png' | asset_path }}" width="617"  class="center" alt="Registrations across the word: 28 registrations in North America, 43 in Europe, 8 in South America, 7 between Asia and Australia."/>
+<img src="/assets/blog/2020-11-raw-crystal-geo.png" width="617"  class="center" alt="Registrations across the word: 28 registrations in North America, 43 in Europe, 8 in South America, 7 between Asia and Australia."/>
 Around 50% of the registrations come from Europe; 30% of the registrations come from North America.
 
 # What's next?

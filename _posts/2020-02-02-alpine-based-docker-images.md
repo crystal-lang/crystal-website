@@ -16,7 +16,7 @@ Alpine Linux makes this easy enough. For example, the offical Crystal compiler b
 
 Here's an example how the Docker image can be used to build a statically linked *Hello World* program:
 
-<div class="code_section">{% highlight terminal %}
+```terminal
 $ echo 'puts "Hello World!"' > hello-world.cr
 $ docker run --rm -it -v $PWD:/workspace -w /workspace crystallang/crystal:0.32.1-alpine \
     crystal build hello-world.cr --static
@@ -24,4 +24,4 @@ $ ./hello-world
 Hello World!
 $ ldd hello-world
         statically linked
-{% endhighlight terminal %}</div>
+```
