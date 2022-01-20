@@ -45,7 +45,6 @@ twitter:
   username: CrystalLanguage
 
 exclude:
-- "*.haml"
 - "*.nix"
 - docker-compose.yml
 - docker-compose.*.yml
@@ -54,8 +53,9 @@ exclude:
 - Makefile
 - Rakefile
 - README.md
-- scripts/*.cr
+- /scripts/
 - vendor
+- netlify.toml
 
 highlighter: rouge
 markdown: kramdown
