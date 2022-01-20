@@ -16,25 +16,25 @@ In this post, we'll cover how to automatically recompile and execute your code w
 
 Create a `./dev/build-exec.sh` file with the following content. This is the script that will recompile and execute your code.
 
-<div class="code_section">{% highlight shell %}
+```shell
 #!/bin/bash
 cd $(dirname $0)/..
 shards build "$1" && exec ./bin/"$1" "${@:2}"
-{% endhighlight shell %}</div>
+```
 
 Create a `./dev/watch.sh` file with the following content. This script will watch for changes to your source files and execute the build when there are any.
 
-<div class="code_section">{% highlight shell %}
+```shell
 #!/bin/bash
 cd $(dirname $0)/..
 watchexec -r -w src --signal SIGTERM -- ./dev/build-exec.sh "$@"
-{% endhighlight shell %}</div>
+```
 
 Allow them to be executed:
 
-<div class="code_section">{% highlight shell %}
+```shell
 $ chmod +x ./dev/build-exec.sh ./dev/watch.sh
-{% endhighlight shell %}</div>
+```
 
 ## Enjoy
 
@@ -42,7 +42,7 @@ If you created your app with `$ crystal init app awesome_app`
 
 There should be a target named `awesome_app`
 
-<div class="code_section">{% highlight shell %}
+```shell
 $ cat shard.yml
 name: awesome_app
 
@@ -51,19 +51,19 @@ name: awesome_app
 targets:
   awesome_app:
     main: src/awesome_app.cr
-{% endhighlight shell %}</div>
+```
 
 You can start running the app and watching for changes doing
 
-<div class="code_section">{% highlight shell %}
+```shell
 $ ./dev/watch.sh awesome_app
-{% endhighlight shell %}</div>
+```
 
 And you can even pass arguments
 
-<div class="code_section">{% highlight shell %}
+```shell
 $ ./dev/watch.sh awesome_app first second
-{% endhighlight shell %}</div>
+```
 
 ## How does it work
 

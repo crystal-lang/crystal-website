@@ -1,8 +1,13 @@
 ---
 title: Sponsors
 description: These are the companies and individuals that help sustain Crystal's development.
+layout: skeleton
 ---
-<script src="/assets/js/tablesort.js"></script>
+{% capture header_title %}{{ site.data.sponsors.size }}+ {{ page.title }}{% endcapture %}
+
+{% include header.html header_title=header_title %}
+
+<main>
 
 <div class="container">
 
@@ -73,6 +78,10 @@ description: These are the companies and individuals that help sustain Crystal's
 
 </div>
 
+<script src="/assets/js/tablesort.js"></script>
 <script>
   new Tablesort(document.getElementById('sponsors-tbl'));
 </script>
+
+</main>
+{% include footer.html %}

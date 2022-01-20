@@ -24,9 +24,9 @@ won't be available anymore. Please update to the new OBS repositories.
 Running the updated installation script should override the previous configuration
 in  `/etc/apt/sources.list.d/crystal.list` and  `/etc/yum.repos.d/crystal.repo`.
 
-<div class="code_section">{% highlight shell-session %}
+```shell-session
 $ curl -fsSL https://crystal-lang.org/install.sh | sudo bash
-{% endhighlight shell-session %}</div>
+```
 
 Only the latest stable release Crystal 1.0.0 is available in the new
 package repositories.

@@ -47,7 +47,7 @@ version: 0.1.0
 
 To create a simple http server edit the `src/heroku101.cr` file and add the following content:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 # file: src/heroku101.cr
 require "http/server"
 
@@ -61,7 +61,7 @@ end
 
 puts "Listening on http://#{bind}:#{port}"
 server.listen
-{% endhighlight ruby %}</div>
+```
 
 To build and run the program:
 
@@ -91,17 +91,17 @@ Before deploying, we need to make a small change. Heroku randomly assigns a port
 
 So, add a `require "option_parser"` at the beginning of `src/heroku101.cr` and override the `port` variable default with:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 OptionParser.parse! do |opts|
   opts.on("-p PORT", "--port PORT", "define port to run server") do |opt|
     port = opt.to_i
   end
 end
-{% endhighlight ruby %}</div>
+```
 
 The full `src/heroku101.cr` should be:
 
-<div class="code_section">{% highlight ruby %}
+```ruby
 # file: src/heroku101.cr
 require "http/server"
 require "option_parser"
@@ -122,7 +122,7 @@ end
 
 puts "Listening on http://#{bind}:#{port}"
 server.listen
-{% endhighlight ruby %}</div>
+```
 
 To build and run with `--port` option:
 

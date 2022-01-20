@@ -16,7 +16,7 @@ defaults:
       type: pages
     values:
       image: /assets/icon.png
-      layout: default
+      layout: page
   -
     scope:
       path: ""
@@ -44,8 +44,6 @@ defaults:
 twitter:
   username: CrystalLanguage
 
-highlighter: rouge
-markdown: kramdown
 exclude:
 - "*.nix"
 - docker-compose.yml
@@ -59,5 +57,11 @@ exclude:
 - vendor
 - netlify.toml
 
-google_calendar_api_key: 'AIzaSyCv-2Npqm0mwmwVCKX8xDPhwtP_8HwCWCE'
-google_calendar_id: '0s0pa4k3fov71e4itn79atlmeg@group.calendar.google.com'
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    default_lang: crystal
+    block:
+      css_class: code_section
+

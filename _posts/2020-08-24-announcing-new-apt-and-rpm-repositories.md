@@ -32,7 +32,7 @@ The current apt and rpm packages in [https://dist.crystal-lang.org](https://dist
 
 The [installation script](/install.sh) allows installing the latest stable version by default:
 
-<div class="code_section">{% highlight shell-session %}
+```shell-session
 $ curl -fsSL https://crystal-lang.org/install.sh -o install.sh
 $ chmod +x install.sh
 $ sudo ./install.sh
@@ -42,11 +42,11 @@ $ curl -fsSL https://crystal-lang.org/install.sh | sudo bash
 
 # Or, if you prefer wget
 $ sudo bash -c "$(wget -O - https://crystal-lang.org/install.sh)"
-{% endhighlight shell-session %}</div>
+```
 
 Choose the channel, for example to pick nightly packages:
 
-<div class="code_section">{% highlight shell-session %}
+```shell-session
 $ sudo ./install.sh --channel=nightly
 
 # Or, to run it directly
@@ -54,11 +54,11 @@ $ curl -fsSL https://crystal-lang.org/install.sh | sudo bash -s -- --channel=nig
 
 # Or, if you prefer wget
 $ sudo bash -c "$(wget -O - https://crystal-lang.org/install.sh)" -s -- --channel=nightly
-{% endhighlight shell-session %}</div>
+```
 
 Install a specific version as `major.minor.patch`, `major.minor` or `major.minor.patch-iteration`
 
-<div class="code_section">{% highlight shell-session %}
+```shell-session
 $ sudo ./install.sh --crystal=0.35
 
 # Or, to run it directly
@@ -66,7 +66,7 @@ $ curl -fsSL https://crystal-lang.org/install.sh | sudo bash -s -- --crystal=0.3
 
 # Or, if you prefer wget
 $ sudo bash -c "$(wget -O - https://crystal-lang.org/install.sh)" -s -- --crystal=0.35
-{% endhighlight shell-session %}</div>
+```
 
 In general, the install script accepts optional arguments
 
@@ -83,7 +83,7 @@ The installation script will overwrite `/etc/apt/sources.list.d/crystal.list` an
 
 If you already have the latest version of Crystal (0.35.1) and run the installation scripts you will see
 
-<div class="code_section">{% highlight shell-session %}
+```shell-session
 # Debian/Ubuntu
 ... stripped ...
 crystal is already the newest version (0.35.1-1).
@@ -93,7 +93,7 @@ crystal is already the newest version (0.35.1-1).
 ... stripped ...
 Package crystal-0.35.1-1.x86_64 already installed and latest version
 Nothing to do
-{% endhighlight shell-session %}</div>
+```
 
 This happens when there is no newer version in the new repository. If you switch to the nightly channel you will get 1.0.0-dev.
 
@@ -105,7 +105,7 @@ The installation script will upgrade to a newer crystal, but will not downgrade.
 
 If you already have 0.35.1 and wish to downgrade to the latest 0.34 you will get the following output.
 
-<div class="code_section">{% highlight shell-session %}
+```shell-session
 $ ./install.sh --crystal=0.34
 
 # Debian/Ubuntu
@@ -122,11 +122,11 @@ E: Packages were downgraded and -y was used without --allow-downgrades.
 ... stripped ...
 Package matching crystal-0.34.0-1.x86_64 already installed. Checking for update.
 Nothing to do
-{% endhighlight shell-session %}</div>
+```
 
 Instead of forcing a downgrade in the installation script we require you to explicitly uninstall crystal before a downgrade.
 
-<div class="code_section">{% highlight shell-session %}
+```shell-session
 # Debian/Ubuntu
 $ apt -y remove crystal
 $ ./install.sh --crystal=0.34
@@ -134,13 +134,13 @@ $ ./install.sh --crystal=0.34
 # CentOS/Fedora
 $ rpm -e crystal
 $ ./install.sh --crystal=0.34
-{% endhighlight shell-session %}</div>
+```
 
 When switching between channels you might need to clear the cached metadata.
 
-<div class="code_section">{% highlight shell-session %}
+```shell-session
 $ yum clean metadata
-{% endhighlight shell-session %}</div>
+```
 
 <br/>
 
@@ -152,11 +152,11 @@ What follows is a description of how these repositories are laid out for the sak
 
 The deb repository declared with `deb_distribution=all` and `deb_component` is used for the channel.
 
-<div class="code_section">{% highlight txt %}
+```txt
 deb https://dl.bintray.com/crystal/deb all stable
 deb https://dl.bintray.com/crystal/deb all unstable
 deb https://dl.bintray.com/crystal/deb all nightly
-{% endhighlight txt %}</div>
+```
 
 Luckily the dependencies of all deb distributions are the same and there is no need, at least for now, to distinguish between them.
 
@@ -164,9 +164,9 @@ Packages for amd64 and i386 are published.
 
 The repository metadata is signed with the Bintray shared GPG key
 
-<div class="code_section">{% highlight shell-session %}
+```shell-session
 $ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
-{% endhighlight shell-session %}</div>
+```
 
 The deb packages in stable and unstable channels are signed with our own GPG key.
 
@@ -174,9 +174,9 @@ The deb packages in the nightly channel are not signed.
 
 When installing via `apt` only the repository metadata signature is checked, so there is no need to add our own key in general.
 
-<div class="code_section">{% highlight shell-session %}
+```shell-session
 $ curl -sL "https://keybase.io/crystal/pgp_keys.asc" | apt-key add -
-{% endhighlight shell-session %}</div>
+```
 
 ## rpm repository
 
@@ -192,14 +192,14 @@ As before, the repository metadata is signed with the Bintray shared GPG key and
 
 Replace the `{DISTRO}` and `{CHANNEL}` and you are all set.
 
-<div class="code_section">{% highlight txt %}
+```txt
 [crystal]
 name=Crystal
 baseurl=https://dl.bintray.com/crystal/rpm/{DISTRO}/x86_64/{CHANNEL}
 gpgcheck=0
 repo_gpgcheck=1
 gpgkey=http://bintray.com/user/downloadSubjectPublicKey?username=bintray
-{% endhighlight txt %}</div>
+```
 
 <br/>
 
