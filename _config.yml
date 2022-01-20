@@ -16,7 +16,7 @@ defaults:
       type: pages
     values:
       image: /assets/icon.png
-      layout: default
+      layout: page
   -
     scope:
       path: ""
@@ -65,5 +65,3 @@ kramdown:
     block:
       css_class: code_section
 
-google_calendar_api_key: 'AIzaSyCv-2Npqm0mwmwVCKX8xDPhwtP_8HwCWCE'
-google_calendar_id: '0s0pa4k3fov71e4itn79atlmeg@group.calendar.google.com'

@@ -1,0 +1,12 @@
+---
+layout: skeleton
+# Base layout with site-specific framing: Top nav and footer
+# Inheriting layouts implement the page header and content.
+---
+<div class="wrapper {{ page.custom_body_classes | join: ' '}}">
+  {% include nav.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+</div>

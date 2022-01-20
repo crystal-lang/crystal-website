@@ -1,7 +1,16 @@
+---
+layout: none
+# Basic HTML skeleton with only the top nav and otherwise blank content
+---
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>{% if page.url != '/' %}{% unless page.layout == "install" %}{{ page.title }}{% else %}Install {{page.subtitle}}{% endunless %} - {% endif %}The Crystal Programming Language
+    <title>
+      {%- if layout.site_title -%}
+        {{ layout.site_title}}
+      {%- else -%}
+        {{ layout.page_title | liquify | default: page.title }} - The Crystal Programming Language
+      {%- endif -%}
     </title>
     <meta charset='utf-8'>
     <!-- Import Google Icon Font -->
@@ -16,21 +25,7 @@
     <script src='https://code.jquery.com/jquery-3.1.1.min.js' type='text/javascript'></script>
   </head>
   <body>
-    <div class="wrapper {{page.custom_body_classes | join: ' '}}">
-      {% include nav.html %}
-      {% unless page.layout == "install" %}
-        {% if page.is_post or page.collection == 'releases' %}
-          {% include post_header.html %}
-        {% else %}
-          {% include header.html %}
-        {% endif %}
-      {% endunless %}
-
-      <main>
-        {{ content }}
-      </main>
-      {% include footer.html %}
-    </div>
+    {{ content }}
 
     <script id="dsq-count-scr" src="//crystal-lang.disqus.com/count.js" async></script>
     <script src="/assets/js/bundle.js"></script>
