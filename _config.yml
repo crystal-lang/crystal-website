@@ -16,7 +16,7 @@ defaults:
       type: pages
     values:
       image: /assets/icon.png
-      layout: default
+      layout: page
   -
     scope:
       path: ""
