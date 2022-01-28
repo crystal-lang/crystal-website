@@ -25,9 +25,9 @@
       text-transform: uppercase;
     }
     &:not(:hover) .logo img {
-      @include grayscale(100%);
-      @include opacity(60);
-      @include transition(all .25s ease);
+      filter: grayscale(100%);
+      opacity: .6;
+      transition: all .25s ease;
     }
   }
   td:first-child, th:first-child {

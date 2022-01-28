@@ -130,13 +130,13 @@
       width: 96px;
       height: 96px;
       display: block;
-      @include grayscale(100%);
-      @include border-radius(50%);
+      filter: grayscale(100%);
+      border-radius: 50%;
       margin: 20px auto 50px auto;
     }
     &:hover {
       img {
-        @include grayscale(0%);
+        filter: grayscale(0%);
       }
     }
   }

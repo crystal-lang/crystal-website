@@ -15,7 +15,7 @@
     float: left;
     margin-right: 11px;
     margin-top: -4px;
-    @include border-radius(50%);
+    border-radius: 50%;
   }
 }
 
