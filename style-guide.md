@@ -1,6 +1,7 @@
 ---
 title: Living Style Guide
 layout: page
+permalink: /style-guide/
 ---
 
 <div class="container">
