@@ -13,7 +13,7 @@
     width: 100%;
     .header-error {
       h1 {
-        @extend .black-text;
+        --text-color: black;
         font-size: 4.5rem;
       }
       p {
