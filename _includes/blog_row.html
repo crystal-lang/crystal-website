@@ -1,21 +1,20 @@
 <div class="row blog-post">
   <div class="col s12">
-      {% assign authors = include.post.author | split: ',' %}
-      {% for author in authors %}
+      {%- assign authors = include.post.author | split: ',' -%}
+      {%- for author in authors -%}
         <div class="author small">
           <img src="/assets/authors/{{ author }}.jpg" />
           <span class="author_name">{{ site.data.blog_authors[author].name }}</span>
-          {% if author == authors.last %}
+          {%- if author == authors.last %}
             <span class="date">{{ include.post.date | date_to_string }}</span>
-          {% endif %}
+          {% endif -%}
         </div>
-      {% endfor %}
+      {%- endfor -%}
 
     <a href="{{ include.post.url }}">
       <h3 class="title">{{ include.post.title }}</h3>
       <p class="summary">{{ include.post.summary }}</p>
     </a>
-
     <p>
       <i class="material-icons">chat_bubble_outline</i>
       <span class="disqus-comment-count" data-disqus-identifier="{{include.post.id}}"></span>
