@@ -1,0 +1,19 @@
+<article class="styleguide">
+  <header class="styleguide__header">
+    <h3 id="guide-{{ component.title | slugify }}">{{ component.title }}</h3>
+      {% if component.usage %}<p><strong>Usage:</strong> {{ component.usage }}</p>{% endif %}
+      {% if component.module %}<p><strong>Include partial:</strong> <a href="https://github.com{{ site.repository | prepend: '/' | append: '/blob/master/' }}{{ component.module }}"><code>{{ component.module }}</code></a></p>{% endif %}
+      {% if component.scss %}<p class="styleguide--last"><strong>SCSS partial:</strong> <a href="https://github.com{{ site.repository | prepend: '/' | append: '/blob/master/' }}{{ component.scss }}">{{ component.scss }}</a></p>{% endif %}
+  </header>
+
+  <div class="styleguide__rendered post-layout">
+    {{ component.content }}
+  </div>
+  <div class="styleguide__code">
+
+{% highlight markdown %}
+{% include_relative {{ component.path }} %}
+{% endhighlight %}
+
+  </div>
+</article>

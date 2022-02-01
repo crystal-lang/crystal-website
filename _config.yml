@@ -8,6 +8,8 @@ future: true
 collections:
   releases:
     output: true
+  style_guide:
+    output: false
 
 defaults:
   -
@@ -65,3 +67,4 @@ kramdown:
     block:
       css_class: code_section
 
+repository: crystal-lang/crystal-website
