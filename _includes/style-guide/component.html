@@ -12,7 +12,14 @@
   <div class="styleguide__code">
 
 {% highlight markdown %}
-{% include_relative {{ component.path }} %}
+{%- comment %}
+When this component is built from an include, show the result instead of the `include` directive.
+{% endcomment -%}
+{%- if component.module -%}
+{{ component.content }}
+{%- else -%}
+{{ component.raw_content }}
+{%- endif -%}
 {% endhighlight %}
 
   </div>
