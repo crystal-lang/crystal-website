@@ -1,27 +1,29 @@
-@import
-        "pygment_white",
-        "materialize",
-        "reset";
+// Reset styles
+@import "reset";
 
+// Configuration
 @import "variables";
 
-// Generic classes: navigation and default layout
-// --------------------------------------------------
-@import "generic",
-        "footer";
+// Base style
+@import "materialize";
 
+// Generic styles
+@import "generic";
+@import "pygment_overrides";
+@import "pygment_white";
+@import "sprites";
 
-// Imports for specific pages and details
-// -----------------------------------------
-@import "sponsors",
-        "sprites",
-        "blog",
-        "media",
-        "install",
-        "community",
-        "team",
-        "conference",
-        "pygment_overrides",
-        "error",
-        "home",
-        "pages/style-guide";
+// Imports for components
+@import "components/footer";
+
+// Imports for specific pages
+@import "pages/blog";
+@import "pages/community";
+@import "pages/conference";
+@import "pages/error";
+@import "pages/home";
+@import "pages/install";
+@import "pages/media";
+@import "pages/sponsors";
+@import "pages/style-guide";
+@import "pages/team";
