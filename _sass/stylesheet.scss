@@ -16,7 +16,11 @@
 
 // Imports for components
 @import "components/code_block";
+@import "components/columns";
+@import "components/container";
 @import "components/footer";
+@import "components/nav";
+@import "components/side-nav";
 
 // Imports for specific pages
 @import "pages/blog";
