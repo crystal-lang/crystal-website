@@ -1,0 +1,109 @@
+body {
+  background: $white;
+  color: $primary-text;
+  font-family: $sans;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black;
+  margin: 30px 0;
+}
+
+h3 {
+  font-size: 100%;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: $black;
+}
+
+a {
+  color: $primary-text;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-text;
+    text-decoration: none;
+  }
+}
+
+p > a, td > a, ul:not(#nav-mobile) li > a, dd > a {
+  border-bottom: 1px solid $primary-text;
+}
+
+p:not(.read-more) {
+  & > a:not(.gray-link):not(.btn):not(.with-icon) {
+    color: #03A9F4;
+    border-bottom: 0;
+    &:hover {
+      color: #03A9F4;
+      border-bottom: 1px solid #03A9F4;
+    }
+  }
+}
+
+p.no-underline > a,
+table.no-underline a {
+  border-bottom: 0;
+  &:hover span {
+    border-bottom: 1px solid $primary-text;
+  }
+}
+
+.small {
+  font-size: 85%;
+}
+.hr-light {
+  border-style: solid;
+  border-color: $lighter-gray;
+  border-width: 1px 0 0 0;
+}
+
+.btn-large {
+  font-size: 20px;
+  line-height: 51px;
+}
+
+.btn-flat {
+  border: 2px solid $black;
+  padding: 0 42px;
+  &:active {
+    background-color: $white;
+  }
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
+}
+
+.btn-flat-white {
+  border: 2px solid $black;
+  padding: 0 42px;
+  margin: 0 10px;
+  color: $black;
+  background-color: $white;
+  &:active {
+    background-color: $white;
+  }
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+dd {
+  margin-left: 0;
+}
+
+ul.browser-default > li {
+  list-style: inherit;
+  padding: inherit;
+}
