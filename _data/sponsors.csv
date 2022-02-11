@@ -1,16 +1,16 @@
 logo,name,url,last_payment,all_time,since,level
-sponsors/84.png,84 codes,https://www.84codes.com/,€5000,€166000,"Apr 1, 2018",5000
-sponsors/nikola_motor_company.png,Nikola Motor Company,https://nikolamotor.com/,$5000,$95000,"Mar 1, 2020",5000
-sponsors/placeos.png,PlaceOS,https://place.technology/,$250,$1250,"Jul 26, 2021",250
-sponsors/screen_recorder2.png,Screen capture,https://www.screencapture.com/,$250,$250,"Nov 19, 2021",250
-sponsors/screen_recorder.png,Screen recorder,https://www.movavi.com/screen-recorder/,$250,$250,"Nov 19, 2021",250
-sponsors/dutchie.png,Dutchie,https://dutchie.com,$150,$1950,"Nov 23, 2020",150
-sponsors/prestodoctor.png,PrestoDoctor,https://prestodoctor.com,$150,$1800,"Dec 28, 2020",150
+sponsors/84.png,84 codes,https://www.84codes.com/,€5000,€176000,"Apr 1, 2018",5000
+sponsors/nikola_motor_company.png,Nikola Motor Company,https://nikolamotor.com/,$5000,$110000,"Mar 1, 2020",5000
+sponsors/placeos.png,PlaceOS,https://place.technology/,$250,$1750,"Jul 26, 2021",250
+sponsors/screen_recorder2.png,Screen capture,https://www.screencapture.com/,$250,$750,"Nov 19, 2021",250
+sponsors/screen_recorder.png,Screen recorder,https://www.movavi.com/screen-recorder/,$250,$750,"Nov 19, 2021",250
+sponsors/dutchie.png,Dutchie,https://dutchie.com,$150,$2250,"Nov 23, 2020",150
+sponsors/prestodoctor.png,PrestoDoctor,https://prestodoctor.com,$150,$2100,"Dec 28, 2020",150
 sponsors/roman_pushkin.jpg,Roman Pushkin,https://github.com/ro31337,$200,$300,"Jan 11, 2019",150
-sponsors/blitline.png,Blitline,https://www.blitline.com,$75,$2775,"Dec 12, 2018",75
-sponsors/vulk_cooperative.png,Vulk Cooperative,https://www.vulk.coop,$75,$1800,"Sep 10, 2020",75
-sponsors/ryan_maki.png,Ryan Maki,,$75,$975,"Dec 2, 2020",75
-,lowkey,,$75,$390,"Jun 12, 2021",75
+sponsors/blitline.png,Blitline,https://www.blitline.com,$75,$2925,"Dec 12, 2018",75
+sponsors/vulk_cooperative.png,Vulk Cooperative,https://www.vulk.coop,$75,$2100,"Sep 10, 2020",75
+sponsors/ryan_maki.png,Ryan Maki,,$75,$1125,"Dec 2, 2020",75
+,lowkey,,$75,$465,"Jun 12, 2021",75
 sponsors/tom_metge.jpg,Tom Metge,,$100,$100,"Jan 15, 2019",75
 ,James Hill,,$100,$100,"Sep 8, 2020",75
 ,Dale C Earl,,$100,$100,"Nov 23, 2020",75
@@ -22,22 +22,23 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,Jerome Gravel-Niquet,http://www.fly.io,$25,$1775,"Jan 28, 2016",25
 ,Linus Sellberg,,$25,$1320,"Feb 21, 2017",25
 ,Dave Doyle,http://twitter.com/meraxes,$25,$1125,"Mar 28, 2018",25
+,Julien Reichardt,https://github.com/j8r,$25,$975,"Dec 13, 2018",25
 ,Qard,http://stephenbelanger.com,$25,$965,"Aug 21, 2015",25
-,Julien Reichardt,https://github.com/j8r,$25,$925,"Dec 13, 2018",25
-,Raels Koder,,$25,$650,"Oct 30, 2019",25
-,Kagi,https://kagi.com,$25,$525,"Apr 8, 2020",25
-,Max Fierke,https://www.maxfierke.com,$25,$375,"Jul 21, 2019",25
-,Ricardo Tomasi,https://ricardo.cc,$25,$375,"Oct 9, 2020",25
-,Writers Per Hour,https://writersperhour.com,$25,$250,"Mar 6, 2021",25
-,Casinoonlineaams.com,https://www.casinoonlineaams.com,$25,$200,"May 26, 2021",25
-,Simon Eskildsen,,$25,$125,"Jul 21, 2021",25
-,CHUNG TSAI,,$25,$100,"Sep 3, 2021",25
-,Mauricio Gomes,,$25,$75,"Oct 8, 2021",25
+,Raels Koder,,$25,$700,"Oct 30, 2019",25
+,Kagi,https://kagi.com,$25,$575,"Apr 8, 2020",25
+,Max Fierke,https://www.maxfierke.com,$25,$425,"Jul 21, 2019",25
+,Ricardo Tomasi,https://ricardo.cc,$25,$425,"Oct 9, 2020",25
+,Level UP Solutions,https://www.levups.com,$50,$370,"Feb 1, 2021",25
+,Writers Per Hour,https://writersperhour.com,$25,$300,"Mar 6, 2021",25
+,Casinoonlineaams.com,https://www.casinoonlineaams.com,$25,$225,"May 26, 2021",25
+,Simon Eskildsen,,$25,$175,"Jul 21, 2021",25
+,CHUNG TSAI,,$25,$150,"Sep 3, 2021",25
+,Mauricio Gomes,,$25,$125,"Oct 8, 2021",25
 ,Algolia,https://algolia.com,$51,$51,"Dec 19, 2019",25
 ,Mark Sinclair,,$50,$50,"Dec 28, 2018",25
 ,Joppy,https://www.joppy.me,$50,$50,"Nov 19, 2020",25
-,Dmitri Goutnik,https://github.com/dmgk,$25,$35,"Aug 24, 2021",25
 ,Mehdi Drissi,,$25,$25,"Mar 27, 2020",25
+,creatable,,$25,$25,"Jan 5, 2022",25
 ,pitosalas,,$20,$825,"Dec 20, 2017",10
 ,Christos Zisopoulos,,$10,$660,"Jun 23, 2016",10
 ,masukomi,http://masukomi.org,$10,$640,"Aug 7, 2016",10
@@ -46,24 +47,24 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,Greg Walker,http://learnmeabitcoin.com,$10,$550,"Nov 21, 2016",10
 ,dtakahas,https://github.com/dtakahas,$10,$540,"Jun 6, 2017",10
 ,infinitary,https://infinitary.org,$10,$505,"Jun 11, 2018",10
-,Bookyourdata.com,https://www.bookyourdata.com,$10,$475,"Apr 14, 2019",10
+,Bookyourdata.com,https://www.bookyourdata.com,$10,$495,"Apr 14, 2019",10
 ,marksiemers,https://github.com/marksiemers,$10,$460,"Aug 29, 2017",10
 ,grioja,https://github.com/grioja,$10,$450,"Mar 31, 2018",10
 ,Andrey A. Konovalov,http://sysadminblog.ru,$14,$428,"Mar 6, 2018",10
-,Jaime Ortiz,,$15,$365,"Mar 20, 2021",10
+,Jaime Ortiz,,$10,$375,"Mar 20, 2021",10
 ,rigani,https://twitter.com/rigani_c,$10,$310,"Dec 28, 2018",10
+,Will Lewis,,$15,$240,"Sep 25, 2020",10
 ,Håkan Nylén,,$10,$220,"Mar 26, 2020",10
-,Will Lewis,,$15,$210,"Sep 25, 2020",10
 ,NekoIT,https://nekoit.xyz,$10,$190,"May 31, 2020",10
-,Philipp Claßen,,$10,$160,"Aug 27, 2020",10
+,Philipp Claßen,,$10,$180,"Aug 27, 2020",10
+,Josh Hollenbeck,,$10,$140,"Dec 19, 2020",10
 ,Jeffrey Crochet,https://www.linkedin.com/in/jeffrey-crochet-21008b199/,$10,$130,"Aug 25, 2020",10
-,Josh Hollenbeck,,$10,$120,"Dec 19, 2020",10
-,Werner Stein,,$10,$110,"Jan 24, 2021",10
-,Lampros Chaidas,,$10,$90,"Mar 29, 2021",10
-,NoAccountCasinos,https://noaccountcasinos.io,$10,$50,"Jul 1, 2021",10
-,Alexander Adam,https://github.com/alexanderadam/alexanderadam#-about-me,$10,$40,"Oct 1, 2021",10
-,Real Targeted Traffic,https://www.seo25.com/,$10,$30,"Oct 7, 2021",10
-,Targeted Web Traffic,https://www.targetedwebtraffic.com,$10,$30,"Oct 7, 2021",10
+,Werner Stein,,$10,$130,"Jan 24, 2021",10
+,Lampros Chaidas,,$10,$110,"Mar 29, 2021",10
+,Alexander Adam,https://github.com/alexanderadam/alexanderadam#-about-me,$10,$50,"Oct 1, 2021",10
+,Real Targeted Traffic,https://www.seo25.com/,$10,$50,"Oct 7, 2021",10
+,Targeted Web Traffic,https://www.targetedwebtraffic.com,$10,$50,"Oct 7, 2021",10
+,Bromine0x23,https://twitter.com/bromine0x23,$10,$42,"Feb 27, 2021",10
 ,Daniel Sokil,https://twitter.com/s0kil,$20,$20,"Feb 23, 2019",10
 ,Julien Elbaz,https://github.com/elbywan,$20,$20,"Jan 11, 2020",10
 ,Karel Pavlíček,,$20,$20,"Apr 20, 2020",10
@@ -90,7 +91,7 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,Anton Maminov,,$5,$340,"Oct 20, 2017",5
 ,shinkxw,https://github.com/shinkxw,$5,$325,"Sep 24, 2017",5
 ,ʕ·ᴥ·ʔAKJ,,$5,$295,"Jan 6, 2017",5
-,Leonardo Kewitz,https://kewitz.js.org,$5,$260,"Sep 9, 2020",5
+,Leonardo Kewitz,https://kewitz.js.org,$5,$280,"Sep 9, 2020",5
 ,Masaaki Aoyagi,,$5,$225,"Mar 26, 2018",5
 ,igorkasyanchuk,https://phototo.com.ua/,$5,$205,"Nov 2, 2017",5
 ,Martin Honermeyer,,$5,$205,"Jul 24, 2018",5
@@ -100,71 +101,66 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,mavu,,$5,$175,"Jan 23, 2019",5
 ,karupanerura,http://karupas.org/,$5,$155,"May 4, 2019",5
 ,Holden Omans,,$5,$150,"Jun 21, 2019",5
-,WPsetup,https://wpsetup.org,$5,$140,"Sep 2, 2019",5
+,WPsetup,https://wpsetup.org,$5,$150,"Sep 2, 2019",5
+,Ryan Prior,https://www.ryanprior.com,$5,$145,"Oct 7, 2019",5
 ,Lukas Svoboda,,$5,$135,"Sep 21, 2015",5
-,Ryan Prior,https://www.ryanprior.com,$5,$135,"Oct 7, 2019",5
-,Level UP Solutions,https://www.levups.com,$5,$135,"Feb 1, 2021",5
 ,Matt Berry,https://mattrb.com,$5,$125,"Dec 21, 2019",5
 ,ryan-senn,https://tt.edu.au,$5,$120,"Jan 4, 2020",5
 ,Marco Roth,https://marcoroth.dev,$5,$110,"Mar 4, 2020",5
 ,Wolfgang Klinger,,$5,$110,"Mar 9, 2020",5
-,Kasper Holbek Jensen,,$5,$105,"Mar 11, 2020",5
+,Glen Aultman-Bettridge,,$5,$110,"May 5, 2020",5
 ,Darwin,,$5,$105,"Apr 5, 2020",5
-,Glen Aultman-Bettridge,,$5,$100,"May 5, 2020",5
-,Artem Napolskih,,$5,$95,"May 22, 2020",5
-,Oleksii Neishchenko,,$5,$95,"Jun 9, 2020",5
-,Nobuaki Tanaka,https://twitter.com/tomerun,$5,$95,"Jun 10, 2020",5
-,Matt Berry,https://mattrb.com,$5,$85,"Aug 7, 2020",5
-,Edward Loveall,,$5,$75,"Sep 29, 2020",5
+,Artem Napolskih,,$5,$105,"May 22, 2020",5
+,Oleksii Neishchenko,,$5,$105,"Jun 9, 2020",5
+,Nobuaki Tanaka,https://twitter.com/tomerun,$5,$105,"Jun 10, 2020",5
+,Matt Berry,https://mattrb.com,$5,$95,"Aug 7, 2020",5
+,Edward Loveall,,$5,$85,"Sep 29, 2020",5
+,Jared Smith,https://www.linkedin.com/in/jaredsmithse/,$5,$80,"Mar 22, 2021",5
+,anapsix,https://blog.random.io,$5,$75,"Dec 2, 2020",5
+,OvrClock,https://ovrclock.com,$5,$75,"Dec 11, 2020",5
+,FindContinuingCare,https://www.findcontiuingcare.com,$5,$70,"Jan 11, 2021",5
 ,vinit joshi,,$5,$70,"Feb 3, 2021",5
-,Jared Smith,https://www.linkedin.com/in/jaredsmithse/,$5,$70,"Mar 22, 2021",5
-,anapsix,https://blog.random.io,$5,$65,"Dec 2, 2020",5
-,OvrClock,https://ovrclock.com,$5,$65,"Dec 11, 2020",5
-,FindContinuingCare,https://www.findcontiuingcare.com,$5,$60,"Jan 11, 2021",5
-,Mamafacts,https://www.mamafacts.com/,$5,$55,"Feb 9, 2021",5
-,Auttawut Wiriyakreng,,$5,$45,"Mar 25, 2021",5
-,Mark Raymond Jr.,,$5,$40,"Nov 9, 2020",5
-,Guillermo Siliceo Trueba,,$5,$40,"Mar 26, 2021",5
+,Mamafacts,https://www.mamafacts.com/,$5,$65,"Feb 9, 2021",5
+,Auttawut Wiriyakreng,,$5,$55,"Mar 25, 2021",5
+,Mark Raymond Jr.,,$5,$50,"Nov 9, 2020",5
+,Mikihiro Hamaguchi,https://github.com/machida4,$5,$50,"Apr 26, 2021",5
+,Netin nopeustesti,https://netinnopeustesti.com/,$5,$45,"May 27, 2021",5
+,Windesol Sähkön Kilpailutus,https://windesol.fi,$5,$45,"Jun 8, 2021",5
+,Provided.io,https://provided.io,$5,$45,"Jun 15, 2021",5
+,Joseph Method,,$5,$45,"Jul 9, 2021",5
 ,salt rock lamp,,$5,$40,"Apr 11, 2021",5
-,Mikihiro Hamaguchi,https://github.com/machida4,$5,$40,"Apr 26, 2021",5
-,Netin nopeustesti,https://netinnopeustesti.com/,$5,$40,"May 27, 2021",5
-,Windesol Sähkön Kilpailutus,https://windesol.fi,$5,$35,"Jun 8, 2021",5
-,Provided.io,https://provided.io,$5,$35,"Jun 15, 2021",5
-,Renkaatsopivasti,https://renkaatsopivasti.fi,$5,$35,"Jul 2, 2021",5
-,Daiki Sato,https://twitter.com/doew_,$5,$35,"Jul 3, 2021",5
-,Joseph Method,,$5,$35,"Jul 9, 2021",5
-,Agloks,,$5,$30,"Jul 8, 2021",5
-,Ismael Abreu,https://ismaelga.com,$5,$30,"Jul 23, 2021",5
+,Renkaatsopivasti,https://renkaatsopivasti.fi,$5,$40,"Jul 2, 2021",5
+,Daiki Sato,https://twitter.com/doew_,$5,$40,"Jul 3, 2021",5
+,Agloks,,$5,$40,"Jul 8, 2021",5
+,Ismael Abreu,https://ismaelga.com,$5,$35,"Jul 23, 2021",5
 ,Billigstbredbaand.dk,https://billigstbredbaand.dk,$5,$30,"Jul 26, 2021",5
-,Bromine0x23,https://twitter.com/bromine0x23,$5,$27,"Feb 27, 2021",5
-,Yann Carlen,https://yanncarlen.com,$5,$25,"Aug 8, 2021",5
-,Taletidskortnu,https://taletidskort.nu,$5,$25,"Aug 25, 2021",5
-,xstats.gg,https://xstats.gg,$5,$20,"Sep 14, 2021",5
-,eason.ye,https://github.com/yelanxin,$5,$15,"Sep 17, 2021",5
+,Yann Carlen,https://yanncarlen.com,$5,$30,"Aug 8, 2021",5
+,Taletidskortnu,https://taletidskort.nu,$5,$30,"Aug 25, 2021",5
+,xstats.gg,https://xstats.gg,$5,$30,"Sep 14, 2021",5
+,eason.ye,https://github.com/yelanxin,$5,$25,"Sep 17, 2021",5
+,Mia Bennett,https://chillfox.com/,$5,$25,"Oct 1, 2021",5
+,maltidsbarometeret,https://maltidsbarometeret.dk,$5,$20,"Oct 19, 2021",5
+,Tommi Aaltonen,https://tommiaaltonen.fi/,$5,$20,"Oct 28, 2021",5
+,Michael Wagner,,$5,$20,"Nov 11, 2021",5
 ,HelppoHinta.fi,https://helppohinta.fi/,$5,$15,"Oct 1, 2021",5
-,Mia Bennett,https://chillfox.com/,$5,$15,"Oct 1, 2021",5
 ,Adam Stephens,,$5,$15,"Oct 14, 2021",5
-,maltidsbarometeret,https://maltidsbarometeret.dk,$5,$15,"Oct 19, 2021",5
-,Tommi Aaltonen,https://tommiaaltonen.fi/,$5,$15,"Oct 28, 2021",5
+,Messaged,https://messaged.com,$5,$15,"Nov 10, 2021",5
+,Jim Abraham,,$5,$15,"Dec 9, 2021",5
+,prointernet.in.ua,https://www.prointernet.in.ua/,$5,$15,"Dec 13, 2021",5
 ,Aanand Natarajan,,$5,$10,"Jun 12, 2020",5
 ,Dedicated Stars,https://www.dedicatedstars.com,$5,$10,"Jul 5, 2021",5
-,Messaged,https://messaged.com,$5,$10,"Nov 10, 2021",5
-,Michael Wagner,,$5,$10,"Nov 11, 2021",5
+,Billigzonen.dk,https://billigzonen.dk,$5,$10,"Dec 21, 2021",5
+,Skurhse Rage 🌆🌃🌌,,$5,$10,"Dec 21, 2021",5
 ,Takuya Matsunaga,https://github.com/takanotume24,$5,$5,"Oct 24, 2019",5
 ,Alberto Corbi,,$5,$5,"Dec 14, 2020",5
 ,Adam Zacharias,,$5,$5,"Feb 22, 2021",5
 ,Haiting Zhang,https://twitter.com/slowy_oier,$5,$5,"Mar 8, 2021",5
 ,Elvis Begluk,,$5,$5,"Aug 27, 2021",5
-,Igor Polyakov,,$5,$5,"Oct 16, 2021",5
-,Blackjack77russia.com,https://blackjack77russia.com,$5,$5,"Nov 1, 2021",5
-,Jim Abraham,,$5,$5,"Dec 9, 2021",5
-,prointernet.in.ua,https://www.prointernet.in.ua/,$5,$5,"Dec 13, 2021",5
-,Billigzonen.dk,https://billigzonen.dk,$5,$5,"Dec 21, 2021",5
-,Skurhse Rage 🌆🌃🌌,,$5,$5,"Dec 21, 2021",5
+,StateTax.io,https://statetax.io/,$5,$5,"Jan 26, 2022",5
 ,Martin Luder,,$1,$76,"Aug 14, 2015",1
 ,Shigenobu Nishikawa,,$1,$74,"Oct 23, 2015",1
 ,Joris Vanhecke,,$1,$66,"Jun 15, 2016",1
-,Jonathan Gnagy,,$1,$62,"Oct 31, 2019",1
+,Jonathan Gnagy,,$1,$64,"Oct 31, 2019",1
 ,Harm Aarts,,$1,$61,"Nov 10, 2016",1
 ,Romain,,$1,$53,"Jul 14, 2017",1
 ,Piotr Żurek,,$1,$53,"Jul 19, 2017",1
@@ -175,7 +171,8 @@ sponsors/michael_lang.png,Michael Lang,,$75,$75,"Sep 30, 2019",75
 ,Christian Meredith,,$3,$37,"Apr 12, 2021",1
 ,Bernardo Anderson,,$2,$36,"Jun 1, 2019",1
 ,Sergey Kojin,,$1,$26,"Oct 7, 2019",1
-,Luan Dias,,$1,$19,"May 28, 2020",1
+,Luan Dias,,$1,$21,"May 28, 2020",1
+,speg,,$3,$8,"Jan 10, 2022",1
 ,Matthias-Christian Ott,,$4,$4,"May 2, 2021",1
 ,Claudio G Macedo Jr,,$3,$3,"Sep 18, 2020",1
 ,Leadscanner,,$2,$2,"Jan 21, 2021",1
