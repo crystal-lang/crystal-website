@@ -55,6 +55,11 @@ admin:
     role: Communication
     affiliation: Manas.Tech
 
+  ftarulla:
+    name: Francisco Tarulla
+    role: Developer
+    affiliation: Manas.Tech
+
 alumni:
   ggiraldez:
     name: Gustavo Giraldez
