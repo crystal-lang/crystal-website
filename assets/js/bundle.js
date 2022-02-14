@@ -2,7 +2,6 @@
 layout: none
 ---
 
-{% include_relative _materialize.min.js %}
 {% include_relative _viewer.js %}
 {% include_relative _delaunay.js %}
 {% include_relative _main.js %}
