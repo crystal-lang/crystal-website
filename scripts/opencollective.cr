@@ -50,20 +50,21 @@ dateOfGrace = Time.utc - 3.months
 opencollective.members.each do |member|
   next unless member.role == "BACKER"
 
-  # Let's not consider inactive a member that sponsored in the last 3 months
-  next unless member.isActive || member.lastTransactionAt > dateOfGrace
-
-  # organizations that provides gift cards to backers seems
-  # to appear with lastTransactionAmount == 0
-  # but with totalAmountDonated > 0
-  next unless member.lastTransactionAmount > 0
+  next if member.totalAmountDonated == 0 # The only ones I see with 0 are not BACKERs, but just in case
 
   downcase_name = member.name.downcase
   next if downcase_name == "incognito" || downcase_name == "guest"
 
   url = member.website || member.twitter || member.github
   logo = member.image
-  amount = member.lastTransactionAmount
+
+  # We consider a member as not paying anything if it's inactive or it haven't sponsored in the last 3 months
+  if member.isActive && member.lastTransactionAt > dateOfGrace
+    amount = member.lastTransactionAmount
+  else
+    amount = 0.0
+  end
+
   all_time = member.totalAmountDonated
   sponsors.add Sponsor.new(member.name, url, logo, amount, all_time, nil, member.createdAt, nil)
 end
