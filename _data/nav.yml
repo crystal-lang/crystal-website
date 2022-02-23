@@ -5,8 +5,6 @@ main:
   url: /sponsors/
 - label: Community
   url: /community/
-- label: Conference
-  url: /conference/
 - label: Team
   url: /team/
 - label: Docs
