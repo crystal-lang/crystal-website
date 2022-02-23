@@ -21,7 +21,16 @@ body {
     white-space: nowrap;
   }
 
+  .crystal-home {
+    display: inline-flex;
+    align-items: center;
+    margin: 15px;
+    line-height: 0px;
 
+    #logo-container {
+      margin: 0px !important;
+    }
+  }
 
   #logo-container {
     background-color: $white;
