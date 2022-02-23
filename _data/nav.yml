@@ -1,8 +1,6 @@
 main:
 - label: Home
   url: /
-- label: Forum
-  url: https://forum.crystal-lang.org
 - label: Blog
   url: /blog/
 - label: Sponsors
