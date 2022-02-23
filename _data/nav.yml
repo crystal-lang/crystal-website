@@ -15,5 +15,3 @@ main:
   url: /team/
 - label: Docs
   url: /docs/
-- label: GitHub
-  url: https://github.com/crystal-lang/crystal

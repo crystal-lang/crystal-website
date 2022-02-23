@@ -21,8 +21,6 @@ body {
     white-space: nowrap;
   }
 
-
-
   #logo-container {
     background-color: $white;
     border-radius: 50%;
@@ -37,12 +35,16 @@ body {
       height: 60px;
     }
   }
+
   nav {
     height: 96px;
     background-color: $white;
     box-shadow: none;
     border-bottom: 1px solid $separator;
 
+    #nav-desktop {
+      margin-right: 70px;
+    }
 
     ul#nav-desktop li a {
       height: 96px;
@@ -141,6 +143,38 @@ hr.squares {
     font-weight: 400;
     font-size: 20px;
     height: 60px;
+  }
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
   }
 }
 
