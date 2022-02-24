@@ -1,11 +1,19 @@
 main:
-- label: Blog
-  url: /blog/
-- label: Sponsors
-  url: /sponsors/
-- label: Community
-  url: /community/
-- label: Team
-  url: /team/
+- label: Install
+  url: /install/
+- label: Learn
+  url: https://crystal-lang.org/reference/getting_started/
+- label: Try online
+  url: https://play.crystal-lang.org/#/cr
 - label: Docs
   url: /docs/
+- label: Tools
+  url: https://github.com/crystal-lang-tools
+- label: Community
+  url: /community/
+- label: Blog
+  url: /blog/
+- label: Team
+  url: /team/
+- label: Sponsors
+  url: /sponsors/
