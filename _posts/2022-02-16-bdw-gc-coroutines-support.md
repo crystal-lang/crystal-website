@@ -9,7 +9,7 @@ author: bcardiff
 
 The support for multi-thread coroutines was gained by allowing the user to control the stack bottom of each thread. Changing the stack bottom and the instruction pointer is what effectively gives life to the coroutines. This is, letting the program choose what portion of the program to execute next without needing to tell the OS about it. Telling the OS would be equivalent to using threads and that would be more expensive.
 
-So Crystal, and other languages, could benefit from having a mutli-thread program where in each thread multiple coroutines can be executed concurrently.
+So Crystal, and other languages, could benefit from having a multi-thread program where in each thread multiple coroutines can be executed concurrently.
 
 When implementing coroutines the runtime will likely have some sort of book-keeping of the existing coroutines that still need to keep executing. The record of these will involve their stack, instruction pointer and persistence of registers among other information that is specific to the runtime.
 
