@@ -67,6 +67,7 @@
       padding-left: 2.5em;
     }
     li:before {
+      position: absolute;
       display: inline-block;
       content: counter(item) ".";
       counter-increment: item;
@@ -84,6 +85,7 @@
       padding-left: 2.5em;
     }
     li:before {
+      position: absolute;
       display: inline-block;
       content: "▪";
       width: 1.5em;
