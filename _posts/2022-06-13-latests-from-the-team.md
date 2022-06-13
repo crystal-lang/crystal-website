@@ -5,8 +5,6 @@ thumbnail: +
 author: beta-ziliani
 ---
 
-# Latests news from the Crystal Team
-
 Here we tell the community what's been on the team's plate for the last couple of months, focusing on those aspects that aren't visible in Crystal's main repo.
 
 ## Documentation improvements
