@@ -80,7 +80,7 @@
   icon: install/windows@2x.png
 -
   url: /install/on_windows
-  caption: Windows
+  caption: Windows (Preview)
   icon: install/windows@2x.png
 -
   url: /install/from_asdf

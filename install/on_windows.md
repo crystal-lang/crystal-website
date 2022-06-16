@@ -1,8 +1,9 @@
 ---
-subtitle: On Windows
+subtitle: On Windows (Preview)
 ---
 
-To easily install the Crystal Preview on Windows you can use [Scoop](https://scoop.sh/). Be aware of the fact that Crystal on Windows is [not yet complete](https://github.com/crystal-lang/crystal/issues/5430).
+To easily install the Crystal Preview on Windows you can use [Scoop](https://scoop.sh/). 
+**Be aware of the fact that Crystal on Windows is** [**not yet complete**](https://github.com/crystal-lang/crystal/issues/5430).
 
 Before you start the installation, you must ensure that the [required packages](https://github.com/neatorobito/scoop-crystal#requirements) are installed.
 
