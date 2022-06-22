@@ -1,0 +1,26 @@
+name: Update Sponsors
+
+on:
+  schedule:
+    - cron:  '0 9 1,8,15,23 * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    container:
+      image: crystallang/crystal
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: crystal scripts/opencollective.cr
+    - name: Run tests
+      run: crystal scripts/merge.cr
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        commit-message: "Updating sponsors"
+        title: "Updating sponsors"
+        delete-branch: true
