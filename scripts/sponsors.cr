@@ -13,6 +13,17 @@ record Sponsor, name : String, url : String?, logo : String?, last_payment : Flo
   @[JSON::Field(converter: Time::Format.new("%b %-d, %Y"))]
   property since : Time
   property overrides : String?
+
+  # Merge this sponsor with the given sponsor. Requires that the name and url match.
+  def merge(other : Sponsor?) : Sponsor
+    return self if other.nil?
+    raise "Can't merge #{self} with #{other}" if name != other.name || url != other.url
+    copy_with(
+      last_payment: since > other.since ? last_payment : other.last_payment,
+      all_time: all_time + other.all_time,
+      since: since < other.since ? since : other.since,
+    )
+  end
 end
 
 class SponsorsBuilder
