@@ -24,3 +24,4 @@ jobs:
         commit-message: "Updating sponsors"
         title: "Updating sponsors"
         delete-branch: true
+        branch: update-sponsors
