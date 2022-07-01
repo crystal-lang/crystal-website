@@ -3,6 +3,7 @@ name: Update Sponsors
 on:
   schedule:
     - cron:  '0 9 1,8,15,23 * *'
+  workflow_dispatch:
 
 jobs:
   build:
