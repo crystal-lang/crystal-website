@@ -14,9 +14,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Install dependencies
+    - name: Update OC
       run: crystal scripts/opencollective.cr
-    - name: Run tests
+    - name: Merge
       run: crystal scripts/merge.cr
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4
