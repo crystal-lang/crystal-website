@@ -16,13 +16,12 @@ overrides = Array(Sponsor).new
     sponsors = Array(Sponsor).from_json(file)
     sponsors, overrides = sponsors.partition(&.overrides.nil?) if filename == "others.json"
     sponsors.each do |sponsor|
-      sponsor_hash = sponsor.name.hash ^ (sponsor.url || "").hash # relevant fields to merge on
-      all_sponsors_map[sponsor_hash] = sponsor.merge(all_sponsors_map[sponsor_hash]?)
+      all_sponsors_map[sponsor.id] = sponsor.merge(all_sponsors_map[sponsor.id]?)
     end
   end
 end
 
-all_sponsors = all_sponsors_map.values.flatten # select all sponsors now that they've been merged
+all_sponsors = all_sponsors_map.values # select all sponsors now that they've been merged
 
 overrides.each do |sponsor|
   name_to_override = sponsor.overrides.not_nil!

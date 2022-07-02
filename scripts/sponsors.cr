@@ -14,6 +14,10 @@ record Sponsor, name : String, url : String?, logo : String?, last_payment : Flo
   property since : Time
   property overrides : String?
 
+  def id : UInt64
+    name.hash ^ (url || "").hash
+  end
+
   # Merge this sponsor with the given sponsor. Requires that the name and url match.
   def merge(other : Sponsor?) : Sponsor
     return self if other.nil?
