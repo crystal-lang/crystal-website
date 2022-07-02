@@ -25,7 +25,7 @@ record Sponsor, name : String, url : String?, logo : String?, last_payment : Flo
     copy_with(
       last_payment: since > other.since ? last_payment : other.last_payment,
       all_time: all_time + other.all_time,
-      since: since < other.since ? since : other.since,
+      since: Math.min(since, other.since),
     )
   end
 end
