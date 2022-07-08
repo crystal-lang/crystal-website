@@ -1,5 +1,25 @@
 [
   {
+    "name": "SportOnlineBetting",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "Jul 4, 2022"
+  },
+  {
+    "name": "Stayatcasinos.com",
+    "url": "https://stayatcasinos.com/",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "Jul 4, 2022"
+  },
+  {
+    "name": "Bromine0x23",
+    "url": "https://twitter.com/bromine0x23",
+    "last_payment": 10.0,
+    "all_time": 200.0,
+    "since": "Jul 2, 2022"
+  },
+  {
     "name": "CouponBlender",
     "url": "https://www.couponblender.com/",
     "last_payment": 5.0,
@@ -30,7 +50,7 @@
   {
     "name": "Sekeol Kim",
     "last_payment": 10.0,
-    "all_time": 10.0,
+    "all_time": 20.0,
     "since": "May 23, 2022"
   },
   {
@@ -43,7 +63,7 @@
   {
     "name": "Benjamin Klotz",
     "last_payment": 10.0,
-    "all_time": 20.0,
+    "all_time": 30.0,
     "since": "May 2, 2022"
   },
   {
@@ -113,7 +133,7 @@
   {
     "name": "speg",
     "last_payment": 3.94,
-    "all_time": 24.7,
+    "all_time": 28.64,
     "since": "Jan 10, 2022"
   },
   {
@@ -223,28 +243,28 @@
   {
     "name": "Mauricio Gomes",
     "last_payment": 25.0,
-    "all_time": 225.0,
+    "all_time": 250.0,
     "since": "Oct 8, 2021"
   },
   {
     "name": "Real Targeted Traffic",
     "url": "https://www.seo25.com/",
     "last_payment": 10.0,
-    "all_time": 90.0,
+    "all_time": 100.0,
     "since": "Oct 7, 2021"
   },
   {
     "name": "Targeted Web Traffic",
     "url": "https://www.targetedwebtraffic.com",
     "last_payment": 10.0,
-    "all_time": 90.0,
+    "all_time": 100.0,
     "since": "Oct 7, 2021"
   },
   {
     "name": "Mia Bennett",
     "url": "https://chillfox.com/",
     "last_payment": 5.0,
-    "all_time": 45.0,
+    "all_time": 50.0,
     "since": "Oct 1, 2021"
   },
   {
@@ -265,20 +285,20 @@
     "name": "eason.ye",
     "url": "https://github.com/yelanxin",
     "last_payment": 5.0,
-    "all_time": 45.0,
+    "all_time": 50.0,
     "since": "Sep 17, 2021"
   },
   {
     "name": "xstats.gg",
     "url": "https://xstats.gg",
     "last_payment": 5.0,
-    "all_time": 50.0,
+    "all_time": 55.0,
     "since": "Sep 14, 2021"
   },
   {
     "name": "CHUNG TSAI",
     "last_payment": 25.0,
-    "all_time": 250.0,
+    "all_time": 275.0,
     "since": "Sep 3, 2021"
   },
   {
@@ -316,7 +336,7 @@
     "name": "Bookyourdata.com",
     "url": "https://www.bookyourdata.com",
     "last_payment": 10.0,
-    "all_time": 110.0,
+    "all_time": 120.0,
     "since": "Aug 10, 2021"
   },
   {
@@ -336,7 +356,7 @@
     "url": "https://place.technology/",
     "logo": "sponsors/placeos.png",
     "last_payment": 250.0,
-    "all_time": 2750.0,
+    "all_time": 3000.0,
     "since": "Jul 26, 2021"
   },
   {
@@ -372,7 +392,7 @@
   {
     "name": "Agloks",
     "last_payment": 5.0,
-    "all_time": 60.0,
+    "all_time": 65.0,
     "since": "Jul 8, 2021"
   },
   {
@@ -386,7 +406,7 @@
     "name": "Renkaatsopivasti",
     "url": "https://renkaatsopivasti.fi",
     "last_payment": 5.0,
-    "all_time": 60.0,
+    "all_time": 65.0,
     "since": "Jul 2, 2021"
   },
   {
@@ -553,7 +573,7 @@
   },
   {
     "name": "Jaime Ortiz",
-    "last_payment": 5.0,
+    "last_payment": 0.0,
     "all_time": 400.0,
     "since": "Mar 20, 2021"
   },
@@ -575,13 +595,6 @@
     "last_payment": 25.0,
     "all_time": 425.0,
     "since": "Mar 6, 2021"
-  },
-  {
-    "name": "Bromine0x23",
-    "url": "https://twitter.com/bromine0x23",
-    "last_payment": 10.0,
-    "all_time": 82.0,
-    "since": "Feb 27, 2021"
   },
   {
     "name": "Foxyanski",
@@ -825,7 +838,7 @@
     "url": "https://www.vulk.coop",
     "logo": "sponsors/vulk_cooperative.png",
     "last_payment": 75.0,
-    "all_time": 2775.0,
+    "all_time": 2850.0,
     "since": "Sep 10, 2020"
   },
   {
@@ -837,13 +850,14 @@
   {
     "name": "Open Collective",
     "last_payment": 0.0,
-    "all_time": 320.0,
+    "all_time": 330.0,
     "since": "Sep 9, 2020"
   },
   {
     "name": "Leonardo Kewitz",
-    "last_payment": 0.0,
-    "all_time": 320.0,
+    "url": "https://kewitz.js.org",
+    "last_payment": 5.0,
+    "all_time": 330.0,
     "since": "Sep 9, 2020"
   },
   {
@@ -916,7 +930,7 @@
     "name": "Matt Berry",
     "url": "https://mattrb.com",
     "last_payment": 5.0,
-    "all_time": 115.0,
+    "all_time": 120.0,
     "since": "Aug 7, 2020"
   },
   {
