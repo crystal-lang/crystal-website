@@ -29,7 +29,7 @@ check_external_links: $(OUTPUT_DIR) $(htmlproofer)
 
 $(htmlproofer):
 	mkdir -p $(dir $@)
-	gem install html-proofer --bindir $(dir $@)
+	gem install --version 3.19.3 html-proofer --bindir $(dir $@)
 
 .PHONY: clean
 clean:
