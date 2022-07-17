@@ -1,5 +1,11 @@
 [
   {
+    "name": "Will Lewis",
+    "last_payment": 0.0,
+    "all_time": 490.0,
+    "since": "Jul 12, 2022"
+  },
+  {
     "name": "SportOnlineBetting",
     "last_payment": 5.0,
     "all_time": 5.0,
@@ -193,7 +199,7 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5.0,
-    "all_time": 40.0,
+    "all_time": 45.0,
     "since": "Nov 11, 2021"
   },
   {
@@ -386,7 +392,7 @@
   {
     "name": "Joseph Method",
     "last_payment": 5.0,
-    "all_time": 60.0,
+    "all_time": 65.0,
     "since": "Jul 9, 2021"
   },
   {
@@ -438,7 +444,7 @@
     "name": "Windesol Sähkön Kilpailutus",
     "url": "https://windesol.fi",
     "last_payment": 5.0,
-    "all_time": 65.0,
+    "all_time": 70.0,
     "since": "Jun 8, 2021"
   },
   {
@@ -808,12 +814,6 @@
     "last_payment": 5.0,
     "all_time": 110.0,
     "since": "Sep 29, 2020"
-  },
-  {
-    "name": "Will Lewis",
-    "last_payment": 0.0,
-    "all_time": 240.0,
-    "since": "Sep 25, 2020"
   },
   {
     "name": "SwissDev Jobs",
