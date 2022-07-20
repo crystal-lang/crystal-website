@@ -1,0 +1,33 @@
+name: Update Sponsors
+
+on:
+  schedule:
+    - cron:  '0 9 1,8,15,23 * *'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    container:
+      image: crystallang/crystal
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Update OC
+      run: crystal scripts/opencollective.cr
+    - name: Merge
+      run: crystal scripts/merge.cr
+
+    # workaround to https://github.com/peter-evans/create-pull-request/issues/1170
+    - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        commit-message: "Updating sponsors"
+        title: "Updating sponsors"
+        delete-branch: true
+        branch: update-sponsors
