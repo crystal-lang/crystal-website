@@ -30,5 +30,13 @@
     "last_payment": 0,
     "all_time": 0,
     "since": "Dec 31, 2222"
+  },
+  {
+    "overrides": "Empire Srls",
+    "name": "casinofree.eu",
+    "url": "https://www.casinofree.eu/",
+    "last_payment": 0,
+    "all_time": 0,
+    "since": "Dec 31, 2222"
   }
 ]
