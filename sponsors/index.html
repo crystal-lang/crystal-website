@@ -29,7 +29,7 @@ layout: base
                 {% if sp.logo %}
                   <div class="logo">
                     {% if sp.url %}
-                      <a href="{{sp.url}}" target="_blank">
+                      <a href="{{sp.url}}" target="_blank" rel="sponsored">
                         <img src="/assets/{{ sp.logo }}" />
                       </a>
                     {% else %}
@@ -41,8 +41,12 @@ layout: base
                 {% endif %}
               </td>
               <td class="name">
-                {% if sp.url %}
-                  <a href="{{sp.url}}" target="_blank">
+                {% if sp.url and sp.logo %}
+                  <a href="{{sp.url}}" target="_blank" rel="sponsored">
+                    {{sp.name}}
+                  </a>
+                {% elsif sp.url %}
+                  <a href="{{sp.url}}" target="_blank" rel="sponsored nofollow">
                     {{sp.name}}
                   </a>
                 {% else %}
