@@ -29,7 +29,7 @@ layout: base
                 {% if sp.logo %}
                   <div class="logo">
                     {% if sp.url %}
-                      <a href="{{sp.url}}" target="_blank">
+                      <a href="{{sp.url}}" target="_blank" rel="sponsored nofollow">
                         <img src="/assets/{{ sp.logo }}" />
                       </a>
                     {% else %}
@@ -42,7 +42,7 @@ layout: base
               </td>
               <td class="name">
                 {% if sp.url %}
-                  <a href="{{sp.url}}" target="_blank">
+                  <a href="{{sp.url}}" target="_blank" rel="sponsored nofollow">
                     {{sp.name}}
                   </a>
                 {% else %}
