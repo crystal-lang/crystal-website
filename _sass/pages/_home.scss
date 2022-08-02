@@ -82,7 +82,7 @@
   }
 
   #delaunay {
-    @extend .black;
+    background-color: $black;
     position: absolute;
     top: -96px;
     right: 0;
@@ -93,8 +93,9 @@
 
   canvas.delaunay {
     position: absolute;
-    background-color: $black;
     top: 0;
+    left: 0;
+    right: 0;
     bottom: 15px;
   }
 
@@ -195,6 +196,7 @@
   .banner.sponsorship {
     margin-top: 0;
     border-top: 1px solid $light-gray;
+    text-align: center;
 
     .flag-logos {
       display: inline;
@@ -293,9 +295,6 @@
         left: calc(50% - 15px);
         top: 2rem;
       }
-    }
-    .header-section.valign-wrapper {
-      display: block;
     }
     #crystal-container {
       margin-bottom: 5px;

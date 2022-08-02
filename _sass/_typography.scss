@@ -108,14 +108,9 @@ h3 {
 }
 
 a {
-  color: #039be5;
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-a {
   color: $primary-text;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     color: $primary-text;
@@ -291,4 +286,8 @@ td, th {
   text-align: left;
   vertical-align: middle;
   border-radius: 2px;
+}
+
+.center {
+  text-align: center;
 }

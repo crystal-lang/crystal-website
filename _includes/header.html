@@ -1,16 +1,14 @@
-<div class='header-section valign-wrapper no-select'>
+<div class='header-section'>
   {% if page.header.delaunay %}<div id="delaunay"></div>{% endif %}
   <div id='content'>
-    <div class='valign center-align'>
-      <div class="row">
-        <div class="col offset-m1 m10 s12">
-          <h1 class='title'>{{ include.header_title | default: page.title }}</h1>
-        </div>
+    <div class="row">
+      <div class="col offset-m1 m10 s12">
+        <h1 class='title'>{{ include.header_title | default: page.title }}</h1>
       </div>
-      <div class="row">
-        <div class="col offset-m1 m10 s12">
-          <div class='subtitle'>{{ page.description }}</div>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col offset-m1 m10 s12">
+        <div class='subtitle'>{{ page.description }}</div>
       </div>
     </div>
   </div>

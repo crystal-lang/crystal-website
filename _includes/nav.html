@@ -1,11 +1,11 @@
 <nav role='navigation'>
-  <div class='nav-wrapper no-select'>
+  <div class='nav-wrapper'>
     {% if page.url != "/" %}
       <a class='brand-logo' id='logo-container'>
         <canvas height='120' id='logo-canvas' style='cursor:move' width='120'></canvas>
       </a>
     {% endif %}
-    <ul class='right hide-on-med-and-down' id='nav-desktop'>
+    <ul class='nav-hide-on-med-and-down' style="float: right;" id='nav-desktop'>
       {% include nav_links.html %}
     </ul>
     <ul class='side-nav' id='nav-mobile'>

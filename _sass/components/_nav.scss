@@ -209,3 +209,9 @@ nav .input-field label.active i {
     height: 64px;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .nav-hide-on-med-and-down {
+    display: none !important;
+  }
+}
