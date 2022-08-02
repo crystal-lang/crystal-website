@@ -107,3 +107,8 @@ ul.browser-default > li {
   list-style: inherit;
   padding: inherit;
 }
+
+ul.horizontal {
+  display: flex;
+  gap: 1em;
+}
