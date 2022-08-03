@@ -8,16 +8,20 @@ def level(sponsor : Sponsor)
   LEVELS.find { |amount| amount <= sponsor.last_payment.to_i }.not_nil!
 end
 
-all_sponsors = Array(Sponsor).new
+all_sponsors_map = Hash(UInt64, Sponsor).new
 overrides = Array(Sponsor).new
 
 %w(opencollective.json bountysource.json others.json).each do |filename|
   File.open("#{__DIR__}/../_data/#{filename}") do |file|
     sponsors = Array(Sponsor).from_json(file)
     sponsors, overrides = sponsors.partition(&.overrides.nil?) if filename == "others.json"
-    all_sponsors.concat sponsors
+    sponsors.each do |sponsor|
+      all_sponsors_map[sponsor.id] = sponsor.merge(all_sponsors_map[sponsor.id]?)
+    end
   end
 end
+
+all_sponsors = all_sponsors_map.values # select all sponsors now that they've been merged
 
 overrides.each do |sponsor|
   name_to_override = sponsor.overrides.not_nil!
