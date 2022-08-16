@@ -37,6 +37,11 @@ core:
     name: Oleh Prypin
     status: active
 
+  HertzDevil:
+    name: Quinton Miller
+    status: active
+    affiliation: Manas.Tech
+
 admin:
   nditada:
     name: Nicolás di Tada
@@ -77,7 +82,5 @@ alumni:
     name: Stephanie Wilde-Hobbs
 
 moderators:
-  HertzDevil:
-    name: Quinton Miller
   Blacksmoke16:
     name: George Dietrich
