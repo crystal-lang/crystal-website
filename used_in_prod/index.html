@@ -12,17 +12,17 @@ layout: base
   <div class="container">
 
     <div class="row">
-      <div class="col s12 m8">
+      <div class="col">
         <table class="bordered" id="sponsors-tbl">
           <thead>
-            <th><span>Company / project</span></th>
-            <th><span>Category</span></th>
-            <th><span>Description</span></th>
+            <th class="company"><span>Company / project</span></th>
+            <th class="category"><span>Category</span></th>
+            <th class="description"><span>Description</span></th>
           </thead>
           <tbody>
             {% for uip in site.data.companies %}
             <tr class="sponsor">
-              <td class="name">
+              <td>
                 {% if uip.url %}
                 <a href="{{uip.url}}" target="_blank" rel="sponsored nofollow">
                   {{uip.name}}
