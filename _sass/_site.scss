@@ -116,6 +116,10 @@ hr.squares {
   }
   .subtitle {
     font-size: 18px;
+
+    a {
+      text-decoration: underline;
+    }
   }
   #content {
     display: block;
