@@ -170,55 +170,6 @@
     height: 1px;
   }
 
-  .flag {
-    background-color: $white;
-    line-height: 30px;
-    border-radius: 35px;
-    border: 1px solid $light-gray;
-    display: inline-block;
-    padding: 2px 25px;
-    white-space: nowrap;
-    z-index: 1;
-    transform: translateY(-50%);
-    h3 {
-      display: inline-block;
-      background-color: $white;
-      margin-top: 0;
-    }
-    a {
-      border-bottom: 1px solid $primary-text;
-      margin-left: 8px;
-    }
-  }
-
-
-  .banner.sponsorship {
-    margin-top: 0;
-    border-top: 1px solid $light-gray;
-
-    .flag-logos {
-      display: inline;
-      span {
-        margin: 0 3px;
-      }
-    }
-    .sponsorship-logo{
-      height: 28px;
-    }
-    .oc-logo {
-      height: 18px;
-    }
-    .flag {
-      a { border-bottom: 0; }
-    }
-    @media only screen and (max-width: 768px) {
-      .flag-logos {
-        display: block;
-        text-align: center;
-      }
-    }
-  }
-
   .btn-flat {
     border: 2px solid $white;
     color: $white;
@@ -239,6 +190,65 @@
     font-size: 48px;
     color: #999999;
     a { color: #000000; }
+  }
+}
+
+.banner.sponsorship {
+  margin-top: 0;
+  border-top: 1px solid $light-gray;
+
+  .flag-logos {
+    display: inline;
+    span {
+      margin: 0 3px;
+    }
+  }
+  .sponsorship-logo{
+    height: 28px;
+  }
+  .oc-logo {
+    height: 18px;
+  }
+  .flag {
+    a { border-bottom: 0; }
+  }
+  @media only screen and (max-width: 768px) {
+    .flag-logos {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+.flag {
+  margin: auto;
+  width: min-content;
+  background-color: $white;
+  line-height: 30px;
+  border-radius: 35px;
+  border: 1px solid $light-gray;
+  padding: 2px 25px;
+  white-space: nowrap;
+  z-index: 1;
+
+  &.hr::before {
+    border-top: 1px solid $light-gray;
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "";
+    z-index: -1;
+    margin-top: 14px;
+  }
+
+  h3 {
+    display: inline-block;
+    background-color: $white;
+    margin-top: 0;
+  }
+  a {
+    border-bottom: 1px solid $primary-text;
+    margin-left: 8px;
   }
 }
 

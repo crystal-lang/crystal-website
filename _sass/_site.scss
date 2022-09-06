@@ -6,6 +6,10 @@ body {
   margin: 0px;
 }
 
+.container {
+  position: relative;
+}
+
 .row p {
   margin: 30px 0;
 }
@@ -96,6 +100,11 @@ hr.squares {
   }
 }
 
+.title {
+  color: $black;
+  font-size: 4.8rem;
+  margin: 30px auto;
+}
 
 .header-section {
   min-height: 465px;

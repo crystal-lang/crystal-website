@@ -70,7 +70,7 @@
     "name": "IgAnony",
     "url": "https://iganony.com",
     "last_payment": 5.0,
-    "all_time": 10.0,
+    "all_time": 15.0,
     "since": "Jun 29, 2022"
   },
   {
@@ -119,7 +119,7 @@
   },
   {
     "name": "Sebastian Szturo",
-    "last_payment": 10.0,
+    "last_payment": 0.0,
     "all_time": 40.0,
     "since": "Mar 29, 2022"
   },
@@ -256,7 +256,7 @@
     "name": "Tommi Aaltonen",
     "url": "https://tommiaaltonen.fi/",
     "last_payment": 5.0,
-    "all_time": 50.0,
+    "all_time": 55.0,
     "since": "Oct 28, 2021"
   },
   {
@@ -483,7 +483,7 @@
     "name": "Netin nopeustesti",
     "url": "https://netinnopeustesti.com/",
     "last_payment": 5.0,
-    "all_time": 75.0,
+    "all_time": 80.0,
     "since": "May 27, 2021"
   },
   {
@@ -629,8 +629,7 @@
   },
   {
     "name": "Writers Per Hour",
-    "url": "https://writersperhour.com",
-    "last_payment": 25.0,
+    "last_payment": 0.0,
     "all_time": 425.0,
     "since": "Mar 6, 2021"
   },
@@ -887,8 +886,7 @@
   },
   {
     "name": "Leonardo Kewitz",
-    "url": "https://kewitz.js.org",
-    "last_payment": 5.0,
+    "last_payment": 0.0,
     "all_time": 340.0,
     "since": "Sep 9, 2020"
   },
