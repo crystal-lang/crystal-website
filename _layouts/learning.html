@@ -1,0 +1,84 @@
+---
+layout: base
+---
+<div class="container book" itemscope itemtype="https://schema.org/Book">
+  <header>
+    <h1 class="title">{{ page.headline }}</h1>
+  </header>
+
+  <meta itemprop="name" content="{{ page.book_info.name }}" />
+
+  <div class="book-presenter">
+    <div class="book-presenter__cover">
+      <img src="{{ page.cover_image }}" itemprop="image" />
+    </div>
+    <div class="book-presenter__description">
+      <p>
+        {{ page.description }}
+      </p>
+
+      {% if page.vendors %}
+        <p>
+          You can get it from these vendors:
+        </p>
+
+        <ul class="horizontal">
+        {% for vendor in page.vendors %}
+          <li>
+            <a href="{{ vendor.url }}" target="_blank">
+              Buy on {{ vendor.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      <dl class="details">
+        {% if page.book_info.isbn %}
+          <dt>ISBN</dt>
+          <dd itemprop="isbn">{{ page.book_info.isbn }}</dd>
+        {% endif %}
+        {% if page.book_info.publisher %}
+          <dt>Publisher</dt>
+          <dd itemprop="publisher" itemtype="https://schema.org/Organization" itemscope>
+          <span itemprop="name">{{ page.book_info.publisher }}</span>
+        </dd>
+        {% endif %}
+        {% if page.book_info.numberOfPages %}
+          <dt>Number of pages</dt>
+          <dd itemprop="numberOfPages">{{ page.book_info.numberOfPages }}</dd>
+        {% endif %}
+        {% if page.book_info.datePublished %}
+          <dt>Published</dt>
+          <dd itemprop="datePublished">{{ page.book_info.datePublished }}</dd>
+        {% endif %}
+      </dl>
+    </div>
+  </div>
+
+  {{ content }}
+
+  {% if page.authors %}
+    <div>
+      <h2>About the authors</h2>
+
+      <div class="team-members">
+        {% for author in page.authors %}
+          <div class="team-member" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <img src="{{ author.image }}" itemprop="image">
+            <div class="team-member__inner">
+              <span class="member_name" itemprop="name">{{ author.name }}</span>
+              <span class="handles">
+                <span class="github_handle"><a href="https://github.com/{{ author.github_handle }}" title="GitHub profile" itemprop="url"><i
+                      class="extra-icons github"></i> {{ author.github_handle }}</a></span>
+              </span>
+              <span class="member_role" itemprop="description">
+                {{ author.description }}
+              </span>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>

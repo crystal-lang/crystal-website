@@ -1,0 +1,67 @@
+.book {
+  p {
+    color: #000000;
+    margin-bottom: 1.3em;
+  }
+}
+
+.book-summary {
+  font-size: 1.6rem;
+}
+
+.book-presenter {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+  font-size: 1.6rem;
+
+  &__cover {
+    max-width: 25vw;
+  }
+  &__description {
+    max-width: 23em;
+    margin: auto;
+  }
+}
+
+ul.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
+  gap: 0 3em;
+
+  > li {
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+    color: #000000;
+    font-size: 18px;
+
+    > img, > svg {
+      height: 48px;
+      width: 48px;
+      padding: 12px;
+      flex-shrink: 0;
+      background-color: #FFFFFF;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      object-fit: scale-down;
+    }
+
+    > span {
+      display: block;
+    }
+  }
+}
+
+dl.details {
+  margin: 2em 0;
+  font-size: 1rem;
+  column-width: 15em;
+
+  > dt {
+    margin-top: 0;
+  }
+
+  > dd {
+    margin-bottom: 1rem;
+  }
+}
