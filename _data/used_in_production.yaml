@@ -1,0 +1,104 @@
+Bioinformatics:
+- name: Diploid
+  url: http://www.diploid.com/
+  description: "Human genome interpretation"
+Communication & Networking:
+- name: Kagi
+  url: https://kagi.com/
+  description: "Premium search engine where everything on the page matters"
+- name: Universal Layer
+  url: https://ulayer.net/
+  description: "Web Hosting Provider"
+- name: xevIT networking
+  url: https://www.xevit.com/en
+  description: "Communication, Networking, Security"
+Cyber Security:
+- name: Bright Security
+  url: https://brightsec.com/
+  description: "Machine Learning powered advanced protocol fuzzer"
+Gaming / Entertainment:
+- name: Invidious
+  url: https://invidious.io
+  description: "Alternative front-end to YouTube"
+- name: Neopoly GmbH
+  url: https://www.neopoly.de
+  description: "Online games and services"
+Media Systems:
+- name: MESO
+  url: https://meso.design
+  description: "We design digital systems for communicative spaces"
+- name: Play it My way
+  url: https://playitmyway.org/
+  description: "Amazon movies/youtube EDL manager to watch with objectionable scenes removed backend. Edit the profanities out of movies!"
+Misc:
+- name: muse-dl
+  url: https://github.com/captn3m0/muse-dl
+  description: "An ebook downloader for Project MUSE, which stitches them together into a single-file using `pdftk`"
+- name: Nginx Shiny Exporter
+  url: https://github.com/serge-name/nginx-prometheus-shiny-exporter
+  description: "An exporter for [Prometheus](https://prometheus.io/) monitoring"
+SaaS products:
+- name: 84codes
+  url: https://www.84codes.com
+  description: "We automate server configurations and maintenance so developers can focus on what they do best: build applications"
+- name: Appmonitor
+  url: https://appmon.it
+  description: "Analytics engine"
+- name: Blitline
+  url: https://www.blitline.com
+  description: "Online image processing"
+- name: BlockVue
+  url: https://blockvue.com
+  description: "Virtual and VR tours for commercial real estate"
+- name: JSON Keeper
+  url: https://jsonkeeper.com
+  description: "Simple, static JSON hosting service for web and mobile apps"
+- name: Nabobil.no
+  url: https://nabobil.no
+  description: "Peer-to-peer car rental platform based in Norway"
+- name: NamingMatters
+  url: http://www.namingmatters.com/
+  description: "Trademark pre-clearance and search"
+- name: PlaceOS
+  url: https://place.technology/
+  description: "Connects everything in your office, tenancy or building to create a seamless user experience"
+- name: Rainforest QA
+  url: https://www.rainforestqa.com/
+  description: "QA at the Speed of Development, Intelligent Crowdtesting for Agile Teams"
+- name: Void
+  url: https://voidapp.co/
+  description: "Read + Retain in a distracted world"
+Software Development:
+- name: Bulutfon
+  url: https://www.bulutfon.com/
+  description: "Cloud Voice & VOIP solution for Turkey"
+- name: Duo Design
+  url: https://www.duodesign.co.uk/
+  description: "Web and application design and development from Manchester"
+- name: Level UP Solutions
+  url: https://www.levups.com
+  description: "Web application design and development, in France, specialized in e-commerce"
+- name: LI-COR Biosciences
+  url: https://www.licor.com/
+  description: "LI-COR Biosciences designs and manufactures instrument systems and research tools for environmental and biotechnology research"
+- name: Manas
+  url: https://manas.tech/
+  description: "We build unconventional software for unconventional [needs \\| contexts \\| ideas \\| organizations]"
+- name: MeasureChina
+  url: http://www.measurechina.cn
+  description: "Marketing intelligence software"
+- name: Nikola Corp
+  url: https://nikolamotor.com/
+  description: "We build Hydrogen Powered Semi Trucks"
+- name: Protel
+  url: http://www.protel.com.tr/en
+  description: "Changing the game in POS Systems and Hospitality"
+- name: RedAnt
+  url: https://redant.com.au/
+  description: "Sydney-based technical agency"
+- name: Red Panthers
+  url: https://redpanthers.co
+  description: "Web application design and development from Kochi, India. Build POS (Point of Sale) system and local web api servers using Crystal & Kemal"
+- name: Wysdom
+  url: http://wysdom.co.uk/
+  description: "Dental Practice Management Systems"

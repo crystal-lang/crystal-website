@@ -9,46 +9,21 @@ layout: base
 {% include header.html header_title=header_title %}
 
 <main>
-
   <div class="container">
-
     <div class="row">
       <div class="col">
-        <table class="bordered" id="sponsors-tbl">
-          <thead>
-            <th class="company"><span>Company / project</span></th>
-            <th class="category"><span>Category</span></th>
-            <th class="description"><span>Description</span></th>
-          </thead>
-          <tbody>
-            {% for uip in site.data.companies %}
-            <tr class="sponsor">
-              <td>
-                {% if uip.url %}
-                <a href="{{uip.url}}" target="_blank" rel="sponsored nofollow">
-                  {{uip.name}}
-                </a>
-                {% else %}
-                {{uip.name}}
-                {% endif %}
-              </td>
-              <td>
-                {{uip.category}}
-              </td>
-              <td>
-                {{uip.description | markdownify}}
-              </td>
-            </tr>
+        {% for cat in site.data.used_in_production %}
+          <h3 id="{{ cat[0] | slugify }}">{{ cat[0] }}</h3>
+          <ul class="browser-default">
+            {% for entry in cat[1] %}
+              {% capture content -%}
+                <a href="{{ entry.url }}" rel="sponsored nofollow"><strong>{{ entry.name }}</strong></a>: {{ entry.description }}
+              {%- endcapture %}
+              <li>{{ content | markdownify }}</li>
             {% endfor %}
-          </tbody>
-        </table>
+          </ul>
+        {% endfor %}
       </div>
     </div>
   </div>
-
-  <script src="/assets/js/tablesort.js"></script>
-  <script>
-    new Tablesort(document.getElementById('sponsors-tbl'));
-  </script>
-
 </main>

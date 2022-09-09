@@ -112,3 +112,7 @@ ul.horizontal {
   display: flex;
   gap: 1em;
 }
+
+li > p {
+  margin: 0 !important;
+}
