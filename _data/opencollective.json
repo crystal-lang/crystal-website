@@ -1,5 +1,13 @@
 [
   {
+    "name": "Jonathan Siegel",
+    "url": "https://www.linkedin.com/in/jsiegel",
+    "logo": "sponsors/jonathan_siegel.png",
+    "last_payment": 150.0,
+    "all_time": 150.0,
+    "since": "Sep 12, 2022"
+  },
+  {
     "name": "Casinofree.eu",
     "url": "https://www.casinofree.eu/",
     "last_payment": 25.0,
@@ -21,8 +29,7 @@
   },
   {
     "name": "Seth Falco",
-    "url": "https://falco.fun/",
-    "last_payment": 5.0,
+    "last_payment": 0.0,
     "all_time": 60.0,
     "since": "Jul 23, 2022"
   },
@@ -30,7 +37,7 @@
     "name": "Scommetteronline.info",
     "url": "https://scommetteronline.info/bonus-scommesse-online/",
     "last_payment": 25.0,
-    "all_time": 50.0,
+    "all_time": 75.0,
     "since": "Jul 22, 2022"
   },
   {
@@ -231,7 +238,7 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5.0,
-    "all_time": 50.0,
+    "all_time": 55.0,
     "since": "Nov 11, 2021"
   },
   {
@@ -263,7 +270,7 @@
     "name": "maltidsbarometeret",
     "url": "https://maltidsbarometeret.dk",
     "last_payment": 5.0,
-    "all_time": 55.0,
+    "all_time": 60.0,
     "since": "Oct 19, 2021"
   },
   {
@@ -425,7 +432,7 @@
   {
     "name": "Joseph Method",
     "last_payment": 5.0,
-    "all_time": 70.0,
+    "all_time": 75.0,
     "since": "Jul 9, 2021"
   },
   {
@@ -463,7 +470,7 @@
   {
     "name": "lowkey",
     "last_payment": 75.0,
-    "all_time": 990.0,
+    "all_time": 1065.0,
     "since": "Jun 12, 2021"
   },
   {
@@ -476,7 +483,7 @@
     "name": "Windesol Sähkön Kilpailutus",
     "url": "https://windesol.fi",
     "last_payment": 5.0,
-    "all_time": 75.0,
+    "all_time": 80.0,
     "since": "Jun 8, 2021"
   },
   {
