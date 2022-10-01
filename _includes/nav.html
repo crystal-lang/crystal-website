@@ -1,18 +1,21 @@
 <nav role='navigation'>
-  <div class='nav-wrapper no-select'>
-    {% if page.url != "/" %}
-      <a class='brand-logo' id='logo-container'>
-        <canvas height='120' id='logo-canvas' style='cursor:move' width='120'></canvas>
-      </a>
-    {% endif %}
-    <ul class='right hide-on-med-and-down' id='nav-desktop'>
+
+  {% if page.url != "/" %}
+  <a class='brand-logo'>
+
+    <canvas height='120' id='logo-canvas' width='120'></canvas>
+
+    <strong>Crystal</strong>
+
+  </a>
+  {% endif %}
+
+  <div class="menu">
+    <input type="checkbox" id="menu-mobile">
+    <label for="menu-mobile"><span></span><span></span><span></span></label>
+    <ul>
       {% include nav_links.html %}
     </ul>
-    <ul class='side-nav' id='nav-mobile'>
-      {% include nav_links.html %}
-    </ul>
-    <a class='button-collapse' data-activates='nav-mobile' href='#'>
-      <i class='material-icons'>menu</i>
-    </a>
   </div>
+
 </nav>

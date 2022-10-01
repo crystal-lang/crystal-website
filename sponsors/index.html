@@ -30,10 +30,10 @@ layout: base
                   <div class="logo">
                     {% if sp.url %}
                       <a href="{{sp.url}}" target="_blank" rel="sponsored nofollow">
-                        <img src="/assets/{{ sp.logo }}" />
+                        <img  src="/assets/{{ sp.logo }}" loading="lazy" />
                       </a>
                     {% else %}
-                      <img src="/assets/{{ sp.logo }}" />
+                      <img  src="/assets/{{ sp.logo }}" loading="lazy" />
                     {% endif %}
                   </div>
                 {% else %}

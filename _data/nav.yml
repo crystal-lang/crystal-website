@@ -1,19 +1,17 @@
 main:
 - label: Home
   url: /
-- label: Forum
-  url: https://forum.crystal-lang.org
-- label: Blog
+- label: News
   url: /blog/
+- label: Success stories
+  url: /success-stories/
 - label: Sponsors
   url: /sponsors/
+- label: Perks & advantages
+  url: /perks-advantages/
 - label: Community
   url: /community/
-- label: Conference
-  url: /conference/
-- label: Team
-  url: /team/
+- label: Get started
+  url: /reference/1.5/getting_started/index.html
 - label: Docs
   url: https://crystal-lang.org/reference/
-- label: GitHub
-  url: https://github.com/crystal-lang/crystal

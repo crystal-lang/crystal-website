@@ -1,33 +1,34 @@
 // Reset styles
+@import "variables";
 @import "reset";
 
 // Configuration
-@import "variables";
+@import "fonts";
 
 // Base style
-@import "materialize";
+// @import "materialize";
 
 // Generic styles
-@import "site";
-@import "typography";
+@import "global";
+// @import "typography";
 @import "pygment_overrides";
 @import "pygment_white";
 @import "sprites";
 
 // Imports for components
-@import "components/code_block";
-@import "components/footer";
+// @import "components/code_block";
+// @import "components/footer";
 
 // Imports for specific pages
-@import "pages/blog";
-@import "pages/books";
-@import "pages/community";
-@import "pages/conference";
-@import "pages/error";
-@import "pages/home";
-@import "pages/install";
-@import "pages/media";
-@import "pages/sponsors";
-@import "pages/style-guide";
-@import "pages/team";
-@import "pages/used_in_prod";
+// @import "pages/blog";
+// @import "pages/books";
+// @import "pages/community";
+// @import "pages/conference";
+// @import "pages/error";
+// @import "pages/home";
+// @import "pages/install";
+// @import "pages/media";
+// @import "pages/sponsors";
+// @import "pages/style-guide";
+// @import "pages/team";
+// @import "pages/used_in_prod";

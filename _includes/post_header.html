@@ -6,7 +6,7 @@
         <div class="author small">
           {% assign authors = page.author | split: ',' %}
           {% for author in authors %}
-            <img src="/assets/authors/{{ author }}.jpg" />
+            <img  src="/assets/authors/{{ author }}.jpg" loading="lazy" />
           {% endfor %}
           {% for author in authors %}
             <span class="author_name">{{ site.data.blog_authors[author].name }}</span>

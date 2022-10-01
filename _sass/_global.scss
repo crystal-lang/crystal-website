@@ -1,0 +1,82 @@
+body {
+  background: $white;
+  color: $primary-text;
+  font-family: $sans;
+}
+.no-select, nav {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 72px;
+  width: 100%;
+  background: #fff;
+  display: grid;
+  grid-template-areas: "logo menu";
+  grid-template-columns: 200px auto;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+
+  a.brand-logo {
+    display: flex;
+    height: 72px;
+    align-items: center;
+    margin-left: 15px;
+
+    #logo-canvas {
+      height: 60px;
+      width: 60px;
+
+    }
+    strong {
+      background: url('/assets/typo.svg') no-repeat;
+      height: 18px;
+      width: 97px;
+      overflow: hidden;
+      text-indent: -99em;
+      background-size: auto 100%;
+      margin-left: 5px;
+    }
+  }
+
+  svg {
+    height: 60px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row-reverse;
+
+    ul {
+      margin-right: 10px;
+    }
+    li {
+      display: inline-flex;
+
+      a {
+        height: 67px;
+        line-height: 67px;
+        color: #777;
+        padding: 0;
+        margin: 0 15px;
+
+        &.on {
+          border-bottom: 5px solid $black;
+          font-weight: 700;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+label[for=menu-mobile],
+#menu-mobile {
+  display: none;
+}

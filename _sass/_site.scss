@@ -39,10 +39,11 @@ body {
     #logo-canvas {
       width: 60px;
       height: 60px;
+      cursor: move;
     }
   }
   nav {
-    height: 96px;
+    height: 72px;
     background-color: $white;
     box-shadow: none;
     border-bottom: 1px solid $separator;
@@ -72,6 +73,10 @@ body {
         font-size: 2.5em;
         line-height: 96px;
       }
+    }
+
+    #Crystal {
+      fill: #000;
     }
   }
 }

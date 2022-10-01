@@ -135,23 +135,22 @@ textarea {
   overflow: auto; // Remove vertical scrollbar in IE6-9
   vertical-align: top; // Readability and alignment cross-browser
 }
-
-h1, h2, h3, h4, h5, h6, p {
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: 0;
   padding: 0;
 }
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 li {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
-
 ol li {
   list-style: inherit;
+}
+a {
+  color: $primary-text;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-text;
+    text-decoration: none;
+  }
 }
