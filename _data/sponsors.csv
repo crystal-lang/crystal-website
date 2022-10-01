@@ -2,12 +2,12 @@ logo,name,url,last_payment,all_time,since,level
 sponsors/84.png,84 codes,https://www.84codes.com/,€5000,€191000,"Apr 1, 2018",5000
 sponsors/nikola_motor_company.png,Nikola Motor Company,https://nikolamotor.com/,$5000,$130000,"Mar 1, 2020",5000
 sponsors/placeos.png,PlaceOS,https://place.technology/,$250,$3500,"Jul 26, 2021",250
-sponsors/dutchie.png,Dutchie,https://dutchie.com,$150,$3300,"Nov 23, 2020",150
-sponsors/prestodoctor.png,PrestoDoctor,https://prestodoctor.com,$150,$3150,"Dec 28, 2020",150
+sponsors/dutchie.png,Dutchie,https://dutchie.com,$150,$3450,"Nov 23, 2020",150
+sponsors/prestodoctor.png,PrestoDoctor,https://prestodoctor.com,$150,$3300,"Dec 28, 2020",150
 sponsors/jonathan_siegel.png,Jonathan Siegel,https://www.linkedin.com/in/jsiegel,$150,$150,"Sep 12, 2022",150
-sponsors/blitline.png,Blitline,https://www.blitline.com,$75,$3450,"Dec 12, 2018",75
+sponsors/blitline.png,Blitline,https://www.blitline.com,$75,$3525,"Dec 12, 2018",75
 sponsors/vulk_cooperative.png,Vulk Cooperative,https://www.vulk.coop,$75,$3150,"Sep 10, 2020",75
-sponsors/ryan_maki.png,Ryan Maki,,$75,$1650,"Dec 2, 2020",75
+sponsors/ryan_maki.png,Ryan Maki,,$75,$1725,"Dec 2, 2020",75
 ,lowkey,,$75,$1065,"Jun 12, 2021",75
 ,Thomas Peter Berntsen,https://twitter.com/tpberntsen,$25,$4375,"Sep 20, 2015",25
 ,isaacsloan,https://isaacsloan.com,$36,$2506,"Mar 24, 2016",25
@@ -17,11 +17,11 @@ sponsors/ryan_maki.png,Ryan Maki,,$75,$1650,"Dec 2, 2020",75
 ,Julien Reichardt,https://github.com/j8r,$25,$1150,"Dec 13, 2018",25
 ,Dave Doyle,http://twitter.com/meraxes,$25,$1125,"Mar 28, 2018",25
 ,Qard,http://stephenbelanger.com,$25,$965,"Aug 21, 2015",25
-,Raels Koder,,$25,$875,"Oct 30, 2019",25
-,Kagi,https://kagi.com,$25,$750,"Apr 8, 2020",25
-,Max Fierke,https://www.maxfierke.com,$25,$600,"Jul 21, 2019",25
-,Ricardo Tomasi,https://ricardo.cc,$25,$600,"Oct 9, 2020",25
-,Casinoonlineaams.com,https://www.casinoonlineaams.com,$25,$400,"May 26, 2021",25
+,Raels Koder,,$25,$900,"Oct 30, 2019",25
+,Kagi,https://kagi.com,$25,$775,"Apr 8, 2020",25
+,Max Fierke,https://www.maxfierke.com,$25,$625,"Jul 21, 2019",25
+,Ricardo Tomasi,https://ricardo.cc,$25,$625,"Oct 9, 2020",25
+,Casinoonlineaams.com,https://www.casinoonlineaams.com,$25,$425,"May 26, 2021",25
 ,CHUNG TSAI,,$25,$325,"Sep 3, 2021",25
 ,Mauricio Gomes,https://mauriciogomes.com,$50,$325,"Oct 8, 2021",25
 ,Scommetteronline.info,https://scommetteronline.info/bonus-scommesse-online/,$25,$75,"Jul 22, 2022",25
@@ -65,55 +65,54 @@ sponsors/ryan_maki.png,Ryan Maki,,$75,$1650,"Dec 2, 2020",75
 ,igorkasyanchuk,https://phototo.com.ua/,$5,$205,"Nov 2, 2017",5
 ,Martin Honermeyer,,$5,$205,"Jul 24, 2018",5
 ,elliot,,$5,$185,"Dec 9, 2018",5
+,Ryan Prior,https://www.ryanprior.com,$5,$185,"Oct 7, 2019",5
 ,devtrackers.gg,https://devtrackers.gg,$5,$180,"Dec 9, 2018",5
-,Ryan Prior,https://www.ryanprior.com,$5,$180,"Oct 7, 2019",5
 ,nilsding,https://nilsding.org,$5,$175,"Jan 18, 2019",5
 ,mavu,,$5,$175,"Jan 23, 2019",5
 ,karupanerura,http://karupas.org/,$5,$155,"May 4, 2019",5
 ,Holden Omans,,$5,$150,"Jun 21, 2019",5
-,Glen Aultman-Bettridge,,$5,$145,"May 5, 2020",5
+,Glen Aultman-Bettridge,,$5,$150,"May 5, 2020",5
+,Nobuaki Tanaka,https://twitter.com/tomerun,$5,$145,"Jun 10, 2020",5
 ,Oleksii Neishchenko,,$5,$140,"Jun 9, 2020",5
-,Nobuaki Tanaka,https://twitter.com/tomerun,$5,$140,"Jun 10, 2020",5
 ,Lukas Svoboda,,$5,$135,"Sep 21, 2015",5
 ,ryan-senn,https://tt.edu.au,$5,$120,"Jan 4, 2020",5
 ,Edward Loveall,,$5,$120,"Sep 29, 2020",5
-,Jared Smith,https://www.linkedin.com/in/jaredsmithse/,$5,$115,"Mar 22, 2021",5
+,Jared Smith,https://www.linkedin.com/in/jaredsmithse/,$5,$120,"Mar 22, 2021",5
+,anapsix,https://blog.random.io,$5,$115,"Dec 2, 2020",5
 ,Marco Roth,https://marcoroth.dev,$5,$110,"Mar 4, 2020",5
 ,Wolfgang Klinger,,$5,$110,"Mar 9, 2020",5
-,anapsix,https://blog.random.io,$5,$110,"Dec 2, 2020",5
 ,OvrClock,https://ovrclock.com,$5,$110,"Dec 11, 2020",5
-,FindContinuingCare,https://www.findcontiuingcare.com,$5,$100,"Jan 11, 2021",5
 ,Auttawut Wiriyakreng,,$5,$90,"Mar 25, 2021",5
 ,Mikihiro Hamaguchi,https://github.com/machida4,$5,$85,"Apr 26, 2021",5
-,Netin nopeustesti,https://netinnopeustesti.com/,$5,$80,"May 27, 2021",5
+,Netin nopeustesti,https://netinnopeustesti.com/,$5,$85,"May 27, 2021",5
 ,Windesol Sähkön Kilpailutus,https://windesol.fi,$5,$80,"Jun 8, 2021",5
 ,Provided.io,https://provided.io,$5,$80,"Jun 15, 2021",5
 ,Renkaatsopivasti,https://renkaatsopivasti.fi,$5,$75,"Jul 2, 2021",5
 ,Agloks,,$5,$75,"Jul 8, 2021",5
 ,Joseph Method,,$5,$75,"Jul 9, 2021",5
-,Taletidskortnu,https://taletidskort.nu,$5,$65,"Aug 25, 2021",5
+,Taletidskortnu,https://taletidskort.nu,$5,$70,"Aug 25, 2021",5
+,Seth Falco,https://falco.fun/,$5,$70,"Jul 23, 2022",5
 ,xstats.gg,https://xstats.gg,$5,$65,"Sep 14, 2021",5
 ,eason.ye,https://github.com/yelanxin,$5,$60,"Sep 17, 2021",5
 ,Mia Bennett,https://chillfox.com/,$5,$60,"Oct 1, 2021",5
 ,maltidsbarometeret,https://maltidsbarometeret.dk,$5,$60,"Oct 19, 2021",5
-,Tommi Aaltonen,https://tommiaaltonen.fi/,$5,$55,"Oct 28, 2021",5
+,Tommi Aaltonen,https://tommiaaltonen.fi/,$5,$60,"Oct 28, 2021",5
 ,Michael Wagner,,$5,$55,"Nov 11, 2021",5
 ,HelppoHinta.fi,https://helppohinta.fi/,$5,$50,"Oct 1, 2021",5
 ,salt rock lamp,,$5,$40,"Apr 11, 2021",5
-,PROXYONE LLC,https://proxyone.eu/,$5,$35,"Feb 21, 2022",5
+,PROXYONE LLC,https://proxyone.eu/,$5,$40,"Feb 21, 2022",5
 ,Anton Maminov,https://twitter.com/AntonMaminov,$5,$35,"Feb 23, 2022",5
 ,bit4bit,,$5,$35,"Mar 9, 2022",5
 ,Sufi Meditation,https://www.zikir.com,$5,$30,"Mar 26, 2022",5
+,Realmoneycasinoonline.ca,https://www.realmoneycasinoonline.ca,$5,$20,"Jun 26, 2022",5
+,IgAnony,https://iganony.com,$5,$20,"Jun 29, 2022",5
 ,SureBet,https://www.sure.bet/casinos-not-on-gamstop/,$5,$15,"Jun 17, 2022",5
-,Realmoneycasinoonline.ca,https://www.realmoneycasinoonline.ca,$5,$15,"Jun 26, 2022",5
-,IgAnony,https://iganony.com,$5,$15,"Jun 29, 2022",5
 ,CouponBlender,https://www.couponblender.com/,$5,$15,"Jun 30, 2022",5
 ,SportOnlineBetting,,$5,$15,"Jul 4, 2022",5
 ,Stayatcasinos.com,https://stayatcasinos.com/,$5,$15,"Jul 4, 2022",5
-,"RushRadar: The Best Articles, Reviews, and Referral Codes",https://rushradar.com,$5,$5,"Jul 30, 2022",5
 ,Martin Luder,,$1,$76,"Aug 14, 2015",1
 ,Shigenobu Nishikawa,,$1,$74,"Oct 23, 2015",1
-,Jonathan Gnagy,,$1,$71,"Oct 31, 2019",1
+,Jonathan Gnagy,,$1,$72,"Oct 31, 2019",1
 ,Joris Vanhecke,,$1,$66,"Jun 15, 2016",1
 ,Harm Aarts,,$1,$61,"Nov 10, 2016",1
 ,Romain,,$1,$53,"Jul 14, 2017",1
@@ -154,6 +153,7 @@ sponsors/ryan_maki.png,Ryan Maki,,$75,$1650,"Dec 2, 2020",75
 ,Braydon Kains,,$0,$100,"Mar 8, 2020",0
 ,James Hill,,$0,$100,"Sep 8, 2020",0
 ,Dale C Earl,,$0,$100,"Nov 23, 2020",0
+,FindContinuingCare,,$0,$100,"Jan 11, 2021",0
 ,Patric Vormstein,,$0,$95,"Oct 25, 2019",0
 ,epergo,,$0,$90,"Mar 31, 2020",0
 ,Fabien LEFEBVRE,,$0,$90,"Jan 25, 2021",0
@@ -169,7 +169,6 @@ sponsors/ryan_maki.png,Ryan Maki,,$75,$1650,"Dec 2, 2020",75
 ,Austin Vecchio,,$0,$65,"Oct 4, 2019",0
 ,Hotmagma,,$0,$60,"Mar 16, 2020",0
 ,Daiki Sato,,$0,$60,"Jul 3, 2021",0
-,Seth Falco,,$0,$60,"Jul 23, 2022",0
 ,Alexis Anand,,$0,$55,"Jun 29, 2019",0
 ,Mark Raymond Jr.,,$0,$55,"Nov 9, 2020",0
 ,Algolia,,$0,$51,"Dec 19, 2019",0
@@ -260,6 +259,7 @@ sponsors/ryan_maki.png,Ryan Maki,,$75,$1650,"Dec 2, 2020",75
 ,Igor Polyakov,,$0,$5,"Oct 16, 2021",0
 ,Blackjack77russia.com,,$0,$5,"Nov 1, 2021",0
 ,Tracy Nowak,,$0,$5,"Apr 7, 2022",0
+,"RushRadar: The Best Articles, Reviews, and Referral Codes",,$0,$5,"Jul 30, 2022",0
 ,Matthias-Christian Ott,,$0,$4,"May 2, 2021",0
 ,Claudio G Macedo Jr,,$0,$3,"Sep 18, 2020",0
 ,Leadscanner,,$0,$2,"Jan 21, 2021",0
