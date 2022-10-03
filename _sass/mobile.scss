@@ -1,13 +1,17 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $mobile-breakpoint) {
+
   label[for=menu-mobile] {
     display: block;
   }
 
   nav {
-    height: 60px;
+    --nav-height: 81px;
 
+    // height: 60px;
+    //
     a.brand-logo {
       height: 60px;
+      margin-left: 5px;
     }
 
     .menu {
@@ -112,6 +116,17 @@
         top: 19px;
         left: 8px;
       }
+    }
+  }
+
+  .grid {
+    &.x3-mobile {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "c1 c2 c3";
+    }
+    &.x4-mobile {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "c1 c2 c3 c4";
     }
   }
 }

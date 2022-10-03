@@ -1,0 +1,63 @@
+/* =============================================================================
+  GRIDS
+============================================================================= */
+
+.grid {
+  @include transition(all ease-in-out .25s);
+  display: grid;
+  position: relative;
+  grid-gap: 25px;
+  &.x2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "c1 c2";
+  }
+  &.x3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "c1 c2 c3";
+  }
+  &.x4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "c1 c2 c3 c4";
+  }
+  &.x5 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "c1 c2 c3 c4 c5";
+  }
+  &.x7 {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: "c1 c2 c3 c4 c5 c6 c7";
+  }
+  &.x8 {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "c1 c2 c3 c4 c5 c6 c7 c8";
+  }
+  &.sidebar {
+    grid-template-columns: minmax(15%, 240px) 1fr;
+    grid-template-areas: "sidebar content";
+
+    &.bordered > .cell:first-child {
+      border-right: 1px solid $gray-light;
+    }
+  }
+  &.sidebar-right {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "content sidebar";
+    grid-gap: 2rem 5rem;
+  }
+}
+
+.cell {
+  padding: .5rem 0;
+  &.no-padd {
+    padding: 0;
+  }
+}
+.span2 {
+  grid-area: auto / auto / auto / span 2;
+}
+.span3 {
+  grid-area: auto / auto / auto / span 3;
+}
+.span4 {
+  grid-area: auto / auto / auto / span 4;
+}

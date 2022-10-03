@@ -1,6 +1,4 @@
 main:
-- label: Home
-  url: /
 - label: News
   url: /blog/
 - label: Success stories

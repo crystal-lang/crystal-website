@@ -1,21 +1,23 @@
 <nav role='navigation'>
+  <div class="wrapper">
 
-  {% if page.url != "/" %}
-  <a class='brand-logo'>
+    {% if page.url != "/" %}
+    <a class='brand-logo' href="/">
 
-    <canvas height='120' id='logo-canvas' width='120'></canvas>
+      <canvas height='120' id='logo-canvas' width='120'></canvas>
 
-    <strong>Crystal</strong>
+      <strong>Crystal</strong>
 
-  </a>
-  {% endif %}
+    </a>
+    {% endif %}
 
-  <div class="menu">
-    <input type="checkbox" id="menu-mobile">
-    <label for="menu-mobile"><span></span><span></span><span></span></label>
-    <ul>
-      {% include nav_links.html %}
-    </ul>
+    <div class="menu">
+      <input type="checkbox" id="menu-mobile">
+      <label for="menu-mobile"><span></span><span></span><span></span></label>
+      <ul>
+        {% include nav_links.html %}
+      </ul>
+    </div>
+
   </div>
-
 </nav>

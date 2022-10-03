@@ -12,16 +12,47 @@ body {
 }
 
 nav {
+  --nav-height: 91px;
+  --nav-distance: 20px;
+  --nav-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+  --nav-cover: linear-gradient(white 10%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.4) 70%, transparent);
+
   position: sticky;
-  top: 0;
+  top: calc(var(--nav-distance) * -1);
   left: 0;
-  height: 72px;
+  height: var(--nav-height);
   width: 100%;
-  background: #fff;
-  display: grid;
-  grid-template-areas: "logo menu";
-  grid-template-columns: 200px auto;
-  border-bottom: 1px solid rgba(0,0,0,.1);
+  backface-visibility: hidden;
+  z-index: 99;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: var(--nav-distance);
+    position: sticky;
+  }
+  &::before {
+    top: calc(var(--nav-height) - var(--nav-distance) * 2);
+    box-shadow: var(--nav-shadow);
+  }
+  &::after {
+    background: var(--nav-cover);
+    top: 0;
+    z-index: 100;
+  }
+  & .wrapper {
+    height: calc(var(--nav-height) - var(--nav-distance));
+    position: sticky;
+    top: 0px;
+    margin-top: calc(var(--nav-distance) * -1);
+    z-index: 101;
+    background: #fff;
+    display: grid;
+    grid-template-areas: "logo menu";
+    grid-template-columns: 200px auto;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+  }
 
   a.brand-logo {
     display: flex;
@@ -79,4 +110,36 @@ nav {
 label[for=menu-mobile],
 #menu-mobile {
   display: none;
+}
+
+.black-text {
+  color: #000;
+}
+.grey-text {
+  color: #777;
+}
+.center {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  border-top: 1px solid rgba(0,0,0,.1);
+  padding: 0 15px;
+  color: #777;
+  line-height: 72px;
+
+  .center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    background: url('/assets/m-outline.svg') no-repeat center right;
+    padding-right: 45px;
+    display: inline-block;
+    height: 72px;
+    background-size: 36px 36px;
+  }
 }
