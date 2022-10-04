@@ -124,12 +124,74 @@ label[for=menu-mobile],
 }
 
 footer {
-  border-top: 1px solid rgba(0,0,0,.1);
-  padding: 0 15px;
-  color: #777;
-  line-height: 72px;
+  .channels {
+    border-top: 1px solid rgba(0,0,0,.1);
+    position: relative;
+    padding-top: 25px;
+    margin-top: 30px;
 
-  .center {
+    .above {
+      position: absolute;
+      top: -24px;
+      left: calc( 50% - 100px );
+      color: #000;
+      font-weight: bold;
+
+      * {
+        font-size: 18px;
+      }
+
+      span:after {
+        content: "Show all";
+        color: #777;
+        margin-left: 10px;
+        font-weight: normal;
+        text-decoration: underline;
+      }
+    }
+
+    li {
+      margin: 50px 0;
+
+      h3 {
+        margin-left: 40px;
+        font-size: 14px;
+        font-weight: normal;
+      }
+      a {
+        height: 26px;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: 4px center;
+        background-size: auto 20px;
+        padding-left: 40px;
+        color: #000;
+        font-size: 18px;
+        line-height: 26px;
+
+        &.github {
+          background-image: url('/assets/icons/github.svg');
+          background-position: left center;
+        }
+        &.forum {
+          background-image: url('/assets/icons/forum.svg');
+        }
+        &.gitter {
+          background-image: url('/assets/icons/gitter.svg');
+        }
+        &.twitter {
+          background-image: url('/assets/icons/twitter.svg');
+          background-size: 22px auto;
+        }
+      }
+    }
+  }
+
+  .sides {
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 0 15px;
+    color: #777;
+    line-height: 72px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
