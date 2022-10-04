@@ -67,7 +67,7 @@
   .conference-sessions-break {
     margin-top: -4px;
     font-size: 1.4rem;
-    color: $primary-text;
+    color: var(--primary-text);
     font-weight: 500;
     grid-column: 1;
 
@@ -194,8 +194,8 @@ hr.custom-hr {
   height: 1.2rem;
   border-radius: 0.6rem;
   padding: 0 0.5rem;
-  color: $primary-text;
-  border: 1px $primary-text solid;
+  color: var(--primary-text);
+  border: 1px var(--primary-text) solid;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 0.75rem;

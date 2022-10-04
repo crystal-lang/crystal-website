@@ -71,11 +71,11 @@
     }
     &.white {
       background-color: $white;
-      border-color: $primary-text;
+      border-color: var(--primary-text);
     }
     &.gray {
-      background-color: $primary-text;
-      border-color: $primary-text;
+      background-color: var(--primary-text);
+      border-color: var(--primary-text);
     }
   }
   .color-name {

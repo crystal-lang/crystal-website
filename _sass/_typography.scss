@@ -16,17 +16,17 @@ h3 {
 }
 
 a {
-  color: $primary-text;
+  color: var(--primary-text);
   text-decoration: none;
 
   &:hover {
-    color: $primary-text;
+    color: var(--primary-text);
     text-decoration: none;
   }
 }
 
 p > a, td > a, ul:not(#nav-mobile) li > a, dd > a {
-  border-bottom: 1px solid $primary-text;
+  border-bottom: 1px solid var(--primary-text);
 }
 
 p:not(.read-more) {
@@ -44,7 +44,7 @@ p.no-underline > a,
 table.no-underline a {
   border-bottom: 0;
   &:hover span {
-    border-bottom: 1px solid $primary-text;
+    border-bottom: 1px solid var(--primary-text);
   }
 }
 

@@ -13,19 +13,21 @@ layout: none
       {%- endif -%}
     </title>
     <meta charset='utf-8'>
-    <!-- Import Google Icon Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-    <link href='https://fonts.googleapis.com/icon?family=Material+Icons|Roboto+Mono' rel='stylesheet'>
-    <link href="/assets/stylesheet.css" rel="stylesheet" />
-    <link href="/assets/mobile.css" rel="stylesheet" media="(max-width: 768px)" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preload" href="https://fonts.googleapis.com/icon?family=Roboto+Mono" />
+    <link href='https://fonts.googleapis.com/icon?family=Roboto+Mono' rel='stylesheet'>
+    <link href="/assets/css/stylesheet.css" rel="stylesheet" />
+    {%- if page.css -%}
+    <link href="/assets/css/pages/{{page.css}}.css" rel="stylesheet" />
+    {%- endif -%}
+    <link href="/assets/css/mobile.css" rel="stylesheet" media="(max-width: 768px)" />
     <link href='/feed.xml' rel='alternate' title='Atom 1.0' type='application/atom+xml'>
-    <link href='/favicon.png' rel='icon' type='image/png'>
+    <link href='/favicon.svg' rel='icon'>
     <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
     {% seo %}
-    <!-- Let browser know website is optimized for mobile -->
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta name="theme-color" content="#000000">
   </head>
   <body class="{{page.layout}} {{ page.custom_body_classes | join: ' '}}">
     {{ content }}

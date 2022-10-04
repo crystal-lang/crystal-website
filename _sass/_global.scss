@@ -1,7 +1,7 @@
 body {
-  background: $white;
-  color: $primary-text;
-  font-family: $sans;
+  background: var(--white);
+  color: var(--primary-text);
+  font-family: var(--sans);
 }
 .no-select, nav {
   -webkit-touch-callout: none;
@@ -12,6 +12,7 @@ body {
 }
 
 nav {
+  // Shadow on scroll effect logic
   --nav-height: 91px;
   --nav-distance: 20px;
   --nav-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
@@ -98,7 +99,7 @@ nav {
         margin: 0 15px;
 
         &.on {
-          border-bottom: 5px solid $black;
+          border-bottom: 5px solid var(--black);
           font-weight: 700;
           color: #000;
         }
@@ -118,14 +119,53 @@ label[for=menu-mobile],
 .grey-text {
   color: #777;
 }
+header,
+main,
 .center {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+header {
+  h1 {
+    font-size: 60px;
+    margin-top: 66px;
+    font-weight: normal;
+    margin-bottom: 36px;
+  }
+  p {
+    font: normal 24px/36px var(--sans);
+    margin-bottom: 36px;
+  }
+}
+
+h2 {
+  font: normal 36px/39px var(--sans);
+  margin-bottom: 34px;
+}
+h3 {
+  font: bold 18px/24px var(--sans);
+  margin-bottom: 22px;
+}
+
+p {
+  font: normal 18px/20px var(--sans);
+  margin-bottom: 30px;
+}
+
+section {
+  padding: 70px 0;
+}
+.bold {
+  font-weight: 700;
+}
+
+.separator {
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
 footer {
   .channels {
-    border-top: 1px solid rgba(0,0,0,.1);
     position: relative;
     padding-top: 25px;
     margin-top: 30px;

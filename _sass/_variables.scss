@@ -1,16 +1,13 @@
-// Colors
-// --------------------------------------------------
-$white:         #ffffff;
-$black:         #000000;
-$primary-text:  #777777;
-$separator:     #EBEBEB;
-$light-gray:    #D7D7D7;
-$lighter-gray:  #CCCCCC;
-$chart:         $lighter-gray;
+:root {
+  // Colors
+  // -------------
+  --white: #ffffff;
+  --black: #000000;
+  --light-gray: #777777;
+  --primary-text: #000000;
 
-// Fonts
-// -----------
-$sans:          'Roboto', Arial, Helvetica, sans-serif;
-$codeFont:      'Roboto Mono', monospace;
-
-$mobile-breakpoint: 768px;
+  // Fonts
+  // -----------
+  --sans: 'Roboto', Arial, Helvetica, sans-serif;
+  --codeFont: 'Roboto Mono', monospace;
+}

@@ -146,11 +146,11 @@ ol li {
   list-style: inherit;
 }
 a {
-  color: $primary-text;
+  color: var(--primary-text);
   text-decoration: none;
 
   &:hover {
-    color: $primary-text;
+    color: var(--primary-text);
     text-decoration: none;
   }
 }
