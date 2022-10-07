@@ -1,7 +1,7 @@
 div.highlighter-rouge, figure.highlight {
   position: relative;
   margin: 0;
-  border: 1px solid $light-gray;
+  border: 1px solid var(--light-gray);
   padding: 1.5em 2em;
   margin-top: 2em;
 
@@ -22,11 +22,11 @@ div.highlighter-rouge, figure.highlight {
   &, > :first-child {
     &:before, &:after {
       content: "";
-      border: solid 1px $light-gray;
+      border: solid 1px var(--light-gray);
       width: 5px;
       height: 5px;
       position: absolute;
-      background-color: $white;
+      background-color: var(--white);
     }
   }
 

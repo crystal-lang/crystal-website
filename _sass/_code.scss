@@ -1,0 +1,42 @@
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+code {
+  font-family: var(--codeFont);
+  font-weight: 500;
+  position: relative;
+  white-space: pre-line;
+  color: var(--primary-code);
+}
+
+div.highlighter-rouge, figure.highlight {
+  position: relative;
+  margin: 0;
+  background: rgba(0,0,0,.05);
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 3px 0 rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 30px 0;
+  font-size: 18px;
+  color: var(--primary-code);
+
+  & + & {
+    border-top: none;
+    margin-top: 0;
+  }
+
+  pre {
+    margin: 0;
+  }
+  code, pre {
+    background-color: transparent;
+  }
+}
+
+code.highlighter-rouge {
+  background-color: rgba(0,0,0,.1);
+  padding: 0 5px;
+}

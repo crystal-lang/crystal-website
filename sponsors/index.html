@@ -25,8 +25,8 @@ css: sponsors
           <img src="/assets/{{ sp.logo }}" alt="Manas.tech">
         </picture>
         <h3>{{ sp.name }}</h3>
-        <p>{{ sp.last_payment | intcomma: ',' }} per month since {{ sp.since }}</p>
-        <span>{{ sp.all_time | intcomma: ',' }}</span>
+        <p>{{ sp.last_payment | slice: 0 }}{{ sp.last_payment | slice: 1,10 | intcomma }} per month since {{ sp.since }}</p>
+        <span>{{ sp.all_time | slice: 0 }}{{ sp.all_time | slice: 1,10 | intcomma }}</span>
       </a>
       {% endfor %}
     </div>
@@ -88,10 +88,10 @@ css: sponsors
                 {% endif %}
               </td>
               <td>
-                {{sp.last_payment}}
+                {{ sp.last_payment | slice: 0 }}{{ sp.last_payment | slice: 1,10 | intcomma }}
               </td>
               <td>
-                {{sp.all_time}}
+                {{ sp.all_time | slice: 0 }}{{ sp.all_time | slice: 1,10 | intcomma }}
               </td>
               <td>
                 {{sp.since}}

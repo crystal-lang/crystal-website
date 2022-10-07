@@ -3,10 +3,13 @@
       {%- assign authors = include.post.author | split: ',' -%}
       {%- for author in authors -%}
         <div class="author small">
-          <img  src="/assets/authors/{{ author }}.jpg" loading="lazy" />
+          <picture>
+            <source srcset="/assets/authors/{{ author }}.webp" type="image/webp">
+            <img src="/assets/authors/{{ author }}.jpg" loading="lazy">
+          </picture>
           <span class="author_name">{{ site.data.blog_authors[author].name }}</span>
           {%- if author == authors.last %}
-            <span class="date">{{ include.post.date | date_to_string }}</span>
+            <span class="date">{{ include.post.date }}</span>
           {% endif -%}
         </div>
       {%- endfor -%}

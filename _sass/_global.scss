@@ -127,9 +127,10 @@ main,
 }
 
 header {
+  padding-top: 66px;
+
   h1 {
     font-size: 60px;
-    margin-top: 66px;
     font-weight: normal;
     margin-bottom: 36px;
   }
@@ -162,6 +163,89 @@ section {
 
 .separator {
   border-top: 1px solid rgba(0,0,0,.1);
+}
+
+// Social Icons
+.github {
+  background-image: url('/assets/icons/github.svg');
+  background-position: left center;
+}
+.forum {
+  background-image: url('/assets/icons/forum.svg');
+}
+.gitter {
+  background-image: url('/assets/icons/gitter.svg');
+}
+.twitter {
+  background-image: url('/assets/icons/twitter.svg');
+  background-size: 22px auto;
+}
+.google {
+  background-image: url('/assets/icons/google.svg');
+  background-size: 22px auto;
+}
+.facebook {
+  background-image: url('/assets/icons/facebook.svg');
+  background-size: 22px auto;
+}
+.reddit {
+  background-image: url('/assets/icons/reddit.svg');
+  background-size: 22px auto;
+}
+.chain {
+  background-image: url('/assets/icons/chain.svg');
+  background-size: 22px auto;
+}
+
+.tooltip {
+  width: 80px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 10px 5px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 1px 6px 8px -1px rgba(0, 0, 0, .3 );
+  bottom: 40px;
+  left: 50%;
+  margin-left: -20px;
+  font: normal 14px/16px var(--sans);
+  display: flex;
+  justify-content: center;
+
+  .icon-tick {
+    width: 16px;
+    height: 16px;
+    background: url("/assets/icons/check.svg") no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  &:after {
+    content: " ";
+    position: absolute;
+    bottom: -9px;
+    left: 10px;
+    margin-left: 0px;
+    border-width: 9px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    transform: rotate(135deg);
+  }
+}
+.ttimer2::before {
+    content: " ";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    background: #8c1;
+    height: 2px;
+    animation: timerbar 2s;
+}
+@keyframes timerbar {
+  from { width: 0%; }
+  to { width: 100%; }
 }
 
 footer {
@@ -208,21 +292,6 @@ footer {
         color: #000;
         font-size: 18px;
         line-height: 26px;
-
-        &.github {
-          background-image: url('/assets/icons/github.svg');
-          background-position: left center;
-        }
-        &.forum {
-          background-image: url('/assets/icons/forum.svg');
-        }
-        &.gitter {
-          background-image: url('/assets/icons/gitter.svg');
-        }
-        &.twitter {
-          background-image: url('/assets/icons/twitter.svg');
-          background-size: 22px auto;
-        }
       }
     }
   }

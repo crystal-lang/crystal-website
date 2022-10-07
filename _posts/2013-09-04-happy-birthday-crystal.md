@@ -15,7 +15,7 @@ is growing bigger.
 
 Here's a summary of what we have in the language right now.
 
-### Efficient code generation
+## Efficient code generation
 
 Crystal is **not** interpreted. It doesn't have a virtual machine. The code is compiled to
 native machine code by using LLVM.
@@ -24,7 +24,7 @@ You don't specify the types of variables, instance variables or method arguments
 like is usually done in statically compiled languages. Instead, Crystal tries to be as
 smart as possible and infers the types for you.
 
-### Primitive types
+## Primitive types
 
 Primitive types map to native machine types.
 
@@ -37,7 +37,7 @@ true    # Bool
 'a'     # Char
 ```
 
-### ASCII Strings
+## ASCII Strings
 
 They come in many flavors, like in Ruby, and they also support interpolation.
 
@@ -53,7 +53,7 @@ Did you know that [String](https://github.com/crystal-lang/crystal/blob/master/s
 is implemented in Crystal itself? There's just very small magic to make it have the
 size and pointer to the chars buffers, but everything else is built on top of that.
 
-### Symbols
+## Symbols
 
 ```ruby
 :foo
@@ -62,7 +62,7 @@ size and pointer to the chars buffers, but everything else is built on top of th
 At runtime, each symbol is represented by a unique integer. A table of integer to string is built for
 implementing Symbol#to_s (but there's no way right now to do String#intern).
 
-### Union types
+## Union types
 
 You don't need to specify the type of a variable. If it is assigned multiple types,
 it will have those types at compile-time. At run-time it will have only one.
@@ -96,7 +96,7 @@ if a.responds_to?(:succ)
 end
 ```
 
-### Methods
+## Methods
 
 In Crystal methods can be overloaded. The overloads come from the number of arguments,
 type restrictions and *yieldness* of a method.
@@ -135,7 +135,7 @@ it's a compile time error.
 The last bit, overloading based on whether a method yields or not, will probably change
 and needs to be re-thought.
 
-### Classes
+## Classes
 
 No need to specify the types of instance variables, but all types assigned to
 an instance variable will make that variable have a union type.
@@ -208,17 +208,17 @@ Maybe it doesn't have an efficient solution. At least we didn't find anyone who 
 able to do it. Generic types are a small sacrifice, but in return we get much
 faster compile times.
 
-### Modules
+## Modules
 
 Of course, modules are also present in Crystal, and they can also be generic.
 
-### Blocks
+## Blocks
 
 For now, blocks can't be saved to a variable or passed to another method. That means,
 we still lack closures. It's not an easy thing to do if we want a smart type inference,
 so we need some time to think it over.
 
-### Bindings to C
+## Bindings to C
 
 You can declare bindings to C in Crystal, no need to use C, make wrappers or
 use another language. For example, this is part of the SDL binding:
@@ -244,7 +244,7 @@ end
 value = LibSDL.init(LibSDL.INIT_TIMER)
 ```
 
-### Pointers
+## Pointers
 
 You can allocate memory and interface with C by having Pointers as a type in the language.
 
@@ -252,7 +252,7 @@ You can allocate memory and interface with C by having Pointers as a type in the
 values = Pointer(Int32).malloc(10) # Ask for 10 ints
 ```
 
-### Regular expressions
+## Regular expressions
 
 Regular expressions are implemented, for now, with C bindings to the PCRE library. Again,
 [Regexp](https://github.com/crystal-lang/crystal/blob/fd6c0238f6e7725d307d4c010d8c860e38a46d72/src/regexp.cr) is entirely written in Crystal.
@@ -263,16 +263,16 @@ $1                           #=> "foo"
 $2                           #=> "baz
 ```
 
-### Ranges
+## Ranges
 
 Once again, [implemented in Crystal](https://github.com/crystal-lang/crystal/blob/master/src/range.cr).
 
-### Exceptions
+## Exceptions
 
 You can raise and rescue exceptions. They are implemented using libunwind. We are still lacking line
 numbers and filenames in the stacktraces.
 
-### Exporting C functions
+## Exporting C functions
 
 You can declare functions to be exported to C, so you can compile Crystal code and use it in C
 (although there's still no compiler flag to generate an object file, but it should be easy to implement).
@@ -283,7 +283,7 @@ fun my_c_function(x : Int32) : Int32
 end
 ```
 
-### Macros
+## Macros
 
 This is an experimental feature of the language where you can generate source code
 from AST nodes.
@@ -306,7 +306,7 @@ The macros getter, setter and property are implemented in a similar way, but we'
 been thinking of a more powerful and simpler way to achieve the same thing so this
 feature might disappear.
 
-### Yield with scope
+## Yield with scope
 
 Similar to yield, but changes the implicit scope of the block.
 
@@ -329,7 +329,7 @@ are involved.
 Something similar can be achieved in Ruby with instance_eval(&block), but for now
 we find it easier to implement it this way, and maybe easier to use.
 
-### Specs
+## Specs
 
 We'be built a [very small clone of RSpec](https://github.com/crystal-lang/crystal/blob/master/src/spec.cr) and we are using it to test the standard
 library as well as the new compiler. Here's a sample spec for the Array class:

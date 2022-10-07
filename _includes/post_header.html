@@ -1,22 +1,24 @@
-<div class='post-header'>
-  <div class="container">
-    <div class='valign row'>
-      <div class="col m2"></div>
-      <div class="col s12 m9">
-        <div class="author small">
-          {% assign authors = page.author | split: ',' %}
-          {% for author in authors %}
-            <img  src="/assets/authors/{{ author }}.jpg" loading="lazy" />
-          {% endfor %}
-          {% for author in authors %}
-            <span class="author_name">{{ site.data.blog_authors[author].name }}</span>
-          {% endfor %}
-          <span class="date">{{ page.date | date_to_string }}</span>
-        </div>
-
-        <h1 class='title'>{{ page.title }}</h1>
-      </div>
-      <div class="col m1"></div>
+<header>
+  {% assign authors = page.author | split: ',' %}
+  <div class="info">
+    <div>
+      {% for author in authors %}
+      <picture{% if authors.size > 1 %} class="multi"{% endif %}>
+        <source srcset="/assets/authors/{{ author }}.webp" type="image/webp">
+        <img src="/assets/authors/{{ author }}.jpg" loading="lazy" title="{{ site.data.blog_authors[author].name }}">
+      </picture>
+      {% endfor %}
+    </div>
+    <div>
+      <address rel="author">
+        {% for author in authors %}
+          {% if forloop.index > 1 %} & {% endif %}{{ site.data.blog_authors[author].name }}
+        {% endfor %}
+      </address>
+      <time pubdate>{{ page.date | time_ago_in_words }}</time>
     </div>
   </div>
-</div>
+
+  <h1>{{ page.title }}</h1>
+
+</header>

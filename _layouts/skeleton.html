@@ -18,9 +18,14 @@ layout: none
     <link rel="preload" href="https://fonts.googleapis.com/icon?family=Roboto+Mono" />
     <link href='https://fonts.googleapis.com/icon?family=Roboto+Mono' rel='stylesheet'>
     <link href="/assets/css/stylesheet.css" rel="stylesheet" />
-    {%- if page.css -%}
-    <link href="/assets/css/pages/{{page.css}}.css" rel="stylesheet" />
-    {%- endif -%}
+    {% if page.css %}
+      {% for stylesheet in page.css %}
+      <link href="/assets/css/pages/{{stylesheet}}.css" rel="stylesheet" />
+      {% endfor %}
+    {% endif %}
+    {% if page.layout == 'post' %}
+      <link href="/assets/css/pages/post.css" rel="stylesheet" />
+    {% endif %}
     <link href="/assets/css/mobile.css" rel="stylesheet" media="(max-width: 768px)" />
     <link href='/feed.xml' rel='alternate' title='Atom 1.0' type='application/atom+xml'>
     <link href='/favicon.svg' rel='icon'>

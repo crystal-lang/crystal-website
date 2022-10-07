@@ -73,6 +73,38 @@
      background-color: #eee;
    }
   }
+  &.uq {
+    display: flex;
+    flex-direction: column;
 
+    span {
+      padding: 0 3px;
+      width: calc( 100% - 6px );
+      justify-content: center;
+      display: block;
+      height: 26px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    &:before{
+      border-width: 0 20px 10px 20px;
+      border-color: transparent transparent white transparent;
+    }
+
+    &:after{
+      border-width: 10px 20px 0 20px;
+      border-color: white transparent transparent transparent;
+    }
+
+    &:hover{
+      &:before{
+        border-color: transparent transparent #eee transparent;
+      }
+      &:after{
+        border-color: #eee transparent transparent transparent;
+      }
+    }
+  }
 
 }

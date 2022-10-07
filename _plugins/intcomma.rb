@@ -1,4 +1,4 @@
-module IntComma
+module Intcomma
   def intcomma(value, delimiter=",")
     begin
       orig = value.to_s
@@ -14,4 +14,4 @@ module IntComma
   end
 end
 
-Liquid::Template.register_filter(IntComma)
+Liquid::Template.register_filter(Intcomma)
