@@ -15,7 +15,7 @@
           {% if forloop.index > 1 %} & {% endif %}{{ site.data.blog_authors[author].name }}
         {% endfor %}
       </address>
-      <time pubdate>{{ page.date }}</time>
+      <time pubdate>{{ page.date | date_to_string }}</time>
     </div>
   </div>
 

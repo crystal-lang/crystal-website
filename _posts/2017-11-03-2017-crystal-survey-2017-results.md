@@ -5,7 +5,7 @@ summary: ""
 thumbnail: ""
 ---
 
-This year, the Crystal team launched the first official [State of Crystal survey](https://crystal-lang.org/2017/07/31/launching-the-2017-state-of-crystal-survey.html). We're amazed by the fantastic feedback from the community.
+This year, the Crystal team launched the first official [State of Crystal survey](/2017/07/31/launching-the-2017-state-of-crystal-survey.html). We're amazed by the fantastic feedback from the community.
 
 We received ***757 responses***. Thanks a lot to everyone who took the time to respond! We tried our best to read through all of your comments and suggestions.
 
