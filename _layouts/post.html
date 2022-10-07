@@ -37,13 +37,13 @@ layout: base
     <section class="pages grid x2">
 
       {% if page.next.url %}
-      <a class="next" href="{{page.next.url}}">&laquo; {{page.next.title}}</a>
+      <a class="next" href="{{page.next.url}}">{{page.next.title}}</a>
       {% else %}
       <span></span>
       {% endif %}
 
       {% if page.previous.url %}
-      <a class="prev" href="{{page.previous.url}}">{{page.previous.title}} &raquo;</a>
+      <a class="prev" href="{{page.previous.url}}">{{page.previous.title}}</a>
       {% else %}
       <span></span>
       {% endif %}
@@ -51,9 +51,6 @@ layout: base
     </section>
 
     <footer id='disqus_thread'>
-
-
-
       {{ content }}
     </footer>
 

@@ -91,15 +91,37 @@ aside {
   width: auto;
   overflow: hidden;
   padding-left: 100px;
-}
 
-.pages a {
-  width: 100%;
-  margin: 1em 0;
-}
+  a {
+    margin: 1em 0;
+    padding: 0 30px;
+    position: relative;
 
-.pages .prev {
-  text-align: right;
+    &:before {
+      border: solid #777;
+      content: '';
+      border-width: 0 4px 4px 0;
+      padding: 5px;
+      position: absolute;
+    }
+  }
+
+  .prev {
+    text-align: right;
+
+    &:before {
+      transform: rotate(-45deg);
+      top: 3px;
+      right: 5px;
+    }
+  }
+  .next {
+    &:before {
+      transform: rotate(135deg);
+      top: 3px;
+      left: 5px;
+    }
+  }
 }
 
 blockquote {
