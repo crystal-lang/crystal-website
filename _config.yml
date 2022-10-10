@@ -12,13 +12,25 @@ collections:
     output: false
 
 defaults:
+
+  # This is a duplication of the next scope, but with index file name.
+  # It ensures that index files are treated as a directory index, and generate sub paths.
   -
     scope:
-      path: ""
+      path: "**/index{.html,.md}"
       type: pages
     values:
       image: /assets/icon.png
       layout: page
+      permalink: /:path/
+  -
+    scope:
+      path: "**/*{.html,.md}"
+      type: pages
+    values:
+      image: /assets/icon.png
+      layout: page
+      permalink: /:path/:basename/
   -
     scope:
       path: ""
@@ -35,6 +47,7 @@ defaults:
       image: /assets/icon.png
       layout: install
       permalink: /install/:basename/
+
   - scope:
       path: ""
       type: releases
