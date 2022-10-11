@@ -169,32 +169,50 @@ section {
 .github {
   background-image: url('/assets/icons/github.svg');
   background-position: left center;
+  background-repeat: no-repeat;
 }
 .forum {
   background-image: url('/assets/icons/forum.svg');
+  background-repeat: no-repeat;
 }
 .gitter {
   background-image: url('/assets/icons/gitter.svg');
+  background-repeat: no-repeat;
 }
 .twitter {
   background-image: url('/assets/icons/twitter.svg');
   background-size: 22px auto;
+  background-repeat: no-repeat;
 }
 .google {
   background-image: url('/assets/icons/google.svg');
   background-size: 22px auto;
+  background-repeat: no-repeat;
 }
 .facebook {
   background-image: url('/assets/icons/facebook.svg');
   background-size: 22px auto;
+  background-repeat: no-repeat;
 }
 .reddit {
   background-image: url('/assets/icons/reddit.svg');
   background-size: 22px auto;
+  background-repeat: no-repeat;
 }
 .chain {
   background-image: url('/assets/icons/chain.svg');
   background-size: 22px auto;
+  background-repeat: no-repeat;
+}
+.docs {
+  background-image: url('/assets/icons/docs.svg');
+  background-size: 22px auto;
+  background-repeat: no-repeat;
+}
+.changelog {
+  background-image: url('/assets/icons/changelog.svg');
+  background-size: 22px auto;
+  background-repeat: no-repeat;
 }
 
 .tooltip {
@@ -246,6 +264,12 @@ section {
 @keyframes timerbar {
   from { width: 0%; }
   to { width: 100%; }
+}
+
+.sides {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 footer {
@@ -301,9 +325,6 @@ footer {
     padding: 0 15px;
     color: #777;
     line-height: 72px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   }
 
   .footer-logo {

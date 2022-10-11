@@ -8,6 +8,42 @@ header {
 
 article {
 
+  &.sponsors {
+    background: rgba(0,0,0,.05);
+    padding: 0 30px 40px;
+    margin-left: 100px;
+
+    header {
+      padding-top: 0;
+      border-bottom: 1px solid rgba(0,0,0,.1);
+
+      h2 {
+        margin: 0;
+        color: var(--light-gray);
+        line-height: 98px;
+      }
+      .hex {
+        margin: 25px 0;
+        span {
+          text-transform: uppercase;
+          color: #000;
+          font-weight: bold;
+          font-size: 18px;
+          padding: 0 20px;
+        }
+      }
+    }
+    p {
+      color: var(--light-gray);
+      margin: 35px 0 0;
+
+      a {
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+  }
+
   .grid.sidebar {
     grid-template-columns: 75px 1fr;
   }
@@ -20,6 +56,13 @@ article {
     }
     a {
       color: #03A9F4;
+    }
+    .release-links {
+      margin: 0 0 15px;
+
+      a {
+        color: #000;
+      }
     }
     h2 {
       color: var(--light-gray);
@@ -126,8 +169,28 @@ aside {
   }
 }
 
+.release-links {
+  font-size: 18px;
+
+  li {
+    display: inline-block;
+    margin-right: 48px;
+  }
+  a {
+    padding-left: 30px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
   border-left: 5px solid #ee6e73;
+}
+
+footer {
+    margin: 80px 0;
 }

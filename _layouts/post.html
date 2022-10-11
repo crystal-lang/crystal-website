@@ -4,7 +4,6 @@ layout: base
 # Doesn't use the page layout because posts have a special header
 ---
 <main>
-
   <article>
 
     {% include post_header.html %}
@@ -30,6 +29,10 @@ layout: base
       </aside>
 
       <div class="content">
+      {% if page.class == "release" %}
+        {% include release_links.html %}
+      {% endif %}
+
       {{ content }}
       </div>
     </div>
@@ -49,6 +52,14 @@ layout: base
       {% endif %}
 
     </section>
+
+    <article class="sponsors">
+      <header class="sides">
+        <h2>Sponsors</h2>
+        <a href="https://opencollective.com/crystal-lang" target="_blank" class="hex shadow"><span>Contribute</span></a>
+      </header>
+      <p>We have been able to do all of this thanks to the continued support of <a href="https://www.84codes.com/" target="_blank">84codes</a>, <a href="https://nikolamotor.com/" target="_blank">Nikola Motor Company</a> and every other <a href="/sponsors/">sponsor</a>. To maintain and increase the development pace, donations and sponsorships are essential. <a href="https://opencollective.com/crystal-lang" targte="_blank">OpenCollective</a> is available for that. Reach out to <a href="mailto: crystal@manas.tech">crystal@manas.tech</a> if you’d like to become a direct sponsor or find other ways to support Crystal. We thank you in advance!</p>
+    </article>
 
     <footer id='disqus_thread'>
       {{ content }}

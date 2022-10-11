@@ -48,6 +48,7 @@ defaults:
       layout: post
       permalink: /:year/:month/:day/:title.html
       image: /assets/icon.png
+      class: release
 
 twitter:
   username: CrystalLanguage
