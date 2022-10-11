@@ -96,12 +96,14 @@ aside {
     margin: 1em 0;
     padding: 0 30px;
     position: relative;
+    text-decoration: underline;
+    color: var(--light-gray);
 
     &:before {
-      border: solid #777;
+      border: solid #979797;
       content: '';
       border-width: 0 4px 4px 0;
-      padding: 5px;
+      padding: 4px;
       position: absolute;
     }
   }
@@ -111,14 +113,14 @@ aside {
 
     &:before {
       transform: rotate(-45deg);
-      top: 3px;
+      top: 4px;
       right: 5px;
     }
   }
   .next {
     &:before {
       transform: rotate(135deg);
-      top: 3px;
+      top: 4px;
       left: 5px;
     }
   }
