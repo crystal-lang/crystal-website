@@ -5,7 +5,7 @@
       {% for author in authors %}
       <picture{% if authors.size > 1 %} class="multi"{% endif %}>
         <source srcset="/assets/authors/{{ author }}.webp" type="image/webp">
-        <img src="/assets/authors/{{ author }}.jpg" loading="lazy" title="{{ site.data.blog_authors[author].name }}">
+        <img src="/assets/authors/{{ author }}.jpg" title="{{ site.data.blog_authors[author].name }}">
       </picture>
       {% endfor %}
     </div>
