@@ -63,7 +63,7 @@ Attendees are registering from all over the world, with some fearless folks base
 <img src="/assets/blog/2020-11-raw-crystal-geo.png" width="617"  class="center" alt="Registrations across the word: 28 registrations in North America, 43 in Europe, 8 in South America, 7 between Asia and Australia."/>
 Around 50% of the registrations come from Europe; 30% of the registrations come from North America.
 
-# What's next?
+## What's next?
 A lot has been decided already, but I'm still working out a few crucial details - mainly, which software we'll be using to run and record the event.
 
 I am also looking forward to finalising the speakers line-up for you to see and plan your conference day.
