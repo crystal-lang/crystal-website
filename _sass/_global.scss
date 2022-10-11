@@ -97,15 +97,17 @@ nav {
         color: #777;
         padding: 0;
         margin: 0 15px;
-
-        &.on {
-          border-bottom: 5px solid var(--black);
-          font-weight: 700;
-          color: #000;
-        }
       }
     }
   }
+}
+
+body.sponsors nav a.sponsors,
+body.post nav a.news,
+body.news nav a.news {
+  border-bottom: 5px solid var(--black);
+  font-weight: 700;
+  color: #000;
 }
 
 label[for=menu-mobile],
@@ -204,7 +206,7 @@ section {
   background-size: 22px auto;
   background-repeat: no-repeat;
 }
-.docs {
+.api_docs {
   background-image: url('/assets/icons/docs.svg');
   background-size: 22px auto;
   background-repeat: no-repeat;

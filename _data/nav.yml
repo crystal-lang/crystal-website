@@ -1,15 +1,22 @@
 main:
 - label: News
   url: /blog/
+  class: news
 - label: Success stories
   url: /success-stories/
+  class: success
 - label: Sponsors
   url: /sponsors/
+  class: sponsors
 - label: Perks & advantages
   url: /perks-advantages/
+  class: perks
 - label: Community
   url: /community/
+  class: community
 - label: Get started
   url: /reference/1.5/getting_started/index.html
+  class: started
 - label: Docs
   url: https://crystal-lang.org/reference/
+  class: docs

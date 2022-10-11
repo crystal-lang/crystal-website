@@ -41,7 +41,8 @@ defaults:
       image: /assets/icon.png
       layout: install
       permalink: /install/:basename/
-  - scope:
+  -
+    scope:
       path: ""
       type: releases
     values:
