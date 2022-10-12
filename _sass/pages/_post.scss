@@ -10,11 +10,10 @@ article {
 
   &.sponsors {
     background: rgba(0,0,0,.05);
-    padding: 0 30px 40px;
     margin-left: 100px;
 
     header {
-      padding-top: 0;
+      padding: 0 30px;
       border-bottom: 1px solid rgba(0,0,0,.1);
 
       h2 {
@@ -35,7 +34,7 @@ article {
     }
     p {
       color: var(--light-gray);
-      margin: 35px 0 0;
+      padding: 35px 30px 40px;
       line-height: 24px;
 
       a {
@@ -193,5 +192,5 @@ blockquote {
 }
 
 footer {
-    margin: 80px 0;
+    margin: 80px 0 0 100px;
 }
