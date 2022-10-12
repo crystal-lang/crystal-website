@@ -28,6 +28,7 @@
     padding: 0 6px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: white;
     transition:  all 0.25s;
   }
@@ -107,4 +108,76 @@
     }
   }
 
+}
+
+
+// Social Icons
+.ico {
+  background-repeat: no-repeat;
+  background-size: 22px auto;
+  background-position: center center;
+
+  &.left {
+    background-position: left center;
+  }
+
+  &.github {
+    background-image: url('/assets/icons/github.svg');
+    background-size: auto auto;
+  }
+  &.forum {
+    background-image: url('/assets/icons/forum.svg');
+    background-size: auto auto;
+  }
+  &.gitter {
+    background-image: url('/assets/icons/gitter.svg');
+    background-size: auto auto;
+  }
+  &.twitter {
+    background-image: url('/assets/icons/twitter.svg');
+    background-size: 22px auto;
+  }
+  &.google {
+    background-image: url('/assets/icons/google.svg');
+    background-size: 22px auto;
+  }
+  &.facebook {
+    background-image: url('/assets/icons/facebook.svg');
+    background-size: 22px auto;
+  }
+  &.reddit {
+    background-image: url('/assets/icons/reddit.svg');
+    background-size: 22px auto;
+  }
+  &.chain {
+    background-image: url('/assets/icons/chain.svg');
+    background-size: 22px auto;
+  }
+  &.api_docs {
+    background-image: url('/assets/icons/docs.svg');
+  }
+  &.changelog {
+    background-image: url('/assets/icons/changelog.svg');
+  }
+  &.bio {
+    background-image: url('/assets/icons/bio.svg');
+  }
+  &.person {
+    background-image: url('/assets/icons/person.svg');
+  }
+  &.shield {
+    background-image: url('/assets/icons/shield.svg');
+  }
+  &.laptop {
+    background-image: url('/assets/icons/laptop.svg');
+  }
+  &.build {
+    background-image: url('/assets/icons/build.svg');
+  }
+  &.building {
+    background-image: url('/assets/icons/building.svg');
+  }
+  &.code {
+    background-image: url('/assets/icons/code.svg');
+  }
 }

@@ -1,54 +1,141 @@
 ---
 title: Used in production
-description: Companies and individuals all over the world are using Crystal in production for projects of all kinds. <br/><br/>
-             Fill <a href="https://airtable.com/shrapvn1N02qwkowQ">this short form</a> to let us know that you are also using Crystal in production at your company or project, and we’ll add you to the list on the website.
+description: >
+  <p>Companies and individuals all over the world are using Crystal in production for projects of all kinds. </p>
+  <p>Fill <a href="https://airtable.com/shrapvn1N02qwkowQ" target="_blank">this short form</a> to let us know that you are also using Crystal in production at your company or project, and we’ll add you to the list on the website.</p>
 layout: base
+css: used_in_prod
 ---
-{% capture header_title %}{{ page.title }}{% endcapture %}
-
-{% include header.html header_title=header_title %}
+{% include header.html header_title=page.title %}
 
 <main>
 
-  <div class="container">
+  <section class="grid x6 top">
+    {% for company in site.data.used_in_production %}
+    <a href="{{company.url}}" target="_blank">
+      <picture>
+        <img src="/assets/sponsors/{{company.image}}" alt="{{company.name}}"{% if company.class %} class="{{company.class}}"{% endif %}>
+      </picture>
+      {{company.name}}
+    </a>
+    {% endfor %}
+  </section>
 
-    <div class="row">
-      <div class="col">
-        <table class="bordered" id="sponsors-tbl">
-          <thead>
-            <th class="company"><span>Company / project</span></th>
-            <th class="category"><span>Category</span></th>
-            <th class="description"><span>Description</span></th>
-          </thead>
-          <tbody>
-            {% for uip in site.data.companies %}
-            <tr class="sponsor">
-              <td>
-                {% if uip.url %}
-                <a href="{{uip.url}}" target="_blank" rel="sponsored nofollow">
-                  {{uip.name}}
-                </a>
-                {% else %}
-                {{uip.name}}
-                {% endif %}
-              </td>
-              <td>
-                {{uip.category}}
-              </td>
-              <td>
-                {{uip.description | markdownify}}
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
+  <section class="areas grid x2">
+
+    <article>
+      <a name="bioinformatics" class="hex shadow uq"><span class="bio ico"></span></a>
+      <div>
+        <h2>Bioinformatics</h2>
+        <p>Projects dedicated to methods and software tools for understanding large biological data sets.</p>
+        <ul>
+          <li><a href="http://www.diploid.com/" target="_blank">Diploid</a>: Human genome interpretation</li>
+          <li><a href="https://www.licor.com/" target="_blank">LI-COR Biosciences:</a> designs and manufactures instrument systems and research tools for environmental and biotechnology research</li>
+        </ul>
       </div>
-    </div>
-  </div>
+    </article>
 
-  <script src="/assets/js/tablesort.js"></script>
-  <script>
-    new Tablesort(document.getElementById('sponsors-tbl'));
-  </script>
+    <article>
+      <a name="communication" class="hex shadow uq"><span class="person ico"></span></a>
+      <div>
+        <h2>Communication & Networking</h2>
+        <p>Projects creating tools for communication, interoperability and distribution.</p>
+        <ul>
+          <li><a href="https://kagi.com" target="_blank">Kagi</a>: Premium search engine where everything on the page matters</li>
+          <li><a href="https://ulayer.net" target="_blank">Universal Layer</a>: Web Hosting Provider</li>
+          <li><a href="https://www.xevit.com/en" target="_blank">xevIT networking</a>: Communication, Networking, Security</li>
+        </ul>
+      </div>
+    </article>
 
+    <article>
+      <a name="cyber-security" class="hex shadow uq"><span class="shield ico"></span></a>
+      <div>
+        <h2>Cyber Security</h2>
+        <p>Organizations working in computer security, cybersecurity, or information technology security.</p>
+        <ul>
+          <li><a href="https://brightsec.com/" target="_blank">Bright Security</a>: Machine Learning powered advanced protocol fuzzer</li>
+        </ul>
+      </div>
+    </article>
+
+    <article>
+      <a name="gaming" class="hex shadow uq"><span class="laptop ico"></span></a>
+      <div>
+        <h2>Gaming / Entertainment</h2>
+        <p>Organizations developing games, virtual environments, media and entertainment platforms.</p>
+        <ul>
+          <li><a href="https://invidious.io/" target="_blank">Invidious</a>: Alternative front-end to YouTube</li>
+          <li><a href="https://www.neopoly.de/" target="_blank">Neopoly GmbH</a>: Online games and services</li>
+        </ul>
+      </div>
+    </article>
+
+    <article>
+      <a name="media" class="hex shadow uq"><span class="api_docs ico"></span></a>
+      <div>
+        <h2>Media Systems</h2>
+        <p>Projects devoted to creating systems for communicative spaces.</p>
+        <ul>
+          <li><a href="https://meso.design/" target="_blank">MESO</a>: We design digital systems for communicative spaces</li>
+          <li><a href="https://playitmyway.org/" target="_blank">Play it My way</a>: Amazon movies/youtube EDL manager to watch with objectionable scenes removed backend. Edit the profanities out of movies!</li>
+        </ul>
+      </div>
+    </article>
+
+    <article>
+      <a name="misc" class="hex shadow uq"><span class="build ico"></span></a>
+      <div>
+        <h2>Misc</h2>
+        <p>Organizations developing games, virtual environments, media and entertainment platforms.</p>
+        <ul>
+          <li><a href="https://github.com/captn3m0/muse-dl" target="_blank">muse-dl</a>: An ebook downloader for Project MUSE, which stitches them together into a single-file using pdftk</li>
+          <li><a href="https://github.com/serge-name/nginx-prometheus-shiny-exporter" target="_blank">Nginx Shiny Exporter</a>: An exporter for Prometheus monitoring</li>
+        </ul>
+      </div>
+    </article>
+
+    <article>
+      <a name="saas" class="hex shadow uq"><span class="building ico"></span></a>
+      <div>
+        <h2>SaaS products</h2>
+        <p>Projects dedicated to Internet based, licenced services.</p>
+        <ul>
+          <li><a href="https://www.84codes.com" target="_blank">84codes</a>: We automate server configurations and maintenance so developers can focus on what they do best: build applications</li>
+          <li><a href="https://appmon.it/" target="_blank">Appmonitor</a>: Analytics engine</li>
+          <li><a href="https://www.blitline.com/" target="_blank">Blitline</a>: Online image processing</li>
+          <li><a href="https://blockvue.com/" target="_blank">BlockVue</a>: Virtual and VR tours for commercial real estate</li>
+          <li><a href="https://jsonkeeper.com/" target="_blank">JSON Keeper</a>: Simple, static JSON hosting service for web and mobile apps</li>
+          <li><a href="https://nabobil.no/" target="_blank">Nabobil.no</a>: Peer-to-peer car rental platform based in Norway</li>
+          <li><a href="http://www.namingmatters.com/" target="_blank">NamingMatters</a>: Trademark pre-clearance and search</li>
+          <li><a href="https://place.technology/" target="_blank">PlaceOS</a>: Connects everything in your office, tenancy or building to create a seamless user experience</li>
+          <li><a href="https://www.rainforestqa.com/" target="_blank">Rainforest QA</a>: QA at the Speed of Development, Intelligent Crowdtesting for Agile Teams</li>
+          <li><a href="https://voidapp.co/" target="_blank">Void</a>: Read + Retain in a distracted world</li>
+        </ul>
+      </div>
+    </article>
+
+    <article>
+      <a name="software" class="hex shadow uq"><span class="code ico"></span></a>
+      <div>
+        <h2>Software Development support</h2>
+        <p>Organizations that provide software engineering services.</p>
+        <ul>
+          <li><a href="https://www.bulutfon.com/" target="_blank">Bulutfon</a>: Cloud Voice & VOIP solution for Turkey</li>
+          <li><a href="https://www.duodesign.co.uk/" target="_blank">Duo Design</a>: Web and application design and development from Manchester</li>
+          <li><a href="https://www.levups.com/" target="_blank">Level UP Solutions</a>: Web application design and development, in France, specialized in e-commerce</li>
+          <li><a href="https://www.licor.com/" target="_blank">LI-COR Biosciences</a>: LI-COR Biosciences designs and manufactures instrument systems and research tools for environmental and biotechnology research</li>
+          <li><a href="https://manas.tech/" target="_blank">Manas</a>: We build unconventional software for unconventional [needs | contexts | ideas | organizations]</li>
+          <li><a href="http://www.measurechina.cn/" target="_blank">MeasureChina</a>: Marketing intelligence software</li>
+          <li><a href="https://nikolamotor.com/" target="_blank">Nikola Corp</a>: We build Hydrogen Powered Semi Trucks</li>
+          <li><a href="http://www.protel.com.tr/en" target="_blank">Protel</a>: Changing the game in POS Systems and Hospitality</li>
+          <li><a href="https://redant.com.au/" target="_blank">RedAnt</a>: Sydney-based technical agency</li>
+          <li><a href="https://redpanthers.co/" target="_blank">Red Panthers</a>: Web application design and development from Kochi, India. Build POS (Point of Sale) system and local web api servers using Crystal & Kemal</li>
+          <li><a href="http://wysdom.co.uk/" target="_blank">Wysdom</a>: Dental Practice Management Systems</li>
+        </ul>
+      </div>
+    </article>
+
+
+  </section>
 </main>

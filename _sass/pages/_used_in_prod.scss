@@ -1,10 +1,66 @@
-#sponsors-tbl {
-  .company .category {
-    width: 25%;
+.top {
+  padding: 0px 0 60px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  font-size: 14px;
+
+  a {
+    display: inline-block;
+    text-align: center;
+
+    picture {
+      height: 140px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      filter: invert(0%) sepia(95%) saturate(21%) hue-rotate(2deg) brightness(0%) contrast(107%);
+      // filter: grayscale(1);
+      width: 78px;
+      height: auto;
+      transition: filter .3s;
+
+      &.h {
+        width: 120px;
+      }
+    }
+
+    &:hover {
+      img {
+        filter: none;
+      }
+    }
+  }
+}
+
+.areas {
+  grid-gap: 200px;
+  row-gap: 60px;
+
+  .hex {
+    width: 40px;
+    height: 42px;
   }
 
-  .description {
-    width: 50%;
-    min-width: 400px;
+  article {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 13px;
+    }
+    div {
+      a {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+      li {
+        font-size: 18px;
+        margin-bottom: 18px;
+      }
+    }
   }
 }

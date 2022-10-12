@@ -140,6 +140,9 @@ header {
     font: normal 24px/36px var(--sans);
     margin-bottom: 36px;
   }
+  a {
+    text-decoration: underline;
+  }
 }
 
 h2 {
@@ -165,56 +168,6 @@ section {
 
 .separator {
   border-top: 1px solid rgba(0,0,0,.1);
-}
-
-// Social Icons
-.github {
-  background-image: url('/assets/icons/github.svg');
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-.forum {
-  background-image: url('/assets/icons/forum.svg');
-  background-repeat: no-repeat;
-}
-.gitter {
-  background-image: url('/assets/icons/gitter.svg');
-  background-repeat: no-repeat;
-}
-.twitter {
-  background-image: url('/assets/icons/twitter.svg');
-  background-size: 22px auto;
-  background-repeat: no-repeat;
-}
-.google {
-  background-image: url('/assets/icons/google.svg');
-  background-size: 22px auto;
-  background-repeat: no-repeat;
-}
-.facebook {
-  background-image: url('/assets/icons/facebook.svg');
-  background-size: 22px auto;
-  background-repeat: no-repeat;
-}
-.reddit {
-  background-image: url('/assets/icons/reddit.svg');
-  background-size: 22px auto;
-  background-repeat: no-repeat;
-}
-.chain {
-  background-image: url('/assets/icons/chain.svg');
-  background-size: 22px auto;
-  background-repeat: no-repeat;
-}
-.api_docs {
-  background-image: url('/assets/icons/docs.svg');
-  background-size: 22px auto;
-  background-repeat: no-repeat;
-}
-.changelog {
-  background-image: url('/assets/icons/changelog.svg');
-  background-size: 22px auto;
-  background-repeat: no-repeat;
 }
 
 .tooltip {

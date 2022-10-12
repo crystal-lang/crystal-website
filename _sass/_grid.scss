@@ -22,6 +22,10 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "c1 c2 c3 c4 c5";
   }
+  &.x6 {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "c1 c2 c3 c4 c5 c6";
+  }
   &.x7 {
     grid-template-columns: repeat(7, 1fr);
     grid-template-areas: "c1 c2 c3 c4 c5 c6 c7";
