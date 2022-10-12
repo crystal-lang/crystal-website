@@ -65,6 +65,13 @@
 
       &:nth-child(1) {
         border: 0;
+        cursor: default;
+
+        &:before,
+        &:after {
+          display: none;
+
+        }
       }
       &:before,
       &:after {
@@ -100,10 +107,11 @@
       line-height: 59px;
       border-bottom: 1px solid rgba(0,0,0,0.1);
       padding: 0 16px 0 0;
+      text-align: right;
 
-      &:nth-child(3),
-      &:nth-child(4) {
-        text-align: right;
+      &:nth-child(1),
+      &:nth-child(2) {
+        text-align: left;
       }
       &.logo {
         border: 0;
@@ -127,5 +135,10 @@
       height: 36px;
       border-radius: 50%;
     }
+  }
+}
+.card {
+  p {
+    line-height: 24px;
   }
 }
