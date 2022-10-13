@@ -8,6 +8,10 @@
     text-align: center;
     padding: 15px 15px 30px;
 
+    &:hover {
+      background: #efefef;
+    }
+
     p {
       font: normal 14px/18px var(--sans);
       margin-bottom: 17px;
