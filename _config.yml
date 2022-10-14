@@ -38,6 +38,7 @@ defaults:
     values:
       image: /assets/icon.png
       layout: post
+      permalink: /:year/:month/:day/:title
       is_post: true
   -
     scope:
@@ -53,7 +54,7 @@ defaults:
       type: releases
     values:
       layout: post
-      permalink: /:year/:month/:day/:title.html
+      permalink: /:year/:month/:day/:title
       image: /assets/icon.png
 
 twitter:
