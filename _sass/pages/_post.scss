@@ -8,42 +8,6 @@ header {
 
 article {
 
-  &.sponsors {
-    background: rgba(0,0,0,.05);
-    margin-left: 100px;
-
-    header {
-      padding: 0 30px;
-      border-bottom: 1px solid rgba(0,0,0,.1);
-
-      h2 {
-        margin: 0;
-        color: var(--light-gray);
-        line-height: 98px;
-      }
-      .hex {
-        margin: 25px 0;
-        span {
-          text-transform: uppercase;
-          color: #000;
-          font-weight: bold;
-          font-size: 18px;
-          padding: 0 20px;
-        }
-      }
-    }
-    p {
-      color: var(--light-gray);
-      padding: 35px 30px 40px;
-      line-height: 24px;
-
-      a {
-        color: #000;
-        text-decoration: underline;
-      }
-    }
-  }
-
   .grid.sidebar {
     grid-template-columns: 75px 1fr;
   }
@@ -88,44 +52,6 @@ aside {
   a {
     margin-bottom: 20px;
     position: relative;
-  }
-}
-
-.info {
-  display: grid;
-  grid-template-areas: "avatar info";
-  grid-template-columns: 100px auto;
-  font: normal 14px/18px var(--sans);
-
-  div {
-    position: relative;
-  }
-
-  picture {
-    grid-area: "avatar";
-    z-index: 9;
-    margin-left: 50px;
-
-    img {
-      border-radius: 50%;
-      width: 34px;
-      height: 34px;
-    }
-    &.multi {
-      &:nth-child(1) {
-        position: absolute;
-        right: 35px;
-        z-index: 8;
-        margin-left: 0px;
-      }
-    }
-  }
-
-  address {
-    font-style: normal;
-  }
-  time {
-    color: var(--light-gray);
   }
 }
 
@@ -190,6 +116,45 @@ aside {
   }
 }
 
+article .sponsors h2 {
+  margin-top: 30px;
+}
+.sponsors {
+  background: rgba(0,0,0,.05);
+  padding: 0;
+
+  header {
+    padding: 0 30px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+    h2 {
+      margin: 0;
+      color: var(--light-gray);
+      line-height: 98px;
+    }
+    .hex {
+      margin: 25px 0;
+      span {
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 0 20px;
+      }
+    }
+  }
+  p {
+    color: var(--light-gray);
+    padding: 35px 30px 40px;
+    line-height: 24px;
+
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+}
+
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
@@ -199,3 +164,4 @@ blockquote {
 footer {
     margin: 80px 0 0 100px;
 }
+@import "pages/post_header"

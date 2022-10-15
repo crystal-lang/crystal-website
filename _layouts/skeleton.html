@@ -16,6 +16,10 @@ layout: none
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preload" href="https://fonts.googleapis.com/icon?family=Roboto+Mono" />
+    {% if page.url != "/" %}
+    <link rel="preconnect" href="https://buttons.github.io" />
+    <link rel="preload" href="/assets/crystal-pattern.webp" />
+    {% endif %}
     <link href='https://fonts.googleapis.com/icon?family=Roboto+Mono' rel='stylesheet'>
     <link href="/assets/css/stylesheet.css" rel="stylesheet" />
     {% if page.css %}

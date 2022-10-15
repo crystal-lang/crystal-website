@@ -82,3 +82,15 @@
     text-align: right;
   }
 }
+
+.white {
+  .highlight {
+    .c1 { color: #555; }
+    .o, .n, .no, .p, .nc, .vi
+    { color: #fff; }
+
+    code {
+      color: #ccc;
+    }
+  }
+}

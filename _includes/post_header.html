@@ -1,5 +1,9 @@
 <header>
-  {% assign authors = page.author | split: ',' %}
+  {% if include.post %}
+    {% assign authors = include.post.author | split: ',' %}
+  {% else %}
+    {% assign authors = page.author | split: ',' %}
+  {% endif %}
   <div class="info">
     <div>
       {% for author in authors %}
@@ -15,10 +19,14 @@
           {% if forloop.index > 1 %} & {% endif %}{{ site.data.blog_authors[author].name }}
         {% endfor %}
       </address>
-      <time pubdate>{{ page.date | date_to_string }}</time>
+      <time pubdate>{% if include.post %}{{ include.post.date | date_to_string }}{% else %}{{ page.date | date_to_string }}{% endif %}</time>
     </div>
   </div>
 
-  <h1>{{ page.title }}</h1>
+  {% if include.post %}
+    <h2>{{ include.post.title }}</h2>
+  {% else %}
+    <h1>{{ page.title }}</h1>
+  {% endif %}
 
 </header>

@@ -23,7 +23,7 @@ custom_body_classes: sponsors
       {% for sp in site.data.sponsors limit:3 %}
       <a href="{{ sp.url }}" target="_blank">
         <picture>
-          <img src="/assets/{{ sp.logo }}" alt="Manas.tech">
+          <img src="/assets/{{ sp.logo }}" alt="{{sp.name}}">
         </picture>
         <h3>{{ sp.name }}</h3>
         <p>{{ sp.last_payment | slice: 0 }}{{ sp.last_payment | slice: 1,10 | intcomma }} per month since {{ sp.since }}</p>

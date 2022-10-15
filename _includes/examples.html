@@ -1,0 +1,41 @@
+<div class="examples">
+
+  {% for sample in site.data.home_page_codes %}
+  <input id="{{sample.class}}" type="radio" name="codes"{% if forloop.index == 1 %} checked="checked"{% endif %}>
+  {% endfor %}
+
+  <div class="grid sidebar center">
+
+    <div class="description">
+
+      {% for sample in site.data.home_page_codes %}
+      <article class="{{sample.class}}">
+        <h2>{{sample.name}}</h2>
+        <p>{{sample.description}}</p>
+        {% if sample.read_more_url %}<a href="{{sample.read_more_url}}" class="left ico api_docs white">{{sample.read_more_label}}</a>{% endif %}
+      </article>
+      {% endfor %}
+
+    </div>
+
+    <div class="code">
+
+      <div class="inner">
+        {% for sample in site.data.home_page_codes %}
+        <div class='{{sample.class}} code_section white'>
+          {% include {{sample.code}} %}
+        </div>
+        {% endfor %}
+      </div>
+
+      <ul class="controls">
+        {% for sample in site.data.home_page_codes %}
+        <li><label for="{{sample.class}}">{{sample.name}}</label></li>
+        {% endfor %}
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
