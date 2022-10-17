@@ -176,12 +176,17 @@
   }
   &.building {
     background-image: url('/assets/icons/building.svg');
+    background-size: 26px auto;
   }
   &.heart {
     background-image: url('/assets/icons/heart.svg');
   }
   &.code {
     background-image: url('/assets/icons/code.svg');
+  }
+  &.shuttle {
+    background-image: url('/assets/icons/shuttle.svg');
+    background-size: 26px auto;
   }
   &.white {
     color: #000;

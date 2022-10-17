@@ -2,6 +2,9 @@ body {
   background: var(--white);
   color: var(--primary-text);
   font-family: var(--sans);
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
 }
 .no-select, nav {
   -webkit-touch-callout: none;
@@ -170,6 +173,7 @@ section {
 .separator {
   &:before {
     content: " ";
+    grid-area: separator;
     border-top: 1px solid rgba(0,0,0,.1);
     width: 100vw;
     display: block;
@@ -182,8 +186,6 @@ section {
   position: relative;
   padding-top: 25px;
   margin-top: 30px;
-
-
 
   .above {
     position: absolute;
