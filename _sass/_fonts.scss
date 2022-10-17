@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/fonts/roboto/Roboto-Medium.eot");
+  src: local(Roboto Medium),url("/assets/fonts/roboto/Roboto-Medium.eot");
   src: url("/assets/fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("/assets/fonts/roboto/Roboto-Medium.woff") format("woff"), url("/assets/fonts/roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/fonts/roboto/Roboto-Bold.eot");
+  src: local(Roboto Bold),url("/assets/fonts/roboto/Roboto-Bold.eot");
   src: url("/assets/fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("/assets/fonts/roboto/Roboto-Bold.woff") format("woff"), url("/assets/fonts/roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
