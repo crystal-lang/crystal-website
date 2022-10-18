@@ -73,8 +73,8 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     default_lang: crystal
-    block:
-      css_class: code_section
+    # block:
+    #   css_class: code_section
 
 repository: crystal-lang/crystal-website
 

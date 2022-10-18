@@ -22,7 +22,7 @@
 
       <div class="inner">
         {% for sample in site.data.home_page_codes %}
-        <div class='{{sample.class}} code_section white'>
+        <div class='{{sample.class}} code_section white{% if sample.run %} run{% endif %}'>
           {% include {{sample.code}} %}
         </div>
         {% endfor %}
@@ -39,3 +39,17 @@
   </div>
 
 </div>
+
+<script src="/assets/js/codemirror.js" defer></script>
+<script src="/assets/js/crystal.js" defer></script>
+<script src="/assets/js/carcin.js" defer></script>
+<script src="/assets/js/carcin-play.js" defer></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll("code, figure").forEach(function(code) {
+      var wrapper = document.createElement("div");
+      code.parentNode.replaceChild(wrapper, code);
+      var play = new CarcinPlay(code.innerText, wrapper, {language: "crystal"});
+    });
+  });
+</script>

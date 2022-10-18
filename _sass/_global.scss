@@ -316,3 +316,42 @@ hr {
     border-color: rgba(255,255,255,.1);
   }
 }
+.code_section.run {
+  position: relative;
+
+  .play {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    cursor: pointer;
+
+    &:hover {
+      .play1 {
+        stroke: rgba(255,255,255,.8);
+        animation: dash 1s linear infinite;
+      }
+    }
+
+    .play1 {
+      fill:none;
+      stroke: rgba(255,255,255,.5);
+      stroke-dasharray: 0 0 2 2;
+      stroke-miterlimit: 10;
+      stroke-width:1px;
+    }
+    .play2,
+    .play3 {
+      fill:#fff;
+    }
+    .play3 {
+      font-family: Roboto-Regular, Roboto;
+      font-size:12px;
+    }
+  }
+}
+
+@keyframes dash {
+  0% {stroke-dashoffset: 0px; }
+  100% { stroke-dashoffset: 8px; }
+}

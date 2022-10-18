@@ -96,16 +96,16 @@ header {
   input:nth-child(10):checked ~ .grid .description article:nth-child(10) {
     transform: translateX(0);
   }
-  input:nth-child(1):checked ~ .grid .code div:nth-child(1),
-  input:nth-child(2):checked ~ .grid .code div:nth-child(2),
-  input:nth-child(3):checked ~ .grid .code div:nth-child(3),
-  input:nth-child(4):checked ~ .grid .code div:nth-child(4),
-  input:nth-child(5):checked ~ .grid .code div:nth-child(5),
-  input:nth-child(6):checked ~ .grid .code div:nth-child(6),
-  input:nth-child(7):checked ~ .grid .code div:nth-child(7),
-  input:nth-child(8):checked ~ .grid .code div:nth-child(8),
-  input:nth-child(9):checked ~ .grid .code div:nth-child(9),
-  input:nth-child(10):checked ~ .grid .code div:nth-child(10) {
+  input:nth-child(1):checked ~ .grid .code div.code_section:nth-child(1),
+  input:nth-child(2):checked ~ .grid .code div.code_section:nth-child(2),
+  input:nth-child(3):checked ~ .grid .code div.code_section:nth-child(3),
+  input:nth-child(4):checked ~ .grid .code div.code_section:nth-child(4),
+  input:nth-child(5):checked ~ .grid .code div.code_section:nth-child(5),
+  input:nth-child(6):checked ~ .grid .code div.code_section:nth-child(6),
+  input:nth-child(7):checked ~ .grid .code div.code_section:nth-child(7),
+  input:nth-child(8):checked ~ .grid .code div.code_section:nth-child(8),
+  input:nth-child(9):checked ~ .grid .code div.code_section:nth-child(9),
+  input:nth-child(10):checked ~ .grid .code div.code_section:nth-child(10) {
     position: inherit;
     opacity: 1;
     display: grid;
@@ -322,4 +322,9 @@ header {
   text-decoration: underline;
   font-size: 18px;
 }
-@import "pages/post_header"
+
+@import "pages/post_header";
+// @import "components/code";
+@import "components/codemirror";
+@import "components/codemirror-theme";
+@import "components/carcin-play"

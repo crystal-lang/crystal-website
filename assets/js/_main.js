@@ -23,19 +23,33 @@ $(document).on("click", "[data-copy]", function(e) {
   return false;
 });
 
-
-// $(document).on("click", "code", function(e) {
+// $(document).on("click", ".play", async function(e) {
 //   e.preventDefault();
+//   var code = $(this).prev("code, figure").text();
 //
-//   var copyBtn = $(this);
-//   var selection = window.getSelection();
+//   var payload = {
+//     "run_request": {
+//       "code": $(this).prev("code, figure").text(),
+//       "language": "crystal"
+//     }
+//   }
 //
-//   selection.selectAllChildren(this);
-//   document.execCommand("copy");
-//   selection.removeAllRanges();
+//   await fetch("https://carc.in/run_requests",
+//   {
+//       method: "POST",
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//       body: JSON.stringify( payload )
+//   }, 50000)
+//   .then(function(res){ return res.json(); })
+//   .then(function(data){ alert( JSON.stringify( data ) ) })
 //
-//   addTooltip(copyBtn)
-//
-//   return false;
-//
+// });
+
+
+// $(function(){
+//   $(".code_section.run").each(function(i){
+//     $(this).append('<svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.72 29.15"><rect class="play1" x=".7" y=".7" width="72.32" height="27.75" rx="2" ry="2"/><polygon class="play2" points="23.8 15.65 16.54 9.7 16.54 21.19 23.8 15.65"/><text class="play3" transform="translate(31.88 19.11)"><tspan x="0" y="0">Run</tspan></text></svg>');
+//   });
 // });

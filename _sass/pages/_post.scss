@@ -13,7 +13,8 @@ article {
   }
 
   .content {
-
+    overflow: hidden;
+    
     font: normal 24px/36px var(--sans);
     p {
       font: normal 24px/36px var(--sans);
