@@ -46,7 +46,7 @@
 <script src="/assets/js/carcin-play.js" defer></script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll("code, figure").forEach(function(code) {
+    document.querySelectorAll(".code_section.run code,.code_section.run figure").forEach(function(code) {
       var wrapper = document.createElement("div");
       code.parentNode.replaceChild(wrapper, code);
       var play = new CarcinPlay(code.innerText, wrapper, {language: "crystal"});
