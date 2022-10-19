@@ -2,9 +2,6 @@ main:
 - label: News
   url: /news/
   class: news
-- label: Success stories
-  url: /success-stories/
-  class: success
 - label: Sponsors
   url: /sponsors/
   class: sponsors
@@ -15,7 +12,7 @@ main:
   url: /community/
   class: community
 - label: Get started
-  url: /reference/1.5/getting_started/index.html
+  url: https://crystal-lang.org/reference/1.5/getting_started/index.html
   class: started
 - label: Docs
   url: https://crystal-lang.org/reference/

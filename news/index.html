@@ -4,47 +4,43 @@ custom_body_classes: news
 css: news
 ---
 
-<main>
+<section>
+  <article class="big">
+    {% assign post = site.posts[0] %}
+    <a href="{{post.url}}">
+      {% include post_header.html post=post %}
+      <p>{{ post.excerpt }}</p>
 
-  <section>
-    <article class="big">
-      {% assign post = site.posts[0] %}
+      <span class="more">Read more</span>
+    </a>
+  </article>
+</section>
+
+<section class="news grid x2">
+  {% for post in site.posts limit: 4 offset: 1 %}
+  <article class="medium">
+    <a href="{{post.url}}">
+      {% include post_header.html post=post %}
+      <p>{{ post.summary }}</p>
+    </a>
+  </article>
+  {% endfor %}
+</section>
+
+<hr class="full">
+
+<section class="more-articles news">
+  <h1>More articles</h1>
+
+  <div class="grid x2">
+
+    {% for post in site.posts limit: 4 offset: 5 %}
+    <article class="small">
       <a href="{{post.url}}">
-        {% include post_header.html post=post %}
-        <p>{{ post.excerpt }}</p>
-
-        <span class="more">Read more</span>
-      </a>
-    </article>
-  </section>
-
-  <section class="news grid x2">
-    {% for post in site.posts limit: 4 offset: 1 %}
-    <article class="medium">
-      <a href="{{post.url}}">
-        {% include post_header.html post=post %}
-        <p>{{ post.summary }}</p>
+        <time pubdate>{{ post.date | date_to_string }}</time>
+        <h2>{{post.title}}</h2>
       </a>
     </article>
     {% endfor %}
-  </section>
-
-  <hr class="full">
-
-  <section class="more-articles news">
-    <h1>More articles</h1>
-
-    <div class="grid x2">
-
-      {% for post in site.posts limit: 4 offset: 5 %}
-      <article class="small">
-        <a href="{{post.url}}">
-          <time pubdate>{{ post.date | date_to_string }}</time>
-          <h2>{{post.title}}</h2>
-        </a>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-
-</main>
+  </div>
+</section>

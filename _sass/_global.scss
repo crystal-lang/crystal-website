@@ -112,6 +112,14 @@ body.news nav a.news {
   font-weight: 700;
   color: #000;
 }
+@media only screen and (max-width: 768px) {
+  body.sponsors nav a.sponsors,
+  body.post nav a.news,
+  body.news nav a.news {
+    border: 0;
+    background: rgba(0,0,0,.1);
+  }
+}
 
 label[for=menu-mobile],
 #menu-mobile {
@@ -270,7 +278,7 @@ footer {
       margin: 50px 0;
 
       h3 {
-        margin-left: 40px;
+        margin: 0 0 0 40px;
         font-size: 14px;
         font-weight: normal;
       }

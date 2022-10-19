@@ -7,34 +7,49 @@
   nav {
     --nav-height: 81px;
 
-    // height: 60px;
-    //
     a.brand-logo {
       height: 60px;
       margin-left: 5px;
     }
 
     .menu {
-      ul {
+
+      div {
         position: fixed;
-        top: 0;
+        bottom: 0;
         left: 0;
-        width: 0;
-        height: 100vh;
+        width: 100%;
+        height: 0;
+        background: rgba(0,0,0,.75);
+        opacity: 0;
         overflow: hidden;
-        transition: width .3s;
+        transition: opacity .5s;
+      }
+      ul {
+        position: absolute;
+        top: -100vh;
+        transition: top .3s;
         background: #fff;
+        z-index: 1;
+        border-radius: 4px;
+        box-shadow: 0 6px 6px 0 rgba(0,0,0,0.26), 0 10px 20px 0 rgba(0,0,0,0.19);
+        width: 90vw;
+        left: calc( 50% - 45vw );
 
         li {
-          width: calc( 100vw - 60px );
+          width: 100%;
+          
+          a {
+            width: 100%;
+            border: 0;
+            text-align: right;
+          }
         }
       }
-      #menu-mobile:checked ~ ul {
-        width: calc( 100vw - 60px );
-      }
+
       label {
         position: fixed;
-        top: 18px;
+        top: 24px;
         right: 20px;
         width: 30px;
         height: 30px;
@@ -47,6 +62,7 @@
         -o-transition: .5s ease-in-out;
         transition: .5s ease-in-out;
         cursor: pointer;
+        z-index: 9;
       }
 
       label span {
@@ -90,10 +106,14 @@
         -o-transform-origin: left center;
         transform-origin: left center;
       }
-      #menu-mobile:checked ~ ul {
+      #menu-mobile:checked ~ div {
+        height: calc( 100vh - 72px );
+        opacity: 1;
 
+        ul {
+          top: 20px;
+        }
       }
-
       #menu-mobile:checked ~ label span:nth-child(1) {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
@@ -128,5 +148,27 @@
       grid-template-columns: repeat(4, 1fr);
       grid-template-areas: "c1 c2 c3 c4";
     }
+    &.x2,
+    &.x3,
+    &.x4  {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "c1";
+
+      section {
+        grid-area: auto / c1 / auto / c2;
+      }
+      aside {
+        grid-area: auto;
+      }
+    }
+    // &.x4  {
+    //   grid-template-columns: 1fr 1fr;
+    //   grid-template-areas: "c1 c2";
+    // }
+  }
+  hr.full,
+  .separator.full:before {
+    margin-left: 0;
   }
 }
