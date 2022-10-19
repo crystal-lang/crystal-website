@@ -117,6 +117,12 @@
       &:nth-child(2) {
         text-align: left;
       }
+      &:nth-child(2) {
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
       &.logo {
         border: 0;
       }

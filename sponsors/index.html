@@ -83,7 +83,7 @@ custom_body_classes: sponsors
               </td>
               <td>
                 {% if sp.url %}
-                  <a href="{{sp.url}}" target="_blank" rel="sponsored nofollow">
+                  <a href="{{sp.url}}" target="_blank" rel="sponsored nofollow"{% if (sp.name).size >= 28 %} title="{{sp.name}}"{% endif %}>
                     {{sp.name}}
                   </a>
                 {% else %}

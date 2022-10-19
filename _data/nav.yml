@@ -1,6 +1,6 @@
 main:
 - label: News
-  url: /blog/
+  url: /news/
   class: news
 - label: Success stories
   url: /success-stories/
