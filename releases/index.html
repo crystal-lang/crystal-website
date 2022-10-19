@@ -1,0 +1,36 @@
+---
+title: Releases
+layout: base
+css: releases
+custom_body_classes: releases
+---
+
+{% include header.html header_title=page.title %}
+
+<main>
+
+  <section>
+    <table>
+      <thead>
+        <tr>
+          <th>Version</th>
+          <th>Release Date</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="notes-list">
+        {% assign releases = site.releases | reverse %}
+        {% for post in releases %}
+          <tr>
+            <td><a href="{{ post.url }}">{{post.version}}</a></td>
+            <td>{{ post.date | date_to_string }}</td>
+            <td class="grid x3">
+              <a href="https://crystal-lang.org/api/{{post.version}}" class="api_docs ico left" target="_blank">API Docs</a>
+              <a href="https://github.com/crystal-lang/crystal/releases/tag/{{post.version}}" class="changelog ico left" target="_blank">Changelog</a>
+              <a href="https://github.com/crystal-lang/crystal/tree/{{post.version}}" class="github ico left" target="_blank">Github release</a>
+            </td>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+</main>
