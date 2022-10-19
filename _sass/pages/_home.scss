@@ -241,7 +241,18 @@ header {
   }
 }
 
+.more {
+  margin: 20px 0 0 0;
+  display: block;
+  color: var(--light-gray);
+  text-decoration: underline;
+  font-size: 18px;
+}
+
 .news {
+  .more {
+    margin: 20px 0 0 70px;
+  }
   h1 {
     font: normal 36px var(--sans);
     color: var(--light-gray);
@@ -313,14 +324,6 @@ header {
     height: auto;
     transition: filter .3s;
   }
-}
-
-.more {
-  margin: 20px 0 0 0;
-  display: block;
-  color: var(--light-gray);
-  text-decoration: underline;
-  font-size: 18px;
 }
 
 @import "pages/post_header";
