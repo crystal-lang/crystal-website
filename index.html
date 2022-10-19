@@ -37,14 +37,16 @@ css: home
 
     {% for post in site.posts limit:4 %}
     <article class="medium">
-      {% include post_header.html post=post %}
-      <p>{{ post.summary }}</p>
+      <a href="{{post.url}}">
+        {% include post_header.html post=post %}
+        <p>{{ post.summary }}</p>
+      </a>
     </article>
     {% endfor %}
 
   </div>
 
-  <a href="/blog/" class="more">More articles</a>
+  <a href="/news/" class="more">More articles</a>
 
 </section>
 

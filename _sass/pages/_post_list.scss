@@ -1,0 +1,15 @@
+section.news {
+  .more {
+    margin: 20px 0 0 70px;
+  }
+  h1 {
+    font: normal 36px var(--sans);
+    color: var(--light-gray);
+    margin: 0 0 60px 70px;
+  }
+  article {
+    p {
+      margin-left: 70px;
+    }
+  }
+}

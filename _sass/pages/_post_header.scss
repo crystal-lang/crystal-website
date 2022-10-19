@@ -36,6 +36,8 @@
   }
 }
 
+.small,
+.big,
 .medium {
   .info {
     grid-template-columns: 70px auto;
@@ -49,5 +51,20 @@
   h2 {
     font-size: 24px;
     margin: 0 0 0 70px;
+  }
+}
+.big {
+  h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  p {
+    margin: 0 0 0 70px;
+  }
+}
+.small {
+  time {
+    margin-left: 70px;
+    color: var(--light-gray);
   }
 }

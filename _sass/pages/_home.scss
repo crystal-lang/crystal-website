@@ -249,21 +249,6 @@ header {
   font-size: 18px;
 }
 
-.news {
-  .more {
-    margin: 20px 0 0 70px;
-  }
-  h1 {
-    font: normal 36px var(--sans);
-    color: var(--light-gray);
-    margin: 0 0 60px 70px;
-  }
-  article {
-    p {
-      margin-left: 70px;
-    }
-  }
-}
 .success {
   h1 {
     font: normal 36px var(--sans);
@@ -326,6 +311,7 @@ header {
   }
 }
 
+@import "pages/post_list";
 @import "pages/post_header";
 // @import "components/code";
 @import "components/codemirror";

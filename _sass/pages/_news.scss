@@ -1,0 +1,10 @@
+.more {
+  margin: 20px 0 0 70px;
+  display: block;
+  color: var(--light-gray);
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+@import "pages/post_list";
+@import "pages/post_header";
