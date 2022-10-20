@@ -18,8 +18,7 @@ body.home {
         height: 67px;
         line-height: 67px;
         color: #fff;
-        padding: 0;
-        margin: 0 15px;
+        padding: 0 15px;
       }
     }
   }
@@ -267,7 +266,7 @@ header {
 .top-sponsors {
 
   .above {
-    left: calc( 50% - 186px );
+    left: calc( 50% - 144px );
   }
   ul {
     width: 70%;
@@ -308,6 +307,75 @@ header {
     width: 78px;
     height: auto;
     transition: filter .3s;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body.home nav li a {
+    color: #000;
+  }
+  .git-star {
+    right: unset;
+    left: 20px;
+  }
+  .pattern {
+    background: #000 url("/assets/home/pattern-portrait.png") no-repeat;
+    background-size: 100% auto;
+  }
+  header {
+    padding-top: 150px;
+  }
+  .examples {
+    .inner {
+      width: 800px;
+    }
+    .controls {
+      width: 800px;
+      li {
+        label {
+          max-width: 100px;
+          font-size: 13px;
+        }
+      }
+    }
+    .code {
+      overflow-x: auto;
+      overflow-y: visible;
+      width: calc( 100vw - 12px );
+    }
+    .description {
+      margin: 0;
+      article {
+        left: 12px;
+        width: calc( 100vw - 24px );
+      }
+    }
+  }
+  .actions {
+    text-align: center;
+    strong {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+  .topics {
+    article {
+      text-align: center;
+      margin-bottom: 50px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    .ico {
+      background-position: top center;
+    }
+    h2 {
+      padding: 40px 40px 0 40px;
+    }
+  }
+  footer .channels li {
+    margin: 10px 0 0 12px;
   }
 }
 

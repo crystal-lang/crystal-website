@@ -68,3 +68,46 @@
     color: var(--light-gray);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .small,
+  .big,
+  .medium {
+    .info {
+      grid-template-columns: 44px auto;
+      width: calc( 100vw - 12px );
+      margin-right: 12px;
+      picture {
+        margin-left: 0px;
+
+        &.multi:nth-child(1) {
+          top: 40px;
+          right: 10px;
+        }
+      }
+    }
+    header {
+      padding: 0;
+    }
+    h2 {
+      font-size: 20px;
+      line-height: 26px;
+      margin: 0 0 5px 44px;
+    }
+  }
+  .big {
+    h2 {
+      font-size: 40px;
+      line-height: 60px;
+    }
+    p {
+      margin: 0 0 0 44px;
+    }
+  }
+  .small {
+    time {
+      margin-left: 50px;
+      color: var(--light-gray);
+    }
+  }
+}

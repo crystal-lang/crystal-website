@@ -1,9 +1,23 @@
 @media only screen and (max-width: 768px) {
 
+  .mobile-wrapper {
+    width: calc( 100vw - 12px );
+    margin-left: 12px;
+    overflow-x: auto;
+    overflow-y: visible;
+  }
+
   label[for=menu-mobile] {
     display: block;
   }
 
+  main {
+    padding: 0 12px;
+  }
+  article {
+    width: calc( 100vw - 24px );
+    overflow: hidden;
+  }
   nav {
     --nav-height: 81px;
 
@@ -38,7 +52,7 @@
 
         li {
           width: 100%;
-          
+
           a {
             width: 100%;
             border: 0;
@@ -148,6 +162,7 @@
       grid-template-columns: repeat(4, 1fr);
       grid-template-areas: "c1 c2 c3 c4";
     }
+    &.sidebar,
     &.x2,
     &.x3,
     &.x4  {
@@ -169,6 +184,30 @@
   }
   hr.full,
   .separator.full:before {
-    margin-left: 0;
+    margin-left: -12px;
+  }
+  body.home nav .menu label {
+    position: absolute;
+
+    span {
+      background: #fff;
+    }
+  }
+  p {
+    font: normal 16px/22px var(--sans);
+    margin-bottom: 30px;
+  }
+  .sides {
+    font-size: 13px;
+    flex-direction: column;
+    margin-top: 50px;
+
+    div {
+      text-align: center;
+    }
+    .black-text {
+      text-align: right;
+      font-size: 14px;
+    }
   }
 }

@@ -13,3 +13,19 @@ section.news {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  section.news {
+    .more {
+      margin: 20px 0 0 44px;
+    }
+    h1 {
+      margin: 0 0 60px 44px;
+    }
+    article {
+      p {
+        margin-left: 44px;
+      }
+    }
+  }
+}

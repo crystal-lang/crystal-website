@@ -35,7 +35,7 @@ css: home
 
   <div class="grid x2">
 
-    {% for post in site.posts limit:4 %}
+    {% for post in site.posts limit:4 offset: 16 %}
     <article class="medium">
       <a href="{{post.url}}">
         {% include post_header.html post=post %}
@@ -55,7 +55,7 @@ css: home
 
   <div class="center">
     <a href="/community/" class="hex border above">
-      <span>Crystal top sponsors channels</span>
+      <span>Crystal top sponsors</span>
     </a>
 
     <ul class="grid x4">
