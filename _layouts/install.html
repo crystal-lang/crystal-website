@@ -2,25 +2,31 @@
 layout: base
 page_title: Install {{page.subtitle}}
 # Layout for pages in the install section
-# Differs from page layout by omitting the header (there is a special header)
+# Differs from page layout by omitting the header (there is a special header
 ---
+<header>
+  <h1><a href="/install">Install</a> {{ page.subtitle }}</h1>
+</header>
+
 <main>
-  <div class="container install">
-    <h1 class="center"><a href="/install">Install</a></h1>
-    <h1 class="distro-title">{{ page.subtitle }}</h1>
+  <section class="container install">
     <div class="row">
       <div class="col offset-m1 m10 s12 post-layout">
         {{ content }}
       </div>
     </div>
-  </div>
-  <hr class="hr-light">
-  <div class="done-install">
-    <h1>Done installing?</h1>
-    <a href="https://crystal-lang.org/reference/getting_started/" target="_blank" class="btn btn-large btn-flat">Learn</a>
+  </section>
 
-    <h2>Found any issues?</h2>
-    <a href="https://forum.crystal-lang.org/c/help-support" target="_blank" class="btn btn-large btn-flat">Forum
-      support</a>.
-  </div>
+  <hr class="full">
+  <section>
+    <div class="done-install">
+      <h2>Done installing?</h2>
+      <a href="https://crystal-lang.org/reference/getting_started/" target="_blank" style="max-width: 230px" class="hex btn shadow"><span>Learn</span></a>
+
+      <section>
+        <h2>Found any issues?</h2>
+        <a href="https://forum.crystal-lang.org/c/help-support" target="_blank" style="max-width: 230px" class="hex btn shadow"><span>Forum support</span></a>.
+      </section>
+    </div>
+  </section>
 </main>
