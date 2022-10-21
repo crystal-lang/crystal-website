@@ -43,11 +43,13 @@ class SponsorsBuilder
       prev_sponsor = @sponsors[index]
       # We merge them if any of the two doesn't have url, or the url is the same
       if prev_sponsor.url.nil? || sponsor.url.nil? || prev_sponsor.url == sponsor.url
-        sponsor.all_time += prev_sponsor.all_time
+        # HACK: OC is returning duplicated entries. Until we hear from OC how to do this better,
+        # we ensure that duplicate entries are not counted twice.
+        sponsor.all_time += prev_sponsor.all_time unless (sponsor.all_time - prev_sponsor.all_time).abs < Float64::EPSILON
         @sponsors.delete_at index
-        puts "WARNING: Merging duplicate sponsor with name #{sponsor.name}."
+        Log.warn { "WARNING: Merging duplicate sponsor with name #{sponsor.name}." }
       else
-        puts "WARNING: Duplicate sponsor with name #{sponsor.name}."
+        Log.warn { "WARNING: Duplicate sponsor with name #{sponsor.name}." }
       end
     end
 

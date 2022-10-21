@@ -1,5 +1,12 @@
 [
   {
+    "name": "CasinoWizard",
+    "url": "https://thecasinowizard.com/",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "Oct 19, 2022"
+  },
+  {
     "name": "Jonathan Siegel",
     "url": "https://www.linkedin.com/in/jsiegel",
     "logo": "sponsors/jonathan_siegel.png",
@@ -30,7 +37,7 @@
     "name": "Seth Falco",
     "url": "https://falco.fun/",
     "last_payment": 5.0,
-    "all_time": 70.0,
+    "all_time": 35.0,
     "since": "Jul 23, 2022"
   },
   {
@@ -43,7 +50,7 @@
   {
     "name": "Will Lewis",
     "last_payment": 5.0,
-    "all_time": 520.0,
+    "all_time": 260.0,
     "since": "Jul 12, 2022"
   },
   {
@@ -63,7 +70,7 @@
     "name": "Bromine0x23",
     "url": "https://twitter.com/bromine0x23",
     "last_payment": 10.0,
-    "all_time": 260.0,
+    "all_time": 130.0,
     "since": "Jul 2, 2022"
   },
   {
@@ -250,7 +257,7 @@
   {
     "name": "Dmitri Goutnik",
     "last_payment": 0.0,
-    "all_time": 90.0,
+    "all_time": 45.0,
     "since": "Nov 4, 2021"
   },
   {
@@ -270,7 +277,7 @@
     "name": "maltidsbarometeret",
     "url": "https://maltidsbarometeret.dk",
     "last_payment": 5.0,
-    "all_time": 60.0,
+    "all_time": 65.0,
     "since": "Oct 19, 2021"
   },
   {
@@ -420,7 +427,7 @@
   {
     "name": "Dedicated Stars",
     "last_payment": 0.0,
-    "all_time": 20.0,
+    "all_time": 10.0,
     "since": "Jul 19, 2021"
   },
   {
@@ -470,7 +477,7 @@
   {
     "name": "lowkey",
     "last_payment": 75.0,
-    "all_time": 1065.0,
+    "all_time": 1140.0,
     "since": "Jun 12, 2021"
   },
   {
@@ -528,7 +535,7 @@
   {
     "name": "Kevin Sjöberg",
     "last_payment": 0.0,
-    "all_time": 260.0,
+    "all_time": 130.0,
     "since": "Apr 12, 2021"
   },
   {
@@ -667,7 +674,7 @@
   {
     "name": "vinit joshi",
     "last_payment": 0.0,
-    "all_time": 140.0,
+    "all_time": 70.0,
     "since": "Feb 3, 2021"
   },
   {
@@ -679,7 +686,7 @@
   {
     "name": "Level UP Solutions",
     "last_payment": 0.0,
-    "all_time": 370.0,
+    "all_time": 185.0,
     "since": "Feb 1, 2021"
   },
   {
@@ -887,14 +894,14 @@
   {
     "name": "Open Collective",
     "last_payment": 0.0,
-    "all_time": 360.0,
+    "all_time": 180.0,
     "since": "Sep 9, 2020"
   },
   {
     "name": "Leonardo Kewitz",
     "url": "https://kewitz.js.org",
     "last_payment": 5.0,
-    "all_time": 360.0,
+    "all_time": 180.0,
     "since": "Sep 9, 2020"
   },
   {
@@ -1101,7 +1108,7 @@
   {
     "name": "epergo",
     "last_payment": 0.0,
-    "all_time": 90.0,
+    "all_time": 45.0,
     "since": "Mar 31, 2020"
   },
   {
@@ -1271,7 +1278,7 @@
   {
     "name": "Triplebyte",
     "last_payment": 0.0,
-    "all_time": 1280.0,
+    "all_time": 640.0,
     "since": "Mar 22, 2019"
   },
   {
