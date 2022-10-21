@@ -1,7 +1,7 @@
 table {
   line-height: 60px;
   width: 100%;
-
+  
   .ico {
     padding-left: 30px;
 
@@ -9,13 +9,13 @@ table {
       background-size: 22px auto;
     }
   }
-}
-.grid {
-  a {
-    opacity: 0.25;
+  .grid {
+    a {
+      opacity: 0.25;
+    }
   }
-
 }
+
 th {
   font: bold 18px vr(--sans);
   text-align: left;
