@@ -1,4 +1,8 @@
 main:
+-
+  label: Forum
+  url: https://forum.crystal-lang.org/
+  class: forum
 - label: News
   url: /news/
   class: news
@@ -8,9 +12,18 @@ main:
 - label: Community
   url: /community/
   class: community
-- label: Get started
-  url: https://crystal-lang.org/reference/1.5/getting_started/index.html
-  class: started
+- label: Conference
+  url: /conference/
+  class: conference
+- label: Team
+  url: /team/
+  class: team
+# - label: Get started
+#   url: https://crystal-lang.org/reference/1.5/getting_started/index.html
+#   class: started
 - label: Docs
   url: https://crystal-lang.org/reference/
   class: docs
+- label: Github
+  url: https://github.com/crystal-lang/crystal
+  class: 
