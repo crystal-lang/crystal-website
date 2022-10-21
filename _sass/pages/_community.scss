@@ -1,17 +1,26 @@
-a.with-icon {
-  color: $black;
-  text-decoration: none;
-  border-bottom: 0;
+article {
+  padding: 50px 0;
 
-  &:hover {
-    color: $black;
-    text-decoration: none;
-    span {
-      border-bottom: 1px solid $black;
+  header {
+    padding-top: 0;
+    width: 100%;
+
+    h2 {
+      font: normal 24px/30px var(--sans);
+      color: var(--light-gray);
+      margin: 0 0 0 40px;
+    }
+    a {
+      padding: 0 0 0 40px;
+      font: normal 18px/30px var(--sans);
+      text-decoration: none;
     }
   }
-}
-
-.row.no-bottom-margin {
-  margin-bottom: 0;
+  p {
+    color: var(--light-gray);
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
 }

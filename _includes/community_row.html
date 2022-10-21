@@ -1,21 +1,15 @@
-<div class="row{% if include.continues %} no-bottom-margin{% endif %}"{% if include.divId %} id="{{ include.divId }}"{%endif%}>
-  <div class="col s12">
-    <h2>{{ include.title }}</h2>
+<article class="grid sidebar">
+  <header>
+    <h2>{{include.title}}</h2>
+    <a href="{{ include.url }}" {% unless include.internal_link %}target="_blank"{% endunless %} class="ico left {{ include.icon }}">
+      {{ include.link_text }}
+    </a>
+  </header>
+  <p>
+    {{ include.content }}
+  </p>
+</article>
 
-    <p>{{ include.content }}</p>
-
-    <p>
-      <a href="{{ include.url }}" {% unless include.internal_link %}target="_blank"{% endunless %}class="with-icon">
-        {% if include.custom_icon %}
-          <i class="extra-icons {{ include.icon }}"></i>
-        {% else %}
-          <i class="material-icons">{{ include.icon }}</i>
-        {% endif %}
-        <span>{{ include.link_text }}</span>
-      </a>
-    </p>
-    {% unless include.continues %}
-      <hr class="squares" />
-    {% endunless %}
-  </div>
-</div>
+{% unless include.continues %}
+  <hr class="full" />
+{% endunless %}

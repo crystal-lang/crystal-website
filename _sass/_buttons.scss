@@ -145,9 +145,19 @@
     background-image: url('/assets/icons/facebook.svg');
     background-size: 22px auto;
   }
+  &.telegram {
+    background-image: url('/assets/icons/telegram.svg');
+  }
   &.reddit {
     background-image: url('/assets/icons/reddit.svg');
     background-size: 22px auto;
+  }
+  &.discord {
+    background-image: url('/assets/icons/discord.svg');
+    background-size: 22px auto;
+  }
+  &.irc {
+    background-image: url('/assets/icons/irc.svg');
   }
   &.chain {
     background-image: url('/assets/icons/chain.svg');
@@ -187,6 +197,27 @@
   &.shuttle {
     background-image: url('/assets/icons/shuttle.svg');
     background-size: 26px auto;
+  }
+  &.mail {
+    background-image: url('/assets/icons/mail.svg');
+  }
+  &.day {
+    background-image: url('/assets/icons/day.svg');
+  }
+  &.stack {
+    background-image: url('/assets/icons/stack.svg');
+  }
+  &.awesome {
+    background-image: url('/assets/icons/awesome.svg');
+  }
+  &.chat {
+    background-image: url('/assets/icons/chat-bubble.svg');
+  }
+  &.palette {
+    background-image: url('/assets/icons/palette.svg');
+  }
+  &.play {
+    background-image: url('/assets/icons/play.svg');
   }
   &.white {
     color: #000;
