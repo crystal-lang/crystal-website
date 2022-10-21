@@ -1,0 +1,22 @@
+<li>
+  <div>
+    <picture>
+      <source srcset="/assets/authors/{{ member[0] }}.webp" type="image/webp">
+      <img  src="/assets/authors/{{ member[0] }}.jpg" loading="lazy" />
+    </picture>
+    <h2>{{ member[1].name }}</h2>
+
+    {% if member[1].role %}
+      <p>{{ member[1].role }}</p>
+    {% endif %}
+    {% if member[1].affiliation %}
+      <p>{{ member[1].affiliation }}</p>
+    {% endif %}
+  </div>
+
+  <div class="profiles">
+    <p>{{ member[1].github_handle | default: member[0] }}</p>
+    <a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" title="GitHub profile" class="ico github">{{ member[1].github_handle | default: member[0] }}</a>
+    <a href="https://forum.crystal-lang.org/u/{{ member[1].forum_handle | default: member[0] }}" title="Crystal Forum profile" class="ico forum">{{ member[1].forum_handle | default: member[0] }}</a>
+  </div>
+</li>
