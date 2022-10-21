@@ -1,9 +1,9 @@
 .conference-session-list {
-  margin: 50px 0 80px 0;
+  margin: 80px 0 80px 0;
 
   header {
     position: sticky;
-    top: 0;
+    top: 20px;
     margin: 0;
     background-color: white;
     z-index: 100;
@@ -12,6 +12,7 @@
     margin-left: -15vw;
     margin-bottom: 30px;
     transition: all 0.25s;
+    z-index:1;
 
     &.shadow {
       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -102,7 +103,7 @@ hr.custom-hr {
   position: relative;
   content: '';
   border: none;
-  border-top: 1px $light-gray solid;
+  border-top: 1px var(--light-gray) solid;
   margin: 30px 0;
   overflow: visible;
   grid-column: 1 / -1;
@@ -114,7 +115,7 @@ hr.custom-hr {
     content: '';
     width: 5px;
     height: 5px;
-    border: 1px $light-gray solid;
+    border: 1px var(--light-gray) solid;
   }
 
   &::after {
@@ -124,7 +125,7 @@ hr.custom-hr {
     content: '';
     width: 5px;
     height: 5px;
-    border: 1px $light-gray solid;
+    border: 1px var(--light-gray) solid;
   }
 }
 
@@ -136,12 +137,12 @@ hr.custom-hr {
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    background-color: $light-gray;
+    background-color: var(--light-gray);
     border-radius: 4px;
     margin-right: 12px;
     height: 1.5rem;
     padding: 4px;
-    color: $white;
+    color: #fff;
 
     &--main {
       display: none;
