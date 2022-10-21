@@ -5,9 +5,6 @@ main:
 - label: Sponsors
   url: /sponsors/
   class: sponsors
-- label: Perks & advantages
-  url: /perks-advantages/
-  class: perks
 - label: Community
   url: /community/
   class: community
