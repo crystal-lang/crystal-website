@@ -107,21 +107,17 @@
 
     th,
     td {
-      height: 59px;
-      line-height: 59px;
+      line-height: 26px;
       border-bottom: 1px solid rgba(0,0,0,0.1);
-      padding: 0 16px 0 0;
+      padding: 20px 16px 20px 0;
       text-align: right;
 
       &:nth-child(1),
       &:nth-child(2) {
         text-align: left;
       }
-      &:nth-child(2) {
-        max-width: 100%;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
+      &:nth-child(1) {
+        padding: 0;
       }
       &.logo {
         border: 0;
