@@ -5,14 +5,20 @@ description: >
 css: team
 ---
 
+<section class="list grid sidebar">
+  <div class="info">
+    <h2>Core Team</h2>
+    <p>The Core Team manages the development of Crystal and its ecosystem.</p>
+  </div>
 
-<ul class="cards">
-  {% for member in site.data.team.core %}
-    {% if member[1].status == "active" %}
-      {% include member_profile.html %}
-    {% endif %}
-  {% endfor %}
-</ul>
+  <ul class="cards">
+    {% for member in site.data.team.core %}
+      {% if member[1].status == "active" %}
+        {% include member_profile.html %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
 
 <section class="alumni">
   <h2>Alumni</h2>
