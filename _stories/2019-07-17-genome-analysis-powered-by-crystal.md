@@ -19,7 +19,7 @@ Peter Schols, Diploid’s CEO, was very satisfied with these results, and said t
 
 <div class="blog-testimonial-block">
   <img src="/assets/stories/diploid-ceo.jpeg" />
-  <p class="testifier">Peter Schols, CEO, Diploid</p>
+  <p>Peter Schols, CEO, Diploid</p>
 </div>
 
 **People are talking about this story:**
