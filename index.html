@@ -100,37 +100,18 @@ css: home
   <h1>Success stories</h1>
 
   <div class="grid x3">
-
+    {% for story in site.stories limit:3 %}
     <article>
-      <a href="#">
+      <a href="{{story.url}}">
         <picture>
-          <source srcset="/assets/home/success-nikola.webp" type="image/webp">
-          <img src="/assets/home/success-nikola.jpg">
+          <source srcset="{{story.image}}.webp" type="image/webp">
+          <img src="{{story.image}}.jpg">
         </picture>
-        <h2>Nikola Motor Company: infotainment systems on the trucks of the future</h2>
+        <h2>{{story.title}}</h2>
       </a>
     </article>
-
-    <article>
-      <a href="#">
-        <picture>
-          <source srcset="/assets/home/success-diploid.webp" type="image/webp">
-          <img src="/assets/home/success-diploid.jpg">
-        </picture>
-        <h2>Diploid: genome analysis for autonomous rare disease diagnostics</h2>
-      </a>
-    </article>
-
-    <article>
-      <a href="#">
-        <picture>
-          <source srcset="/assets/home/success-sikoba.webp" type="image/webp">
-          <img src="/assets/home/success-sikoba.jpg">
-        </picture>
-        <h2>Sikoba: bringing the IOU economy to the 21st century</h2>
-      </a>
-    </article>
+    {% endfor %}
   </div>
 
-  <a href="/success-stories/" class="more">More articles</a>
+  <a href="/used_in_prod/index.html" class="more">More articles</a>
 </section>
