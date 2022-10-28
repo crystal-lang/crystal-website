@@ -35,7 +35,7 @@ css: home
 
   <div class="grid x2">
 
-    {% for post in site.posts limit:4 offset: 16 %}
+    {% for post in site.posts limit:4 %}
     <article class="medium">
       <a href="{{post.url}}">
         {% include post_header.html post=post %}
