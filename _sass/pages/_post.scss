@@ -46,6 +46,22 @@ article {
   footer {
       margin: 80px 0 0 100px;
   }
+
+  .blog-testimonial-block {
+    text-align: center;
+
+    img {
+      width: 200px !important;
+      height: 200px;
+      border-radius: 50%;
+    }
+
+    p {
+      color: var(--light-gray);
+      font: italic 24px/28px var(--sans);
+      margin-top: 15px;
+    }
+  }
 }
 
 aside {

@@ -38,6 +38,19 @@ layout: base
       {% endif %}
 
       {{ content }}
+
+
+      {% if page.category == "success_stories" %}
+      {% comment %}The success stories list is made in md to make sure the style is consisten with the post. Not sure if that's actually desired. {% endcomment %}
+      {{ "### Keep reading:" | markdownify }}
+        {% for story in site.categories.success_stories %}
+          {% if story != page %}
+            {% capture story_url %}[ {{story.title}} ]( {{story.url}} ){% endcapture %}
+            {{ "  - " | append: story_url | markdownify }}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
       </div>
     </div>
 
