@@ -50,14 +50,6 @@ defaults:
       permalink: /:year/:month/:day/:title.html
       image: /assets/icon.png
       class: release
-  -
-    scope:
-      path: ""
-      type: stories
-    values:
-      layout: post
-      permalink: /:year/:month/:day/:title.html
-      image: /assets/icon.png
 
 twitter:
   username: CrystalLanguage
