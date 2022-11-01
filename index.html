@@ -35,7 +35,7 @@ css: home
 
   <div class="grid x2">
 
-    {% for post in site.posts limit:4 offset: 16 %}
+    {% for post in site.posts limit:4 %}
     <article class="medium">
       <a href="{{post.url}}">
         {% include post_header.html post=post %}
@@ -53,44 +53,44 @@ css: home
 
 <section class="top-sponsors separator full">
 
-    <a href="/community/" class="hex border above">
-      <span>Crystal top sponsors</span>
-    </a>
+  <a href="/community/" class="hex border above">
+    <span>Crystal top sponsors</span>
+  </a>
 
-    <ul class="grid x4">
-      <li>
-        <a href="https://manas.tech" target="_blank">
-          <picture>
-            <img src="/assets/sponsors/m.svg" alt="Manas.tech">
-          </picture>
-          <h2>Manas.tech</h2>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.84codes.com" target="_blank">
-          <picture>
-            <img src="/assets/sponsors/84.svg" alt="84 codes">
-          </picture>
-          <h2>84 codes</h2>
-        </a>
-      </li>
-      <li>
-        <a href="https://nikolamotor.com/" target="_blank">
-          <picture>
-            <img src="/assets/sponsors/nikola.svg" alt="Nikola Motor Company">
-          </picture>
-          <h2>Nikola Motor Company</h2>
-        </a>
-      </li>
-      <li>
-        <a href="https://place.technology/" target="_blank">
-          <picture>
-            <img src="/assets/sponsors/placeos.svg" alt="PlaceOs">
-          </picture>
-          <h2>PlaceOs</h2>
-        </a>
-      </li>
-    </ul>
+  <ul class="grid x4">
+    <li>
+      <a href="https://manas.tech" target="_blank">
+        <picture>
+          <img src="/assets/sponsors/m.svg" alt="Manas.tech">
+        </picture>
+        <h2>Manas.tech</h2>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.84codes.com" target="_blank">
+        <picture>
+          <img src="/assets/sponsors/84.svg" alt="84 codes">
+        </picture>
+        <h2>84 codes</h2>
+      </a>
+    </li>
+    <li>
+      <a href="https://nikolamotor.com/" target="_blank">
+        <picture>
+          <img src="/assets/sponsors/nikola.svg" alt="Nikola Motor Company">
+        </picture>
+        <h2>Nikola Motor Company</h2>
+      </a>
+    </li>
+    <li>
+      <a href="https://place.technology/" target="_blank">
+        <picture>
+          <img src="/assets/sponsors/placeos.svg" alt="PlaceOs">
+        </picture>
+        <h2>PlaceOs</h2>
+      </a>
+    </li>
+  </ul>
 
 </section>
 
