@@ -34,7 +34,7 @@ css: news
 
   <div class="grid x2">
 
-    {% for post in site.posts limit: 4 offset: 5 %}
+    {% for post in site.posts offset: 5 %}
     <article class="small">
       <a href="{{post.url}}">
         <time pubdate>{{ post.date | date_to_string }}</time>
