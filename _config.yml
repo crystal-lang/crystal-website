@@ -16,8 +16,6 @@ collections:
     output: true
   style_guide:
     output: false
-  stories:
-    output: true
 
 defaults:
   -

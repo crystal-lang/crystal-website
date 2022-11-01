@@ -4,6 +4,7 @@ thumbnail: +
 author: mpettinati
 summary: "Nikola’s electric trucks use Crystal for their infotainment and telematics system."
 image: "/assets/home/success-nikola"
+category: success_stories
 ---
 
 [Nikola Motor Company](https://nikolamotor.com/) is on a mission to transform and disrupt the transportation industry on a global scale, and [Crystal](https://crystal-lang.org/) is powering their software. They design and manufacture both Battery-electric (BEV) and Hydrogen fuel-cell (FCEV) vehicles, vehicle components, energy storage systems, and electric vehicle drivetrains. These are the trucks of the future.

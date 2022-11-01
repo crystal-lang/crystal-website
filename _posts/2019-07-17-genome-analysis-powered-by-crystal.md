@@ -3,6 +3,7 @@ title: 'Genome analysis powered by Crystal'
 author: mpettinati
 description: "Rapid rare disease diagnosis using genome analysis."
 image: '/assets/home/success-diploid'
+category: success_stories
 ---
 
 [Diploid](http://www.diploid.com/) is a company based in Leuven, Belgium, who provides services and software to hospitals and labs for diagnosing rare diseases using clinical genome analysis.

@@ -100,7 +100,7 @@ css: home
   <h1>Success stories</h1>
 
   <div class="grid x3">
-    {% for story in site.stories limit:3 %}
+    {% for story in site.categories.success_stories limit:3 %}
     <article>
       <a href="{{story.url}}">
         <picture>
