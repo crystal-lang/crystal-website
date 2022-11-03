@@ -100,7 +100,7 @@
   name: Software Development
   description: Organizations that provide software engineering services.
   icon: code
-  commpanies:
+  companies:
     - name: Bulutfon
       url: https://www.bulutfon.com/
       description: "Cloud Voice & VOIP solution for Turkey"
