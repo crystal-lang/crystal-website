@@ -55,6 +55,9 @@
   description: Organizations developing games, virtual environments, media and entertainment platforms.
   icon: build
   companies:
+    - name: Concentric
+      url: https://concentric.health
+      description: "Transforming how we make decisions about our health. The market leading digital consent to treatment application"
     - name: muse-dl
       url: https://github.com/captn3m0/muse-dl
       description: "An ebook downloader for Project MUSE, which stitches them together into a single-file using `pdftk`"
@@ -78,9 +81,18 @@
     - name: BlockVue
       url: https://blockvue.com
       description: "Virtual and VR tours for commercial real estate"
+    - name: Eat App
+      url: https://restaurant.eatapp.co
+      description: "Cloud-based applications for restaurants to increasing their efficiency and revenue through real-time restaurant reservations, automation and guest data management and CRM"
+    - name: GigSmart
+      url: https://gigsmart.com
+      description: "GigSmart is a staffing company that connects businesses looking for talent with individuals looking for work through their mobile and web applications"
     - name: JSON Keeper
       url: https://jsonkeeper.com
       description: "Simple, static JSON hosting service for web and mobile apps"
+    - name: Mailer To Go
+      url: https://mailertogo.com
+      description: "Heroku Add-on for simple email delivery"
     - name: Nabobil.no
       url: https://nabobil.no
       description: "Peer-to-peer car rental platform based in Norway"
