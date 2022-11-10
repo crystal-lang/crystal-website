@@ -34,3 +34,4 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/master' && github.repository_owner == 'crystal-lang'
         run: |
           aws s3 sync ./_site s3://crystal-website --delete
+          ./scripts/set-legacy-url-redirects.bash crystal-website < ./_data/legacy_non_pretty_urls.txt
