@@ -8,7 +8,7 @@ release_notes: false
 
 A lot has been going on in the Crystal Core Team, and the community has voiced its need for more (and more frequent) communication. This post is an attempt to catch up with that. I'm taking the license of using "we" for both Crystal and Manas.Tech in this short update.
 
-The team has been moving forward and focusing on [releasing 1.0](/2021/03/22/crystal-1.0-what-to-expect.html), which is intended to be a more stabilized version of 0.36 with few new additions. We know that we could always add, fix or improve one more little thing before releasing. Still, we believe this is long overdue and that the lack of a v1.0 is an obstacle to adoption.
+The team has been moving forward and focusing on [releasing 1.0](/2021/03/22/crystal-1.0-what-to-expect/), which is intended to be a more stabilized version of 0.36 with few new additions. We know that we could always add, fix or improve one more little thing before releasing. Still, we believe this is long overdue and that the lack of a v1.0 is an obstacle to adoption.
 
 We wanted to share the news that Johannes Müller (@straightshoota) has joined Manas as a full-time employee. Johannes is a years-long member and contributor of the Core Team, and we are thrilled to have him join us to continue to work on the language's evolution.
 
