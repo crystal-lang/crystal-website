@@ -276,7 +276,7 @@ header {
     padding: 70px 0 0;
 
     &:before {
-      margin: -70px 0 70px;
+      margin: -70px 0 70px calc( ( 100vw - 1200px ) / -2 );
     }
 
     span:after {

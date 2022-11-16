@@ -90,3 +90,89 @@
     }
   }
 }
+
+.top-sponsors {
+
+  margin: 100px 0 50px;
+
+  .above {
+    left: calc( 50% - 86px);
+  }
+  ul {
+    width: 70%;
+    margin: 0 auto;
+  }
+  &.separator {
+    padding: 70px 0 0;
+
+    &:before {
+      margin: -70px 0 70px calc( ( 100vw - 1200px ) / -2 );
+    }
+
+    span:after {
+      content: "Meet all";
+    }
+  }
+  a {
+    text-align: center;
+    h2 {
+      font-size: 14px;
+    }
+    &:hover {
+      img {
+        filter: none;
+      }
+    }
+  }
+  picture {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    // filter: invert(0%) sepia(95%) saturate(21%) hue-rotate(2deg) brightness(0%) contrast(107%);
+    filter: grayscale(1);
+    width: 78px;
+    height: auto;
+    transition: filter .3s;
+  }
+}
+
+.topics {
+  margin: 50px 0 100px;
+  h2 {
+    font: bold 18px var(--sans);
+  }
+  p {
+    height: 60px;
+  }
+  h2, p, a {
+    padding: 0 40px 0 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cards {
+    li {
+      width: calc( 50vw - 48px );
+    }
+  }
+  .topics {
+    article {
+      text-align: center;
+      margin-bottom: 50px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    .ico {
+      background-position: top center;
+    }
+    h2 {
+      padding: 40px 40px 0 40px;
+    }
+  }
+}

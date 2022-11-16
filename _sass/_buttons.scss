@@ -119,8 +119,8 @@
 
   &.left {
     background-position: left center;
+    padding-left: 40px;
   }
-
   &.github {
     background-image: url('/assets/icons/github.svg');
     background-size: auto auto;
@@ -190,6 +190,9 @@
   }
   &.heart {
     background-image: url('/assets/icons/heart.svg');
+  }
+  &.heart-black {
+    background-image: url('/assets/icons/heart-black.svg');
   }
   &.code {
     background-image: url('/assets/icons/code.svg');
