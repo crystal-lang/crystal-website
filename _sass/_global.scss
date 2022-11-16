@@ -123,11 +123,17 @@ label[for=menu-mobile],
 .grey-text {
   color: #777;
 }
+.underline {
+  text-decoration: underline;
+}
 header,
 main,
 .center {
   max-width: 1200px;
   margin: 0 auto;
+}
+.text-center {
+  text-align: center;
 }
 
 header {
