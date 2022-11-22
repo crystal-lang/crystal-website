@@ -4,8 +4,9 @@ def shout(x)
   x.to_s.upcase
 end
 
+# If `ENV["FOO"]` is defined, use that, else `10`
 foo = ENV["FOO"]? || 10
 
-typeof(foo) # => (Int32 | String)
-typeof(shout(foo)) # => String
+puts typeof(foo) # => (Int32 | String)
+puts typeof(shout(foo)) # => String
 {% endhighlight %}
