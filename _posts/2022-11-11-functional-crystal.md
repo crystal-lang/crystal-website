@@ -99,6 +99,10 @@ The answer is in the `Array`'s type: it's a `class`, so it's passed _by referenc
 
 > An instance of a class is passed _by reference_, but the reference itself is passed _by value_.
 
+## Reference and Value
+
+Crystal distinguishes which objects to pass by reference and which by value with two classes: [Reference](https://crystal-lang.org/api/1.6.2/Reference.html) and [Value](https://crystal-lang.org/api/1.6.2/Value.html).
+
 ## Immutable types: Structs
 
 As mentioned previously, there is a special type of object that is passed as value: instances of `struct`s. The following is a good example of how structs work:
@@ -181,3 +185,11 @@ end
 Note the following: we can easily add other possible exceptions, for instance, if we are reading from a file and we want to make a distinction between the parsing issues and the file reading ones. And since the `case` (as written above) is _exhaustive_, any case not considered will raise an error at compile time.
 
 ## Closures
+
+## The missing bits
+
+We've seen that Crystal has good support for functional programming. But there are a few improvements that could make for a better developing experience.
+
+### A more functional stdlib
+
+The stdlib pervasively raises exceptions, and besides nilable types, has little support for exceptions-as-values. One good example is the `File` api.
