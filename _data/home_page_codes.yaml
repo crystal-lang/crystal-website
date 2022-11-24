@@ -16,6 +16,7 @@
   run: true
 -
   name: Null reference checks
+  short_name: Nil checking
   description: All types are non-nilable in Crystal, and nilable variables are represented as a union between the type and nil. As a consequence, the compiler will automatically check for null references in compile time, helping prevent the dreadful <a href="https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare" target="_blank">billion-dollar mistake</a>.
   read_more_url:
   read_more_label:
@@ -32,6 +33,7 @@
   run: true
 -
   name: Concurrency Model
+  short_name: Concurrency
   description: Crystal uses green threads, called fibers, to achieve concurrency. Fibers communicate with each other using channels, as in Go or Clojure, without having to turn to shared memory or locks.
   read_more_url: https://crystal-lang.org/reference/guides/concurrency.html
   read_more_label: Read more about Crystal's concurrency model
