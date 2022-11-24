@@ -3,7 +3,7 @@
   description: Crystal’s syntax is heavily inspired by Ruby’s, so it feels natural to read and easy to write, and has the added benefit of a lower learning curve for experienced Ruby devs.
   read_more_url: https://crystal-lang.org/reference/getting_started/
   read_more_label: Start learning Crystal
-  code: sample_server.md
+  code: sample_syntax.md
   class: syntax
   run: true
 -
