@@ -2,27 +2,27 @@
 # Fragment of the BigInt implementation that uses GMP
 @[Link("gmp")]
 lib LibGMP
-  alias Int = LibC::Int
-  alias ULong = LibC::ULong
-
   struct MPZ
-    _mp_alloc : Int32
-    _mp_size : Int32
-    _mp_d : ULong*
+    _mp_alloc : LibC::Int
+    _mp_size : LibC::Int
+    _mp_d : LibC::ULong*
   end
 
-  fun init_set_str = __gmpz_init_set_str(rop : MPZ*, str : UInt8*, base : Int) : Int
-  fun cmp = __gmpz_cmp(op1 : MPZ*, op2 : MPZ*) : Int
+  fun init_set_str =
+    __gmpz_init_set_str(rop : MPZ*, str : UInt8*, base : LibC::Int) : LibC::Int
+  fun cmp = __gmpz_cmp(op1 : MPZ*, op2 : MPZ*) : LibC::Int
 end
 
-struct BigInt < Int
+struct BigInt
   def initialize(str : String, base = 10)
     err = LibGMP.init_set_str(out @mpz, str, base)
     raise ArgumentError.new("invalid BigInt: #{str}") if err == -1
   end
 
-  def <=>(other : BigInt)
-    LibGMP.cmp(mpz, other)
+  def >(other : BigInt)
+    LibGMP.cmp(pointerof(@mpz), pointerof(other.@mpz)) > 0
   end
 end
+
+puts "10*100 > 20*50 😂" if BigInt.new("10"*100) > BigInt.new("20"*50)
 {% endhighlight %}

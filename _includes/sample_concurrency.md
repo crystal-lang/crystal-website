@@ -1,16 +1,16 @@
 {% highlight crystal %}
 channel = Channel(Int32).new
 total_lines = 0
-files = Dir.glob("*.txt")
 
-files.each do |f|
+sites = ["http://www.example.com", "http://info.cern.ch/"]
+
+sites.each do |site|
   spawn do
-    lines = File.read_lines(f)
-    channel.send lines.size
+    channel.send site.size
   end
 end
 
-files.size.times do
+sites.size.times do
   total_lines += channel.receive
 end
 

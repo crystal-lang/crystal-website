@@ -19,9 +19,9 @@
   description: All types are non-nilable in Crystal, and nilable variables are represented as a union between the type and nil. As a consequence, the compiler will automatically check for null references in compile time, helping prevent the dreadful <a href="https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare" target="_blank">billion-dollar mistake</a>.
   read_more_url:
   read_more_label:
-  code: sample_null_refs.html
+  code: sample_null.md
   class: null-ref
-  run: false
+  run: true
 -
   name: Macros
   description: Crystal’s answer to metaprogramming is a powerful macro system, which ranges from basic templating and AST inspection, to types inspection and running arbitrary external programs.
@@ -29,7 +29,7 @@
   read_more_label: Read more about Macros
   code: sample_macros.md
   class: macros
-  run: false
+  run: true
 -
   name: Concurrency Model
   description: Crystal uses green threads, called fibers, to achieve concurrency. Fibers communicate with each other using channels, as in Go or Clojure, without having to turn to shared memory or locks.

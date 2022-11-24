@@ -5,7 +5,14 @@ class Object
   end
 end
 
-person = Person.new "John", 30
-person.has_instance_var?("name") #=> true
-person.has_instance_var?("birthday") #=> false
+class Person
+  property name : String
+  
+  def initialize(@name)
+  end
+end
+
+person = Person.new "John"
+p! person.has_instance_var?("name") # => true
+p! person.has_instance_var?("birthday") # => false
 {% endhighlight %}
