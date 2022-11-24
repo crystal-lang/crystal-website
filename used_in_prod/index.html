@@ -2,7 +2,6 @@
 title: Used in production
 description: >
   <p>Companies and individuals all over the world are using Crystal in production for projects of all kinds. </p>
-  <p>Fill <a href="https://airtable.com/shrapvn1N02qwkowQ" target="_blank">this short form</a> to let us know that you are also using Crystal in production at your company or project, and we’ll add you to the list on the website.</p>
 layout: base
 css: used_in_prod
 ---
@@ -10,33 +9,44 @@ css: used_in_prod
 
 <main>
 
-  <section class="grid x6 top">
-    {% for company in site.data.used_in_production %}
-    <a href="{{company.url}}" target="_blank">
-      <picture>
-        <img src="/assets/sponsors/{{company.image}}" alt="{{company.name}}"{% if company.class %} class="{{company.class}}"{% endif %}>
-      </picture>
-      {{company.name}}
-    </a>
-    {% endfor %}
+  <section class="success">
+    <h1>Success stories</h1>
+    
+    <div class="grid x3">
+      {% for story in site.categories.success_stories limit:3 %}
+      <article>
+        <a href="{{story.url}}">
+          <picture>
+            <source srcset="{{story.image}}.webp" type="image/webp">
+            <img src="{{story.image}}.jpg">
+          </picture>
+          <h2>{{story.title}}</h2>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
   </section>
 
-  <section class="areas grid x2">
+  <section class="success">
+    <h1>Companies by branch</h1>
+    
+    <p>Fill <a href="https://airtable.com/shrapvn1N02qwkowQ" target="_blank">this short form</a> to let us know that you are also using Crystal in production at your company or project, and we’ll add you to the list on the website.</p>
 
-    {% for category in site.data.used_prod_list %}
-    <article>
-      <a name="{{category.name | slugify }}" class="hex shadow uq"><span class="{{category.icon}} ico"></span></a>
-      <div>
-        <h2>{{category.name}}</h2>
-        <p>{{category.description}}</p>
-        <ul>
-          {% for company in category.companies %}
-          <li><a href="{{company.url}}" target="_blank">{{company.name}}</a>: {{company.description}}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </article>
-    {% endfor %}
-
+    <div class="areas grid x2">
+      {% for category in site.data.used_prod_list %}
+      <article>
+        <a name="{{category.name | slugify }}" class="hex shadow uq"><span class="{{category.icon}} ico"></span></a>
+        <div>
+          <h2>{{category.name}}</h2>
+          <p>{{category.description}}</p>
+          <ul>
+            {% for company in category.companies %}
+            <li><a href="{{company.url}}" target="_blank">{{company.name}}</a>: {{company.description}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
   </section>
 </main>
