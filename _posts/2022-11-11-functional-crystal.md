@@ -162,7 +162,9 @@ class ParseException < Exception
   end
 end
 
-def parse(input : String) : Ast | ParseException
+alias ParseResult = Ast | ParseException
+
+def parse(input : String) : ParseResult
 ```
 
 Now, when using `parse`, we must consider the exception. This is easy to do with a [case statement](https://crystal-lang.org/reference/1.6/syntax_and_semantics/case.html#union-type-checks):
@@ -180,17 +182,17 @@ Note the following: we can easily add other possible exceptions. For instance, i
 
 ### Give me the gun, I want to shoot at my foot
 
-Having to `case` at each returned object might sound like a bit too much. No need to suffer: we can mimic the same idea as with `Nil` and extend the `Object` class with a `not_exception!` method to _assume_ an object is not an exception:
+Having to `case` at each returned object might sound like a bit too much. No need to suffer: we can mimic the same idea as with `Nil` and extend the `Object` class with a `pure!` method to _assume_ an object is the pure value and not an exception:
 
 ```cr
 class Object
-  def not_exception! : self
+  def pure! : self
     self
   end
 end
 
 class Exception
-  def not_exception! : NoReturn
+  def pure! : NoReturn
     raise self
   end
 end
@@ -199,14 +201,14 @@ end
 With this extension we can now assume a call to `parse` won't fail (or the exception will explode in our face!):
 
 ```cr
-parse("hello").not_exception! + " world"
+parse("hello").pure! + " world"
 ```
 
 ## Closures
 
 What is functional programming without lambdas, aka first-class functions or lambdas? Of course, Crystal has them!
 
-Let's continue the idea that we developed in the previous section. We have a method that might return an exception, and we want to operate with it. We saw how to use `case` or the created `Object#not_exception!`, let's see another interesting way. Say we have a functional interface for `File.read_lines`:
+Let's continue the idea that we developed in the previous section. We have a method that might return an exception, and we want to operate with it. We saw how to use `case` or the created `Object#pure!`, let's see another interesting way. Say we have a functional interface for `File.read_lines`:
 
 ```cr
 class File
@@ -240,9 +242,13 @@ File.read_lines("/tmp/test").chain(&.join.chain(&->parse(String)))
 
 ## Algebraic Data Types
 
-A union type `String | ParseException` like we saw above can be seen as a particular case of an _algebraic data type_ (ADT). These types allows constructing a type from a defined set of _constructors_ or, in our case, objects. This enables a particular form of reasoning that is different from what we see in OOP.
+A union type returning two different types of objects like `ParseResult` can be considered a particular case of an _algebraic data type_ (ADT). ADTs allow constructing a type from a defined set of _constructors_ or, in our case, objects. That is, we know from the type that a `ParseResult` can only be an `AST` or a `ParseException`, and nothing else. This enables a particular form of reasoning that is different from what we see in OOP.
 
-For instance, the compiler of Crystal uses the [visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern) for working with the abstract syntax tree of the language. The following is a simplified example. We start presenting the classes that form the syntax tree, consisting of binary operators (like `+`, `-`, etc.) and integer values. They all consist of
+In order to present the main ingredients of working with ADTs, we will compare it with a typical OOP pattern.
+
+### The Visitor Pattern
+
+The compiler of Crystal uses the [visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern) for working with the abstract syntax tree of the language. The following is a simplified example. We start presenting the classes that form the syntax tree, consisting of binary operators (like `+`, `-`, etc.) and integer values. They all consist of
 
 ```cr
 abstract class Ast
