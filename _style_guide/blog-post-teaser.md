@@ -8,7 +8,7 @@ post:
   summary: Binary packages are now available for older releases on the Open Build Service
   date: 2021-08-13
   id: /2021/08/13/install-specific-versions
-  url: /2021/08/13/install-specific-versions.html
+  url: /2021/08/13/install-specific-versions/
 ---
 
 {% include blog_row.html post=page.post %}

@@ -5,7 +5,7 @@ thumbnail: +
 author: straight-shoota
 ---
 
-When we [moved hosting of Crystal's binary packages](/2021/04/30/new-apt-and-rpm-repositories.html) to the [Open Build Service (OBS)](https://build.opensuse.org),
+When we [moved hosting of Crystal's binary packages](/2021/04/30/new-apt-and-rpm-repositories/) to the [Open Build Service (OBS)](https://build.opensuse.org),
 in May 2021, only the latest release (1.0.0 at that time) was available.
 
 Since then, there have been more releases (1.1.0 and 1.1.1) but in the package repositories only the latest one was available at any time.

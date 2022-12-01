@@ -5,7 +5,7 @@ thumbnail: T
 author: asterite
 ---
 
-Here we'll [continue explaining](/2013/09/23/type-inference-part-1.html) how Crystal assigns
+Here we'll [continue explaining](/2013/09/23/type-inference-part-1/) how Crystal assigns
 types to each variable and expression of your program. This post is a bit long, but in the end
 it's just about making Crystal behave in the most intuitive way for the programmer, to make it
 behave as similar as possible to Ruby.
@@ -373,11 +373,11 @@ a = some_condition ? 1 : nil
 b = a.try &.abs # b is Int32 or Nil
 ```
 
-(if you are not sure what ```&.abs``` means, [read this](/2013/09/15/to-proc.html))
+(if you are not sure what ```&.abs``` means, [read this](/2013/09/15/to-proc/))
 
 Since doing something depending on whether a value is ```Nil``` or not is so common, Crystal
 provides another way to do the above. This was shortly explained
-[here](/2013/07/13/null-pointer-exception.html), but now we'll explain it
+[here](/2013/07/13/null-pointer-exception/), but now we'll explain it
 better and combine it with the previous explanations.
 
 If a variable is an ```if```'s condition, the compiler assumes the variable is not ```nil```

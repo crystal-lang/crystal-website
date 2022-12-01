@@ -46,7 +46,7 @@ e, q = q.pop # => EmptyQueueRuntimeError :-(
 ```
 
 
-Going in a a similar direction of the [NullPointerException](/2013/07/13/null-pointer-exception.html), we could try to split the queue values that will help us move from this `EmptyQueueRuntimeError` to a compile error. For that, we need to differentiate the `EmptyQueue` from the non-empty Queues.
+Going in a a similar direction of the [NullPointerException](/2013/07/13/null-pointer-exception/), we could try to split the queue values that will help us move from this `EmptyQueueRuntimeError` to a compile error. For that, we need to differentiate the `EmptyQueue` from the non-empty Queues.
 
 ```ruby
 class EmptyQueue
@@ -125,10 +125,3 @@ This situation has been coming up all the time since we began designing Crystal'
 
 Although the `Queue` story didn’t end up so well, it did end up well for all of the above types,
 allowing us to have a happy time while crystalling. Success!
-
-
-
-
-
-
-
