@@ -19,7 +19,7 @@ Without further ado, let's take a look at the results.
 
 We wanted to learn how you discovered Crystal, and were surprised to find that a lot of you arrived at Crystal through search engines. On the other hand, we confirmed how important HackerNews and Reddit are to divulge young and small projects such as Crystal. Every now and then, someone from the community posts something interesting about Crystal, the post makes it to HN and Reddit front pages and in the next few days we notice a wave of new users and contributors on the different community channels.
 
-### Using Crystal
+## Using Crystal
 
 ![47.2% Yes, I'm using Crystal for hobby projects, 32.1% No, but I' planning to use Crystal, %10.7 No, I'm not using Crystal, %9.9 Yes, I'm Using Crystal in production](https://cdn.pbrd.co/images/GP33qmx.png
 "%47.2 Yes, I'm using Crystal for hobby projects, 32.1% No, but I'm planning to use Crystal, 10.7% No, I'm not using Crystal, 9.9% Yes, I'm Using Crystal in production")
