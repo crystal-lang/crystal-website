@@ -19,7 +19,7 @@ Without further ado, let's take a look at the results.
 
 We wanted to learn how you discovered Crystal, and were surprised to find that a lot of you arrived at Crystal through search engines. On the other hand, we confirmed how important HackerNews and Reddit are to divulge young and small projects such as Crystal. Every now and then, someone from the community posts something interesting about Crystal, the post makes it to HN and Reddit front pages and in the next few days we notice a wave of new users and contributors on the different community channels.
 
-# Using Crystal
+## Using Crystal
 
 ![47.2% Yes, I'm using Crystal for hobby projects, 32.1% No, but I' planning to use Crystal, %10.7 No, I'm not using Crystal, %9.9 Yes, I'm Using Crystal in production](https://cdn.pbrd.co/images/GP33qmx.png
 "%47.2 Yes, I'm using Crystal for hobby projects, 32.1% No, but I'm planning to use Crystal, 10.7% No, I'm not using Crystal, 9.9% Yes, I'm Using Crystal in production")
@@ -84,7 +84,7 @@ Crystal developers do love using Vim, here's the major editors being used
 - Sublime Text - 28.4%
 - Emacs - 8.1%
 
-# Platforms
+### Platforms
 
 ![Linux 66%, Mac OS 57.5%, Windows 17.9%, 2.8% BSD-variant](https://cdn.pbrd.co/images/GPbEV09.png
   "Linux 66%, Mac OS 57.5%, Windows 17.9%, 2.8% BSD-variant")
@@ -97,7 +97,7 @@ Linux is the main platform Crystal developers choose followed by Mac OS. There's
 
 We see a similar pattern in target platforms. Linux is the most targeted platform. Interestingly we see Android, iOS and Javascript in a noticable ratio.
 
-# Towards 1.0
+### Towards 1.0
 
 ![0.23.* 56.9%, Not sure 22.4%, Master 6.4%](https://cdn.pbrd.co/images/GPbKSji.png
   "0.23.* 56.9%, Not sure 22.4%, Master 6.4%")
@@ -135,9 +135,9 @@ We asked what tools would make Crystal developers more productive.
 - Code coverage & Linters
 - Faster compile times
 
-# Learning Resources
+## Learning Resources
 
-## Which learning resources, if any, did you use to learn Crystal?
+### Which learning resources, if any, did you use to learn Crystal?
 
 - The official Crystal docs (https://crystal-lang.org/reference/)
 - Crystal for Rubyists (http://www.crystalforrubyists.com/)
@@ -210,7 +210,7 @@ Crystal developers come from various programming languages, most of them being d
 
 ---
 
-# Closing Thoughts
+## Closing Thoughts
 
 At the end of the survey, we asked: “Anything else you’d like to tell us?”
 

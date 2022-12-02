@@ -11,7 +11,7 @@ Of course, the process described here is a bit opinionated. Depending on the rel
 
 When I say that the shard always has at least one dependency it is because the std-lib, and the language, act as yet another dependency.
 
-# Version checks
+## Version checks
 
 As dependencies evolve, it is up to you to decide whether to support just the latest release and force everybody to be on edge, or to support some older versions.
 
@@ -19,7 +19,7 @@ Thanks to the built-in reflection macros and methods as `has_constant?`, `has_me
 
 One other mechanism that is not as fancy, but simple, is the `compare_versions` macro. If `AwesomeDependency` defines a `AwesomeDependency::VERSION` (as it is encouraged by the init template), then `{% raw %}{% if compare_versions(AwesomeDependency::VERSION, "2.0.0") >= 0 %}{% endraw %}` is available to use features only on 2.0.0 or later releases.
 
-## Advertised version
+### Advertised version
 
 If the 3.x version of AwesomeDependency is being developed, we encourage you to set `AwesomeDependency::VERSION` to `"3.0.0-dev"` or something alike. `"3.0.0"` may be good enough, but some prefer to keep that value for the tagged release only.
 
@@ -27,7 +27,7 @@ If the `AwesomeDependency::VERSION` is not increased _during_ the development of
 
 If `AwesomeDependency::VERSION = "3.0.0-dev"` and we want to start supporting that version in our development branch, we will need to use something like `{% raw %}{% if compare_versions(AwesomeDependency::VERSION, "3.0.0-0") >= 0 %}{% endraw %}`, with a trailing `-0`. This is because `3.0.0-0 < 3.0.0-a < 3.0.0-dev < 3.0.0-z < 3.0.0`.
 
-# Declaring dependencies
+## Declaring dependencies
 
 At this point, we need to mention how dependencies can be declared. As mentioned before, on a tagged release, the `shard.yml` acts as a contract. This contract states what are the supported versions of each dependency. Shards allows us to declare dependencies, not only as version ranges, but also on a branch, or with no version. Still, I would recommend using version ranges, with lower and upper bound versions, on every formal release of a shard. The other variations should be limited to applications with a `shard.lock` or work in progress.
 
@@ -54,7 +54,7 @@ If this mechanism is used with a cron on the CI we will have nightly checks of t
 
 Another alternative would be to set version ranges on dependencies only when releasing our shard. This would leave unrestricted dependencies in our development branch, but I think that that will require more work upon release, and it will still require the override to avoid picking the latest release by default.
 
-# Moving to Crystal 1.0
+## Moving to Crystal 1.0
 
 So far we haven’t mentioned Crystal 1.0. What's the deal with this release or any other major releases? The shards out in the wild declare which std-lib and language version they work with.
 
@@ -70,7 +70,7 @@ To avoid locking us in this, or other major Crystal release, the `--ignore-cryst
 
 You can set the `SHARDS_OPTS` environment variable to `--ignore-crystal-version` in your CI if the `shards install` command is performed implicitly along the way.
 
-# Preparing all the ecosystem for Crystal 1.0
+## Preparing all the ecosystem for Crystal 1.0
 
 Let's revisit the whole state with a more concrete hypothetical (and pessimistic) example. We are the authors of `BelovedShard` that depends on `AwesomeShard`. So far everything is working on Crystal 0.35. `BelovedShard` is in `1.5.0` and `AwesomeShard` is in `2.2.3`.
 
@@ -128,9 +128,8 @@ While Crystal 1.0.0-dev keeps evolving, we can iterate on both shards.
 
 Once Crystal 1.0 is released, each shard will make the explicit decision about which version of the std-lib and language is supported. This will trigger changes in the `shard.yml` and maybe some code clean-ups.
 
-# Closing thoughts
+## Closing thoughts
 
 There are other workflows to keep things up to date. This is just one option.
 
 As a community, other patterns might appear or be preferred in the long run. The recent changes in Shards aimed to provide at least one option that works and can be adapted to some extent.
-
