@@ -250,9 +250,9 @@ An alternative form could be using an inline block:
 File.read_lines("/tmp/test").chain {|lines| parse lines.join}
 ```
 
-## Algebraic Data Types
+## Algebraic Data Types and pattern matching
 
-A union type returning two different types of objects like `ParseResult` is similar in essence to an _algebraic data type_ (ADT). ADTs allow constructing a type from a defined set of _constructors_ or, in our case, objects. That is, we know from the type alias definition that a `ParseResult` can only be an `Ast` or a `ParseException`, and nothing else. This enables a particular form of reasoning that is different from what we see in OOP.
+A union type returning two different types of objects like `ParseResult` is similar in essence to an _algebraic data type_ (ADT). ADTs allow constructing a type from a defined set of _constructors_ or, in our case, objects. That is, we know from the type alias definition that a `ParseResult` can only be an `Ast` or a `ParseException`, and nothing else. This enables a particular form of reasoning called _pattern matching_.
 
 In order to present the main ingredients of working with ADTs we present a problem and compare the OOP solution with the functional one.
 
@@ -325,7 +325,7 @@ A simple, _functional_ in style alternative is to use `case` (a simple form of _
 
 ### The functional approach: pattern-matching
 
-With the `case` statement we can directly code the printing in the `inspect` method of `Ast`:
+With the `case` statement we can directly code the printing in the `inspect` method of `Ast`. This is a more general example than what we saw above with `ParseResult`, this time traversing the recursive structure of an `Ast`.
 
 ```cr
 abstract class Ast
@@ -342,11 +342,11 @@ abstract class Ast
 end
 ```
 
-Note how this method is more concise than the OOP one.
+Note how this method is more concise than the OOP one (there's a little white lie, see the coming section). Also importantly, note how we're casing on the type of `self`.
 
 ## The missing bits
 
-We've seen that Crystal has good support for functional programming. But there are a few improvements that could make for a better developing experience.
+We've seen that Crystal has good support for several functional programming patterns. But there are a few improvements that can be made in order to improve it.
 
 ### A more functional stdlib
 
@@ -362,7 +362,7 @@ double = ->(x : Int32) { 2 * x }
 p 3.try(&double).try(&double) # => 12
 ```
 
-Unfortunately, we need to be explicit about the type of the input parameters in the closure (in this case, `Int32`). Crystal won't infer it even if it could be guessed from the context, as with a regular function or method. It's not a critical aspect, but following the same —let me add, _beautiful_— ergonomics of the language also for closures would be a nice touch.
+Unfortunately, we need to be explicit about the type of the input parameters in the closure (in this case, `Int32`). Crystal won't infer it even if it could be guessed from the context, as with a regular function or method. It's not a critical aspect, but following the same ergonomics of the language also for closures would be a nice touch.
 
 ### Generic aliases
 
@@ -372,19 +372,57 @@ Right now, type aliases can't be generic. Therefore, it's currently impossible t
 alias Result(T) = T | Exception
 ```
 
-### Better pattern-matching
+### Immutable datatypes
+
+A key aspect of Abstract Data Types we didn't mentioned so far is that they are immutable. But we can't use structs to get immutability, because structs do not allow recursive definitions. That is, the following is invalid:
+
+```cr
+abstract struct Ast
+end
+
+struct BinOp < Ast
+  getter operator : String
+  getter left : Ast, right : Ast
+
+  def initialize(@operator, @left, @right)
+  end
+end
+```
+
+The error is descriptive:
+
+```
+The struct BinOp has, either directly or indirectly,
+an instance variable whose type is, eventually, this same
+struct. This makes it impossible to represent the struct
+in memory, because the size of this instance variable depends
+on the size of this struct, which depends on the size of
+this instance variable, causing an infinite cycle.
+```
+
+A missing piece is that structs are placed in the stack, unlike classes, and that is why the compiler needs to know ahead of time the exact size of it.
+
+If we want to have immutable classes, that are placed in the heap instead of in the stack (and therefore, can have recursive instances), the compiler should add support for it. One way to achieve that is to have the compiler call a method when passing `Reference` objects around, and have `Reference` return `self` and a new `ImmutableReference` type of object return a copy. If it sounds costly, fear not as the LLVM backend should optimize it in `--release` mode.
+
+### Improved pattern-matching
 
 Right now, pattern-matching is quite basic: it only works on types, and can't be refined to the field values of the object. Consider if we want to distinguish each operator above. It would be nice to be able to do the following:
 
 ```cr
 case self
 in BinOp where self.operator == "+"
-  ...
+  ... # case for +
 in BinOp where self.operator == "-"
-  ...
+  ... # case for -
 in BinOp # Any other case
   raise "BUG: Invalid operator, please report"
+in IntLiteral
+  ... # case for ints
 end
 ```
 
-(Also: the exhaustive checker of `case` in the example [requires a case for the abstract class `Ast`](https://github.com/crystal-lang/crystal/issues/12796).)
+Also: the exhaustive checker of `case` in the example [requires a case for the abstract class `Ast`](https://github.com/crystal-lang/crystal/issues/12796).
+
+## Concluding remarks
+
+Crystal already lets you take good advantage of some functional patterns, and a full functional experience is not that far away. Of course, mature functional languages have years ahead optimizing for such patterns, but that shouldn't worry us: for performance, we can resort to ol' good mutation! That's the beauty of multi-paradigm languages.
