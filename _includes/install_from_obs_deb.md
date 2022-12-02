@@ -19,7 +19,7 @@ curl -fsSL https://crystal-lang.org/install.sh | sudo bash -s -- --channel=night
 {% endhighlight bash %}
 </div>
 
-You can find more detailed information at the [announcement post](/2021/04/30/new-apt-and-rpm-repositories.html).
+You can find more detailed information at the [announcement post](/2021/04/30/new-apt-and-rpm-repositories/).
 
 ### Manual setup
 
