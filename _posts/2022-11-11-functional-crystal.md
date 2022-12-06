@@ -18,6 +18,8 @@ In this post, we will revisit what makes functional programming exciting, and ho
  2. Algebraic data types.
  3. Closures.
 
+While discussing each of these, we will point out at some improvements that could be made to the compiler and stdlib to improve its support. The intention is not to fix an agenda, but rather to open the discussion about wether such improvements are relevant to the community.
+
 ## Mutability considered harmful
 
 A key aspects of functional programming is related to the idea that any change in the state of the program should be _local_. A way to describe this is with the following comparison, where `f` is any function or method, and `x` any value:
@@ -54,7 +56,7 @@ Indeed, not everything is mutable in Crystal. But before getting there, let's br
 
 ### Values and references
 
-Compilers achieve immutability passing elements _by value_ instead of _by reference_. Consider the following code:
+Compilers achieve immutability by passing elements _by value_ (a copy of the value is passed), instead of _by reference_ (the pointer of the value is passed). We'll understand this distinction with some exercises. Consider the following code:
 
 ```cr
 def f(x : Int32)
@@ -76,8 +78,8 @@ Consider now the following code:
 
 ```cr
 def g(arr : Array(Int32))
-  arr[0] += 1
-  arr = [2]
+  arr += [1]
+  arr = [] of Int32
 end
 
 z = [0]
@@ -90,12 +92,12 @@ What does it print?
 <br/>
 <br/>
 <center>
-Space purposedly left in blank to let you think.
+Space purposefully left blank to let you think.
 </center>
 <br/>
 <br/>
 
-The answer is in the `Array`'s type: it's a `class`, so it's passed _by reference_. That is, changes performed in the array within the function affects `z`. Now, _the reference_ of the array itself (where `z` is located in the memory) is passed by value. Essentially, this means that the array itself is **not** replaced when assigning the array `[2]` to `arr`. Therefore, the answer is `[1]`.
+The answer is in the `Array`'s type: it's a `class`, so it's passed _by reference_. That is, changes performed in the array within the function affects `z`. Now, _the reference_ of the array itself (where `z` is located in the memory) is passed by value. Essentially, this means that the array itself is **not** replaced when assigning the empty array to `arr`. Therefore, the answer is `[0, 1]`.
 
 > An instance of a class is passed _by reference_, but the reference itself is passed _by value_.
 
@@ -107,13 +109,13 @@ As mentioned previously, instances of `struct`s are passed by value. The followi
 
 ```cr
 struct Point
-  property x : Int32, y : Int32
+  getter x : Int32, y : Int32
 
   def initialize(@x, @y); end
 end
 
-def translate_x(point : Point, x : Int32)
-  point.x += x
+def translate_x(point : Point, offset : Int32)
+  point.x += offset
   point
 end
 
@@ -122,9 +124,60 @@ ten = translate_x zero, 10
 p zero, ten # => Point(@x=0, @y=0)  Point(@x=10, @y=0)
 ```
 
-Note what's happening here: the function `translate_x` alters the value of the `x` component, and this change works locally: the _new copy_ of the point that is returned has its value altered. See how important it is immutability: we _know_ that if we do not change locally `zero`, it will always have the value `(0, 0)`.
+Note what's happening here: the function `translate_x` alters the value of the `x` component, and this change works locally: the _new copy_ of the point that is returned has its value altered. See how important immutability is: we _know_ that if we do not change `zero` locally, it will always have the value `(0, 0)`.
 
-Exercise: change `struct` with `class` and see what happens.
+Exercise 1: replace `struct` with `class` and see what happens.
+
+Exercise 2: make `translate_x` be an instance method of `struct`, that operates on `@x` of `self` instead of receiving the point. Can you explain what happens?
+
+### Little diversion: the `record` macro
+
+An alternative implementation of the `Point` struct is using the macro [`record`](https://crystal-lang.org/api/1.6.2/toplevel.html#record%28name%2C%2Aproperties%29-macro). This macro further enhances the experience of working with immutable structs.
+
+```cr
+record Point, x : Int32 = 0, y : Int32 = 0
+```
+
+`record` generates an identical struct as above, together with a handy method `#copy_with` that allows to return a copy of the struct with some given instance variables modified. For instance, we can solve Exercise 2 above defining the `translate_x` method directly when defining `Point`:
+
+```cr
+record Point, x : Int32 = 0, y : Int32 = 0 do
+  def translate_x(offset : Int32)
+    copy_with x: @x + offset
+  end
+end
+```
+
+### Missing bit: Immutable datatypes
+
+Immutability is great to avoid unwilling overwriting of information. However, we can't use structs always to get immutability, because structs do not allow recursive definitions. That is, the following is invalid:
+
+```cr
+abstract struct Abstract
+end
+
+struct Concrete < Abstract
+  getter recursive : Abstract
+
+  def initialize(name, @recursive)
+  end
+end
+```
+
+The error is descriptive:
+
+```text
+The struct Concrete has, either directly or indirectly,
+an instance variable whose type is, eventually, this same
+struct. This makes it impossible to represent the struct
+in memory, because the size of this instance variable depends
+on the size of this struct, which depends on the size of
+this instance variable, causing an infinite cycle.
+```
+
+A missing piece of information is that structs are placed in the stack, unlike classes, and that is why the compiler needs to know ahead of time the exact size of it.
+
+If we want to have immutable classes, that are placed in the heap instead of in the stack (and therefore, can have recursive instances), the compiler could add support for it. In a fictional future, we can foresee an `ImmutableReference` class next to `Value` and `Reference` to consider object that are placed in the heap, but that are copied when passed over.
 
 ## Exceptions considered harmful
 
@@ -206,6 +259,22 @@ With this extension we can now assume a call to `parse` won't fail (or the excep
 parse("hello").pure!.to_s + " pure world"
 ```
 
+### The missing bits
+
+The current status of the stdlib and compiler support is missing two things:
+
+ 1. **A more functional stdlib**
+
+    The stdlib pervasively raises exceptions, and besides nilable types, has little support for exceptions-as-values. This can be done in baby-steps, like adding the `Object#pure!` and `Object#chain` methods discussed in this post.
+
+ 2. Generic aliases
+
+    Right now, type aliases can't be generic. Therefore, it's currently impossible to define a generic `Result` type of the sort:
+
+```cr
+alias Result(T) = T | Exception
+```
+
 ## First-class functions
 
 What is functional programming without lambdas, aka first-class functions? Of course, Crystal has them!
@@ -258,171 +327,104 @@ In order to present the main ingredients of working with ADTs we present a probl
 
 ### The problem
 
-We have some `Ast` nodes representing the syntax of our language, created by the parsing function, and we want to pretty-print them. We'll keep it simple for the example and consider only binary operators (`+`, `-`, etc.) and integer values. We have the `Ast` class, which is abstract, and the two kind of syntax nodes: `BinOp` (for binary operator) and `IntLiteral` for an integer literal. Binary operators have the operator (a `String`) and the left and right operands (other `Ast` nodes). An integer literal has the number (an `Int32`).
+Let's build the model for `Food`. A `Food` can be either a `Compound` or a `Base` ingredient. For instance, a "chocolate with caramel filling" has cacao, milk, sugar, and caramel, the latter being also a compound of cream, butter, and sugar.
 
 ```cr
-abstract class Ast
-end
+abstract class Food
+  getter name : String
 
-class BinOp < Ast
-  getter operator : String
-  getter left : Ast, right : Ast
-
-  def initialize(@operator, @left, @right)
+  def initialize(@name)
   end
 end
 
-class IntLiteral < Ast
-  getter number : Int32
+class Base < Food
+end
 
-  def initialize(@number)
+class Compound < Food
+  getter ingredients : Array(Food)
+
+  def initialize(name, @ingredients)
+    super name
   end
 end
 ```
 
-### The OOP approach: The Visitor Pattern
+We want to have a nice printing of this elements overriding `#to_s`. How do we proceed?
 
-The compiler of Crystal uses [the visitor pattern](https://en.wikipedia.org/wiki/Visitor_pattern) for working with the abstract syntax tree of the language. Essentially, it consists of a class with a method `visit`, which is overrided to deal with each kind of object. In our case, each concrete `Ast` node. For binary operators, the `visit` method calls `visit` recursively in order to print the left and right operands.
+### The OOP approach: make each object responsible
 
-```cr
-class PrintVisitor
-  def initialize(@io : IO)
-  end
-  
-  def visit(binop : BinOp)
-    visit binop.left
-    binop.operator.to_s @io
-    visit binop.right
-  end
-  
-  def visit(int : IntLiteral)
-    int.number.to_s @io
-  end
-end
-```
-
-Note how we are leaving to the compiler the task of deciding which method to call (🤓 fact: Crystal uses [multiple dispatch](https://en.wikipedia.org/wiki/Multiple_dispatch)).
-
-We can now extend the `Ast` class to use the `PrintVisitor` to pretty-print the node:
+The typical OOP pattern is to make each child class responsible:
 
 ```cr
-abstract class Ast
-  def inspect(io)
-    PrintVisitor.new(io).visit(self)
+class Base < Food
+  def to_s(io)
+    io << name
   end
 end
-  
-pp BinOp.new("+", IntLiteral.new(1), IntLiteral.new(2)) # => 1+2
-```
 
-We can make two criticisms to the solution with the visitor pattern:
+class Compound < Food
+  def to_s(io)
+    io << name << " ("
+    ingredients.each_with_index do |f, i|
+      io << ", " unless i == 0
+      f.to_s io
+    end
+    io << ")"
+  end
+end```
 
- 1. It requires the state to be global to the instance, like we did above with `@io`, or to be passed as argument in each `visit` method.
+Note how we are leaving to the compiler the task of deciding which method to call when calling `f.to_s` for each element in `ingredients` (🤓 fact: Crystal uses [multiple dispatch](https://en.wikipedia.org/wiki/Multiple_dispatch)).
 
- 2. It over-engineers an algorithm that might be otherwise simple, somewhat obscuring its structure by making it implicit.
+This pattern has a main advantage: if we extend tomorrow the class of `Food` with another type, we can easily do it without changing any of the existing code.
+
+As a disadvantage, in cases in which we are unlikely going to have more subclasses, this pattern obscures the algorithm: If each subclass lies in different places of a file, or more so, in different files, we need to jump through the code to find precisely what it does.
 
 A simple, _functional_ in style alternative is to use `case` (a simple form of _pattern-matching_).
 
 ### The functional approach: pattern-matching
 
-With the `case` statement we can directly code the printing in the `inspect` method of `Ast`. This is a more general example than what we saw above with `ParseResult`, this time traversing the recursive structure of an `Ast`.
+With the `case` statement we can directly code the `#to_s` in `Food`. This is a more general example than what we saw above with `ParseResult`, but this time recusively traversing the structure of a `Food`.
 
 ```cr
-abstract class Ast
-  def inspect(io)
+abstract class Food
+  def to_s(io)
     case self
-    in BinOp
-      self.left.inspect io
-      self.operator.to_s io
-      self.right.inspect io
-    in IntLiteral
-      self.number.to_s io
+    in Base
+      io << name
+    in Compound
+      io << name << " ("
+      self.ingredients.each_with_index do |f, i|
+        io << ", " unless i == 0
+        f.to_s io
+      end
+      io << ")"
     end
   end
 end
 ```
 
-Note how this method is more concise than the OOP one (there's a little white lie, see the coming section). Also importantly, note how we're casing on the type of `self`.
+The algorithm is now in one place. Note that, in essence, what we're doing is making the multiple dispatch explicit.
 
-## The missing bits
+## The missing bit: Improved pattern-matching
 
-We've seen that Crystal has good support for several functional programming patterns. But there are a few improvements that can be made in order to improve it.
-
-### A more functional stdlib
-
-The stdlib pervasively raises exceptions, and besides nilable types, has little support for exceptions-as-values.
-
-### Better type inference for closures
-
-It's possible to create a closure and assign it to a variable with the following syntax:
-
-```cr
-double = ->(x : Int32) { 2 * x }
-
-p 3.try(&double).try(&double) # => 12
-```
-
-Unfortunately, we need to be explicit about the type of the input parameters in the closure (in this case, `Int32`). Crystal won't infer it even if it could be guessed from the context, as with a regular function or method. It's not a critical aspect, but following the same ergonomics of the language also for closures would be a nice touch.
-
-### Generic aliases
-
-Right now, type aliases can't be generic. Therefore, it's currently impossible to define something of the sort:
-
-```cr
-alias Result(T) = T | Exception
-```
-
-### Immutable datatypes
-
-A key aspect of Abstract Data Types we didn't mentioned so far is that they are immutable. But we can't use structs to get immutability, because structs do not allow recursive definitions. That is, the following is invalid:
-
-```cr
-abstract struct Ast
-end
-
-struct BinOp < Ast
-  getter operator : String
-  getter left : Ast, right : Ast
-
-  def initialize(@operator, @left, @right)
-  end
-end
-```
-
-The error is descriptive:
-
-```
-The struct BinOp has, either directly or indirectly,
-an instance variable whose type is, eventually, this same
-struct. This makes it impossible to represent the struct
-in memory, because the size of this instance variable depends
-on the size of this struct, which depends on the size of
-this instance variable, causing an infinite cycle.
-```
-
-A missing piece is that structs are placed in the stack, unlike classes, and that is why the compiler needs to know ahead of time the exact size of it.
-
-If we want to have immutable classes, that are placed in the heap instead of in the stack (and therefore, can have recursive instances), the compiler should add support for it. One way to achieve that is to have the compiler call a method when passing `Reference` objects around, and have `Reference` return `self` and a new `ImmutableReference` type of object return a copy. If it sounds costly, fear not as the LLVM backend should optimize it in `--release` mode.
-
-### Improved pattern-matching
-
-Right now, pattern-matching is quite basic: it only works on types, and can't be refined to the field values of the object. Consider if we want to distinguish each operator above. It would be nice to be able to do the following:
+Right now, pattern-matching is quite basic: it only works on types, and can't be refined to the field values of the object. Consider if we want to distinguish some food. For instance, imagine we have a `#sugar` percentage field in `Compound`, and we want to print a warning when it's above some threshold.  It would be nice to be able to do the following:
 
 ```cr
 case self
-in BinOp where self.operator == "+"
-  ... # case for +
-in BinOp where self.operator == "-"
-  ... # case for -
-in BinOp # Any other case
-  raise "BUG: Invalid operator, please report"
-in IntLiteral
-  ... # case for ints
+in Compound where self.sugar > Food::SUGAR_ALLOWED
+  io << name << " (HIGH IN SUGARS)"
+  ... # code to print the ingredients
+in Compound
+  ... # normal case
+in Base
+  ... # case for Base
 end
 ```
 
-Also: the exhaustive checker of `case` in the example [requires a case for the abstract class `Ast`](https://github.com/crystal-lang/crystal/issues/12796).
+Also: the exhaustive checker of `case` in the example [requires a case for the abstract class `Food`](https://github.com/crystal-lang/crystal/issues/12796).
 
 ## Concluding remarks
 
-Crystal already lets you take good advantage of some functional patterns, and a full functional experience is not that far away. Of course, mature functional languages have years ahead optimizing for such patterns, but that shouldn't worry us: for performance, we can resort to ol' good mutation! That's the beauty of multi-paradigm languages.
+Crystal already lets you take good advantage of some functional patterns, and a full functional experience is not that far away. Of course, mature functional languages have years ahead optimizing for such patterns, but that shouldn't worry us: for performance, we can resort to good ol' mutation! That's the beauty of multi-paradigm languages.
+
+Here we also draw attention about what can be done to get a bit closer to the functional paradigm, without giving up the nice OOP, open paradigm of our language.
