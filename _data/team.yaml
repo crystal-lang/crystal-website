@@ -65,6 +65,11 @@ admin:
     role: Developer
     affiliation: Manas.Tech
 
+  caspiano:
+    name: Caspian Baska
+    role: Developer
+    affiliation: Manas.Tech
+
 alumni:
   ggiraldez:
     name: Gustavo Giraldez
