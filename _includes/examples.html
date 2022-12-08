@@ -1,16 +1,16 @@
 <div class="examples">
 
-  {% for sample in site.data.home_page_codes %}
-  <input id="{{sample.class}}" type="radio" name="codes"{% if forloop.index == 1 %} checked="checked"{% endif %}>
+  {% for sample in site.samples %}
+  <input id="{{sample.id}}" type="radio" name="codes"{% if forloop.index == 1 %} checked="checked"{% endif %}>
   {% endfor %}
 
   <div class="grid sidebar center">
 
     <div class="description">
 
-      {% for sample in site.data.home_page_codes %}
-      <article class="{{sample.class}}">
-        <h2>{{sample.name}}</h2>
+      {% for sample in site.samples %}
+      <article class="{{sample.id}}">
+        <h2>{{sample.title}}</h2>
         <p>{{sample.description}}</p>
         {% if sample.read_more_url %}<a href="{{sample.read_more_url}}" class="left ico api_docs white">{{sample.read_more_label}}</a>{% endif %}
       </article>
@@ -21,21 +21,21 @@
     <div class="code mobile-wrapper">
 
       <div class="inner">
-        {% for sample in site.data.home_page_codes %}
-        <div class='{{sample.class}} code_section white{% if sample.run %} run{% endif %}'>
-          {% include {{sample.code | prepend: "samples/" }} %}
+        {% for sample in site.samples %}
+        <div class='{{sample.id}} code_section white{% if sample.playground %} run{% endif %}'>
+          {{sample.content }}
         </div>
         {% endfor %}
       </div>
 
       <ul class="controls">
-        {% for sample in site.data.home_page_codes %}
+        {% for sample in site.samples %}
         {% if sample.short_name %}
         {%   assign name = sample.short_name %}
         {% else %}
-        {%   assign name = sample.name %}
+        {%   assign name = sample.title %}
         {% endif %}
-        <li><label for="{{sample.class}}">{{name}}</label></li>
+        <li><label for="{{sample.id}}">{{name}}</label></li>
         {% endfor %}
       </ul>
 

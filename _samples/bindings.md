@@ -1,4 +1,13 @@
-{% highlight crystal %}
+---
+title: C-bindings
+description: >
+  Crystal has a dedicated syntax to easily call native libraries, eliminating the need to reimplement low-level tasks.
+read_more_url: https://crystal-lang.org/reference/syntax_and_semantics/c_bindings/
+read_more_label: Learn how to bind to C libraries
+tags: c_bindings
+---
+
+```crystal
 # Fragment of the BigInt implementation that uses GMP
 @[Link("gmp")]
 lib LibGMP
@@ -25,4 +34,4 @@ struct BigInt
 end
 
 puts "10*100 > 20*50 😂" if BigInt.new("10"*100) > BigInt.new("20"*50)
-{% endhighlight %}
+```

@@ -16,6 +16,8 @@ collections:
     output: true
   style_guide:
     output: false
+  samples:
+    output: false
 
 defaults:
   -
@@ -50,6 +52,11 @@ defaults:
       permalink: /:year/:month/:day/:title.html
       image: /assets/icon.png
       class: release
+  - scope:
+      path: ""
+      type: samples
+    values:
+      playground: true
 
 twitter:
   username: CrystalLanguage
