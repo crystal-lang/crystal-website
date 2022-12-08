@@ -27,102 +27,21 @@ custom_body_classes:
 
   <hr class="fullwidth" />
 
+  {%- assign samples = site.samples | sort: 'weight' %}
+  {%- for sample in samples %}
   <div class="row">
     <div class="col s12">
-      <h2>Syntax</h2>
-      <p>Crystal’s syntax is heavily inspired by Ruby’s, so it feels natural to read and easy to write, and has the
-        added benefit of a lower learning curve for experienced Ruby devs.</p>
+      <h2>{{ sample.title }}</h2>
+      <p>{{ sample.description }}</p>
       <div class='code_section'>
-        {% include samples/server.md %}
+        {{ sample.content | markdownify }}
       </div>
-      <p class="read-more"><a href="https://crystal-lang.org/reference/getting_started/">Start learning Crystal with the Language
-          Reference</a></p>
+      {%- if sample.read_more %}
+      <p class="read-more">{{ sample.read_more | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</p>
+      {%- endif %}
     </div>
   </div>
-
-  <div class="row">
-    <div class="col s12">
-      <h2>Type system</h2>
-      <p>Crystal is statically type checked, so any type errors will be caught early by the compiler rather than fail on
-        runtime. Moreover, and to keep the language clean, Crystal has built-in type inference, so most type annotations
-        are unneeded.</p>
-      <div class="code_section">
-        {% include samples/type_system.md %}
-      </div>
-      <p class="read-more"><a href="https://crystal-lang.org/reference/syntax_and_semantics/types_and_methods.html">Read more
-          about Crystal's type system</a></p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s12">
-      <h2>Null reference checks</h2>
-      <p>All types are non-nilable in Crystal, and nilable variables are represented as a union between the type and
-        nil. As a consequence, the compiler will automatically check for null references in compile time, helping
-        prevent the dreadful <a href="https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare" target="_blank">billion-dollar mistake</a>.</p>
-      <div class="code_section">
-        {% include samples/null.md %}
-      </div>
-      <p>Running the previous file:</p>
-      <div class="code_section">
-        <figure class="highlight console">
-          {% include samples/null_refs.html %}
-        </figure>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s12">
-      <h2>Macros</h2>
-      <p>Crystal’s answer to metaprogramming is a powerful macro system, which ranges from basic templating and AST
-        inspection, to types inspection and running arbitrary external programs.</p>
-      <div class="code_section">
-        {% include samples/macros.md %}
-      </div>
-      <p class="read-more"><a href="https://crystal-lang.org/reference/syntax_and_semantics/macros.html">Read more about
-          macros</a></p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s12">
-      <h2>Concurrency Model</h2>
-      <p>Crystal uses green threads, called fibers, to achieve concurrency. Fibers communicate with each other using
-        channels, as in Go or Clojure, without having to turn to shared memory or locks. </p>
-      <div class="code_section">
-        {% include samples/concurrency.md %}
-      </div>
-      <p class="read-more"><a href="https://crystal-lang.org/reference/guides/concurrency.html">Read more about Crystal's
-          concurrency model</a></p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s12">
-      <h2>C-bindings</h2>
-      <p>Crystal has a dedicated syntax to easily call native libraries, eliminating the need to reimplement low-level
-        tasks.</p>
-      <div class="code_section">
-        {% include samples/bindings.md %}
-      </div>
-      <p class="read-more"><a href="https://crystal-lang.org/reference/syntax_and_semantics/c_bindings/">Learn how to bind to
-          C libraries</a></p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s12">
-      <h2>Dependencies</h2>
-      <p>Crystal libraries are packed as Shards, and distributed via Git without needing a centralised repository. Built
-        in commands allow dependencies to be easily specified through a YAML file and fetched from their respective
-        repositories.</p>
-      <div class="code_section">
-        {% include samples/dependencies.md %}
-      </div>
-      <p class="read-more"><a href="https://github.com/crystal-lang/shards">Read more about Shards in the repo</a></p>
-    </div>
-  </div>
+  {%- endfor %}
 
   <div class="row center">
     <div class="col s12">
