@@ -39,6 +39,14 @@ deps: Gemfile.lock
 Gemfile.lock: Gemfile
 	bundle install
 
+.PHONY: update_sponsors
+update_sponsors: scripts/merge.cr fetch_opencollective ## Update sponsor data (fetch from opencollective and merge into _data/sponsors.csv)
+	crystal $<
+
+.PHONY: fetch_opencollective
+fetch_opencollective: scripts/opencollective.cr
+	crystal $<
+
 .PHONY: check_html
 check_html: $(O) $(htmlproofer) ## Validates generated HTML
 	$(htmlproofer) $(O) \
