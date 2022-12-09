@@ -16,25 +16,21 @@ How easy? Let's take a look at some code.
 
 **Q:** Which of the following modules are written in Ruby? Which in Crystal?
 
-<div class="code_section">
-{% highlight ruby %}
+```ruby
 module Year
   def self.leap?(year)
     year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)
   end
 end
-{% endhighlight %}
-</div>
+```
 
-<div class="code_section">
-{% highlight ruby %}
+```ruby
 module Hamming
   def self.distance(a,b)
     a.chars.zip(b.chars).count{|first, second| first != second }
   end
 end
-{% endhighlight %}
-</div>
+```
 
 **A:** Trick question - it's both. The modules above will work in [Ruby](https://repl.it/@marksiemers1/HammingLeapYear) or [Crystal](https://play.crystal-lang.org/#/r/3ayq). How cool is that?
 
@@ -54,17 +50,14 @@ Crystal is a compiled language and checks all your method inputs and outputs at 
 
 Let's revisit the `Year::leap?` example from above. In Ruby, what happens when the input isn't an integer?
 
-<div class="code_section">
-{% highlight ruby %}
+```ruby
 Year.leap?("2016") #=> false
 Year.leap?(Date.new(2016, 1, 1)) #=> undefined method `%' for #<Date: 2016-01-01 ... >
-{% endhighlight %}
-</div>
+```
 
 For a `String` we get the wrong answer, for a `Date` we get a runtime exception. Fixing things in Ruby would require at least one `is_a?` statement:
 
-<div class="code_section">
-{% highlight ruby %}
+```ruby
 module Year
   def self.leap?(input)
     if input.is_a? Integer
@@ -76,27 +69,23 @@ module Year
     end
   end
 end
-{% endhighlight %}
-</div>
+```
 
 Does [that method](https://repl.it/@marksiemers1/LeapYearOverloads) look good to you? We still have a chance at a runtime exception, just with a more helpful error message.
 
 In Crystal, we have the option of explicitly typing our inputs (and outputs). We can change the method signature to `self.leap?(year : Int)` and we are guaranteed to have an integer as input.
 
 We get helpful messages __at compile time__, rather than runtime:
-<div class="code_section">
-{% highlight ruby %}
+```ruby
 Year.leap?("2016")
 Error in line 10: no overload matches 'Year.leap?' with type String
 Overloads are:
  - Year.leap?(year : Int)
-{% endhighlight %}
-</div>
+```
 
 If we want to add support for `Time` (think `DateTime` in Ruby) in our module, we can overload `Year::leap?`:
 
-<div class="code_section">
-{% highlight ruby %}
+```ruby
 module Year
   def self.leap?(year : Int)
     year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)
@@ -106,8 +95,7 @@ module Year
     self.leap?(time.year)
   end
 end
-{% endhighlight %}
-</div>
+```
 
 Like Ruby, method overloading allows flexibility with inputs but without the guesswork of duck-typing. Compile time checks prevent type mismatch errors from making it to production.
 
@@ -139,8 +127,7 @@ Have you ever read Ruby’s source code? Tried to figure out how some `Enumerabl
 
 [Ruby’s Implementation of `Enumerable#all?`](https://github.com/ruby/ruby/blob/v2_5_0/enum.c#L1215)
 
-<div class="code_section">
-{% highlight c %}
+```c
 static VALUE
 enum_all(int argc, VALUE *argv, VALUE obj)
 {
@@ -148,21 +135,18 @@ enum_all(int argc, VALUE *argv, VALUE obj)
     rb_block_call(obj, id_each, 0, 0, ENUMFUNC(all), (VALUE)memo);
     return memo->v1;
 }
-{% endhighlight %}
-</div>
+```
 
 How long does it take to figure out what that code is doing? If you've never worked with C code, probably a really long time.
 
 Compare that to [Crystal's implementation of `Enumerable#all?`](https://github.com/crystal-lang/crystal/blob/v0.24.1/src/enumerable.cr#L46)
 
-<div class="code_section">
-{% highlight ruby %}
+```ruby
 def all?
   each { |e| return false unless yield e }
   true
 end
-{% endhighlight %}
-</div>
+```
 
 How long did that take to figure out? If you know Ruby or Crystal, probably a matter of seconds.
 

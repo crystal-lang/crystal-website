@@ -17,8 +17,7 @@ Charly is a dynamically typed and object-oriented programming language. The synt
 
 Below is an implementation of the [Bubblesort algorithm](https://en.wikipedia.org/wiki/Bubblesort) written in Charly. It is part of the standard library which is also written in Charly.
 
-<div class="code_section">
-{% highlight javascript %}
+```javascript
   func sort(sort_function) {
     const sorted = @copy()
 
@@ -41,13 +40,11 @@ Below is an implementation of the [Bubblesort algorithm](https://en.wikipedia.or
 
     sorted
   }
-{% endhighlight javascript %}
-</div>
+```
 
 This program prints out the [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set) in a 60x180 sized box.
 
-<div class="code_section">
-{% highlight javascript %}
+```javascript
 60.times(func(a) {
   180.times(func(b) {
     let x = 0
@@ -71,8 +68,7 @@ This program prints out the [Mandelbrot set](https://en.wikipedia.org/wiki/Mande
 
   write("\n")
 })
-{% endhighlight javascript %}
-</div>
+```
 
 [This link](https://gist.github.com/KCreate/62f0f135697ad3df3b3801b194b03acc) takes you to an expression parser / interpreter written entirely in Charly. It supports the addition and multiplication of integer values.
 
