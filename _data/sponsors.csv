@@ -1,21 +1,21 @@
 logo,name,url,last_payment,all_time,since,level
-sponsors/84.png,84 codes,https://www.84codes.com/,€5000,€191000,"Apr 1, 2018",5000
-sponsors/nikola_motor_company.png,Nikola Motor Company,https://nikolamotor.com/,$5000,$130000,"Mar 1, 2020",5000
-sponsors/placeos.png,PlaceOS,https://place.technology/,$250,$3750,"Jul 26, 2021",250
+sponsors/84.png,84 codes,https://www.84codes.com/,"€5,000","€191,000","Apr 1, 2018",5000
+sponsors/nikola_motor_company.png,Nikola Motor Company,https://nikolamotor.com/,"$5,000","$130,000","Mar 1, 2020",5000
+sponsors/placeos.png,PlaceOS,https://place.technology/,$250,"$3,750","Jul 26, 2021",250
 sponsors/ark.png,Ark,https://ark.fm,$250,$250,"Nov 1, 2022",250
-sponsors/dutchie.png,Dutchie,https://dutchie.com,$150,$3450,"Nov 23, 2020",150
+sponsors/dutchie.png,Dutchie,https://dutchie.com,$150,"$3,450","Nov 23, 2020",150
 sponsors/jonathan_siegel.png,Jonathan Siegel,https://www.linkedin.com/in/jsiegel,$150,$450,"Sep 12, 2022",150
-sponsors/blitline.png,Blitline,https://www.blitline.com,$75,$3600,"Dec 12, 2018",75
-sponsors/vulk_cooperative.png,Vulk Cooperative,https://www.vulk.coop,$75,$3450,"Sep 10, 2020",75
-sponsors/prestodoctor.png,PrestoDoctor,https://prestodoctor.com,$75,$3375,"Dec 28, 2020",75
-sponsors/ryan_maki.png,Ryan Maki,,$75,$1800,"Dec 2, 2020",75
-,lowkey,,$75,$1215,"Jun 12, 2021",75
-,Thomas Peter Berntsen,https://twitter.com/tpberntsen,$25,$4375,"Sep 20, 2015",25
-,isaacsloan,https://isaacsloan.com,$36,$2506,"Mar 24, 2016",25
-,Frank O'Hara,,$25,$1900,"Aug 16, 2015",25
-,Jerome Gravel-Niquet,http://www.fly.io,$25,$1775,"Jan 28, 2016",25
-,Linus Sellberg,,$25,$1320,"Feb 21, 2017",25
-,Dave Doyle,http://twitter.com/meraxes,$25,$1125,"Mar 28, 2018",25
+sponsors/blitline.png,Blitline,https://www.blitline.com,$75,"$3,600","Dec 12, 2018",75
+sponsors/vulk_cooperative.png,Vulk Cooperative,https://www.vulk.coop,$75,"$3,450","Sep 10, 2020",75
+sponsors/prestodoctor.png,PrestoDoctor,https://prestodoctor.com,$75,"$3,375","Dec 28, 2020",75
+sponsors/ryan_maki.png,Ryan Maki,,$75,"$1,800","Dec 2, 2020",75
+,lowkey,,$75,"$1,215","Jun 12, 2021",75
+,Thomas Peter Berntsen,https://twitter.com/tpberntsen,$25,"$4,375","Sep 20, 2015",25
+,isaacsloan,https://isaacsloan.com,$36,"$2,506","Mar 24, 2016",25
+,Frank O'Hara,,$25,"$1,900","Aug 16, 2015",25
+,Jerome Gravel-Niquet,http://www.fly.io,$25,"$1,775","Jan 28, 2016",25
+,Linus Sellberg,,$25,"$1,320","Feb 21, 2017",25
+,Dave Doyle,http://twitter.com/meraxes,$25,"$1,125","Mar 28, 2018",25
 ,Qard,http://stephenbelanger.com,$25,$965,"Aug 21, 2015",25
 ,Raels Koder,,$25,$925,"Oct 30, 2019",25
 ,Kagi,https://kagi.com,$25,$800,"Apr 8, 2020",25
@@ -50,7 +50,7 @@ sponsors/ryan_maki.png,Ryan Maki,,$75,$1800,"Dec 2, 2020",75
 ,Sekeol Kim,,$10,$60,"May 23, 2022",10
 ,Dmitri Goutnik,https://github.com/dmgk,$10,$55,"Nov 4, 2021",10
 ,Jeffrey Crochet,,$10,$40,"Aug 6, 2022",10
-,jeron,,$5,$1160,"Jan 18, 2018",5
+,jeron,,$5,"$1,160","Jan 18, 2018",5
 ,Sho Kusano,https://aduca.org,$5,$483,"Aug 4, 2015",5
 ,msky026,http://qiita.com/msky026,$5,$450,"Oct 23, 2015",5
 ,David Hofer,http://twitter.com/hofer,$5,$375,"Aug 6, 2015",5
@@ -123,11 +123,11 @@ sponsors/ryan_maki.png,Ryan Maki,,$75,$1800,"Dec 2, 2020",75
 ,Rob Fors,,$1,$37,"Nov 18, 2018",1
 ,Kendall Park,,$1,$37,"Nov 22, 2018",1
 ,Sergey Kojin,,$1,$26,"Oct 7, 2019",1
-,Tumbler Lock,,$0,$1500,"Dec 27, 2018",0
-,Julien Reichardt,,$0,$1150,"Dec 13, 2018",0
-,Andrew Lewman,,$0,$1050,"Aug 6, 2020",0
-,Screen capture,,$0,$1000,"Nov 19, 2021",0
-,Screen recorder,,$0,$1000,"Nov 19, 2021",0
+,Tumbler Lock,,$0,"$1,500","Dec 27, 2018",0
+,Julien Reichardt,,$0,"$1,150","Dec 13, 2018",0
+,Andrew Lewman,,$0,"$1,050","Aug 6, 2020",0
+,Screen capture,,$0,"$1,000","Nov 19, 2021",0
+,Screen recorder,,$0,"$1,000","Nov 19, 2021",0
 ,ATNOS,,$0,$675,"Dec 11, 2020",0
 ,Triplebyte,,$0,$640,"Mar 22, 2019",0
 ,Nookwit,,$0,$600,"Aug 27, 2020",0
