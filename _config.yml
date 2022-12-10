@@ -73,6 +73,9 @@ exclude:
 - vendor
 - netlify.toml
 
+sass:
+  style: compressed
+
 highlighter: rouge
 markdown: kramdown
 kramdown:
