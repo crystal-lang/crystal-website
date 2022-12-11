@@ -42,12 +42,12 @@ defaults:
       is_post: true
   -
     scope:
-      path: "install"
+      path: "install/**/*{.html,.md}"
       type: pages
     values:
       image: /assets/icon.png
       layout: install
-      permalink: /install/:basename/
+      permalink: /:path/:basename/
 
   - scope:
       path: ""
