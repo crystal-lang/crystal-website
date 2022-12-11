@@ -1,5 +1,7 @@
 OUTPUT_DIR ?= _site
 
+cache ?=1## enable caching for htmlproofer external link check
+
 htmlproofer = vendor/bin/htmlproofer
 
 .PHONY: build
@@ -25,7 +27,8 @@ check_external_links: $(OUTPUT_DIR) $(htmlproofer)
 		--url-swap "\A\/(api|docs|images|reference):https://crystal-lang.org/\1" \
 		--url-ignore "http://0.0.0.0:8080" \
 		--http-status-ignore 999 \
-		--external_only
+		--external_only \
+		$(if $(cache),--timeframe '30d',)
 
 $(htmlproofer):
 	mkdir -p $(dir $@)
