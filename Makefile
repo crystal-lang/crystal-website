@@ -13,6 +13,8 @@
 
 O ?= _site## Output path
 
+cache ?=1## enable caching for htmlproofer external link check
+
 htmlproofer = vendor/bin/htmlproofer
 
 CONTENT_SOURCES := $(wildcard assets/**) $(wildcard _data/**) $(wildcard _events/**) $(wildcard _pages/**) $(wildcard _posts/**) $(wildcard _releases/**)
@@ -64,7 +66,8 @@ check_external_links: $(O) $(htmlproofer) ## Validates external links in generat
 		--url-swap "\A\/(api|docs|images|reference):https://crystal-lang.org/\1" \
 		--url-ignore "http://0.0.0.0:8080" \
 		--http-status-ignore 999 \
-		--external_only
+		--external_only \
+		$(if $(cache),--timeframe '30d',)
 
 $(htmlproofer):
 	mkdir -p $(dir $@)
