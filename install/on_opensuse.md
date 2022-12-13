@@ -59,4 +59,4 @@ sudo zypper dup --from https://download.opensuse.org/repositories/devel:/languag
 sudo zypper rr https://dl.bintray.com/crystal/rpm/all/x86_64/stable
 ```
 
-{% include install_from_snapcraft.md distro="opensuse" %}
+{% include install/from_snapcraft.md distro="opensuse" %}

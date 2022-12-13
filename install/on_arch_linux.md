@@ -11,4 +11,4 @@ Arch Linux includes the Crystal compiler in the Community repository. You should
 sudo pacman -S crystal shards
 ```
 
-{% include install_from_snapcraft.md distro="arch" %}
+{% include install/from_snapcraft.md distro="arch" %}
