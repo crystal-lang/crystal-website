@@ -44,12 +44,12 @@ defaults:
       is_post: true
   -
     scope:
-      path: "install"
+      path: "install/**/*{.html,.md}"
       type: pages
     values:
       image: /assets/icon.png
       layout: install
-      permalink: /install/:basename/
+      permalink: /:path/:basename/
 
   - scope:
       path: ""
@@ -92,3 +92,5 @@ kramdown:
       css_class: code_section
 
 repository: crystal-lang/crystal-website
+
+callouts: ["NOTE"]
