@@ -10,27 +10,18 @@ collections:
     output: true
   style_guide:
     output: false
+  pages:
+    output: true
+    permalink: /:path/
 
 defaults:
-
-  # This is a duplication of the next scope, but with index file name.
-  # It ensures that index files are treated as a directory index, and generate sub paths.
   -
     scope:
-      path: "**/index{.html,.md}"
+      path: ""
       type: pages
     values:
       image: /assets/icon.png
       layout: page
-      permalink: /:path/
-  -
-    scope:
-      path: "**/*{.html,.md}"
-      type: pages
-    values:
-      image: /assets/icon.png
-      layout: page
-      permalink: /:path/:basename/
   -
     scope:
       path: ""
@@ -42,12 +33,11 @@ defaults:
       is_post: true
   -
     scope:
-      path: "install/**/*{.html,.md}"
+      path: "_pages/install"
       type: pages
     values:
       image: /assets/icon.png
       layout: install
-      permalink: /:path/:basename/
 
   - scope:
       path: ""
