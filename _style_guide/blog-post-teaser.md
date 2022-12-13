@@ -11,4 +11,4 @@ post:
   url: /2021/08/13/install-specific-versions/
 ---
 
-{% include blog_row.html post=page.post %}
+{% include posts/blog_row.html post=page.post %}
