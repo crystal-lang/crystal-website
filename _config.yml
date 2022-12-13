@@ -10,6 +10,8 @@ collections:
     output: true
   style_guide:
     output: false
+  events:
+    output: true
   pages:
     output: true
     permalink: /:path/
@@ -46,6 +48,14 @@ defaults:
       layout: post
       permalink: /:year/:month/:day/:title/
       image: /assets/icon.png
+  -
+    scope:
+      path: ""
+      type: events
+    values:
+      image: /assets/icon.png
+      layout: page
+      permalink: /events/:title/
 
 twitter:
   username: CrystalLanguage
