@@ -16,7 +16,7 @@
     margin-block-start: var(--block-flow-md);
   }
 
-  :where(& > :is(h1, h2, h3, h4) + *) {
+  :where(& > :is(h1, h2, h3, h4, .header-wrapper) + *) {
     margin-block-start: var(--block-flow-xs);
   }
 
