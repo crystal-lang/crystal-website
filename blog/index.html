@@ -9,7 +9,7 @@ description: Here you can find detailed announcements for new releases, some int
       {% assign articles = site.posts %}
       <div class='post-list'>
         {% for post in articles %}
-        {% include blog_row.html post=post %}
+        {% include posts/blog_row.html post=post %}
         {% endfor %}
       </div>
       <p><a href="javascript:void(0)" id="more-articles">More articles</a></p>

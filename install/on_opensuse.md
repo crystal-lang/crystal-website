@@ -73,4 +73,4 @@ sudo zypper rr https://dl.bintray.com/crystal/rpm/all/x86_64/stable
 {% endhighlight bash %}
 </div>
 
-{% include install_from_snapcraft.md distro="opensuse" %}
+{% include install/from_snapcraft.md distro="opensuse" %}
