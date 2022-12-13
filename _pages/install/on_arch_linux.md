@@ -13,4 +13,4 @@ sudo pacman -S crystal shards
 {% endhighlight bash %}
 </div>
 
-{% include install_from_snapcraft.md distro="arch" %}
+{% include install/from_snapcraft.md distro="arch" %}

@@ -72,3 +72,5 @@ kramdown:
       css_class: code_section
 
 repository: crystal-lang/crystal-website
+
+callouts: ["NOTE"]
