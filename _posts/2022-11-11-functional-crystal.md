@@ -371,7 +371,8 @@ class Compound < Food
     end
     io << ")"
   end
-end```
+end
+```
 
 Note how we are leaving to the compiler the task of deciding which method to call when calling `f.to_s` for each element in `ingredients` (🤓 fact: Crystal uses [multiple dispatch](https://en.wikipedia.org/wiki/Multiple_dispatch)).
 
