@@ -1,5 +1,18 @@
 [
   {
+    "name": "Twicsy",
+    "last_payment": 10.0,
+    "all_time": 10.0,
+    "since": "Dec 14, 2022"
+  },
+  {
+    "name": "wildcasinoreview.com",
+    "url": "https://wildcasinoreview.com",
+    "last_payment": 25.0,
+    "all_time": 25.0,
+    "since": "Dec 9, 2022"
+  },
+  {
     "name": "Inkognito",
     "last_payment": 2.0,
     "all_time": 2.0,
@@ -150,7 +163,7 @@
   {
     "name": "Benjamin Klotz",
     "last_payment": 25.0,
-    "all_time": 85.0,
+    "all_time": 110.0,
     "since": "May 2, 2022"
   },
   {
@@ -279,7 +292,7 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5.0,
-    "all_time": 65.0,
+    "all_time": 70.0,
     "since": "Nov 11, 2021"
   },
   {
@@ -469,7 +482,7 @@
   {
     "name": "Joseph Method",
     "last_payment": 5.0,
-    "all_time": 85.0,
+    "all_time": 90.0,
     "since": "Jul 9, 2021"
   },
   {
@@ -520,7 +533,7 @@
     "name": "Windesol Sähkön Kilpailutus",
     "url": "https://windesol.fi",
     "last_payment": 5.0,
-    "all_time": 90.0,
+    "all_time": 95.0,
     "since": "Jun 8, 2021"
   },
   {
