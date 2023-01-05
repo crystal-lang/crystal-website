@@ -42,6 +42,10 @@ core:
     status: active
     affiliation: Manas.Tech
 
+  Blacksmoke16:
+    status: active
+    name: George Dietrich
+
 admin:
   nditada:
     name: Nicolás di Tada
@@ -87,5 +91,3 @@ alumni:
     name: Stephanie Wilde-Hobbs
 
 moderators:
-  Blacksmoke16:
-    name: George Dietrich
