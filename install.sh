@@ -189,7 +189,7 @@ if [[ -z "${DISTRO_REPO}" ]]; then
 fi
 
 _install_apt() {
-  if [[ -z $(command -v wget &> /dev/null) ]] || [[ -z $(command -v gpg &> /dev/null) ]]; then
+  if ! command -v wget &> /dev/null || ! command -v gpg &> /dev/null; then
     [[ -f /etc/apt/sources.list.d/crystal.list ]] && rm -f /etc/apt/sources.list.d/crystal.list
     apt-get update
     apt-get install -y wget gpg
@@ -244,7 +244,7 @@ _install_dnf() {
 }
 
 _install_zypper() {
-  if [[ -z $(command -v curl &> /dev/null) ]]; then
+  if ! command -v curl &> /dev/null; then
     zypper refresh
     zypper install -y curl
   fi
