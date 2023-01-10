@@ -41,6 +41,10 @@ deps: Gemfile.lock
 Gemfile.lock: Gemfile
 	bundle install
 
+.PHONY: install.sh
+install.sh: ## Fetch install.sh from distribution-scripts repository
+	curl -L https://github.com/crystal-lang/distribution-scripts/raw/master/packages/scripts/install.sh > $@
+
 .PHONY: update_sponsors
 update_sponsors: scripts/merge.cr fetch_opencollective ## Update sponsor data (fetch from opencollective and merge into _data/sponsors.csv)
 	crystal $<
