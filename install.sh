@@ -104,7 +104,7 @@ _discover_distro_repo() {
       ;;
     opensuse-leap)
       _check_version_id
-      DISTRO_REPO="openSUSE_Leap_${VERSION_ID}"
+      DISTRO_REPO="${VERSION_ID}"
       ;;
     "")
       _error "Unable to identify distribution. You may specify one with environment variable DISTRO_REPO"
@@ -189,7 +189,7 @@ if [[ -z "${DISTRO_REPO}" ]]; then
 fi
 
 _install_apt() {
-  if [[ -z $(command -v wget &> /dev/null) ]] || [[ -z $(command -v gpg &> /dev/null) ]]; then
+  if ! command -v wget &> /dev/null || ! command -v gpg &> /dev/null; then
     [[ -f /etc/apt/sources.list.d/crystal.list ]] && rm -f /etc/apt/sources.list.d/crystal.list
     apt-get update
     apt-get install -y wget gpg
@@ -244,7 +244,7 @@ _install_dnf() {
 }
 
 _install_zypper() {
-  if [[ -z $(command -v curl &> /dev/null) ]]; then
+  if ! command -v curl &> /dev/null; then
     zypper refresh
     zypper install -y curl
   fi
@@ -277,7 +277,7 @@ case $DISTRO_REPO in
   CentOS*)
     _install_yum
     ;;
-  openSUSE*)
+  15.* | openSUSE*)
     _install_zypper
     ;;
   *)
