@@ -104,7 +104,7 @@ _discover_distro_repo() {
       ;;
     opensuse-leap)
       _check_version_id
-      DISTRO_REPO="openSUSE_Leap_${VERSION_ID}"
+      DISTRO_REPO="${VERSION_ID}"
       ;;
     "")
       _error "Unable to identify distribution. You may specify one with environment variable DISTRO_REPO"
@@ -277,7 +277,7 @@ case $DISTRO_REPO in
   CentOS*)
     _install_yum
     ;;
-  openSUSE*)
+  15.* | openSUSE*)
     _install_zypper
     ;;
   *)
