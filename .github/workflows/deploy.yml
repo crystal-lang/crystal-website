@@ -17,6 +17,10 @@ jobs:
             tmp/.htmlproofer
           key: gem-${{ hashFiles('Gemfile.lock') }}
           restore-keys: gem-
+      - name: Fetch install.sh
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master' && github.repository_owner == 'crystal-lang'
+        run: |
+          make fetch_install.sh
       - name: Build website
         run: |
           mv docker-compose.ci.yml docker-compose.override.yml
@@ -33,6 +37,5 @@ jobs:
       - name: Deploy to www.crystal-lang.org
         if: github.event_name == 'push' && github.ref == 'refs/heads/master' && github.repository_owner == 'crystal-lang'
         run: |
-          make fetch_install.sh
           aws s3 sync ./_site s3://crystal-website --delete
           ./scripts/set-legacy-url-redirects.bash crystal-website < ./_data/legacy_non_pretty_urls.txt
