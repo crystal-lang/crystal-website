@@ -4,6 +4,8 @@ author: stakach,pettimart
 description: "PlaceOS provides a platform that allows a seamless integration between the physical and the digital. And then they automate it all, to create state-of-the-art cohesive ecosystems in the traditionally conservative space of facility management.
 We sat down with Stephen Von Takach Dukai, Engineering Lead at Place, to talk about their experience working with Crystal."
 ---
+<img src="/assets/blog/2023-01-24-placeos.png" class="center" />
+
 [PlaceOS](https://place.technology/) provides a platform that allows a seamless integration between the physical and the digital. And then they automate it all, to create state-of-the-art cohesive ecosystems in the traditionally conservative space of facility management.
 
 We sat down with Stephen Von Takach Dukai, Engineering Lead at Place, to talk about their experience working with Crystal.
@@ -24,7 +26,7 @@ Also, some of our SaSS / cloud platform software, which includes platform manage
 
 ## How did you learn about the language, and what went into the process of choosing it for your stack? What alternatives did you evaluate, and what other languages are you using?
 
-I think we first noticed Crystal when Mike Perham, of Sidekiq fame, released a Crystal-lang client.
+I think we first noticed Crystal when Mike Perham, creator of Sidekiq, released a Crystal-lang client.
 
 We had been using Ruby for our platform and were hitting scalability limits. Originally we selected Ruby as it's a very expressive language and we had some experience with Rails. However, we ended up having to build our own IO reactor based on Libuv to get the performance we needed.
 Ruby being released in 1996 meant its design pre-dates things like epoll, for high performance IO, which debuted in 2002.
@@ -35,10 +37,11 @@ The other language we use is TypeScript as our frontends are built on the Angula
 
 ## What were some advantages of developing in Crystal, and what were some problems?
 
-Coming from Ruby I personally have found Crystal to be a breath of fresh air. I originally moved to Ruby, as the language I worked on day to day, from C++ and C# and had a similar feeling back then.
+Coming from Ruby I personally have found Crystal to be a breath of fresh air. I originally moved from C++ and C# to Ruby, as the language I worked on day to day, and had a similar feeling back then.
+
 Productivity with Ruby on Rails felt so much higher, I could move fast and be more creative. However, more recently, especially when the solutions were getting bigger and more complex, Ruby felt like an achilles heel: random bugs that are hard to reproduce with unexpected objects in unexpected code paths were really eating up developer time.
 
-Crystal solved most of what felt wrong with Ruby. Types and compiler smarts being the obvious first thing, we were definitely writing better Ruby code after dipping our toes into Crystal. But we also found the Crystal tooling to be great, the formatter, linters like Ameba, testing tools, leveraging LLVM, minimal Docker containers and the community, all helped sway us.
+Crystal solved most of what felt wrong with Ruby. Types and  the smart features of the compiler being the obvious first thing, we were definitely writing better Ruby code after dipping our toes into Crystal. But we also found the Crystal tooling to be great, the formatter, linters like Ameba, testing tools, leveraging LLVM, minimal Docker containers and the community, all helped sway us.
 
 The biggest problem was probably a lack of mature shards at the time, but this just meant we could shape the missing pieces to meet our needs and porting Ruby Gems is typically not much of an issue. Frankly, it's amazing how many bugs we found in every gem we ported just thanks to the Crystal compiler.
 
@@ -47,10 +50,6 @@ The biggest problem was probably a lack of mature shards at the time, but this j
 The benefit to us is the developer productivity of Ruby, with increased confidence in what we're releasing and less focus required on performance. This translates to higher quality applications for customers and cleaner codebases for us.
 
 One example of this is the web framework we built, [Spider-Gazelle](https://spider-gazelle.net/). Originally built as a Rails clone, it now leverages Crystal magic to generate [OpenAPI](https://www.openapis.org/) docs, making it more useful and faster than Rails.
-
-<a href="https://web-frameworks-benchmark.netlify.app/result?f=spider-gazelle,rails">
-  <img src="/assets/blog/2023-01-24-spider-gazelle-perf.png" class="center"/>
-</a>
 
 API documentation was time consuming for developers so this has increased our developer productivity, docs are more accurate (in many cases, now exist) and our compute expenditure is lower when compared to Ruby.
 
