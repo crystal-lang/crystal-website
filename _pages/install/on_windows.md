@@ -6,7 +6,7 @@ To easily install Crystal on Windows you can use the [Scoop](https://scoop.sh/) 
 **Be aware of the fact that Crystal on Windows is** [**not yet complete**](https://github.com/crystal-lang/crystal/issues/5430).
 
 ## Requirements
-* Developer mode enabled in Settings
+* Developer mode [enabled](https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development) in Settings
 * [Scoop](https://scoop.sh/)
 * x64 Native Tools Command Prompt in Windows Terminal
 
