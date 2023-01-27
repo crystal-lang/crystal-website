@@ -17,7 +17,7 @@ scoop install git
 scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal
 ```
 
-If you don't yet have the x64 Native Tools Command Prompt as an option in Windows Terminal, run this command:
+If you don't yet have the x64 Native Tools Command Prompt available, run this command:
 
 ```
 scoop install vs_2022_cpp_build_tools
