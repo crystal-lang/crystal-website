@@ -8,20 +8,23 @@ To easily install Crystal on Windows you can use the [Scoop](https://scoop.sh/) 
 ## Requirements
 * Developer mode [enabled](https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development) in Settings
 * [Scoop](https://scoop.sh/)
-* x64 Native Tools Command Prompt in Windows Terminal
 
 ## Install
+Start by installing git and adding the crystal repository:
+
 ```bash
 scoop install git
 scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal
 ```
 
 If you don't yet have the x64 Native Tools Command Prompt as an option in Windows Terminal, run this command:
+
 ```
 scoop install vs_2022_cpp_build_tools
 ```
 
-Finally
+Finally:
+
 ```
 scoop install crystal
 ```
