@@ -1,14 +1,13 @@
 ---
 title: "Automating smart buildings with Crystal: how PlaceOS creates and manages cohesive environments"
 author: stakach,pettimart
-description: "PlaceOS provides a platform that allows a seamless integration between the physical and the digital. And then they automate it all, to create state-of-the-art cohesive ecosystems in the traditionally conservative space of facility management.
-We sat down with Stephen Von Takach Dukai, Engineering Lead at Place, to talk about their experience working with Crystal."
+summary: "<b>Stephen Von Takach Dukai</b>, <b>Engineering Lead</b> at PlaceOS, talks about their experience working with Crystal."
 ---
 <img src="/assets/blog/2023-01-24-placeos.png" class="center" />
 
 [PlaceOS](https://place.technology/) provides a platform that allows a seamless integration between the physical and the digital. And then they automate it all, to create state-of-the-art cohesive ecosystems in the traditionally conservative space of facility management.
 
-We sat down with Stephen Von Takach Dukai, Engineering Lead at Place, to talk about their experience working with Crystal.
+We sat down with **Stephen Von Takach Dukai**, **Engineering Lead** at Place, to talk about their experience working with Crystal.
 
 ## What projects are you currently using Crystal for? Are they all in production? Are they client-facing or internal tools?
 
