@@ -39,5 +39,5 @@ scoop update crystal
 ```
 
 ## Troubleshooting
-Please see this [repo](https://github.com/neatorobito/scoop-crystal) for more information and support.
+Please see the [`neatorobito/scoop-crystal` repo](https://github.com/neatorobito/scoop-crystal) for more information and support.
 
