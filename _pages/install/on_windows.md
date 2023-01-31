@@ -2,15 +2,30 @@
 subtitle: On Windows (Preview)
 ---
 
-To easily install the Crystal Preview on Windows you can use [Scoop](https://scoop.sh/). 
+To easily install Crystal on Windows you can use the [Scoop](https://scoop.sh/) preview package. 
 **Be aware of the fact that Crystal on Windows is** [**not yet complete**](https://github.com/crystal-lang/crystal/issues/5430).
 
-Before you start the installation, you must ensure that the [required packages](https://github.com/neatorobito/scoop-crystal#requirements) are installed.
+## Requirements
+* [Developer mode enabled](https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development) in Windows Settings
+* [Scoop](https://scoop.sh/)
 
 ## Install
+Start by installing git (if you don't already have it available) and adding the crystal repository:
 
 ```bash
+scoop install git
 scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal
+```
+
+If you don't yet have the x64 Native Tools Command Prompt available, run this command:
+
+```
+scoop install vs_2022_cpp_build_tools
+```
+
+Finally:
+
+```
 scoop install crystal
 ```
 
@@ -22,4 +37,7 @@ When a new Crystal version is released you can upgrade your system using:
 scoop update
 scoop update crystal
 ```
+
+## Troubleshooting
+Please see the [`neatorobito/scoop-crystal` repo](https://github.com/neatorobito/scoop-crystal) for more information and support.
 
