@@ -10,7 +10,7 @@ To easily install Crystal on Windows you can use the [Scoop](https://scoop.sh/) 
 * [Scoop](https://scoop.sh/)
 
 ## Install
-Start by installing git and adding the crystal repository:
+Start by installing git (if you don't already have it available) and adding the crystal repository:
 
 ```bash
 scoop install git
