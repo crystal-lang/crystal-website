@@ -6,6 +6,9 @@
   --black: hsl(0, 0%, 14%);
   --light-gray: hsl(0, 0%, 47%);
 
+  --background-main: var(--white);
+  --background-secondary: var(--tainted-white);
+
   --primary-text: var(--black);
   --primary-code: var(--light-gray);
   --light-text: hsl(0, 0%, 27%);
