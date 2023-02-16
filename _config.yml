@@ -71,6 +71,7 @@ exclude:
 - README.md
 - /scripts/
 - vendor
+- cache
 - netlify.toml
 
 sass:
