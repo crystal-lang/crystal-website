@@ -32,8 +32,6 @@ So, to be prepared, the next steps are:
 
  0. If you are using 1.7, add `-Duse_pcre2` to check how your project fares.
 
- 1. If you are using nightlies, they already have [PR](https://github.com/crystal-lang/crystal/pull/12978) merged, meaning that you don't need to add the flag. You will need to add `-Duse_pcre` to get the old behavior, _but only at runtime!_.
-
- 2. The compiler will use PCRE2 (PR pending). This means that projects that compile on nightlies might see failures when _compiling_ regexes.
+ 1. If you are using nightlies, they already use PCRE2. To get the old behavior, you need to add `-Duse_pcre` —_but only at runtime!_
 
 Keep us posted if your project fails because of this change.  We'll gather the information and possible fixes for others facing similar issues.
