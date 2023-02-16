@@ -1,24 +1,32 @@
 ---
-title: "A necessary breaking change in the Regex engine"
+title: "Heads up: Crystal is upgrading its Regex engine"
 author: beta-ziliani
-summary: "PCRE is at EOL, we need to move to PCRE2"
+summary: "Crystal is upgrading from PCRE to PCRE2"
 ---
 
-Crystal uses since its inception the [PCRE](https://www.pcre.org/) library for dealing with regular expressions. This library has two major versions, and Crystal so far resorted to the first one (PCRE). However, this version is getting at its end of life. Therefore, for the next release (1.8) we are planning to move to its successor, PCRE2.
+Crystal uses since its inception the [PCRE](https://www.pcre.org/) library for dealing with regular expressions. This library has two major versions, and Crystal so far resorted to the first one (PCRE). However, this version reached its end of life. Therefore, for the next release (1.8) we are planning to move to its successor, PCRE2.
+
+## PCRE vs PCRE2
+
+The two library versions, PCRE and PCRE2 are mostly compatible with each other. There are some small differences which can cause breaking changes. But we don't expect many bumps on the ride. Most notably, PCRE2 is stricter than PCRE in some edge cases. This means that PCRE might have accepted some invalid regexes, but PCRE2 will not allow them.
+
+Unfortunately there's [no guide](https://github.com/PCRE2Project/pcre2/issues/51) to help with the porting. The most documented list of changes is [this thread](https://stackoverflow.com/questions/70273084/regex-differences-between-pcre-and-pcre2) in Stackoverflow.
+
+On the plus side, PCRE2 have extended support for interesting features. You can read more about its features in this [Wikipedia article](https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions) or in the [project documentation](https://www.pcre.org/).
+
+## Validation of regex literals
 
 In order to comprehend the roadmap below, it is important to establish an existing difference between the compiler and the stdlib regarding regexes. When you write something like `/(a|b)*/.match "abba"`, the _compiler_ checks the validity of the regex literal. Since its a valid regex expression, it will compile the program successfully. Then, when executing the program, the _stdlib_ bindings to the regex library will perform the actual execution of the matching.
 
 This difference has a consequence: it is possible to check regex literals with one library and then execute them with another.
 
-The two libraries, PCRE and PCRE2, have small differences. Most notably, and where we expect most of the friction to come with this change, is that PCRE2 is typically stricter than PCRE. This means that it will mark as incorrect regexes that were working with PCRE.
-
-Unfortunately there's [no guide](https://github.com/PCRE2Project/pcre2/issues/51) to help with the porting. The most documented list of changes is [this thread](https://stackoverflow.com/questions/70273084/regex-differences-between-pcre-and-pcre2) in Stackoverflow. On the plus side, PCRE2 have extended support for interesting features. You can read more about its features in this [Wikipedia article](https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions) or in the [project documentation](https://www.pcre.org/).
-
-In the last release (1.7) we already added the possibility to use PCRE2 **in the stdlib** with a [compiler flag](https://crystal-lang.org/reference/1.7/syntax_and_semantics/literals/regex.html). That means that if you have 1.7 and PCRE2 installed in your system, you can compile your program or shard with `-Duse_pcre2` and then execute it to see if any of the regexes fail at runtime.  If a regex fails, then it must be rewritten to be compliant with PCRE2.
+In the last release (1.7) we already added the possibility to opt-in to PCRE2 **in the stdlib** with a [compiler flag](https://crystal-lang.org/reference/1.7/syntax_and_semantics/literals/regex.html). That means that if you have 1.7 and PCRE2 installed in your system, you can compile your program or shard with `-Duse_pcre2` and then execute it to see if any of the regexes fail at runtime.  If a regex fails, then it must be rewritten to be compliant with PCRE2.
 
 In the coming release, PCRE2 will be used by the compiler and the stdlib by default. It will be possible to use PCRE still (`-Duse_pcre`), but the compiler binaries will use PCRE2 to validate regex literals. If you want to keep using the old PCRE, you'll have to compile the compiler itself with this flag.
 
-We're still 50 days from 1.8, giving us time to introduce the changes into the nightly builds and to let the community test their shards and projects for incompatibilities. If we find the breakage is too big and that we need more time to process it, then we'll revert it before the release and push it for 1.9.
+## Roadmap
+
+We're still more than a month away from 1.8, giving us time to introduce the changes into the nightly builds and to let the community test their shards and projects for incompatibilities.
 
 So, to be prepared, the next steps are:
 
