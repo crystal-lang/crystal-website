@@ -42,5 +42,5 @@ So, to be prepared, we suggest you to:
 
 Keep us posted if your project fails because of this change.  We'll gather the information and possible fixes for others facing similar issues.
 
-> **NOTE:** ⚠️ Package maintainers ⚠️
+> **NOTE:** ⚠️Package maintainers ⚠️
 > Please switch to PCRE2 no later than in 1.8.
