@@ -12,13 +12,11 @@ The two library versions, PCRE and PCRE2 are mostly compatible with each other. 
 
 Unfortunately there's [no guide](https://github.com/PCRE2Project/pcre2/issues/51) to help with the porting. The most documented list of changes is [this thread](https://stackoverflow.com/questions/70273084/regex-differences-between-pcre-and-pcre2) on Stackoverflow.
 
-
 On the plus side, PCRE2 have extended support for interesting features. You can read more about its features in this [Wikipedia article](https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions) or in the [project documentation](https://www.pcre.org/).
 
 ## Validation of regex literals
 
 In order to comprehend the roadmap below, it is important to establish an existing difference between the compiler and the stdlib regarding regexes. When you write something like `/(a|b)*/.match "abba"`, the _compiler_ checks the validity of the regex literal (`/(a|b)/`). An invalid expression would result in a syntax error. Then, when executing the program, the _stdlib_ bindings to the regex library will perform the actual execution of the matching.
-
 
 This difference has a consequence: it is possible to check regex literals with one library and then execute them with another.
 
@@ -32,12 +30,17 @@ If you need to keep using the old PCRE and the compiler considers a literal as i
 
 We're still more than a month away from 1.8, giving us time to introduce the changes into the nightly builds and to let the community test their shards and projects for incompatibilities.
 
-So, to be prepared, the next steps are:
+So, to be prepared, we suggest you to:
 
- 0. If you are using 1.7, use the compiler flag `-Duse_pcre2` to check how your project fares.
+ 1. If you are using 1.7, use the compiler flag `-Duse_pcre2` to check how your project fares.
 
+ 2. If you are using nightlies, they already use PCRE2. To get the old behavior, you need to add `-Duse_pcre` (remember this _only affects runtime_ behavior, not the syntax or regex literals).
 
- 1. If you are using nightlies, they already use PCRE2. To get the old behavior, you need to add `-Duse_pcre` (remember this _only affects runtime_ behaviour, not the syntax or regex literals).
+ 3. Fix every regex that is causing trouble.
 
+ 4. Remove `-Duse_pcre` if you added it in 2: support for PCRE will not be guaranteed after 1.9.
 
 Keep us posted if your project fails because of this change.  We'll gather the information and possible fixes for others facing similar issues.
+
+> **NOTE:** ⚠️ Package maintainers ⚠️
+> Please switch to PCRE2 no later than in 1.8.
