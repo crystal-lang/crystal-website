@@ -26,7 +26,7 @@ In the coming release, PCRE2 will be used by the compiler and the stdlib by defa
 
 If you need to keep using the old PCRE and the compiler considers a literal as invalid due to restrictions in PCRE2, you can convert the literal into a `Regex.new` call which receive the expression as a string literal. For performance reasons it's recommended to cache the `Regex` instance (for example in a constant).
 
-## Roadmap
+## Migrating your project to PCRE2
 
 We're still more than a month away from 1.8, giving us time to introduce the changes into the nightly builds and to let the community test their shards and projects for incompatibilities.
 
@@ -36,11 +36,11 @@ So, to be prepared, we suggest you to:
 
  2. If you are using nightlies, they already use PCRE2. To get the old behavior, you need to add `-Duse_pcre` (remember this _only affects runtime_ behavior, not the syntax or regex literals).
 
- 3. Fix every regex that is causing trouble.
+ 3. Fix every regex that is causing trouble, if any.
 
  4. Remove `-Duse_pcre` if you added it in 2: support for PCRE will not be guaranteed after 1.9.
 
 Keep us posted if your project fails because of this change.  We'll gather the information and possible fixes for others facing similar issues.
 
-> **NOTE:** ⚠️Package maintainers ⚠️
+> **NOTE:** ⚠️ Package maintainers ⚠️
 > Please switch to PCRE2 no later than in 1.8.
