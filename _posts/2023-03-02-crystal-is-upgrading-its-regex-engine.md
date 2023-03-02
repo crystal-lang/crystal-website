@@ -12,7 +12,7 @@ The two library versions, PCRE and PCRE2 are mostly compatible with each other. 
 
 Unfortunately there's [no guide](https://github.com/PCRE2Project/pcre2/issues/51) to help with the porting. The most documented list of changes is [this thread](https://stackoverflow.com/questions/70273084/regex-differences-between-pcre-and-pcre2) on Stackoverflow.
 
-On the plus side, PCRE2 have extended support for interesting features. You can read more about its features in this [Wikipedia article](https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions) or in the [project documentation](https://www.pcre.org/).
+On the plus side, PCRE2 has extended support for interesting features. You can read more about its features in this [Wikipedia article](https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions) or in the [project documentation](https://www.pcre.org/).
 
 ## Validation of regex literals
 
@@ -22,7 +22,7 @@ This difference has a consequence: it is possible to check regex literals with o
 
 In the last release (1.7) we already added the possibility to opt-in to PCRE2 **in the stdlib** with a [compiler flag](https://crystal-lang.org/reference/1.7/syntax_and_semantics/literals/regex.html). That means that if you have 1.7 and PCRE2 installed in your system, you can compile your program or shard with `-Duse_pcre2` and then execute it to see if any of the regexes fail at runtime.  If a regex fails, then it must be rewritten to be compliant with PCRE2.
 
-In the coming release, PCRE2 will be used by the compiler and the stdlib by default. It will be possible to use PCRE in _stdlib_ still with the compiler flag `-Duse_pcre` in case something brakes. But the compiler will always use PCRE2 to validate regex literals. This is important for consistency because it directly affects the syntax of Crystal.
+In the coming release, PCRE2 will be used by the compiler and the stdlib by default. It will be possible to use PCRE in _stdlib_ still with the compiler flag `-Duse_pcre` in case something breaks. But the compiler will always use PCRE2 to validate regex literals. This is important for consistency because it directly affects the syntax of Crystal.
 
 If you need to keep using the old PCRE and the compiler considers a literal as invalid due to restrictions in PCRE2, you can convert the literal into a `Regex.new` call which receive the expression as a string literal. For performance reasons it's recommended to cache the `Regex` instance (for example in a constant).
 
@@ -40,7 +40,7 @@ So, to be prepared, we suggest you to:
 
  4. Remove `-Duse_pcre` if you added it in 2: support for PCRE will not be guaranteed after 1.9.
 
-Keep us posted if your project fails because of this change.  We'll gather the information and possible fixes for others facing similar issues.
+Keep us posted if your project fails because of this change.  We'll gather the information and share fixes for common issues.
 
 > **NOTE:** ⚠️ Package maintainers ⚠️
 > Please switch to PCRE2 no later than in 1.8.
