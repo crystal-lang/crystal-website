@@ -1,0 +1,30 @@
+:root {
+  // Colors
+  // -------------
+  --white: hsl(0, 0, 100%);
+  --tainted-white: hsl(0, 0%, 96%);
+  --black: hsl(0, 0%, 14%);
+  --light-gray: hsl(0, 0%, 47%);
+
+  --primary-text: var(--black);
+  --primary-code: var(--light-gray);
+  --light-text: hsl(0, 0%, 27%);
+  --lighter-text: var(--light-gray);
+
+  --link-color: hsl(199, 98%, 48%);
+  --link-hover-color: var(--link-color);
+
+  --header-color: var(--light-gray);
+
+  --highlight-bg: var(--tainted-white);
+  --code-bg: var(--tainted-white);
+
+  --border-color-light: hsl(0, 0%, 93%);
+  --border-color: hsl(0, 0%, 87%);
+  --border-color-dark: hsl(0, 0%, 84%);
+
+  // Fonts
+  // -------------
+  --body-font: "Roboto", arial, helvetica, sans-serif;
+  --code-font: "Roboto Mono", monospace;
+}

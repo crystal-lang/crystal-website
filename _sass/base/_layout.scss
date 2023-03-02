@@ -1,0 +1,76 @@
+:root {
+  --padding-sm: clamp(1rem, 3%, 1.5rem);
+  --padding-md: clamp(1.5rem, 6%, 3rem);
+  --padding-lg: clamp(3rem, 12%, 6rem);
+  --block-flow-sm: min(2rem, 4vh);
+  --block-flow-md: min(4rem, 8vh);
+  --block-flow-lg: min(8rem, 16vh);
+}
+
+body {
+  --layout-spacing: max(8vh, 3rem);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--white);
+
+  --main-width: min(100vw - 3rem, var(--container-max, 110ch));
+}
+
+body.layout--page {
+  --container-max: 120ch;
+}
+
+body > * {
+  width: var(--main-width);
+  margin-inline: auto;
+}
+
+body > header {
+  position: relative;
+
+  &::after {
+    content: "";
+    border-bottom: 1px solid var(--border-color);
+
+    @extend .full-width;
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+  }
+
+  width: var(--main-width);
+  display: flex;
+
+  > .mainnav {
+    margin-left: auto;
+  }
+}
+
+body > footer {
+  margin-top: auto;
+}
+
+body > main {
+  @include blockflow(var(--block-flow-lg));
+}
+
+article.page,
+article.page > header {
+  @include blockflow(var(--block-flow-md));
+}
+
+article > main {
+  @include blockflow(var(--block-flow-lg));
+}
+
+section:not([class]) {
+  @include blockflow(var(--block-flow-sm));
+}
+
+hr {
+  border-color: var(--border-color);
+}

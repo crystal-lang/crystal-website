@@ -1,0 +1,33 @@
+.visually-hidden:not(:focus, :active) {
+  clip-path: inset(100%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.icon {
+  > svg {
+    height: 1.2em;
+    fill: currentcolor;
+    display: inline-block;
+  }
+
+  --link-color: var(--light-text);
+  --link-hover-color: var(--lighter-text);
+}
+
+.full-width {
+  width: 100vw;
+  transform: translateX(-50%);
+  margin-left: 50%;
+}
+
+.pill {
+  background: var(--border-color);
+  border-radius: 10px;
+  font-size: 90%;
+  padding: 0 0.75em;
+  font-weight: 400;
+}
