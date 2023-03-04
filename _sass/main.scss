@@ -1,35 +1,30 @@
-// Reset styles
-@import "reset";
+@layer reset, frameworks, defaults, pattern, components, utilities;
 
-// Configuration
 @import "variables";
+@import "mixins/blockflow";
 
-// Base style
-@import "materialize";
-@import "fonts";
+@layer reset {
+  @import "reset";
+}
 
-// Generic styles
-@import "site";
-@import "typography";
-@import "pygment_overrides";
-@import "pygment_white";
-@import "sprites";
+@layer frameworks {
+  @import "pygment_white";
+}
 
-// Imports for components
-@import "components/callout";
-@import "components/code_block";
-@import "components/footer";
+@layer defaults {
+  @import "base/functions";
+  @import "base/fonts";
+  @import "base/typography";
+  @import "base/layout";
+}
 
-// Imports for specific pages
-@import "pages/blog";
-@import "pages/books";
-@import "pages/community";
-@import "pages/conference";
-@import "pages/error";
-@import "pages/home";
-@import "pages/install";
-@import "pages/media";
-@import "pages/sponsors";
-@import "pages/style-guide";
-@import "pages/team";
-@import "pages/used_in_prod";
+@layer components {
+  @import "components/navbar";
+}
+
+@layer pages {
+}
+
+@layer utilities {
+  @import "utilities";
+}

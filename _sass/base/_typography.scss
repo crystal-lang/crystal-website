@@ -1,0 +1,156 @@
+@use "sass:map";
+@use "sass:math";
+
+$font-size-ratio: 1.25 !default;
+$font-size-base: 1rem !default;
+$font-size-sm: 0.9rem !default;
+$font-size-lg: 1.1rem !default;
+$font-sizes: (
+  h1: math.pow($font-size-ratio, 4) * $font-size-base,
+  h2: math.pow($font-size-ratio, 3) * $font-size-base,
+  h3: math.pow($font-size-ratio, 2) * $font-size-base,
+  h4: math.pow($font-size-ratio, 1) * $font-size-base,
+  h5: $font-size-base,
+  h6: $font-size-base,
+);
+
+:root {
+  --line-height-sm: 1.2;
+  --line-height-md: 1.5;
+  --line-height-lg: 1.8;
+  --line-height-base: var(--line-height-lg);
+  --line-height-heading: calc(3px + 2ex + 3px);
+  --line-height-heading: calc(2px + 2ex + 2px);
+  --font-size-lead: clamp(#{$font-size-lg}, 2vw, #{font-size(h4)});
+
+  font-size: 1.4em;
+  font-size: clamp(1rem, 2.5vw, 1.5em);
+  font-size: clamp(0.85rem, 2.3vw, 1.5em);
+  font-size: clamp(0.85rem, 2.1vw, 1.5em);
+  font-size: clamp(90%, 1.8vw, 130%);
+}
+
+body {
+  color: var(--primary-text);
+  font-family: var(--body-font);
+  line-height: var(--line-height-base);
+}
+
+:is(h1, h2, h3, h4) {
+  line-height: var(--line-height-heading);
+  font-weight: 400;
+
+  &:not(:first-child) {
+    margin-block-start: var(--block-flow, var(--block-flow-md));
+  }
+
+  + & {
+    margin-block-start: var(--block-flow, var(--block-flow-sm));
+  }
+}
+
+.page-description {
+  font-size: var(--font-size-lead);
+}
+
+:is(h2, h3, h4) {
+  color: var(--header-color);
+}
+
+h1,
+.h1 {
+  font-size: font-size(h1);
+}
+
+h2,
+.h2 {
+  font-size: font-size(h2);
+}
+
+h3,
+.h3 {
+  font-size: font-size(h3);
+}
+
+h4,
+.h4 {
+  font-size: font-size(h4);
+}
+
+h5,
+.h5 {
+  font-size: font-size(h5);
+}
+
+h6,
+.h6 {
+  font-size: font-size(h6);
+}
+
+:any-link {
+  color: var(--link-color);
+  text-underline-offset: 0.15em;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+[id] {
+  scroll-margin-top: 2em;
+}
+
+pre,
+:not(pre) > code {
+  font-family: var(--code-font);
+  margin: 0;
+  font-size: 80%;
+  background-color: var(--code-bg);
+}
+
+pre > code {
+  background: transparent;
+  display: block;
+  overflow: scroll;
+}
+
+pre {
+  padding: 1.25em;
+}
+
+:not(pre) > code {
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+}
+
+kbd {
+  font-family: var(--code-font);
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  margin: 0;
+  font-size: 85%;
+  background-color: var(--highlight-bg);
+  box-shadow: inset -2px -2px 4px var(--border-color-dark);
+  border: 1px solid var(--border-color);
+}
+
+strong,
+b {
+  font-weight: 500;
+  color: var(--light-text);
+}
+
+blockquote {
+  padding-left: var(--padding-sm);
+  border-left: 5px solid var(--border-color);
+
+  @include blockflow;
+}
+
+figure {
+  > figcaption {
+    margin-block-start: 0.5rem;
+    text-align: center;
+  }
+}

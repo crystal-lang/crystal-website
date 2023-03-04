@@ -1,8 +1,4 @@
 main:
-- label: Home
-  url: /
-- label: Forum
-  url: https://forum.crystal-lang.org
 - label: Blog
   url: /blog/
 - label: Sponsors
@@ -15,5 +11,3 @@ main:
   url: /team/
 - label: Docs
   url: https://crystal-lang.org/reference/
-- label: GitHub
-  url: https://github.com/crystal-lang/crystal
