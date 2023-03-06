@@ -1,0 +1,9 @@
+.content {
+  @include blockflow;
+
+  > :is(h1, h2, h3, h4):not(:first-child) {
+    margin-block-start: var(--block-flow, var(--block-flow-md));
+  }
+
+  max-width: 85ch;
+}
