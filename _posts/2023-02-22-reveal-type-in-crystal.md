@@ -44,7 +44,7 @@ puts "x = #{x.inspect} : #{x.class}"
 # x = nil : Nil
 ```
 
-That will show, when the program is executed, the actual value and type of `x`. But we don’t want to see the runtime type, we need the compile-type type. So a more accurate alternative would be
+That will show, when the program is executed, the actual value and type of `x`. But we don’t want to see the runtime type, we need the compile-time type. So a more accurate alternative would be
 
 ```crystal
 puts "x = #{x.inspect} : #{typeof(x)}"
