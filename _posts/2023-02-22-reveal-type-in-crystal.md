@@ -392,6 +392,6 @@ Revealed type /path/to/program.cr:14:15
     : (String | Nil)
 ```
 
-As mentioned before there are a couple of caveats with this solutions, but I think it works in the vast majority of cases. It was great to extend somehow the compiler tooling via user code only.
+As mentioned earlier, there are a couple of caveats with this solution but I think it works for vast majority of cases. It was great to extend somehow the compiler tooling via user code only.
 
 It would be great to have some feedback if a proper built-it alternative of this would be valuable.
