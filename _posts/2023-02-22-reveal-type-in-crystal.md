@@ -93,7 +93,7 @@ Unfortunately the tool will not allow us to print the type of any expression unl
 
 The context tool is a separate implementation that relies on the compiler but essentially traverse the whole compiled program. There are some edge cases that are currently not handled.
 
-The most important short coming I think is the developer experience. It’s not great unless it’s integrated with an editor.
+The most important shortcoming I think is the developer experience. It’s not great unless it’s integrated with an editor.
 
 ## Adding `reveal_type` to Crystal
 
