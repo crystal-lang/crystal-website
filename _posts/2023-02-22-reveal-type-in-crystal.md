@@ -379,7 +379,7 @@ end
 {% endraw %}
 ```
 
-If we have an expression like `foo(bar.baz)` in which we are uncertain the type of `bar` we can:
+If we have an expression like `foo(bar.baz)` in which we are uncertain about the type of `bar` we can:
 
 
 1. Surround `bar` with `reveal_type` as in `foo(reveal_type(bar).baz)`
