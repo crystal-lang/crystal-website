@@ -210,7 +210,7 @@ The `l` argument will have a tuple of type `{ <loc>: Int32 }` where `<loc>` is a
 
 ## Caveats
 
-There are a couple of more caveats worth mentioning of this solution. A proper built-in feature in the compiler would not be affected by all of them. Essentially these can be sum up as:
+There are a couple of more caveats of this solution that are worth mentioning. A proper built-in feature in the compiler would not be affected by all of them. Essentially these can be summed up as:
 
 
 - The `reveal_type` needs to be within used code
