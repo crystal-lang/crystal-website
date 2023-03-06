@@ -97,7 +97,7 @@ The most important shortcoming I think is the developer experience. It’s not g
 
 ## Adding `reveal_type` to Crystal
 
-The developer experience of sorbet’s `reveal_type` is awesome:
+The developer experience of Sorbet’s `reveal_type` is awesome:
 
 - The modifications needed to the program are simple and can be applied to any valid expression.
 - The same type checker is the one that show the information.
