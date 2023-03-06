@@ -19,6 +19,7 @@
 }
 
 @layer components {
+  @import "elements/table";
   @import "components/callout";
   @import "components/navbar";
 }
