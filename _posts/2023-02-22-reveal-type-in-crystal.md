@@ -214,7 +214,7 @@ There are a couple of more caveats of this solution that are worth mentioning. A
 
 
 - The `reveal_type` needs to be within used code
-- Our implementation is very sensible to internals compiler’s execution order
+- Our implementation is very sensible to the internals compiler’s execution order
 - It doesn't handle fully recursive definitions
 - It could change the semantic of the program since it affects the memory layout
 
