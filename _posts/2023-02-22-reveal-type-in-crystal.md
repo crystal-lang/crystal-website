@@ -330,7 +330,7 @@ It’s definitely feasible to implement better `reveal_type` in the compiler. It
 
 Since it would not require a user defined macro/method it would not suffer from the issues exposed in the caveats.
 
-But maybe there is something intermediate we can do to allow more future use cases.
+But maybe there is something intermediate we can do to allow more use cases in the future.
 
 In the `reveal_type` macro we needed to show the expression and its location. This is something that is already done in [`AST#raise`](https://crystal-lang.org/api/1.7.2/Crystal/Macros/ASTNode.html#raise%28message%29%3ANoReturn-instance-method). Unfortunately it’s not possible to tweak the output and it’s always treated as a compiler error:
 
