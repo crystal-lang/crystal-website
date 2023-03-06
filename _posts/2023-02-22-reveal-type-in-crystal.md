@@ -243,7 +243,7 @@ Revealed type /path/to/program.cr:6:15
     : Int32
 ```
 
-**Recursive** programs can hit an edge case that would hide the output of `reveal_type_helper`. The following program will have several `dig_first` instantiation. As such the `reveal_type` macro will be called once per each, but all of the `reveal_type_helper` invocations are with the same `t` type and in the same location. We fall again in the problem we solved earlier with the `{ <loc>: Int32 }` param.
+**Recursive** programs can hit an edge case that would hide the output of `reveal_type_helper`. The following program will have several `dig_first` instantiation. As such the `reveal_type` macro will be called once per each instantiation, but all of the `reveal_type_helper` invocations are with the same `t` type and in the same location. We fall again in the problem we solved earlier with the `{ <loc>: Int32 }` param.
 
 ```crystal
 def dig_first(xs)
@@ -394,4 +394,4 @@ Revealed type /path/to/program.cr:14:15
 
 As mentioned earlier, there are a couple of caveats with this solution but I think it works for vast majority of cases. It was great to extend somehow the compiler tooling via user code only.
 
-It would be great to have some feedback if a proper built-it alternative of this would be valuable.
+It would be great to have some feedback if a proper built-in alternative to this would be valuable.
