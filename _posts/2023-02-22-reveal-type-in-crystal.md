@@ -8,7 +8,7 @@ Recently I came across [`reveal_type` from Sorbet](https://sorbet.org/docs/flow-
 
 Inspecting the type of an expression is a reasonable question to ask. When the program compiles, the compiler knows the answer for sure.
 
-Let’s start working with a relative simple example grabbed from Sorbet’s documentation.
+Let’s start working with a relatively simple example grabbed from Sorbet’s documentation.
 
 ```crystal
 def maybe(x, default)
