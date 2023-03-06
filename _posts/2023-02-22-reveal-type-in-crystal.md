@@ -70,7 +70,7 @@ pp! typeof(x)
 
 ## Existing Solution: context tool
 
-About 8 years ago Crystal [gained some built-in tooling](/2015/09/05/tools/). One of those tools will give us exactly the information we are looking for.
+About 8 years ago Crystal [gained some built-in tooling](/2015/09/05/tools/) and one of those tools would give us exactly the information we are looking for.
 
 Assuming the previous `def maybe` is defined at the beginning of a  `program.cr` we could use the context tool as follows:
 
