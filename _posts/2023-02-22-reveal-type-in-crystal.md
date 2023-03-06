@@ -218,7 +218,7 @@ There are a couple of more caveats of this solution that are worth mentioning. A
 - It doesn't handle fully recursive definitions
 - It could change the semantic of the program since it affects the memory layout
 
-Feel free to skip to jump to the [next section](#ideas-for-the-compiler) unless you want some further details and examples of each.
+Feel free to skip to the [next section](#ideas-for-the-compiler) unless you want any further details and examples of each.
 
 Due to how Crystal compiler works, the `reveal_type` needs to appear within **static reachable code**. Even if you start in a `def` with arguments with types (type restrictions actually) you need that `def` to be called. Otherwise the compiler ignores it. Similar to how C++ templates are not expanded unless they are used.
 
