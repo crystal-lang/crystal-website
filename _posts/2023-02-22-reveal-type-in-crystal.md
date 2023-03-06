@@ -128,7 +128,7 @@ Or some similar output.
 
 Before hacking the compiler I wanted to see if it can be done at user code.
 
-Crystal macros can print during compile time, and we have access to the expression’s AST.
+Crystal macros can print during compile time and we have access to the expression’s AST.
 
 The following will give us the first part of the message.
 
