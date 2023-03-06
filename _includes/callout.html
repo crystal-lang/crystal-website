@@ -1,6 +1,6 @@
-<div class="callout callout--{{ include.callout }}">
+<aside class="callout callout--{{ include.callout }}">
   {% if include.title %}
-    <h4>{{ include.title }}</h4>
+    <strong class="callout-title">{{ include.title }}</strong>
   {% endif %}
   {{ include.content | markdownify }}
-</div>
+</aside>

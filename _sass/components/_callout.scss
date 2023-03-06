@@ -1,0 +1,15 @@
+.callout {
+  background: var(--background-secondary);
+  padding: var(--padding-sm);
+
+  > .callout-title {
+    display: block;
+    font-size: 120%;
+    color: var(--lighter-text);
+    font-weight: normal;
+  }
+
+  &--warning {
+    background-color: var(--warning-light);
+  }
+}
