@@ -29,7 +29,7 @@ maybe(sometimes_a_string, "a default value")
 
 ## Existing Solution: puts debug
 
-Doing `printf`/`print`/`puts` to debug the execution of a program is widely used. In Crystal we could write some variation of:
+Debugging the execution of a program using `printf`/`print`/`puts` is widely used. In Crystal we could write some variation of:
 
 
 ```crystal
