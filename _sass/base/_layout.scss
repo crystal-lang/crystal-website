@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--white);
+  background-color: var(--background-main);
 
   --main-width: min(100vw - 3rem, var(--container-max, 110ch));
 }

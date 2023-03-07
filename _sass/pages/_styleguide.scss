@@ -1,0 +1,21 @@
+.styleguide {
+  padding-block: var(--block-flow, var(--block-flow-sm));
+
+  @include blockflow;
+
+  > main {
+    @include blockflow;
+
+    border: 1px solid var(--border-color);
+    border-radius: 0.425rem;
+    padding: var(--padding-sm);
+  }
+
+  > footer {
+    clear: both;
+
+    pre {
+      white-space: pre-line;
+    }
+  }
+}

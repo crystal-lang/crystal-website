@@ -1,0 +1,58 @@
+.reversefootnote {
+  margin-left: 0.5em;
+}
+
+[rel="footnote"],
+.reversefootnote {
+  font-size: 0.61rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+sup[role="doc-noteref"] {
+  font-size: 0.71rem;
+}
+
+.footnote:target,
+[role="doc-noteref"]:target {
+  background-color: var(--highlight-bg);
+  outline: 0.15em solid var(--highlight-bg);
+}
+
+.footnotes {
+  font-size: 0.9em;
+  margin-block-start: var(--block-flow-md);
+  border-top: 2px solid var(--highlight-bg);
+  padding-block-start: 0.75em;
+  color: var(--lighter-text);
+  counter-reset: footnote;
+
+  ol {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 0.3em;
+  }
+
+  li::before {
+    counter-increment: footnote;
+    content: counter(footnote);
+    font-size: 0.71em;
+    font-weight: 500;
+    vertical-align: super;
+  }
+
+  :target {
+    background-color: var(--highlight-bg);
+  }
+}

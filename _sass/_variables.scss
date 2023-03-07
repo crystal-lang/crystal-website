@@ -6,6 +6,9 @@
   --black: hsl(0, 0%, 14%);
   --light-gray: hsl(0, 0%, 47%);
 
+  --background-main: var(--white);
+  --background-secondary: var(--tainted-white);
+
   --primary-text: var(--black);
   --primary-code: var(--light-gray);
   --light-text: hsl(0, 0%, 27%);
@@ -22,6 +25,8 @@
   --border-color-light: hsl(0, 0%, 93%);
   --border-color: hsl(0, 0%, 87%);
   --border-color-dark: hsl(0, 0%, 84%);
+
+  --warning-light: hsl(31.2deg 100% 96%);
 
   // Fonts
   // -------------

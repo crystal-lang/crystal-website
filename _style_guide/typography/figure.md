@@ -14,5 +14,5 @@ type: typography
   end
   ```
 
-  <label>Crystal code</label>
+  <figcaption>Crystal code</figcaption>
 </figure>
