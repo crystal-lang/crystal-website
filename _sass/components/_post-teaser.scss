@@ -28,13 +28,26 @@
     grid-area: date;
   }
 
-  > .post-title {
+  > .post-title,
+  > hgroup {
     grid-area: title;
   }
 
   > .excerpt,
   > .content {
     grid-area: content;
+  }
+}
+
+.post {
+  @media (max-width: 80ch) {
+    grid-template-areas:
+      "images names"
+      "images date"
+      "title title"
+      "content content"
+      "extra extra"
+      "footer footer";
   }
 }
 
