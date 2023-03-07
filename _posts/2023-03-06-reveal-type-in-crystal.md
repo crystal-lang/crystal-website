@@ -4,7 +4,7 @@ author: bcardiff
 summary: "Porting reveal_type from Sorbet to Crystal."
 ---
 
-Recently I came across [`reveal_type` from Sorbet](https://sorbet.org/docs/flow-sensitive#example) as a way to inspect the type of an expression, thanks [Brian Hicks](https://www.brianthicks.com/). I wondered if that can be ported to Crystal. You can jump to the [conclusions](#conclusions) section if you want to copy-paste the good-enough™️ solution in your project.
+Recently I came across [`reveal_type` from Sorbet](https://sorbet.org/docs/flow-sensitive#example) as a way to inspect the type of an expression, thanks [Brian Hicks](https://bytes.zone/). I wondered if that can be ported to Crystal. You can jump to the [conclusions](#conclusions) section if you want to copy-paste the good-enough™️ solution in your project.
 
 Inspecting the type of an expression is a reasonable question to ask. When the program compiles, the compiler knows the answer for sure.
 
