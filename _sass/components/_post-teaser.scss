@@ -8,7 +8,8 @@
     "images date"
     "images title"
     "images content"
-    "extra  content";
+    "extra content"
+    "extra footer";
 
   @media (max-width: 80ch) {
     grid-template-columns: 3.5em 1fr;
@@ -36,6 +37,12 @@
   > .excerpt,
   > .content {
     grid-area: content;
+  }
+
+  > footer {
+    grid-area: footer;
+    margin-top: var(--block-flow-md);
+    max-width: var(--content-width);
   }
 }
 

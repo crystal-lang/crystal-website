@@ -15,4 +15,16 @@ layout: base
   {% include posts/meta.html post = page %}
 
   <main class="content" itemprop="articleBody">{{ content }}</main>
+
+  <footer>
+    <nav class="post-pagination">
+      {% if page.next.url %}
+        <a rel="next" href="{{page.next.url}}">{{page.next.title}}</a>
+      {% endif %}
+
+      {% if page.previous.url %}
+        <a rel="prev" href="{{page.previous.url}}">{{page.previous.title}}</a>
+      {% endif %}
+    </nav>
+  </footer>
 </article>

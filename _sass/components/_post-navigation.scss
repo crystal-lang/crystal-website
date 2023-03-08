@@ -1,0 +1,34 @@
+.post-pagination {
+  --link-color: var(--light-gray);
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    font-weight: 500;
+    display: inline-flex;
+  }
+
+  a[rel="next"]::before,
+  a[rel="prev"]::after {
+    content: "";
+    display: inline-block;
+    border: solid currentColor;
+    border-width: 0 0.33ch 0.33ch 0;
+    padding: 0.33ch;
+    align-self: center;
+  }
+
+  a[rel="prev"] {
+    margin-inline-start: auto;
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  a[rel="next"] {
+    margin-inline-end: auto;
+    &::before {
+      transform: rotate(135deg);
+    }
+  }
+}

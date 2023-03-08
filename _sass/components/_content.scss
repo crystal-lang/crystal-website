@@ -5,5 +5,5 @@
     margin-block-start: var(--block-flow, var(--block-flow-md));
   }
 
-  max-width: 85ch;
+  max-width: var(--content-width);
 }
