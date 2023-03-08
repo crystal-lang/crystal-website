@@ -1,38 +1,32 @@
 ---
-title: Blog
-description: Here you can find detailed announcements for new releases, some interesting use cases, and the rationale behind some of the language's design decisions.
+title: News
+excerpt: Blog posts
+layout: wide
 ---
-<div class="container">
-  <div class="row">
-    <div class="col s12">
-      <h2>Articles</h2>
-      {% assign articles = site.posts %}
-      <div class='post-list'>
-        {% for post in articles %}
-        {% include posts/blog_row.html post=post %}
-        {% endfor %}
-      </div>
-      <p><a href="javascript:void(0)" id="more-articles">More articles</a></p>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col s12">
-      <h2 name="release_notes" id="release_notes">Release Notes</h2>
-      <table class="bordered no-underline">
-        <tbody class="notes-list">
-          {% assign releases = site.releases | reverse %}
-          {% for post in releases %}
-            <tr>
-              <td></td>
-              <td><a href="{{ post.url }}">
-                {{ post.title }}
-              </a></td>
-              <td>{{ post.date | date_to_string }}</td>
-          {% endfor %}
-        </tbody>
-      </table>
-      <p><a href="javascript:void(0)" id="more-notes">More release notes</a></p>
-    </div>
+<div class="featured-posts">
+  {% for post in site.posts limit: 5 %}
+  <div class="post-teaser">
+    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+
+    {% include posts/meta.html post=post %}
+
+    <div class="excerpt">{{ post.summary | default: post.excerpt }}</div>
   </div>
+  {% endfor %}
 </div>
+
+<hr class="full-width" />
+
+<section>
+  <h1>More articles</h1>
+
+  <div class="more-posts">
+    {% for post in site.posts offset: 5 %}
+    <div class="post-micro-teaser">
+      <time class="post-date" pubdate>{{ post.date | date_to_string }}</time>
+      <a href="{{post.url}}" class="post-title">{{post.title}}</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>

@@ -1,5 +1,6 @@
 ---
-title: "Automating smart buildings with Crystal: how PlaceOS creates and manages cohesive environments"
+title: "Automating smart buildings with Crystal"
+subtitle: "How PlaceOS creates and manages cohesive environments"
 author: stakach,pettimart
 summary: "<b>Stephen Von Takach Dukai</b>, <b>Engineering Lead</b> at PlaceOS, talks about their experience working with Crystal."
 ---

@@ -20,7 +20,7 @@ custom_body_classes:
     <div class="col s12">
       {% assign latest_release = site.releases | reverse | first %}
       <h2 class="latest-release">Latest release <a href="{{ latest_release.url }}">{{ latest_release.version }}</a></h2>
-      <p>{{ latest_release.date | date: "%d %B %Y" }} - <a href="/blog#release_notes" class="gray-link">More release notes</a></p>
+      <p>{{ latest_release.date | date: "%d %B %Y" }} - <a href="/blog" class="gray-link">More release notes</a></p>
     </div>
   </div>
 
@@ -202,7 +202,7 @@ custom_body_classes:
             {% endfor %}
         </tbody>
       </table>
-      <p><a href="/blog#release_notes">More release notes</a></p>
+      <p><a href="/blog">More release notes</a></p>
     </div>
   </div>
 

@@ -19,13 +19,18 @@
 }
 
 @layer components {
+  @import "elements/avatar-list";
   @import "elements/table";
+
   @import "components/callout";
   @import "components/content";
   @import "components/navbar";
+  @import "components/post-teaser";
+  @import "components/post-navigation";
 }
 
 @layer pages {
+  @import "pages/blog";
   @import "pages/styleguide";
 }
 

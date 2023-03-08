@@ -56,6 +56,18 @@ body > footer {
 
 body > main {
   @include blockflow(var(--block-flow-lg));
+
+  > header {
+    margin-block: var(--block-flow-md);
+
+    h1 {
+      font-size: font-size(page_title);
+    }
+  }
+}
+
+body > main > article:first-child:last-child {
+  margin-block: var(--block-flow-md);
 }
 
 article.page,
@@ -72,5 +84,6 @@ section:not([class]) {
 }
 
 hr {
-  border-color: var(--border-color);
+  border: none;
+  border-block-end: 1px solid var(--border-color);
 }
