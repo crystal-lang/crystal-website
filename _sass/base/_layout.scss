@@ -84,5 +84,6 @@ section:not([class]) {
 }
 
 hr {
-  border-color: var(--border-color);
+  border: none;
+  border-block-end: 1px solid var(--border-color);
 }
