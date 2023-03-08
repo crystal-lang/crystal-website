@@ -45,7 +45,7 @@ defaults:
       path: ""
       type: releases
     values:
-      layout: post
+      layout: release
       permalink: /:year/:month/:day/:title/
       image: /assets/icon.png
   -
