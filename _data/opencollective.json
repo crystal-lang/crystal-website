@@ -1,5 +1,24 @@
 [
   {
+    "name": "Vl",
+    "last_payment": 1.0,
+    "all_time": 1.0,
+    "since": "Mar 8, 2023"
+  },
+  {
+    "name": "Jeffrey Crochet",
+    "last_payment": 10.0,
+    "all_time": 70.0,
+    "since": "Mar 2, 2023"
+  },
+  {
+    "name": "Soc-Promotion",
+    "url": "https://soc-promotion.com/instagram/likes",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "Mar 2, 2023"
+  },
+  {
     "name": "Kiekkotorni - Nikotiinipussit",
     "url": "https://kiekkotorni.com/",
     "last_payment": 5.0,
@@ -25,7 +44,7 @@
     "url": "https://concentric.health",
     "logo": "sponsors/concentric.png",
     "last_payment": 75.0,
-    "all_time": 75.0,
+    "all_time": 150.0,
     "since": "Feb 2, 2023"
   },
   {
@@ -46,21 +65,21 @@
     "name": "Fresh Engagements",
     "url": "https://freshengagements.com/",
     "last_payment": 5.0,
-    "all_time": 5.0,
+    "all_time": 10.0,
     "since": "Jan 24, 2023"
   },
   {
     "name": "Displaybenchmark",
     "url": "https://displaybenchmark.com/",
     "last_payment": 5.0,
-    "all_time": 5.0,
+    "all_time": 10.0,
     "since": "Jan 20, 2023"
   },
   {
     "name": "Famium",
     "url": "https://famium.co/",
     "last_payment": 5.0,
-    "all_time": 5.0,
+    "all_time": 10.0,
     "since": "Jan 17, 2023"
   },
   {
@@ -74,27 +93,26 @@
     "name": "DeFiCasinos.io",
     "url": "https://deficasinos.io",
     "last_payment": 5.0,
-    "all_time": 10.0,
+    "all_time": 15.0,
     "since": "Dec 29, 2022"
   },
   {
     "name": "Josephine P.",
     "url": "https://josie.lol",
     "last_payment": 10.0,
-    "all_time": 20.0,
+    "all_time": 30.0,
     "since": "Dec 16, 2022"
   },
   {
     "name": "Twicsy",
     "url": "https://twicsy.com/buy-instagram-likes",
     "last_payment": 10.0,
-    "all_time": 30.0,
+    "all_time": 40.0,
     "since": "Dec 14, 2022"
   },
   {
     "name": "wildcasinoreview.com",
-    "url": "https://wildcasinoreview.com",
-    "last_payment": 25.0,
+    "last_payment": 0.0,
     "all_time": 50.0,
     "since": "Dec 9, 2022"
   },
@@ -108,13 +126,12 @@
     "name": "Aviator Game",
     "url": "https://aviatorgame.guru",
     "last_payment": 5.0,
-    "all_time": 15.0,
+    "all_time": 20.0,
     "since": "Nov 25, 2022"
   },
   {
     "name": "Crash Game",
-    "url": "https://crash-gambling-game.com",
-    "last_payment": 5.0,
+    "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Nov 25, 2022"
   },
@@ -127,13 +144,14 @@
   {
     "name": "Denys Holius",
     "last_payment": 5.0,
-    "all_time": 20.0,
+    "all_time": 25.0,
     "since": "Oct 21, 2022"
   },
   {
     "name": "CasinoWizard",
-    "last_payment": 0.0,
-    "all_time": 15.0,
+    "url": "https://thecasinowizard.com/",
+    "last_payment": 5.0,
+    "all_time": 20.0,
     "since": "Oct 19, 2022"
   },
   {
@@ -141,7 +159,7 @@
     "url": "https://www.linkedin.com/in/jsiegel",
     "logo": "sponsors/jonathan_siegel.png",
     "last_payment": 150.0,
-    "all_time": 900.0,
+    "all_time": 1050.0,
     "since": "Sep 12, 2022"
   },
   {
@@ -149,12 +167,6 @@
     "last_payment": 0.0,
     "all_time": 25.0,
     "since": "Aug 23, 2022"
-  },
-  {
-    "name": "Jeffrey Crochet",
-    "last_payment": 5.0,
-    "all_time": 55.0,
-    "since": "Aug 6, 2022"
   },
   {
     "name": "RushRadar: The Best Articles, Reviews, and Referral Codes",
@@ -166,7 +178,7 @@
     "name": "Seth Falco",
     "url": "https://falco.fun/",
     "last_payment": 5.0,
-    "all_time": 55.0,
+    "all_time": 60.0,
     "since": "Jul 23, 2022"
   },
   {
@@ -179,13 +191,12 @@
   {
     "name": "Will Lewis",
     "last_payment": 5.0,
-    "all_time": 280.0,
+    "all_time": 285.0,
     "since": "Jul 12, 2022"
   },
   {
     "name": "BETTING SITES NOT ON GAMSTOP",
-    "url": "https://sportonlinebetting.net/",
-    "last_payment": 5.0,
+    "last_payment": 0.0,
     "all_time": 35.0,
     "since": "Jul 4, 2022"
   },
@@ -199,14 +210,14 @@
     "name": "Bromine0x23",
     "url": "https://twitter.com/bromine0x23",
     "last_payment": 10.0,
-    "all_time": 170.0,
+    "all_time": 180.0,
     "since": "Jul 2, 2022"
   },
   {
     "name": "CouponBlender",
     "url": "https://www.couponblender.com/",
     "last_payment": 5.0,
-    "all_time": 40.0,
+    "all_time": 45.0,
     "since": "Jun 30, 2022"
   },
   {
@@ -225,13 +236,13 @@
     "name": "SureBet",
     "url": "https://www.sure.bet/casinos-not-on-gamstop/",
     "last_payment": 5.0,
-    "all_time": 40.0,
+    "all_time": 45.0,
     "since": "Jun 17, 2022"
   },
   {
     "name": "Sekeol Kim",
     "last_payment": 10.0,
-    "all_time": 90.0,
+    "all_time": 100.0,
     "since": "May 23, 2022"
   },
   {
@@ -274,7 +285,7 @@
     "name": "Sufi Meditation",
     "url": "https://www.zikir.com",
     "last_payment": 5.0,
-    "all_time": 55.0,
+    "all_time": 60.0,
     "since": "Mar 26, 2022"
   },
   {
@@ -286,14 +297,14 @@
   {
     "name": "bit4bit",
     "last_payment": 5.0,
-    "all_time": 60.0,
+    "all_time": 65.0,
     "since": "Mar 9, 2022"
   },
   {
     "name": "Anton Maminov",
     "url": "https://twitter.com/AntonMaminov",
     "last_payment": 5.0,
-    "all_time": 60.0,
+    "all_time": 65.0,
     "since": "Feb 23, 2022"
   },
   {
@@ -312,7 +323,7 @@
   {
     "name": "speg",
     "last_payment": 3.94,
-    "all_time": 56.22,
+    "all_time": 60.16,
     "since": "Jan 10, 2022"
   },
   {
@@ -385,7 +396,7 @@
     "name": "Dmitri Goutnik",
     "url": "https://github.com/dmgk",
     "last_payment": 10.0,
-    "all_time": 85.0,
+    "all_time": 95.0,
     "since": "Nov 4, 2021"
   },
   {
@@ -442,41 +453,41 @@
     "name": "Mia Bennett",
     "url": "https://chillfox.com/",
     "last_payment": 5.0,
-    "all_time": 85.0,
+    "all_time": 90.0,
     "since": "Oct 1, 2021"
   },
   {
     "name": "HelppoHinta.fi",
     "url": "https://helppohinta.fi/",
     "last_payment": 5.0,
-    "all_time": 75.0,
+    "all_time": 80.0,
     "since": "Oct 1, 2021"
   },
   {
     "name": "Alexander Adam",
     "url": "https://github.com/alexanderadam/alexanderadam#-about-me",
     "last_payment": 10.0,
-    "all_time": 170.0,
+    "all_time": 180.0,
     "since": "Oct 1, 2021"
   },
   {
     "name": "eason.ye",
     "url": "https://github.com/yelanxin",
     "last_payment": 5.0,
-    "all_time": 85.0,
+    "all_time": 90.0,
     "since": "Sep 17, 2021"
   },
   {
     "name": "xstats.gg",
     "url": "https://xstats.gg",
     "last_payment": 5.0,
-    "all_time": 90.0,
+    "all_time": 95.0,
     "since": "Sep 14, 2021"
   },
   {
     "name": "CHUNG TSAI",
     "last_payment": 25.0,
-    "all_time": 450.0,
+    "all_time": 475.0,
     "since": "Sep 3, 2021"
   },
   {
@@ -514,7 +525,7 @@
     "name": "Bookyourdata.com",
     "url": "https://www.bookyourdata.com",
     "last_payment": 10.0,
-    "all_time": 190.0,
+    "all_time": 200.0,
     "since": "Aug 10, 2021"
   },
   {
@@ -534,7 +545,7 @@
     "url": "https://place.technology/",
     "logo": "sponsors/placeos.png",
     "last_payment": 250.0,
-    "all_time": 4000.0,
+    "all_time": 4250.0,
     "since": "Jul 26, 2021"
   },
   {
@@ -570,7 +581,7 @@
   {
     "name": "Agloks",
     "last_payment": 5.0,
-    "all_time": 100.0,
+    "all_time": 105.0,
     "since": "Jul 8, 2021"
   },
   {
@@ -583,7 +594,7 @@
     "name": "Renkaatsopivasti",
     "url": "https://renkaatsopivasti.fi",
     "last_payment": 5.0,
-    "all_time": 100.0,
+    "all_time": 105.0,
     "since": "Jul 2, 2021"
   },
   {
@@ -596,7 +607,7 @@
     "name": "Provided.io",
     "url": "https://provided.io",
     "last_payment": 5.0,
-    "all_time": 105.0,
+    "all_time": 110.0,
     "since": "Jun 15, 2021"
   },
   {
@@ -646,8 +657,7 @@
   },
   {
     "name": "Mikihiro Hamaguchi",
-    "url": "https://github.com/machida4",
-    "last_payment": 5.0,
+    "last_payment": 0.0,
     "all_time": 100.0,
     "since": "Apr 26, 2021"
   },
@@ -690,7 +700,7 @@
   {
     "name": "Lampros Chaidas",
     "last_payment": 10.0,
-    "all_time": 230.0,
+    "all_time": 240.0,
     "since": "Mar 29, 2021"
   },
   {
@@ -739,7 +749,7 @@
     "name": "Jared Smith",
     "url": "https://www.linkedin.com/in/jaredsmithse/",
     "last_payment": 5.0,
-    "all_time": 140.0,
+    "all_time": 145.0,
     "since": "Mar 22, 2021"
   },
   {
@@ -823,7 +833,7 @@
   {
     "name": "Werner Stein",
     "last_payment": 15.0,
-    "all_time": 275.0,
+    "all_time": 290.0,
     "since": "Jan 24, 2021"
   },
   {
@@ -1005,7 +1015,7 @@
     "url": "https://www.vulk.coop",
     "logo": "sponsors/vulk_cooperative.png",
     "last_payment": 75.0,
-    "all_time": 3975.0,
+    "all_time": 4050.0,
     "since": "Sep 10, 2020"
   },
   {
@@ -1053,7 +1063,7 @@
   },
   {
     "name": "Philipp Claßen",
-    "last_payment": 10.0,
+    "last_payment": 0.0,
     "all_time": 290.0,
     "since": "Aug 27, 2020"
   },
