@@ -21,6 +21,9 @@ body {
   line-height: var(--line-height-heading);
   font-weight: 400;
 
+  // Ensure proper left-alignment of first character
+  margin-left: -0.1ch;
+
   &:not(:first-child) {
     margin-block-start: var(--block-flow, var(--block-flow-md));
   }
@@ -72,6 +75,7 @@ h6,
   color: var(--link-color);
   text-underline-offset: 0.15em;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     color: var(--link-hover-color);
