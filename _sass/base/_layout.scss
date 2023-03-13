@@ -58,10 +58,15 @@ body > main {
   @include blockflow(var(--block-flow-lg));
 
   > header {
-    margin-block: var(--block-flow-md);
+    margin-block-start: var(--block-flow-md);
+    margin-block-end: var(--block-flow-sm);
 
     h1 {
       font-size: font-size(page_title);
+    }
+
+    + * {
+      margin-top: 0;
     }
   }
 }
