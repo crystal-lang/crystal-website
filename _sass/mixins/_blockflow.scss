@@ -1,13 +1,17 @@
 @mixin blockflow($width: var(--block-flow-sm)) {
-  > * + * {
-    margin-block-start: var(--block-flow, $width);
+  :where(& > *) {
+    margin-block: 0;
 
-    &:is(hr) {
-      margin-block-start: var(--block-flow-md);
+    + * {
+      margin-block-start: var(--block-flow, $width);
+
+      &:is(hr) {
+        margin-block-start: var(--block-flow-md);
+      }
     }
   }
 
-  > hr + * {
+  :where(& > hr + *) {
     margin-block-start: var(--block-flow-md);
   }
 }
