@@ -7,3 +7,8 @@
 /vendor/
 .ruby_version
 /tmp/
+
+# Devenv
+.devenv*
+devenv.local.nix
+
