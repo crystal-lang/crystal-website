@@ -1,6 +1,6 @@
 ---
 title: Living Style Guide
-layout: page
+layout: page-wide
 permalink: /style-guide/
 ---
 

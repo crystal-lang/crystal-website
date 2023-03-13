@@ -4,11 +4,15 @@
   @include blockflow;
 
   > main {
-    @include blockflow;
+    @extend .content;
 
     border: 1px solid var(--border-color);
     border-radius: 0.425rem;
     padding: var(--padding-sm);
+
+    &.wide {
+      max-width: unset;
+    }
   }
 
   > footer {
