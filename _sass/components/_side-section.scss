@@ -41,4 +41,8 @@
     flex-basis: min(60ch, 70%);
     margin: 0;
   }
+
+  > :is(h1, h2, h3, h4) {
+    flex-basis: 100%;
+  }
 }

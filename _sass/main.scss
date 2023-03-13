@@ -32,11 +32,13 @@
   @import "components/post-teaser";
   @import "components/post-navigation";
   @import "components/side-section";
+  @import "components/sponsor-card";
 }
 
 @layer pages {
   @import "pages/blog";
   @import "pages/releases";
+  @import "pages/sponsors";
   @import "pages/styleguide";
 }
 

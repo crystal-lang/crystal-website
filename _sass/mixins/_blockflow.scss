@@ -14,4 +14,8 @@
   :where(& > hr + *) {
     margin-block-start: var(--block-flow-md);
   }
+
+  :where(& > :is(h1, h2, h3, h4) + *) {
+    margin-block-start: var(--block-flow-sm);
+  }
 }
