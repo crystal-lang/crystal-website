@@ -10,13 +10,15 @@
   position: relative;
   line-height: var(--line-height-sm);
 
+  --card-padding: var(--padding-sm);
+
   > * {
-    margin-inline: var(--padding-sm);
+    margin-inline: var(--card-padding);
     + * {
-      margin-block-start: var(--padding-sm);
+      margin-block-start: var(--card-padding);
     }
     &:last-child {
-      margin-block-end: var(--padding-sm);
+      margin-block-end: var(--card-padding);
     }
   }
 
@@ -25,7 +27,7 @@
     object-fit: contain;
     aspect-ratio: 1;
     order: -1;
-    margin: var(--padding-sm);
+    margin: var(--card-padding);
   }
 
   > .name {
