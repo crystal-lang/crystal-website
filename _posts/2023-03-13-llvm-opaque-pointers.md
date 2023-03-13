@@ -4,7 +4,11 @@ author: HertzDevil
 summary: 
 ---
 
-Crystal 1.8, the upcoming minor release, will support LLVM's opaque pointers for the first time, allowing the compiler to be built with LLVM 15 or above. To understand the significance of opaque pointers, let's take a look at a small sample program:
+Crystal 1.8, the upcoming minor release, will support LLVM's opaque pointers for the first time, allowing the compiler to be built with LLVM 15 or above. Additionally, this update brings a significant improvement to compilation times.
+
+## Pointers in LLVM
+
+To understand the significance of opaque pointers, let's take a look at a small sample program:
 
 ```crystal
 # test.cr
@@ -37,6 +41,8 @@ Without going into the details of how exactly Crystal compiles the method into t
 
 We can see that the types of `%self` and `%0` are `%Foo*` and `i32*` respectively. These are _typed pointers_, which LLVM has been using for a long time. In LLVM, typed pointers of different pointee types must be explicitly converted using the `bitcast` LLVM instruction, otherwise the resulting LLVM IR is ill-formed. As more and more LLVM frontends came into existence, it was soon realized that typed pointers do not offer many useful semantics, and instead add an unnecessary layer of complexity over IR generation and analysis.
 
+## Opaque Pointers
+
 The _opaque pointer_ was first suggested back in [February 2015](https://lists.llvm.org/pipermail/llvm-dev/2015-February/081822.html), where all pointer types would be represented by a single `ptr` in LLVM IR. Then in September 2022, [LLVM 15 now uses opaque pointers by default](https://releases.llvm.org/15.0.0/docs/OpaquePointers.html#version-support), and typed pointers will be removed shortly afterwards. If we compile the program above again, but this time with a Crystal compiler built using LLVM 15, we can see the opaque pointers in action:
 
 ```llvm
@@ -50,6 +56,8 @@ entry:
 ```
 
 To get to there, a few LLVM instructions have to be built differently depending on whether typed or opaque pointers are used, and the `getelementptr` instruction is one such example. The object type used to be inferred from the given pointer, but now that opaque pointers do not carry that information, the IR generator — our Crystal compiler — needs to supply this object type separately. In this case, the `@x` instance variable and the `#initialize` method both belong to `Foo`, so Crystal knows to pass `Foo` to `getelementptr`. But this instruction is also used in a few dozen other places in the compiler, for which no universal migration is applicable.
+
+## Crystal compiler update
 
 Work on the migration to opaque pointers started in October 2022, a month after LLVM 15's release, and after countless segfaults and spec failures, [Crystal now supports LLVM 15 on the master branch](https://github.com/crystal-lang/crystal/pull/13173). As it was a rather huge effort, surely we want the opaque pointers to deliver the performance benefits that LLVM promises. So here are some numbers collected from re-building the compiler itself on an Apple M2, first with an LLVM 14 compiler, then with an LLVM 15 one:
 
@@ -67,9 +75,11 @@ If we consider only the last 3 stages, which are fully in LLVM's control, that's
 
 ## How does this affect me?
 
-If your Crystal projects do not deal with LLVM functionality directly, there is no action to take; the official Crystal distributions will soon start using LLVM 15 to build Crystal. Those compilers will use opaque pointers, whereas ones built with LLVM 8 - 14 will continue to use typed pointers.
+The official Crystal distributions will soon start using LLVM 15 to build Crystal. Those compilers will use opaque pointers and show improvements in codegen time. Compilers built with LLVM 14 and below will continue to use typed pointers.
 
-On the other hand, if you do use Crystal to build other LLVM frontends using Crystal's undocumented `LLVM` APIs, please note that Crystal will stop supporting LLVM versions below 8.0 as part of the migration, because 8.0 is the first version where LLVM accepts a separate type for the instructions affected by opaque pointers, like the `getelementptr` above. [All features that depend on typed pointers are deprecated](https://github.com/crystal-lang/crystal/pull/13172), regardless of whether LLVM 15 is actually used. The following is the full list of affected methods:
+If your Crystal project uses the stdlib's LLVM API directly, there are some deprecations to note. Otherwise this change does not affect Crystal programs in any way. It just speeds up the compiler.
+
+On the other hand, if you do use Crystal to build other LLVM frontends using Crystal's `LLVM` APIs, please note that Crystal will stop supporting LLVM versions below 8.0 as part of the migration, because 8.0 is the first version where LLVM accepts a separate type for the instructions affected by opaque pointers, like the `getelementptr` above. [All features that depend on typed pointers are deprecated](https://github.com/crystal-lang/crystal/pull/13172), regardless of whether LLVM 15 is actually used. The following is the full list of affected methods:
 
 * `LLVM::Type#element_type`:  
   On LLVM 15 or above, calling this method on a pointer type raises an exception.
