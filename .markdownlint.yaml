@@ -1,0 +1,7 @@
+# MD013/line-length - Line length
+# Not enforce line length limitations
+MD013: false
+
+# MD033/no-inline-html - Inline HTML
+# We sometimes need inline HTML
+MD033: false
