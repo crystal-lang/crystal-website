@@ -80,8 +80,6 @@
 }
 
 .post-title {
-  all: unset;
-
   --link-color: currentcolor;
   --link-hover-color: var(--light-text);
 
@@ -89,9 +87,8 @@
   font-size: 150%;
   line-height: var(--line-height-heading);
 
-  .post-teaser & {
-    cursor: pointer;
-  }
+  margin-right: auto;
+  margin-left: -0.1ch;
 
   &:is(h1) {
     font-size: 300%;
