@@ -5,10 +5,10 @@
   --line-height-base: var(--line-height-lg);
   --line-height-heading: calc(3px + 2ex + 3px);
   --line-height-heading: calc(2px + 2ex + 2px);
-  --font-size-lead: clamp(#{$font-size-lg}, 2vw, #{font-size(h4)});
+  --font-size-lead: clamp(#{$font-size-lg}, min(2vw, 2.7vh), #{font-size(h4)});
 
   font-size: 1.4em;
-  font-size: clamp(90%, 1.8vw, 130%);
+  font-size: clamp(90%, min(1.8vw, 2.5vh), 130%);
 }
 
 body {
