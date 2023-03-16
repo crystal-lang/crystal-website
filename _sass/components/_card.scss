@@ -1,0 +1,46 @@
+.card {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+  padding: var(--padding-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 23ch;
+  font-size: 80%;
+  position: relative;
+  line-height: var(--line-height-sm);
+
+  > * {
+    margin-inline: var(--padding-sm);
+    + * {
+      margin-block-start: var(--padding-sm);
+    }
+    &:last-child {
+      margin-block-end: var(--padding-sm);
+    }
+  }
+
+  > img {
+    width: 55%;
+    object-fit: contain;
+    aspect-ratio: 1;
+    order: -1;
+    margin: var(--padding-sm);
+  }
+
+  > .name {
+    font-weight: 500;
+    font-size: 112.5%;
+    margin-block-end: auto;
+
+    --link-color: currentcolor;
+
+    &:any-link {
+      @include box-link;
+
+      > img {
+        transition: filter 0.3s;
+      }
+    }
+  }
+}

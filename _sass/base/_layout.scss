@@ -2,6 +2,7 @@
   --padding-sm: clamp(1rem, 3%, 1.5rem);
   --padding-md: clamp(1.5rem, 6%, 3rem);
   --padding-lg: clamp(3rem, 12%, 6rem);
+  --block-flow-xs: min(1rem, 2vh);
   --block-flow-sm: min(2rem, 4vh);
   --block-flow-md: min(4rem, 8vh);
   --block-flow-lg: min(8rem, 16vh);
@@ -58,10 +59,15 @@ body > main {
   @include blockflow(var(--block-flow-lg));
 
   > header {
-    margin-block: var(--block-flow-md);
+    margin-block-start: var(--block-flow-md);
+    margin-block-end: var(--block-flow-sm);
 
     h1 {
       font-size: font-size(page_title);
+    }
+
+    + * {
+      margin-top: 0;
     }
   }
 }

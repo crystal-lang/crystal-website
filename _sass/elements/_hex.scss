@@ -1,0 +1,90 @@
+:root {
+  --cos-70: 0.34;
+  --sin-70: 0.93;
+}
+
+a.hex {
+  --hex-height: 2.5em;
+  --hex-width: 2px;
+  --cos-a: var(--cos-70);
+  --sin-a: var(--sin-70);
+  --h: calc(var(--hex-height) / 2);
+  --a: calc(var(--h) * var(--cos-a));
+  --v: calc(var(--hex-width) / var(--sin-a));
+  --b: calc(var(--cos-a) * (var(--h) - var(--hex-width)) + var(--v));
+
+  position: relative;
+  padding: var(--hex-width) calc(var(--b) + var(--padding-sm));
+  height: var(--hex-height);
+  display: grid;
+  place-content: center;
+  min-width: max-content;
+  max-width: 35ch;
+  margin-inline: auto;
+
+  color: var(--black);
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    z-index: -1;
+    background: white;
+    clip-path: polygon(
+      evenodd,
+      var(--a) 0%,
+      calc(100% - var(--a)) 0%,
+      100% 50%,
+      calc(100% - var(--a)) 100%,
+      var(--a) 100%,
+      0 50%,
+      var(--a) 0%
+    );
+  }
+
+  &:hover::before {
+    background-color: hsl(0, 0%, 95%);
+  }
+
+  &:not(.bordered) {
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 20%))
+      drop-shadow(0 1px 3px rgb(0 0 0 / 10%));
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: drop-shadow(0 0 3px rgba(0 0 0 / 10%))
+        drop-shadow(0 1px 1px rgba(0 0 0 / 40%))
+        drop-shadow(0 1px 3px rgba(0 0 0 / 20%));
+    }
+  }
+  &.bordered::after {
+    background-color: currentColor;
+    clip-path: polygon(
+      evenodd,
+      /* outer */ var(--a) 0%,
+      calc(100% - var(--a)) 0%,
+      100% 50%,
+      calc(100% - var(--a)) 100%,
+      var(--a) 100%,
+      0 50%,
+      var(--a) 0%,
+      /* inner */ var(--b) var(--hex-width),
+      var(--v) 50%,
+      var(--b) calc(100% - var(--hex-width)),
+      calc(100% - var(--b)) calc(100% - var(--hex-width)),
+      calc(100% - var(--v)) 50%,
+      calc(100% - var(--b)) var(--hex-width),
+      var(--b) var(--hex-width)
+    );
+  }
+}

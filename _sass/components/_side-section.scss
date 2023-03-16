@@ -1,0 +1,48 @@
+.side-section {
+  column-gap: clamp(var(--block-flow-sm), -5rem + 13vw, var(--block-flow-lg));
+  row-gap: var(--block-flow-sm);
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: start;
+
+  &.reversed {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  > aside {
+    @include blockflow(var(--block-flow-xs));
+
+    flex-grow: 1;
+    flex-basis: 25%;
+
+    font-size: 90%;
+    line-height: var(--line-height-md);
+
+    > :is(h2, h3, h4) {
+      color: var(--primary-color);
+
+      &:not(:first-child) {
+        margin-block-start: var(--block-flow, var(--block-flow-md));
+      }
+    }
+    > :is(a) {
+      &:not(:first-child) {
+        margin-block-start: var(--block-flow, var(--block-flow-sm));
+      }
+    }
+  }
+
+  > :not(aside) {
+    @include blockflow;
+
+    flex-grow: 1000;
+    flex-basis: min(60ch, 70%);
+    margin: 0;
+  }
+
+  > :is(h1, h2, h3, h4) {
+    flex-basis: 100%;
+  }
+}

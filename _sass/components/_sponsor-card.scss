@@ -1,0 +1,12 @@
+.sponsor-card {
+  @extend .card;
+
+  &:not(:hover) > .name:any-link ~ img {
+    filter: grayscale(1);
+  }
+
+  > .name,
+  > .all-time {
+    font-weight: 600;
+  }
+}

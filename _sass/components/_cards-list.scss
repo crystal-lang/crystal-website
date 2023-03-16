@@ -1,0 +1,16 @@
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: var(--padding-sm);
+  padding: 0;
+  margin: inherit;
+
+  > * {
+    margin: 0;
+  }
+
+  &.centered {
+    justify-content: center;
+  }
+}
