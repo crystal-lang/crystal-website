@@ -1,5 +1,18 @@
 [
   {
+    "name": "GOKI MORI",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "Mar 16, 2023"
+  },
+  {
+    "name": "infinitary",
+    "url": "https://infinitary.org/",
+    "last_payment": 10.0,
+    "all_time": 10.0,
+    "since": "Mar 9, 2023"
+  },
+  {
     "name": "Vl",
     "last_payment": 1.0,
     "all_time": 1.0,
@@ -29,7 +42,7 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5.0,
-    "all_time": 5.0,
+    "all_time": 10.0,
     "since": "Feb 13, 2023"
   },
   {
@@ -86,7 +99,7 @@
     "name": "Hiptoro",
     "url": "https://hiptoro.com",
     "last_payment": 5.0,
-    "all_time": 10.0,
+    "all_time": 15.0,
     "since": "Jan 17, 2023"
   },
   {
@@ -254,7 +267,7 @@
   {
     "name": "Benjamin Klotz",
     "last_payment": 25.0,
-    "all_time": 160.0,
+    "all_time": 185.0,
     "since": "May 2, 2022"
   },
   {
@@ -311,7 +324,7 @@
     "name": "PROXYONE LLC",
     "url": "https://proxyone.eu/",
     "last_payment": 5.0,
-    "all_time": 65.0,
+    "all_time": 70.0,
     "since": "Feb 21, 2022"
   },
   {
@@ -383,7 +396,7 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5.0,
-    "all_time": 80.0,
+    "all_time": 85.0,
     "since": "Nov 11, 2021"
   },
   {
@@ -415,7 +428,7 @@
     "name": "maltidsbarometeret",
     "url": "https://maltidsbarometeret.dk",
     "last_payment": 5.0,
-    "all_time": 85.0,
+    "all_time": 90.0,
     "since": "Oct 19, 2021"
   },
   {
@@ -575,7 +588,7 @@
   {
     "name": "Joseph Method",
     "last_payment": 5.0,
-    "all_time": 100.0,
+    "all_time": 105.0,
     "since": "Jul 9, 2021"
   },
   {
@@ -613,7 +626,7 @@
   {
     "name": "lowkey",
     "last_payment": 75.0,
-    "all_time": 1440.0,
+    "all_time": 1515.0,
     "since": "Jun 12, 2021"
   },
   {
@@ -626,7 +639,7 @@
     "name": "Windesol Sähkön Kilpailutus",
     "url": "https://windesol.fi",
     "last_payment": 5.0,
-    "all_time": 105.0,
+    "all_time": 110.0,
     "since": "Jun 8, 2021"
   },
   {
@@ -730,7 +743,7 @@
   {
     "name": "Auttawut Wiriyakreng",
     "last_payment": 5.0,
-    "all_time": 115.0,
+    "all_time": 120.0,
     "since": "Mar 25, 2021"
   },
   {
