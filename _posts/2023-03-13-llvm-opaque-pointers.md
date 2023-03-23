@@ -75,7 +75,7 @@ If we consider only the last 3 stages, which are fully in LLVM's control, that's
 
 ## How does this affect me?
 
-Crystal's [nightly builds](crystal-lang.org/install/nightlies) are already using a compiler built with LLVM 15 and are ready to try it out. 1.8 will be the first stable release built with LLVM 15. These compilers use opaque pointers and show improvements in codegen time.
+Crystal's [nightly builds](https://crystal-lang.org/install/nightlies) are already using a compiler built with LLVM 15 and are ready to try it out. 1.8 will be the first stable release built with LLVM 15. These compilers use opaque pointers and show improvements in codegen time.
 Compilers built with LLVM 14 and below will continue to use typed pointers.
 
 If your Crystal project uses the stdlib's LLVM API directly, there are some deprecations to note. Otherwise this change does not affect Crystal programs in any way. It just speeds up the compiler.
