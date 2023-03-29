@@ -52,6 +52,13 @@ admin:
     role: CTO
     affiliation: Manas.Tech
 
+  mekhla:
+    name: Mekhla Mukherjee
+    role: Community Manager
+    affiliation: Manas.Tech
+    github_handle: mekhla18
+    forum_handle: mekhla18
+
   mgarcia:
     name: Matías García Isaía
     role: Infrastructure
