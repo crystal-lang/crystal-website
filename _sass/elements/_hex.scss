@@ -20,7 +20,10 @@ a.hex {
   place-content: center;
   min-width: max-content;
   max-width: 35ch;
-  margin-inline: auto;
+
+  :not(.wide) {
+    margin-inline: auto;
+  }
 
   color: var(--black);
   font-weight: 600;

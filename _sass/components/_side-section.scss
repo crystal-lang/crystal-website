@@ -12,13 +12,11 @@
   }
 
   > aside {
+    @extend .small;
     @include blockflow(var(--block-flow-xs));
 
     flex-grow: 1;
     flex-basis: 25%;
-
-    font-size: 90%;
-    line-height: var(--line-height-md);
 
     > :is(h2, h3, h4) {
       color: var(--primary-color);

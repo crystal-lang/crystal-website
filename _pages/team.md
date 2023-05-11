@@ -104,27 +104,7 @@ If you want to become a contributor, see our [Contributing Instructions](https:/
 
 {% include components/top-sponsors.html %}
 
-<section class="grid x3 topics">
-
-  <article>
-    <h2 class="ico heart left">Sponsorship</h2>
-    <p>Become a Crystal sponsor in only 3 simple steps via OpenCollective</p>
-    <a href="#" target="_blank" class="hex btn shadow"><span>Contribute</span></a>
-  </article>
-
-  <article>
-    <h2 class="ico building left">Enterprise support</h2>
-    <p>Sponsoring Crystal creates a great springboard for your brand</p>
-    <a href="#" target="_blank" class="hex btn shadow"><span>Get Support</span></a>
-  </article>
-
-  <article>
-    <h2 class="ico shuttle left">Hire us for your project</h2>
-    <p>You can tap into the expertise of the very creators of the language to guide you in your implementation. </p>
-    <a href="#" target="_blank" class="hex btn shadow"><span>Hire Us</span></a>
-  </article>
-
-</section>
+{% include components/sponsorship.html %}
 
 <section markdown="1" id="sponsors">
 ## Our sponsors
