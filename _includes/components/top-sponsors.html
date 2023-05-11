@@ -1,0 +1,18 @@
+<section>
+  <div class="full-width-rule">
+    <a href="/sponsors/" class="hex">
+      <span>Sponsors</span>
+    </a>
+  </div>
+
+  <p class="center">All this is only possible through our generous <a href="/sponsors/">sponsors</a> which help sustaining the project.</p>
+
+  <div class="top-sponsors">
+    {% for sponsor in site.data.top_sponsors %}
+      <a href="{{ sponsor.url }}" rel="nofollow sponsored">
+        <img src="/assets/{{ sponsor.logo }}" />
+        {{ sponsor.name }}
+      </a>
+    {% endfor %}
+  </div>
+</section>

@@ -102,48 +102,7 @@ If you want to become a contributor, see our [Contributing Instructions](https:/
   </div>
 </section>
 
-<section class="top-sponsors separator full">
-  <a href="/sponsors/" class="hex border above">
-    <span>Sponsors</span>
-  </a>
-
-  <p class="text-center grey-text">All this is only possible through our generous <a href="/sponsors/" class="black-text underline bold">sponsors</a> which help sustaining the project.</p>
-
-  <ul class="grid x4">
-    <li>
-      <a href="https://manas.tech" target="_blank">
-        <picture>
-          <img src="/assets/sponsors/m.svg" alt="Manas.tech">
-        </picture>
-        <h2>Manas.tech</h2>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.84codes.com" target="_blank">
-        <picture>
-          <img src="/assets/sponsors/84.svg" alt="84 codes">
-        </picture>
-        <h2>84 codes</h2>
-      </a>
-    </li>
-    <li>
-      <a href="https://nikolamotor.com/" target="_blank">
-        <picture>
-          <img src="/assets/sponsors/nikola.svg" alt="Nikola Motor Company">
-        </picture>
-        <h2>Nikola Motor Company</h2>
-      </a>
-    </li>
-    <li>
-      <a href="https://place.technology/" target="_blank">
-        <picture>
-          <img src="/assets/sponsors/placeos.svg" alt="PlaceOs">
-        </picture>
-        <h2>PlaceOs</h2>
-      </a>
-    </li>
-  </ul>
-</section>
+{% include components/top-sponsors.html %}
 
 <section class="grid x3 topics">
 

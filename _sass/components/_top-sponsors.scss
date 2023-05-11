@@ -1,0 +1,32 @@
+.top-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding-md);
+  justify-content: center;
+  margin-top: var(--block-flow-md);
+
+  > a {
+    --link-color: var(--primary-text);
+    --link-hover-color: var(--light-text);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--padding-sm);
+    align-items: center;
+    text-align: center;
+    line-height: var(--line-height-sm);
+    width: 11ch;
+
+    > img {
+      width: 80%;
+      aspect-ratio: 1;
+      object-fit: contain;
+      transition: all 200ms;
+    }
+
+    &:not(:hover) img {
+      filter: #{"grayscale()"};
+      transform: scale(0.97);
+    }
+  }
+}

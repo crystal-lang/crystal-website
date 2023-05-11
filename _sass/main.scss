@@ -34,6 +34,7 @@
   @import "components/post-navigation";
   @import "components/side-section";
   @import "components/sponsor-card";
+  @import "components/top-sponsors";
 }
 
 @layer pages {
@@ -45,5 +46,7 @@
 
 @layer utilities {
   @import "utilities";
+  @import "utilities/text";
   @import "utilities/footnote";
+  @import "utilities/full-width-rule";
 }
