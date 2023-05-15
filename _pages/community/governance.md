@@ -19,7 +19,7 @@ The current steering council consists of:
 
 - Ary Borenszweig
 - Brian Cardiff
-- Juan Wajnerman
+- Beta Ziliani
 
 ### Mandate
 
