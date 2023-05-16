@@ -14,9 +14,9 @@ For OpenSUSE Tumbleweed :
 sudo zypper ar -f https://download.opensuse.org/repositories/devel:/languages:/crystal/openSUSE_Tumbleweed/devel:languages:crystal.repo
 ```
 
-For OpenSUSE Leap 15.2:
+For OpenSUSE Leap 15.4:
 ```bash
-sudo zypper ar -f https://download.opensuse.org/repositories/devel:/languages:/crystal/openSUSE_Leap_15.2/devel:languages:crystal.repo
+sudo zypper ar -f https://download.opensuse.org/repositories/devel:/languages:/crystal/15.4/devel:languages:crystal.repo
 ```
 
 ## Install
@@ -53,9 +53,9 @@ sudo zypper dup --from https://download.opensuse.org/repositories/devel:/languag
 sudo zypper rr https://dl.bintray.com/crystal/rpm/all/x86_64/stable
 ```
 
-Leap 15.2 :
+Leap 15.4 :
 ```bash
-sudo zypper dup --from https://download.opensuse.org/repositories/devel:/languages:/crystal/openSUSE_Leap_15.2/ --allow-vendor-change
+sudo zypper dup --from https://download.opensuse.org/repositories/devel:/languages:/crystal/15.4/ --allow-vendor-change
 sudo zypper rr https://dl.bintray.com/crystal/rpm/all/x86_64/stable
 ```
 
