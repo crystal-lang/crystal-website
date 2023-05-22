@@ -4,6 +4,10 @@ author: nditada
 summary: Juan Wajnerman is stepping down from his position, with Beta Ziliani taking his place.
 ---
 
-Juan Wajnerman has been involved with Crystal since its very beginning, and has served as one of the three Steering Committee members (the other two being Ary Borenzweig and Brian Cardiff). However, he decided to leave this position and move on with his personal projects. Beta Ziliani, who's been leading the development of the language for the past two years, will now take his seat.
+The [Steering Council](https://crystal-lang.org/community/governance/#the-steering-council) is Crystal's core government authority. Since its inception it is formed by the original creators of the language: Ary Borenzweig, Brian Cardiff and Juan Wajnerman, who also serve as Core Team members.
 
-We consider ourselves lucky to have shared paths with Juan, a great colleague with fine technical qualities that make him stand out. Our doors will forever be open in case he decides to return to share his knowledge with the community for the language he helped grow.
+However, Juan has decided to leave his positions in the community and move on with his personal projects. We consider ourselves lucky to have shared paths with such a great colleague with fine technical qualities that make him stand out.
+
+A big thank you, Juan, for the great work you put into Crystal. Our doors will forever be open if you ever decide to return to share your knowledge with the community of the language you helped to grow.
+
+The seat on the council passes to Beta Ziliani. He has been leading the development of the language for the past two years. With a background in programming language research and his proven skills in leadership, we are certain to leave the position into capable hands.
