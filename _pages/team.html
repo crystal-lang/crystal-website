@@ -81,9 +81,6 @@ description: >
             <span class="handles">
               <span class="github_handle"><a href="https://github.com/{{ member[1].github_handle | default: member[0] }}"><i class="extra-icons github"></i> {{ member[1].github_handle | default: member[0] }}</a></span>
             </span>
-            {% if member[1].role %}
-              <span class="member_role">{{ member[1].role }}</span>
-            {% endif %}
           </div>
         </div>
       {% endfor %}
