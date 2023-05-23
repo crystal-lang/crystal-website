@@ -2,7 +2,7 @@ core:
   beta-ziliani:
     name: Beta Ziliani
     status: active
-    role: Team lead
+    role: Team lead, Steering Council
     affiliation: Manas.Tech
 
   asterite:
@@ -12,11 +12,6 @@ core:
 
   bcardiff:
     name: Brian J. Cardiff
-    role: Co-Creator, Steering Council
-    status: active
-
-  waj:
-    name: Juan Wajnerman
     role: Co-Creator, Steering Council
     status: active
 
@@ -82,6 +77,9 @@ admin:
     affiliation: Manas.Tech
 
 alumni:
+  waj:
+    name: Juan Wajnerman
+
   ggiraldez:
     name: Gustavo Giraldez
 
