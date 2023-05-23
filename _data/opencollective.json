@@ -121,7 +121,7 @@
     "name": "Hiptoro",
     "url": "https://hiptoro.com",
     "last_payment": 5.0,
-    "all_time": 20.0,
+    "all_time": 25.0,
     "since": "Jan 17, 2023"
   },
   {
@@ -346,7 +346,7 @@
     "name": "PROXYONE LLC",
     "url": "https://proxyone.eu/",
     "last_payment": 5.0,
-    "all_time": 75.0,
+    "all_time": 80.0,
     "since": "Feb 21, 2022"
   },
   {
@@ -449,7 +449,7 @@
     "name": "maltidsbarometeret",
     "url": "https://maltidsbarometeret.dk",
     "last_payment": 5.0,
-    "all_time": 95.0,
+    "all_time": 100.0,
     "since": "Oct 19, 2021"
   },
   {
@@ -645,8 +645,8 @@
   },
   {
     "name": "lowkey",
-    "last_payment": 75.0,
-    "all_time": 1590.0,
+    "last_payment": 100.0,
+    "all_time": 1690.0,
     "since": "Jun 12, 2021"
   },
   {
