@@ -27,9 +27,9 @@ cat > /etc/yum.repos.d/crystal.repo <<END
 [crystal]
 name=Crystal
 type=rpm-md
-baseurl=https://download.opensuse.org/repositories/devel:languages:crystal/{REPOSITORY}/
+baseurl=https://download.opensuse.org/repositories/devel:/languages:/crystal/{REPOSITORY}/
 gpgcheck=1
-gpgkey=https://download.opensuse.org/repositories/devel:languages:crystal/{REPOSITORY}/repodata/repomd.xml.key
+gpgkey=https://download.opensuse.org/repositories/devel:/languages:/crystal/{REPOSITORY}/repodata/repomd.xml.key
 enabled=1
 END
 
