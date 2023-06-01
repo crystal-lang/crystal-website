@@ -1,5 +1,18 @@
 [
   {
+    "name": "Deposit Casinos",
+    "url": "https://10depositcasino.com/",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "May 31, 2023"
+  },
+  {
+    "name": "JustinsRepo",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "May 25, 2023"
+  },
+  {
     "name": "Josh Rickard",
     "last_payment": 10.0,
     "all_time": 10.0,
@@ -224,7 +237,7 @@
   },
   {
     "name": "Will Lewis",
-    "last_payment": 5.0,
+    "last_payment": 0.0,
     "all_time": 295.0,
     "since": "Jul 12, 2022"
   },
@@ -533,7 +546,7 @@
     "name": "Taletidskortnu",
     "url": "https://taletidskort.nu",
     "last_payment": 5.0,
-    "all_time": 105.0,
+    "all_time": 110.0,
     "since": "Aug 25, 2021"
   },
   {
@@ -666,14 +679,14 @@
     "name": "Netin nopeustesti",
     "url": "https://netinnopeustesti.com/",
     "last_payment": 5.0,
-    "all_time": 120.0,
+    "all_time": 125.0,
     "since": "May 27, 2021"
   },
   {
     "name": "Casinoonlineaams.com",
     "url": "https://www.casinoonlineaams.com",
     "last_payment": 25.0,
-    "all_time": 600.0,
+    "all_time": 625.0,
     "since": "May 26, 2021"
   },
   {
@@ -866,7 +879,7 @@
   {
     "name": "Werner Stein",
     "last_payment": 15.0,
-    "all_time": 320.0,
+    "all_time": 335.0,
     "since": "Jan 24, 2021"
   },
   {
@@ -904,13 +917,13 @@
     "url": "https://prestodoctor.com",
     "logo": "sponsors/prestodoctor.png",
     "last_payment": 75.0,
-    "all_time": 3825.0,
+    "all_time": 3900.0,
     "since": "Dec 28, 2020"
   },
   {
     "name": "Josh Hollenbeck",
     "last_payment": 10.0,
-    "all_time": 290.0,
+    "all_time": 300.0,
     "since": "Dec 19, 2020"
   },
   {
@@ -929,21 +942,21 @@
     "name": "OvrClock",
     "url": "https://ovrclock.com",
     "last_payment": 5.0,
-    "all_time": 150.0,
+    "all_time": 155.0,
     "since": "Dec 11, 2020"
   },
   {
     "name": "anapsix",
     "url": "https://blog.random.io",
     "last_payment": 5.0,
-    "all_time": 150.0,
+    "all_time": 155.0,
     "since": "Dec 2, 2020"
   },
   {
     "name": "Ryan Maki",
     "logo": "sponsors/ryan_maki.png",
     "last_payment": 75.0,
-    "all_time": 2250.0,
+    "all_time": 2325.0,
     "since": "Dec 2, 2020"
   },
   {
@@ -1016,13 +1029,13 @@
     "name": "Ricardo Tomasi",
     "url": "https://ricardo.cc",
     "last_payment": 25.0,
-    "all_time": 800.0,
+    "all_time": 825.0,
     "since": "Oct 9, 2020"
   },
   {
     "name": "Edward Loveall",
     "last_payment": 5.0,
-    "all_time": 160.0,
+    "all_time": 165.0,
     "since": "Sep 29, 2020"
   },
   {
@@ -1048,7 +1061,7 @@
     "url": "https://www.vulk.coop",
     "logo": "sponsors/vulk_cooperative.png",
     "last_payment": 75.0,
-    "all_time": 4350.0,
+    "all_time": 4425.0,
     "since": "Sep 10, 2020"
   },
   {
@@ -1060,14 +1073,14 @@
   {
     "name": "Open Collective",
     "last_payment": 0.0,
-    "all_time": 215.0,
+    "all_time": 220.0,
     "since": "Sep 9, 2020"
   },
   {
     "name": "Leonardo Kewitz",
     "url": "https://kewitz.js.org",
     "last_payment": 5.0,
-    "all_time": 215.0,
+    "all_time": 220.0,
     "since": "Sep 9, 2020"
   },
   {
@@ -1140,7 +1153,7 @@
     "name": "Matt Berry",
     "url": "https://mattrb.com",
     "last_payment": 5.0,
-    "all_time": 170.0,
+    "all_time": 175.0,
     "since": "Aug 7, 2020"
   },
   {
@@ -1183,7 +1196,7 @@
     "name": "Nobuaki Tanaka",
     "url": "https://twitter.com/tomerun",
     "last_payment": 5.0,
-    "all_time": 180.0,
+    "all_time": 185.0,
     "since": "Jun 10, 2020"
   },
   {
@@ -1195,7 +1208,7 @@
   {
     "name": "Oleksii Neishchenko",
     "last_payment": 5.0,
-    "all_time": 180.0,
+    "all_time": 185.0,
     "since": "Jun 9, 2020"
   },
   {
@@ -1262,7 +1275,7 @@
     "name": "Kagi",
     "url": "https://kagi.com",
     "last_payment": 25.0,
-    "all_time": 950.0,
+    "all_time": 975.0,
     "since": "Apr 8, 2020"
   },
   {
@@ -1352,13 +1365,13 @@
   {
     "name": "Jonathan Gnagy",
     "last_payment": 1.0,
-    "all_time": 79.0,
+    "all_time": 80.0,
     "since": "Oct 31, 2019"
   },
   {
     "name": "Raels Koder",
     "last_payment": 25.0,
-    "all_time": 1075.0,
+    "all_time": 1100.0,
     "since": "Oct 30, 2019"
   },
   {
@@ -1377,7 +1390,7 @@
     "name": "Ryan Prior",
     "url": "https://www.ryanprior.com",
     "last_payment": 5.0,
-    "all_time": 220.0,
+    "all_time": 225.0,
     "since": "Oct 7, 2019"
   },
   {
@@ -1408,7 +1421,7 @@
     "name": "Max Fierke",
     "url": "https://www.maxfierke.com",
     "last_payment": 25.0,
-    "all_time": 800.0,
+    "all_time": 825.0,
     "since": "Jul 21, 2019"
   },
   {
@@ -1524,7 +1537,7 @@
     "url": "https://www.blitline.com",
     "logo": "sponsors/blitline.png",
     "last_payment": 75.0,
-    "all_time": 4050.0,
+    "all_time": 4125.0,
     "since": "Dec 12, 2018"
   },
   {
