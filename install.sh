@@ -208,7 +208,7 @@ _install_apt() {
 }
 
 _install_rpm_key() {
-  rpm --verbose --import https://build.opensuse.org/projects/${OBS_PROJECT}/public_key
+  rpm --verbose --import https://build.opensuse.org/projects/${OBS_PROJECT}/signing_keys/download?kind=gpg
 }
 
 _install_yum() {
