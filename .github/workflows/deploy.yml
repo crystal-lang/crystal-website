@@ -43,7 +43,7 @@ jobs:
           docker compose run --rm web make build
       - name: Fetch install.sh
         run: |
-          make site/install.sh
+          make _site/install.sh
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
