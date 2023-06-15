@@ -22,7 +22,7 @@ jobs:
     if: github.repository_owner == 'crystal-lang'
     env:
       COMPOSE_FILE: "docker-compose.yml:docker-compose.ci.yml"
-      GIT_REV: "${{ (github.event_name == 'workflow_dispatch' && inputs.ref) || github.ref }}"
+      GIT_REF: "${{ (github.event_name == 'workflow_dispatch' && inputs.ref) || github.ref }}"
     steps:
       - name: Checkout ${{ env.GIT_REF }}
         uses: actions/checkout@v2
