@@ -28,7 +28,7 @@
   {
     "name": "Frisco Del Rosario",
     "last_payment": 1.0,
-    "all_time": 3.0,
+    "all_time": 2.0,
     "since": "May 8, 2023"
   },
   {
@@ -80,7 +80,7 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5.0,
-    "all_time": 20.0,
+    "all_time": 25.0,
     "since": "Feb 13, 2023"
   },
   {
@@ -302,7 +302,7 @@
   {
     "name": "Benjamin Klotz",
     "last_payment": 25.0,
-    "all_time": 235.0,
+    "all_time": 260.0,
     "since": "May 2, 2022"
   },
   {
@@ -333,7 +333,7 @@
     "name": "Sufi Meditation",
     "url": "https://www.zikir.com",
     "last_payment": 5.0,
-    "all_time": 70.0,
+    "all_time": 75.0,
     "since": "Mar 26, 2022"
   },
   {
@@ -431,7 +431,7 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5.0,
-    "all_time": 95.0,
+    "all_time": 100.0,
     "since": "Nov 11, 2021"
   },
   {
@@ -620,7 +620,7 @@
   {
     "name": "Joseph Method",
     "last_payment": 5.0,
-    "all_time": 115.0,
+    "all_time": 120.0,
     "since": "Jul 9, 2021"
   },
   {
@@ -671,7 +671,7 @@
     "name": "Windesol Sähkön Kilpailutus",
     "url": "https://windesol.fi",
     "last_payment": 5.0,
-    "all_time": 120.0,
+    "all_time": 125.0,
     "since": "Jun 8, 2021"
   },
   {
@@ -1247,7 +1247,7 @@
     "since": "May 9, 2020"
   },
   {
-    "name": "Glen Aultman-Bettridge",
+    "name": "Glen A-B",
     "last_payment": 5.0,
     "all_time": 185.0,
     "since": "May 5, 2020"
