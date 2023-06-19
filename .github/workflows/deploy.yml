@@ -26,11 +26,11 @@ jobs:
       GIT_REF: "${{ (github.event_name == 'workflow_dispatch' && inputs.ref) || github.ref }}"
     steps:
       - name: Checkout ${{ env.GIT_REF }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ env.GIT_REF }}
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             ~/.cache/bundle
@@ -48,7 +48,7 @@ jobs:
           make $O/install.sh
 
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
