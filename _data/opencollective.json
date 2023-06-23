@@ -1,5 +1,40 @@
 [
   {
+    "name": "ReverseProxy.com",
+    "url": "https://reverseproxy.com",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "Jun 19, 2023"
+  },
+  {
+    "name": "Eddy Luten",
+    "url": "https://luten.dev/",
+    "last_payment": 10.0,
+    "all_time": 10.0,
+    "since": "Jun 18, 2023"
+  },
+  {
+    "name": "GhostGram",
+    "url": "https://ghostgram.app/",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "Jun 18, 2023"
+  },
+  {
+    "name": "People Search",
+    "url": "https://identor.com/",
+    "last_payment": 10.0,
+    "all_time": 10.0,
+    "since": "Jun 16, 2023"
+  },
+  {
+    "name": "Poprey",
+    "url": "https://poprey.com/get-free-instagram-views",
+    "last_payment": 10.0,
+    "all_time": 10.0,
+    "since": "Jun 16, 2023"
+  },
+  {
     "name": "Deposit Casinos",
     "url": "https://10depositcasino.com/",
     "last_payment": 5.0,
@@ -134,7 +169,7 @@
     "name": "Hiptoro",
     "url": "https://hiptoro.com",
     "last_payment": 5.0,
-    "all_time": 25.0,
+    "all_time": 30.0,
     "since": "Jan 17, 2023"
   },
   {
@@ -359,7 +394,7 @@
     "name": "PROXYONE LLC",
     "url": "https://proxyone.eu/",
     "last_payment": 5.0,
-    "all_time": 80.0,
+    "all_time": 85.0,
     "since": "Feb 21, 2022"
   },
   {
@@ -462,7 +497,7 @@
     "name": "maltidsbarometeret",
     "url": "https://maltidsbarometeret.dk",
     "last_payment": 5.0,
-    "all_time": 100.0,
+    "all_time": 105.0,
     "since": "Oct 19, 2021"
   },
   {
@@ -658,7 +693,7 @@
   {
     "name": "lowkey",
     "last_payment": 100.0,
-    "all_time": 1690.0,
+    "all_time": 1790.0,
     "since": "Jun 12, 2021"
   },
   {
@@ -1248,8 +1283,8 @@
   },
   {
     "name": "Glen A-B",
-    "last_payment": 5.0,
-    "all_time": 185.0,
+    "last_payment": 10.0,
+    "all_time": 195.0,
     "since": "May 5, 2020"
   },
   {
