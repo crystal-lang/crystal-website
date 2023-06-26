@@ -170,6 +170,17 @@
     height: 1px;
   }
 
+  .latest-release {
+    font-family: "Roboto Mono", monospace;
+    text-transform: inherit;
+    margin-top: 70px;
+    font-size: 48px;
+    color: #999999;
+    a { color: #000000; }
+  }
+}
+
+.header-section {
   .btn-flat {
     border: 2px solid $white;
     color: $white;
@@ -181,15 +192,6 @@
       color: $black;
       background-color: $white;
     }
-  }
-
-  .latest-release {
-    font-family: "Roboto Mono", monospace;
-    text-transform: inherit;
-    margin-top: 70px;
-    font-size: 48px;
-    color: #999999;
-    a { color: #000000; }
   }
 }
 
