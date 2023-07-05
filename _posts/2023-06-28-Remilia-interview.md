@@ -1,16 +1,17 @@
 ---
-title: "Interview wth contributor Remilia Scarlet"
-author: beta-zilliani,Remilia
-summary: "<b>Music playback projects in Crystal, games engines, and a bit of Lisp"
+title: "Interview with contributor Remilia Scarlet"
+
+author: beta-ziliani,Remilia
+
+summary: "Music playback projects in Crystal, games engines, and a bit of Lisp"
+
 ---
-<https://remilia.sdf.org/>
 
-<https://www.youtube.com/watch?v=UX2in-whUik>
+Remilia Scarlet has been working with Crystal for her audio projects for a while now. We ask her about this experience, and here is what she has to say:
 
-_Conversation between Beta Ziliani and Remilia Scarlet_
 ## A little about you. Who's Remilia?
 
-Well, I'm an open-source developer who has worked with quite a few languages over the years. I mainly do command line tools, but recently I've been interested in audio programming as well.
+I'm an open-source developer who has worked with quite a few languages over the years. I mainly do command line tools, but recently I've been interested in audio programming as well.
 
 ## You are a Lisper and a Crystalist. That's a strange pairing of languages! What got you into Lisp, and what got you into Crystal?
 
@@ -21,7 +22,7 @@ These days, I'd say they're both tied for my favorite language.
 Yes, that's correct.
 ## Tell us about three projects that you're most proud of
 
-Well, I think the three I'm most proud of right now are [Benben](https://chiselapp.com/user/MistressRemilia/repository/benben/index), a player for a music format called VGM; [midi123](https://chiselapp.com/user/MistressRemilia/repository/midi123/index), a command line MIDI player that can use SoundFonts for audio synthesis; and [RemiAudio](https://chiselapp.com/user/MistressRemilia/repository/remiaudio/index), a general purpose audio processing library that is shared between them.
+I think the three I'm most proud of right now are [Benben](https://chiselapp.com/user/MistressRemilia/repository/benben/index), a player for a music format called VGM; [midi123](https://chiselapp.com/user/MistressRemilia/repository/midi123/index), a command line MIDI player that can use SoundFonts for audio synthesis; and [RemiAudio](https://chiselapp.com/user/MistressRemilia/repository/remiaudio/index), a general purpose audio processing library that is shared between them.
 ## You add audio chipsets to Benben.What's the story there?
 
 Yes! So most audio files (WAV, MP3, etc.) just store recorded audio samples, either in straight PCM format or a compressed format. VGM files are different in that they log the raw commands sent to various sound chips to read and write register values. To play them back, you need to have some sort of emulator for those sound chips. Benben implements these emulators using its backend library, YunoSynth. There were quite a few sound chips developed in the 80s and 90s for use in arcade games, as well as home consoles and computers. These ranged from simple "play back this sample at this time" chips, to full fledged synthesizers-on-a-chip that used frequency modulation synthesis to generate sound on the fly. The VGM format supports many of these chips, and I've been slowly porting emulators for them from the MAME project to YunoSynth/Benben.
@@ -54,6 +55,8 @@ Benben is likely going to be my main project for the near future. Getting it to 
 
 I hope so, yeah! I think it would be a great language for game development given how great the performance is, and how easy it is to pick up the language.
 
+## Where can we find more about you?
 
+I have a [personal web page](https://remilia.sdf.org/) where you can find all my projects.  And as a teaser, you can hear The Secret of Monkey Island played with midi123 in [this video](https://www.youtube.com/watch?v=UX2in-whUik).
 
 
