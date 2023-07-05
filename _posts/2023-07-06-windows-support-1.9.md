@@ -23,7 +23,7 @@ Much of the work in the past three months went into supporting load-time dynamic
 * The `CRYSTAL_LIBRARY_RPATH` build-time environment variable can be used to prepend DLL search paths to the default search order. It is inspired by `DT_RPATH` for ELF binaries, and likewise supports `$ORIGIN`, enabling relocatable, dynamically linked Windows binaries.
 * The compiler leverages the same feature to inject its own directory to the temporary executables built during `crystal run` or similar commands, so that those commands can be used even if the compiler isn't present in `PATH` and dynamic linking is used.
 
-Static linking is still the default mode in Crystal 1.9, and `-Dpreview_dll` will be honored throughout 1.9; if no significant outstanding issues are found, this flag will be dropped early during the development of the subsequent minor release, which is most likely 1.11-dev. Then dynamic linking would become the default and `--static` would be required for static linking, just like on other systems. Please add `--static` to your build scripts appropriately if they rely on that.
+Static linking will remain the default linking mode for Windows on Crystal 1.9 and 1.10; the compiler flag `-Dpreview_dll` enables dynamic linking in these versions. Afterwards, dynamic linking will become the default and `--static` will be required for static linking, just like on other systems. Please add `--static` to your build scripts appropriately if they rely on that.
 
 ## Other notable advancements
 
