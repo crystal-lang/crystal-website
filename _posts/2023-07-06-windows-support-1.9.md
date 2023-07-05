@@ -4,7 +4,7 @@ author: HertzDevil
 summary: GUI installer, load-time dynamic linking support, and more
 ---
 
-As the release of Crystal 1.9 draws near, the compiler and the standard library are now another step towards tier 1 support on x64 Windows with the MSVC toolchain. While an official Windows release isn't ready yet, only few outstanding issues remain and we expect them to be resolved in the following months. This post is a brief overview of what [1.9 has achieved](https://github.com/crystal-lang/crystal/pulls?q=is%3Apr+milestone%3A1.9.0+is%3Aclosed+label%3Aplatform%3Awindows) and what else needs to be achieved.
+With the release of Crystal 1.9, the compiler and the standard library have made a big step towards tier 1 support for x64 Windows with the MSVC toolchain. While an official Windows release isn't ready yet, only few outstanding issues remain and we expect them to be resolved in the following months. This post is a brief overview of what [1.9 has achieved](https://github.com/crystal-lang/crystal/pulls?q=is%3Apr+milestone%3A1.9.0+is%3Aclosed+label%3Aplatform%3Awindows) and what else needs to be achieved.
 
 ## GUI Installer
 
@@ -16,7 +16,7 @@ The upcoming 1.9 release will come with a download option for this GUI installer
 
 ## Dynamic linking
 
-Much of the work in these three months went into supporting load-time dynamic linking on Windows as seamlessly as possible, and you can now use the `-Dpreview_dll` compile-time flag to opt in to experimental dynamic linking support. More details can be found in the reference manual ([1.9](https://crystal-lang.org/reference/1.9/guides/static_linking.html), [master](https://crystal-lang.org/reference/master/guides/static_linking.html)). A brief summary is:
+Much of the work in the past three months went into supporting load-time dynamic linking on Windows as seamlessly as possible. You can now use the `-Dpreview_dll` compile-time flag to opt in to experimental dynamic linking support. More details can be found in the reference manual ([1.9](https://crystal-lang.org/reference/1.9/guides/static_linking.html), [master](https://crystal-lang.org/reference/master/guides/static_linking.html)). A brief summary is:
 
 * `@[Link("foo")]` will now instruct the compiler to search for `foo-static.lib` before `foo.lib` when linking statically, or `foo-dynamic.lib` before `foo.lib` when linking dynamically, allowing both libraries to be served side-by-side in the same directory.
 * Static linking implies `/MT` and dynamic linking implies `/MD`. Your own C libraries should be built with the appropriate MSVC linker flags.
@@ -25,7 +25,8 @@ Much of the work in these three months went into supporting load-time dynamic li
 
 Static linking is still the default mode in Crystal 1.9, and `-Dpreview_dll` will be honored throughout 1.9; if no significant outstanding issues are found, this flag will be dropped early during the development of the subsequent minor release, which is most likely 1.11-dev. Then dynamic linking would become the default and `--static` would be required for static linking, just like on other systems. Please add `--static` to your build scripts appropriately if they rely on that.
 
-## Other notable progresses
+## Other notable advancements
+
 
 * `IO.pipe` is now asynchronous ([#13362](https://github.com/crystal-lang/crystal/pull/13362)). This enables concurrency in a few crucial features on Windows, most notably piping a `Process`'s streams to `IO`s, and async `Log` backends. Note that `File`s and standard streams like `STDOUT` are still synchronous at the moment.
 * `timeout` now works correctly inside `select` expressions ([#13525](https://github.com/crystal-lang/crystal/pull/13525)).
