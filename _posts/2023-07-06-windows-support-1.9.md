@@ -20,8 +20,7 @@ Much of the work in the past three months went into supporting load-time dynamic
 
 * `@[Link("foo")]` will now instruct the compiler to search for `foo-static.lib` before `foo.lib` when linking statically, or `foo-dynamic.lib` before `foo.lib` when linking dynamically, allowing both libraries to be served side-by-side in the same directory.
 * Static linking implies `/MT` and dynamic linking implies `/MD`. Your own C libraries should be built with the appropriate MSVC linker flags.
-* The `CRYSTAL_LIBRARY_RPATH` build-time environment variable can be used to prepend DLL search paths to the default search order. It is inspired by `DT_RPATH` for ELF binaries, and likewise supports `$ORIGIN`, enabling relocatable, dynamically linked Windows binaries.
-* The compiler leverages the same feature to inject its own directory to the temporary executables built during `crystal run` or similar commands, so that those commands can be used even if the compiler isn't present in `PATH` and dynamic linking is used.
+* If the compiler flag `-Dpreview_win32_delay_load` is supplied, the `CRYSTAL_LIBRARY_RPATH` build-time environment variable can be used to prepend DLL search paths to the default search order. It is inspired by `DT_RPATH` for ELF binaries, and likewise supports `$ORIGIN`, enabling relocatable, dynamically linked Windows binaries.
 
 Static linking will remain the default linking mode for Windows on Crystal 1.9 and 1.10; the compiler flag `-Dpreview_dll` enables dynamic linking in these versions. Afterwards, dynamic linking will become the default and `--static` will be required for static linking, just like on other systems. Please add `--static` to your build scripts appropriately if they rely on that.
 
