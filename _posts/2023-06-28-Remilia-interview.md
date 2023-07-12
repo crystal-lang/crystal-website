@@ -19,7 +19,7 @@ These days, I'd say they're both tied for my favorite language.
 
 Yes, that's correct.
 
-**Tell us about three projects that you're most proud of**
+**Tell us about three projects that you're most proud of.**
 
 I think the three I'm most proud of right now are [Benben](https://chiselapp.com/user/MistressRemilia/repository/benben/index), a player for a music format called VGM; [midi123](https://chiselapp.com/user/MistressRemilia/repository/midi123/index), a command line MIDI player that can use SoundFonts for audio synthesis; and [RemiAudio](https://chiselapp.com/user/MistressRemilia/repository/remiaudio/index), a general purpose audio processing library that is shared between them.
 
