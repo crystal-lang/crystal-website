@@ -51,7 +51,7 @@ I'm not aware of anyone using my more recent audio-related projects. I'm hoping 
 
 Yes, exactly! I've made a few prototype engines in Crystal, as well as an unfinished port of Doom, and feel that it could be a great language for writing video games based on my experiences with those.
 
-**About your Doom port! I remember you did some custom-made levels there, right?**
+**I remember your Doom port! You did some custom-made levels there, right?**
 
 Yeah! I've been doing levels for Doom since the mid 90s, and writing my own Doom port has been on my bucket list since I was a kid.
 
@@ -59,7 +59,7 @@ Yeah! I've been doing levels for Doom since the mid 90s, and writing my own Doom
 
 Benben is likely going to be my main project for the near future. Getting it to support most, or all, of the chips that the VGM format supports is a key goal for the project. I'd also like to backport some of its frontend features into midi123 since the frontends are very similar internally. Aside from that, I'm looking at doing an actual retro-style game, possibly either an FPS or a vertical shooter.
 
-**The video game story for Crystal is much unexplored. I guess that once Windows support is there, that line will boost. Or at least, my experience is that gamers use Windows…**
+**The video game story for Crystal is much unexplored. I guess that now that [Windows support is almost there](https://crystal-lang.org/2023/07/06/windows-support-1.9/), that line will boost. Or at least, my experience is that gamers use Windows…**
 
 I hope so, yeah! I think it would be a great language for game development given how great the performance is, and how easy it is to pick up the language.
 
