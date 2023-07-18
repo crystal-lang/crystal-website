@@ -17,7 +17,11 @@ These days, I'd say they're both tied for my favorite language.
 
 **Sometimes you first do a prototype in Lisp, and then a rewrite in Crystal, is that right?**
 
-Yes, that's correct.
+Yes, that's correct. Part of this is just due to my history of using Common Lisp. I've gotten used to the immediacy of it, especially when combined with an Emacs mode called Slime. You don't just have a REPL, but a live coding environment with the full compiler and image-based development. I can just put my cursor in a function, do C-c, and it'll recompile a function to native code, even while a program is running. So it makes the adjust->compile->test pipeline much shorter. Common Lisp is close enough to Crystal with respect to its capabilities and paradigms that moving between them also isn't too big of a deal for me.
+
+However, my Lisp code stays as a prototype in most cases because my Lisp code is never as memory efficient as Crystal. In most cases I see a roughly 50-75% decrease in memory usage going from my initial Lisp prototype to Crystal. Shipping a source repo that someone can download and compile also isn't as clean as with Shards, and even if it was, I don't think most users wanting to compile their own software know the idiosyncrasies of the various Lisp compilers out there. So really, Crystal ends up making a lot more sense to me past the prototype stage in most cases.
+
+Also, a Hello World binary built with Common Lisp is somewhere around 42mb (and can't be run through strip), whereas a Hello World in Crystal is only like 300k.
 
 **Tell us about three projects that you're most proud of.**
 
