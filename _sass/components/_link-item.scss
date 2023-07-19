@@ -1,0 +1,52 @@
+.link-items {
+  > h3 {
+    font-size: 1em;
+    font-weight: 200;
+    margin-bottom: var(--padding-xs);
+  }
+
+  padding-left: 1.5em;
+  @media (min-width: 160ch) {
+    margin-left: -1.5em;
+  }
+}
+
+.link-item {
+  position: relative;
+  line-height: var(--line-height-md);
+  font-size: 90%;
+
+  + .link-item {
+    margin-top: var(--block-flow-sm);
+  }
+
+  a {
+    color: var(--light-text);
+    &:not(.link-item__main) {
+      text-decoration: underline;
+      color: var(--lighter-text);
+    }
+  }
+
+  .link-item__main {
+    font-weight: 500;
+
+    > em {
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  svg {
+    width: 1.2em;
+    position: absolute;
+    right: calc(100% + 0.3em);
+    margin-top: 0.15em;
+  }
+
+  p {
+    font-size: 90%;
+    line-height: var(--line-height-md);
+    color: var(--light-gray);
+  }
+}
