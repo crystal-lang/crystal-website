@@ -7,7 +7,7 @@
 
   enterShell = ''
     # Automatically run bundler upon enterting the shell.
-    bundle
+    bundle install --quiet
   '';
 
   pre-commit.hooks = {
