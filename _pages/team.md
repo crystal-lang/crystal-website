@@ -106,22 +106,3 @@ If you want to become a contributor, see our [Contributing Instructions](https:/
 
 {% include components/sponsorship.html %}
 
-<section markdown="1" id="sponsors">
-## Our sponsors
-
-All this is only possible through our generous [sponsors](/sponsors)
-which help sustaining the project.
-
-Check out our sponsorship page at [OpenCollective](https://opencollective.com/crystal-lang) if you want to become one of them.
-
-Corporate sponsors please reach out to [crystal@manas.tech](mailto:crystal@manas.tech). We're happy to work with you.
-</section>
-
-<section markdown="1" id="join">
-## Join the team
-
-If you want to become a contributors, see our [Contributing Instructions](https://github.com/crystal-lang/crystal/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/crystal-lang/crystal/blob/master/CODE_OF_CONDUCT.md).
-
-  Community members with a good understanding of the current processes and topics in the Crystal community, can be considered to be become a moderator.
-  Respectable and helpful conduct is obviously required for that. If you think you qualify and want to apply, please don't hesitate to contact the core team at [crystal@manas.tech](mailto:crystal@manas.tech).
-</section>
