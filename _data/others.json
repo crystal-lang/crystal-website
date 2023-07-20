@@ -1,5 +1,13 @@
 [
   {
+    "name": "Manas Technology Solutions",
+    "url": "https://manas.tech/",
+    "logo": "sponsors/manas.png",
+    "last_payment": 12000,
+    "all_time": 505820,
+    "since": "Jun 19, 2009"
+  },
+  {
     "name": "Nikola Motor Company",
     "url": "https://nikolamotor.com/",
     "logo": "sponsors/nikola_motor_company.png",
