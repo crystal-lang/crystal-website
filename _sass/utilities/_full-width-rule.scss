@@ -1,0 +1,14 @@
+.full-width-rule {
+  @extend .full-width;
+  display: grid;
+  grid-template: "container";
+  place-items: center;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100vw;
+    position: absolute;
+    border-block-end: 0.16ch solid var(--border-color);
+  }
+}

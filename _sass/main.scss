@@ -27,12 +27,15 @@
   @import "components/callout";
   @import "components/card";
   @import "components/cards-list";
+  @import "components/profile-card";
   @import "components/content";
   @import "components/navbar";
   @import "components/post-teaser";
   @import "components/post-navigation";
   @import "components/side-section";
   @import "components/sponsor-card";
+  @import "components/top-sponsors";
+  @import "components/topics";
 }
 
 @layer pages {
@@ -44,5 +47,7 @@
 
 @layer utilities {
   @import "utilities";
+  @import "utilities/text";
   @import "utilities/footnote";
+  @import "utilities/full-width-rule";
 }
