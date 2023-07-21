@@ -1,0 +1,42 @@
+---
+title: Sitemap
+---
+<section class="content">
+  <h2>Pages</h2>
+  <ul>
+    {% assign pages = site.pages | sort: "url" %}
+    {% for entry in pages %}
+      {% assign url = entry.url | prepend: "<code>" | append: "</code>" %}
+      {% assign path = entry.url | remove_first: "/" | split: "/" %}
+      <li>
+        {% for component in path -%}
+          {%- if forloop.last -%}
+            {%- unless forloop.first %}</code>{% endunless -%}
+            {%- continue -%}
+          {%- endif -%}
+          {%- if forloop.first %}<code>{% endif -%}
+          {{- component -}}/
+        {%- endfor %}
+        {% if entry.redirect_to %}
+        {{ entry.title | default: entry.subtitle | default: url }} → <a href="{{ entry.redirect_to }}" rel="nofollow">{{ entry.redirect_to }}</a>
+        {% else %}
+          <a href="{{ entry.url }}">{{ entry.title | default: entry.subtitle | default: url }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% assign collections = site.collections | where: "output", "true" %}
+{% for collection in collections %}
+{% if collection.label == "posts" or collection.label == "releases" or collection.label == "pages" %}
+  {% continue %}
+{% endif %}
+<section class="content">
+  <h2>{{ collection.label }}</h2>
+  <ul>
+    {% for entry in collection.docs %}
+      <li><a href="{{ entry.url }}">{{ entry.title }}</a> {% if entry.date != site.time %}({{ entry.date  | date: "%F" }}){% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
