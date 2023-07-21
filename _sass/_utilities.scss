@@ -31,3 +31,19 @@
   padding: 0 0.75em;
   font-weight: 400;
 }
+
+.label {
+  font-size: 90%;
+  font-weight: 200;
+  color: var(--lighter-text);
+}
+
+ul,
+li {
+  &.yes {
+    list-style-image: url("/assets/icons/check.svg");
+  }
+  &.no {
+    list-style-image: url("/assets/icons/close.svg");
+  }
+}
