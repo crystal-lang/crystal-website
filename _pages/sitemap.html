@@ -17,10 +17,16 @@ title: Sitemap
           {%- if forloop.first %}<code>{% endif -%}
           {{- component -}}/
         {%- endfor %}
+        {% assign title = entry.title | default: entry.subtitle | default: url %}
         {% if entry.redirect_to %}
-        {{ entry.title | default: entry.subtitle | default: url }} → <a href="{{ entry.redirect_to }}" rel="nofollow">{{ entry.redirect_to }}</a>
+          {{ title }} → <a href="{{ entry.redirect_to }}" rel="nofollow">{{ entry.redirect_to }}</a>
         {% else %}
-          <a href="{{ entry.url }}">{{ entry.title | default: entry.subtitle | default: url }}</a>
+          <a href="{{ entry.url }}">{{ title }}</a>
+        {% endif %}
+        {% assign slug_title = title | slugify %}
+        {% assign down_title = title | downcase %}
+        {% if slug_title != path.last and down_title != path.last %}
+          (<code>{{ path.last }}</code>)
         {% endif %}
       </li>
     {% endfor %}
