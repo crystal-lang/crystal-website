@@ -1,0 +1,19 @@
+.page--error > header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.error-extra {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: var(--block-flow-xs);
+  align-items: center;
+  width: max-content;
+
+  > h1 {
+    font-family: var(--code-font);
+    color: var(--light-text);
+  }
+}
