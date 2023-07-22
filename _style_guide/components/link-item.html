@@ -3,20 +3,28 @@ title: Link Item
 type: components
 class: wide
 ---
-<div class="link-items" id="news">
+<div class="link-items">
   <h3>News</h3>
 
-  <div class="link-item" id="blog">
-    {% include icons/rss.svg %}
-    <a class="link-item__main" href="/blog">Crystal Blog</a> (<a href="/feed.xml">feed</a>)
-    <p>Release announcements, use cases, features and other news from the Crystal team.</p>
+  <div class="link-item">
+    <a class="link-item__main" href="#">
+      {% include icons/newsletter.svg %}
+      Main link
+    </a>
   </div>
 
-  <div class="link-item" id="newsletter">
-    <a class="link-item__main" href="/newsletter">
-      {% include icons/newsletter.svg %}
-      Crystal Newsletter
-    </a> (<a href="/newsletter/archive">archive</a>)
-    <p>Our newsletter regularly shares highlights and insights on the Crystal language and community.</p>
+  <div class="link-item">
+    <a class="link-item__main" href="#">
+      {% include icons/rss.svg %}
+      Main Link
+    </a> (<a href="#">aux link</a>)
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+
+  <div class="link-item">
+    <a href="#">
+      {% include icons/announce.svg %}
+      Link without highlight
+    </a>
   </div>
 </div>
