@@ -10,7 +10,10 @@ layout: page-wide
   <h2 id="core">Core Team</h2>
   <aside markdown="1">
 
-The Core Team manages the development of Crystal and its ecosystem.
+The *Core Team* leads the development of Crystal and its ecosystem under the
+guidance of the *Steering Council*. Both bodies are defined in the
+[Governance document](/community/governance).
+
   </aside>
 
   <div class="cards-list">

@@ -1,18 +1,14 @@
 .topics {
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
 
-  gap: var(--padding-md);
-
-  @media (max-width: 80ch) {
-    grid-auto-flow: row;
-  }
+  column-gap: var(--padding-md);
+  row-gap: var(--padding-lg);
 }
 
 .topic {
   display: grid;
+  justify-self: center;
 
   grid-template-areas:
     "icon title"

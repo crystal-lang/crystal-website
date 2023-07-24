@@ -16,6 +16,6 @@
   }
 
   :where(& > :is(h1, h2, h3, h4) + *) {
-    margin-block-start: var(--block-flow-sm);
+    margin-block-start: var(--block-flow-xs);
   }
 }
