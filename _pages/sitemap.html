@@ -38,7 +38,7 @@ title: Sitemap
   {% continue %}
 {% endif %}
 <section class="content">
-  <h2>{{ collection.label }}</h2>
+  <h2>{{ collection.label | capitalize }}</h2>
   <ul>
     {% for entry in collection.docs %}
       <li><a href="{{ entry.url }}">{{ entry.title }}</a> {% if entry.date != site.time %}({{ entry.date  | date: "%F" }}){% endif %}</li>
