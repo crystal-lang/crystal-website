@@ -2,5 +2,7 @@
   {% if include.title %}
     <strong class="callout-title">{{ include.title }}</strong>
   {% endif %}
-  {{ include.content | markdownify }}
+  <div markdown="1">
+    {{ include.content }}
+  </div>
 </aside>

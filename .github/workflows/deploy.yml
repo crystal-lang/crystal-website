@@ -1,41 +1,59 @@
-name: Build
+name: Deploy
 on:
   push:
-  pull_request:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch, tag or commit SHA1 to build'
+        required: true
+        type: string
+        default: master
+
+## cancel ongoing runs if the workflow is triggered
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  build:
-    name: Build
+  deploy:
+    name: Build and Deploy
     runs-on: ubuntu-latest
+    if: github.repository_owner == 'crystal-lang'
+    env:
+      O: _site
+      COMPOSE_FILE: "docker-compose.yml:docker-compose.ci.yml"
+      GIT_REF: "${{ (github.event_name == 'workflow_dispatch' && inputs.ref) || github.ref }}"
     steps:
-      - name: Download source
-        uses: actions/checkout@v2
+      - name: Checkout ${{ env.GIT_REF }}
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ env.GIT_REF }}
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             ~/.cache/bundle
             tmp/.htmlproofer
           key: gem-${{ hashFiles('Gemfile.lock') }}
           restore-keys: gem-
-      - name: Fetch install.sh
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master' && github.repository_owner == 'crystal-lang'
-        run: |
-          make fetch_install.sh
+
       - name: Build website
         run: |
-          mv docker-compose.ci.yml docker-compose.override.yml
-          docker-compose run --rm web /bin/bash -c "bundle check || bundle install --jobs=3"
-          docker-compose run --rm web make check_html
-          docker-compose run --rm web /bin/bash -c "make check_external_links || true" # allowed to fail
+          docker compose run --rm web /bin/bash -c "bundle check || bundle install --jobs=3"
+          docker compose run -e O --rm web make build
+          sudo chown -R $(whoami):$(whoami) $O
+      - name: Fetch install.sh
+        run: |
+          make $O/install.sh
+
       - name: Configure AWS Credentials
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master' && github.repository_owner == 'crystal-lang'
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
-      - name: Deploy to www.crystal-lang.org
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master' && github.repository_owner == 'crystal-lang'
+      - name: Sync to S3
         run: |
-          aws s3 sync ./_site s3://crystal-website --delete
+          aws s3 sync ./$O s3://crystal-website --delete
           ./scripts/set-legacy-url-redirects.bash crystal-website < ./_data/legacy_non_pretty_urls.txt
