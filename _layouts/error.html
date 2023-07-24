@@ -1,0 +1,12 @@
+---
+layout: base
+---
+<div class="error-page">
+  <h1>{{ page.status_code }}</h1>
+
+  {% highlight crystal -%}
+  {{ page.code }}
+  {%- endhighlight %}
+
+  {{ page.description | markdownify }}
+</div>

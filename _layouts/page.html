@@ -3,7 +3,7 @@ layout: base
 # Generic layout for pages, including page header and body
 ---
 
-<article class="page">
+<article class="page {{ page.page_class }}">
   {% include site/page-header.html %}
 
   <main class="content">{{ content }}</main>

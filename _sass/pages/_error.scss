@@ -1,0 +1,14 @@
+.layout--error {
+  > main {
+    flex-grow: 1;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .highlight {
+    --code-bg: transparent;
+    font-size: 200%;
+  }
+}
