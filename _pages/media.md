@@ -8,14 +8,14 @@ description: |
 
 ## Assets
 
-Thanks for showing interest in Crystal! As the language and the community
-continues to grow we think it is important to have basic rules of thumb about
-how and for what purposes you can use the Crystal brand.
-
 We’ve put together some assets and guidelines to help you determine the best way
 to use our brand and logos.
 
 ### Logo
+
+
+> **NOTE** Important
+> Make sure to follow the [guidelines](#guidelines) described below when using any of this material.
 
 <div class="cards-list">
   {% include media/gallery_item.html img="media/crystal_logo.svg" name="Logo" %}
