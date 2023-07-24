@@ -5,7 +5,7 @@ module Jekyll
     def initialize(config)
       callout_names = config["callouts"]
       if callout_names && !callout_names.empty?
-        @regex = /(^ {0,3}>\s*)\*\*(#{callout_names.join("|") {|n| Regexp.escape(n)}}):\*\*((?:[\t ]+[^\n]*)?)(\n(?:^ {0,3}>[^\n]*)*)/m
+        @regex = /(^ {0,3}>\s*)\*\*(#{callout_names.join("|") {|n| Regexp.escape(n)}}):\*\*((?:[\t ]+[^\n]*)?)((?:\n {0,3}>[^\n]*)*)/m
       else
         @regex = nil
       end
@@ -49,7 +49,12 @@ module Jekyll
         file = DEFAULT_INCLUDE_PATH
       end
 
-      %({% include #{file} callout="#{template}" title=#{title.inspect} content=#{content.inspect} %})
+      <<~MD
+        {% capture callout_content %}
+        #{content}
+        {% endcapture %}
+        {% include #{file} callout="#{template}" title=#{title.inspect} content=callout_content %}
+        MD
     end
 
     def locate_include_file(file)

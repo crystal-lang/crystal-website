@@ -2,5 +2,7 @@
   {% if include.title %}
     <h4>{{ include.title }}</h4>
   {% endif %}
-  {{ include.content | markdownify }}
+  <div markdown="1">
+    {{ include.content }}
+  </div>
 </div>
