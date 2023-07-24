@@ -1,19 +1,16 @@
-.page--error > header {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
+.layout--error {
+  > main {
+    flex-grow: 1;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    --block-flow: 0;
+    --block-flow-sm: 0;
+    text-align: center;
+  }
 
-.error-extra {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  gap: var(--block-flow-xs);
-  align-items: center;
-  width: max-content;
-
-  > h1 {
-    font-family: var(--code-font);
-    color: var(--light-text);
+  .highlight {
+    --code-bg: transparent;
+    font-size: 200%;
   }
 }
