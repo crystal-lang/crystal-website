@@ -14,7 +14,7 @@ to use our brand and logos.
 ### Logo
 
 
-> **NOTE** Important
+> **NOTE**: Important
 > Make sure to follow the [guidelines](#guidelines) described below when using any of this material.
 
 <div class="cards-list">
