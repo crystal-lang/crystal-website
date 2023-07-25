@@ -3,11 +3,7 @@ title: Crystal 1.0 Conference
 description: >
   July 8th 2021, 12:30pm - 9:30pm UTC
 
-custom_body_classes:
-  - main
-  - conference
-header:
-  delaunay: true
+layout: event
 ---
 
 <div class="container">
@@ -69,27 +65,31 @@ header:
                 {{ session["Talk title"] }}
               </h3>
               {% if session["Theme"] %}
-                <div>
-                  <i class="material-icons">label</i>
+                <div class="icon-prefix">
+                  {% include icons/label.svg %}
                   {{ session["Theme"] }}
                 </div>
               {% endif %}
-              <div>
-                <i class="material-icons">schedule</i>
+              <div class="icon-prefix">
+                {% include icons/schedule.svg %}
                 {{ session["Duration (minutes)"] }} minutes at {{ session["Room" ] }}
               </div>
               <p class="session-links">
                 {% if session["Video Link"] %}
-                  <a href="{{ session["Video Link"] }}" class="with-icon">
-                    <i class="material-icons">videocam</i>
-                    Recording
-                  </a>
+                  <div class="link-item">
+                    <a href="{{ session["Video Link"] }}">
+                      {% include icons/videocam.svg %}
+                      Recording
+                    </a>
+                  </div>
                 {% endif %}
                 {% if session["Slides Link"] %}
-                  <a href="{{ session["Slides Link"] }}" class="with-icon">
-                    <i class="material-icons">slideshow</i>
-                    Slides
-                  </a>
+                  <div class="link-item">
+                    <a href="{{ session["Slides Link"] }}">
+                      {% include icons/slideshow.svg %}
+                      Slides
+                    </a>
+                  </div>
                 {% endif %}
               </p>
               {% if session["Abstract"] %}

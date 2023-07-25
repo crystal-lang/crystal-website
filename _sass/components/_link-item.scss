@@ -9,16 +9,15 @@
   @media (min-width: 160ch) {
     margin-left: -1.5em;
   }
+
+  .link-item + .link-item {
+    margin-top: var(--block-flow-sm);
+  }
 }
 
 .link-item {
-  position: relative;
-  line-height: var(--line-height-md);
-  font-size: 90%;
-
-  + .link-item {
-    margin-top: var(--block-flow-sm);
-  }
+  @extend .icon-prefix;
+  margin-inline-start: 0;
 
   a {
     color: var(--light-text);
@@ -37,16 +36,27 @@
     }
   }
 
-  svg {
-    width: 1.2em;
-    position: absolute;
-    right: calc(100% + 0.3em);
-    margin-top: 0.15em;
-  }
-
   p {
     font-size: 90%;
     line-height: var(--line-height-md);
     color: var(--light-gray);
+  }
+}
+
+.icon-prefix {
+  position: relative;
+  font-size: 90%;
+  line-height: var(--line-height-md);
+  margin-inline-start: 1.2em;
+  color: var(--light-gray);
+
+  > svg:first-child,
+  > :any-link > svg:first-child {
+    width: 1.2em;
+    position: absolute;
+    right: calc(100% + 0.3em);
+    margin-top: 0.15em;
+
+    fill: currentColor;
   }
 }
