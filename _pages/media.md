@@ -57,8 +57,9 @@ to use our brand and logos.
 
 Meet Crys, the mascot of Crystal. It's smart and likes shiny things, so feed it with your best shards!
 
-<div class="media-gallery">
-  {% include media/gallery_item.html img="media/crys-mascot.svg" name="Crys, the Crystal mascot" %}
+<div class="cards-list">
+  {% include media/gallery_item.html img="media/crys-mascot.svg" name="Download SVG" %}
+  {% include media/gallery_item.html img="media/crys-mascot.png" name="Download PNG" %}
 </div>
 
 ## Guidelines
