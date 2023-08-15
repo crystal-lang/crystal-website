@@ -1,0 +1,9 @@
+.color-sample {
+  --color-sample-border: var(--light-gray);
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  border: 2px solid var(--color-sample-border);
+  margin: 10px auto;
+  background-color: var(--color-sample-color);
+}

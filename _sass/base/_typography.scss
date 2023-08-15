@@ -91,7 +91,10 @@ pre,
   font-family: var(--code-font);
   margin: 0;
   font-size: 80%;
-  background-color: var(--code-bg);
+
+  &:not(.low-key) {
+    background-color: var(--code-bg);
+  }
 }
 
 pre > code {
