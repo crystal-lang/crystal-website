@@ -2,12 +2,12 @@ logo,name,url,last_payment,all_time,since,level
 sponsors/manas.png,Manas Technology Solutions,https://manas.tech/,"$12,000","$505,820","Jun 19, 2009",5000
 sponsors/84.png,84 codes,https://www.84codes.com/,"€5,000","€256,000","Apr 1, 2018",5000
 sponsors/placeos.png,PlaceOS,https://place.technology/,$250,"$5,750","Jul 26, 2021",250
+,lowkey,,$150,"$2,140","Jun 12, 2021",150
 sponsors/jonathan_siegel.png,Jonathan Siegel,https://www.linkedin.com/in/jsiegel,$150,"$1,950","Sep 12, 2022",150
 sponsors/vulk_cooperative.png,Vulk Cooperative,https://www.vulk.coop,$75,"$4,950","Sep 10, 2020",75
 sponsors/blitline.png,Blitline,https://www.blitline.com,$75,"$4,350","Dec 12, 2018",75
 sponsors/prestodoctor.png,PrestoDoctor,https://prestodoctor.com,$75,"$4,125","Dec 28, 2020",75
 sponsors/ryan_maki.png,Ryan Maki,,$75,"$2,550","Dec 2, 2020",75
-,lowkey,,$100,"$1,990","Jun 12, 2021",75
 sponsors/concentric.png,Concentric,https://concentric.health,$75,$600,"Feb 2, 2023",75
 ,Thomas Peter Berntsen,https://twitter.com/tpberntsen,$25,"$4,375","Sep 20, 2015",25
 ,isaacsloan,https://isaacsloan.com,$36,"$2,506","Mar 24, 2016",25
@@ -95,13 +95,13 @@ sponsors/concentric.png,Concentric,https://concentric.health,$75,$600,"Feb 2, 20
 ,ryan-senn,https://tt.edu.au,$5,$120,"Jan 4, 2020",5
 ,eason.ye,https://github.com/yelanxin,$5,$120,"Sep 17, 2021",5
 ,Mia Bennett,https://chillfox.com/,$5,$120,"Oct 1, 2021",5
-,maltidsbarometeret,https://maltidsbarometeret.dk,$5,$115,"Oct 19, 2021",5
+,maltidsbarometeret,https://maltidsbarometeret.dk,$5,$120,"Oct 19, 2021",5
 ,Michael Wagner,,$5,$115,"Nov 11, 2021",5
 ,Marco Roth,https://marcoroth.dev,$5,$110,"Mar 4, 2020",5
 ,Wolfgang Klinger,,$5,$110,"Mar 9, 2020",5
 ,Artem Napolskih,,$5,$110,"May 22, 2020",5
 ,HelppoHinta.fi,https://helppohinta.fi/,$5,$110,"Oct 1, 2021",5
-,PROXYONE LLC,https://proxyone.eu/,$5,$95,"Feb 21, 2022",5
+,PROXYONE LLC,https://proxyone.eu/,$5,$100,"Feb 21, 2022",5
 ,Anton Maminov,https://twitter.com/AntonMaminov,$5,$95,"Feb 23, 2022",5
 ,bit4bit,,$5,$95,"Mar 9, 2022",5
 ,Seth Falco,https://falco.fun/,$5,$90,"Jul 23, 2022",5
@@ -111,8 +111,8 @@ sponsors/concentric.png,Concentric,https://concentric.health,$75,$600,"Feb 2, 20
 ,CasinoWizard,https://thecasinowizard.com/,$5,$50,"Oct 19, 2022",5
 ,Aviator Game,https://aviatorgame.guru,$5,$50,"Nov 25, 2022",5
 ,DeFiCasinos.io,https://deficasinos.io,$5,$45,"Dec 29, 2022",5
+,Hiptoro,https://hiptoro.com,$5,$45,"Jan 17, 2023",5
 ,salt rock lamp,,$5,$40,"Apr 11, 2021",5
-,Hiptoro,https://hiptoro.com,$5,$40,"Jan 17, 2023",5
 ,Bubble Shooter,https://www.bubbleshooter.net/,$5,$40,"Feb 13, 2023",5
 ,Famium,https://famium.co/,$5,$35,"Jan 17, 2023",5
 ,Displaybenchmark,https://displaybenchmark.com/,$5,$35,"Jan 20, 2023",5
@@ -129,6 +129,8 @@ sponsors/concentric.png,Concentric,https://concentric.health,$75,$600,"Feb 2, 20
 ,implant de par Turcia,https://implantdeparturcia.ro/,$5,$5,"Jul 26, 2023",5
 ,Instagram Story Viewer,https://insta-stories-viewer.com,$5,$5,"Aug 23, 2023",5
 ,Free Spider Solitaire Online,https://free-spider-solitaire.online,$5,$5,"Sep 11, 2023",5
+,Crescitaly,https://crescitaly.com,$5,$5,"Sep 21, 2023",5
+,Chudovo,https://chudovo.com/,$5,$5,"Sep 22, 2023",5
 ,speg,,$3,$83,"Jan 10, 2022",1
 ,Jonathan Gnagy,,$1,$83,"Oct 31, 2019",1
 ,Martin Luder,,$1,$76,"Aug 14, 2015",1
