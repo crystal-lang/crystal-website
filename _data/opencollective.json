@@ -1,5 +1,11 @@
 [
   {
+    "name": "TopCasinoSearch",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "Oct 13, 2023"
+  },
+  {
     "name": "Best Casinos Australia - BCA",
     "url": "https://best-casinos-australia.com/",
     "last_payment": 5.0,
@@ -148,7 +154,7 @@
   {
     "name": "Frisco Del Rosario",
     "last_payment": 1.0,
-    "all_time": 9.0,
+    "all_time": 10.0,
     "since": "May 8, 2023"
   },
   {
@@ -200,7 +206,7 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5.0,
-    "all_time": 40.0,
+    "all_time": 45.0,
     "since": "Feb 13, 2023"
   },
   {
@@ -419,7 +425,7 @@
   },
   {
     "name": "Benjamin Klotz",
-    "last_payment": 25.0,
+    "last_payment": 0.0,
     "all_time": 310.0,
     "since": "May 2, 2022"
   },
@@ -548,7 +554,7 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5.0,
-    "all_time": 115.0,
+    "all_time": 120.0,
     "since": "Nov 11, 2021"
   },
   {
@@ -737,7 +743,7 @@
   {
     "name": "Joseph Method",
     "last_payment": 5.0,
-    "all_time": 135.0,
+    "all_time": 140.0,
     "since": "Jul 9, 2021"
   },
   {
@@ -788,7 +794,7 @@
     "name": "Windesol Sähkön Kilpailutus",
     "url": "https://windesol.fi",
     "last_payment": 5.0,
-    "all_time": 140.0,
+    "all_time": 145.0,
     "since": "Jun 8, 2021"
   },
   {
