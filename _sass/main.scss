@@ -25,6 +25,7 @@
   @import "elements/hex";
   @import "elements/table";
 
+  @import "components/book-authors";
   @import "components/callout";
   @import "components/card";
   @import "components/cards-list";
@@ -47,6 +48,7 @@
   @import "pages/releases";
   @import "pages/sponsors";
   @import "pages/styleguide";
+  @import "pages/learning";
 }
 
 @layer utilities {

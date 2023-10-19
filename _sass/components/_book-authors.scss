@@ -1,0 +1,31 @@
+.book-authors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+
+  column-gap: var(--padding-md);
+  row-gap: var(--padding-lg);
+}
+
+.book-author {
+  display: grid;
+
+  grid-template-areas:
+    "icon main";
+  grid-template-columns: auto 1fr;
+  column-gap: var(--padding-sm);
+
+  > * {
+    grid-area: main;
+  }
+
+  > p {
+    max-width: 43ch;
+  }
+
+  > .book-author-icon {
+    grid-area: icon;
+    width: 6ch;
+    height: 6ch;
+    clip-path: content-box circle(50%);
+  }
+}
