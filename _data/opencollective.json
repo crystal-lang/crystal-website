@@ -1,6 +1,13 @@
 [
   {
+    "name": "Daniel Salazar",
+    "last_payment": 10.0,
+    "all_time": 10.0,
+    "since": "Oct 15, 2023"
+  },
+  {
     "name": "TopCasinoSearch",
+    "url": "https://www.topcasinosearch.com/",
     "last_payment": 5.0,
     "all_time": 5.0,
     "since": "Oct 13, 2023"
@@ -258,7 +265,7 @@
     "name": "Hiptoro",
     "url": "https://hiptoro.com",
     "last_payment": 5.0,
-    "all_time": 45.0,
+    "all_time": 50.0,
     "since": "Jan 17, 2023"
   },
   {
@@ -269,10 +276,10 @@
     "since": "Dec 29, 2022"
   },
   {
-    "name": "Josephine P.",
-    "url": "https://josie.lol",
+    "name": "Josephine Pfeiffer",
+    "url": "https://josie.lol/",
     "last_payment": 10.0,
-    "all_time": 90.0,
+    "all_time": 110.0,
     "since": "Dec 16, 2022"
   },
   {
@@ -482,7 +489,7 @@
     "name": "PROXYONE LLC",
     "url": "https://proxyone.eu/",
     "last_payment": 5.0,
-    "all_time": 100.0,
+    "all_time": 105.0,
     "since": "Feb 21, 2022"
   },
   {
@@ -585,7 +592,7 @@
     "name": "maltidsbarometeret",
     "url": "https://maltidsbarometeret.dk",
     "last_payment": 5.0,
-    "all_time": 120.0,
+    "all_time": 125.0,
     "since": "Oct 19, 2021"
   },
   {
@@ -781,7 +788,7 @@
   {
     "name": "lowkey",
     "last_payment": 150.0,
-    "all_time": 2140.0,
+    "all_time": 2290.0,
     "since": "Jun 12, 2021"
   },
   {
