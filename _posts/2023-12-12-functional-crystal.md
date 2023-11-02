@@ -1,185 +1,53 @@
 ---
-title: Functional Crystal
-summary: A tour on the functional aspects of Crystal
+title: Looking through a Crystal the functional types `Maybe` and `Result`
+summary: Crystal's typechecker resembles at times that of modern functional languages. We take and Crystallize the two most widely known types from the functional world.
 author: beta-ziliani
 ---
 
-If someone posts a claim "_Crystal is a functional language_", they would be given a grim look. I mean, classes and inheritance are all over the place in the stdlib. Surely it's an object oriented language, right?
+If someone posts a claim "_Crystal is a functional language_", they would be given a grim look. I mean, classes and inheritance are all over the place in the stdlib. Surely it's an object-oriented language, right?
 
-If we observe modern programming languages, we'll find that neither functional languages are strictly functional, nor object oriented ones are strictly object oriented. Or, to put it differently, these two concepts are not in contradiction; they can both be part of the tools provided by languages to abstract code. And Crystal is not an exception!
+However, language's paradigms are like genders: there are many, and you are not restricted to just have one all the time. And while it's true that Crystal is _mostly_ object-oriented, it has some bits of functional aspects to it.
 
-But why should you care? As it turns out, functional programming got fancy these years for several reasons, which can be simplified as:
+In the functional world, there are two types that are used a lot, the `Maybe` type (aka `Option`) and the `Result` type. They are very useful to deal with nil objects and exceptions, respectively, and this is why they're present in the stdlibs of modern languages.
 
-**<center>Functional programming helps write safe and modular code.</center>**
+In this post I will explain how to code these types in Crystal, and why you might care. I won't expect readers to know these types nor Crystal, and I hope the examples will be simple enough for anybody with basic CS background to be able to follow.
 
-In this post, we will revisit what makes functional programming exciting, and how Crystal helps you write functional code. In particular, we'll talk about three key components of functional programming:
+## The `Maybe` type
 
- 1. Immutability.
- 2. Algebraic data types.
- 3. Closures.
+If I have to say what's the most itchy aspect of dynamic languages, I'd say dealing with nil objects. Unless you use [powerful analyzers](), and struggle with their [false positives](), or do heavy testing of your functions, your program might pop a nil object all of the sudden. And unless you've did some heavy [defensive programming](), your application will certainly crash.
 
-While discussing each of these, we will point out at some improvements that could be made to the compiler and stdlib to improve its support. The intention is not to fix an agenda, but rather to open the discussion about wether such improvements are relevant to the community.
+In languages with a type discipline, such as typed functional languages, types identify where those nil objects are, and they force us to consider them. In short: fewer tests needed, little defensive programming required. This is why such languages come with what is known as the `Maybe` type (e.g., [Rust](), [Scala](), [Elm]()).
 
-## Mutability considered harmful
+The idea is the following: when you have an object of a given type, say, a `String`, you know you **have** a string. It can't be nil. And if you _need_ it to be _nillable_, you wrap it in the `Maybe` type: `Maybe(String)`. Crystal doesn't have such type, but have something similar, called _nillable types_. We're going to highlight the differences later.
 
-A key aspects of functional programming is related to the idea that any change in the state of the program should be _local_. A way to describe this is with the following comparison, where `f` is any function or method, and `x` any value:
+An example: we are going to receive a string, and according to the case, we're going to respond with another string. If the input string is not one of the expected ones, we return nil:
 
-```cr
-f(x) == f(x)
-```
-
-Sounds like this should hold, right? I mean, calling _the same function_ with _the same argument_ should return _the same value_.
-
-<img src="/assets/blog/functional/fx-eq-fx-right.jpg" alt="Anakin showing Padme that f(x) might not be equal to f(x)" class="center"/>
-
-Anakin could show Padme the following function that makes the comparison be false:
-
-```cr
-class Counter
-  @@count = 0
-
-  def self.count
-    @@count += 1
-  end
-end
-
-def f(x)
-  Counter.count
-end
-```
-
-Changing (_mutating_) the count at each call of `f` is a _non-local effect_, as it doesn't depend on exclusively on `f`'s arguments. You could say that the example above is tricky, but I'm certain that you've experience before the surprised of calling a method and getting an unexpected result.
-
-Several languages that consider themselves functional allow such _non-local effects_. These languages are sometimes mentioned as _multi-paradigm_ or _hybrid_, and an important part of this post is to show that Crystal is also such an hybrid language. It definitively favors OOP, but it also allows important functional patterns.
-
-Indeed, not everything is mutable in Crystal. But before getting there, let's bring an important distinction.
-
-### Values and references
-
-Compilers achieve immutability by passing elements _by value_ (a copy of the value is passed), instead of _by reference_ (the pointer of the value is passed). We'll understand this distinction with some exercises. Consider the following code:
-
-```cr
-def f(x : Int32)
-  x += 1
-end
-
-y = 0
-f y
-p! y
-```
-
-You probably know what it prints: `y # => 0`. Internally, the _value_ of `y` is copied, so when `f` receives `y`, it actually just gets its value. Locally, `f` can do whatever it pleases to that value, `y` will not be affected.
-
-In Crystal, primitive types like numeric types and `struct`s are passed by value.
-
-<!-- If we want to be able to alter the value of `y`, we need to pass it by reference. In Crystal this is doable, but to do it right you need to _box_ it. We won't dicuss this -->
-
-Consider now the following code:
-
-```cr
-def g(arr : Array(Int32))
-  arr += [1]
-  arr = [] of Int32
-end
-
-z = [0]
-g z
-p z
-```
-
-What does it print?
-
-<br/>
-<br/>
-<center>
-Space purposefully left blank to let you think.
-</center>
-<br/>
-<br/>
-
-The answer is in the `Array`'s type: it's a `class`, so it's passed _by reference_. That is, changes performed in the array within the function affects `z`. Now, _the reference_ of the array itself (where `z` is located in the memory) is passed by value. Essentially, this means that the array itself is **not** replaced when assigning the empty array to `arr`. Therefore, the answer is `[0, 1]`.
-
-> An instance of a class is passed _by reference_, but the reference itself is passed _by value_.
-
-Crystal distinguishes which objects to pass by reference and which by value with two classes: [Reference](https://crystal-lang.org/api/1.6.2/Reference.html) and [Value](https://crystal-lang.org/api/1.6.2/Value.html). Those classes that inherits from `Reference` are passed by reference, and those that inherit from `Value`, by value.
-
-### Structs, immutable objects
-
-As mentioned previously, instances of `struct`s are passed by value. The following example about 2D points in space shows how structs work:
-
-```cr
-struct Point
-  getter x : Int32, y : Int32
-
-  def initialize(@x, @y); end
-end
-
-def translate_x(point : Point, offset : Int32)
-  point.x += offset
-  point
-end
-
-zero = Point.new 0, 0
-ten = translate_x zero, 10
-p zero, ten # => Point(@x=0, @y=0)  Point(@x=10, @y=0)
-```
-
-Note what's happening here: the function `translate_x` alters the value of the `x` component, and this change works locally: the _new copy_ of the point that is returned has its value altered. See how important immutability is: we _know_ that if we do not change `zero` locally, it will always have the value `(0, 0)`.
-
-Exercise 1: replace `struct` with `class` and see what happens.
-
-Exercise 2: make `translate_x` be an instance method of `struct`, that operates on `@x` of `self` instead of receiving the point. Can you explain what happens?
-
-### Little diversion: the `record` macro
-
-An alternative implementation of the `Point` struct is using the macro [`record`](https://crystal-lang.org/api/1.6.2/toplevel.html#record%28name%2C%2Aproperties%29-macro). This macro further enhances the experience of working with immutable structs.
-
-```cr
-record Point, x : Int32 = 0, y : Int32 = 0
-```
-
-`record` generates an identical struct as above, together with a handy method `#copy_with` that allows to return a copy of the struct with some given instance variables modified. For instance, we can solve Exercise 2 above defining the `translate_x` method directly when defining `Point`:
-
-```cr
-record Point, x : Int32 = 0, y : Int32 = 0 do
-  def translate_x(offset : Int32)
-    copy_with x: @x + offset
+```crystal
+def parse(input : String) : String?
+  case input
+  when "hello"
+    "world"
+  when "goodbye"
+    "_cruel_ world"
+  else
+    nil
   end
 end
 ```
 
-### Missing bit: Immutable datatypes
+Note the `String?` type. This is how we make `String` nillable. When calling this function, we need to handle the situation that the string might not be there:
 
-Immutability is great to avoid unwilling overwriting of information. However, we can't use structs always to get immutability, because structs do not allow recursive definitions. That is, the following is invalid:
+```crystal
+input = gets
+response = parse input
 
-```cr
-abstract struct Abstract
-end
-
-struct Concrete < Abstract
-  getter recursive : Abstract
-
-  def initialize(name, @recursive)
-  end
+case response
+when String
+  puts response.uppercase
+when Nil
+  puts "The input provided is invalid: #{input}"
 end
 ```
-
-The error is descriptive:
-
-```text
-The struct Concrete has, either directly or indirectly,
-an instance variable whose type is, eventually, this same
-struct. This makes it impossible to represent the struct
-in memory, because the size of this instance variable depends
-on the size of this struct, which depends on the size of
-this instance variable, causing an infinite cycle.
-```
-
-A missing piece of information is that structs are placed in the stack, unlike classes, and that is why the compiler needs to know ahead of time the exact size of it.
-
-If we want to have immutable classes, that are placed in the heap instead of in the stack (and therefore, can have recursive instances), the compiler could add support for it. In a fictional future, we can foresee an `ImmutableReference` class next to `Value` and `Reference` to consider object that are placed in the heap, but that are copied when passed over.
-
-## Exceptions considered harmful
 
 Raising an exception is a costly operation, not only from the performance perspective, but also in terms of safety. Therefore, in functional languages they are looked down upon, and are only used in exceptional situations that aren't expected to be part of the normal course of an application.
 
