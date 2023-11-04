@@ -4,7 +4,7 @@ layout: skeleton
 # Inheriting layouts implement the page header and content.
 ---
 <div class="wrapper {{ page.custom_body_classes | join: ' '}}">
-  {% include site/conference_header.html %}
+  {#% include site/conference_header.html %#}
   {% include site/nav.html %}
 
   {{ content }}
