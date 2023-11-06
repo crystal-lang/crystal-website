@@ -1,6 +1,20 @@
 ---
 title: "Building efficient, safe, and readable web and CLI applications with Crystal"
 layout: wide
+
+authors:
+- image: /assets/learning/george.png
+  description: |
+    <strong>George Dietrich</strong> is a software engineer, open-source aficionado, and Crystal community moderator. He
+    holds a Master of Science degree in internet information systems and a Bachelor of Science degree in
+    information sciences.
+- image: /assets/learning/guilherme.jpg
+  description: |
+    <strong>Guilherme Bernal</strong> is the chief technology officer at Cubos Tecnologia. He holds a bachelor's
+    degree in TI management. Guilherme co-founded a software development company
+    and several tech start-ups, including one that focused on teaching programming
+    skills to a new generation of developers. He is also a two-time world finalist
+    in the coding competition, ACM ICPC.
 ---
 
 <div class="book-presenter">
@@ -66,32 +80,8 @@ layout: wide
 
 
 <section>
-<h2>About the Authors</h3>
-  <div class="book-authors">
-    <div class="book-author">
-      <div class="book-author-icon">
-        <img class="book-author-icon" src="/assets/learning/george.png" />
-      </div>
-      <p class="small">
-        <strong>George Dietrich</strong> is a software engineer, open-source aficionado, and Crystal community moderator. He
-        holds a Master of Science degree in internet information systems and a Bachelor of Science degree in
-        information sciences.
-      </p>
-    </div>
-
-    <div class="book-author">
-      <div class="book-author-icon">
-        <img class="book-author-icon" src="/assets/learning/guilherme.jpg" />
-      </div>
-      <p class="small">
-        <strong>Guilherme Bernal</strong> is the chief technology officer at Cubos Tecnologia. He holds a bachelor's
-        degree in TI management. Guilherme co-founded a software development company
-        and several tech start-ups, including one that focused on teaching programming
-        skills to a new generation of developers. He is also a two-time world finalist
-        in the coding competition, ACM ICPC.
-      </p>
-    </div>
-  </div>
+  <h2>About the Authors</h2>
+  {% include components/book-authors.html authors=page.authors %}
 </section>
 
 <div class="banner sponsorship">
