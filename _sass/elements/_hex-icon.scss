@@ -32,8 +32,8 @@
 
     & > * {
       position: absolute;
-      width: 24px;
-      height: 24px;
+      width: calc(var(--icon-height) / 2);
+      height: calc(var(--icon-height) / 2);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
