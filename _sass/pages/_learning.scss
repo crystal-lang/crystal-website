@@ -70,24 +70,35 @@
 
 .book-presenter {
   font-size: 120%;
-}
+  display: grid;
+  grid-template-areas:
+    "cover"
+    "main"
+    "details";
+  row-gap: var(--padding-md);
+  column-gap: var(--padding-md);
 
-.book-presenter__main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: var(--padding-lg);
-  margin-block-end: var(--padding-md);
+  > .cover {
+    grid-area: cover;
+  }
 
-  & > * {
-    flex: 1 27ch;
+  > .description {
+    grid-area: main;
+
+    > :not(:last-child) {
+      margin-block-end: 40px;
+    }
+  }
+
+  > .details {
+    grid-area: details;
   }
 }
 
-.book-presenter__cover {
-  margin-block-end: var(--padding-sm);
-}
-
-.book-presenter__description > * {
-  margin-block-end: 40px;
+@media (min-width: 35em) {
+  .book-presenter {
+    grid-template-areas:
+      "cover main"
+      "details details";
+  }
 }
