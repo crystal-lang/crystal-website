@@ -13,11 +13,8 @@
   }
 
   > .description {
+    @include blockflow;
     grid-area: main;
-
-    > :not(:last-child) {
-      margin-block-end: 40px;
-    }
   }
 
   > .details {
