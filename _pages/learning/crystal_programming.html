@@ -2,6 +2,20 @@
 title: "Building efficient, safe, and readable web and CLI applications with Crystal"
 layout: wide
 
+what_you_will_learn:
+- image: icons/merge-type.svg
+  description: Explore how Crystal combines the merits of other languages
+- image: icons/folder.svg
+  description: Understand how to leverage existing C libraries without writing any C
+- image: icons/update.svg
+  description: Focus on zero-cost abstractions with compile-time macros
+- image: icons/code.svg
+  description: Use an example-based approach to demonstrate language features
+- image: icons/apps.svg
+  description: Develop a variety of Crystal applications, such as web and CLI apps
+- image: icons/library-books.svg
+  description: Gain an understanding of the macro API and annotations
+
 authors:
 - image: /assets/learning/george.png
   description: |
@@ -58,22 +72,7 @@ authors:
       <span>What you will learn</span>
     </div>
   </div>
-
-  <div class="image-list">
-    {% include elements/hex-icon.html file='icons/merge-type.svg' %}
-    <div class="small">Explore how Crystal combines the merits of other languages</div>
-    {% include elements/hex-icon.html file='icons/folder.svg' %}
-    <div class="small">Understand how to leverage existing C libraries without writing any C</div>
-    {% include elements/hex-icon.html file='icons/update.svg' %}
-    <div class="small">Focus on zero-cost abstractions with compile-time macros</div>
-    {% include elements/hex-icon.html file='icons/code.svg' %}
-    <div class="small">Use an example-based approach to demonstrate language features</div>
-    {% include elements/hex-icon.html file='icons/apps.svg' %}
-    <div class="small">Develop a variety of Crystal applications, such as web and CLI apps</div>
-    {% include elements/hex-icon.html file='icons/library-books.svg' %}
-    <div class="small">Gain an understanding of the macro API and annotations</div>
-  </div>
-
+  {% include components/image-list.html items=page.what_you_will_learn %}
   <div class="full-width-rule">
   </div>
 </section>
