@@ -2,32 +2,7 @@
 layout: wide
 ---
 
-<div class="book-presenter">
-  <div class="cover">
-    <img src="{{ page.book.cover_image }}" />
-  </div>
-
-  <div class="description">
-    <p>
-      {{ page.book.description }}
-    </p>
-
-    <p>You can get it from these vendors:</p>
-
-    {% for vendor in page.book.vendors %}
-      <div class="link-item">
-        <a class="link-item__main" href="{{ vendor.url }}">
-          {% include icons/book.svg %}
-          Buy on {{ vendor.name }}
-        </a>
-      </div>
-    {% endfor %}
-  </div>
-
-  <div class="details">
-    {{ page.book.details }}
-  </div>
-</div>
+{% include components/book-presenter.html book=page.book %}
 
 <section>
   <div class="full-width-rule">
