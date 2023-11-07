@@ -41,6 +41,10 @@ core:
     status: active
     name: George Dietrich
 
+  RX14:
+    name: Stephanie Wilde-Hobbs
+    status: active
+
 admin:
   nditada:
     name: Nicolás di Tada
@@ -91,8 +95,5 @@ alumni:
 
   spalladino:
     name: Santiago Palladino
-
-  RX14:
-    name: Stephanie Wilde-Hobbs
 
 moderators:
