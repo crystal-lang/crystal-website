@@ -3,7 +3,7 @@
   --sin-70: 0.93;
 }
 
-a.hex {
+.hex {
   --hex-height: 2.5em;
   --hex-width: 2px;
   --cos-a: var(--cos-70);
@@ -55,21 +55,12 @@ a.hex {
     );
   }
 
-  &:hover::before {
-    background-color: hsl(0, 0%, 95%);
-  }
-
   &:not(.bordered) {
     filter: drop-shadow(0 1px 2px rgb(0 0 0 / 20%))
       drop-shadow(0 1px 3px rgb(0 0 0 / 10%));
     transition: filter 0.2s;
-
-    &:hover {
-      filter: drop-shadow(0 0 3px rgba(0 0 0 / 10%))
-        drop-shadow(0 1px 1px rgba(0 0 0 / 40%))
-        drop-shadow(0 1px 3px rgba(0 0 0 / 20%));
-    }
   }
+
   &.bordered::after {
     background-color: currentColor;
     clip-path: polygon(
@@ -89,5 +80,19 @@ a.hex {
       calc(100% - var(--b)) var(--hex-width),
       var(--b) var(--hex-width)
     );
+  }
+  
+  &:is(a) {
+    &:hover::before {
+      background-color: hsl(0, 0%, 95%);
+    }
+
+    &:not(.bordered) {
+      &:hover {
+        filter: drop-shadow(0 0 3px rgba(0 0 0 / 10%))
+          drop-shadow(0 1px 1px rgba(0 0 0 / 40%))
+          drop-shadow(0 1px 3px rgba(0 0 0 / 20%));
+      }
+    }
   }
 }
