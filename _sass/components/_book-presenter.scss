@@ -1,5 +1,5 @@
 .book-presenter {
-  font-size: 120%;
+  font-size: var(--font-size-lead);
   display: grid;
   grid-template-areas:
     "cover"

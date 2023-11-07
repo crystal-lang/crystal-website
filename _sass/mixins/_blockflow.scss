@@ -5,13 +5,13 @@
     + * {
       margin-block-start: var(--block-flow, $width);
 
-      &:is(hr) {
+      &:is(hr, .full-width-rule) {
         margin-block-start: var(--block-flow-md);
       }
     }
   }
 
-  :where(& > hr + *) {
+  :where(& > :is(hr, .full-width-rule) + *) {
     margin-block-start: var(--block-flow-md);
   }
 

@@ -18,14 +18,11 @@
     grid-area: main;
   }
 
-  > p {
-    max-width: 43ch;
-  }
-
   > .book-author-icon {
     grid-area: icon;
     width: 6ch;
-    height: 6ch;
+    aspect-ratio: 1;
+    object-fit: cover;
     clip-path: content-box circle(50%);
   }
 }
