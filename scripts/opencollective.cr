@@ -53,7 +53,7 @@ opencollective.members.each do |member|
   next if member.totalAmountDonated == 0 # The only ones I see with 0 are not BACKERs, but just in case
 
   downcase_name = member.name.downcase
-  next if downcase_name == "incognito" || downcase_name == "guest"
+  next if downcase_name == "incognito" || downcase_name == "guest" || downcase_name == ""
 
   url = member.website || member.twitter || member.github
   logo = member.image
