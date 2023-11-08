@@ -1,7 +1,7 @@
 require "http/client"
 require "json"
 
-record Sponsor, name : String, url : String?, logo : String?, last_payment : Float64, all_time : Float64, currency : String?, since : Time, overrides : String? do
+record Sponsor, name : String, url : String?, logo : String?, last_payment : Float64, all_time : Float64, currency : String?, since : Time, overrides : String?, time_last_payment : Time? do
   include JSON::Serializable
 
   property name : String
@@ -13,20 +13,40 @@ record Sponsor, name : String, url : String?, logo : String?, last_payment : Flo
   @[JSON::Field(converter: Time::Format.new("%b %-d, %Y"))]
   property since : Time
   property overrides : String?
+  @[JSON::Field(converter: Time::Format.new("%b %-d, %Y"))]
+  property time_last_payment : Time?
 
   def id : UInt64
     name.hash ^ (url || "").hash
   end
 
-  # Merge this sponsor with the given sponsor. Requires that the name and url match.
-  def merge(other : Sponsor?) : Sponsor
-    return self if other.nil?
-    raise "Can't merge #{self} with #{other}" if name != other.name || url != other.url
+  # Merge this sponsor with the given sponsor. Requires that the name is the same
+  def merge(other : Sponsor) : Sponsor
+    raise "Can't merge #{self} with #{other}" if name != other.name
+
+    url = merge_url other
+    last_payment, time_last_payment = merge_last_payment other
     copy_with(
-      last_payment: since > other.since ? last_payment : other.last_payment,
-      all_time: all_time + other.all_time,
+      url: url,
+      last_payment: last_payment,
+      time_last_payment: time_last_payment,
+      all_time: (all_time - other.all_time).abs < Float64::EPSILON ? all_time : all_time + other.all_time,
       since: Math.min(since, other.since),
     )
+  end
+
+  # If any is nil, then the other is used. Otherwise, the most recent one is used.
+  def merge_url(other : Sponsor) : String?
+    return url if other.url.nil?
+    return other.url if url.nil? || since < other.since
+    url
+  end
+
+  # Returns the last payment and the time of the last payment according to which is the last one
+  def merge_last_payment(other : Sponsor) : {Float64, Time?}
+    return {last_payment, time_last_payment} if other.time_last_payment.nil?
+    return {other.last_payment, other.time_last_payment} if time_last_payment.nil? || time_last_payment.not_nil! < other.time_last_payment.not_nil!
+    {last_payment, time_last_payment}
   end
 end
 
@@ -42,15 +62,9 @@ class SponsorsBuilder
     if index = @sponsors.index { |s| s.name == sponsor.name }
       prev_sponsor = @sponsors[index]
       # We merge them if any of the two doesn't have url, or the url is the same
-      if prev_sponsor.url.nil? || sponsor.url.nil? || prev_sponsor.url == sponsor.url
-        # HACK: OC is returning duplicated entries. Until we hear from OC how to do this better,
-        # we ensure that duplicate entries are not counted twice.
-        sponsor.all_time += prev_sponsor.all_time unless (sponsor.all_time - prev_sponsor.all_time).abs < Float64::EPSILON
-        @sponsors.delete_at index
-        Log.warn { "WARNING: Merging duplicate sponsor with name #{sponsor.name}." }
-      else
-        Log.warn { "WARNING: Duplicate sponsor with name #{sponsor.name}." }
-      end
+      sponsor = sponsor.merge prev_sponsor
+      @sponsors.delete_at index
+      Log.warn { "WARNING: Duplicate sponsor with name #{sponsor.name}." }
     end
 
     sponsor.logo = download_logo(sponsor)
