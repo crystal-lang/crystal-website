@@ -41,18 +41,15 @@ core:
     status: active
     name: George Dietrich
 
+  RX14:
+    name: Stephanie Wilde-Hobbs
+    status: active
+
 admin:
   nditada:
     name: Nicolás di Tada
     role: CTO
     affiliation: Manas.Tech
-
-  mekhla:
-    name: Mekhla Mukherjee
-    role: Community Manager
-    affiliation: Manas.Tech
-    github_handle: mekhla18
-    forum_handle: mekhla18
 
   mgarcia:
     name: Matías García Isaía
@@ -91,8 +88,5 @@ alumni:
 
   spalladino:
     name: Santiago Palladino
-
-  RX14:
-    name: Stephanie Wilde-Hobbs
 
 moderators:
