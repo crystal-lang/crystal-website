@@ -106,17 +106,39 @@ description: >
         <div class="team-member">
           <img src="/assets/authors/{{ member[0] }}.jpg" />
           <div class="team-member__inner">
+            {% if member[1].role %}
+              <span class="member_role">{{ member[1].role }}</span>
+            {% endif %}
             <span class="member_name">{{ member[1].name }}</span>
             <span class="handles">
               <span class="github_handle"><a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" title="GitHub profile"><i class="extra-icons github"></i> {{ member[1].github_handle | default: member[0] }}</a></span>
               <span class="forum_handle"><a href="https://forum.crystal-lang.org/u/{{ member[1].forum_handle | default: member[0] }}" title="Crystal Forum profile"><i class="material-icons">forum</i> {{ member[1].forum_handle | default: member[0] }}</a></span>
             </span>
-            {% if member[1].role %}
-              <span class="member_role">{{ member[1].role }}</span>
-            {% endif %}
             {% if member[1].affiliation %}
               <span class="member_affiliation">{{ member[1].affiliation }}</span>
             {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+  <section>
+    <h3 id="admin-alumni">Admin Alumni</h3>
+
+    <p>These awesome people have been part of the team in the past but do no longer fill that role.</p>
+
+    <div class="core-team-alumni">
+      {% for member in site.data.team.admin_alumni %}
+        <div class="team-member">
+          <img src="/assets/authors/{{ member[0] }}.jpg" />
+          <div class="team-member__inner">
+            {% if member[1].role %}
+              <span class="member_role">{{ member[1].role }}</span>
+            {% endif %}
+            <span class="member_name">{{ member[1].name }}</span>
+            <span class="handles">
+              <span class="github_handle"><a href="https://github.com/{{ member[1].github_handle | default: member[0] }}"><i class="extra-icons github"></i> {{ member[1].github_handle | default: member[0] }}</a></span>
+            </span>
           </div>
         </div>
       {% endfor %}

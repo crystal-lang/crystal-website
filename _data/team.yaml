@@ -68,10 +68,18 @@ admin:
     role: Developer
     affiliation: Manas.Tech
 
+admin_alumni:
   caspiano:
     name: Caspian Baska
     role: Developer
     affiliation: Manas.Tech
+
+  mekhla:
+    name: Mekhla Mukherjee
+    role: Community Manager
+    affiliation: Manas.Tech
+    github_handle: mekhla18
+    forum_handle: mekhla18
 
 alumni:
   waj:
