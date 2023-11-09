@@ -18,7 +18,7 @@ Recordings of the talks are available on YouTube.
 
 <figure markdown="1">
   ![](/assets/events/crystalconf2023/panel.jpg)
-  <caption>In the panel discussion we discussed the future of Crystal with the audience. We also had the immense pleasure to share the stage with two core team alumni.</caption>
+  <caption>In the panel discussion we talked the future of Crystal with the audience. We also had the immense pleasure to share the stage with two core team alumni.</caption>
 </figure>
 
 <figure markdown="1">
