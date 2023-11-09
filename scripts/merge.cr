@@ -16,7 +16,8 @@ overrides = Array(Sponsor).new
     sponsors = Array(Sponsor).from_json(file)
     sponsors, overrides = sponsors.partition(&.overrides.nil?) if filename == "others.json"
     sponsors.each do |sponsor|
-      all_sponsors_map[sponsor.id] = sponsor.merge(all_sponsors_map[sponsor.id]?)
+      prev_sponsor = all_sponsors_map[sponsor.id]?
+      all_sponsors_map[sponsor.id] = prev_sponsor ? sponsor.merge(prev_sponsor) : sponsor
     end
   end
 end
