@@ -1,12 +1,15 @@
 ---
 title: Memories from CrystalConf
 author: straight-shoota
+summary: Impressions from the conference in Berlin
 ---
 
 CrystalConf 2023 was a sounding success with a terrific lineup of speakers and talks.
 We spent two great days in Berlin sharing knowledge, ideas, and beers.
 
 Recordings of the talks are available on YouTube.
+
+<a href="https://youtube.com/playlist?list=PLt-CsM4G1WoadONHl3zPN_Ts5PqH8TgMZ" class="btn btn-large btn-flat">Video playlist</a>
 
 <figure markdown="1">
   ![](/assets/events/crystalconf2023/audience.jpg)
