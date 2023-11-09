@@ -7,13 +7,13 @@ summary: Impressions from the conference in Berlin
 CrystalConf 2023 was a sounding success with a terrific lineup of speakers and talks.
 We spent two great days in Berlin sharing knowledge, ideas, and beers.
 
-Recordings of the talks are available on YouTube.
+Recordings of the talks are being uploaded to a playlist on YouTube.
 
 <a href="https://youtube.com/playlist?list=PLt-CsM4G1WoadONHl3zPN_Ts5PqH8TgMZ" class="btn btn-large btn-flat">Video playlist</a>
 
 <figure markdown="1">
   ![](/assets/events/crystalconf2023/audience.jpg)
-  <caption>The audience listens to Johannes' talk about noticing little details that point towards deficiencies.</caption>
+  <caption>The audience listens to Johannes' talk about deficiencies in programs that might come from hidden little details.</caption>
 </figure>
 
 <figure markdown="1">
