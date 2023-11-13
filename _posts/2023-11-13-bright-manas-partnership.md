@@ -31,5 +31,5 @@ Together, these two tools helped us and the Bright team fix several leaks.
 
 Working on a large production application was an enriching experience, and building the necessary tools helped us improve the compiler and its ecosystem. We are very thankful to Bright for their support.
 
-If you are facing difficulties with your Crystal application, please reach out to crystal@manas.tech to talk about how we can help.
+If you are facing difficulties with your Crystal application, please reach out to [crystal@manas.tech](mailto:crystal@manas.tech) to talk about how we can help.
 Manas can help you crack that hard nut, and maybe it even ends up enriching the Crystal ecosystem further with new or improved tooling.
