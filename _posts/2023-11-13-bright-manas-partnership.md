@@ -8,15 +8,16 @@ summary: "The story behind four development tools that were released recently"
 
 In the recent [Crystal 1.10 release](/2023/10/09/1.10.0-released/) two new compiler tools were introduced, `crystal tool dependencies` and `crystal tool unreachable`. In parallel, the Crystal team also released [perf-tools](https://github.com/crystal-lang/perf-tools), a shard with tools for tracking memory usage and fibers. In this post we delve into the story of how these tools came to be.
 
-The development of these tools was sponsored by [Bright](https://brightsec.com/), maker of an intelligent exploiter for securing websites. The exploiter works by searching for endpoints and attacking them with a large set of potential security threats. As an established product, it has grown organically over the years, requiring special tools to improve it. Therefore, Bright asked Manas to help out in two major subjects: refactoring of the application and memory leak hunting.
+The development of these tools was sponsored by [Bright](https://brightsec.com/), maker of an intelligent exploiter for securing websites. The exploiter works by searching for endpoints and attacking them with a large set of potential security threats. As an established product, it has grown organically over the years, requiring special tools to improve it. Therefore, Bright asked Manas to help out in two major subjects: refactoring of the application and hunting memory leaks.
 
 ## Refactoring
 
-The application has two distinctive features: discovering endpoints, and attacking them. From an architectural point of view, it made sense to split them in two different applications. This was a major refactor that required the construction of `crystal tool dependencies`, which shows a tree of `require` dependencies. It becomes easier to split the application following the require graph.
+The application has two distinctive features: discovering endpoints, and attacking them. From an architectural point of view, it made sense to split them in two different applications. This was a major refactor that required to identify which parts of the source tree belong to which application.
+To simplify this process, we built `crystal tool dependencies`, which shows a tree of `require` dependencies. It becomes easier to split the application following the require graph.
 
 Additionally, `crystal tool dependencies` helps understanding conflicts arising from the `require` order. For instance, if two files `a.cr` and `b.cr` define the same method for a class, Crystal uses the last definition that comes the last file being required. With this tool we can observe which file is the last one required between `a.cr` and `b.cr`, and understand why.
 
-Once the separation was performed, we checked for unreachable `def`s with `crystal tool unreachable` in order to help clean up dead code.
+To complete the separation, we needed to identify dead code in each require trees. For this purpose we built `crystal tool unreachable` to show `defs` that are defined but never called.
 
 ## Memory leak hunting
 
