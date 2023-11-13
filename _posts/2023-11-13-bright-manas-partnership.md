@@ -21,7 +21,7 @@ To complete the separation, we needed to identify dead code in each require tree
 
 ## Memory leak hunting
 
-In certain cases, the application’s memory consumption could grow indefinitely until exhausting the global memory. To inspect memory usage and catch leaked fibers, we created two tools, available in the [perf-tools](https://github.com/crystal-lang/perf-tools) shard. The first tool is `mem_prof`, which once imported tracks memory allocations, allowing for the listing of memory allocations per location or per type. For instance, it is possible to track if there is an instance of a class that is holding a large amount of data that should be _garbage collected_ after certain point to release memory. If it is not collected, then that might lead to a leak.
+In certain cases, the application’s memory consumption could grow indefinitely until exhausting the global memory. To inspect memory usage and catch leaked fibers, we created two tools, available in the [perf-tools](https://github.com/crystal-lang/perf-tools) shard. The first tool is `mem_prof`, which once imported tracks memory allocations, allowing for the listing of memory allocations per location or per type. For instance, it is possible to track if there is an instance of a class that is holding a large amount of data. If the instance should be _garbage collected_ after certain point to release memory, and it is not, then that might lead to a leak.
 
 The second tool is `fiber_trace`, which lists the running fibers together with their allocation point and the yield point —the place in which the fiber returned execution to the scheduler. An example of use is to track if a fiber is still alive, and if so, what was the last operation that it did.
 
