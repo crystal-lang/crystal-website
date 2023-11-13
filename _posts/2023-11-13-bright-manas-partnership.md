@@ -4,7 +4,11 @@ author: beta-ziliani
 summary: "The story behind four development tools that were released recently"
 ---
 
-<img src="/assets/sponsors/manas.png" height="200"><img src="/assets/sponsors/bright.png" height="200">
+<div class="center">
+<a href="https://manas.tech" target="_blank"><img src="/assets/sponsors/manas.png" alt="Manas logo" height="200"></a>
+
+<a href="https://brightsec.com/" target="_blank"><img src="/assets/sponsors/bright.png" alt="Bright logo" height="200"></a>
+</div>
 
 In the recent [Crystal 1.10 release](/2023/10/09/1.10.0-released/) two new compiler tools were introduced: `crystal tool dependencies` and `crystal tool unreachable`. In parallel, the Crystal team also released [perf-tools](https://github.com/crystal-lang/perf-tools), a shard with tools for tracking memory usage and fibers. In this post, we delve into the story of how these tools came to be.
 
