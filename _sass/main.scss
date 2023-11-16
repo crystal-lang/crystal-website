@@ -3,6 +3,7 @@
 @import "variables";
 @import "mixins/blockflow";
 @import "mixins/box-link";
+@import "mixins/circle-image";
 
 @layer reset {
   @import "reset";

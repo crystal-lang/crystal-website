@@ -52,8 +52,7 @@
 }
 
 .avatar-list img {
-  aspect-ratio: 1;
-  object-fit: cover;
+  @include circle-image;
   background-color: var(--background-main);
   box-shadow: 0 0 0 0.05em var(--background-main),
     0 0 0 0.08em rgba(0, 0, 0, 0.15);
