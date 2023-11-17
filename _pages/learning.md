@@ -2,6 +2,7 @@
 title: External resources
 description: Here is a collection of learning material from third parties that might help you master the language.
 layout: page-wide
+section: docs
 ---
 
 <a markdown="1" id="crystalProgramming"></a>

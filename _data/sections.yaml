@@ -1,0 +1,25 @@
+archive:
+  title: Archive
+
+blog:
+  title: Blog
+community:
+  title: Community
+docs:
+  title: Documentation
+events:
+  title: Events
+home:
+  title: Home
+install:
+  title: Install
+internal:
+  titel: Internal
+
+learning:
+  title: Learning
+newsletter:
+  title: Newsletter
+releases:
+  title: Releases
+unspecified:

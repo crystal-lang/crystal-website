@@ -1,6 +1,7 @@
 ---
 title: Sponsors
 layout: wide
+section: community
 ---
 
 <section markdown="1" class="content">

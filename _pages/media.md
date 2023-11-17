@@ -4,6 +4,7 @@ description: |
   As the language and the community continues to grow it is important to have
   basic understanding about how and for what purposes the Crystal brand and
   associated works can be used.
+section: docs
 ---
 
 ## Assets
@@ -12,7 +13,6 @@ We’ve put together some assets and guidelines to help you determine the best w
 to use our brand and logos.
 
 ### Logo
-
 
 > **NOTE:** Important
 > Make sure to follow the [guidelines](#guidelines) described below when using any of this material.

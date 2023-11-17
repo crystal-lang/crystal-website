@@ -4,6 +4,7 @@ description: >
   Crystal is an open-source project based on the incredible efforts of a large
   community. Meet the people behind Crystal.
 layout: page-wide
+section: community
 ---
 
 <section>
