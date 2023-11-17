@@ -11,3 +11,13 @@ main:
   url: /team/
 - label: Docs
   url: https://crystal-lang.org/reference/
+
+community:
+- label: Team
+  url: /team/
+- label: Governance
+  url: /community/governance/
+- label: Sponsors
+  url: /sponsors/
+- label: Events
+  url: /community/ # TODO: Add events page

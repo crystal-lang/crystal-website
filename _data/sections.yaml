@@ -1,23 +1,65 @@
 archive:
   title: Archive
+  breadcrumbs:
+    - title: Archive
+
 blog:
   title: Blog
+  breadcrumbs:
+    - title: Blog
+      url: /blog/
+
 community:
   title: Community
+  breadcrumbs:
+    - title: Community
+      url: /community/
+      nav: community
+
 docs:
   title: Documentation
+  breadcrumbs:
+    - title: Docs
+
 events:
   title: Events
+  breadcrumbs:
+    - title: Community
+      url: /community/
+    - title: Events
+  weight: 31
+
 home:
   title: Home
+
 install:
   title: Install
+  breadcrumbs:
+    - title: Docs
+    - title: Install
+      url: /install/
+
 internal:
   titel: Internal
+  breadcrumbs:
+    - title: Internal
+
 learning:
   title: Learning
+  breadcrumbs:
+    - title: Learning
+      url: /learning/
+
 newsletter:
   title: Newsletter
+  breadcrumbs:
+    - title: Newsletter
+      url: /newsletter/
+
 releases:
   title: Releases
+  breadcrumbs:
+  - title: Releases
+    url: /releases/
+
 unspecified:
