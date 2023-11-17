@@ -1,5 +1,4 @@
-{% assign navigation_pages = site.data.nav.main %}
-{% for item in navigation_pages %}
+{% for item in include.links %}
   <li>
     <a href="{{ item.url }}" {% if item.url == page.url %} aria-current="page"{% endif %}>
       {{ item.label }}
