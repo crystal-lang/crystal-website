@@ -1,6 +1,8 @@
 <div class="section-nav">
   <nav class="breadcrumbs" aria-label="Breadcrumbs">
     {% capture separator %}<span aria-hidden="true">/</span>{% endcapture %}
+    {%- assign page_title = nil -%}
+    {%- assign page_nav = nil -%}
 
     <span class="breadcrumb">
       <a href="/" rel="index up">Home</a>
@@ -21,7 +23,7 @@
         {% if item.url -%}
           <a href="{{ item.url }}" rel="up">{{ item.title }}</a>
         {%- else -%}
-          {{ item.title }}
+          <span>{{ item.title }}</span>
         {%- endif %}
         </div>
       {% endfor %}
@@ -35,4 +37,13 @@
       </span>
     {% endif %}
   </nav>
+
+  {% if page_nav -%}
+    <nav class="section-links" aria-label="Section links">
+      <ul role="list">
+        {% assign nav = site.data.nav[page_nav] %}
+        {% include site/nav_links.html links=nav %}
+      </ul>
+    </nav>
+  {%- endif %}
 </div>

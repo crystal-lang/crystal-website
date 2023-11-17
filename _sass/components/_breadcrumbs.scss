@@ -1,8 +1,12 @@
 .section-nav {
-  margin-block-start: var(--block-flow-sm);
   transition: 0.5s opacity;
   &:not(:hover) {
     opacity: 0.6;
+  }
+
+  margin-block-start: var(--block-flow-xs);
+  &:first-child {
+    margin-block-start: var(--block-flow-sm);
   }
 }
 
@@ -26,5 +30,22 @@
   }
   &:not(:first-child) > :first-child {
     padding-inline-start: var(--padding-xs);
+  }
+}
+
+.section-links {
+  --link-color: var(--light-text);
+  --link-hover-color: var(--lighter-text);
+  font-weight: 300;
+  @extend .small;
+
+  > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+    column-gap: var(--padding-xs);
   }
 }
