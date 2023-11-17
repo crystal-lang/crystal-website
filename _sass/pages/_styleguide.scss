@@ -10,8 +10,10 @@
     border-radius: 0.425rem;
     padding: var(--padding-sm);
 
-    &.wide {
-      max-width: unset;
+    max-width: unset;
+
+    &:not(.wide) {
+      width: var(--content-width);
     }
   }
 
@@ -22,4 +24,9 @@
       white-space: pre-line;
     }
   }
+}
+
+.styleguide-preview {
+  resize: both;
+  overflow: scroll;
 }
