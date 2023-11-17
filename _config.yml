@@ -24,6 +24,7 @@ defaults:
     values:
       image: /assets/icon.png
       layout: page
+      section: unspecified
   -
     scope:
       path: ""
@@ -33,6 +34,7 @@ defaults:
       layout: post
       permalink: /:year/:month/:day/:title/
       is_post: true
+      section: blog
   -
     scope:
       path: "_pages/install"
@@ -40,6 +42,7 @@ defaults:
     values:
       image: /assets/icon.png
       layout: install
+      section: install
 
   - scope:
       path: ""
@@ -48,6 +51,7 @@ defaults:
       layout: release
       permalink: /:year/:month/:day/:title/
       image: /assets/icon.png
+      section: releases
   -
     scope:
       path: ""
@@ -56,6 +60,7 @@ defaults:
       image: /assets/icon.png
       layout: page
       permalink: /events/:title/
+      section: events
 
 twitter:
   username: CrystalLanguage
