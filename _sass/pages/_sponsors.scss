@@ -70,10 +70,9 @@
   }
 
   img {
+    @include circle-image;
     width: 2em;
     min-width: 1.5em;
-    aspect-ratio: 1;
-    border-radius: 50%;
   }
 
   tr:not(:hover) img {

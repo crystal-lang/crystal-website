@@ -1,0 +1,5 @@
+@mixin circle-image() {
+  aspect-ratio: 1;
+  object-fit: cover;
+  clip-path: content-box circle(50%);
+}
