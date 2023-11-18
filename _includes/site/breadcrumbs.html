@@ -8,10 +8,10 @@
       <a href="/" rel="index up">Home</a>
     </span>
 
-    {% if page.section -%}
-      {%- assign section = site.data.sections[page.section] -%}
+    {% if include.page.section -%}
+      {%- assign section = site.data.sections[include.page.section] -%}
       {% for item in section.breadcrumbs %}
-        {%- if item.url == page.url -%}
+        {%- if item.url == include.page.url -%}
           {% assign page_title = item.title %}
           {% assign page_nav = item.nav %}
           {% break %}
@@ -33,7 +33,7 @@
       {{ separator }}
 
       <span class="breadcrumb">
-        <a href="{{ page.url }}" aria-current="page">{{ page_title }}</a>
+        <a href="{{ include.page.url }}" aria-current="page">{{ page_title }}</a>
       </span>
     {% endif %}
   </nav>
