@@ -3,21 +3,18 @@ title: Sitemap
 section: internal
 ---
 <section class="content">
-  <h2>Pages</h2>
-  <ul>
-    {% assign pages = site.pages | sort: "url" %}
-    {% for entry in pages %}
+  {% assign sections = site.data.sections | h_to_a | sort: "weight", "last" %}
+  {% for section in sections %}
+    <h2>{{ section.title | default: section.id }}</h2>
+    <ul>
+    {% assign entries = site.documents | where: "section", section.id %}
+    {% for entry in entries %}
+      {% if entry.collection == "posts" or entry.collection == "releases" %}
+        {% continue %}
+      {% endif %}
       {% assign url = entry.url | prepend: "<code>" | append: "</code>" %}
       {% assign path = entry.url | remove_first: "/" | split: "/" %}
       <li>
-        {% for component in path -%}
-          {%- if forloop.last -%}
-            {%- unless forloop.first %}</code>{% endunless -%}
-            {%- continue -%}
-          {%- endif -%}
-          {%- if forloop.first %}<code>{% endif -%}
-          {{- component -}}/
-        {%- endfor %}
         {% assign title = entry.title | default: entry.subtitle | default: url %}
         {% if entry.redirect_to %}
           {{ title }} → <a href="{{ entry.redirect_to }}" rel="nofollow">{{ entry.redirect_to }}</a>
@@ -29,21 +26,11 @@ section: internal
         {% if slug_title != path.last and down_title != path.last %}
           (<code>{{ path.last }}</code>)
         {% endif %}
+        {% unless entry.collection == "pages" %}
+          ({{ entry.collection }})
+        {% endunless %}
       </li>
     {% endfor %}
-  </ul>
+    </ul>
+  {% endfor %}
 </section>
-{% assign collections = site.collections | where: "output", "true" %}
-{% for collection in collections %}
-{% if collection.label == "posts" or collection.label == "releases" or collection.label == "pages" %}
-  {% continue %}
-{% endif %}
-<section class="content">
-  <h2>{{ collection.label | capitalize }}</h2>
-  <ul>
-    {% for entry in collection.docs %}
-      <li><a href="{{ entry.url }}">{{ entry.title }}</a> {% if entry.date != site.time %}({{ entry.date  | date: "%F" }}){% endif %}</li>
-    {% endfor %}
-  </ul>
-</section>
-{% endfor %}
