@@ -2,10 +2,14 @@
   --link-color: var(--light-gray);
   display: flex;
   flex-wrap: wrap;
+  gap: var(--padding-xs) var(--padding-sm);
 
   a {
     font-weight: 500;
     display: inline-flex;
+    line-height: var(--line-height-sm);
+    text-wrap: balance;
+    align-self: center;
   }
 
   a[rel="next"]::before,
@@ -20,8 +24,14 @@
 
   a[rel="prev"] {
     margin-inline-start: auto;
+    text-align: right;
     &::after {
       transform: rotate(-45deg);
+      margin-inline-start: 0.5ch;
+      transition: transform 0.2s;
+    }
+    &:hover::after {
+      transform: translateX(0.3ch) scale(1.1) rotate(-45deg);
     }
   }
 
@@ -29,6 +39,11 @@
     margin-inline-end: auto;
     &::before {
       transform: rotate(135deg);
+      margin-inline-end: 0.5ch;
+      transition: transform 0.2s;
+    }
+    &:hover::before {
+      transform: translateX(-0.3ch) scale(1.1) rotate(135deg);
     }
   }
 }
