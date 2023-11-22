@@ -10,7 +10,7 @@
   display: grid;
 
   grid-template-areas: "icon main";
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 6ch 1fr;
   column-gap: var(--padding-sm);
 
   > * {
@@ -20,6 +20,5 @@
   > .book-author-icon {
     @include circle-image;
     grid-area: icon;
-    width: 6ch;
   }
 }

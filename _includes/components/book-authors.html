@@ -1,9 +1,7 @@
 <div class="book-authors">
   {% for author in include.authors %}
     <div class="book-author">
-      <div class="book-author-icon">
-        <img class="book-author-icon" src="{{ author.image }}" />
-      </div>
+      <img class="book-author-icon" src="{{ author.image }}" />
       <p class="small">
         {{ author.description }}
       </p>
