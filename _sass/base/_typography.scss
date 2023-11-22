@@ -8,7 +8,7 @@
   --font-size-lead: clamp(#{$font-size-lg}, min(2vw, 2.7vh), #{font-size(h4)});
 
   font-size: 1.4em;
-  font-size: clamp(90%, min(1.8vw, 2.5vh), 130%);
+  font-size: clamp(90%, min(1.4vw, 2.3vh), 120%);
 }
 
 body {
