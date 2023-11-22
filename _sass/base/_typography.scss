@@ -104,10 +104,12 @@ pre > code {
 }
 
 pre {
+  white-space: pre-line;
   padding: 1.25em;
 }
 
-:not(pre) > code {
+:not(pre) > code,
+dd > pre {
   padding: 0.2em 0.4em;
   border-radius: 6px;
 }
@@ -154,4 +156,9 @@ dt {
 
 dd {
   text-indent: 1.325ch;
+
+  > pre:first-child {
+    text-indent: 0;
+    margin-left: 1.325ch;
+  }
 }
