@@ -53,6 +53,7 @@
   > svg:first-child,
   > :any-link > svg:first-child {
     width: 1.2em;
+    height: auto;
     position: absolute;
     right: calc(100% + 0.3em);
     margin-top: 0.15em;
