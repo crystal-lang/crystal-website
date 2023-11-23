@@ -20,6 +20,9 @@
   place-content: center;
   min-width: max-content;
   max-width: 35ch;
+  background: transparent;
+  appearance: none;
+  border: none;
 
   :not(.wide) {
     margin-inline: auto;
@@ -81,8 +84,10 @@
       var(--b) var(--hex-width)
     );
   }
-  
-  &:is(a) {
+
+  &:is(a, button) {
+    cursor: pointer;
+
     &:hover::before {
       background-color: hsl(0, 0%, 95%);
     }

@@ -5,11 +5,6 @@
     margin-bottom: var(--padding-xs);
   }
 
-  padding-left: 1.5em;
-  @media (min-width: 160ch) {
-    margin-left: -1.5em;
-  }
-
   .link-item + .link-item {
     margin-top: var(--block-flow-sm);
   }

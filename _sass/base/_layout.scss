@@ -59,6 +59,8 @@ body > footer {
 body > main {
   @include blockflow(var(--block-flow-lg));
 
+  margin-block-end: var(--block-flow-lg);
+
   > header {
     margin-block-start: var(--block-flow-md);
     margin-block-end: var(--block-flow-sm);

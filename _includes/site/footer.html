@@ -1,17 +1,133 @@
-<footer>
-  <div class="row">
-    <div class="col s12 m12 l6 crystal">
-      Crystal is licensed under the Apache License,
-      <a href='https://www.apache.org/licenses/LICENSE-2.0' target='_blank'>
-        Version 2.0
-      </a>
-    </div>
-    <div class="col s12 m12 l6 manas right-align black-text">
-      Crystal language, born & raised at
-      <a href="https://manas.tech" target="_blank" class="black-text">Manas</a>
-      <a href="https://manas.tech" target="_blank" class="logo">
-        <i class="manas"></i>
-      </a>
-    </div>
+<nav class="footer-section" aria-label="Home section links">
+  <a class="link-item__main" href="/">Home</a>
+  <ul role="list">
+    {% assign nav = site.data.nav.home %}
+    {% include site/nav_links.html links=nav %}
+  </ul>
+</nav>
+
+<nav class="footer-section" aria-label="Docs section links">
+  <a class="link-item__main" href="/docs">Documentation</a>
+  <ul role="list">
+    {% assign nav = site.data.nav.docs %}
+    {% include site/nav_links.html links=nav %}
+  </ul>
+</nav>
+
+<nav class="footer-section" aria-label="Community section links">
+  <a class="link-item__main" href="/community">Community</a>
+
+  <ul role="list">
+    {% assign nav = site.data.nav.community %}
+    {% include site/nav_links.html links=nav %}
+  </ul>
+</nav>
+
+<div class="link-items">
+  <h3>Help</h3>
+
+  <div class="link-item">
+    <a class="link-item__main" href="https://forum.crystal-lang.org" title="Crystal Forum">
+      {% include icons/discourse.svg %}
+      Crystal forum
+    </a>
   </div>
-</footer>
+
+  <div class="link-item">
+    <a class="link-item__main" href="https://discord.gg/YS7YvQy">
+      {% include icons/discord.svg %}
+      Crystal Discord
+    </a>
+  </div>
+
+  <div class="link-item">
+    <a class="link-item__main" href="https://www.reddit.com/r/crystal_programming/" title="Crystal Programming on Reddit">
+      {% include icons/reddit.svg %}
+      r/crystal_programming
+    </a>
+  </div>
+
+  <div class="link-item">
+    <a class="link-item__main" href="ircs://irc.libera.chat:6697#crystal-lang">
+      {% include icons/liberachat.svg %}
+      IRC: <em>#crystal-lang</em>
+    </a> (<a href="https://web.libera.chat/#crystal-lang">web</a>, <a href="http://irclog.crystal-lang.org">logs</a>)
+  </div>
+
+  <div class="link-item">
+    <a class="link-item__main" href="https://matrix.to/#/#crystal-lang_crystal:gitter.im">
+      {% include icons/matrix.svg %}
+      Matrix: <em>#crystal-lang_crystal:gitter.im</em>
+    </a>(<a href="https://gitter.im/crystal-lang/crystal">web</a>)
+  </div>
+</div>
+
+<div class="link-items">
+  <h3>News feeds</h3>
+
+  <div class="link-item">
+    <a class="link-item__main" href="/feed.xml" rel="alternate" type="application/atom+xml">
+      {% include icons/rss.svg %}
+      Blog posts and releases
+    </a>
+  </div>
+  <div class="link-item">
+    <a class="link-item__main" href="/releases/feed.xml" rel="alternate" type="application/atom+xml">
+      {% include icons/rss.svg %}
+      Releases
+    </a>
+  </div>
+  <div class="link-item">
+    <a class="link-item__main" href="/newsletter/feed" rel="alternate" type="application/atom+xml">
+      {% include icons/rss.svg %}
+      Newsletter
+    </a>
+  </div>
+</div>
+
+<div class="newsletter-footer">
+  <form
+    action="https://tech.us6.list-manage.com/subscribe/post?u=68338ca88d5d6326c9a824317&amp;id=6f80e8b0be&amp;f_id=005a33e3f0"
+    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_self"
+    novalidate="">
+    <p>Subscribe to our newsletter</p>
+      <input
+          type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="E-Mail">
+      <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-flat btn-large hex">Submit</button>
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name="b_68338ca88d5d6326c9a824317_6f80e8b0be" tabindex="-1" value="">
+      </div>
+  </form>
+</div>
+
+<div class="link-items link-items--social">
+  <div class="link-item">
+    <a class="link-item__main" href="https://github.com/crystal-lang/crystal" title="Crystal repository on GitHub" rel="me">
+      {% include icons/github.svg %}
+      GitHub
+    </a>
+  </div>
+  <div class="link-item">
+    <a class="link-item__main" href="https://www.youtube.com/@CrystalLanguage" title="Crystal channel on YouTube" rel="me">
+      {% include icons/youtube.svg %}
+      YouTube
+    </a>
+  </div>
+  <div class="link-item">
+    <a class="link-item__main" href="https://fosstodon.org/@CrystalLanguage">
+      {% include icons/mastodon.svg %}
+      Mastodon
+    </a>
+  </div>
+  <div class="link-item">
+    <a class="link-item__main" href="https://twitter.com/CrystalLanguage">
+      {% include icons/twitter.svg %}
+      Twitter
+    </a>
+  </div>
+</div>
+
+<div class="imprint">
+  <p>Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p>
+  <p>Crystal language, born & raised at <a href="https://manas.tech">Manas {% include icons/manas.svg %}</a></p>
+</div>
