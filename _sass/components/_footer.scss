@@ -1,3 +1,12 @@
+.edit-on-github {
+  width: 100vw;
+  text-align: center;
+  padding: var(--padding-sm);
+  background-color: var(--border-color-light);
+  font-size: 90%;
+  color: var(--light-text);
+}
+
 body > footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(max(9em, 17%), 1fr));
