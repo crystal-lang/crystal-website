@@ -1,5 +1,6 @@
 ---
-subtitle: On Windows (Preview)
+title: Windows (Preview)
+page_title: Install on Windows (Preview)
 ---
 
 Crystal on Windows is currently distributed as both portable and installer preview packages. They are available on the [GitHub releases page](https://github.com/crystal-lang/crystal/releases). **Be aware that Crystal on Windows is** [**not yet complete**](https://github.com/crystal-lang/crystal/issues/5430).
@@ -10,8 +11,8 @@ Crystal on Windows requires the following prerequisites:
 
 * Microsoft Visual Studio build tools, which may be downloaded at one of the following locations:
 
-  * https://aka.ms/vs/17/release/vs_BuildTools.exe
-  * https://visualstudio.microsoft.com/downloads/ (also includes the Visual Studio IDE)
+  * [https://aka.ms/vs/17/release/vs_BuildTools.exe](https://aka.ms/vs/17/release/vs_BuildTools.exe)
+  * [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/) (also includes the Visual Studio IDE)
 
   Either the "Desktop development with C++" workload or the "MSVC v143 - VS 2022 C++ x64/x86 build tools" components should be selected.
 * Windows 10 SDK, which is available as a component from the above installers.
