@@ -27,33 +27,3 @@ The `.exe` file is the GUI installer; simply follow the instructions in the inst
 Multiple portable packages can be installed side-by-side. They do not upgrade themselves, so any old versions need to be removed manually. **Do not simply extract a new portable package over an old one, as this will fail to remove files that are deleted in a version upgrade**.
 
 Installing Crystal via the GUI installer automatically removes the previous installation.
-
-## Scoop
-
-A community bucket for the [Scoop package manager](https://scoop.sh/) is also available. Start by installing git (if you don't already have it available) and adding the Crystal repository:
-
-```bash
-scoop install git
-scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal
-```
-
-If you don't yet have the x64 Native Tools Command Prompt available, run this command:
-
-```
-scoop install vs_2022_cpp_build_tools
-```
-
-Finally:
-
-```
-scoop install crystal
-```
-
-When a new Crystal version is released you can upgrade your system using:
-
-```bash
-scoop update
-scoop update crystal
-```
-
-Please see the [`neatorobito/scoop-crystal` repo](https://github.com/neatorobito/scoop-crystal) for more information and support.
