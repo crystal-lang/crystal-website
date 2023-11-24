@@ -1,7 +1,7 @@
 ---
 title: "Crystal Automated Release"
 author: bcardiff
-description: "How the build process was updated and what else can be done"
+summary: "How the build process was updated and what else can be done"
 categories: technical
 tags: devnotes
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Amber - Crystalizing Rails and Phoenix"
 author: robacarp
-description: "Join Robert Carpenter, member of the Amber core team, in an introduction to this Rails-like web framework"
+summary: "Join Robert Carpenter, member of the Amber core team, in an introduction to this Rails-like web framework"
 categories: community
 tags: ecosystem
 ---
