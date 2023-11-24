@@ -3,6 +3,8 @@ title: Announcing Crystal 1.0 Conference
 summary: Let's celebrate the release
 thumbnail: +
 author: beta-ziliani
+categories: community
+tags: community events
 ---
 
 A decade ago, when Crystal was a quirky idea that a few people talked about in their spare time at Manas, it was impossible to think we would go through so many things on our way to releasing a stable and production ready 1.0 version.

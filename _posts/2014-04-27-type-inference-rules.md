@@ -3,6 +3,8 @@ title: Type inference rules
 summary: Part 2 of the type inference series
 thumbnail: T
 author: asterite
+categories: technical
+tags: language types
 ---
 
 Here we'll [continue explaining](/2013/09/23/type-inference-part-1/) how Crystal assigns

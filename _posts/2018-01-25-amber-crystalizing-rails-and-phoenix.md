@@ -2,6 +2,8 @@
 title: "Amber - Crystalizing Rails and Phoenix"
 author: robacarp
 description: "Join Robert Carpenter, member of the Amber core team, in an introduction to this Rails-like web framework"
+categories: community
+tags: ecosystem
 ---
 
 > _This guest post by [Robert Carpenter](https://github.com/robacarp) will introduce you to Amber, a Rails/Phoenix-like web framework for Crystal. Don't forget to [reach out to us](http://twitter.com/intent/tweet?text=@CrystalLanguage%20I%20want%20to%20write%20about...) if you want to share some experience of your own._

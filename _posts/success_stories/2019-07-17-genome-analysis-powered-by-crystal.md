@@ -4,8 +4,7 @@ author: mpettinati
 description: Rapid rare disease diagnosis using genome analysis
 company: Diploid
 image: /assets/blog/2019-07-17-diploid.webp
-categories:
-- success_stories
+categories: success_stories
 ---
 
 [Diploid](http://www.diploid.com/) is a company based in Leuven, Belgium, who provides services and software to hospitals and labs for diagnosing rare diseases using clinical genome analysis.

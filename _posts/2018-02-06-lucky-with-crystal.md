@@ -2,6 +2,8 @@
 title: "Lucky with Crystal - Fewer Bugs, Better Performance, Incredible Productivity"
 author: paulcsmith
 description: "Lucky is a new Crystal web framework built to catch bugs at compile time, return responses incredibly quickly, and help you write maintainable code."
+categories: community
+tags: ecosystem
 ---
 
 > _[Paul Smith](https://github.com/paulcsmith) created the [**Lucky web framework**](https://luckyframework.org/) a year ago - and he now shares its status with us. If you want to share your own project, [**reach out to us**](http://twitter.com/intent/tweet?text=@CrystalLanguage%20I%20want%20to%20write%20about...) with your idea._

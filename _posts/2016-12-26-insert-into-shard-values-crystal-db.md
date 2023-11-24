@@ -3,6 +3,9 @@ title: INSERT INTO shard VALUES ("crystal-db")
 summary: One db api to rule them all
 thumbnail: DB
 author: bcardiff
+categories: community
+tags: ecosystem
+tags: database
 ---
 
 Using a database is a really common task. For each kind of database there is a shard or library needed. When there is no common API to talk to a database, building more advanced shards like orm or migrations is harder. Either you end up supporting just a driver or you need to create a whole ad-hoc solution. Lacking a common api also means that when changing from one DB to another you will need to learn a different api. You already unavoidably need to deal with some SQL differences: `?`/`$1`, `TOP`/`LIMIT`, etc.

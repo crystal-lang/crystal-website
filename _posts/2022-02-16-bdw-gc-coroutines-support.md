@@ -3,6 +3,8 @@ title: bdw-gc coroutines support
 summary: The support for multi-thread coroutines was gained by allowing the user to control the stack bottom of each thread.
 thumbnail: +
 author: bcardiff
+categories: technical
+tags: feature
 ---
 
 [Crystal](https://crystal-lang.org) uses bdw-gc and supports coroutines. Fibers is how coroutines are called here. For many years Crystal has been single-thread with fibers. Single-thread is still the default alternative. Sometime ago we added muti-thread support where each thread can run concurrently multiple fibers. This required some patches and eventual contributions to bdw-gc in order to achieve this since there was no built-in support for coroutines in the library.

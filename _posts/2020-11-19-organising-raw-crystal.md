@@ -4,6 +4,8 @@ summary: An overview of what you can expect at Raw Crystal 2020 and some insight
 thumbnail: +
 author: lbarasti
 comment_href: https://disqus.com/home/discussion/crystal-lang/organising_a_crystal_conference_in_2020/
+categories: community
+tags: community events
 ---
 
 Since I started exploring Crystal, I've always been impressed with how supportive people in the community were. It's the kind of feeling that makes you look forward to engage with fellow humans sharing a passion for building things.

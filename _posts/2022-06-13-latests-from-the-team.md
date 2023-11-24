@@ -3,6 +3,7 @@ title: Latests news from the Crystal Team
 summary: A sneak peak of what kept the team busy in the past months
 thumbnail: +
 author: beta-ziliani
+categories: project
 ---
 
 Here we tell the community what's been on the team's plate for the last couple of months, focusing on those aspects that aren't visible in Crystal's main repo.

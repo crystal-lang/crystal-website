@@ -3,6 +3,8 @@ title: Happy birthday, Crystal!
 thumbnail: h!
 summary: Crystal is one year old
 author: asterite
+categories: technical
+tags: [language, project]
 ---
 
 Yesterday Crystal became one year old. Yay! :-)
