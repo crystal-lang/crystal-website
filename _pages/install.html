@@ -59,9 +59,13 @@ layout: page-wide
     margin-top: var(--block-flow-md);
   }
   img[src^="https://repology.org/badge"] {
-    opacity: 0.6;
+    opacity: 0.7;
     display: inline-block;
     vertical-align: sub;
+    filter: saturate(2) contrast(2) sepia(0.6);
+  }
+  img[src^="https://repology.org/badge"]:hover {
+    opacity: 1;
   }
   .install-entry {
     display: grid;
