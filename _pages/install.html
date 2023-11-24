@@ -173,7 +173,7 @@ layout: page-wide
         <div class="install-entry">
           <span class="title">Emerge (Gentoo)</span>
           <pre><code>emerge -a dev-lang/crystal</code></pre>
-          <a href="on_gentoo/" class="instructions">Instructions</a>
+          <a href="on_gentoo_linux/" class="instructions">Instructions</a>
           <a href="https://packages.gentoo.org/packages/dev-lang/crystal" title="Crystal package on Gentoo package index" class="info">package info</a>
           {% include elements/repology_badge.html repo="gentoo/crystal-lang" %}
         </div>
@@ -329,14 +329,14 @@ layout: page-wide
         <div class="install-entry">
           <span class="title">Package</span>
           <pre><code>sudo pkg install -y crystal shards</code></pre>
-          <a href="on_freebsd/" class="instructions">Instructions</a>
+          <a href="on_freebsd/#install-package" class="instructions">Instructions</a>
         </div>
         <div class="install-entry">
           <span class="title">Port</span>
           <pre><code>sudo make -C/usr/ports/lang/crystal reinstall clean
             sudo make -C/usr/ports/devel/shards reinstall clean
           </code></pre>
-          <a href="on_freebsd/" class="instructions">Instructions</a>
+          <a href="on_freebsd/#install-port" class="instructions">Instructions</a>
           <a href="https://www.freshports.org/lang/crystal" title="Crystal port on Freshports.org" class="info">package info</a>
           {% include elements/repology_badge.html repo="freebsd/crystal-lang" %}
         </div>
@@ -356,12 +356,12 @@ layout: page-wide
         <div class="install-entry">
           <span class="title">Package</span>
           <pre><code>doas pkg_add crystal</code></pre>
-          <a href="on_openbsd/" class="instructions">Instructions</a>
+          <a href="on_openbsd/#install-package" class="instructions">Instructions</a>
         </div>
         <div class="install-entry">
           <span class="title">Port</span>
           <pre><code>doas make -C/usr/ports/lang/crystal clean install</code></pre>
-          <a href="on_openbsd/" class="instructions">Instructions</a>
+          <a href="on_openbsd/#install-port" class="instructions">Instructions</a>
           <a href="https://openports.pl/path/lang/crystal" title="Crysta port on openports.pl" class="info">package info</a>
           {% include elements/repology_badge.html repo="openbsd/crystal-lang" %}
         </div>
@@ -431,7 +431,7 @@ layout: page-wide
 <section>
   <h2>Nightly builds</h2>
 
-  <a href="nightly">Instructions</a>
+  <a href="nightlies">Instructions</a>
 </section>
 
 <section id="from_source" class="content">
