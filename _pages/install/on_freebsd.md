@@ -1,5 +1,6 @@
 ---
-subtitle: On FreeBSD
+title: FreeBSD
+page_title: Install on FreeBSD
 ---
 
 FreeBSD includes the Crystal compiler in the ports tree, starting from version FreeBSD 11.0.
@@ -12,7 +13,6 @@ When building Crystal code with the `--release` flag on FreeBSD, the `--no-debug
 
 Crystal is available as a compiled package. However, it might not be the most recent version available.
 
-
 ```bash
 sudo pkg install -y crystal shards
 ```
@@ -20,7 +20,6 @@ sudo pkg install -y crystal shards
 If you're on a `-RELEASE` version of FreeBSD, by default `pkg` is configured for the `quarterly` package set, which is updated every quarter (except for security patches, which are included ASAP).
 
 To switch to `latest` for quicker updates, create a file `/usr/local/etc/pkg/repos/FreeBSD.conf` with the following contents:
-
 
 ```ucl
 FreeBSD: {

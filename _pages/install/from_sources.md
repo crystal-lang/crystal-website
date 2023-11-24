@@ -1,5 +1,6 @@
 ---
-subtitle: From sources
+title: Source Install
+page_title: Build from sources
 ---
 
 If you want to contribute then you might want to install Crystal from sources.
