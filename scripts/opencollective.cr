@@ -53,7 +53,7 @@ opencollective.members.each do |member|
   next if member.totalAmountDonated == 0 # The only ones I see with 0 are not BACKERs, but just in case
 
   downcase_name = member.name.downcase
-  next if downcase_name == "incognito" || downcase_name == "guest"
+  next if downcase_name == "incognito" || downcase_name == "guest" || downcase_name == ""
 
   url = member.website || member.twitter || member.github
   logo = member.image
@@ -66,7 +66,7 @@ opencollective.members.each do |member|
   end
 
   all_time = member.totalAmountDonated
-  sponsors.add Sponsor.new(member.name, url, logo, amount, all_time, nil, member.createdAt, nil)
+  sponsors.add Sponsor.new(member.name, url, logo, amount, all_time, nil, member.createdAt, nil, member.lastTransactionAt)
 end
 
 File.open("#{__DIR__}/../_data/opencollective.json", "w") do |file|
