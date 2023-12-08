@@ -1,14 +1,14 @@
 logo,name,url,last_payment,all_time,since,level
 sponsors/manas.png,Manas Technology Solutions,https://manas.tech/,"$12,000","$505,820","Jun 19, 2009",5000
 sponsors/84.png,84 codes,https://www.84codes.com/,"€5,000","€256,000","Apr 1, 2018",5000
-sponsors/placeos.png,PlaceOS,https://place.technology/,$250,"$6,250","Jul 26, 2021",250
+sponsors/placeos.png,PlaceOS,https://place.technology/,$250,"$6,500","Jul 26, 2021",250
 ,lowkey,,$150,"$2,440","Jun 12, 2021",150
 sponsors/vulk_cooperative.png,Vulk Cooperative,https://www.vulk.coop,$75,"$5,400","Sep 10, 2020",75
 sponsors/blitline.png,Blitline,https://www.blitline.com,$75,"$4,575","Dec 12, 2018",75
 sponsors/prestodoctor.png,PrestoDoctor,https://prestodoctor.com,$75,"$4,350","Dec 28, 2020",75
 sponsors/ryan_maki.png,Ryan Maki,,$75,"$2,775","Dec 2, 2020",75
-sponsors/concentric.png,Concentric,https://concentric.health,$75,$750,"Feb 2, 2023",75
-sponsors/kevin_hovsäter.jpg,Kevin Hovsäter,,$75,$305,"May 22, 2020",75
+sponsors/concentric.png,Concentric,https://concentric.health,$75,$825,"Feb 2, 2023",75
+sponsors/kevin_hovsäter.jpg,Kevin Hovsäter,,$75,$380,"May 22, 2020",75
 ,Thomas Peter Berntsen,https://twitter.com/tpberntsen,$25,"$4,375","Sep 20, 2015",25
 ,isaacsloan,https://isaacsloan.com,$36,"$2,506","Mar 24, 2016",25
 ,Frank O'Hara,,$25,"$1,900","Aug 16, 2015",25
@@ -21,9 +21,9 @@ sponsors/kevin_hovsäter.jpg,Kevin Hovsäter,,$75,$305,"May 22, 2020",75
 ,Ricardo Tomasi,https://ricardo.cc,$25,$975,"Oct 9, 2020",25
 ,Qard,http://stephenbelanger.com,$25,$965,"Aug 21, 2015",25
 ,Casinoonlineaams.com,https://www.casinoonlineaams.com,$25,$775,"May 26, 2021",25
-,Jeremy Woertink,,$25,$200,"Mar 30, 2023",25
+,Jeremy Woertink,,$25,$225,"Mar 30, 2023",25
 ,pitosalas,,$20,$825,"Dec 20, 2017",10
-,Bookyourdata.com,https://www.bookyourdata.com,$10,$705,"Apr 14, 2019",10
+,Bookyourdata.com,https://www.bookyourdata.com,$10,$715,"Apr 14, 2019",10
 ,Christos Zisopoulos,,$10,$660,"Jun 23, 2016",10
 ,masukomi,http://masukomi.org,$10,$640,"Aug 7, 2016",10
 ,Noriyo Akita,http://hyperneetprogrammer.hatenablog.com/,$10,$615,"Jul 21, 2018",10
@@ -40,30 +40,30 @@ sponsors/kevin_hovsäter.jpg,Kevin Hovsäter,,$75,$305,"May 22, 2020",75
 ,Lampros Chaidas,,$10,$330,"Mar 29, 2021",10
 ,rigani,https://twitter.com/rigani_c,$10,$310,"Dec 28, 2018",10
 ,Bromine0x23,https://twitter.com/bromine0x23,$10,$270,"Feb 27, 2021",10
-,Alexander Adam,https://github.com/alexanderadam/alexanderadam#-about-me,$10,$260,"Oct 1, 2021",10
+,Alexander Adam,https://github.com/alexanderadam/alexanderadam#-about-me,$10,$270,"Oct 1, 2021",10
 ,Glen A-B,,$10,$255,"May 5, 2020",10
 ,Leonardo Kewitz,https://kewitz.js.org,$10,$255,"Aug 24, 2020",10
 ,Håkan Nylén,,$10,$220,"Mar 26, 2020",10
-,Sekeol Kim,,$10,$180,"May 23, 2022",10
+,Sekeol Kim,,$10,$190,"May 23, 2022",10
 ,Jeffrey Crochet,https://www.linkedin.com/in/jeffrey-crochet-21008b199/,$10,$130,"Aug 25, 2020",10
-,Twicsy,https://twicsy.com/buy-instagram-likes,$10,$120,"Dec 14, 2022",10
-,Josephine Pfeiffer,https://josie.lol/,$10,$120,"Dec 16, 2022",10
-,infinitary,https://infinitary.org/,$10,$90,"Mar 9, 2023",10
-,Josh Rickard,,$10,$70,"May 10, 2023",10
+,Twicsy,https://twicsy.com/buy-instagram-likes,$10,$130,"Dec 14, 2022",10
+,Josephine Pfeiffer,https://josie.lol/,$10,$130,"Dec 16, 2022",10
+,infinitary,https://infinitary.org/,$10,$100,"Mar 9, 2023",10
+,Josh Rickard,,$10,$80,"May 10, 2023",10
+,Poprey,https://poprey.com/get-free-instagram-views,$10,$60,"Jun 16, 2023",10
+,Eddy Luten,https://luten.dev/,$10,$60,"Jun 18, 2023",10
 ,EaseUS Germany,https://www.easeus.de/,$10,$60,"Jun 28, 2023",10
 ,EaseUS RecExperts,https://recorder.easeus.com,$10,$60,"Jun 28, 2023",10
-,Poprey,https://poprey.com/get-free-instagram-views,$10,$50,"Jun 16, 2023",10
-,Eddy Luten,https://luten.dev/,$10,$50,"Jun 18, 2023",10
-,Buy Instagram Followers Twicsy,https://twicsy.com/buy-instagram-followers,$10,$50,"Jul 7, 2023",10
-,buyyoutubviews.com,https://buyyoutubviews.com,$10,$30,"Jul 19, 2023",10
+,Buy Instagram Followers Twicsy,https://twicsy.com/buy-instagram-followers,$10,$60,"Jul 7, 2023",10
 ,Daniel Salazar,,$10,$20,"Oct 15, 2023",10
+,LightNode,https://www.lightnode.com,$10,$10,"Dec 7, 2023",10
 ,jeron,,$5,"$1,160","Jan 18, 2018",5
 ,Sho Kusano,https://aduca.org,$5,$483,"Aug 4, 2015",5
 ,msky026,http://qiita.com/msky026,$5,$450,"Oct 23, 2015",5
 ,David Hofer,http://twitter.com/hofer,$5,$375,"Aug 6, 2015",5
 ,Blumenversand,https://blumenversender.com,$5,$340,"Mar 14, 2016",5
 ,Matt Berry,https://mattrb.com,$5,$330,"Dec 21, 2019",5
-,Will Lewis,,$5,$325,"Sep 25, 2020",5
+,Will Lewis,,$5,$330,"Sep 25, 2020",5
 ,ʕ·ᴥ·ʔAKJ,,$5,$295,"Jan 6, 2017",5
 ,Ryan Prior,https://www.ryanprior.com,$5,$255,"Oct 7, 2019",5
 ,Masaaki Aoyagi,,$5,$225,"Mar 26, 2018",5
@@ -80,55 +80,55 @@ sponsors/kevin_hovsäter.jpg,Kevin Hovsäter,,$75,$305,"May 22, 2020",75
 ,nilsding,https://nilsding.org,$5,$175,"Jan 18, 2019",5
 ,mavu,,$5,$175,"Jan 23, 2019",5
 ,Auttawut Wiriyakreng,,$5,$165,"Mar 25, 2021",5
+,Jeffrey Crochet,,$5,$160,"Aug 6, 2022",5
 ,karupanerura,http://karupas.org/,$5,$155,"May 4, 2019",5
 ,Netin nopeustesti,https://netinnopeustesti.com/,$5,$155,"May 27, 2021",5
 ,Holden Omans,,$5,$150,"Jun 21, 2019",5
 ,Windesol Sähkön Kilpailutus,https://windesol.fi,$5,$150,"Jun 8, 2021",5
-,Jeffrey Crochet,,$5,$150,"Aug 6, 2022",5
-,Renkaatsopivasti,https://renkaatsopivasti.fi,$5,$145,"Jul 2, 2021",5
-,Agloks,,$5,$145,"Jul 8, 2021",5
+,Renkaatsopivasti,https://renkaatsopivasti.fi,$5,$150,"Jul 2, 2021",5
+,Agloks,,$5,$150,"Jul 8, 2021",5
 ,Joseph Method,,$5,$145,"Jul 9, 2021",5
 ,Taletidskortnu,https://taletidskort.nu,$5,$140,"Aug 25, 2021",5
 ,Lukas Svoboda,,$5,$135,"Sep 21, 2015",5
-,eason.ye,https://github.com/yelanxin,$5,$130,"Sep 17, 2021",5
-,Mia Bennett,https://chillfox.com/,$5,$130,"Oct 1, 2021",5
+,eason.ye,https://github.com/yelanxin,$5,$135,"Sep 17, 2021",5
+,Mia Bennett,https://chillfox.com/,$5,$135,"Oct 1, 2021",5
 ,maltidsbarometeret,https://maltidsbarometeret.dk,$5,$130,"Oct 19, 2021",5
+,Artem Napolskih,,$5,$125,"May 22, 2020",5
 ,Michael Wagner,,$5,$125,"Nov 11, 2021",5
 ,ryan-senn,https://tt.edu.au,$5,$120,"Jan 4, 2020",5
-,Artem Napolskih,,$5,$120,"May 22, 2020",5
 ,Marco Roth,https://marcoroth.dev,$5,$110,"Mar 4, 2020",5
 ,Wolfgang Klinger,,$5,$110,"Mar 9, 2020",5
 ,PROXYONE LLC,https://proxyone.eu/,$5,$110,"Feb 21, 2022",5
-,Anton Maminov,https://twitter.com/AntonMaminov,$5,$105,"Feb 23, 2022",5
-,bit4bit,,$5,$105,"Mar 9, 2022",5
-,Seth Falco,https://falco.fun/,$5,$100,"Jul 23, 2022",5
-,SureBet,https://www.sure.bet/casinos-not-on-gamstop/,$5,$85,"Jun 17, 2022",5
-,CouponBlender,https://www.couponblender.com/,$5,$85,"Jun 30, 2022",5
-,IgAnony,https://insanony.com/,$5,$60,"Jun 29, 2022",5
-,CasinoWizard,https://thecasinowizard.com/,$5,$60,"Oct 19, 2022",5
-,Aviator Game,https://aviatorgame.guru,$5,$60,"Nov 25, 2022",5
-,DeFiCasinos.io,https://deficasinos.io,$5,$55,"Dec 29, 2022",5
+,Anton Maminov,https://twitter.com/AntonMaminov,$5,$110,"Feb 23, 2022",5
+,bit4bit,,$5,$110,"Mar 9, 2022",5
+,Seth Falco,https://falco.fun/,$5,$105,"Jul 23, 2022",5
+,SureBet,https://www.sure.bet/casinos-not-on-gamstop/,$5,$90,"Jun 17, 2022",5
+,CouponBlender,https://www.couponblender.com/,$5,$90,"Jun 30, 2022",5
+,IgAnony,https://insanony.com/,$5,$65,"Jun 29, 2022",5
+,CasinoWizard,https://thecasinowizard.com/,$5,$65,"Oct 19, 2022",5
+,Aviator Game,https://aviatorgame.guru,$5,$65,"Nov 25, 2022",5
+,DeFiCasinos.io,https://deficasinos.io,$5,$60,"Dec 29, 2022",5
 ,Hiptoro,https://hiptoro.com,$5,$55,"Jan 17, 2023",5
 ,Bubble Shooter,https://www.bubbleshooter.net/,$5,$50,"Feb 13, 2023",5
+,Soc-Promotion,https://soc-promotion.com/instagram/likes,$5,$50,"Mar 2, 2023",5
 ,Kiekkotorni - Nikotiinipussit,https://kiekkotorni.com/,$5,$45,"Feb 24, 2023",5
-,Soc-Promotion,https://soc-promotion.com/instagram/likes,$5,$45,"Mar 2, 2023",5
 ,salt rock lamp,,$5,$40,"Apr 11, 2021",5
-,egtslot,https://slot-egt.com/,$5,$35,"May 8, 2023",5
-,Deposit Casinos,https://10depositcasino.com/,$5,$30,"May 31, 2023",5
-,AusmalbildTV,https://ausmalbildtv.de/,$5,$25,"Feb 10, 2023",5
-,Casino Withdrawal Times,https://casinowithdrawaltimes.com/,$5,$25,"Jun 28, 2023",5
-,Instagram Story Viewer,https://insta-stories-viewer.com,$5,$15,"Aug 23, 2023",5
-,Free Spider Solitaire Online,https://free-spider-solitaire.online,$5,$15,"Sep 11, 2023",5
-,Crescitaly,https://crescitaly.com,$5,$10,"Sep 21, 2023",5
-,Chudovo,https://chudovo.com/,$5,$10,"Sep 22, 2023",5
-,Best Casinos Australia - BCA,https://best-casinos-australia.com/,$5,$10,"Oct 1, 2023",5
+,egtslot,https://slot-egt.com/,$5,$40,"May 8, 2023",5
+,Deposit Casinos,https://10depositcasino.com/,$5,$35,"May 31, 2023",5
+,AusmalbildTV,https://ausmalbildtv.de/,$5,$30,"Feb 10, 2023",5
+,Casino Withdrawal Times,https://casinowithdrawaltimes.com/,$5,$30,"Jun 28, 2023",5
+,Instagram Story Viewer,https://insta-stories-viewer.com,$5,$20,"Aug 23, 2023",5
+,Free Spider Solitaire Online,https://free-spider-solitaire.online,$5,$20,"Sep 11, 2023",5
+,Crescitaly,https://crescitaly.com,$5,$15,"Sep 21, 2023",5
+,Chudovo,https://chudovo.com/,$5,$15,"Sep 22, 2023",5
+,Best Casinos Australia - BCA,https://best-casinos-australia.com/,$5,$15,"Oct 1, 2023",5
 ,TopCasinoSearch,https://www.topcasinosearch.com/,$5,$10,"Oct 13, 2023",5
+,No Deposit Bonuses,https://www.timesunion.com/marketplace/article/no-deposit-bonus-codes-18475605.php,$5,$10,"Nov 9, 2023",5
 ,Dopoid,https://dopoid.com/,$5,$5,"Oct 23, 2023",5
-,No Deposit Bonuses,https://www.timesunion.com/marketplace/article/no-deposit-bonus-codes-18475605.php,$5,$5,"Nov 9, 2023",5
 ,BitStarz Bonus Code,https://www.sfgate.com/market/article/bitstarz-bonus-codes-18365169.php,$5,$5,"Nov 28, 2023",5
 ,InsaDown - Instagram Downloader,https://insadown.com,$5,$5,"Nov 29, 2023",5
 ,Unlimited Marketing,https://Unlimitedmarketing.net,$5,$5,"Nov 29, 2023",5
-,speg,,$3,$91,"Jan 10, 2022",1
+,speg,,$3,$95,"Jan 10, 2022",1
 ,Jonathan Gnagy,,$1,$86,"Oct 31, 2019",1
 ,Martin Luder,,$1,$76,"Aug 14, 2015",1
 ,Shigenobu Nishikawa,,$1,$74,"Oct 23, 2015",1
@@ -141,7 +141,7 @@ sponsors/kevin_hovsäter.jpg,Kevin Hovsäter,,$75,$305,"May 22, 2020",75
 ,Rob Fors,,$1,$37,"Nov 18, 2018",1
 ,Kendall Park,,$1,$37,"Nov 22, 2018",1
 ,Sergey Kojin,,$1,$26,"Oct 7, 2019",1
-,GOKI MORI,,$1,$12,"Mar 16, 2023",1
+,GOKI MORI,,$1,$13,"Mar 16, 2023",1
 ,Frisco Del Rosario,,$1,$11,"May 7, 2023",1
 sponsors/nikola_motor_company.png,Nikola Motor Company,https://nikolamotor.com/,$0,"$165,000","Mar 1, 2020",0
 ,Dutchie,,$0,"$3,450","Nov 23, 2020",0
@@ -235,6 +235,7 @@ sponsors/nikola_motor_company.png,Nikola Motor Company,https://nikolamotor.com/,
 ,Randy Diaz,,$0,$30,"Aug 7, 2020",0
 ,Billigstbredbaand.dk,,$0,$30,"Jul 26, 2021",0
 ,prointernet.in.ua,,$0,$30,"Dec 13, 2021",0
+,buyyoutubviews.com,,$0,$30,"Jul 19, 2023",0
 ,Mehdi Drissi,,$0,$25,"Mar 27, 2020",0
 ,ParticleBrand,,$0,$25,"Nov 8, 2020",0
 ,Askhat Saiapov,,$0,$25,"Mar 23, 2021",0
