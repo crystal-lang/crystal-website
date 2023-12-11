@@ -86,7 +86,6 @@ layout: page-wide
   .install-entry  > pre {
       grid-area: command;
       padding: var(--padding-xs);
-      margin: calc(var(--padding-xs) / -2) 0;
     }
     .install-entry  > .repo-badge {
       grid-area: version;
@@ -117,6 +116,9 @@ layout: page-wide
       justify-self: flex-end;
       --link-color: var(--lighter-text);
       --link-hover-color: var(--light-text);
+    }
+    .install-entry > .info > svg {
+      transform: translateY(.6ch);
     }
 
 
