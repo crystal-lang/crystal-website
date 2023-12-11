@@ -38,7 +38,6 @@ layout: page-wide
     grid-template-columns: subgrid;
     grid-column: 1 / -1;
     border-top: 1.4px solid var(--border-color);
-    padding-top: var(--padding-xs);
     align-items: baseline;
   }
   .install-panels > * > .content {
@@ -53,7 +52,6 @@ layout: page-wide
     display: grid;
     grid-template-columns: subgrid;
     grid-column: title / end;
-    row-gap: var(--padding-xs);
   }
   img[src^="https://repology.org/badge"] {
     /*opacity: 0.7;*/
@@ -73,10 +71,10 @@ layout: page-wide
     grid-column: 1 / -1;
     --link-color: var(--body-text);
     align-items: baseline;
+    padding: 0.5ch 0;
   }
   .install-entry:not(:first-child) {
     border-top: 1.4px solid var(--border-color);
-    padding-top: var(--padding-xs);
   }
   .install-entry :any-link {
     text-decoration: underline;
@@ -96,7 +94,7 @@ layout: page-wide
     }
     .install-entry > p {
       grid-area: command;
-      padding: var(--padding-xs);
+      padding: calc(var(--padding-xs) * 0.6);
     }
     .install-entry > .instructions {
       grid-area: instructions;
@@ -117,10 +115,8 @@ layout: page-wide
       grid-area: info;
       font-size: 90%;
       justify-self: flex-end;
-      align-self: flex-start;
       --link-color: var(--lighter-text);
       --link-hover-color: var(--light-text);
-      padding: var(--padding-xs) 0;
     }
 
 
