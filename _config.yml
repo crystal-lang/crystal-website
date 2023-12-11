@@ -87,3 +87,7 @@ kramdown:
 repository: crystal-lang/crystal-website
 
 callouts: ["NOTE"]
+
+relative_links:
+  enabled:     true
+  collections: true
