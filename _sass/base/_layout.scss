@@ -82,7 +82,7 @@ article.page > header {
   @include blockflow(var(--block-flow-md));
 }
 
-article > main {
+article > .content {
   @include blockflow(var(--block-flow-lg));
 }
 
