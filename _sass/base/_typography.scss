@@ -17,7 +17,7 @@ body {
   line-height: var(--line-height-base);
 }
 
-:is(h1, h2, h3, h4) {
+:is(h1, h2, h3, h4, h5, h6) {
   line-height: var(--line-height-heading);
   font-weight: 400;
 
@@ -31,6 +31,11 @@ body {
   & + & {
     margin-block-start: var(--block-flow, var(--block-flow-sm));
   }
+}
+
+:is(h5, h6) {
+  font-weight: 500;
+  margin-block: 0;
 }
 
 .page-description {
@@ -69,6 +74,10 @@ h5,
 h6,
 .h6 {
   font-size: font-size(h6);
+}
+
+p {
+  max-width: var(--content-width);
 }
 
 :any-link {
