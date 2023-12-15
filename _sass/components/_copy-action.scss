@@ -1,0 +1,63 @@
+pre {
+  display: flex;
+  column-gap: 0.3ch;
+  align-items: flex-start;
+
+  > code {
+    flex-grow: 1;
+    z-index: 1;
+  }
+  > .copy-action {
+    z-index: 1;
+  }
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: var(--light-gray);
+    opacity: 0.2;
+    transform: scaleY(0);
+    transition: 400ms opacity;
+  }
+
+  &.copied::before {
+    opacity: 0;
+    transform: scaleY(1);
+    transition: 500ms opacity, 200ms transform;
+  }
+
+  &.copied::after {
+    content: "copied to clipboard";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    color: var(--lighter-text);
+  }
+}
+.copy-action {
+  display: block;
+
+  /* reset button appearance */
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  &:not(:hover) {
+    opacity: 0.5;
+  }
+  > .icon {
+    width: 2.5ch;
+    height: 2.5ch;
+    display: block;
+  }
+}
