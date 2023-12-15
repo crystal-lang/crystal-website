@@ -1,5 +1,13 @@
 [
   {
+    "name": "LightCDN",
+    "url": "https://www.lightcdn.com",
+    "last_payment": 10.0,
+    "all_time": 10.0,
+    "since": "Dec 14, 2023",
+    "time_last_payment": "Dec 14, 2023"
+  },
+  {
     "name": "LightNode",
     "url": "https://www.lightnode.com",
     "last_payment": 10.0,
@@ -58,9 +66,9 @@
     "name": "TopCasinoSearch",
     "url": "https://www.topcasinosearch.com/",
     "last_payment": 5.0,
-    "all_time": 10.0,
+    "all_time": 15.0,
     "since": "Oct 13, 2023",
-    "time_last_payment": "Nov 13, 2023"
+    "time_last_payment": "Dec 13, 2023"
   },
   {
     "name": "Best Casinos Australia - BCA",
@@ -285,9 +293,9 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5.0,
-    "all_time": 50.0,
+    "all_time": 55.0,
     "since": "Feb 13, 2023",
-    "time_last_payment": "Nov 13, 2023"
+    "time_last_payment": "Dec 13, 2023"
   },
   {
     "name": "AusmalbildTV",
@@ -678,9 +686,9 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5.0,
-    "all_time": 125.0,
+    "all_time": 130.0,
     "since": "Nov 11, 2021",
-    "time_last_payment": "Nov 11, 2023"
+    "time_last_payment": "Dec 11, 2023"
   },
   {
     "name": "Messaged",
@@ -883,9 +891,9 @@
   {
     "name": "Joseph Method",
     "last_payment": 5.0,
-    "all_time": 145.0,
+    "all_time": 150.0,
     "since": "Jul 9, 2021",
-    "time_last_payment": "Nov 9, 2023"
+    "time_last_payment": "Dec 9, 2023"
   },
   {
     "name": "Agloks",
@@ -948,9 +956,9 @@
     "name": "Windesol Sähkön Kilpailutus",
     "url": "https://windesol.fi",
     "last_payment": 5.0,
-    "all_time": 150.0,
+    "all_time": 155.0,
     "since": "Jun 8, 2021",
-    "time_last_payment": "Nov 8, 2023"
+    "time_last_payment": "Dec 8, 2023"
   },
   {
     "name": "Netin nopeustesti",
@@ -1444,7 +1452,7 @@
     "last_payment": 0.0,
     "all_time": 255.0,
     "since": "Aug 24, 2020",
-    "time_last_payment": "Dec 8, 2023"
+    "time_last_payment": "Dec 15, 2023"
   },
   {
     "name": "Leonardo Kewitz",
@@ -1928,7 +1936,7 @@
     "last_payment": 0.0,
     "all_time": 640.0,
     "since": "Dec 28, 2018",
-    "time_last_payment": "Dec 8, 2023"
+    "time_last_payment": "Dec 15, 2023"
   },
   {
     "name": "Mark Sinclair",
