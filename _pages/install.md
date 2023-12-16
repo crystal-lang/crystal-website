@@ -238,17 +238,37 @@ Windows support is currently a preview and <a href="https://github.com/crystal-l
   </div>
 </div>
 
-## Developer Tools
+## Docker
 
 <div class="install-panels">
   <div class="install-group">
     <h5>Crystal</h5>
     <div class="install-entries">
       <div class="install-entry">
-        <span class="title">Docker</span>
+        <span class="title">crystallang (x86_64)</span>
         {% highlight shell %}docker pull crystallang/crystal{% endhighlight %}
-        <a href="https://hub.docker.com/r/crystallang/crystal/" title="Crystal image on Docker Hub" class="info">{% include icons/info.svg %}</a>
+        <a href="https://hub.docker.com/r/crystallang/crystal/" title="crystallang's Crystal image on Docker Hub" class="info">{% include icons/info.svg %}</a>
       </div>
+    </div>
+  </div>
+  <div class="install-group">
+    <h5>Community</h5>
+    <div class="install-entries">
+      <div class="install-entry">
+        <span class="title">84codes (x86_64 &amp; aarch64)</span>
+        {% highlight shell %}docker pull 84codes/crystal{% endhighlight %}
+        <a href="https://hub.docker.com/r/84codes/crystal" title="84codes' Crystal image on Docker Hub" class="info">{% include icons/info.svg %}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Developer Tools
+
+<div class="install-panels">
+  <div class="install-group">
+    <h5>Crystal</h5>
+    <div class="install-entries">
       <div class="install-entry">
         <span class="title"><a href="https://crystal-lang.github.io/install-crystal/">GitHub Actions</a></span>
         {% highlight yaml %}- uses: crystal-lang/install-crystal@v1{% endhighlight %}
@@ -259,11 +279,6 @@ Windows support is currently a preview and <a href="https://github.com/crystal-l
   <div class="install-group">
     <h5>Community</h5>
     <div class="install-entries">
-      <div class="install-entry">
-        <span class="title">Docker (x86_64 &amp; aarch64)</span>
-        {% highlight shell %}docker pull 84codes/crystal{% endhighlight %}
-        <a href="https://hub.docker.com/r/84codes/crystal" title="84codes' Crystal image on Docker Hub" class="info">{% include icons/info.svg %}</a>
-      </div>
       <div class="install-entry">
         <span class="title">devenv.sh</span>
         {% highlight nix %}languages.crystal.enable = true{% endhighlight %}
