@@ -70,8 +70,7 @@ repository.
       <div class="install-entry">
         <span class="title"><a href="from_asdf">asdf</a></span>
         {% highlight shell %}asdf plugin add crystal
-          asdf install crystal latest
-        {% endhighlight %}
+asdf install crystal latest{% endhighlight %}
         <a href="https://github.com/asdf-community/asdf-crystal" title="Crystal plugin for ASDF on GitHub" class="info">{% include icons/info.svg %}</a>
       </div>
       <div class="install-entry">
@@ -117,7 +116,7 @@ repository.
       <div class="install-entry">
       <span class="title"><a href="from_asdf">asdf</a></span>
         {% highlight shell %}asdf plugin add crystal
-          asdf install crystal latest{% endhighlight %}
+asdf install crystal latest{% endhighlight %}
         <a href="https://github.com/asdf-community/asdf-crystal" title="Crystal plugin for ASDF on GitHub" class="info">{% include icons/info.svg %}</a>
       </div>
       <div class="install-entry">
@@ -161,14 +160,13 @@ Windows support is currently a preview and <a href="https://github.com/crystal-l
     </div>
   </div>
   <div class="install-group">
-  <h5>Community</h5>
+    <h5>Community</h5>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title"><a href="from_scoop">Scoop</a></span>
         {% highlight powershell %}scoop install git
-          scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal
-          scoop install vs_2022_cpp_build_tools crystal
-        {% endhighlight %}
+scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal
+scoop install vs_2022_cpp_build_tools crystal{% endhighlight %}
         <a href="https://github.com/neatorobito/scoop-crystal" title="Scoop repository for Crystal on GitHub" class="info">{% include icons/info.svg %}</a>
       </div>
       <div class="install-entry">
@@ -193,7 +191,7 @@ Windows support is currently a preview and <a href="https://github.com/crystal-l
       <div class="install-entry">
         <span class="title"><a href="on_freebsd/#install-port">Port</a></span>
         {% highlight shell %}sudo make -C/usr/ports/lang/crystal reinstall clean
-          sudo make -C/usr/ports/devel/shards reinstall clean
+sudo make -C/usr/ports/devel/shards reinstall clean
         {% endhighlight %}
         <a href="https://www.freshports.org/lang/crystal" title="Crystal port on Freshports.org" class="info">{% include icons/info.svg %}</a>
         {% include elements/repology_badge.html repo="freebsd/crystal-lang" %}
