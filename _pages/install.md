@@ -260,6 +260,11 @@ Windows support is currently a preview and <a href="https://github.com/crystal-l
     <h5>Community</h5>
     <div class="install-entries">
       <div class="install-entry">
+        <span class="title">Docker (x86_64 &amp; aarch64)</span>
+        {% highlight shell %}docker pull 84codes/crystal{% endhighlight %}
+        <a href="https://hub.docker.com/r/84codes/crystal" title="84codes' Crystal image on Docker Hub" class="info">{% include icons/info.svg %}</a>
+      </div>
+      <div class="install-entry">
         <span class="title">devenv.sh</span>
         {% highlight nix %}languages.crystal.enable = true{% endhighlight %}
         <a href="https://devenv.sh/reference/options/#languagescrystalenable" class="info">{% include icons/info.svg %}</a>
