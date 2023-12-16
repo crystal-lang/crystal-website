@@ -85,6 +85,10 @@ repository.
         <a href="https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal" title="Crystal on Nix package search" class="info">{% include icons/info.svg %}</a>
         {% include elements/repology_badge.html repo="nix_unstable/crystal-lang" %}
       </div>
+      <div class="install-entry">
+        <span class="title">DEB &amp; RPM (x86_64 &amp; aarch64)</span>
+        <a href="https://packagecloud.io/84codes/crystal" title="84codes' Crystal package on packagecloud.io" class="info">{% include icons/info.svg %}</a>
+      </div>
     </div>
   </div>
 </div>
