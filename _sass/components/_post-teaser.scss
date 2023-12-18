@@ -81,6 +81,8 @@
   margin-right: auto;
   margin-left: -0.1ch;
 
+  text-wrap: balance;
+
   &:is(h1) {
     font-size: 300%;
   }

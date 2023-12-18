@@ -12,7 +12,7 @@ section: blog
 
     {% include posts/meta.html post=post %}
 
-    <div class="excerpt">{{ post.summary | default: post.excerpt }}</div>
+    <div class="excerpt">{{ post.summary | default: post.excerpt | markdownify }}</div>
   </div>
   {% endfor %}
 </div>
