@@ -3,6 +3,7 @@ title: Install
 permalink: /install/
 layout: page-wide
 ---
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 <style>
   article > main {
     display: flex;
@@ -36,10 +37,10 @@ layout: page-wide
   }
   .install-panels > * > .content {
     grid-column: section;
-    align-self: start;
+    align-self: baseline;
   }
   .install-panels .content > h4 {
-    margin-top: 18px;
+    margin-top: 16px;
     font-size: 1rem;
     font-weight: 500;
     color: var(--body-text);
@@ -50,8 +51,10 @@ layout: page-wide
   }
   .install-entry {
     display: grid;
-    grid-template-columns: [title] 2fr [command] 3fr [info] 36px;
+    grid-template-columns: [title] 6fr [command] 10fr [info] 36px;
+    grid-auto-rows: minmax(48px auto);
     column-gap: var(--padding-xs);
+    align-items: baseline;
     --link-color: var(--body-text);
     padding: 0.5ch 0;
   }
@@ -63,20 +66,22 @@ layout: page-wide
   }
   .install-entry > .title {
     grid-area: title;
-    align-self: stretch;
     display: grid;
     grid-template-columns: 1fr auto 24px;
     align-items: start;
     gap: 12px;
-    padding: 6px 6px 6px 12px;
+    padding: 6px 8px 6px 12px;
     min-height: 44px;
   }
   .install-entry > a.title:after {
-    content: url(/assets/icons/next.svg);
-    width: 24px;
-    height: 24px;
+    position: relative;
+    content: "navigate_next";
+    font-family: 'Material Symbols Outlined';
+    font-size: 24px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
     grid-column: 3;
-    margin-top: 4px;
+    bottom: -2px;
   }
   .install-entry > a.title {
     border: 1px var(--border-color-light) solid;
@@ -92,7 +97,7 @@ layout: page-wide
   }
   .install-entry > pre {
     grid-area: command;
-    padding: var(--padding-xs);
+    padding: 10px;
     border-radius: 4px;
   }
   .install-entry code {
@@ -116,7 +121,7 @@ layout: page-wide
   }
   .install-entry > p {
     grid-area: command;
-    padding: var(--padding-xs) 0;
+    padding: var(--padding-xs);
   }
   .install-entry > .instructions {
     grid-area: instructions;
@@ -137,8 +142,9 @@ layout: page-wide
     color: #ccc;
     width: 24px;
     height: 24px;
-    margin-top: 10px;
     transition: 0.25s color;
+    position: relative;
+    bottom: -6px;
   }
   .install-entry > .info:hover {
     color: #999;
@@ -159,14 +165,8 @@ layout: page-wide
         "command info"
         ;
     }
-    .install-entry > a.title:after {
-      margin-top: unset;
-    }
     .install-entry > .title {
-      padding-top: 10px;
-    }
-    .install-entry > .info {
-      margin-top: 6px;
+      padding-top: 8px;
     }
     .install-entry .repo-badge {
       margin-top: 2px;
@@ -196,7 +196,7 @@ layout: page-wide
             Installer (DEB &amp; RPM)
           </a>
           <pre><code>curl -fsSL https://crystal-lang.org/install.sh | sudo bash</code></pre>
-          <a href="https://build.opensuse.org/project/show/devel:languages:crystal" title="Crystal repository on OBS" class="info">{% include icons/info.svg %}</a>
+          <a href="https://build.opensuse.org/project/show/devel:languages:crystal" title="Crystal repository on OBS" class="info material-symbols-outlined">info</a>
         </div>
         <div class="install-entry">
           <a href="from_targz/" class="title">Tarball</a>
@@ -217,7 +217,7 @@ layout: page-wide
             {% include elements/repology_badge.html repo="debian_unstable/crystal-lang" %}
           </span>
           <pre><code>apt install crystal</code></pre>
-          <a href="https://packages.debian.org/sid/source/crystal" title="Crystal package in Debian sid/unstable" class="info">{% include icons/info.svg %}</a>
+          <a href="https://packages.debian.org/sid/source/crystal" title="Crystal package in Debian sid/unstable" class="info material-symbols-outlined">info</a>
         </div>
         <div class="install-entry">
           <span class="title">
@@ -225,7 +225,7 @@ layout: page-wide
             {% include elements/repology_badge.html repo="alpine_edge/crystal-lang" %}
           </span>
           <pre><code>apk add crystal shards</code></pre>
-          <a href="https://pkgs.alpinelinux.org/packages?name=crystal" title="Crystal package on Alpine Linux package index" class="info">{% include icons/info.svg %}</a>
+          <a href="https://pkgs.alpinelinux.org/packages?name=crystal" title="Crystal package on Alpine Linux package index" class="info material-symbols-outlined">info</a>
         </div>
         <div class="install-entry">
           <span class="title">
@@ -233,7 +233,7 @@ layout: page-wide
             {% include elements/repology_badge.html repo="arch/crystal-lang" %}
           </span>
           <pre><code>pacman -S crystal shards</code></pre>
-          <a href="https://archlinux.org/packages/extra/x86_64/crystal/" title="Crystal package on Arch Linux package index" class="info">{% include icons/info.svg %}</a>
+          <a href="https://archlinux.org/packages/extra/x86_64/crystal/" title="Crystal package on Arch Linux package index" class="info material-symbols-outlined">info</a>
         </div>
         <div class="install-entry">
           <a href="on_gentoo_linux/" class="title">
@@ -241,7 +241,7 @@ layout: page-wide
             {% include elements/repology_badge.html repo="gentoo/crystal-lang" %}
           </a>
           <pre><code>emerge -a dev-lang/crystal</code></pre>
-          <a href="https://packages.gentoo.org/packages/dev-lang/crystal" title="Crystal package on Gentoo package index" class="info">{% include icons/info.svg %}</a>
+          <a href="https://packages.gentoo.org/packages/dev-lang/crystal" title="Crystal package on Gentoo package index" class="info material-symbols-outlined">info</a>
         </div>
       </div>
     </div>
@@ -256,21 +256,21 @@ layout: page-wide
             {% include elements/repology_badge.html repo="homebrew/crystal-lang" %}
           </span>
           <pre><code>brew install crystal</code></pre>
-          <a href="https://formulae.brew.sh/formula/crystal" title="Crystal package on Homebrew" class="info">{% include icons/info.svg %}</a>
+          <a href="https://formulae.brew.sh/formula/crystal" title="Crystal package on Homebrew" class="info material-symbols-outlined">info</a>
         </div>
         <div class="install-entry">
           <a href="from_asdf" class="title">asdf</a>
           <pre><code>asdf plugin add crystal
             asdf install crystal latest
           </code></pre>
-          <a href="https://github.com/asdf-community/asdf-crystal" title="Crystal plugin for ASDF on GitHub" class="info">{% include icons/info.svg %}</a>
+          <a href="https://github.com/asdf-community/asdf-crystal" title="Crystal plugin for ASDF on GitHub" class="info material-symbols-outlined">info</a>
         </div>
         <div class="install-entry">
           <a href="from_snapcraft/" class="title">
             Snapcraft
           </a>
           <pre><code>snap install crystal --classic</code></pre>
-          <a href="https://snapcraft.io/crystal" title="Crystal on Snapcraft" class="info">{% include icons/info.svg %}</a>
+          <a href="https://snapcraft.io/crystal" title="Crystal on Snapcraft" class="info material-symbols-outlined">info</a>
         </div>
         <div class="install-entry">
           <span class="title">
@@ -278,7 +278,7 @@ layout: page-wide
             {% include elements/repology_badge.html repo="nix_unstable/crystal-lang" %}
           </span>
           <p><code>crystal</code> package.</p>
-          <a href="https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal" title="Crystal on Nix package search" class="info">{% include icons/info.svg %}</a>
+          <a href="https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal" title="Crystal on Nix package search" class="info material-symbols-outlined">info</a>
         </div>
       </div>
     </div>
@@ -310,13 +310,13 @@ layout: page-wide
             {% include elements/repology_badge.html repo="homebrew/crystal-lang" %}
           </span>
           <pre><code>brew install crystal</code></pre>
-          <a href="https://formulae.brew.sh/formula/crystal" title="Crystal package on Homebrew" class="info">{% include icons/info.svg %}</a>
+          <a href="https://formulae.brew.sh/formula/crystal" title="Crystal package on Homebrew" class="info material-symbols-outlined">info</a>
         </div>
         <div class="install-entry">
           <a href="from_asdf" class="title">asdf</a>
           <pre><code>asdf plugin add crystal
             asdf install crystal latest</code></pre>
-          <a href="https://github.com/asdf-community/asdf-crystal" title="Crystal plugin for ASDF on GitHub" class="info">{% include icons/info.svg %}</a>
+          <a href="https://github.com/asdf-community/asdf-crystal" title="Crystal plugin for ASDF on GitHub" class="info material-symbols-outlined">info</a>
         </div>
         <div class="install-entry">
           <span class="title">
@@ -324,7 +324,7 @@ layout: page-wide
             {% include elements/repology_badge.html repo="nix_unstable/crystal-lang" %}
           </span>
           <p><code>crystal</code> package.</p>
-          <a href="https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal" title="Crystal on Nix package search" class="info">{% include icons/info.svg %}</a>
+          <a href="https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal" title="Crystal on Nix package search" class="info material-symbols-outlined">info</a>
         </div>
         <div class="install-entry">
           <span class="title">
@@ -332,7 +332,7 @@ layout: page-wide
             {% include elements/repology_badge.html repo="macports/crystal-lang" %}
           </span>
           <pre><code>port install crystal</code></pre>
-          <a href="https://ports.macports.org/port/crystal/summary/" title="Crystal port on MacPorts package index" class="info">{% include icons/info.svg %}</a>
+          <a href="https://ports.macports.org/port/crystal/summary/" title="Crystal port on MacPorts package index" class="info material-symbols-outlined">info</a>
         </div>
       </div>
     </div>
@@ -378,11 +378,11 @@ layout: page-wide
             scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal
             scoop install vs_2022_cpp_build_tools crystal
           </code></pre>
-          <a href="https://github.com/neatorobito/scoop-crystal" title="Scoop repository for Crystal on GitHub" class="info">{% include icons/info.svg %}</a>
+          <a href="https://github.com/neatorobito/scoop-crystal" title="Scoop repository for Crystal on GitHub" class="info material-symbols-outlined">info</a>
         </div>
         <div class="install-entry">
           <span class="title">WinGet</span>
-          <a href="https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalLang/Crystal/" title="Crystal manifest in WinGet packages repository" class="info">{% include icons/info.svg %}</a>
+          <a href="https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalLang/Crystal/" title="Crystal manifest in WinGet packages repository" class="info material-symbols-outlined">info</a>
         </div>
       </div>
     </div>
@@ -410,7 +410,7 @@ layout: page-wide
           <pre><code>sudo make -C/usr/ports/lang/crystal reinstall clean
             sudo make -C/usr/ports/devel/shards reinstall clean
           </code></pre>
-          <a href="https://www.freshports.org/lang/crystal" title="Crystal port on Freshports.org" class="info">{% include icons/info.svg %}</a>
+          <a href="https://www.freshports.org/lang/crystal" title="Crystal port on Freshports.org" class="info material-symbols-outlined">info</a>
         </div>
       </div>
     </div>
@@ -434,7 +434,7 @@ layout: page-wide
         <div class="install-entry">
           <a href="on_openbsd/#install-port" class="title">Port</a>
           <pre><code>doas make -C/usr/ports/lang/crystal clean install</code></pre>
-          <a href="https://openports.pl/path/lang/crystal" title="Crysta port on openports.pl" class="info">{% include icons/info.svg %}</a>
+          <a href="https://openports.pl/path/lang/crystal" title="Crysta port on openports.pl" class="info material-symbols-outlined">info</a>
         </div>
       </div>
     </div>
@@ -457,7 +457,7 @@ layout: page-wide
             {% include elements/repology_badge.html repo="termux/crystal-lang" %}
           </a>
           <pre><code>pkg install crystal</code></pre>
-          <a href="https://github.com/termux/termux-packages/tree/master/packages/crystal" title="Crystal package manifest in the Termux package repository on GitHub" class="info">{% include icons/info.svg %}</a>
+          <a href="https://github.com/termux/termux-packages/tree/master/packages/crystal" title="Crystal package manifest in the Termux package repository on GitHub" class="info material-symbols-outlined">info</a>
         </div>
       </div>
     </div>
@@ -475,7 +475,7 @@ layout: page-wide
         <div class="install-entry">
           <span class="title">Docker</span>
           <pre><code>docker pull crystallang/crystal</code></pre>
-          <a href="https://hub.docker.com/r/crystallang/crystal/" title="Crystal image on Docker Hub" class="info">{% include icons/info.svg %}</a>
+          <a href="https://hub.docker.com/r/crystallang/crystal/" title="Crystal image on Docker Hub" class="info material-symbols-outlined">info</a>
         </div>
         <div class="install-entry">
           <a href="https://crystal-lang.github.io/install-crystal/" class="title">
@@ -483,7 +483,7 @@ layout: page-wide
           </a>
           </span>
           <pre><code>- uses: crystal-lang/install-crystal@v1</code></pre>
-          <a href="https://github.com/crystal-lang/install-crystal" class="info">{% include icons/info.svg %}</a>
+          <a href="https://github.com/crystal-lang/install-crystal" class="info material-symbols-outlined">info</a>
         </div>
       </div>
     </div>
@@ -495,7 +495,7 @@ layout: page-wide
         <div class="install-entry">
           <span class="title">devenv.sh</span>
           <pre><code>languages.crystal.enable = true</code></pre>
-          <a href="https://devenv.sh/reference/options/#languagescrystalenable" class="info">{% include icons/info.svg %}</a>
+          <a href="https://devenv.sh/reference/options/#languagescrystalenable" class="info material-symbols-outlined">info</a>
         </div>
       </div>
     </div>
