@@ -7,7 +7,7 @@ body > header {
 
 .mainnav {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   font-size: 80%;
 
   ul {
@@ -15,12 +15,12 @@ body > header {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    align-items: center;
     gap: 0.5em;
   }
 
   li {
     all: unset;
+    display: flex;
 
     > a {
       all: unset;
