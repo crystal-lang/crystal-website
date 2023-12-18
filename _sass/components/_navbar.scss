@@ -6,6 +6,8 @@ body > header {
 }
 
 .mainnav {
+  display: flex;
+  align-items: center;
   font-size: 80%;
 
   ul {
@@ -13,6 +15,7 @@ body > header {
     display: flex;
     flex-direction: row;
     justify-content: end;
+    align-items: center;
     gap: 0.5em;
   }
 
@@ -21,8 +24,9 @@ body > header {
 
     > a {
       all: unset;
-      display: block;
-      padding: 1.5em 1em;
+      display: flex;
+      align-items: center;
+      padding: 0 1em;
       cursor: pointer;
 
       &[aria-current="page"] {
@@ -34,6 +38,10 @@ body > header {
       &[href^="https://"]
       {
         @extend .external;
+      }
+
+      &:after {
+        bottom: unset !important;
       }
     }
   }
