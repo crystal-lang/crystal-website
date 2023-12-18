@@ -7,124 +7,171 @@ layout: page-wide
   article > main {
     display: flex;
     flex-direction: column;
+    gap: var(--block-flow-md);
   }
   article > main > section {
+    margin-block-start: 0;
     padding-top: var(--block-flow-md);
-    margin-top: var(--block-flow-md);
   }
-  article > main > section:not([data-current_os])::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: calc(-1 * var(--block-flow-md));
-    border-top: 1px solid var(--border-color);
+  article > main > section:first-of-type {
+    padding-top: 0;
   }
-  article > main > section[data-current_os] {
-    order: -1;
-  }
-
   hr {
     display: none;
   }
   .install-panels {
     display: grid;
     column-gap: var(--padding-xs);
-    grid-template-columns: [section] 1fr [title] 1.8fr [version] 4ch [command] 4fr [info] 2.5ch [end];
+    grid-template-columns: [section] 1fr [entries] 6fr;
   }
   .install-panels > * {
     display: grid;
     grid-template-columns: subgrid;
     grid-column: 1 / -1;
     border-top: 1.4px solid var(--border-color);
-    align-items: baseline;
+    align-items: center;
+  }
+  .install-panels > *:last-child {
+    border-bottom: 1.4px solid var(--border-color);
   }
   .install-panels > * > .content {
     grid-column: section;
+    align-self: start;
   }
   .install-panels .content > h4 {
+    margin-top: 18px;
     font-size: 1rem;
     font-weight: 500;
     color: var(--body-text);
   }
   .install-entries {
     display: grid;
-    grid-template-columns: subgrid;
-    grid-column: title / end;
-  }
-  img[src^="https://repology.org/badge"] {
-    /*opacity: 0.7;*/
-    display: inline-block;
-    vertical-align: sub;
-    filter: saturate(2) contrast(2) sepia(0.6);
-    /*filter: saturate(5) contrast(0.85) brightness(0.95);*/
-  }
-  img[src^="https://repology.org/badge"]:hover {
-    opacity: 1;
+    grid-column: entries;
   }
   .install-entry {
     display: grid;
-    grid-template-columns: subgrid;
-    grid-template-areas:
-    "title version command info";
-    grid-column: 1 / -1;
+    grid-template-columns: [title] 2fr [command] 3fr [info] 36px;
+    column-gap: var(--padding-xs);
     --link-color: var(--body-text);
-    align-items: baseline;
     padding: 0.5ch 0;
   }
   .install-entry:not(:first-child) {
     border-top: 1.4px solid var(--border-color);
   }
   .install-entry :any-link {
-    text-decoration: underline;
-    text-decoration-thickness: 1.4px;
+    color: unset;
   }
-  .install-entry  > .title {
+  .install-entry > .title {
     grid-area: title;
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: 1fr auto 24px;
+    align-items: start;
+    gap: 12px;
+    padding: 6px 6px 6px 12px;
+    min-height: 44px;
   }
-  .install-entry  > pre {
-      grid-area: command;
-      padding: var(--padding-xs);
+  .install-entry > a.title:after {
+    content: url(/assets/icons/next.svg);
+    width: 24px;
+    height: 24px;
+    grid-column: 3;
+    margin-top: 4px;
+  }
+  .install-entry > a.title {
+    border: 1px var(--border-color-light) solid;
+    border-radius: 4px;
+    transition: all 0.25s;
+  }
+  .install-entry > a.title:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+  }
+  .install-entry > a.title:after {
+    visibility: visible;
+  }
+  .install-entry > pre {
+    grid-area: command;
+    padding: var(--padding-xs);
+    border-radius: 4px;
+  }
+  .install-entry code {
+    border-radius: 4px;
+  }
+  .install-entry .repo-badge {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6px;
+  }
+  .install-entry .repo-badge > img[src^="https://repology.org/badge"] {
+    filter: invert(49%) saturate(8000%) brightness(120%) contrast(500%) sepia(30%) saturate(75%);
+    transition: all 0.25s;
+  }
+  .install-entry .repo-badge > img[src^="https://repology.org/badge"]:hover {
+    filter: invert(49%) saturate(8000%) brightness(120%) contrast(500%) sepia(30%) saturate(75%) brightness(75%);
+  }
+  .install-entry > p {
+    grid-area: command;
+    padding: var(--padding-xs) 0;
+  }
+  .install-entry > .instructions {
+    grid-area: instructions;
+    justify-self: flex-start;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 85%;
+    border: 1px solid currentColor;
+    padding: 0 var(--padding-xs);
+    margin-top: var(--padding-xs);
+    align-content: center;
+    align-self: flex-end;
+    --link-color: var(--body-text);
+    --link-hover-color: var(--light-text);
+  }
+  .install-entry > .info {
+    grid-area: info;
+    color: #ccc;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    transition: 0.25s color;
+  }
+  .install-entry > .info:hover {
+    color: #999;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .install-panels {
+      grid-template-columns: 1fr;
     }
-    .install-entry  > .repo-badge {
-      grid-area: version;
-      justify-self: flex-end;
+    .install-entry {
+      padding: calc(var(--padding-xs) * 2) 0;
+      grid-column: unset;
+      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 30px;
+      gap: var(--padding-xs);
+      grid-template-areas:
+        "title title"
+        "command info"
+        ;
     }
-    .install-entry > p {
-      grid-area: command;
-      padding: calc(var(--padding-xs) * 0.6);
+    .install-entry > a.title:after {
+      margin-top: unset;
     }
-    .install-entry > .instructions {
-      grid-area: instructions;
-      justify-self: flex-start;
-      font-weight: 500;
-      text-transform: uppercase;
-      font-size: 85%;
-      /*---.btn */
-      border: 1px solid currentColor;
-      padding: 0 var(--padding-xs);
-      margin-top: var(--padding-xs);
-      align-content: center;
-      align-self: flex-end;
-      --link-color: var(--body-text);
-      --link-hover-color: var(--light-text);
+    .install-entry > .title {
+      padding-top: 10px;
     }
     .install-entry > .info {
-      grid-area: info;
-      font-size: 90%;
-      justify-self: flex-end;
-      --link-color: var(--lighter-text);
-      --link-hover-color: var(--light-text);
+      margin-top: 6px;
     }
-    .install-entry > .info > svg {
-      transform: translateY(.6ch);
+    .install-entry .repo-badge {
+      margin-top: 2px;
     }
-
-
-  /*img[src^="https://repology.org/badge"]:hover {
-    opacity: 1;
-  }*/
+  }
 </style>
 
 <section id="linux">
@@ -145,12 +192,14 @@ layout: page-wide
       </div>
       <div class="install-entries">
         <div class="install-entry">
-          <span class="title"><a href="on_linux#installer" title="Instructions for Linux installer">Installer (DEB &amp; RPM)</a></span>
+          <a href="on_linux#installer" title="Instructions for Linux installer" class="title">
+            Installer (DEB &amp; RPM)
+          </a>
           <pre><code>curl -fsSL https://crystal-lang.org/install.sh | sudo bash</code></pre>
           <a href="https://build.opensuse.org/project/show/devel:languages:crystal" title="Crystal repository on OBS" class="info">{% include icons/info.svg %}</a>
         </div>
         <div class="install-entry">
-          <span class="title"><a href="from_targz/">Tarball</a></span>
+          <a href="from_targz/" class="title">Tarball</a>
           <p>
             Archive in <a href="https://github.com/crystal-lang/crystal/releases">the latest release</a>.
           </p>
@@ -163,28 +212,36 @@ layout: page-wide
       </div>
       <div class="install-entries">
         <div class="install-entry">
-          <span class="title">APT (Debian, Ubuntu, etc.)</span>
+          <span class="title">
+            APT (Debian, Ubuntu, etc.)
+            {% include elements/repology_badge.html repo="debian_unstable/crystal-lang" %}
+          </span>
           <pre><code>apt install crystal</code></pre>
           <a href="https://packages.debian.org/sid/source/crystal" title="Crystal package in Debian sid/unstable" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="debian_unstable/crystal-lang" %}
         </div>
         <div class="install-entry">
-          <span class="title">Apk (Alpine Linux)</span>
+          <span class="title">
+            Apk (Alpine Linux)
+            {% include elements/repology_badge.html repo="alpine_edge/crystal-lang" %}
+          </span>
           <pre><code>apk add crystal shards</code></pre>
           <a href="https://pkgs.alpinelinux.org/packages?name=crystal" title="Crystal package on Alpine Linux package index" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="alpine_edge/crystal-lang" %}
         </div>
         <div class="install-entry">
-          <span class="title">Pacman (Arch Linux)</span>
+          <span class="title">
+            Pacman (Arch Linux)
+            {% include elements/repology_badge.html repo="arch/crystal-lang" %}
+          </span>
           <pre><code>pacman -S crystal shards</code></pre>
           <a href="https://archlinux.org/packages/extra/x86_64/crystal/" title="Crystal package on Arch Linux package index" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="arch/crystal-lang" %}
         </div>
         <div class="install-entry">
-          <span class="title"><a href="on_gentoo_linux/">Emerge (Gentoo)</a></span>
+          <a href="on_gentoo_linux/" class="title">
+            Emerge (Gentoo)
+            {% include elements/repology_badge.html repo="gentoo/crystal-lang" %}
+          </a>
           <pre><code>emerge -a dev-lang/crystal</code></pre>
           <a href="https://packages.gentoo.org/packages/dev-lang/crystal" title="Crystal package on Gentoo package index" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="gentoo/crystal-lang" %}
         </div>
       </div>
     </div>
@@ -194,28 +251,34 @@ layout: page-wide
       </div>
       <div class="install-entries">
         <div class="install-entry">
-          <span class="title">Homebrew/Linuxbrew</span>
+          <span class="title">
+            Homebrew/Linuxbrew
+            {% include elements/repology_badge.html repo="homebrew/crystal-lang" %}
+          </span>
           <pre><code>brew install crystal</code></pre>
           <a href="https://formulae.brew.sh/formula/crystal" title="Crystal package on Homebrew" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="homebrew/crystal-lang" %}
         </div>
         <div class="install-entry">
-          <span class="title"><a href="from_asdf">asdf</a></span>
+          <a href="from_asdf" class="title">asdf</a>
           <pre><code>asdf plugin add crystal
             asdf install crystal latest
           </code></pre>
           <a href="https://github.com/asdf-community/asdf-crystal" title="Crystal plugin for ASDF on GitHub" class="info">{% include icons/info.svg %}</a>
         </div>
         <div class="install-entry">
-          <span class="title"><a href="from_snapcraft/">Snapcraft</a></span>
+          <a href="from_snapcraft/" class="title">
+            Snapcraft
+          </a>
           <pre><code>snap install crystal --classic</code></pre>
           <a href="https://snapcraft.io/crystal" title="Crystal on Snapcraft" class="info">{% include icons/info.svg %}</a>
         </div>
         <div class="install-entry">
-          <span class="title">Nix</span>
+          <span class="title">
+            Nix
+            {% include elements/repology_badge.html repo="nix_unstable/crystal-lang" %}
+          </span>
           <p><code>crystal</code> package.</p>
           <a href="https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal" title="Crystal on Nix package search" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="nix_unstable/crystal-lang" %}
         </div>
       </div>
     </div>
@@ -231,8 +294,7 @@ layout: page-wide
       </div>
       <div class="install-entries">
         <div class="install-entry">
-        <span class="title"><a href="from_targz/">Tarball</a></span>
-
+          <a href="from_targz/" class="title">Tarball</a>
           <p>Archive in the <a href="https://github.com/crystal-lang/crystal/releases">the latest release</a>.</p>
         </div>
       </div>
@@ -243,28 +305,34 @@ layout: page-wide
       </div>
       <div class="install-entries">
         <div class="install-entry">
-        <span class="title">Homebrew</span>
+          <span class="title">
+            Homebrew
+            {% include elements/repology_badge.html repo="homebrew/crystal-lang" %}
+          </span>
           <pre><code>brew install crystal</code></pre>
           <a href="https://formulae.brew.sh/formula/crystal" title="Crystal package on Homebrew" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="homebrew/crystal-lang" %}
         </div>
         <div class="install-entry">
-        <span class="title"><a href="from_asdf">asdf</a></span>
+          <a href="from_asdf" class="title">asdf</a>
           <pre><code>asdf plugin add crystal
             asdf install crystal latest</code></pre>
           <a href="https://github.com/asdf-community/asdf-crystal" title="Crystal plugin for ASDF on GitHub" class="info">{% include icons/info.svg %}</a>
         </div>
         <div class="install-entry">
-        <span class="title">Nix</span>
+          <span class="title">
+            Nix
+            {% include elements/repology_badge.html repo="nix_unstable/crystal-lang" %}
+          </span>
           <p><code>crystal</code> package.</p>
           <a href="https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal" title="Crystal on Nix package search" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="nix_unstable/crystal-lang" %}
         </div>
         <div class="install-entry">
-        <span class="title">MacPorts</span>
+          <span class="title">
+            MacPorts
+            {% include elements/repology_badge.html repo="macports/crystal-lang" %}
+          </span>
           <pre><code>port install crystal</code></pre>
           <a href="https://ports.macports.org/port/crystal/summary/" title="Crystal port on MacPorts package index" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="macports/crystal-lang" %}
         </div>
       </div>
     </div>
@@ -283,13 +351,13 @@ layout: page-wide
     </div>
       <div class="install-entries">
         <div class="install-entry">
-          <span class="title"><a href="on_windows">Installer</a></span>
+          <a href="on_windows" class="title">Installer</a>
           <p>
             Installer (<code>.exe</code>) in <a href="https://github.com/crystal-lang/crystal/releases">the latest release</a>.
           </p>
         </div>
         <div class="install-entry">
-          <span class="title"><a href="on_windows">Portable Archive</a></span>
+          <a href="on_windows" class="title">Portable Archive</a>
           <p>
             Archive (<code>.zip</code>) in <a href="https://github.com/crystal-lang/crystal/releases">the latest release</a>.
           </p>
@@ -302,7 +370,10 @@ layout: page-wide
     </div>
       <div class="install-entries">
         <div class="install-entry">
-          <span class="title"><a href="from_scoop">Scoop</a></span>
+          <a href="from_scoop" class="title">
+            Scoop
+            {% include elements/repology_badge.html repo="winget/crystal-lang" %}
+          </a>
           <pre><code>scoop install git
             scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal
             scoop install vs_2022_cpp_build_tools crystal
@@ -312,7 +383,6 @@ layout: page-wide
         <div class="install-entry">
           <span class="title">WinGet</span>
           <a href="https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalLang/Crystal/" title="Crystal manifest in WinGet packages repository" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="winget/crystal-lang" %}
         </div>
       </div>
     </div>
@@ -329,22 +399,23 @@ layout: page-wide
       </div>
       <div class="install-entries">
         <div class="install-entry">
-          <span class="title"><a href="on_freebsd/#install-package">Package</a></span>
+          <a href="on_freebsd/#install-package" class="title">Package</a>
           <pre><code>sudo pkg install -y crystal shards</code></pre>
         </div>
         <div class="install-entry">
-          <span class="title"><a href="on_freebsd/#install-port">Port</a></span>
+          <a href="on_freebsd/#install-port" class="title">
+            Port
+            {% include elements/repology_badge.html repo="freebsd/crystal-lang" %}
+          </a>
           <pre><code>sudo make -C/usr/ports/lang/crystal reinstall clean
             sudo make -C/usr/ports/devel/shards reinstall clean
           </code></pre>
           <a href="https://www.freshports.org/lang/crystal" title="Crystal port on Freshports.org" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="freebsd/crystal-lang" %}
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <section id="openbsd">
   <h2>OpenBSD</h2>
   <div class="install-panels install-panels--single">
@@ -354,14 +425,16 @@ layout: page-wide
       </div>
       <div class="install-entries">
         <div class="install-entry">
-          <span class="title"><a href="on_openbsd/#install-package">Package</a></span>
+          <span class="title">
+            <a href="on_openbsd/#install-package">Package</a>
+            {% include elements/repology_badge.html repo="openbsd/crystal-lang" %}
+          </span>
           <pre><code>doas pkg_add crystal</code></pre>
         </div>
         <div class="install-entry">
-          <span class="title"><a href="on_openbsd/#install-port">Port</a></span>
+          <a href="on_openbsd/#install-port" class="title">Port</a>
           <pre><code>doas make -C/usr/ports/lang/crystal clean install</code></pre>
           <a href="https://openports.pl/path/lang/crystal" title="Crysta port on openports.pl" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="openbsd/crystal-lang" %}
         </div>
       </div>
     </div>
@@ -379,10 +452,12 @@ layout: page-wide
       </div>
       <div class="install-entries">
         <div class="install-entry">
-          <span class="title"><a href="on_termux/">Termux</a></span>
+          <a href="on_termux/" class="title">
+            Termux
+            {% include elements/repology_badge.html repo="termux/crystal-lang" %}
+          </a>
           <pre><code>pkg install crystal</code></pre>
           <a href="https://github.com/termux/termux-packages/tree/master/packages/crystal" title="Crystal package manifest in the Termux package repository on GitHub" class="info">{% include icons/info.svg %}</a>
-          {% include elements/repology_badge.html repo="termux/crystal-lang" %}
         </div>
       </div>
     </div>
@@ -403,7 +478,10 @@ layout: page-wide
           <a href="https://hub.docker.com/r/crystallang/crystal/" title="Crystal image on Docker Hub" class="info">{% include icons/info.svg %}</a>
         </div>
         <div class="install-entry">
-          <span class="title"><a href="https://crystal-lang.github.io/install-crystal/">GitHub Actions</a></span>
+          <a href="https://crystal-lang.github.io/install-crystal/" class="title">
+            GitHub Actions
+          </a>
+          </span>
           <pre><code>- uses: crystal-lang/install-crystal@v1</code></pre>
           <a href="https://github.com/crystal-lang/install-crystal" class="info">{% include icons/info.svg %}</a>
         </div>
