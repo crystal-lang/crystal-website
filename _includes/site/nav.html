@@ -8,11 +8,7 @@
   </a>
 </div>
 
-<nav class="mainnav" aria-label="Main">
-  <ul role="list">
-    {% include site/nav_links.html links=site.data.nav.main %}
-  </ul>
-</nav>
+{% include site/breadcrumbs.html page=page %}
 
 <div class="utilnav">
   <a
