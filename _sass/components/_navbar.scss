@@ -1,19 +1,34 @@
 body > header {
   --link-color: var(--light-text);
   --link-hover-color: var(--primary-text);
+  padding: var(--padding-xs);
 
   gap: 1em;
+
+  width: 100vw;
+  > .nav-start,
+  > .utilnav {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  > .mainnav {
+    flex-basis: var(--main-width);
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
 }
 
 .mainnav {
-  font-size: 80%;
-
   ul {
     all: unset;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
     gap: 0.5em;
+    font-size: 80%;
   }
 
   li {
@@ -49,7 +64,8 @@ body > header {
 
 .utilnav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-end;
   gap: 1em;
 
   > a {

@@ -31,25 +31,7 @@ body > * {
 
 body > header {
   position: relative;
-
-  &::after {
-    content: "";
-    border-bottom: 1px solid var(--border-color);
-
-    @extend .full-width;
-
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-  }
-
-  width: var(--main-width);
   display: flex;
-
-  > .mainnav {
-    margin-left: auto;
-  }
 }
 
 body > footer {
