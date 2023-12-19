@@ -11,9 +11,9 @@
     {% if include.page.section -%}
       {%- assign section = site.data.sections[include.page.section] -%}
       {% for item in section.breadcrumbs %}
+        {% assign page_nav = item.nav %}
         {%- if item.url == include.page.url -%}
           {% assign page_title = item.title %}
-          {% assign page_nav = item.nav %}
           {% break %}
         {%- endif -%}
 
@@ -38,12 +38,10 @@
     {% endif %}
   </nav>
 
-  {% if page_nav -%}
-    <nav class="section-links" aria-label="Section links">
-      <ul role="list">
-        {% assign nav = site.data.nav[page_nav] %}
-        {% include site/nav_links.html links=nav %}
-      </ul>
-    </nav>
-  {%- endif %}
+  <nav class="section-links" aria-label="Section links">
+    <ul role="list">
+      {% assign nav = site.data.nav[page_nav] %}
+      {% include site/nav_links.html links=nav %}
+    </ul>
+  </nav>
 </div>

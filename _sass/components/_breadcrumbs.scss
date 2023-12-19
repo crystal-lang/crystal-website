@@ -48,4 +48,8 @@
     padding: 0;
     column-gap: var(--padding-xs);
   }
+
+  [aria-current="page"] {
+    font-weight: 400;
+  }
 }
