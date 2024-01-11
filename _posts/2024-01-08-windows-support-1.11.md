@@ -8,13 +8,13 @@ It has been 6 months since we last reported on the [status of Windows support in
 
 ## Playground support
 
-The playground now works on Windows. For a long time, `Process#wait` was synchronous on Windows, which means other fibers would not get the chance to run until the process exits. The playground server communicates with the compiled program via multiple WebSocket messages, and a synchronous `Process#wait` would effectively block the server. This is no longer the case since [#13908], and you will be able to use `crystal play` just like on other systems.
+The playground now works on Windows. For a long time, `Process#wait` was synchronous on Windows, which means other fibers would not get the chance to run until the process exits. The playground server communicates with the compiled program via multiple WebSocket messages, and a synchronous `Process#wait` would effectively block the server. This is no longer the case since [#13908], and `crystal play` works just like on other systems.
 
 ## Finishing DLL coverage
 
-Currently, the compiler is statically linked for two reasons: the C function `LibC.snprintf` is not available in the C runtime DLLs, and the compiler depends on LLVM's C++ API, which requires a static LLVM build tree.
+Currently, the compiler is statically linked on Windows for two reasons: the C function `LibC.snprintf` is not available in the C runtime DLLs, and the compiler depends on LLVM's C++ API, which requires a static LLVM build tree.
 
-The main remaining use of `LibC.snprintf` was implementing the floating-point format specifiers for Crystal's `sprintf` and `String#%`, such as `%.2f` and `%g`. By porting the Ryu Printf algorithm to native Crystal ([#14067], [#14084], [#14102], [#14123], [#14132]), this dependency is now gone from Windows and Unix-like systems, with the added benefit that float printing is unaffected by the active C locale.
+The main remaining use of `LibC.snprintf` was implementing the floating-point format specifiers for Crystal's `sprintf` and `String#%`, such as `%.2f` and `%g`. By porting the [Ryu Printf algorithm](https://github.com/ulfjack/ryu#ryu-printf) to native Crystal ([#14067], [#14084], [#14102], [#14123], [#14132]), this dependency is now gone from Windows and Unix-like systems, with the added benefit that float printing is unaffected by the active C locale.
 
 There is nothing Crystal could do if the used LLVM version does not expose all the needed functionality via LLVM's C API, so instead the Crystal team now upstreams those necessary APIs to LLVM itself. After [#14082] and [#14101], the `LLVM-C.dll` library from LLVM 18 or above plus a small configuration file is sufficient; the compiler will eventually become dynamically linked, and still be able to rebuild itself without an LLVM build tree.
 
