@@ -34,14 +34,30 @@ The compiler will look up the DLLs in a set of search paths, and copy them to th
 
 With everything combined, the interpreter will now more or less run on Windows. There are still some rough edges pending resolution before the interpreter is released on Windows, but you could try rebuilding the compiler itself to see the REPL session in action.
 
-## Stabilizing dynamic linking
+## What's left
 
-If everything goes as intended, a future Crystal version will make the following breaking changes regarding dynamic linking:
+As before, the list of outstanding issues on Windows can be found in [this GitHub project](https://github.com/orgs/crystal-lang/projects/11), and we hope to squash the "Todo" and "In progress" columns by the time an official Windows release is available. The main remaining issues, in order of importance, are:
+
+* Finalizing the details for dynamic linking ([#11575])
+* `crystal i` ([#12396])
+* Behavior of `Process.new(shell: true)` ([#9030])
+* Channels do not behave correctly under `-Dpreview_mt` ([#14222])
+* Support for case-insensitive `Dir.glob` ([#13510])
+* Support for long paths in file APIs ([#13420])
+* Making `/SUBSYSTEM:WINDOWS` more usable ([#13330])
+
+Regarding dynamic linking, if everything goes as intended, a future Crystal version will make the following **breaking changes**:
 
 * The compiler itself will be dynamically linked, as described above, once LLVM 18 is generally available.
 * All builds will assume dynamic linking by default; `-Dpreview_dll` will have no effect, and `--static` becomes mandatory to preserve the current behavior.
 * The delay-load helper and `Crystal::LIBRARY_RPATH` will be removed.
 
+[#9030]: https://github.com/crystal-lang/crystal/pull/9030
+[#11575]: https://github.com/crystal-lang/crystal/pull/11575
+[#12396]: https://github.com/crystal-lang/crystal/pull/12396
+[#13330]: https://github.com/crystal-lang/crystal/pull/13330
+[#13420]: https://github.com/crystal-lang/crystal/pull/13420
+[#13510]: https://github.com/crystal-lang/crystal/pull/13510
 [#13908]: https://github.com/crystal-lang/crystal/pull/13908
 [#14067]: https://github.com/crystal-lang/crystal/pull/14067
 [#14082]: https://github.com/crystal-lang/crystal/pull/14082
@@ -51,3 +67,4 @@ If everything goes as intended, a future Crystal version will make the following
 [#14123]: https://github.com/crystal-lang/crystal/pull/14123
 [#14131]: https://github.com/crystal-lang/crystal/pull/14131
 [#14132]: https://github.com/crystal-lang/crystal/pull/14132
+[#14222]: https://github.com/crystal-lang/crystal/pull/14222
