@@ -73,8 +73,8 @@ h6,
 
 :any-link {
   color: var(--link-color);
-  text-underline-offset: 0.15em;
-  text-decoration: none;
+  text-underline-offset: 0.13em;
+  text-decoration: var(--link-underline, underline clamp(1.5px, 0.06em, 4px));
   cursor: pointer;
 
   &:hover {

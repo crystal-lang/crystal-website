@@ -22,7 +22,6 @@
   a {
     color: var(--light-text);
     &:not(.link-item__main) {
-      text-decoration: underline;
       color: var(--lighter-text);
     }
   }
