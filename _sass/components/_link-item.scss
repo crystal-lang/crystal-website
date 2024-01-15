@@ -19,14 +19,8 @@
   @extend .icon-prefix;
   margin-inline-start: 0;
 
-  a {
-    color: var(--light-text);
-    &:not(.link-item__main) {
-      color: var(--lighter-text);
-    }
-  }
-
   .link-item__main {
+    --link-color: var(--light-text);
     font-weight: 500;
 
     > em {
