@@ -15,6 +15,7 @@
     vertical-align: text-bottom;
   }
 
+  @extend .ui-link;
   --link-color: var(--light-text);
   --link-hover-color: var(--lighter-text);
 }
@@ -47,4 +48,10 @@ li {
   &.no {
     list-style-image: url("/assets/icons/close.svg");
   }
+}
+
+// This class marks a link as being part of the UI chrome, which disables some
+// visuals that are usually found on links. They're not underlined, for example.
+.ui-link {
+  --link-underline: none;
 }
