@@ -5,6 +5,8 @@
     margin-block-start: var(--block-flow, var(--block-flow-md));
   }
 
-  max-width: var(--content-width);
+  &:not(&--wide) {
+    max-width: var(--content-width);
+  }
   margin-inline-end: auto;
 }

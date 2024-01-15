@@ -1,17 +1,17 @@
 <section class="styleguide">
-  <header>
+  <div class="styleguide-header">
     <h3 id="guide-{{ component.title | slugify }}">{{ component.title }}</h3>
       {% if component.usage %}<p><strong>Usage:</strong> {{ component.usage }}</p>{% endif %}
       {% if component.module %}<p><strong>Include partial:</strong> <a href="https://github.com{{ site.repository | prepend: '/' | append: '/blob/master/' }}{{ component.module }}"><code>{{ component.module }}</code></a></p>{% endif %}
       {% if component.scss %}<p class="styleguide--last"><strong>SCSS partial:</strong> <a href="https://github.com{{ site.repository | prepend: '/' | append: '/blob/master/' }}{{ component.scss }}">{{ component.scss }}</a></p>{% endif %}
-  </header>
+  </div>
 
-  <main class="styleguide-preview {{ component.class }}">
+  <div class="styleguide-preview {{ component.class }}">
     {{ component.content }}
-  </main>
-  <footer>
-    <details>
-      <summary>Code</summary>
+  </div>
+
+  <details>
+    <summary>Code</summary>
 
 {% highlight markdown %}
 {%- comment %}
@@ -24,6 +24,5 @@ When this component is built from an include, show the result instead of the `in
 {%- endif -%}
 {% endhighlight %}
 
-    </details>
-  </footer>
+  </details>
 </section>
