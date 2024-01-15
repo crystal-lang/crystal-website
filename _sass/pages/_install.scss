@@ -1,7 +1,7 @@
 .install-panels {
   display: grid;
-  column-gap: var(--padding-xs);
-  grid-template-columns: [section] 1fr [title] 1.8fr [version] 4ch [command] 4fr [info] 2.5ch [end];
+  column-gap: var(--padding-sm);
+  grid-template-columns: [section] 1fr [title] 1.8fr [version] 46px [command] 4fr [info] 2.5ch [end];
   margin-block-start: var(--block-flow-sm);
 }
 
@@ -11,15 +11,17 @@
   grid-column: 1 / -1;
   border-top: 1.4px solid var(--border-color);
   align-items: baseline;
+  grid-template-areas: "section entries entries entries entries";
 }
+
 .install-group > h5 {
-  grid-column: section;
+  grid-area: section;
 }
 
 .install-entries {
   display: grid;
   grid-template-columns: subgrid;
-  grid-column: title / end;
+  grid-area: entries;
 }
 
 .install-entry {
@@ -29,7 +31,7 @@
   grid-column: 1 / -1;
   --link-color: var(--body-text);
   align-items: baseline;
-  padding: 0.5ch 0;
+  padding: var(--padding-xxs) 0;
 
   &:not(:first-child) {
     border-top: 1.4px solid var(--border-color);
@@ -87,4 +89,35 @@ img[src^="https://repology.org/badge"]
   display: inline-block;
   vertical-align: sub;
   filter: saturate(2) contrast(2) sepia(0.6);
+}
+
+@media (max-width: 800px) {
+  .install-panels {
+    grid-template-columns: [title] 1.8fr [version] 46px [command] 4fr [info] 2.5ch [end];
+    column-gap: var(--padding-xs);
+  }
+  .install-group {
+    grid-template-areas: "section section section section" "entries entries entries entries";
+    padding-block: var(--padding-sm);
+    border-top: none;
+
+    > h5 {
+      font-size: font-size(h4);
+    }
+  }
+}
+@media (max-width: 600px) {
+  .install-panels {
+    grid-template-columns: [title] 1.8fr [version] 46px [info] 2.5ch [end];
+    column-gap: var(--padding-sm);
+  }
+  .install-entry {
+    row-gap: var(--padding-xs);
+    padding-block: var(--padding-sm);
+    grid-template-areas: "title version info" "command command command";
+
+    > p {
+      padding: 0;
+    }
+  }
 }
