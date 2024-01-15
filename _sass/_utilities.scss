@@ -51,7 +51,7 @@ li {
 
 .external {
   &::after {
-    content: "";
+    content: var(--link-external, "");
     width: 11px;
     height: 11px;
     margin-left: 4px;
