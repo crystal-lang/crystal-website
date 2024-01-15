@@ -11,7 +11,6 @@ window.copy_action = function($elem) {
   $img.setAttribute("src", "/assets/icons/copy-content.svg")
   $a.append($img)
   $elem.append($a)
-  console.log($elem)
 
   $a.addEventListener("click", function(event){
     console.log($elem);

@@ -1,7 +1,5 @@
 pre {
-  display: flex;
-  column-gap: 0.3ch;
-  align-items: flex-start;
+  position: relative;
 
   > code {
     flex-grow: 1;
@@ -11,8 +9,6 @@ pre {
     z-index: 1;
   }
 
-  position: relative;
-
   &::before {
     content: "";
     position: absolute;
@@ -21,30 +17,38 @@ pre {
     bottom: 0;
     left: 0;
 
-    background-color: var(--light-gray);
-    opacity: 0.2;
+    background: color-mix(in srgb, var(--light-gray) 20%, transparent);
+    opacity: 1;
     transform: scaleY(0);
-    transition: 400ms opacity;
+    transition: 800ms opacity;
   }
 
   &.copied::before {
     opacity: 0;
     transform: scaleY(1);
-    transition: 500ms opacity, 200ms transform;
+    transition: 1000ms opacity, 200ms transform;
   }
 
   &.copied::after {
     content: "copied to clipboard";
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    font-size: 130%;
+    font-weight: 400;
+    transform: translateX(-50%) translateY(-25%);
     display: block;
     color: var(--lighter-text);
+    background: var(--code-bg);
+    padding: var(--padding-xxs) var(--padding-xs);
+    border-radius: var(--padding-xs);
   }
 }
 .copy-action {
   display: block;
+  position: absolute;
+  top: var(--padding-xxs);
+  right: var(--padding-xxs);
 
   /* reset button appearance */
   padding: 0;
