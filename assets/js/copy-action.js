@@ -14,7 +14,7 @@ window.copy_action = function($elem) {
 
   $a.addEventListener("click", function(event){
     console.log($elem);
-    navigator.clipboard.writeText($elem.firstChild.innerText);
+    navigator.clipboard.writeText($elem.firstChild.textContent);
     $elem.classList.add("copied")
     setTimeout(function(){
       $elem.classList.remove("copied");
