@@ -1,6 +1,6 @@
 ---
 title: Install
-permalink: /install
+permalink: /install/
 layout: page-wide
 page_class: page--segmented
 ---
