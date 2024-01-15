@@ -42,6 +42,7 @@ pre {
     background: var(--code-bg);
     padding: var(--padding-xxs) var(--padding-xs);
     border-radius: var(--padding-xs);
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 30%), 0 1px 3px 0 rgb(0 0 0 / 20%);
   }
 }
 .copy-action {
