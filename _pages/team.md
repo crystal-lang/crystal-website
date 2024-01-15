@@ -59,6 +59,27 @@ Some people help with administrative duties, for example related to the manageme
   </div>
 </section>
 
+<section class="side-section">
+  <h2 id="admin-alumni">Admin Alumni</h2>
+
+  <aside markdown="1">
+These awesome people have been part of the team in the past but do no longer fill that role.
+  </aside>
+
+  <div class="cards-list">
+    {% for member in site.data.team.admin_alumni %}
+      <div class="profile-mini" itemscope itemtype="https://schema.org/Person">
+        <img src="/assets/authors/{{ member[0] }}.jpg" alt="Profile picture of {{ member[1].name }}" />
+          {% if member[1].role %}
+            <span class="member_role">{{ member[1].role }}</span>
+          {% endif %}
+        <span class="name" itemprop="name">{{ member[1].name }}</span>
+        <a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" itemprop="url" title="GitHub profile" class="ico github">@{{ member[1].github_handle | default: member[0] }}</a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
 <hr class="full">
 
 <section class="side-section">
@@ -108,4 +129,3 @@ If you want to become a contributor, see our [Contributing Instructions](https:/
 {% include components/top-sponsors.html %}
 
 {% include components/sponsorship.html %}
-
