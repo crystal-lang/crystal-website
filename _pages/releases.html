@@ -1,6 +1,6 @@
 ---
 title: Releases
-header_title: |
+page_title: |
   Releases
   <a class="icon" href="/releases/feed.xml" rel="alternate" title="Newsfeed for Crystal releases" aria-label="Releases newsfeed" type="application/atom+xml">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><use href="#icon-rss"></use></svg>
@@ -12,7 +12,7 @@ section: releases
   <thead>
     <tr>
       <th>Version</th>
-      <th>Release Date</th>
+      <th colspan="2">Release Date</th>
       <th></th>
     </tr>
   </thead>
@@ -21,8 +21,10 @@ section: releases
     {% for release in releases %}
       <tr {% if forloop.index0 == 0 %}class="latest-release"{% endif %}>
         <th scope="row"><a href="{{ release.url }}">{{release.version}}</a></th>
-        <td>
+        <td class="release-date">
           <time datetime="{{ release.date | date: '%F' }}">{{ release.date | date_to_string }}</time>
+        </td>
+        <td>
           {% if forloop.index0 == 0 %}
             <span class="pill">latest</span>
           {% endif %}

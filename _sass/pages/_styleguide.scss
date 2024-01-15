@@ -3,7 +3,7 @@
 
   @include blockflow;
 
-  > main {
+  > .styleguide-preview {
     @extend .content;
 
     border: 1px solid var(--border-color);
@@ -17,7 +17,7 @@
     }
   }
 
-  > footer {
+  > details {
     clear: both;
 
     pre {

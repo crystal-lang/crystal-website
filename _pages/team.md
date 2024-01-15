@@ -13,7 +13,7 @@ section: community
 
 The *Core Team* leads the development of Crystal and its ecosystem under the
 guidance of the *Steering Council*. Both bodies are defined in the
-[Governance document](/community/governance).
+[Governance document](/_pages/community/governance.md).
 
   </aside>
 

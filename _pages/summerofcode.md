@@ -109,7 +109,7 @@ ecosystem ^_^).
 
 ## Next steps
 
-If you are interested, join the [community](/community) through your
+If you are interested, join the [community](/_pages/community.html) through your
 channel of preference. You're welcome whether you participate in the Google
 Summer of Code or not.
 
