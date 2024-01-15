@@ -35,7 +35,7 @@
   > .name {
     font-weight: 500;
     font-size: 112.5%;
-    &:not(:last-child) {
+    &:where(:not(:last-child)) {
       margin-block-end: auto;
     }
 

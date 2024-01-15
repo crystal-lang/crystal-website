@@ -4,7 +4,7 @@
   @extend .card;
 
   > .name {
-    margin-block: var(--padding-sm) 0;
+    margin-block: var(--padding-sm) var(--padding-xxs);
   }
 
   > .handle {
