@@ -6,8 +6,9 @@
 .reversefootnote {
   @extend .ui-link;
 
-  font-size: 0.61rem;
+  font-size: 0.7rem;
   font-weight: 600;
+  color: var(--lighter-text);
 }
 
 sup[role="doc-noteref"] {
