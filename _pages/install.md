@@ -270,7 +270,7 @@ sudo make -C/usr/ports/devel/shards reinstall clean
       <div class="install-entry">
         <span class="title"><a href="https://crystal-lang.github.io/install-crystal/">GitHub Actions</a></span>
         {% highlight yaml %}- uses: crystal-lang/install-crystal@v1{% endhighlight %}
-        <a href="https://github.com/crystal-lang/install-crystal" class="info">{% include icons/info.svg %}</a>
+        <a href="https://github.com/crystal-lang/install-crystal" class="info" title="GitHub repo for `install-crystal` action">{% include icons/info.svg %}</a>
       </div>
     </div>
   </div>
@@ -280,7 +280,7 @@ sudo make -C/usr/ports/devel/shards reinstall clean
       <div class="install-entry">
         <span class="title">devenv.sh</span>
         {% highlight nix %}languages.crystal.enable = true{% endhighlight %}
-        <a href="https://devenv.sh/reference/options/#languagescrystalenable" class="info">{% include icons/info.svg %}</a>
+        <a href="https://devenv.sh/reference/options/#languagescrystalenable" class="info" title="Devenv.sh reference for Crystal language">{% include icons/info.svg %}</a>
       </div>
     </div>
   </div>
