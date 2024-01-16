@@ -122,7 +122,7 @@ who put their work into the project.
 If you want to become a contributor, see our [Contributing Instructions](https://github.com/crystal-lang/crystal/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/crystal-lang/crystal/blob/master/CODE_OF_CONDUCT.m).
   </aside>
   <div>
-    <img src="https://opencollective.com/crystal-lang/contributors.svg?width=960">
+    <img src="https://opencollective.com/crystal-lang/contributors.svg?width=960" alt="">
   </div>
 </section>
 
