@@ -14,7 +14,7 @@ repository.
 
 <div class="install-panels">
   <div class="install-group">
-    <h5>Crystal</h5>
+    <h3>Crystal</h3>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title"><a href="on_linux#installer" title="Instructions for Linux installer">Installer (DEB &amp; RPM)</a></span>
@@ -30,7 +30,7 @@ repository.
     </div>
   </div>
   <div class="install-group">
-    <h5>System</h5>
+    <h3>System</h3>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title">APT (Debian, Ubuntu, etc.)</span>
@@ -59,7 +59,7 @@ repository.
     </div>
   </div>
   <div class="install-group">
-    <h5>Community</h5>
+    <h3>Community</h3>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title">Homebrew/<wbr />Linuxbrew</span>
@@ -96,7 +96,7 @@ asdf install crystal latest{% endhighlight %}
 
 <div class="install-panels">
   <div class="install-group">
-    <h5>Crystal</h5>
+    <h3>Crystal</h3>
     <div class="install-entries">
       <div class="install-entry">
       <span class="title"><a href="from_targz/">Tarball</a></span>
@@ -105,7 +105,7 @@ asdf install crystal latest{% endhighlight %}
     </div>
   </div>
   <div class="install-group">
-    <h5>Community</h5>
+    <h3>Community</h3>
     <div class="install-entries">
       <div class="install-entry">
       <span class="title">Homebrew</span>
@@ -143,7 +143,7 @@ Windows support is currently a preview and <a href="https://github.com/crystal-l
 
 <div class="install-panels">
   <div class="install-group">
-  <h5>Crystal</h5>
+  <h3>Crystal</h3>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title"><a href="on_windows">Installer</a></span>
@@ -160,7 +160,7 @@ Windows support is currently a preview and <a href="https://github.com/crystal-l
     </div>
   </div>
   <div class="install-group">
-    <h5>Community</h5>
+    <h3>Community</h3>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title"><a href="from_scoop">Scoop</a></span>
@@ -182,7 +182,7 @@ scoop install vs_2022_cpp_build_tools crystal{% endhighlight %}
 
 <div class="install-panels">
   <div class="install-group">
-    <h5>System</h5>
+    <h3>System</h3>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title"><a href="on_freebsd/#install-package">Package</a></span>
@@ -204,7 +204,7 @@ sudo make -C/usr/ports/devel/shards reinstall clean
 
 <div class="install-panels">
   <div class="install-group">
-    <h5>System</h5>
+    <h3>System</h3>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title"><a href="on_openbsd/#install-package">Package</a></span>
@@ -224,7 +224,7 @@ sudo make -C/usr/ports/devel/shards reinstall clean
 
 <div class="install-panels">
   <div class="install-group">
-    <h5>Community</h5>
+    <h3>Community</h3>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title"><a href="on_termux/">Termux</a></span>
@@ -240,7 +240,7 @@ sudo make -C/usr/ports/devel/shards reinstall clean
 
 <div class="install-panels">
   <div class="install-group">
-    <h5>Crystal</h5>
+    <h3>Crystal</h3>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title">crystallang (x86_64)</span>
@@ -250,7 +250,7 @@ sudo make -C/usr/ports/devel/shards reinstall clean
     </div>
   </div>
   <div class="install-group">
-    <h5>Community</h5>
+    <h3>Community</h3>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title">84codes (x86_64 &amp; aarch64)</span>
@@ -265,7 +265,7 @@ sudo make -C/usr/ports/devel/shards reinstall clean
 
 <div class="install-panels">
   <div class="install-group">
-    <h5>Crystal</h5>
+    <h3>Crystal</h3>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title"><a href="https://crystal-lang.github.io/install-crystal/">GitHub Actions</a></span>
@@ -275,7 +275,7 @@ sudo make -C/usr/ports/devel/shards reinstall clean
     </div>
   </div>
   <div class="install-group">
-    <h5>Community</h5>
+    <h3>Community</h3>
     <div class="install-entries">
       <div class="install-entry">
         <span class="title">devenv.sh</span>

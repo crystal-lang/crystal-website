@@ -14,7 +14,9 @@
   grid-template-areas: "section entries entries entries entries";
 }
 
-.install-group > h5 {
+.install-group > h3 {
+  @extend .h5;
+
   grid-area: section;
 }
 
@@ -110,7 +112,7 @@ img[src^="https://repology.org/badge/version-for-repo/"]
     padding-block: var(--padding-sm);
     border-top: none;
 
-    > h5 {
+    > h3 {
       font-size: font-size(h4);
     }
   }
