@@ -100,7 +100,7 @@ img[src^="https://repology.org/badge/version-for-repo/"]
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50em) {
   .install-panels {
     grid-template-columns: [title] 1.8fr [version] 46px [command] 4fr [info] 2.5ch [end];
     column-gap: var(--padding-xs);
@@ -115,7 +115,7 @@ img[src^="https://repology.org/badge/version-for-repo/"]
     }
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 37em) {
   .install-panels {
     grid-template-columns: [title] 1.8fr [version] 46px [info] 2.5ch [end];
     column-gap: var(--padding-sm);
