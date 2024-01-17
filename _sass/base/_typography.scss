@@ -73,12 +73,26 @@ h6,
 
 :any-link {
   color: var(--link-color);
-  text-underline-offset: 0.15em;
-  text-decoration: none;
+  text-underline-offset: 0.13em;
+  text-decoration: var(--link-underline, underline clamp(1.8px, 0.06em, 4px));
+  text-decoration-color: var(--lighter-gray);
   cursor: pointer;
 
   &:hover {
     color: var(--link-hover-color);
+    text-decoration-color: var(--light-gray);
+  }
+
+  &:focus {
+    outline: 0.04em dotted var(--lighter-gray);
+  }
+}
+
+:any-link,
+summary {
+  &:focus {
+    outline: 0.14rem dotted var(--lighter-gray);
+    outline-offset: 0.08em;
   }
 }
 
@@ -126,7 +140,6 @@ kbd {
 strong,
 b {
   font-weight: 500;
-  color: var(--light-text);
 }
 
 blockquote {

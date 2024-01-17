@@ -4,6 +4,8 @@
 }
 
 .hex {
+  @extend .ui-link;
+
   --hex-height: 2.5em;
   --hex-width: 2px;
   --cos-a: var(--cos-70);
@@ -81,7 +83,7 @@
       var(--b) var(--hex-width)
     );
   }
-  
+
   &:is(a) {
     &:hover::before {
       background-color: hsl(0, 0%, 95%);

@@ -22,6 +22,7 @@ $font-sizes: (
   --tainted-white: hsl(0, 0%, 96%);
   --black: hsl(0, 0%, 3%);
   --light-gray: hsl(0, 0%, 47%);
+  --lighter-gray: hsl(0, 0%, 65%);
 
   --background-main: var(--white);
   --background-secondary: var(--tainted-white);
@@ -31,8 +32,8 @@ $font-sizes: (
   --light-text: hsl(0, 0%, 27%);
   --lighter-text: var(--light-gray);
 
-  --link-color: hsl(199, 98%, 48%);
-  --link-hover-color: var(--link-color);
+  --link-color: currentColor;
+  --link-hover-color: var(--light-text);
 
   --header-color: var(--light-gray);
 

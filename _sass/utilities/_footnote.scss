@@ -4,14 +4,11 @@
 
 [rel="footnote"],
 .reversefootnote {
-  font-size: 0.61rem;
-  font-weight: 600;
-  text-decoration: none;
+  @extend .ui-link;
 
-  &:hover,
-  &:active {
-    text-decoration: underline;
-  }
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--lighter-text);
 }
 
 sup[role="doc-noteref"] {
