@@ -11,3 +11,37 @@ main:
   url: /team/
 - label: Docs
   url: https://crystal-lang.org/reference/
+
+community:
+- label: Team
+  url: /team/
+- label: Sponsors
+  url: /sponsors/
+- label: Events
+  url: /community/ # TODO: Add events page
+- label: Forum
+  url: https://forum.crystal-lang.org/
+- label: Governance
+  url: /community/governance/
+
+docs:
+- label: Getting Started
+  url: https://crystal-lang.org/reference/getting_started/
+- label: Tutorials
+  url: https://crystal-lang.org/reference/tutorials
+- label: API Docs
+  url: https://crystal-lang.org/api
+- label: Specification
+  url: https://crystal-lang.org/reference/syntax_and_semantics
+- label: Guides
+  url: https://crystal-lang.org/reference/guides
+
+home:
+- label: Blog
+  url: /blog/
+- label: Install
+  url: /install/
+- label: Releases
+  url: /releases/
+- label: Sitemap
+  url: /sitemap/

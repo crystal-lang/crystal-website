@@ -1,0 +1,117 @@
+body > footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(9em, 17%), 1fr));
+  gap: var(--block-flow-md) var(--block-flow-sm);
+
+  --container-max: 130ch;
+  --main-width: min(100vw - 3rem, var(--container-max, 110ch));
+
+  padding-block: var(--block-flow-sm) var(--block-flow-md);
+  --link-color: var(--light-text);
+  --link-hover-color: var(--lighter-text);
+
+  position: relative;
+
+  &::after {
+    content: "";
+
+    @extend .full-width;
+
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+
+    border-top: 1px solid var(--border-color);
+    background-color: var(--tainted-white);
+  }
+
+  > * {
+    z-index: 1;
+    line-height: var(--line-height-md);
+    font-size: 90%;
+  }
+
+  .link-items {
+    .link-item + .link-item {
+      margin-top: 0.25rem;
+    }
+
+    &--social {
+      display: flex;
+      grid-column-end: span 2;
+      column-gap: var(--padding-md);
+      align-self: center;
+      justify-self: center;
+    }
+    .link-item + .link-item {
+      margin-top: 0;
+    }
+  }
+}
+
+nav.footer-section {
+  > a {
+    font-weight: 500;
+  }
+
+  > ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0.2em;
+    gap: 0.2em;
+  }
+}
+
+.newsletter-footer {
+  grid-column-end: span 2;
+
+  display: grid;
+  grid-template-areas:
+    "label label"
+    "input button";
+  column-gap: var(--padding-sm);
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+
+  > form {
+    display: contents;
+
+    > p {
+      grid-area: label;
+      font-weight: 300;
+      color: var(--lighter-text);
+    }
+
+    > input[type="email"] {
+      grid-area: input;
+      width: 22em;
+    }
+  }
+}
+
+.imprint {
+  opacity: 0.7;
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--padding-xs);
+
+  svg {
+    height: 2em;
+    width: auto;
+    vertical-align: middle;
+    margin-block-start: -0.2em;
+    fill: currentColor;
+  }
+}
