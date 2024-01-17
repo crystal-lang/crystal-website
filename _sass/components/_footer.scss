@@ -8,6 +8,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  svg {
+    translate: 0 0.5ch;
+    fill: var(--light-gray);
+  }
 }
 
 body > footer {
