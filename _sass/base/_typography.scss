@@ -17,6 +17,12 @@ body {
   line-height: var(--line-height-base);
 }
 
+@for $i from 1 through 5 {
+  .h#{$i} {
+    @extend h#{$i};
+  }
+}
+
 :is(h1, h2, h3, h4, h5, h6) {
   line-height: var(--line-height-heading);
   font-weight: 400;
@@ -46,33 +52,31 @@ body {
   color: var(--header-color);
 }
 
-h1,
-.h1 {
+:is(h5, .h5, h6, .h6) {
+  color: currentColor;
+}
+
+h1 {
   font-size: font-size(h1);
 }
 
-h2,
-.h2 {
+h2 {
   font-size: font-size(h2);
 }
 
-h3,
-.h3 {
+h3 {
   font-size: font-size(h3);
 }
 
-h4,
-.h4 {
+h4 {
   font-size: font-size(h4);
 }
 
-h5,
-.h5 {
+h5 {
   font-size: font-size(h5);
 }
 
-h6,
-.h6 {
+h6 {
   font-size: font-size(h6);
 }
 
