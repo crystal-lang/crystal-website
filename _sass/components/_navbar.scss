@@ -1,4 +1,5 @@
 body > header {
+  @extend .ui-link;
   --link-color: var(--light-text);
   --link-hover-color: var(--primary-text);
 

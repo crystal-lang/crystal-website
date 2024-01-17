@@ -4,6 +4,8 @@
 }
 
 .hex {
+  @extend .ui-link;
+
   --hex-height: 2.5em;
   --hex-width: 2px;
   --cos-a: var(--cos-70);
@@ -85,7 +87,7 @@
     );
   }
 
-  &:is(a, button) {
+  &:is(:any-link, button) {
     cursor: pointer;
 
     &:hover::before {
