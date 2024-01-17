@@ -80,6 +80,19 @@ h6,
 
   &:hover {
     color: var(--link-hover-color);
+    text-decoration-color: var(--light-gray);
+  }
+
+  &:focus {
+    outline: 0.04em dotted var(--lighter-gray);
+  }
+}
+
+:any-link,
+summary {
+  &:focus {
+    outline: 0.14rem dotted var(--lighter-gray);
+    outline-offset: 0.08em;
   }
 }
 
