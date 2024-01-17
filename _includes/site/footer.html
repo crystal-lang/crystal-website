@@ -1,6 +1,6 @@
 <nav class="footer-section" aria-label="Home section links">
   <a class="link-item__main" href="/">Home</a>
-  <ul role="list">
+  <ul>
     {% assign nav = site.data.nav.home %}
     {% include site/nav_links.html links=nav %}
   </ul>
@@ -8,7 +8,7 @@
 
 <nav class="footer-section" aria-label="Docs section links">
   <a class="link-item__main" href="/docs">Documentation</a>
-  <ul role="list">
+  <ul>
     {% assign nav = site.data.nav.docs %}
     {% include site/nav_links.html links=nav %}
   </ul>
@@ -17,7 +17,7 @@
 <nav class="footer-section" aria-label="Community section links">
   <a class="link-item__main" href="/community">Community</a>
 
-  <ul role="list">
+  <ul>
     {% assign nav = site.data.nav.community %}
     {% include site/nav_links.html links=nav %}
   </ul>
