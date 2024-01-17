@@ -38,12 +38,6 @@
   > .content {
     grid-area: content;
   }
-
-  > footer {
-    grid-area: footer;
-    margin-top: var(--block-flow-md);
-    max-width: var(--content-width);
-  }
 }
 
 .post {
