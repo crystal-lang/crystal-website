@@ -1,7 +1,6 @@
 .install-panels {
   display: grid;
-  column-gap: var(--padding-sm);
-  grid-template-columns: [section] 1fr [title] 1.8fr [version] 46px [command] 4fr [info] 2.5ch [end];
+  grid-template-columns: [section] 1fr [title] 1.8fr [version] 62px [command] 4fr [info] 3ch [end];
   margin-block-start: var(--block-flow-sm);
 }
 
@@ -9,6 +8,7 @@
   display: grid;
   grid-template-columns: subgrid;
   grid-column: 1 / -1;
+  column-gap: var(--padding-xs);
   border-top: 1.4px solid var(--border-color);
   align-items: baseline;
   grid-template-areas: "section entries entries entries entries";
@@ -38,28 +38,31 @@
   &:not(:first-child) {
     border-top: 1.4px solid var(--border-color);
   }
-  :any-link {
-    text-decoration: underline;
-    text-decoration-thickness: 1.4px;
-  }
   > .title {
     grid-area: title;
   }
+
+  > p,
   > .highlight {
     grid-area: command;
+    margin-left: 0 var(--padding-xs);
+  }
+
+  > .highlight {
     > pre {
       padding: var(--padding-xs);
     }
   }
+  > p {
+    padding: calc(var(--padding-xs) * 0.6);
+  }
+
   > .repo-badge {
     --link-external: none;
     grid-area: version;
     justify-self: flex-end;
   }
-  > p {
-    grid-area: command;
-    padding: calc(var(--padding-xs) * 0.6);
-  }
+
   > .instructions {
     grid-area: instructions;
     justify-self: flex-start;
@@ -79,9 +82,10 @@
     --link-external: none;
     grid-area: info;
     font-size: 90%;
-    justify-self: flex-end;
+    justify-self: center;
     --link-color: var(--lighter-text);
     --link-hover-color: var(--light-text);
+    margin-right: var(--padding-xs);
     > svg {
       transform: translateY(0.6ch);
     }
