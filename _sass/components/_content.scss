@@ -1,5 +1,6 @@
 .content {
   @include blockflow;
+  @include external-links;
 
   > :is(h1, h2, h3, h4):not(:first-child) {
     margin-block-start: var(--block-flow, var(--block-flow-md));

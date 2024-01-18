@@ -41,6 +41,7 @@ table.releases {
   row-gap: 1ch;
 
   > a {
+    --link-external-postfix: none;
     display: flex;
     align-items: center;
     column-gap: 0.75ch;

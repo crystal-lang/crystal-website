@@ -4,6 +4,8 @@
 }
 
 .hex {
+  @extend .ui-link;
+
   --hex-height: 2.5em;
   --hex-width: 2px;
   --cos-a: var(--cos-70);
@@ -20,6 +22,9 @@
   place-content: center;
   min-width: max-content;
   max-width: 35ch;
+  background: transparent;
+  appearance: none;
+  border: none;
 
   :not(.wide) {
     margin-inline: auto;
@@ -81,8 +86,10 @@
       var(--b) var(--hex-width)
     );
   }
-  
-  &:is(a) {
+
+  &:is(:any-link, button) {
+    cursor: pointer;
+
     &:hover::before {
       background-color: hsl(0, 0%, 95%);
     }

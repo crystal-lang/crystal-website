@@ -10,12 +10,6 @@
       white-space: nowrap;
     }
 
-    :any-link {
-      all: unset;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
     &.name,
     &.col-logo {
       padding: 0;

@@ -4,6 +4,7 @@
 @import "mixins/blockflow";
 @import "mixins/box-link";
 @import "mixins/circle-image";
+@import "mixins/external-links";
 
 @layer reset {
   @import "reset";
@@ -32,8 +33,10 @@
   @import "components/callout";
   @import "components/card";
   @import "components/cards-list";
+  @import "components/copy-action";
   @import "components/profile-card";
   @import "components/content";
+  @import "components/footer";
   @import "components/image-list";
   @import "components/link-item";
   @import "components/navbar";
