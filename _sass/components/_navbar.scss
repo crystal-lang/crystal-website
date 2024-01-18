@@ -32,12 +32,6 @@ body > header {
         color: var(--primary-text);
         border-bottom: 4px solid currentcolor;
       }
-
-      &[href^="http"],
-      &[href^="https://"]
-      {
-        @extend .external;
-      }
     }
   }
 }
