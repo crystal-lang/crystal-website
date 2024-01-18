@@ -1,4 +1,4 @@
-@layer reset, frameworks, defaults, pattern, components, utilities;
+@layer reset, frameworks, defaults, pattern, elements, components, pages, utilities;
 
 @import "variables";
 @import "mixins/blockflow";
@@ -21,13 +21,16 @@
   @import "base/layout";
 }
 
-@layer components {
+@layer elements {
   @import "elements/avatar-list";
   @import "elements/color-sample";
   @import "elements/hex";
   @import "elements/hex-icon";
+  @import "elements/link-item";
   @import "elements/table";
+}
 
+@layer components {
   @import "components/book-authors";
   @import "components/book-presenter";
   @import "components/callout";
@@ -38,7 +41,6 @@
   @import "components/content";
   @import "components/footer";
   @import "components/image-list";
-  @import "components/link-item";
   @import "components/navbar";
   @import "components/post-teaser";
   @import "components/post-navigation";
