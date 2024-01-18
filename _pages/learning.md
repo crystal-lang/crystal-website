@@ -4,14 +4,7 @@ description: Here is a collection of learning material from third parties that m
 layout: page-wide
 ---
 
-<section class="side-section">
-  <aside class="info" markdown="1">
-
-<img src="/assets/learning/crystal_programming.png" style="max-width: 17em;">
-
-  </aside>
-
-  <div markdown="1" id="crystalProgramming">
+<a markdown="1" id="crystalProgramming"></a>
 
 ### Crystal Programming
 
@@ -21,15 +14,7 @@ such as OOP and concurrent programming.
 
 [Crystal Programming](crystal_programming)
 
-  </div>
-</section>
-
-<section class="side-section">
-  <aside class="info" markdown="1">
-
-  </aside>
-
-  <div markdown="1" id="crystal4Rubyists">
+<a id="crystal4Rubyists"></a>
 
 ### Crystal for Rubyists
 
@@ -39,15 +24,7 @@ will help you to transition from Ruby to Crystal.
 
 [Crystal for Rubyists](https://www.crystalforrubyists.com/)
 
-  </div>
-</section>
-
-<section class="side-section">
-  <aside class="info" markdown="1">
-
-  </aside>
-
-  <div markdown="1" id="exercism">
+<a id="exercism"></a>
 
 ### Exercism
 
@@ -55,6 +32,3 @@ Get your hands on Crystal with a series of exercises, and compare your solution
 to that of the many members who tried already.
 
 [Crystal track on Excercism](https://exercism.org/tracks/crystal/)
-
-  </div>
-</section>
