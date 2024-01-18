@@ -4,7 +4,7 @@
   ):not(:where(
     [href*="//crystal-lang.org/"],
     [href*="//forum.crystal-lang.org/"],
-    :has(> img)
+    :has(> img:first-child:last-child, > svg:first-child:last-child)
   )) {
     @extend .external;
   }
