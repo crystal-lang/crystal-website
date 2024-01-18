@@ -20,12 +20,14 @@ repository.
         <span class="title"><a href="on_linux#installer" title="Instructions for Linux installer">Installer (DEB &amp; RPM)</a></span>
         {% highlight shell %}curl -fsSL https://crystal-lang.org/install.sh | sudo bash{% endhighlight %}
         <a href="https://build.opensuse.org/project/show/devel:languages:crystal" title="Crystal repository on OBS" class="info">{% include icons/info.svg %}</a>
+        <span class="repo-badge"><img src="/assets/install/version-badge.svg" class="version-badge"></span>
       </div>
       <div class="install-entry">
         <span class="title"><a href="from_targz/">Tarball</a></span>
         <p>
           Archive in <a href="https://github.com/crystal-lang/crystal/releases">the latest release</a>.
         </p>
+        <span class="repo-badge"><img src="/assets/install/version-badge.svg" class="version-badge"></span>
       </div>
     </div>
   </div>
@@ -66,6 +68,7 @@ repository.
         {% highlight shell %}brew install crystal{% endhighlight %}
         <a href="https://formulae.brew.sh/formula/crystal" title="Crystal package on Homebrew" class="info">{% include icons/info.svg %}</a>
         {% include elements/repology_badge.html repo="homebrew/crystal-lang" %}
+        <span class="repo-badge"><img src="/assets/install/version-badge.svg" class="version-badge"></span>
       </div>
       <div class="install-entry">
         <span class="title"><a href="from_asdf">asdf</a></span>
@@ -99,8 +102,9 @@ asdf install crystal latest{% endhighlight %}
     <h3>Crystal</h3>
     <div class="install-entries">
       <div class="install-entry">
-      <span class="title"><a href="from_targz/">Tarball</a></span>
+        <span class="title"><a href="from_targz/">Tarball</a></span>
         <p>Archive in the <a href="https://github.com/crystal-lang/crystal/releases">the latest release</a>.</p>
+        <span class="repo-badge"><img src="/assets/install/version-badge.svg" class="version-badge"></span>
       </div>
     </div>
   </div>
@@ -150,12 +154,14 @@ Windows support is currently a preview and <a href="https://github.com/crystal-l
         <p>
           Installer (<code>.exe</code>) in <a href="https://github.com/crystal-lang/crystal/releases">the latest release</a>.
         </p>
+        <span class="repo-badge"><img src="/assets/install/version-badge.svg" class="version-badge"></span>
       </div>
       <div class="install-entry">
         <span class="title"><a href="on_windows">Portable Archive</a></span>
         <p>
           Archive (<code>.zip</code>) in <a href="https://github.com/crystal-lang/crystal/releases">the latest release</a>.
         </p>
+        <span class="repo-badge"><img src="/assets/install/version-badge.svg" class="version-badge"></span>
       </div>
     </div>
   </div>
@@ -246,6 +252,7 @@ sudo make -C/usr/ports/devel/shards reinstall clean
         <span class="title">crystallang (x86_64)</span>
         {% highlight shell %}docker pull crystallang/crystal{% endhighlight %}
         <a href="https://hub.docker.com/r/crystallang/crystal/" title="crystallang's Crystal image on Docker Hub" class="info">{% include icons/info.svg %}</a>
+        <span class="repo-badge"><img src="/assets/install/version-badge.svg" class="version-badge"></span>
       </div>
     </div>
   </div>

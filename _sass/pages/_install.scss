@@ -92,15 +92,14 @@
   }
 }
 
-img[src^="https://repology.org/badge/version-for-repo/"]
-{
+img.version-badge {
   display: inline-block;
   vertical-align: sub;
   filter: invert(49%) saturate(8000%) brightness(120%) contrast(500%) sepia(40%)
     saturate(85%);
   transition: all 0.25s;
 
-  &:hover {
+  :any-link:hover > & {
     filter: invert(49%) saturate(8000%) brightness(120%) contrast(500%)
       sepia(40%) saturate(85%) brightness(75%);
   }
