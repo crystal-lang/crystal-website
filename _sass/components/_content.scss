@@ -10,19 +10,6 @@
     max-width: var(--content-width);
   }
   margin-inline-end: auto;
-
-  :any-link {
-    &[href^="http"],
-    &[href^="https://"]
-    {
-      @extend .external;
-
-      &::after {
-        filter: invert(50%) sepia(66%) saturate(2454%) hue-rotate(168deg)
-          brightness(97%) contrast(99%);
-      }
-    }
-  }
 }
 
 .page--segmented > main > h2:not(:first-child) {
