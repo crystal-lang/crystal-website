@@ -35,6 +35,8 @@ body {
 
 .page-description {
   font-size: var(--font-size-lead);
+
+  @extend .content;
 }
 
 :is(h2, h3, h4) {

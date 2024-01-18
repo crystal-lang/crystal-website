@@ -67,6 +67,8 @@
 }
 
 a.ico {
+  @extend .ui-link;
+
   color: var(--lighter-text);
   text-decoration: none;
 }
