@@ -88,8 +88,9 @@ asdf install crystal latest{% endhighlight %}
         {% include elements/repology_badge.html repo="nix_unstable/crystal-lang" %}
       </div>
       <div class="install-entry">
-        <span class="title">DEB &amp; RPM (x86_64 &amp; aarch64)</span>
+        <a class="title" href="https://packagecloud.io/84codes/crystal">84codes (DEB &amp; RPM)</a>
         <a href="https://packagecloud.io/84codes/crystal" title="84codes' Crystal package on packagecloud.io" class="info">{% include icons/info.svg %}</a>
+        <p>Packages for amd64 and arm64</p>
       </div>
     </div>
   </div>
