@@ -11,3 +11,17 @@
   }
   margin-inline-end: auto;
 }
+
+.page--segmented > main > h2:not(:first-child) {
+  padding-top: var(--block-flow-md);
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: calc(-1 * var(--block-flow-md));
+    border-top: 1px solid var(--border-color);
+  }
+}
