@@ -134,6 +134,8 @@ nav.footer-section {
 }
 
 .link-items--social {
+  @extend .ui-link;
+  
   flex-basis: 30%;
 
   display: flex;
