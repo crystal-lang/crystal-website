@@ -1,5 +1,6 @@
 ---
 layout: none
+permalink: /assets/install/version-badge.svg
 ---
 {% assign latest_release = site.releases | reverse | first %}
 <svg xmlns="http://www.w3.org/2000/svg" width="46" height="20">
