@@ -312,3 +312,8 @@ However it is possible to bootstrap from a different platform through cross-comp
 <a href="https://crystal-lang.org/reference/getting_started/">Get Started</a>
 
 <a href="https://repology.org/project/crystal-lang/versions">Crystal on Repology</a>
+
+<script src="/assets/js/copy-action.js"></script>
+<script>
+document.querySelectorAll(".install-entry pre").forEach(copy_action)
+</script>
