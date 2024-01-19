@@ -24,23 +24,23 @@ pre {
   }
 
   &.copied::before {
-    opacity: 0;
+    opacity: 0.5;
     transform: scaleY(1);
-    transition: 1000ms opacity, 200ms transform;
+    transition: 800ms opacity, 200ms transform;
   }
 
   &.copied::after {
     content: "copied to clipboard";
     position: absolute;
-    top: 25%;
+    top: min(50%, 6em);
     left: 50%;
     font-size: 130%;
     font-weight: 400;
-    transform: translateX(-50%) translateY(-25%);
+    transform: translateX(-50%) translateY(-50%);
     display: block;
-    color: var(--lighter-text);
-    background: var(--code-bg);
-    padding: var(--padding-xxs) var(--padding-xs);
+    color: var(--tainted-white);
+    background: var(--light-gray);
+    padding-inline: var(--padding-xs);
     border-radius: var(--padding-xs);
     box-shadow: 0 1px 4px 0 rgb(0 0 0 / 30%), 0 1px 3px 0 rgb(0 0 0 / 20%);
   }
