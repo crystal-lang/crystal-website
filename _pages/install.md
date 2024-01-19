@@ -198,8 +198,7 @@ scoop install vs_2022_cpp_build_tools crystal{% endhighlight %}
       <div class="install-entry">
         <span class="title"><a href="on_freebsd/#install-port">Port</a></span>
         {% highlight shell %}sudo make -C/usr/ports/lang/crystal reinstall clean
-sudo make -C/usr/ports/devel/shards reinstall clean
-        {% endhighlight %}
+sudo make -C/usr/ports/devel/shards reinstall clean{% endhighlight %}
         <a href="https://www.freshports.org/lang/crystal" title="Crystal port on Freshports.org" class="info">{% include icons/info.svg %}</a>
         {% include elements/repology_badge.html repo="freebsd/crystal-lang" %}
       </div>
@@ -220,7 +219,7 @@ sudo make -C/usr/ports/devel/shards reinstall clean
       <div class="install-entry">
         <span class="title"><a href="on_openbsd/#install-port">Port</a></span>
         {% highlight shell %}doas make -C/usr/ports/lang/crystal clean install{% endhighlight %}
-        <a href="https://openports.pl/path/lang/crystal" title="Crysta port on openports.pl" class="info">{% include icons/info.svg %}</a>
+        <a href="https://openports.pl/path/lang/crystal" title="Crystal port on openports.pl" class="info">{% include icons/info.svg %}</a>
         {% include elements/repology_badge.html repo="openbsd/crystal-lang" %}
       </div>
     </div>
