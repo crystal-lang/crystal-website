@@ -57,19 +57,19 @@
     }
   }
 
-  > p,
-  > .highlight {
+  > .example {
     grid-area: command;
     margin-left: 0 var(--padding-xs);
-  }
 
-  > .highlight {
-    > pre {
-      padding: var(--padding-xs);
+    .highlight {
+      > pre {
+        padding: var(--padding-xs);
+      }
     }
-  }
-  > p {
-    padding: calc(var(--padding-xs) * 0.6);
+
+    > p {
+      padding: calc(var(--padding-xs) * 0.6);
+    }
   }
 
   > .repo-badge {
