@@ -1,0 +1,43 @@
+archive:
+  title: Archive
+
+blog:
+  title: Blog
+  weight: 10
+
+community:
+  title: Community
+  weight: 30
+
+docs:
+  title: Documentation
+  weight: 20
+
+events:
+  title: Events
+  weight: 31
+
+home:
+  title: Home
+  weight: 1
+
+install:
+  title: Install
+  weight: 22
+
+internal:
+  title: Internal
+
+learning:
+  title: Learning
+  weight: 21
+
+newsletter:
+  title: Newsletter
+  weight: 32
+
+releases:
+  title: Releases
+  weight: 24
+
+unspecified:

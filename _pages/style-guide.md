@@ -2,6 +2,7 @@
 title: Living Style Guide
 layout: page-wide
 permalink: /style-guide/
+section: internal
 ---
 
 <div class="container">

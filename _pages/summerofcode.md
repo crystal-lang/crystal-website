@@ -1,6 +1,7 @@
 ---
 title: Google Summer of Code
 description: Enjoy Google Summer of Code 2018 while collaborating with Crystal
+section: archive
 ---
 
 Google Summer of Code is a global program focused on bringing more student
