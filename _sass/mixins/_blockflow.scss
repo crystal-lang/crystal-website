@@ -18,4 +18,8 @@
   :where(& > :is(h1, h2, h3, h4) + *) {
     margin-block-start: var(--block-flow-xs);
   }
+
+  :where(& > section + section) {
+    margin-block-start: var(--block-flow-lg);
+  }
 }
