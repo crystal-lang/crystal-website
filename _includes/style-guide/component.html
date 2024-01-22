@@ -5,9 +5,12 @@
       {% if component.module %}<p><strong>Include partial:</strong> <a href="https://github.com{{ site.repository | prepend: '/' | append: '/blob/master/' }}{{ component.module }}"><code>{{ component.module }}</code></a></p>{% endif %}
       {% if component.scss %}<p class="styleguide--last"><strong>SCSS partial:</strong> <a href="https://github.com{{ site.repository | prepend: '/' | append: '/blob/master/' }}{{ component.scss }}">{{ component.scss }}</a></p>{% endif %}
   </div>
+  {% if component.description %}
+    {{ component.description | markdownify }}
+  {% endif %}
 
   <div class="styleguide-preview {{ component.class }}">
-    {{ component.content }}
+    {{ component.content | markdownify }}
   </div>
 
   <details>
