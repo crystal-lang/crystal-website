@@ -26,7 +26,7 @@ install:
   weight: 22
 
 internal:
-  titel: Internal
+  title: Internal
 
 learning:
   title: Learning
