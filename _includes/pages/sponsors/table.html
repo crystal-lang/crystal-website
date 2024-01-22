@@ -1,7 +1,6 @@
 <table class="table" id="sponsors-tbl">
   <thead>
-    <th aria-label="Sponsor logo"></th>
-    <th><span>Supporter</span></th>
+    <th class="name"><span>Supporter</span></th>
     <th class="currency" data-sort-method="number" aria-sort="descending"><span>This month</span></th>
     <th class="currency" data-sort-method="number"><span>All time</span></th>
     <th class="since" data-sort-method="date"><span>Since</span></th>
@@ -10,30 +9,16 @@
     {% for sp in site.data.sponsors %}
       {% capture sponsor_class %}level-{{sp.level}} sponsor{% endcapture %}
       <tr class="{{sponsor_class}}">
-        <td class="col-logo">
-          {% if sp.logo %}
-            {% if sp.url %}
-              <a href="{{sp.url}}" rel="sponsored nofollow">
-                <img src="/assets/{{ sp.logo }}" alt="" />
-              </a>
-            {% else %}
-              <span>
-                <img src="/assets/{{ sp.logo }}" alt="" />
-              </span>
-            {% endif %}
-          {% else %}
-            &nbsp;
-          {% endif %}
-        </td>
         <th class="name" scope="row">
           {% if sp.url %}
             <a href="{{sp.url}}" rel="sponsored nofollow">
-              {{sp.name}}
+          {% endif %}
+              {% if sp.logo %}
+                <img src="/assets/{{ sp.logo }}" alt="" />
+              {% endif %}
+              <span>{{sp.name}}</span>
+          {% if sp.url %}
             </a>
-          {% else %}
-            <span>
-              {{sp.name}}
-            </span>
           {% endif %}
         </th>
         <td class="currency">
