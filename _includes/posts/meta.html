@@ -5,10 +5,10 @@
 <ul class="avatar-list" aria-hidden="true">
   {% for author in authors %}
   <li>
-    <a>
+    <a title="{{ site.data.blog_authors[author].name }}">
       <img
         src="/assets/authors/{{ author }}.jpg"
-        title="{{ site.data.blog_authors[author].name }}"
+        alt=""
       />
     </a>
   </li>

@@ -1,6 +1,6 @@
 <table class="table" id="sponsors-tbl">
   <thead>
-    <th></th>
+    <th aria-label="Sponsor logo"></th>
     <th><span>Supporter</span></th>
     <th class="currency" data-sort-method="number" aria-sort="descending"><span>This month</span></th>
     <th class="currency" data-sort-method="number"><span>All time</span></th>
@@ -14,11 +14,11 @@
           {% if sp.logo %}
             {% if sp.url %}
               <a href="{{sp.url}}" rel="sponsored nofollow">
-                <img src="/assets/{{ sp.logo }}" />
+                <img src="/assets/{{ sp.logo }}" alt="" />
               </a>
             {% else %}
               <span>
-                <img src="/assets/{{ sp.logo }}" />
+                <img src="/assets/{{ sp.logo }}" alt="" />
               </span>
             {% endif %}
           {% else %}
