@@ -1,5 +1,8 @@
 ---
 title: Crystal 1.0 Conference
+start_date: 2021-07-08T09:30Z
+date_text: 8 July 2021
+location: online
 ---
 
 We are unbelievably proud to announce that, after years of hard work, we finally have a [1.0 version of Crystal!](/2021/03/22/crystal-1.0-what-to-expect/)

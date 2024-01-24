@@ -1,5 +1,11 @@
 ---
 title: CrystalConf 2023
+start_date: 2023-10-23
+date_text: 23–24 October 2023
+location: Berlin &amp; online
+link_actions:
+  - '[Recordings](https://youtube.com/playlist?list=PLt-CsM4G1WoadONHl3zPN_Ts5PqH8TgMZ)'
+  - '[Schedule](https://pretalx.com/crystalconf-2023/schedule/)'
 ---
 
 CrystalConf 2023 took place in Berlin on 23rd and 24th October 2023, in hybrid mode.

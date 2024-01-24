@@ -58,7 +58,7 @@ defaults:
       type: events
     values:
       image: /assets/icon.png
-      layout: page
+      layout: event
       permalink: /events/:title/
       section: events
 
