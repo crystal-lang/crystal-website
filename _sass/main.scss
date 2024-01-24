@@ -31,6 +31,7 @@
 }
 
 @layer components {
+  @import "components/attributes";
   @import "components/book-authors";
   @import "components/book-presenter";
   @import "components/callout";
