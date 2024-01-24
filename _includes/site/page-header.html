@@ -4,4 +4,12 @@
   <div class="page-description">
     {{ page.description }}
   </div>
+
+  {% if page.link_actions %}
+    <nav class="link-actions">
+      {% for action in page.link_actions %}
+        {{ action | markdownify }}
+      {% endfor %}
+    </nav>
+  {% endif %}
 </header>
