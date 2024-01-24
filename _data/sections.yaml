@@ -22,6 +22,7 @@ docs:
   title: Documentation
   breadcrumbs:
     - title: Docs
+      nav: docs_intern
   weight: 20
 
 events:
