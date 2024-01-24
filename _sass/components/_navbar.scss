@@ -1,34 +1,54 @@
 body > header {
   @extend .ui-link;
+  --link-external-postfix: "";
+
   --link-color: var(--light-text);
   --link-hover-color: var(--primary-text);
   padding: var(--padding-xs);
 
-  gap: 1em;
-
   width: 100vw;
-  > .nav-start,
-  > .utilnav {
-    flex-basis: 0;
-    flex-grow: 1;
+  display: grid;
+  grid-template-columns:
+    minmax(
+      min-content,
+      calc(
+        (100vw - var(--main-width)) / 2 - var(--padding-xs) - var(--padding-sm)
+      )
+    )
+    minmax(min-content, var(--main-width)) auto max-content;
+  grid-template-areas: "logo breadcrumbs main util";
+
+  column-gap: var(--padding-sm);
+
+  .nav-start {
+    grid-area: logo;
   }
+  .section-nav {
+    grid-area: breadcrumbs;
+  }
+  .mainnav {
+    grid-area: main;
+    justify-self: end;
+  }
+  .utilnav {
+    grid-area: util;
+  }
+
   > .section-nav {
-    flex-basis: var(--main-width);
-    flex-shrink: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 0;
   }
 }
 
 .mainnav {
+  align-self: center;
+
   ul {
     all: unset;
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    gap: 0.5em;
+    flex-wrap: wrap;
+    justify-content: end;
+    column-gap: var(--padding-xxs);
     font-size: 80%;
   }
 
@@ -38,14 +58,12 @@ body > header {
     all: unset;
 
     > a {
-      all: unset;
       display: block;
-      padding: 1.5em 1em;
+      padding: 0 var(--padding-xxs);
       cursor: pointer;
 
       &[aria-current="page"] {
-        color: var(--primary-text);
-        border-bottom: 4px solid currentcolor;
+        font-weight: 500;
       }
     }
   }
@@ -53,9 +71,13 @@ body > header {
 
 .utilnav {
   display: flex;
-  align-items: flex-start;
   justify-content: flex-end;
+  align-items: center;
   gap: 1em;
+
+  @media (max-width: 50em) {
+    flex-direction: column;
+  }
 
   > a {
     display: flex;

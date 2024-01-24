@@ -8,13 +8,15 @@
   </a>
 </div>
 
-{% if page.url == "/" %}
-  <nav class="mainnav" aria-label="Main">
-    {% include site/nav_links.html section="main" %}
-  </nav>
-{% else %}
-  {% include site/breadcrumbs.html page=page %}
+{% if page.url != "/" %}
+  <div class="section-nav">
+    {% include site/breadcrumbs.html page=page %}
+  </div>
 {% endif %}
+
+<nav class="mainnav">
+  {% include site/nav_links.html section="main" %}
+</nav>
 
 <div class="utilnav">
   <a
