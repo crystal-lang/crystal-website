@@ -30,6 +30,8 @@ events:
     - title: Community
       url: /community/
     - title: Events
+      url: /community/#events
+      nav: community
   weight: 31
 
 home:
