@@ -7,4 +7,13 @@
     bottom: 0;
     left: 0;
   }
+
+  &:focus {
+    outline: none;
+
+    &::after {
+      outline: 0.14rem dotted var(--lighter-gray);
+      outline-offset: 0.08em;
+    }
+  }
 }
