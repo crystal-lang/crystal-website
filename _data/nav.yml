@@ -36,6 +36,16 @@ docs:
 - label: Guides
   url: https://crystal-lang.org/reference/guides
 
+install:
+- label: Linux
+  url: /install/on_linux
+- label: MacOS
+  url: /install/on_mac_os
+- label: Windows
+  url: /install/on_windows
+- label: Nightlies
+  url: /install/nightlies
+
 home:
 - label: Blog
   url: /blog/

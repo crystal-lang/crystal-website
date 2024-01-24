@@ -8,11 +8,20 @@
     display: flex;
     align-items: center;
 
-    &::before {
+    &::before,
+    > img {
       width: 1.3em;
       height: 1.3em;
       background-repeat: no-repeat;
+      object-fit: contain;
       margin-inline-end: var(--padding-xxs);
+    }
+
+    &:hover {
+      &::before,
+      > img {
+        opacity: 0.72;
+      }
     }
 
     &[href^="https://crystal-lang.org/api/"]::before
