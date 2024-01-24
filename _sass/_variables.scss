@@ -21,18 +21,19 @@ $font-sizes: (
   --white: hsl(0, 0%, 100%);
   --tainted-white: hsl(0, 0%, 96%);
   --black: hsl(0, 0%, 3%);
-  --light-gray: hsl(0, 0%, 47%);
+  --light-gray: hsl(0, 0%, 44%);
+  --lighter-gray: hsl(0, 0%, 65%);
 
   --background-main: var(--white);
   --background-secondary: var(--tainted-white);
 
   --primary-text: var(--black);
   --primary-code: var(--light-gray);
-  --light-text: hsl(0, 0%, 27%);
+  --light-text: hsl(0, 0%, 25%);
   --lighter-text: var(--light-gray);
 
-  --link-color: hsl(199, 98%, 48%);
-  --link-hover-color: var(--link-color);
+  --link-color: currentColor;
+  --link-hover-color: var(--light-text);
 
   --header-color: var(--light-gray);
 

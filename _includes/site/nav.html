@@ -1,6 +1,6 @@
 <div class="nav-start">
   <a class="site-logo" id="logo-container" {% if page.url != "/" %}href="/"{% endif %} aria-label="Homepage">
-    <canvas height="70" id="logo-canvas" width="70"></canvas>
+    <canvas height="70" id="logo-canvas" width="70" role="presentation"></canvas>
 
     {% if page.url == "/" %}
       {% include img/crystal-name-logo.svg %}
@@ -10,9 +10,7 @@
 
 {% if page.url == "/" %}
   <nav class="mainnav" aria-label="Main">
-    <ul>
-      {% include site/nav_links.html links=site.data.nav.main %}
-    </ul>
+    {% include site/nav_links.html section="main" %}
   </nav>
 {% else %}
   {% include site/breadcrumbs.html page=page %}

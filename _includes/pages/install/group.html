@@ -1,0 +1,42 @@
+{% assign entries = site.data.packages | where: "os", include.os | where: "type", include.type %}
+{% assign size = entries | size %}
+{% assign latest_release = site.releases | reverse | first %}
+{% if size > 0 %}
+<div class="install-group">
+  <h3>{{ include.type | capitalize }}</h3>
+  <div class="install-entries">
+    {% for entry in entries %}
+      <div class="install-entry">
+        <span class="title">
+          {% if entry.instructions_href %}
+            <a href="{{ entry.instructions_href }}" title="Instructions for {{ entry.label | default: entry.title }}">
+          {% endif %}
+          {{ entry.title }}
+          {% if entry.instructions_href %}
+            </a>
+          {% endif %}
+        </span>
+        {% assign targets_size = entry.arch | size %}
+        {% if targets_size > 0 %}
+        <span class="targets">
+          {% for arch in entry.arch %}
+            <code>{{ arch }}</code>
+          {% endfor %}
+        </span>
+        {% endif %}
+        {% if entry.repology == "crystal" %}
+          <span class="repo-badge"><img src="/assets/install/version-badge.svg" class="version-badge" alt="Latest version: {{ latest_release.version }}"></span>
+        {% elsif entry.repology %}
+          {% include elements/repology_badge.html repo=entry.repology %}
+        {% endif %}
+        <div class="example">
+          {{ entry.example | markdownify }}
+        </div>
+        {% if entry.repo_href %}
+          <a href="{{ entry.repo_href }}" title="{{ entry.repo_description }}" class="info">{% include icons/info.svg %}</a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

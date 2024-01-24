@@ -1,5 +1,3 @@
 ---
-subtitle: On Manjaro
+redirect_to: /install#linux
 ---
-
-{% include install/from_snapcraft.md distro="manjaro" %}

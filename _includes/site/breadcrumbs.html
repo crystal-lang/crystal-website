@@ -39,9 +39,6 @@
   </nav>
 
   <nav class="section-links" aria-label="Section links">
-    <ul role="list">
-      {% assign nav = site.data.nav[page_nav] %}
-      {% include site/nav_links.html links=nav %}
-    </ul>
+    {% include site/nav_links.html section=page_nav %}
   </nav>
 </div>

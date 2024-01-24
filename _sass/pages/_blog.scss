@@ -27,6 +27,10 @@
     // With sufficient screen widht, author images move into the left gutter
     margin-inline-start: -4.5em;
   }
+
+  .post-title {
+    --link-underline: none;
+  }
 }
 
 .more-posts {

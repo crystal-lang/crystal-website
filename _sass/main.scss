@@ -1,9 +1,10 @@
-@layer reset, frameworks, defaults, pattern, components, utilities;
+@layer reset, frameworks, defaults, pattern, elements, components, pages, utilities;
 
 @import "variables";
 @import "mixins/blockflow";
 @import "mixins/box-link";
 @import "mixins/circle-image";
+@import "mixins/external-links";
 
 @layer reset {
   @import "reset";
@@ -20,23 +21,28 @@
   @import "base/layout";
 }
 
-@layer components {
+@layer elements {
   @import "elements/avatar-list";
   @import "elements/color-sample";
   @import "elements/hex";
   @import "elements/hex-icon";
+  @import "elements/link-item";
   @import "elements/table";
+}
 
+@layer components {
   @import "components/book-authors";
   @import "components/book-presenter";
   @import "components/breadcrumbs";
   @import "components/callout";
   @import "components/card";
   @import "components/cards-list";
+  @import "components/copy-action";
   @import "components/profile-card";
   @import "components/content";
+  @import "components/footer";
   @import "components/image-list";
-  @import "components/link-item";
+  @import "components/link-actions";
   @import "components/navbar";
   @import "components/post-teaser";
   @import "components/post-navigation";
@@ -50,6 +56,7 @@
   @import "pages/blog";
   @import "pages/error";
   @import "pages/conference";
+  @import "pages/install";
   @import "pages/releases";
   @import "pages/sponsors";
   @import "pages/styleguide";

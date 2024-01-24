@@ -1,4 +1,5 @@
 :root {
+  --padding-xxs: clamp(0.25rem, 0.75%, 0.5rem);
   --padding-xs: clamp(0.5rem, 1.5%, 0.75rem);
   --padding-sm: clamp(1rem, 3%, 1.5rem);
   --padding-md: clamp(1.5rem, 6%, 3rem);
@@ -41,6 +42,8 @@ body > footer {
 body > main {
   @include blockflow(var(--block-flow-lg));
 
+  margin-block-end: var(--block-flow-lg);
+
   > header {
     margin-block-start: var(--block-flow-md);
     margin-block-end: var(--block-flow-sm);
@@ -55,7 +58,7 @@ body > main {
   }
 }
 
-body > main > article:first-child:last-child {
+body > main > article {
   margin-block: var(--block-flow-md);
 }
 

@@ -4,6 +4,7 @@ description: |
   Companies and individuals all over the world are using Crystal in production
   for projects of all kinds.
 layout: page-wide
+section: community
 ---
 
 > **NOTE:**

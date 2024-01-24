@@ -1,5 +1,6 @@
 ---
-subtitle: On macOS
+title: macOS
+page_title: Install on macOS
 ---
 
 To easily install Crystal on macOS you can use [Homebrew](http://brew.sh/).

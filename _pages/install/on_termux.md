@@ -1,5 +1,6 @@
 ---
-subtitle: On Termux
+title: Termux
+page_title: Install on Termux
 ---
 
 [Termux](https://termux.dev/en/) is a terminal emulator and Linux command line
