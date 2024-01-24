@@ -1,0 +1,42 @@
+---
+layout: base
+---
+
+<article class="event {{ page.page_class }}" itemscope itemtype="https://schema.org/Event">
+  <div class="event-header">
+    <h1 itemprop="name" class="post-title">{{ include.page_title | default: page.page_title | default: page.title }}</h1>
+
+    <dl class="attributes">
+        <dt>Date</dt>
+        <dd><time datetime="{{ page.start_date }}" itemprop="startDate">{{ page.date_text }}</time></dd>
+        <dd><time datetime="{{ page.end_date }}" itemprop="endDate"></time></dd>
+
+      {% if page.location %}
+        <dt>Location</dt>
+        <dd class="location" itemprop="location">{{ page.location }}</dd>
+      {% endif %}
+      {% if page.organizer %}
+        <dt>Organizer</dt>
+        <dd class="organizer" itemprop="organizer">{{ page.organizer }}</dd>
+      {% endif %}
+    </dl>
+
+    {% if page.description %}
+      <div class="page-description" itemprop="description">
+        {{ page.description }}
+      </div>
+    {% endif %}
+
+    {% if page.link_actions %}
+      <nav class="link-actions">
+        {% for action in page.link_actions %}
+          {{ action | markdownify }}
+        {% endfor %}
+      </nav>
+    {% endif %}
+  </div>
+
+  <div class="content">
+    {{ content }}
+  </div>
+</article>
