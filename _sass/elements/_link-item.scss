@@ -5,11 +5,6 @@
     margin-bottom: var(--padding-xs);
   }
 
-  padding-left: 1.5em;
-  @media (min-width: 160ch) {
-    margin-left: -1.5em;
-  }
-
   .link-item + .link-item {
     margin-top: var(--block-flow-sm);
   }
@@ -19,15 +14,8 @@
   @extend .icon-prefix;
   margin-inline-start: 0;
 
-  a {
-    color: var(--light-text);
-    &:not(.link-item__main) {
-      text-decoration: underline;
-      color: var(--lighter-text);
-    }
-  }
-
   .link-item__main {
+    --link-color: var(--light-text);
     font-weight: 500;
 
     > em {

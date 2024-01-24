@@ -107,6 +107,8 @@ class SponsorsBuilder
               "png"
             when "image/svg+xml"
               "svg"
+            when "image/webp"
+              "webp"
             else
               puts "  WARNING: not implemented image type #{request.content_type}"
               return nil

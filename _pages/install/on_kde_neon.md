@@ -1,5 +1,3 @@
 ---
-subtitle: On KDE Neon
+redirect_to: /install#linux
 ---
-
-{% include install/from_snapcraft.md distro="kde-neon" %}

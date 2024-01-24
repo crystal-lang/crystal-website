@@ -1,13 +1,11 @@
 <a class="site-logo" id="logo-container" {% if page.url != "/" %}href="/"{% endif %} aria-label="Homepage">
-  <canvas height="70" id="logo-canvas" width="70"></canvas>
+  <canvas height="70" id="logo-canvas" width="70" role="presentation"></canvas>
 
   {% include img/crystal-name-logo.svg %}
 </a>
 
 <nav class="mainnav" aria-label="Main">
-  <ul>
-    {% include site/nav_links.html links=site.data.nav.main %}
-  </ul>
+  {% include site/nav_links.html links="main" %}
 </nav>
 
 <div class="utilnav">

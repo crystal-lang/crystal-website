@@ -1,0 +1,68 @@
+pre {
+  position: relative;
+
+  > code {
+    flex-grow: 1;
+    z-index: 1;
+  }
+  > .copy-action {
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: color-mix(in srgb, var(--light-gray) 20%, transparent);
+    opacity: 1;
+    transform: scaleY(0);
+    transition: 800ms opacity;
+  }
+
+  &.copied::before {
+    opacity: 0.5;
+    transform: scaleY(1);
+    transition: 800ms opacity, 200ms transform;
+  }
+
+  &.copied::after {
+    content: "copied to clipboard";
+    position: absolute;
+    top: min(50%, 6em);
+    left: 50%;
+    font-size: 130%;
+    font-weight: 400;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    color: var(--tainted-white);
+    background: var(--light-gray);
+    padding-inline: var(--padding-xs);
+    border-radius: var(--padding-xs);
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 30%), 0 1px 3px 0 rgb(0 0 0 / 20%);
+  }
+}
+.copy-action {
+  display: block;
+  position: absolute;
+  top: var(--padding-xxs);
+  right: var(--padding-xxs);
+
+  /* reset button appearance */
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  &:not(:hover) {
+    opacity: 0.5;
+  }
+  > .icon {
+    width: 2.5ch;
+    height: 2.5ch;
+    display: block;
+  }
+}

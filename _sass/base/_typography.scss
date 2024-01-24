@@ -17,7 +17,13 @@ body {
   line-height: var(--line-height-base);
 }
 
-:is(h1, h2, h3, h4) {
+@for $i from 1 through 5 {
+  .h#{$i} {
+    @extend h#{$i};
+  }
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
   line-height: var(--line-height-heading);
   font-weight: 400;
 
@@ -33,52 +39,75 @@ body {
   }
 }
 
+:is(h5, h6) {
+  font-weight: 500;
+  margin-block: 0;
+}
+
 .page-description {
   font-size: var(--font-size-lead);
+
+  @extend .content;
 }
 
 :is(h2, h3, h4) {
   color: var(--header-color);
 }
 
-h1,
-.h1 {
+:is(h5, .h5, h6, .h6) {
+  color: currentColor;
+}
+
+h1 {
   font-size: font-size(h1);
 }
 
-h2,
-.h2 {
+h2 {
   font-size: font-size(h2);
 }
 
-h3,
-.h3 {
+h3 {
   font-size: font-size(h3);
 }
 
-h4,
-.h4 {
+h4 {
   font-size: font-size(h4);
 }
 
-h5,
-.h5 {
+h5 {
   font-size: font-size(h5);
 }
 
-h6,
-.h6 {
+h6 {
   font-size: font-size(h6);
+}
+
+p {
+  max-width: var(--content-width);
 }
 
 :any-link {
   color: var(--link-color);
-  text-underline-offset: 0.15em;
-  text-decoration: none;
+  text-underline-offset: 0.13em;
+  text-decoration: var(--link-underline, underline clamp(1.8px, 0.06em, 4px));
+  text-decoration-color: var(--lighter-gray);
   cursor: pointer;
 
   &:hover {
     color: var(--link-hover-color);
+    text-decoration-color: var(--light-gray);
+  }
+
+  &:focus {
+    outline: 0.04em dotted var(--lighter-gray);
+  }
+}
+
+:any-link,
+summary {
+  &:focus {
+    outline: 0.14rem dotted var(--lighter-gray);
+    outline-offset: 0.08em;
   }
 }
 
@@ -104,10 +133,12 @@ pre > code {
 }
 
 pre {
+  white-space: pre-wrap;
   padding: 1.25em;
 }
 
-:not(pre) > code {
+:not(pre) > code,
+dd > pre {
   padding: 0.2em 0.4em;
   border-radius: 6px;
 }
@@ -126,7 +157,6 @@ kbd {
 strong,
 b {
   font-weight: 500;
-  color: var(--light-text);
 }
 
 blockquote {
@@ -154,4 +184,9 @@ dt {
 
 dd {
   text-indent: 1.325ch;
+
+  > pre:first-child {
+    text-indent: 0;
+    margin-left: 1.325ch;
+  }
 }

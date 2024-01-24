@@ -10,20 +10,34 @@
       white-space: nowrap;
     }
 
-    :any-link {
-      all: unset;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
-    &.name,
-    &.col-logo {
+    &.name {
+      display: grid;
       padding: 0;
-      font-weight: 400;
+      grid-template-columns: calc(2em + var(--padding-sm)) 1fr;
+      grid-gap: var(--padding-sm);
+      align-items: center;
+
+      &[scope="row"] {
+        font-weight: unset;
+      }
 
       > * {
-        display: block;
-        padding: 0.75em 0.9em;
+        padding-block: var(--padding-sm);
+      }
+
+      > a {
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-column: 1/-1;
+        align-items: center;
+      }
+
+      img {
+        justify-self: end;
+      }
+
+      span {
+        grid-column-start: 2;
       }
     }
   }

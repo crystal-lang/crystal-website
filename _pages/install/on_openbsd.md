@@ -1,5 +1,6 @@
 ---
-subtitle: On OpenBSD
+title: OpenBSD
+page_title: Install on OpenBSD
 ---
 
 OpenBSD includes the Crystal compiler in the ports tree, starting from version OpenBSD 6.4.

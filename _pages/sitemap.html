@@ -9,7 +9,7 @@ section: internal
     <ul>
     {% assign entries = site.documents | where: "section", section.id %}
     {% for entry in entries %}
-      {% if entry.collection == "posts" or entry.collection == "releases" %}
+      {% if entry.collection == "posts" or entry.collection == "releases" or entry.url == null %}
         {% continue %}
       {% endif %}
       {% assign url = entry.url | prepend: "<code>" | append: "</code>" %}
@@ -19,7 +19,7 @@ section: internal
         {% if entry.redirect_to %}
           {{ title }} → <a href="{{ entry.redirect_to }}" rel="nofollow">{{ entry.redirect_to }}</a>
         {% else %}
-          <a href="{{ entry.url }}">{{ title }}</a>
+          <a href="{{ entry.url }}"><strong>{{ title }}</strong></a>
         {% endif %}
         {% assign slug_title = title | slugify %}
         {% assign down_title = title | downcase %}

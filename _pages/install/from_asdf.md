@@ -1,5 +1,6 @@
 ---
-subtitle: From asdf
+title: asdf
+page_title: Install from asdf
 ---
 1. Install [asdf](https://asdf-vm.com/#/core-manage-asdf?id=install)
 2. Install Crystal plugin for asdf: `asdf plugin add crystal`

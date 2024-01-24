@@ -1,5 +1,6 @@
 ---
-subtitle: From tar.gz
+title: Tarball
+page_title: Install from Tarball
 ---
 
 You can download Crystal in a standalone `.tar.gz` file with everything you need to get started.
