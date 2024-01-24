@@ -42,6 +42,7 @@ install:
     - title: Docs
     - title: Install
       url: /install/
+      nav: install
   weight: 22
 
 internal:

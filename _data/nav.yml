@@ -1,6 +1,8 @@
 main:
 - label: Blog
   url: /blog/
+- label: Install
+  url: /install
 - label: Sponsors
   url: /sponsors/
 - label: Community
