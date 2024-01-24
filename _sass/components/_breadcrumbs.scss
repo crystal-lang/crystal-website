@@ -37,17 +37,25 @@
   --link-color: var(--light-text);
   --link-hover-color: var(--lighter-text);
   font-weight: 300;
+  max-width: 40rem;
+
   @extend .small;
 
   > ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* Using block here to enable `text-wrap: balance`. A similar functionality
+       does not exist for flexbox. */
+    display: block;
+    text-wrap: balance;
+
     list-style: none;
 
     margin: 0;
     padding: 0;
-    column-gap: var(--padding-xs);
+
+    > li {
+      display: inline;
+      margin-inline-end: var(--padding-xs);
+    }
   }
 
   [aria-current="page"] {
