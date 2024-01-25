@@ -44,6 +44,16 @@ docs_intern:
 - label: Learning
   url: /learning/
 
+install:
+- label: Linux
+  url: /install/on_linux
+- label: MacOS
+  url: /install/on_mac_os
+- label: Windows
+  url: /install/on_windows
+- label: Nightlies
+  url: /install/nightlies
+
 home:
 - label: Blog
   url: /blog/

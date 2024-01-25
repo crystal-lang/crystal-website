@@ -1,0 +1,7 @@
+.event-header {
+  @include blockflow(var(--block-flow-xs));
+
+  + .content {
+    margin-top: var(--block-flow-sm);
+  }
+}

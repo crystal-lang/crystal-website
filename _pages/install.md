@@ -3,7 +3,16 @@ title: Install
 permalink: /install/
 layout: page-wide
 page_class: page--segmented
-section: install
+section: docs
+link_actions:
+- '[![](/assets/install/linux.svg) #Linux](#linux)'
+- '[![](/assets/install/apple.svg) #MacOS](#macos)'
+- '[![](/assets/install/windows.svg) #Windows](#windows)'
+- '[![](/assets/install/freebsd.svg) #FreeBSD](#freebsd)'
+- '[![](/assets/install/openbsd.svg) #OpenBSD](#openbsd)'
+- '[![](/assets/install/android.svg) #Android](#android)'
+- '[![](/assets/install/docker.svg) #Docker](#docker)'
+- '[![](/assets/install/construction.svg) #Tools](#developer-tools)'
 ---
 ## Linux
 
