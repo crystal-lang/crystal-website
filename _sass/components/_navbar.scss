@@ -22,6 +22,8 @@ body > header {
 
   .nav-start {
     grid-area: logo;
+    display: grid;
+    justify-content: start;
   }
   .section-nav {
     grid-area: breadcrumbs;
