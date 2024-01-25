@@ -11,6 +11,8 @@
 }
 
 .breadcrumbs {
+  @extend .ui-link;
+
   display: flex;
 
   --link-color: var(--light-text);
@@ -34,10 +36,13 @@
 }
 
 .section-links {
+  @extend .ui-link;
+
   --link-color: var(--light-text);
   --link-hover-color: var(--lighter-text);
   font-weight: 300;
   max-width: 40rem;
+  margin: 0;
 
   @extend .small;
 
