@@ -263,7 +263,7 @@ section: community
   </aside>
   <div class="cards-list">
     {% assign events = site.events | reverse %}
-    {% for event in events limit:6 %}
+    {% for event in events %}
       <article class="card event-card">
         <picture>
           <source srcset="/assets{{ event.id }}.webp" type="image/webp">
