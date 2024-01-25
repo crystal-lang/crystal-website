@@ -19,8 +19,7 @@
   --link-hover-color: var(--lighter-text);
 
   [aria-current="page"] {
-    --link-color: var(--lighter-text);
-    --link-hover-color: var(--lighter-text);
+    font-weight: 500;
   }
 }
 
