@@ -1,10 +1,20 @@
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18ch, 1fr));
+  gap: var(--padding-sm);
+
+  > * {
+    margin: 0;
+  }
+}
+
 .event-card {
   --card-padding: 0;
 
   @extend .card;
 
   box-shadow: none;
-  width: 28ch;
+  width: auto;
   align-items: start;
   text-align: start;
 

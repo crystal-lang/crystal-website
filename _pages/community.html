@@ -261,10 +261,10 @@ section: community
   <h2 id="events">Events</h2>
   <aside markdown="1">
   </aside>
-  <div class="cards-list">
+  <div class="events-list">
     {% assign events = site.events | reverse %}
     {% for event in events %}
-      <article class="card event-card">
+      <article class="event-card">
         <picture>
           <source srcset="/assets{{ event.id }}.webp" type="image/webp">
           <img src="/assets{{ event.id }}.png" loading="lazy" />
