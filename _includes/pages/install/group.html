@@ -1,6 +1,7 @@
 {% assign entries = site.data[include.dataset] | where: "os", include.os | where: "type", include.type %}
 {% assign size = entries | size %}
 {% assign latest_release = site.releases | reverse | first %}
+{% assign version = latest_release.version %}
 {% if size > 0 %}
 <div class="install-group">
   <h3>{{ include.type | capitalize }}</h3>
@@ -11,7 +12,7 @@
           {% if entry.instructions_href %}
             <a href="{{ entry.instructions_href }}" title="Instructions for {{ entry.label | default: entry.title }}">
           {% endif %}
-          {{ entry.title }}
+          {{ entry.title | markdownify }}
           {% if entry.instructions_href %}
             </a>
           {% endif %}
@@ -25,11 +26,19 @@
         </span>
         {% endif %}
         {% if entry.repology == "crystal" %}
-          <span class="repo-badge"><img src="/assets/install/version-badge.svg" class="version-badge" alt="Latest version: {{ latest_release.version }}"></span>
+          <span class="repo-badge"><img src="/assets/install/version-badge.svg" class="version-badge" alt="Latest version: {{ version }}"></span>
         {% elsif entry.repology %}
           {% include elements/repology_badge.html repo=entry.repology %}
         {% endif %}
         <div class="example">
+          {% if entry.archive_href %}
+            <p>
+              Download:
+              {% for arch in entry.arch %}
+                <a href="{{ entry.archive_href | liquify }}"><code class="low-key">{{ arch }}</code></a>
+              {% endfor %}
+            </p>
+          {% endif %}
           {{ entry.example | markdownify }}
         </div>
         {% if entry.repo_href %}

@@ -16,9 +16,9 @@
 - type: crystal
   os: Linux
   arch: [x86_64]
-  title: Tarball
+  title: Tarball (`.tar.gz`)
   instructions_href: /install/from_targz/
-  example: 'Archive on [artifacts.crystal-lang.org](https://artifacts.crystal-lang.org/dist/crystal-nightly-linux-x86_64.tar.gz).'
+  archive_href: https://artifacts.crystal-lang.org/dist/crystal-nightly-linux-{{ arch }}.tar.gz
 
 - type: community
   os: Linux
@@ -48,9 +48,9 @@
 - type: crystal
   os: MacOS
   arch: [universal]
-  title: Tarball
+  title: Tarball (`.tar.gz`)
   instructions_href: /install/from_targz/
-  example: 'Archive on [artifacts.crystal-lang.org](https://artifacts.crystal-lang.org/dist/crystal-nightly-darwin-universal.tar.gz).'
+  archive_href: https://artifacts.crystal-lang.org/dist/crystal-nightly-darwin-universal.tar.gz
 
 - type: community
   os: MacOS
@@ -68,16 +68,16 @@
 - type: crystal
   os: Windows
   arch: [x86_64]
-  title: Installer
+  title: Installer (`.exe`)
   instructions_href: /install/on_windows/
-  example: Installer (`.exe`) on [artifacts.crystal-lang.org](https://nightly.link/crystal-lang/crystal/workflows/win/master/crystal-installer.zip).
+  archive_href: https://nightly.link/crystal-lang/crystal/workflows/win/master/crystal-installer.zip
 
 - type: crystal
   os: Windows
   arch: [x86_64]
-  title: Portable Archive
+  title: Portable Archive (`.zip`)
   instructions_href: /install/on_windows/
-  example: Archive (`.zip`) on [artifacts.crystal-lang.org](https://nightly.link/crystal-lang/crystal/workflows/win/master/crystal.zip).
+  archive_href: https://nightly.link/crystal-lang/crystal/workflows/win/master/crystal.zip
 
 - type: community
   os: Windows
