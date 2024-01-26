@@ -10,7 +10,17 @@
   grid-column: 1 / -1;
   column-gap: var(--padding-xs);
   border-top: 1.4px solid var(--border-color);
-  align-items: baseline;
+  // FIXME: This line had to be disabled because it crashes Chrome: https://github.com/crystal-lang/crystal-website/issues/579
+  //   align-items: baseline;
+  // The following workaround adjusts the spacing on the h3 element to match the
+  // result of baseline alignment. Visual impression should be identical
+  // BEGIN WORKAROUND
+  > h3 {
+    padding: calc(var(--padding-xs) + var(--padding-xxs)) 0;
+    line-height: var(--line-height-lg);
+  }
+  // END WORKAROUND
+
   grid-template-areas: "section entries entries entries entries";
 }
 

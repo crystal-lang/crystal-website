@@ -1,4 +1,4 @@
-{% assign entries = site.data.packages | where: "os", include.os | where: "type", include.type %}
+{% assign entries = site.data[include.dataset] | where: "os", include.os | where: "type", include.type %}
 {% assign size = entries | size %}
 {% assign latest_release = site.releases | reverse | first %}
 {% if size > 0 %}

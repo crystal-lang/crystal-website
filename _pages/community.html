@@ -257,26 +257,25 @@ section: community
   </div>
 </section>
 
-{% comment %}
-#TODO: Create events
-<section>
-  <h2>Events</h2>
+<section class="side-section">
+  <h2 id="events">Events</h2>
+  <aside markdown="1">
+  </aside>
   <div class="events-list">
-    {% for event in site.events reversed %}
-      <article class="event-teaser">
-        <a href="{{ event.url }}">
-          <picture>
-            <source srcset="/assets{{ event.id }}.webp" type="image/webp">
-            <img src="/assets{{ event.id }}.png" loading="lazy" />
-          </picture>
-          <h3>{{ event.title }}</h3>
-          <div class="meta">
-            <time class="date" datetime="{{ event.date }}">{{ event.date | date_to_string }}</time>
-            <span class="location">{{ event.location }}</span>
-          </div>
-        </a>
+    {% assign events = site.events | reverse %}
+    {% for event in events %}
+      <article class="event-card">
+        <picture>
+          <source srcset="/assets{{ event.id }}.webp" type="image/webp">
+          <img src="/assets{{ event.id }}.png" loading="lazy" />
+        </picture>
+        <time datetime="{{ event.start_date }}" itemprop="startDate">{{ event.date_text }}</time>
+        <time datetime="{{ event.end_date }}" itemprop="endDate"></time>
+
+        <a href="{{ event.url }}" class="name">{{ event.title }}</a>
+
+        <span class="location">{{ event.location }}</span>
       </article>
     {% endfor %}
   </div>
 </section>
-{% endcomment %}

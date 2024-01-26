@@ -22,4 +22,8 @@
   :where(& > section + section) {
     margin-block-start: var(--block-flow-lg);
   }
+
+  :where(& > p + p) {
+    margin-block-start: var(--block-flow-xs);
+  }
 }

@@ -16,7 +16,7 @@ community:
 - label: Sponsors
   url: /sponsors/
 - label: Events
-  url: /community/ # TODO: Add events page
+  url: /community/#events
 - label: Forum
   url: https://forum.crystal-lang.org/
 - label: Governance
