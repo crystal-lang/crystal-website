@@ -2,6 +2,9 @@
 page_title: Nightly Builds
 layout: page-wide
 page_class: page--segmented
+description: |
+  Daily snapshots of the current development status in the [`master` branch](https://github.com/crystal-lang/crystal/tree/master)
+  provide the bleeding-edge version of Crystal.
 ---
 Nightly builds of the Crystal compiler are available from these locations.
 
