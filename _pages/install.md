@@ -32,6 +32,10 @@ repository and we provide an installer script for convenience.
 
 {% include pages/install/section.html os="Linux" %}
 
+Linux-based [Docker images](#docker) and [developer tools](#developer-tools) are also available.
+
+[**Read more about installing on _Linux_**](/install/on_linux)
+
 ## MacOS
 
 The Crystal project provides universal archives for MacOS that work on both,
@@ -40,6 +44,10 @@ Apple Silicon and Intel.
 The most popular installation method is via Homebrew.
 
 {% include pages/install/section.html os="MacOS" %}
+
+Crystal is also available in [developer tooling](#developer-tools) on macOS.
+
+[**Read more about installing on _MacOS_**](/install/on_mac_os)
 
 <a id="windows"></a>
 
@@ -53,13 +61,21 @@ Official builds are available as a ZIP archive or installer.
 
 {% include pages/install/section.html os="Windows" %}
 
+Crystal is also available in [developer tooling](#developer-tools) on Windows.
+
+[**Read more about installing on _Windows_**](/install/on_windows)
+
 ## FreeBSD
 
 {% include pages/install/section.html os="FreeBSD" %}
 
+[**Read more about installing on _FreeBSD_**](/install/on_freebsd)
+
 ## OpenBSD
 
 {% include pages/install/section.html os="OpenBSD" %}
+
+[**Read more about installing on _OpenBSD_**](/install/on_openbsd)
 
 ## Android
 
@@ -82,7 +98,7 @@ features and testing compatibility with existing code bases.
 It's recomended to test against nightlies regularly in order to notice any issues
 timely and avoid surprises after the next relase.
 
-[**Read more about _Nightly Builds_**](/install/nightly/)
+[**Read more about _Nightly Builds_**](/install/nightlies/)
 
 <a id="from_source"></a>
 
@@ -92,7 +108,7 @@ The Crystal compiler is self-hosted, so in order to build it you need a Crystal 
 Hence from source installation is not an ideal way to get Crystal in the first place.
 However it is possible to bootstrap from a different platform through cross-compiling.
 
-<a href="from_sources">Instructions</a>
+[**Read more about _Building from Source_**](/install/from_sources/)
 
 > **NOTE:** Getting Started
 > Once you have Crystal installed, check out the [getting started guide](https://crystal-lang.org/reference/getting_started/).
