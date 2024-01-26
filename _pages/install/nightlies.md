@@ -2,8 +2,17 @@
 page_title: Nightly Builds
 layout: page-wide
 page_class: page--segmented
+description: |
+  Daily snapshots of the current development status in the [`master` branch](https://github.com/crystal-lang/crystal/tree/master)
+  provide the bleeding-edge version of Crystal.
 ---
-Nightly builds of the Crystal compiler are available from these locations.
+
+Nightly builds are inherently less stable than proper releases.
+But they allow trying out new features and ensuring compatibility for existing
+code bases.
+
+It's recomended to test against nightlies regularly in order to notice any issues
+ahead of time and avoid surprises with the next relase.
 
 ## Linux
 
@@ -20,8 +29,6 @@ Nightly builds of the Crystal compiler are available from these locations.
 {% include pages/install/section.html os="Windows" channel="nightly" %}
 
 ## Docker
-
-Nightly builds are available on the `nightly` tag on the [Docker repository of Crystal](https://hub.docker.com/r/crystallang/crystal/).
 
 {% include pages/install/section.html os="Docker" channel="nightly" %}
 
