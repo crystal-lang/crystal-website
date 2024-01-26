@@ -1,0 +1,68 @@
+.section-nav {
+  transition: 0.5s opacity;
+  &:not(:hover) {
+    opacity: 0.6;
+  }
+
+  margin-block-start: var(--block-flow-xs);
+  &:first-child {
+    margin-block-start: var(--block-flow-sm);
+  }
+}
+
+.breadcrumbs {
+  @extend .ui-link;
+
+  display: flex;
+
+  --link-color: var(--light-text);
+  --link-hover-color: var(--lighter-text);
+
+  [aria-current="page"] {
+    font-weight: 500;
+  }
+}
+
+.breadcrumb {
+  display: inline flex;
+
+  > :first-child {
+    padding-inline-end: var(--padding-xs);
+  }
+  &:not(:first-child) > :first-child {
+    padding-inline-start: var(--padding-xs);
+  }
+}
+
+.section-links {
+  @extend .ui-link;
+
+  --link-color: var(--light-text);
+  --link-hover-color: var(--lighter-text);
+  font-weight: 300;
+  max-width: 40rem;
+  margin: 0;
+
+  @extend .small;
+
+  > ul {
+    /* Using block here to enable `text-wrap: balance`. A similar functionality
+       does not exist for flexbox. */
+    display: block;
+    text-wrap: balance;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    > li {
+      display: inline;
+      margin-inline-end: var(--padding-xs);
+    }
+  }
+
+  [aria-current="page"] {
+    font-weight: 400;
+  }
+}

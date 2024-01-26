@@ -1,0 +1,37 @@
+---
+title: Breadcrumbs
+type: components
+module: _includes/site/breadcrumbs.html
+
+examples:
+  community:
+    section: community
+    title: Foo Bar
+    url: /foo/bar
+  community_main:
+    section: community
+    title: Foo Bar
+    url: /community/
+  archive:
+    section: archive
+    title: Foo Bar
+    url: /foo/bar
+  no_section:
+    title: Foo Bar
+    url: /foo/bar
+---
+<strong>Basic</strong>
+{% assign example = page.examples.community %}
+{% include site/breadcrumbs.html page=example %}
+
+<strong>Section Main</strong>
+{% assign example = page.examples.community_main %}
+{% include site/breadcrumbs.html page=example %}
+
+<strong>Non-link Item</strong>
+{% assign example = page.examples.archive %}
+{% include site/breadcrumbs.html page=example %}
+
+<strong>No section</strong>
+{% assign example = page.examples.no_section %}
+{% include site/breadcrumbs.html page=example %}

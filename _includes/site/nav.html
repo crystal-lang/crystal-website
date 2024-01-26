@@ -1,10 +1,20 @@
-<a class="site-logo" id="logo-container" {% if page.url != "/" %}href="/"{% endif %} aria-label="Homepage">
-  <canvas height="70" id="logo-canvas" width="70" role="presentation"></canvas>
+<div class="nav-start">
+  <a class="site-logo" id="logo-container" {% if page.url != "/" %}href="/"{% endif %} aria-label="Homepage">
+    <canvas height="70" id="logo-canvas" width="70" role="presentation"></canvas>
 
-  {% include img/crystal-name-logo.svg %}
-</a>
+    {% if page.url == "/" %}
+      {% include img/crystal-name-logo.svg %}
+    {% endif %}
+  </a>
+</div>
 
-<nav class="mainnav" aria-label="Main">
+{% if page.url != "/" %}
+  <div class="section-nav">
+    {% include site/breadcrumbs.html page=page %}
+  </div>
+{% endif %}
+
+<nav class="mainnav">
   {% include site/nav_links.html section="main" %}
 </nav>
 
