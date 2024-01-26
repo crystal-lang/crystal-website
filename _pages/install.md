@@ -24,14 +24,20 @@ link_actions:
 ## Linux
 
 Many Linux distribution have Crystal available in their system packages.
-It might be some older version though. Third party package managers can be
-more up to date.
+It might not have the most recent version though.
+Third party package managers can be more up to date.
+
 DEB and RPM packages of the most recent release are available in our own package
-repository.
+repository and we provide an installer script for convenience.
 
 {% include pages/install/section.html os="Linux" %}
 
 ## MacOS
+
+The Crystal project provides universal archives for MacOS that work on both,
+Apple Silicon and Intel.
+
+The most popular installation method is via Homebrew.
 
 {% include pages/install/section.html os="MacOS" %}
 
@@ -39,7 +45,11 @@ repository.
 
 ## Windows (preview)
 
-Windows support is currently a preview and <a href="https://github.com/crystal-lang/crystal/issues/5430">not yet complete</a>.
+> **NOTE:**
+> Windows support is currently a preview and <a href="https://github.com/crystal-lang/crystal/issues/5430">not yet complete</a>,
+> but largely usable.
+
+Official builds are available as a ZIP archive or installer.
 
 {% include pages/install/section.html os="Windows" %}
 
@@ -65,7 +75,14 @@ Windows support is currently a preview and <a href="https://github.com/crystal-l
 
 ## Nightly builds
 
-<a href="nightlies">Instructions</a>
+Nightly builds are the bleeding-edge version of Crystal, being a daily snapshot
+of the current development status in the [`master` branch](https://github.com/crystal-lang/crystal/tree/master).
+This is inherently less stable than proper a release, but allows trying out new
+features and testing compatibility with existing code bases.
+It's recomended to test against nightlies regularly in order to notice any issues
+timely and avoid surprises after the next relase.
+
+[**Read more about _Nightly Builds_**](/install/nightly/)
 
 <a id="from_source"></a>
 
@@ -77,11 +94,8 @@ However it is possible to bootstrap from a different platform through cross-comp
 
 <a href="from_sources">Instructions</a>
 
-## Getting Started
-
-<a href="https://crystal-lang.org/reference/getting_started/">Get Started</a>
-
-<a href="https://repology.org/project/crystal-lang/versions">Crystal on Repology</a>
+> **NOTE:** Getting Started
+> Once you have Crystal installed, check out the [getting started guide](https://crystal-lang.org/reference/getting_started/).
 
 <script src="/assets/js/copy-action.js"></script>
 <script>
