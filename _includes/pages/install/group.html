@@ -3,7 +3,15 @@
 {% assign latest_release = site.releases | reverse | first %}
 {% if size > 0 %}
 <div class="install-group">
-  <h3>{{ include.type | capitalize }}</h3>
+  {% case include.type %}
+  {% when "crystal" %}
+    <h3 title="Official packages provided by the Crystal project">Crystal</h3>
+  {% when "system" %}
+    <h3 title="Packages in a distribution's package system">System</h3>
+  {% when "community" %}
+    <h3 title="Packages maintained by the community">Community</h3>
+  {% endcase %}
+
   <div class="install-entries">
     {% for entry in entries %}
       <div class="install-entry">
