@@ -1,9 +1,11 @@
+### Linux
+
 - type: crystal
   os: Linux
   arch: [x86_64]
   title: Installer (DEB &amp; RPM)
   label: Linux installer
-  instructions_href: on_linux#installer
+  instructions_href: /install/on_linux/#installer
   example: |
     ```shell
     curl -fsSL https://crystal-lang.org/install.sh | sudo bash
@@ -11,13 +13,15 @@
   repo_href: https://build.opensuse.org/project/show/devel:languages:crystal
   repo_description: Crystal repository on OBS
   repology: crystal
+
 - type: crystal
   os: Linux
   arch: [x86_64]
   title: Tarball
-  instructions_href: from_targz/
+  instructions_href: /install/from_targz/
   example: 'Archive in [the latest release](https://github.com/crystal-lang/crystal/releases).'
   repology: crystal
+
 - type: system
   os: Linux
   arch: [x86_64]
@@ -29,6 +33,7 @@
   repo_href: https://packages.debian.org/sid/crystal
   repo_description: Crystal package in Debian sid/unstable
   repology: debian_unstable/crystal-lang
+
 - type: system
   os: Linux
   arch: [x86_64, aarch64]
@@ -40,6 +45,7 @@
   repo_href: https://pkgs.alpinelinux.org/packages?name=crystal
   repo_description: Crystal package on Alpine Linux package index
   repology: alpine_edge/crystal-lang
+
 - type: system
   os: Linux
   arch: [x86_64]
@@ -51,11 +57,12 @@
   repo_href: https://archlinux.org/packages/extra/x86_64/crystal/
   repo_description: Crystal package on Arch Linux package index
   repology: arch/crystal-lang
+
 - type: system
   os: Linux
   arch: [x86_64]
   title: Emerge (Gentoo)
-  instructions_href: on_gentoo_linux/
+  instructions_href: /install/on_gentoo_linux/
   example: |
     ```shell
     emerge -a dev-lang/crystal
@@ -63,6 +70,7 @@
   repo_href: https://packages.gentoo.org/packages/dev-lang/crystal
   repo_description: Crystal package on Gentoo package index
   repology: gentoo/crystal-lang
+
 - type: community
   os: Linux
   arch: [x86_64]
@@ -75,11 +83,12 @@
   repo_description: Crystal package on Homebrew
   repology: homebrew/crystal-lang
   repology: crystal
+
 - type: community
   os: Linux
   arch: [x86_64]
   title: asdf
-  instructions_href: from_asdf
+  instructions_href: /install/from_asdf/
   example: |
     ```shell
     asdf plugin add crystal
@@ -87,17 +96,19 @@
     ```
   repo_href: https://github.com/asdf-community/asdf-crystal
   repo_description: Crystal plugin for ASDF on GitHub
+
 - type: community
   os: Linux
   arch: [x86_64]
   title: Snapcraft
-  instructions_href: from_snapcraft/
+  instructions_href: /install/from_snapcraft/
   example: |
     ```shell
     snap install crystal --classic
     ```
   repo_href: https://snapcraft.io/crystal
   repo_description: Crystal on Snapcraft
+
 - type: community
   os: Linux
   arch: [x86_64, aarch64]
@@ -106,6 +117,7 @@
   repo_href: https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal
   repo_description: Crystal on Nix package search
   repology: nix_unstable/crystal-lang
+
 - type: community
   os: Linux
   arch: [x86_64, aarch64]
@@ -113,13 +125,17 @@
   instructions_href: https://packagecloud.io/84codes/crystal
   repo_href: https://packagecloud.io/84codes/crystal
   repo_description: 84codes' Crystal package on packagecloud.io
+
+### MacOS
+
 - type: crystal
   os: MacOS
   arch: [universal]
   title: Tarball
-  instructions_href: from_targz/
+  instructions_href: /install/from_targz/
   example: 'Archive in the [the latest release](https://github.com/crystal-lang/crystal/releases).'
   repology: crystal
+
 - type: community
   os: MacOS
   arch: [x86_64, aarch64]
@@ -131,11 +147,12 @@
   repo_href: https://formulae.brew.sh/formula/crystal
   repo_description: Crystal package on Homebrew
   repology: homebrew/crystal-lang
+
 - type: community
   os: MacOS
   arch: [universal]
   title: asdf
-  instructions_href: from_asdf
+  instructions_href: /install/from_asdf/
   example: |
     ```shell
     asdf plugin add crystal
@@ -143,6 +160,7 @@
     ```
   repo_href: https://github.com/asdf-community/asdf-crystal
   repo_description: Crystal plugin for ASDF on GitHub
+
 - type: community
   os: MacOS
   arch: [x86_64, aarch64]
@@ -151,6 +169,7 @@
   repo_href: https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal
   repo_description: Crystal on Nix package search
   repology: nix_unstable/crystal-lang
+
 - type: community
   os: MacOS
   arch: [x86_64, aarch64]
@@ -162,25 +181,30 @@
   repo_href: https://ports.macports.org/port/crystal/summary/
   repo_description: Crystal port on MacPorts package index
   repology: macports/crystal-lang
+
+### Windows
+
 - type: crystal
   os: Windows
   arch: [x86_64]
   title: Installer
-  instructions_href: on_windows
+  instructions_href: /install/on_windows/
   example: Installer (`.exe`) in [the latest release](https://github.com/crystal-lang/crystal/releases).
   repology: crystal
+
 - type: crystal
   os: Windows
   arch: [x86_64]
   title: Portable Archive
-  instructions_href: on_windows
+  instructions_href: /install/on_windows/
   example: Archive (`.zip`) in [the latest release](https://github.com/crystal-lang/crystal/releases).
   repology: crystal
+
 - type: community
   os: Windows
   arch: [x86_64]
   title: Scoop
-  instructions_href: from_scoop
+  instructions_href: /install/from_scoop/
   example: |
     ```powershell
     scoop install git
@@ -189,6 +213,7 @@
     ```
   repo_href: https://github.com/neatorobito/scoop-crystal
   repo_description: Scoop repository for Crystal on GitHub
+
 - type: community
   os: Windows
   arch: [x86_64]
@@ -196,20 +221,24 @@
   repo_href: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalLang/Crystal/
   repo_description: Crystal manifest in WinGet packages repository
   repology: winget/crystal-lang
+
+### FreeBSD
+
 - type: system
   os: FreeBSD
   arch: [x86_64, aarch64]
   title: Package
-  instructions_href: on_freebsd/#install-package
+  instructions_href: /install/on_freebsd/#install-package
   example: |
     ```shell
     sudo pkg install -y crystal shards
     ```
+
 - type: system
   os: FreeBSD
   arch: [x86_64, aarch64]
   title: Port
-  instructions_href: on_freebsd/#install-port
+  instructions_href: /install/on_freebsd/#install-port
   example: |
     ```shell
     sudo make -C/usr/ports/lang/crystal reinstall clean
@@ -218,20 +247,24 @@
   repo_href: https://www.freshports.org/lang/crystal
   repo_description: Crystal port on Freshports.org
   repology: freebsd/crystal-lang
+
+### OpenBSD
+
 - type: system
   os: OpenBSD
   arch: [x86_64, aarch64]
   title: Package
-  instructions_href: on_openbsd/#install-package
+  instructions_href: /install/on_openbsd/#install-package
   example: |
     ```shell
     doas pkg_add crystal
     ```
+
 - type: system
   os: OpenBSD
   arch: [x86_64, aarch64]
   title: Port
-  instructions_href: on_openbsd/#install-port
+  instructions_href: /install/on_openbsd/#install-port
   example: |
     ```shell
     doas make -C/usr/ports/lang/crystal clean install
@@ -239,11 +272,14 @@
   repo_href: https://openports.pl/path/lang/crystal
   repo_description: Crystal port on openports.pl
   repology: openbsd/crystal-lang
+
+### Android
+
 - type: community
   os: Android
   arch: [aarch64]
   title: Termux
-  instructions_href: on_termux/
+  instructions_href: /install/on_termux/
   example: |
     ```shell
     pkg install crystal
@@ -251,6 +287,9 @@
   repo_href: https://github.com/termux/termux-packages/tree/master/packages/crystal
   repo_description: Crystal package manifest in the Termux package repository on GitHub
   repology: termux/crystal-lang
+
+### Docker
+
 - type: crystal
   os: Docker
   arch: [x86_64]
@@ -262,6 +301,7 @@
   repo_href: https://hub.docker.com/r/crystallang/crystal/
   repo_description: crystallang's Crystal image on Docker Hub
   repology: crystal
+
 - type: community
   os: Docker
   arch: [x86_64, aarch64]
@@ -272,6 +312,9 @@
     ```
   repo_href: https://hub.docker.com/r/84codes/crystal
   repo_description: 84codes' Crystal image on Docker Hub
+
+### Tools
+
 - type: crystal
   os: Tools
   arch: [x86_64, aarch64]
@@ -283,6 +326,7 @@
     ```
   repo_href: https://github.com/crystal-lang/install-crystal
   repo_description: GitHub repo for `install-crystal` action
+
 - type: community
   os: Tools
   arch: [x86_64, aarch64]
