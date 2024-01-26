@@ -139,8 +139,14 @@ pre {
 
 :not(pre) > code,
 dd > pre {
-  padding: 0.2em 0.4em;
-  border-radius: 6px;
+  &:not(.low-key) {
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+  }
+}
+.title :not(pre) > code {
+  background: transparent;
+  padding: 0;
 }
 
 kbd {
