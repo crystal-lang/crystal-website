@@ -13,16 +13,16 @@
     <div class="example-tab" id="{{ sample.slug }}">
       <div class="example-description">
         <h3>{{ sample.title }}</h3>
-        {{ sample.description | markdownify }}
+        {{- sample.description | markdownify }}
         {%- if sample.read_more %}
           <div class="read-more">
-            {{ sample.read_more | markdownify | replace: '<p>', '' | replace: '</p>', '' }}
+            {{- sample.read_more | markdownify | replace: '<p>', '' | replace: '</p>', '' }}
           </div>
         {%- endif %}
       </div>
 
       <div class="example-code {% if sample.runnable %} runnable{% endif %}">
-        {{ sample.content | markdownify }}
+        {{- sample.content | markdownify }}
       </div>
     </div>
   {%- endfor %}

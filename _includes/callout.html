@@ -2,6 +2,6 @@
   {%- assign title_from_callout = include.callout | capitalize %}
   <div class="callout-title">{{ include.title | default: title_from_callout }}</div>
   <div markdown="1">
-    {{ include.content }}
+    {{- include.content }}
   </div>
 </aside>

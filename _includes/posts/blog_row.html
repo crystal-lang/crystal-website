@@ -7,7 +7,7 @@
           <span class="author_name">{{ site.data.blog_authors[author].name }}</span>
           {%- if author == authors.last %}
             <span class="date">{{ include.post.date | date_to_string }}</span>
-          {% endif -%}
+          {%- endif -%}
         </div>
       {%- endfor -%}
 

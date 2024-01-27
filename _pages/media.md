@@ -18,14 +18,14 @@ to use our brand and logos.
 > Make sure to follow the [guidelines](#guidelines) described below when using any of this material.
 
 <div class="cards-list">
-  {% include media/gallery_item.html img="media/crystal_logo.svg" name="Logo" %}
-  {% include media/gallery_item.html img="media/crystal_logo-stacked_version.svg" name="Logo stacked" %}
-  {% include media/gallery_item.html img="media/crystal_icon.svg" name="Icon" %}
+  {%- include media/gallery_item.html img="media/crystal_logo.svg" name="Logo" %}
+  {%- include media/gallery_item.html img="media/crystal_logo-stacked_version.svg" name="Logo stacked" %}
+  {%- include media/gallery_item.html img="media/crystal_icon.svg" name="Icon" %}
 </div>
 
 <div class="link-item">
   <a href="/media/crystal-media-kit-6e57ec7.zip">
-    {% include icons/download.svg %}
+    {%- include icons/download.svg %}
     Download all assets in a zip file
   </a>
 </div>
@@ -33,9 +33,9 @@ to use our brand and logos.
 ### Color
 
 <div class="cards-list">
-  {% include media/color_sample.html color="Black" hex="#000" %}
-  {% include media/color_sample.html color="White" hex="#FFF" %}
-  {% include media/color_sample.html color="Gray" hex="#777" %}
+  {%- include media/color_sample.html color="Black" hex="#000" %}
+  {%- include media/color_sample.html color="White" hex="#FFF" %}
+  {%- include media/color_sample.html color="Gray" hex="#777" %}
 </div>
 
 ### Font
@@ -46,7 +46,7 @@ to use our brand and logos.
 
 <div class="link-item">
   <a href="https://fonts.google.com/selection?query=robot&selection.family=Roboto+Mono:500|Roboto:400,500" target="_blank">
-    {% include icons/font-download.svg %}
+    {%- include icons/font-download.svg %}
     Get them from Google Fonts
   </a>
 </div>
@@ -83,7 +83,7 @@ to use our brand and logos.
 
 <div class="link-item">
   <a href="mailto:crystal@manas.tech">
-    {% include icons/alternate-mail.svg %}
+    {%- include icons/alternate-mail.svg %}
     crystal@manas.tech
   </a>
 </div>

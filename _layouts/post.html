@@ -7,12 +7,12 @@ layout: base
 <article class="post" itemscope itemtype="https://schema.org/Article">
   <hgroup>
     <h1 class="post-title">{{ page.page_title | default: page.title }}</h1>
-    {% if page.subtitle %}
+    {%- if page.subtitle %}
     <h1 class="subtitle">{{ page.subtitle }}</h1>
-    {% endif %}
+    {%- endif %}
   </hgroup>
 
-  {% include posts/meta.html post = page %}
+  {%- include posts/meta.html post = page %}
 
   <div class="content" itemprop="articleBody">{{ content }}</div>
 </article>
@@ -27,11 +27,11 @@ layout: base
 
 
 <nav class="post-pagination">
-  {% if page.next.url %}
+  {%- if page.next.url %}
     <a rel="next" href="{{page.next.url}}">{{page.next.title}}</a>
-  {% endif %}
+  {%- endif %}
 
-  {% if page.previous.url %}
+  {%- if page.previous.url %}
     <a rel="prev" href="{{page.previous.url}}">{{page.previous.title}}</a>
-  {% endif %}
+  {%- endif %}
 </nav>

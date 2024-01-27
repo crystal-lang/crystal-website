@@ -1,9 +1,9 @@
 {% assign dataset = include.channel | prepend: "packages-" -%}
-{% if dataset == "packages-" %}
-  {% assign dataset = "packages" -%}
-{% endif %}
+{% if dataset == "packages-" -%}
+  {%- assign dataset = "packages" -%}
+{% endif -%}
 <div class="install-panels">
-  {% include pages/install/group.html os=include.os dataset=dataset type="crystal" %}
-  {% include pages/install/group.html os=include.os dataset=dataset type="system" %}
-  {% include pages/install/group.html os=include.os dataset=dataset type="community" %}
+  {%- include pages/install/group.html os=include.os dataset=dataset type="crystal" %}
+  {%- include pages/install/group.html os=include.os dataset=dataset type="system" %}
+  {%- include pages/install/group.html os=include.os dataset=dataset type="community" %}
 </div>

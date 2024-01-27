@@ -10,10 +10,10 @@
 
   <div class="profiles">
     <a href="https://github.com/{{ include.profile.github_handle | default: include.slug }}" itemprop="url" title="{{ include.profile.github_handle | default: include.slug }} on GitHub" class="icon" aria-label="GitHub profile">
-      {% include icons/github.svg %}
+      {%- include icons/github.svg %}
     </a>
     <a href="https://forum.crystal-lang.org/u/{{ include.profile.forum_handle | default: include.slug }}" itemprop="url" title="{{ include.profile.forum_handle | default: include.slug }} on the Crystal Forum" class="icon" aria-label="Crystal Forum profile">
-      {% include icons/discourse.svg %}
+      {%- include icons/discourse.svg %}
     </a>
   </div>
 </div>

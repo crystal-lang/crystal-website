@@ -14,7 +14,7 @@ post:
 ---
 
 <div class="post-teaser">
-  {% include posts/meta.html post=page.post %}
+  {%- include posts/meta.html post=page.post %}
   <a href="{{ page.post.url }}" class="post-title">{{ page.post.title }}</a>
   <div class="excerpt">{{ page.post.summary }}</div>
 </div>
