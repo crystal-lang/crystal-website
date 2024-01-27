@@ -12,7 +12,7 @@
     {% for entry in entries %}
     <tr>
       <th>{{ entry.os }}</th>
-      <td>{{ entry.title | markdownify }}</td>
+      <td>{{ entry.title | markdownify | remove: '<p>' | remove: '</p>' }}</td>
       <td>
         {% for arch in entry.arch %}
           <a href="{{ entry.archive_href | liquify }}"><code class="low-key">{{ arch }}</code></a>{% unless forloop.last %}, {% endunless %}

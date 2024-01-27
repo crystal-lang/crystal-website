@@ -16,7 +16,7 @@
         {{ sample.description | markdownify }}
         {%- if sample.read_more %}
           <div class="read-more">
-            {{ sample.read_more | markdownify | replace: '<p>', '' | replace: '</p>', '' }}
+            {{ sample.read_more | markdownify | remove: '<p>' | remove: '</p>' }}
           </div>
         {%- endif %}
       </div>

@@ -32,7 +32,7 @@ section: community
         {{uip.category}}
       </td>
       <td>
-        {{uip.description | markdownify}}
+        {{uip.description | markdownify | remove: "<p>" | remove: "</p>" }}
       </td>
     </tr>
     {% endfor %}
