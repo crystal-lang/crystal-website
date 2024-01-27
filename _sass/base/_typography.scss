@@ -116,8 +116,12 @@ summary {
 }
 
 pre,
-:not(pre) > code {
+code {
   font-family: var(--code-font);
+}
+
+pre,
+:not(pre) > code {
   margin: 0;
   font-size: 80%;
 
