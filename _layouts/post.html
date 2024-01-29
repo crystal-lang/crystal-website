@@ -15,7 +15,20 @@ layout: base
   {% include posts/meta.html post = page %}
 
   <div class="content" itemprop="articleBody">{{ content }}</div>
+
+  {% include discourse_comments.html %}
+
+  {% if page.comment_href %}
+    <div class="row disqus">
+      <div class="col m2"></div>
+      <div class="col s12 m9">
+        <a href="{{ page.comment_href }}" class="btn btn-flat">Comment archive for this post</a>
+      </div>
+      <div class="col m1"></div>
+    </div>
+  {% endif %}
 </article>
+
 
 <nav class="post-pagination">
   {% if page.next.url %}

@@ -2,6 +2,7 @@
 title: "Interview with contributor Remilia Scarlet"
 author: beta-ziliani,Remilia
 summary: "Music playback projects in Crystal, games engines, and a bit of Lisp"
+comment_href: https://disqus.com/home/discussion/crystal-lang/interview_with_contributor_remilia_scarlet/
 ---
 
 Remilia Scarlet has been working with Crystal for her audio projects for a while now. We ask her about this experience, and here is what she has to say:

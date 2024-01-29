@@ -2,6 +2,7 @@
 title: Parallelism in Crystal
 summary: Use more of your core power
 author: waj,bcardiff
+comment_href: https://disqus.com/home/discussion/crystal-lang/parallelism_in_crystal_88/
 ---
 
 Crystal has made a huge step forward to have parallelism as a first class citizen. In short, you can set up the number of worker threads on runtime and each new fiber will be scheduled to run on one of them. Channel and select will work seamlessly. You are allowed to share memory between workers, but you will probably need to take care of some synchronization to keep the state consistent.

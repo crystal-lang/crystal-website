@@ -2,6 +2,7 @@
 title: "LLVM opaque pointer support has landed"
 author: HertzDevil
 summary: Updates to the LLVM bindings bring support for LLVM 15+ and significant improvements in codegen performance in the next release.
+comment_href: https://disqus.com/home/discussion/crystal-lang/llvm_opaque_pointer_support_has_landed_99/
 ---
 
 Crystal 1.8, the upcoming minor release, will support LLVM's opaque pointers for the first time, allowing the compiler to be built with LLVM 15 or above. Additionally, this update brings a significant improvement to compilation times.
