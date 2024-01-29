@@ -2,6 +2,7 @@
 title: Alpine-based Docker images
 summary: Using Crystal with brand new Docker images based on Alpine Linux
 author: straight-shoota
+comment_href: https://disqus.com/home/discussion/crystal-lang/alpine_based_docker_images/
 ---
 
 

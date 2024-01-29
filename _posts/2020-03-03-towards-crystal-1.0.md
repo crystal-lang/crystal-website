@@ -3,6 +3,7 @@ title: Towards Crystal 1.0
 summary: The upcoming efforts to release Crystal 1.0
 thumbnail: +
 author: bcardiff
+comment_href: https://disqus.com/home/discussion/crystal-lang/towards_crystal_10_23/
 ---
 
 Currently the main goal of the Crystal core team is to reach 1.0 in the near future. Since achieving that goal involves a number of non-obvious tradeoffs, we want to use this post to shed some light on those inherent tensions and how they drive our work and priorities for the next few releases.
