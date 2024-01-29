@@ -110,10 +110,11 @@ However it is possible to bootstrap from a different platform through cross-comp
 
 [**Read more about _Building from Source_**](/install/from_sources/)
 
-> **NOTE:** Getting Started
-> Once you have Crystal installed, check out the [getting started guide](https://crystal-lang.org/reference/getting_started/).
-
 <script src="/assets/js/copy-action.js"></script>
 <script>
 document.querySelectorAll(".install-entry pre").forEach(copy_action)
 </script>
+
+<hr class="full-width-rule" />
+
+{% include pages/install/cta.html %}
