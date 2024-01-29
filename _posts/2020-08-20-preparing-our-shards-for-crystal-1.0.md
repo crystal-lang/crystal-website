@@ -3,6 +3,7 @@ title: Preparing our shards for Crystal 1.0
 summary: How we can prepare our shards for Crystal 1.0 or for upstream changes of dependencies at any time.
 thumbnail: +
 author: bcardiff
+comment_href: https://disqus.com/home/discussion/crystal-lang/preparing_our_shards_for_crystal_10/
 ---
 
 A shard always has one or more dependencies. These dependencies are subject to change. The author might be more or less conservative regarding any breaking-changes. I want to revisit what are the mechanisms to check if the shard we are working on is up to date with the upcoming changes of its dependencies.
