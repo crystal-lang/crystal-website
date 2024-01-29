@@ -15,6 +15,8 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  samples:
+    output: false
 
 defaults:
   -
@@ -61,6 +63,12 @@ defaults:
       layout: event
       permalink: /events/:title/
       section: events
+      class: release
+  - scope:
+      path: ""
+      type: samples
+    values:
+      playground: true
 
 twitter:
   username: CrystalLanguage
