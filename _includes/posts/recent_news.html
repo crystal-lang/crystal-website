@@ -1,0 +1,11 @@
+<div class="featured-posts">
+  {% for post in site.posts limit: 4 %}
+  <div class="post-teaser">
+    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+
+    {% include posts/meta.html post=post %}
+
+    <div class="excerpt">{{ post.summary | default: post.excerpt | markdownify }}</div>
+  </div>
+  {% endfor %}
+</div>
