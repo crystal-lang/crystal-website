@@ -19,6 +19,13 @@
   }
 }
 
+@mixin link-with-icon-href($href, $url) {
+  &[href^="#{$href}"]::before {
+    content: "";
+    background-image: #{$url};
+  }
+}
+
 @mixin link-with-icon($image) {
   @include link-with-icon-base();
 
