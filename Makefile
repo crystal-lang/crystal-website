@@ -15,7 +15,7 @@ O ?= _site## Output path
 
 cache ?=1## enable caching for htmlproofer external link check
 
-htmlproofer = vendor/bin/htmlproofer
+htmlproofer = htmlproofer
 
 CONTENT_SOURCES := $(wildcard assets/**) $(wildcard _data/**) $(wildcard _events/**) $(wildcard _pages/**) $(wildcard _posts/**) $(wildcard _releases/**)
 SITE_SOURCES := feed.xml _config.yml index.html Makefile $(wildcard _includes/**) $(wildcard _layouts/**) $(wildcard _plugins/**) $(wildcard _sass/**) $(wildcard scripts/**) $(wildcard _style_guide/**)
@@ -54,7 +54,7 @@ fetch_opencollective: scripts/opencollective.cr
 	crystal $<
 
 .PHONY: check_html
-check_html: $(O) $(htmlproofer) ## Validates generated HTML
+check_html: $(O) ## Validates generated HTML
 	$(htmlproofer) $(O) \
 		--assume-extension \
 		--url-swap "\A\/(images):https://crystal-lang.org/\1" \
@@ -64,7 +64,7 @@ check_html: $(O) $(htmlproofer) ## Validates generated HTML
 		--check-img-http
 
 .PHONY: check_external_links
-check_external_links: $(O) $(htmlproofer) ## Validates external links in generated HTML
+check_external_links: $(O) ## Validates external links in generated HTML
 	$(htmlproofer) $(O) \
 		--assume-extension \
 		--url-swap "\A\/(api|docs|images|reference):https://crystal-lang.org/\1" \
@@ -72,10 +72,6 @@ check_external_links: $(O) $(htmlproofer) ## Validates external links in generat
 		--http-status-ignore 999 \
 		--external_only \
 		$(if $(cache),--timeframe '30d',)
-
-$(htmlproofer):
-	mkdir -p $(dir $@)
-	gem install --version 3.19.3 html-proofer --bindir $(dir $@)
 
 .PHONY: clean
 clean: ## Removes output directory
