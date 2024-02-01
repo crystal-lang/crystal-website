@@ -1,0 +1,39 @@
+@use "sass:map";
+
+@function font-size($key) {
+  @return map.get($font-sizes, $key);
+}
+
+.featured-posts {
+  margin-block-start: var(--block-flow-sm);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--min, 25em), 1fr));
+
+  gap: var(--block-flow-sm);
+
+  &--extra-highlight {
+    @media (min-width: 49em) {
+      > :first-child {
+        grid-column: 1 / -1;
+        margin-block-end: var(--block-flow-xs);
+
+        > .post-title {
+          font-size: font-size(h1);
+        }
+      }
+    }
+  }
+
+  @media (min-width: 60em) {
+    gap: var(--block-flow-md);
+  }
+
+  @media (min-width: 90em) {
+    // With sufficient screen width, author images move into the left gutter
+    margin-inline-start: -4.5em;
+  }
+
+  .post-title {
+    --link-underline: none;
+  }
+}
