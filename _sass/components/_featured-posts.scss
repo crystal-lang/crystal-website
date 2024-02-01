@@ -1,9 +1,3 @@
-@use "sass:map";
-
-@function font-size($key) {
-  @return map.get($font-sizes, $key);
-}
-
 .featured-posts {
   margin-block-start: var(--block-flow-sm);
   display: grid;

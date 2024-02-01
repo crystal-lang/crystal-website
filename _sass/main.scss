@@ -7,6 +7,8 @@
 @import "mixins/external-links";
 @import "mixins/link-with-icon";
 
+@import "base/functions";
+
 @layer reset {
   @import "reset";
 }
@@ -16,7 +18,6 @@
 }
 
 @layer defaults {
-  @import "base/functions";
   @import "base/fonts";
   @import "base/typography";
   @import "base/layout";
