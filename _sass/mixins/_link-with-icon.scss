@@ -14,13 +14,14 @@
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: contain;
+    mask-image: var(--link-icon);
   }
 }
 
 @mixin link-with-icon-href($href, $image) {
   &[href^="#{$href}"]::before {
     content: "";
-    mask-image: $image;
+    --link-icon: #{$image};
   }
 }
 
@@ -29,6 +30,6 @@
 
   &:before {
     content: "";
-    mask-image: $image;
+    --link-icon: #{$image};
   }
 }
