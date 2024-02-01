@@ -1,0 +1,86 @@
+---
+title: Sponsors
+description: These are the companies and individuals that help sustain Crystal's development.
+layout: base
+---
+{% capture header_title %}{{ site.data.sponsors.size }}+ {{ page.title }}{% endcapture %}
+
+{% include site/header.html header_title=header_title %}
+
+<main>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col s12 m8">
+      <table class="bordered" id="sponsors-tbl">
+        <thead>
+          <th></th>
+          <th><span>Supporter</span></th>
+          <th class='currency' data-sort-method='number' aria-sort="descending"><span>This month</span></th>
+          <th class='currency' data-sort-method='number'><span>All time</span></th>
+          <th class='since' data-sort-method='date'><span>Since</span></th>
+        </thead>
+        <tbody>
+          {% for sp in site.data.sponsors %}
+            {% capture sponsor_class %}level-{{sp.level}} sponsor{% endcapture %}
+            <tr class="{{sponsor_class}}">
+              <td class="col-logo">
+                {% if sp.logo %}
+                  <div class="logo">
+                    {% if sp.url %}
+                      <a href="{{sp.url}}" target="_blank" rel="sponsored nofollow">
+                        <img src="/assets/{{ sp.logo }}" />
+                      </a>
+                    {% else %}
+                      <img src="/assets/{{ sp.logo }}" />
+                    {% endif %}
+                  </div>
+                {% else %}
+                  &nbsp;
+                {% endif %}
+              </td>
+              <td class="name">
+                {% if sp.url %}
+                  <a href="{{sp.url}}" target="_blank" rel="sponsored nofollow">
+                    {{sp.name}}
+                  </a>
+                {% else %}
+                  {{sp.name}}
+                {% endif %}
+              </td>
+              <td class="currency">
+                {{sp.last_payment}}
+              </td>
+              <td class="currency">
+                {{sp.all_time}}
+              </td>
+              <td class="since">
+                {{sp.since}}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col s12 m3 offset-m1 sponsors-sidebar">
+      {% include sponsors_sidebar.html %}
+
+      <div class="row original">
+        <div class="col">
+          <h2>Original Sponsors</h2>
+          <p>Meet our original sponsors <a href="/sponsors/original-sponsors/">here</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="/assets/js/tablesort.js"></script>
+<script>
+  new Tablesort(document.getElementById('sponsors-tbl'));
+</script>
+
+</main>

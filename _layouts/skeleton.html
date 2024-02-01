@@ -14,7 +14,7 @@ layout: none
     </title>
     <meta charset='utf-8'>
     <!-- Import Google Icon Font -->
-    <link href='https://fonts.googleapis.com/icon?family=Material+Icons|Roboto+Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
     <link href="/assets/stylesheet.css" rel="stylesheet" />
     <link href='/feed.xml' rel='alternate' title='Atom 1.0' type='application/atom+xml'>
     <link href='/favicon.png' rel='icon' type='image/png'>
@@ -27,8 +27,7 @@ layout: none
   <body>
     {{ content }}
 
-    <script id="dsq-count-scr" src="//crystal-lang.disqus.com/count.js" async></script>
     <script src="/assets/js/bundle.js"></script>
-    {% include google_analytics.html %}
+    {% include site/google_analytics.html %}
   </body>
 </html>

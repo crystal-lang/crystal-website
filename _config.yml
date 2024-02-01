@@ -10,6 +10,11 @@ collections:
     output: true
   style_guide:
     output: false
+  events:
+    output: true
+  pages:
+    output: true
+    permalink: /:path/
 
 defaults:
   -
@@ -26,22 +31,31 @@ defaults:
     values:
       image: /assets/icon.png
       layout: post
+      permalink: /:year/:month/:day/:title/
       is_post: true
   -
     scope:
-      path: "install"
+      path: "_pages/install"
       type: pages
     values:
       image: /assets/icon.png
       layout: install
-      permalink: /install/:basename/
+
   - scope:
       path: ""
       type: releases
     values:
       layout: post
-      permalink: /:year/:month/:day/:title.html
+      permalink: /:year/:month/:day/:title/
       image: /assets/icon.png
+  -
+    scope:
+      path: ""
+      type: events
+    values:
+      image: /assets/icon.png
+      layout: page
+      permalink: /events/:title/
 
 twitter:
   username: CrystalLanguage
@@ -59,6 +73,9 @@ exclude:
 - vendor
 - netlify.toml
 
+sass:
+  style: compressed
+
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -68,3 +85,5 @@ kramdown:
       css_class: code_section
 
 repository: crystal-lang/crystal-website
+
+callouts: ["NOTE"]

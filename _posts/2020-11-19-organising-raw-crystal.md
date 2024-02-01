@@ -3,6 +3,7 @@ title: Organising a Crystal conference in 2020
 summary: An overview of what you can expect at Raw Crystal 2020 and some insight on the organisation process.
 thumbnail: +
 author: lbarasti
+comment_href: https://disqus.com/home/discussion/crystal-lang/organising_a_crystal_conference_in_2020/
 ---
 
 Since I started exploring Crystal, I've always been impressed with how supportive people in the community were. It's the kind of feeling that makes you look forward to engage with fellow humans sharing a passion for building things.
@@ -63,7 +64,7 @@ Attendees are registering from all over the world, with some fearless folks base
 <img src="/assets/blog/2020-11-raw-crystal-geo.png" width="617"  class="center" alt="Registrations across the word: 28 registrations in North America, 43 in Europe, 8 in South America, 7 between Asia and Australia."/>
 Around 50% of the registrations come from Europe; 30% of the registrations come from North America.
 
-# What's next?
+## What's next?
 A lot has been decided already, but I'm still working out a few crucial details - mainly, which software we'll be using to run and record the event.
 
 I am also looking forward to finalising the speakers line-up for you to see and plan your conference day.

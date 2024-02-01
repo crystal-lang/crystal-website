@@ -16,7 +16,8 @@ overrides = Array(Sponsor).new
     sponsors = Array(Sponsor).from_json(file)
     sponsors, overrides = sponsors.partition(&.overrides.nil?) if filename == "others.json"
     sponsors.each do |sponsor|
-      all_sponsors_map[sponsor.id] = sponsor.merge(all_sponsors_map[sponsor.id]?)
+      prev_sponsor = all_sponsors_map[sponsor.id]?
+      all_sponsors_map[sponsor.id] = prev_sponsor ? sponsor.merge(prev_sponsor) : sponsor
     end
   end
 end
@@ -52,8 +53,8 @@ File.open("#{__DIR__}/../_data/sponsors.csv", "w") do |file|
       csv.row sponsor.logo,
         sponsor.name,
         sponsor.url,
-        "#{currency}#{sponsor.last_payment.to_i}",
-        "#{currency}#{sponsor.all_time.to_i}",
+        "#{currency}#{sponsor.last_payment.to_i.format}",
+        "#{currency}#{sponsor.all_time.to_i.format}",
         sponsor.since.to_s("%b %-d, %Y"),
         level(sponsor)
     end

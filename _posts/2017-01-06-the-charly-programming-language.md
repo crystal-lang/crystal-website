@@ -9,16 +9,15 @@ author: lschutz
 
 *Today’s guest author is Leonard Schütz. He created the Charly programming language as a means to learn how to create a programming language, and after a first iteration in Ruby, he moved to Crystal to implement the language interpreter. In this post, he presents the language, shows how it works, and why he chose Crystal to implement it.*
 
-# Introduction
+## Introduction
 
 Charly is a dynamically typed and object-oriented programming language. The syntax is mostly inspired by languages like JavaScript or Ruby, but offers more freedom when writing. The first difference one might notice is the absence of semicolons or the missing need for parenthesis in most of the languages control structures. Charly, as it is right now, is just a toy language written in spare time.
 
-# How does it look?
+## How does it look?
 
 Below is an implementation of the [Bubblesort algorithm](https://en.wikipedia.org/wiki/Bubblesort) written in Charly. It is part of the standard library which is also written in Charly.
 
-<div class="code_section">
-{% highlight javascript %}
+```javascript
   func sort(sort_function) {
     const sorted = @copy()
 
@@ -41,13 +40,11 @@ Below is an implementation of the [Bubblesort algorithm](https://en.wikipedia.or
 
     sorted
   }
-{% endhighlight javascript %}
-</div>
+```
 
 This program prints out the [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set) in a 60x180 sized box.
 
-<div class="code_section">
-{% highlight javascript %}
+```javascript
 60.times(func(a) {
   180.times(func(b) {
     let x = 0
@@ -71,12 +68,11 @@ This program prints out the [Mandelbrot set](https://en.wikipedia.org/wiki/Mande
 
   write("\n")
 })
-{% endhighlight javascript %}
-</div>
+```
 
 [This link](https://gist.github.com/KCreate/62f0f135697ad3df3b3801b194b03acc) takes you to an expression parser / interpreter written entirely in Charly. It supports the addition and multiplication of integer values.
 
-# How does it work?
+## How does it work?
 
 First, Charly turns the source file into a list of tokens. A token is basically just a string with a type.
 A simple hello-world program may consist of the following tokens:
@@ -114,7 +110,7 @@ Depending on which value is on which side, this procedure might produce completl
 
 A `IdentifierLiteral` would load a value from the current scope, a `CallExpression` would invoke a pre-defined function and so on.
 
-# Why Crystal?
+## Why Crystal?
 
 The main reasons behind using Crystal for this project were speed and simplicity.
 
@@ -130,7 +126,7 @@ It took me about a week to rewrite most of the interpreter in Crystal, with only
 
 Another great thing about developing in Crystal, is that the compiler itself is also written in Crystal. This means Crystal is self-hosted. There were multiple occasions where I copied code from Crystal's compiler and adapted it for my own use. Crystal’s parser and lexer for example were really helpful in understanding how these things work (I had never written a parser and lexer before).
 
-# The Macro System
+## The Macro System
 
 The Macro system was really handy in a lot places. It was mainly used to avoid boilerplate and to follow the DRY pattern.
 
@@ -141,13 +137,13 @@ For some real examples of how the Macro system could be used, look at these file
 
 Crystal's standard library for example, uses macros to provide the [property](https://crystal-lang.org/api/master/Class.html#property%28%2Anames%29-macro) method. You can use it to avoid boilerplate when introducing new instance variables to your classes.
 
-# Conclusion
+## Conclusion
 
 In it’s current state, Charly is just a learning project for myself. At the moment, I wouldn’t recommend using it for anything serious beside as a learning resource on how to write an interpreter yourself. Charly is being developed on [GitHub](https://github.com/charly-lang), so feel free to open any issues, propose new features or even send your own pull requests. Feedback in the comments of this article is also greatly appreciated.
 
 I’ve started using Crystal around August 2016 and I’m absolutely in love with it. It is one of the most expressive and rewarding languages I have ever written code in. If you haven’t used Crystal before, you should try it out now.
 
-# About the Author
+## About the Author
 
 My name is Leonard Schütz, I'm a 16 year old student from Switzerland.
 I'm currently an apprentice at Siemens in the field of Healthcare, where I work mostly with PHP, EWS and other web technologies.
@@ -157,7 +153,7 @@ Feel free to follow me on [Twitter](https://twitter.com/leni4838), [GitHub](http
 
 Thanks for reading!
 
-# Links & Sources
+## Links & Sources
 
 * Leonard Schütz: [leonardschuetz.ch](https://leonardschuetz.ch)
 * Charly Programming Language: [charly-lang/charly](https://github.com/charly-lang/charly)

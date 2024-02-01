@@ -16,6 +16,7 @@
     margin-right: 11px;
     margin-top: -4px;
     border-radius: 50%;
+    object-fit: cover;
   }
 }
 
@@ -112,10 +113,6 @@ pre {
   pre {
     margin: 0 1em;
   }
-}
-
-.disqus {
-  margin-top: 100px;
 }
 
 .share {

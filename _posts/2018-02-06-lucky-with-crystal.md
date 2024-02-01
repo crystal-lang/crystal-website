@@ -32,12 +32,10 @@ This  allows you to focus on how to delight your customers with a speedy, reliab
 
 Let’s say we want to get all users whose names include “kat”. Here’s how we’d do it in Lucky:
 
-<div class="code_section">
-{% highlight ruby %}
+```ruby
 # Will find users with the name "Kathryn", "Katy", etc.
 UserQuery.new.name.ilike("kat%")
-{% endhighlight %}
-</div>
+```
 
 In Lucky you’ll get methods specific to the type of the column. This means that methods like  `lower` and `ilike` are only available for String columns. If you tried to call `lower` on an integer column by accident, Lucky will let you know at compile time. If you rename the `name` column to `full_name`, Lucky will show you all the places where you also need to make that change at compile-time.
 
@@ -49,11 +47,9 @@ One of the more annoying issues in Rails is forgetting to set the right HTTP met
 
 Here’s an example for deleting a comment:
 
-<div class="code_section">
-{% highlight ruby %}
+```ruby
 link_to "Delete", comment_path(@comment)
-{% endhighlight %}
-</div>
+```
 
 *Can you spot the issue?* The path is right, but I forgot to specify the HTTP verb. This is especially confusing for team members that are new to web development or REST.
 
@@ -61,18 +57,15 @@ link_to "Delete", comment_path(@comment)
 
 The right verb (DELETE) is automatically set for you:
 
-<div class="code_section">
-{% highlight ruby %}
+```ruby
 link "Delete comment", to: Comment::Delete.with(@comment.id)
-{% endhighlight %}
-</div>
+```
 
 ### Catch missing conditionals in actions
 
 Let’s say you have any action with a conditional like this:
 
-<div class="code_section">
-{% highlight ruby %}
+```ruby
 class SamlSignIns::Create < BrowserAction
   action do
     if user.present? && sso_enabled?
@@ -83,21 +76,18 @@ class SamlSignIns::Create < BrowserAction
     end
   end
 end
-{% endhighlight %}
-</div>
+```
 
 *Lucky will catch a bug for you and give you a helpful message to guide you in the right direction:*
 
-<div class="code_section">
-{% highlight ruby %}
+```ruby
 SamlSignIns::Create returned Lucky::Response | Nil, but it must return a Lucky::Response.
 
 Try this...
 
   ▸ Make sure to use a method like `render`, `redirect`, or `json` at the end of your action.
   ▸ If you are using a conditional, make sure all branches return a Lucky::Response.
-{% endhighlight %}
-</div>
+```
 
 In this case, we forgot to add an `else` condition that lets the user know that we couldn’t find a user account for them. Lucky is helpful enough to help guide us toward this solution.
 

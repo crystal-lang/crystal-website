@@ -2,7 +2,7 @@ core:
   beta-ziliani:
     name: Beta Ziliani
     status: active
-    role: Team lead
+    role: Team lead, Steering Council
     affiliation: Manas.Tech
 
   asterite:
@@ -12,11 +12,6 @@ core:
 
   bcardiff:
     name: Brian J. Cardiff
-    role: Co-Creator, Steering Council
-    status: active
-
-  waj:
-    name: Juan Wajnerman
     role: Co-Creator, Steering Council
     status: active
 
@@ -42,6 +37,14 @@ core:
     status: active
     affiliation: Manas.Tech
 
+  Blacksmoke16:
+    status: active
+    name: George Dietrich
+
+  RX14:
+    name: Stephanie Wilde-Hobbs
+    status: active
+
 admin:
   nditada:
     name: Nicolás di Tada
@@ -65,12 +68,23 @@ admin:
     role: Developer
     affiliation: Manas.Tech
 
+admin_alumni:
   caspiano:
     name: Caspian Baska
     role: Developer
     affiliation: Manas.Tech
 
+  mekhla:
+    name: Mekhla Mukherjee
+    role: Community Manager
+    affiliation: Manas.Tech
+    github_handle: mekhla18
+    forum_handle: mekhla18
+
 alumni:
+  waj:
+    name: Juan Wajnerman
+
   ggiraldez:
     name: Gustavo Giraldez
 
@@ -83,9 +97,4 @@ alumni:
   spalladino:
     name: Santiago Palladino
 
-  RX14:
-    name: Stephanie Wilde-Hobbs
-
 moderators:
-  Blacksmoke16:
-    name: George Dietrich

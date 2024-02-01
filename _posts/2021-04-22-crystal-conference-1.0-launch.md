@@ -12,7 +12,7 @@ Going forward, we want to continue the evolution of the language on delighting i
 
 The online conference takes place on **July 8, 2021**.
 
-### Why a Crystal 1.0 Launch Conference?
+## Why a Crystal 1.0 Launch Conference?
 
 * Many people have been a part of the Crystal universe for years, and many others are only now hearing about it. A conference is an ideal vehicle for those who’ve been around for a long time to show the newcomers what it’s all about.
 * Over the years, organizations and individuals have trusted Crystal and used it for their projects, some of them experiments and some of them core to their business. We want to give them a platform to share their stories in the hopes that it inspires others to follow in their footsteps.
@@ -26,7 +26,7 @@ See you there!
 
 ---
 
-### Call for Talks
+## Call for Talks
 
 We are inviting Crystal users, developers, and contributors in general to submit their talks for the Crystal 1.0 Conference.
 
