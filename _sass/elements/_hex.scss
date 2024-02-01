@@ -1,6 +1,9 @@
 :root {
   --cos-70: 0.34;
   --sin-70: 0.93;
+
+  --hex-bg: var(--white);
+  --hex-bg-hover: var(--tainted-white);
 }
 
 .hex {
@@ -30,8 +33,8 @@
     margin-inline: auto;
   }
 
-  color: var(--black);
-  font-weight: 600;
+  color: var(--primary-text);
+  font-weight: 500;
   text-transform: uppercase;
 
   &::before,
@@ -47,7 +50,7 @@
 
   &::before {
     z-index: -1;
-    background: white;
+    background: var(--hex-bg);
     clip-path: polygon(
       evenodd,
       var(--a) 0%,
@@ -61,8 +64,11 @@
   }
 
   &:not(.bordered) {
-    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 20%))
-      drop-shadow(0 1px 3px rgb(0 0 0 / 10%));
+    filter: var(
+      --hex-shadow,
+      drop-shadow(0 1px 2px rgb(0 0 0 / 20%))
+        drop-shadow(0 1px 3px rgb(0 0 0 / 10%))
+    );
     transition: filter 0.2s;
   }
 
@@ -91,14 +97,17 @@
     cursor: pointer;
 
     &:hover::before {
-      background-color: hsl(0, 0%, 95%);
+      background-color: var(--hex-bg-hover);
     }
 
     &:not(.bordered) {
       &:hover {
-        filter: drop-shadow(0 0 3px rgba(0 0 0 / 10%))
-          drop-shadow(0 1px 1px rgba(0 0 0 / 40%))
-          drop-shadow(0 1px 3px rgba(0 0 0 / 20%));
+        filter: var(
+          --hex-hover-shadow,
+          drop-shadow(0 0 3px rgba(0 0 0 / 10%))
+            drop-shadow(0 1px 1px rgba(0 0 0 / 40%))
+            drop-shadow(0 1px 3px rgba(0 0 0 / 20%))
+        );
       }
     }
   }
