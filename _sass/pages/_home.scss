@@ -50,8 +50,8 @@
 
     background-image: url(/assets/home/pattern.svg);
     background-repeat: no-repeat;
-    background-size: clamp(30vw, max(55rem, 75vw), 250vw) auto;
-    background-position: left top;
+    background-size: clamp(30vw, max(80rem, 50vw), 250vw) auto;
+    background-position: clamp(-15vw, -40rem + 50vw, 0px) top;
   }
 
   > * {
