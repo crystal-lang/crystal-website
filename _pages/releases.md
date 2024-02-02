@@ -8,30 +8,4 @@ page_title: |
 layout: page-wide
 section: releases
 ---
-<table class="releases">
-  <thead>
-    <tr>
-      <th scope="col">Version</th>
-      <th scope="col" colspan="2">Release Date</th>
-      <th scope="col" aria-label="Links"></th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign releases = site.releases | reverse %}
-    {% for release in releases %}
-      <tr {% if forloop.index0 == 0 %}class="latest-release"{% endif %}>
-        <th scope="row"><a href="{{ release.url }}">{{release.version}}</a></th>
-        <td class="release-date">
-          <time datetime="{{ release.date | date: '%F' }}">{{ release.date | date_to_string }}</time>
-        </td>
-        <td>
-          {% if forloop.index0 == 0 %}
-            <span class="pill">latest</span>
-          {% endif %}
-        </td>
-        <td>
-          {% include releases/links.html release = release %}
-        </td>
-    {% endfor %}
-  </tbody>
-</table>
+{% include pages/releases/releases-table.html %}
