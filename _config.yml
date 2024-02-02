@@ -75,6 +75,7 @@ twitter:
 
 exclude:
 - "*.nix"
+- "devenv*"
 - docker-compose.yml
 - docker-compose.*.yml
 - Gemfile
