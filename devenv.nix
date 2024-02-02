@@ -14,4 +14,5 @@
     markdownlint.enable = true;
     prettier.enable = true;
   };
+  pre-commit.settings.prettier.write = true;
 }
