@@ -22,11 +22,7 @@ table.releases {
     white-space: nowrap;
   }
 
-  .release-links {
-    &:not(:hover) {
-      > a {
-        opacity: 0.25;
-      }
-    }
+  .release-links:not(:hover) {
+    opacity: 0.25;
   }
 }
