@@ -73,12 +73,15 @@ body > header {
 
 .utilnav {
   display: flex;
-  justify-content: flex-end;
+  justify-self: end;
+  justify-content: end;
   align-items: center;
   gap: 1em;
 
-  @media (max-width: 50em) {
-    flex-direction: column;
+  body:not(.layout--home) & {
+    @media (max-width: 50em) {
+      flex-direction: column;
+    }
   }
 
   > a {

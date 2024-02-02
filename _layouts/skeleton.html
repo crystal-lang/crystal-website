@@ -21,6 +21,9 @@ layout: none
       title="Newsfeed (Atom)"
       type="application/atom+xml"
     />
+    {% if page.url == "/" %}
+    <link href="https://fosstodon.org/@CrystalLanguage" rel="me">
+    {%- endif %}
     <link href="/favicon.png" rel="icon" type="image/png" />
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <script src="/assets/js/bundle.js" defer></script>
