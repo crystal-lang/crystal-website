@@ -5,24 +5,23 @@
   &::before,
   > img {
     width: 1.3em;
-    height: 1.3em;
-    background-repeat: no-repeat;
+    aspect-ratio: 1;
     object-fit: contain;
     margin-inline-end: var(--padding-xxs);
   }
-
-  &:hover {
-    &::before,
-    > img {
-      opacity: 0.72;
-    }
+  &::before {
+    background-color: currentColor;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    mask-image: var(--link-icon);
   }
 }
 
-@mixin link-with-icon-href($href, $url) {
+@mixin link-with-icon-href($href, $image) {
   &[href^="#{$href}"]::before {
     content: "";
-    background-image: #{$url};
+    --link-icon: #{$image};
   }
 }
 
@@ -31,6 +30,6 @@
 
   &:before {
     content: "";
-    background-image: $image;
+    --link-icon: #{$image};
   }
 }
