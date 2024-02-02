@@ -6,7 +6,7 @@ comment_href: https://disqus.com/home/discussion/crystal-lang/bright_and_manas_p
 ---
 
 <center>
-<a href="https://brightsec.com/" target="_blank"><img src="/assets/sponsors/bright.png" alt="Bright logo" height="200"></a>
+<a href="https://brightsec.com/" target="_blank"><img src="/assets/blog/2024-02-02-bright-banner.jpg" alt="Bright logo"></a>
 </center>
 
 [Bright Security](https://brightsec.com/) is a developer-centric Dynamic Application Security Testing Solution, also known as a DAST. Founded in 2018, their mission is to help organizations ship secure Applications and APIs at the speed of business, by enabling quick & iterative scans to identify true and critical security vulnerabilities without compromising quality or software delivery speeds.
