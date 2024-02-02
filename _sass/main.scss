@@ -13,10 +13,6 @@
   @import "reset";
 }
 
-@layer frameworks {
-  @import "pygment_white";
-}
-
 @layer defaults {
   @import "base/fonts";
   @import "base/typography";
@@ -47,6 +43,7 @@
   @import "components/example-tabs";
   @import "components/featured-posts";
   @import "components/footer";
+  @import "components/highlight";
   @import "components/image-list";
   @import "components/link-actions";
   @import "components/navbar";
