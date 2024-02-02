@@ -1,6 +1,6 @@
 ---
 title: Crystal governance
-layout: page-body
+layout: page
 description: |
   This text outlines the governance process for Crystal. Governance is based
   around a steering council. The council has broad authority, which they seek to

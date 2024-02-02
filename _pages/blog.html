@@ -10,17 +10,7 @@ layout: wide
 section: blog
 ---
 
-<div class="featured-posts featured-posts--extra-highlight">
-  {% for post in site.posts limit: 5 %}
-  <div class="post-teaser">
-    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-
-    {% include posts/meta.html post=post %}
-
-    <div class="excerpt">{{ post.summary | default: post.excerpt | markdownify }}</div>
-  </div>
-  {% endfor %}
-</div>
+{% include posts/recent_news.html extra=true %}
 
 <hr class="full-width" />
 

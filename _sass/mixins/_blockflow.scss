@@ -5,7 +5,8 @@
     + * {
       margin-block-start: var(--block-flow, $width);
 
-      &:is(hr, .full-width-rule) {
+      &:is(hr, .full-width-rule),
+      &:is(.link-actions) {
         margin-block-start: var(--block-flow-md);
       }
     }
