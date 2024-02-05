@@ -18,11 +18,7 @@ body {
   min-height: 100vh;
   background-color: var(--background-main);
 
-  --main-width: min(100vw - 3rem, var(--container-max, 110ch));
-}
-
-body.layout--page {
-  --container-max: 120ch;
+  --main-width: min(100vw - 3rem, var(--container-max, 120ch));
 }
 
 body > * {
