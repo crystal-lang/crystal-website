@@ -25,8 +25,7 @@ layout: base
   </div>
 {% endif %}
 
-
-<nav class="post-pagination">
+<nav class="post-pagination" aria-label="Blog post navigation">
   {%- if page.next.url %}
     <a rel="next" href="{{page.next.url}}">{{page.next.title}}</a>
   {%- endif %}
