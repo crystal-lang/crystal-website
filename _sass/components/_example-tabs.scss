@@ -85,6 +85,7 @@
       grid-area: sample-side;
       transform: translateX(-105%);
       transition: transform 0.5s;
+      --link-underline: var(--link-underline-default);
 
       > h3 {
         color: currentColor;
