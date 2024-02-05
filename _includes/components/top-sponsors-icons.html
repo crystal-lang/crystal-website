@@ -1,0 +1,8 @@
+<div class="top-sponsors">
+  {%- for sponsor in site.data.top_sponsors %}
+    <a href="{{ sponsor.url }}" rel="nofollow sponsored">
+      <img src="/assets/{{ sponsor.logo }}" alt="">
+      {{- sponsor.name }}
+    </a>
+  {%- endfor %}
+</div>
