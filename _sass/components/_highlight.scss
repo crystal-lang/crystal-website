@@ -84,22 +84,22 @@
 
   // .kc = Keyword, constant
   // .n  = Name
-  :is(.kc, .n) {
+  // .nb = Name, builtin
+  // .nf = Name, function
+  :is(.kc, .n, .nb, .nf) {
     color: var(--md-code-hl-name-color);
   }
 
+  // .nc = Name, class
   // .no = Name, constant
-  // .nb = Name, builtin
   // .bp = Name, builtin pseudo
-  :is(.no, .nb, .bp) {
+  :is(.nc, .no, .bp) {
     color: var(--md-code-hl-constant-color);
   }
 
-  // .nc = Name, class
   // .ne = Name, exception
-  // .nf = Name, function
   // .nn = Name, namespace
-  :is(.nc, .ne, .nf, .nn) {
+  :is(.ne, .nn) {
     color: var(--md-code-hl-function-color);
   }
 
