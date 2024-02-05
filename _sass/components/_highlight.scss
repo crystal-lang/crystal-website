@@ -348,36 +348,3 @@
     }
   }
 }
-
-// ----------------------------------------------------------------------------
-// Rules: top-level
-// ----------------------------------------------------------------------------
-
-// [mobile -]: Align with body copy
-@include break-to-device(mobile) {
-  // Top-level code block
-  .md-content__inner > .highlight {
-    margin: 1em px2rem(-16px);
-
-    // Remove rounded borders
-    > .filename,
-    > pre > code {
-      border-radius: 0;
-    }
-
-    // Code block with line numbers - unfortunately, these selectors need to be
-    // overly specific so they don't bleed into code blocks in annotations.
-    > .highlighttable > tbody > tr > .filename span.filename,
-    > .highlighttable > tbody > tr > .linenos,
-    > .highlighttable > tbody > tr > .code > div > pre > code {
-      border-radius: 0;
-    }
-
-    // Code block result container
-    + .result {
-      margin-inline: px2rem(-16px);
-      border-inline-width: 0;
-      border-radius: 0;
-    }
-  }
-}
