@@ -99,7 +99,7 @@ kramdown:
 
 repository: crystal-lang/crystal-website
 
-callouts: ["NOTE"]
+callouts: ["INFO", "NOTE", "WARNING"]
 
 relative_links:
   enabled:     true
