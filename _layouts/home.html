@@ -13,11 +13,12 @@ site_title: The Crystal Programming Language
       <canvas height="130" id="logo-canvas" style="cursor:move" width="130"></canvas>
       {%- include img/crystal-name-logo.svg %}
     </div>
+    <div class="motto">
+      <h1 class="visually-hidden">Crystal</h1>
+      A language for humans and computers
+    </div>
     <div class="latest-release-info">
       <a href="{{ latest_release.url }}">Latest release: <strong>{{ latest_release.version }}</strong></a>
-    </div>
-    <div class="motto">
-      A language for humans and computers
     </div>
 
     <div class="actions">
@@ -27,12 +28,18 @@ site_title: The Crystal Programming Language
     </div>
   </div>
 
+  <h2 class="visually-hidden">Examples</h2>
+
   {%- include pages/home/examples.html %}
 </header>
+
+<hr class="visually-hidden">
 
 <main>
   {{- content }}
 </main>
+
+<hr class="visually-hidden">
 
 {% include site/edit-on-github.html %}
 <footer>

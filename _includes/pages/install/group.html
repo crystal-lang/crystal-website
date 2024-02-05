@@ -50,7 +50,10 @@
           {{- entry.example | markdownify }}
         </div>
         {%- if entry.repo_href %}
-          <a href="{{ entry.repo_href }}" title="{{ entry.repo_description }}" class="info">{% include icons/info.svg %}</a>
+          <a href="{{ entry.repo_href }}" title="{{ entry.repo_description }}" class="info">
+            {%- include icons/info.svg %}
+            <span class="visually-hidden">Repo info</span>
+          </a>
         {%- endif %}
       </div>
     {%- endfor %}
