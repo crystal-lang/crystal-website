@@ -10,7 +10,7 @@ layout: none
       {%- if layout.site_title -%}
         {{- layout.site_title}}
       {%- else -%}
-        {{- layout.page_title | liquify | default: page.title }} - The Crystal Programming Language
+        {{- layout.page_title | liquify | default: page.title | strip_html }} - The Crystal Programming Language
       {%- endif -%}
     </title>
     <meta charset="utf-8" />
