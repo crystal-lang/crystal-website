@@ -83,7 +83,7 @@
   }
 
   > .repo-badge {
-    --link-external: none;
+    --link-external-postfix: none;
     grid-area: version;
     justify-self: flex-end;
   }
@@ -104,7 +104,7 @@
     --link-hover-color: var(--light-text);
   }
   > .info {
-    --link-external: none;
+    --link-external-postfix: none;
     grid-area: info;
     font-size: 90%;
     justify-self: center;
