@@ -6,20 +6,20 @@
     <th class="since" data-sort-method="date"><span>Since</span></th>
   </thead>
   <tbody>
-    {% for sp in site.data.sponsors %}
-      {% capture sponsor_class %}level-{{sp.level}} sponsor{% endcapture %}
+    {%- for sp in site.data.sponsors %}
+      {%- capture sponsor_class %}level-{{sp.level}} sponsor{% endcapture %}
       <tr class="{{sponsor_class}}">
         <th class="name" scope="row">
-          {% if sp.url %}
+          {%- if sp.url %}
             <a href="{{sp.url}}" rel="sponsored nofollow">
-          {% endif %}
-              {% if sp.logo %}
+          {%- endif %}
+              {%- if sp.logo %}
                 <img src="/assets/{{ sp.logo }}" alt="" />
-              {% endif %}
+              {%- endif %}
               <span>{{sp.name}}</span>
-          {% if sp.url %}
+          {%- if sp.url %}
             </a>
-          {% endif %}
+          {%- endif %}
         </th>
         <td class="currency">
           {{sp.last_payment}}
@@ -31,7 +31,7 @@
           {{sp.since}}
         </td>
       </tr>
-    {% endfor %}
+    {%- endfor %}
   </tbody>
 </table>
 

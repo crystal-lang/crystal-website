@@ -6,16 +6,16 @@
 
     <p>
       <a href="{{ include.url }}" {% unless include.internal_link %}target="_blank"{% endunless %}class="with-icon">
-        {% if include.custom_icon %}
+        {%- if include.custom_icon %}
           <i class="extra-icons {{ include.icon }}"></i>
-        {% else %}
+        {%- else %}
           <i class="material-icons">{{ include.icon }}</i>
-        {% endif %}
+        {%- endif %}
         <span>{{ include.link_text }}</span>
       </a>
     </p>
-    {% unless include.continues %}
+    {%- unless include.continues %}
       <hr class="squares" />
-    {% endunless %}
+    {%- endunless %}
   </div>
 </div>

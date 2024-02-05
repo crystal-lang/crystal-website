@@ -2,74 +2,74 @@
   <div class="conference-session-list">
     <header><h2>Programme</h2></header>
     <div class="conference-sessions-grid">
-    {% for session in site.data.conference_talks %}
-        {% if session["Start time"] != lastStartTime %}
+    {%- for session in site.data.conference_talks %}
+        {%- if session["Start time"] != lastStartTime %}
         <div class="conference-slot-info">
           <time class="local-time" datetime="2021-07-08T{{ session["Start time"] }}+00:00" title="2021-07-08 {{ session["Start time"] }} UTC">{{ session["Start time"] }}</time>
         </div>
-        {% endif %}
-        {% assign lastStartTime = session["Start time"] %}
-        {% assign lastEndTime = session["End time"] %}
-        {% if session["Session type"] == "Long Break" or session["Session type"] == "Setup" %}
-            {% assign parts = session["Name"] | split: '-' %}
-            {% assign break_desc = parts | slice: 1, 1000 %}
+        {%- endif %}
+        {%- assign lastStartTime = session["Start time"] %}
+        {%- assign lastEndTime = session["End time"] %}
+        {%- if session["Session type"] == "Long Break" or session["Session type"] == "Setup" %}
+            {%- assign parts = session["Name"] | split: '-' %}
+            {%- assign break_desc = parts | slice: 1, 1000 %}
             <div class="conference-sessions-break">{{break_desc | join: '-'}}</div>
-          {% else %}
+          {%- else %}
           <div class="conference-session conference-session--{{ session['Room'] | slugify }} conference-session--span{{ session['Row span'] | default: 1 }}">
               <div class="presenter">
-                {% if session["Speaker picture"] %}
-                  {% assign parts = session["Speaker picture"] | split: ' (' %}
-                  {% assign parts = parts[1] | split: ')' %}
+                {%- if session["Speaker picture"] %}
+                  {%- assign parts = session["Speaker picture"] | split: ' (' %}
+                  {%- assign parts = parts[1] | split: ')' %}
                   <div class="speaker-image" style="background-image: url('{{ parts[0] }}')"></div>
-                {% endif %}
+                {%- endif %}
                 <div>
                   <div>{{ session["Presenter"] }}</div>
-                    {% if session["Link"] %}
+                    {%- if session["Link"] %}
                       <p class="session-link">
                         <a href="https://github.com/{{ session["Link"] }}">@{{ session["Link"] }}</a>
                       </p>
-                    {% endif %}
+                    {%- endif %}
                 </div>
               </div>
               <h3>{{ session["Talk title"] }}</h3>
 
-              {% if session["Theme"] %}
+              {%- if session["Theme"] %}
                 <div class="icon-prefix">
-                  {% include icons/label.svg %}
-                  {{ session["Theme"] }}
+                  {%- include icons/label.svg %}
+                  {{- session["Theme"] }}
                 </div>
-              {% endif %}
+              {%- endif %}
               <div class="icon-prefix">
-                {% include icons/schedule.svg %}
-                {{ session["Duration (minutes)"] }} minutes at {{ session["Room" ] }}
+                {%- include icons/schedule.svg %}
+                {{- session["Duration (minutes)"] }} minutes at {{ session["Room" ] }}
               </div>
               <p class="session-links">
-                {% if session["Video Link"] %}
+                {%- if session["Video Link"] %}
                   <div class="link-item">
                     <a href="{{ session["Video Link"] }}">
-                      {% include icons/videocam.svg %}
+                      {%- include icons/videocam.svg %}
                       Recording
                     </a>
                   </div>
-                {% endif %}
-                {% if session["Slides Link"] %}
+                {%- endif %}
+                {%- if session["Slides Link"] %}
                   <div class="link-item">
                     <a href="{{ session["Slides Link"] }}">
-                      {% include icons/slideshow.svg %}
+                      {%- include icons/slideshow.svg %}
                       Slides
                     </a>
                   </div>
-                {% endif %}
+                {%- endif %}
               </p>
 
-              {% if session["Abstract"] %}
+              {%- if session["Abstract"] %}
                 <p class="session-summary">
-                  {{ session["Abstract"] }}
+                  {{- session["Abstract"] }}
                 </p>
-              {% endif %}
+              {%- endif %}
           </div>
-          {% endif %}
-        {% endfor %}
+          {%- endif %}
+        {%- endfor %}
       </div>
   </div>
 </div>

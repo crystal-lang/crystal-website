@@ -1,5 +1,5 @@
 <nav class="breadcrumbs" aria-label="Breadcrumbs">
-  {% capture separator %}<span aria-hidden="true">/</span>{% endcapture %}
+  {%- capture separator %}<span aria-hidden="true">/</span>{% endcapture -%}
   {%- assign page_title = nil -%}
   {%- assign page_nav = nil -%}
 
@@ -7,38 +7,38 @@
     <a href="/" rel="index up">Home</a>
   </span>
 
-  {% if include.page.section -%}
+  {%- if include.page.section -%}
     {%- assign section = site.data.sections[include.page.section] -%}
-    {% for item in section.breadcrumbs %}
-      {% if item.nav %}
-        {% assign page_nav = item.nav %}
-      {% endif %}
+    {%- for item in section.breadcrumbs %}
+      {%- if item.nav %}
+        {%- assign page_nav = item.nav -%}
+      {%- endif %}
       {%- if item.url == include.page.url -%}
-        {% assign page_title = item.title %}
-        {% break %}
+        {%- assign page_title = item.title -%}
+        {%- break -%}
       {%- endif -%}
 
-      {{ separator }}
+      {{- separator }}
 
       <div class="breadcrumb">
-      {% if item.url -%}
+      {%- if item.url -%}
         <a href="{{ item.url }}" rel="up">{{ item.title }}</a>
       {%- else -%}
         <span>{{ item.title }}</span>
       {%- endif %}
       </div>
-    {% endfor %}
+    {%- endfor %}
   {%- endif %}
 
-  {% if page_title %}
-    {{ separator }}
+  {%- if page_title %}
+    {{- separator }}
 
     <span class="breadcrumb">
       <a href="{{ include.page.url }}" aria-current="page">{{ page_title }}</a>
     </span>
-  {% endif %}
+  {%- endif %}
 </nav>
 
 <nav class="section-links" aria-label="Section links">
-  {% include site/nav_links.html section=page_nav %}
+  {%- include site/nav_links.html section=page_nav %}
 </nav>

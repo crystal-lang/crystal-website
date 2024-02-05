@@ -1,9 +1,9 @@
 <div class="featured-posts {% if include.extra %}featured-posts--extra-highlight{% endif %}">
   {%- if include.extra %}
     {%- assign limit = 5 %}
-  {% else %}
+  {%- else %}
     {%- assign limit = 4 %}
-  {% endif %}
+  {%- endif %}
   {%- for post in site.posts limit: limit %}
   <div class="post-teaser">
     <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>

@@ -3,7 +3,7 @@
 >
 {% assign authors = include.post.author | split: ',' %}
 <ul class="avatar-list" aria-hidden="true">
-  {% for author in authors %}
+  {%- for author in authors %}
   <li>
     <a title="{{ site.data.blog_authors[author].name | default: author }}">
       <img
@@ -12,10 +12,10 @@
       />
     </a>
   </li>
-  {% endfor %}
+  {%- endfor %}
 </ul>
 <div class="author-names">
-  {% for author in authors %}
+  {%- for author in authors %}
   <span class="author-name" title="{{ author }}">{{ site.data.blog_authors[author].name | default: author }}</span>
-  {% endfor %}
+  {%- endfor %}
 </div>

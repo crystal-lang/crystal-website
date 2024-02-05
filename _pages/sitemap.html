@@ -3,34 +3,34 @@ title: Sitemap
 section: internal
 ---
 <section class="content">
-  {% assign sections = site.data.sections | h_to_a | sort: "weight", "last" %}
-  {% for section in sections %}
+  {%- assign sections = site.data.sections | h_to_a | sort: "weight", "last" %}
+  {%- for section in sections %}
     <h2>{{ section.title | default: section.id }}</h2>
     <ul>
-    {% assign entries = site.documents | where: "section", section.id %}
-    {% for entry in entries %}
-      {% if entry.collection == "posts" or entry.collection == "releases" or entry.url == null %}
-        {% continue %}
-      {% endif %}
-      {% assign url = entry.url | prepend: "<code>" | append: "</code>" %}
-      {% assign path = entry.url | remove_first: "/" | split: "/" %}
+    {%- assign entries = site.documents | where: "section", section.id %}
+    {%- for entry in entries %}
+      {%- if entry.collection == "posts" or entry.collection == "releases" or entry.url == null %}
+        {%- continue %}
+      {%- endif %}
+      {%- assign url = entry.url | prepend: "<code>" | append: "</code>" %}
+      {%- assign path = entry.url | remove_first: "/" | split: "/" %}
       <li>
-        {% assign title = entry.title | default: entry.subtitle | default: url %}
-        {% if entry.redirect_to %}
-          {{ title }} → <a href="{{ entry.redirect_to }}" rel="nofollow">{{ entry.redirect_to }}</a>
-        {% else %}
+        {%- assign title = entry.title | default: entry.subtitle | default: url %}
+        {%- if entry.redirect_to %}
+          {{- title }} → <a href="{{ entry.redirect_to }}" rel="nofollow">{{ entry.redirect_to }}</a>
+        {%- else %}
           <a href="{{ entry.url }}"><strong>{{ title }}</strong></a>
-        {% endif %}
-        {% assign slug_title = title | slugify %}
-        {% assign down_title = title | downcase %}
-        {% if slug_title != path.last and down_title != path.last %}
+        {%- endif %}
+        {%- assign slug_title = title | slugify %}
+        {%- assign down_title = title | downcase %}
+        {%- if slug_title != path.last and down_title != path.last %}
           (<code>{{ path.last }}</code>)
-        {% endif %}
-        {% unless entry.collection == "pages" %}
+        {%- endif %}
+        {%- unless entry.collection == "pages" %}
           ({{ entry.collection }})
-        {% endunless %}
+        {%- endunless %}
       </li>
-    {% endfor %}
+    {%- endfor %}
     </ul>
-  {% endfor %}
+  {%- endfor %}
 </section>

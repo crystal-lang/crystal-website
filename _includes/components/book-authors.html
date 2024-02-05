@@ -1,10 +1,10 @@
 <div class="book-authors">
-  {% for author in include.authors %}
+  {%- for author in include.authors %}
     <div class="book-author">
       <img class="book-author-icon" src="{{ author.image }}" alt="Author's picture" />
       <p class="small">
-        {{ author.description }}
+        {{- author.description }}
       </p>
     </div>
-  {% endfor %}
+  {%- endfor %}
 </div>

@@ -13,17 +13,17 @@ section: blog
   <link href="{{ '/releases/feed.xml' | absolute_url }}" rel="related" type="application/atom+xml" />
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ page.url | absolute_url | xml_escape }}</id>
-  {%- assign documents = site.releases | concat: site.posts | sort: 'date' | reverse -%}
+  {%- assign documents = site.releases | concat: site.posts | sort: 'date' | reverse %}
   {%- for post in documents limit:10 %}
     <entry>
       <title>{{ post.title | xml_escape }}</title>
-      {%- assign authors = post.author | split: ',' -%}
+      {%- assign authors = post.author | split: ',' %}
       {%- for author in authors %}
       <author>
         <name>{{ site.data.blog_authors[author].name | default: author }}</name>
         <uri>https://github.com/{{ author }}/</uri>
       </author>
-      {% endfor -%}
+      {%- endfor %}
       <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />
       <published>{{ post.date | date_to_xmlschema }}</published>
       <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
@@ -33,5 +33,5 @@ section: blog
       {%- endif %}
       <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">{{ post.content | strip | xml_escape }}</content>
     </entry>
-  {% endfor %}
+  {%- endfor %}
 </feed>
