@@ -1,4 +1,4 @@
-.visually-hidden:not(:focus, :active) {
+:is([hidden], .visually-hidden):not(:focus, :active) {
   clip-path: inset(100%);
   height: 1px;
   width: 1px;
