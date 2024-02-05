@@ -17,6 +17,13 @@
   --light-text: hsl(0, 0%, 80%);
   --lighter-text: var(--white);
 
+  .highlight {
+    --md-code-fg-color: var(--light-text);
+
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-comment-color: var(--light-gray);
+  }
+
   --code-bg: hsl(0, 0%, 13%);
   --hex-bg: var(--black);
   --hex-bg-hover: var(--black);
