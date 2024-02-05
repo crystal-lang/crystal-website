@@ -13,22 +13,22 @@ layout: none
         {{- layout.page_title | liquify | default: page.title | strip_html }} - The Crystal Programming Language
       {%- endif -%}
     </title>
-    <meta charset="utf-8" />
-    <link href="/assets/stylesheet.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <link href="/assets/stylesheet.css" rel="stylesheet">
     <link
       href="/feed.xml"
       rel="alternate"
       title="Newsfeed (Atom)"
       type="application/atom+xml"
-    />
+    >
     {%- if page.url == "/" %}
     <link href="https://fosstodon.org/@CrystalLanguage" rel="me">
     {%- endif %}
-    <link href="/favicon.png" rel="icon" type="image/png" />
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/favicon.png" rel="icon" type="image/png">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <script src="/assets/js/bundle.js" defer></script>
     {%- seo title=false %}
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="preload" href="/assets/fonts/roboto/roboto-v30-latin-300.woff2" as="font" type="font/woff2">
     <link rel="preload" href="/assets/fonts/roboto/roboto-v30-latin-regular.woff2" as="font" type="font/woff2">
     <link rel="preload" href="/assets/fonts/roboto/roboto-v30-latin-500.woff2" as="font" type="font/woff2">
