@@ -8,9 +8,9 @@ layout: none
   <head>
     <title>
       {%- if layout.site_title -%}
-        {{ layout.site_title}}
+        {{- layout.site_title}}
       {%- else -%}
-        {{ layout.page_title | liquify | default: page.title }} - The Crystal Programming Language
+        {{- layout.page_title | liquify | default: page.title }} - The Crystal Programming Language
       {%- endif -%}
     </title>
     <meta charset="utf-8" />
@@ -21,10 +21,13 @@ layout: none
       title="Newsfeed (Atom)"
       type="application/atom+xml"
     />
+    {%- if page.url == "/" %}
+    <link href="https://fosstodon.org/@CrystalLanguage" rel="me">
+    {%- endif %}
     <link href="/favicon.png" rel="icon" type="image/png" />
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <script src="/assets/js/bundle.js" defer></script>
-    {% seo title=false %}
+    {%- seo title=false %}
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="preload" href="/assets/fonts/roboto/roboto-v30-latin-300.woff2" as="font" type="font/woff2">
     <link rel="preload" href="/assets/fonts/roboto/roboto-v30-latin-regular.woff2" as="font" type="font/woff2">
@@ -32,6 +35,6 @@ layout: none
   </head>
 
   <body class="layout--{{ page.layout }}">
-    {{ content }}
+    {{- content }}
   </body>
 </html>

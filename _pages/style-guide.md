@@ -15,11 +15,11 @@ Where applicable links to a component's Sass partial and/or Jekyll include are p
 
 <div class="container">
   <ul>
-    {% for type in componentsByType %}
+    {%- for type in componentsByType %}
       <li>
         <a href="#{{ type.name }}">{{ type.name | capitalize }}</a>
       </li>
-    {% endfor %}
+    {%- endfor %}
   </ul>
 </div>
 

@@ -1,0 +1,180 @@
+.layout--home > header {
+  color-scheme: dark;
+  grid-template-columns:
+    1fr minmax(min-content, var(--main-width)) minmax(0, min-content)
+    1fr;
+  grid-template-areas:
+    ". main    util    util"
+    ". intro   intro   .   "
+    ". samples samples .   ";
+
+  position: relative;
+  background-color: var(--black);
+
+  --primary-text: var(--white);
+  --link-color: currentColor;
+  --link-hover-color: hsl(0, 0%, 80%);
+  --light-text: hsl(0, 0%, 80%);
+  --lighter-text: var(--white);
+
+  .highlight {
+    --md-code-fg-color: var(--light-text);
+
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-comment-color: var(--light-gray);
+  }
+
+  --code-bg: hsl(0, 0%, 13%);
+  --hex-bg: var(--black);
+  --hex-bg-hover: var(--black);
+
+  --hex-hover-shadow: drop-shadow(0 0 1px rgba(255 255 255 / 10%))
+    drop-shadow(0 1px 0px rgba(255 255 255 / 40%))
+    drop-shadow(0 1px 1px rgba(255 255 255 / 20%));
+  --hex-shadow: drop-shadow(-0.5px -0.5px 0 rgba(255, 255, 255, 0.075))
+    drop-shadow(0.5px -0.5px 0 rgba(255, 255, 255, 0.075))
+    drop-shadow(-0.5px 0.5px 0 rgba(255, 255, 255, 0.075))
+    drop-shadow(0.5px 0.5px 0 rgba(255, 255, 255, 0.075));
+
+  --hex-hover-shadow: drop-shadow(-0.5px -0.5px 0 rgba(255, 255, 255, 0.45))
+    drop-shadow(0.5px -0.5px 0 rgba(255, 255, 255, 0.45))
+    drop-shadow(-0.5px 0.5px 0 rgba(255, 255, 255, 0.45))
+    drop-shadow(0.5px 0.5px 0 rgba(255, 255, 255, 0.45));
+
+  color: var(--primary-text);
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 0;
+    opacity: 0.5;
+
+    background-image: url(/assets/home/pattern.svg);
+    background-repeat: no-repeat;
+    background-size: clamp(30vw, max(80rem, 50vw), 250vw) auto;
+    background-position: clamp(-15vw, -40rem + 50vw, 0px) top;
+  }
+
+  > * {
+    z-index: 1;
+  }
+
+  > .mainnav {
+    justify-self: center;
+    font-size: var(--font-size-lead);
+
+    ul {
+      column-gap: var(--padding-sm);
+    }
+  }
+
+  @media (max-width: 30em) {
+    grid-template-areas:
+      ". main    main    util"
+      ". intro   intro   util   "
+      ". samples samples samples   ";
+
+    > .mainnav {
+      justify-self: start;
+    }
+    > .utilnav {
+      flex-direction: column;
+      align-self: start;
+    }
+  }
+
+  > .intro {
+    grid-area: intro;
+    display: grid;
+    grid-template-columns: minmax(11em, 18em) 1fr;
+    grid-template-rows: 3fr 1fr auto;
+    column-gap: var(--block-flow-xs);
+    row-gap: var(--block-flow-xs);
+    grid-template-areas:
+      "logo      motto"
+      "text-logo actions"
+      "release   actions";
+    justify-items: center;
+    align-items: center;
+    margin-block: var(--block-flow-sm);
+
+    @media (max-width: 40em) {
+      margin-block-start: var(--block-flow-sm);
+      grid-template-columns: 2fr auto 1fr;
+      grid-template-rows: 3fr 2fr auto auto;
+      grid-template-rows: initial;
+      grid-template-areas:
+        "logo text-logo ."
+        "logo release ."
+        "motto motto motto"
+        "actions actions actions";
+    }
+
+    > .motto {
+      grid-area: motto;
+      font-weight: 300;
+      font-size: font-size(h2);
+      align-self: end;
+      text-align: center;
+      text-wrap: balance;
+    }
+
+    > .latest-release-info {
+      @extend .small;
+      grid-area: release;
+      align-self: start;
+    }
+
+    > .brand-logo {
+      // grid-area: logo;
+      // display: flex;
+      // align-items: center;
+      // row-gap: var(--padding-sm);
+      // column-gap: var(--padding-md);
+      display: contents;
+
+      // @media (min-width: 40em) {
+      //   margin-block-start: var(--block-flow-sm);
+      //   flex-direction: column;
+      // }
+      @media (max-width: 40em) {
+        > canvas {
+          justify-self: end;
+        }
+      }
+
+      > canvas {
+        grid-area: logo;
+      }
+
+      > svg {
+        fill: currentColor;
+        width: 11em;
+        grid-area: text-logo;
+        align-self: end;
+      }
+    }
+
+    .actions {
+      grid-area: actions;
+
+      display: grid;
+      width: fit-content;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: var(--padding-xs);
+    }
+  }
+
+  margin-block-end: var(--block-flow-md);
+
+  > .example-tabs {
+    grid-area: samples;
+    margin-block-end: calc(-1 * var(--block-flow-md));
+  }
+}

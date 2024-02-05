@@ -1,21 +1,19 @@
+{% if page.url != "/" %}
 <div class="nav-start">
   <a class="site-logo" id="logo-container" {% if page.url != "/" %}href="/"{% endif %} aria-label="Homepage">
     <canvas height="70" id="logo-canvas" width="70" role="presentation"></canvas>
-
-    {% if page.url == "/" %}
-      {% include img/crystal-name-logo.svg %}
-    {% endif %}
   </a>
 </div>
+{% endif %}
 
 {% if page.url != "/" %}
   <div class="section-nav">
-    {% include site/breadcrumbs.html page=page %}
+    {%- include site/breadcrumbs.html page=page %}
   </div>
 {% endif %}
 
 <nav class="mainnav">
-  {% include site/nav_links.html section="main" %}
+  {%- include site/nav_links.html section="main" %}
 </nav>
 
 <div class="utilnav">
@@ -26,7 +24,7 @@
     title="Crystal repository on GitHub"
     aria-label="GitHub"
   >
-    {% include icons/github.svg %}
+    {%- include icons/github.svg %}
   </a>
   <a
     class="icon"
@@ -35,7 +33,7 @@
     title="Crystal Forum"
     aria-label="Crystal Forum"
   >
-    {% include icons/discourse.svg %}
+    {%- include icons/discourse.svg %}
   </a>
   <a
     class="icon"
@@ -45,6 +43,6 @@
     aria-label="Newsfeed"
     type="application/atom+xml"
   >
-    {% include icons/rss.svg %}
+    {%- include icons/rss.svg %}
   </a>
 </div>

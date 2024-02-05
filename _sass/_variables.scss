@@ -46,7 +46,26 @@ $font-sizes: (
   --border-color: hsl(0, 0%, 87%);
   --border-color-dark: hsl(0, 0%, 84%);
 
-  --warning-light: hsl(31.2deg 100% 96%);
+  --warning: hsl(31.2deg 100% 45%);
+
+  // Code color shades
+  --md-code-fg-color: hsla(200, 18%, 26%, 1);
+  --md-code-bg-color: hsla(200, 0%, 96%, 1);
+
+  // Code highlighting syntax color shades
+  --md-code-hl-number-color: hsla(291, 45%, 50%, 1);
+  --md-code-hl-special-color: hsla(0, 67%, 50%, 1);
+  --md-code-hl-function-color: hsla(219, 54%, 51%, 1);
+  --md-code-hl-constant-color: hsla(17, 52%, 47%, 1);
+  --md-code-hl-keyword-color: hsla(219, 54%, 45%, 1);
+  --md-code-hl-string-color: hsla(130, 48%, 38%, 1);
+
+  --md-code-hl-name-color: var(--md-code-fg-color);
+  --md-code-hl-operator-color: var(--light-gray);
+  --md-code-hl-punctuation-color: var(--light-gray);
+  --md-code-hl-comment-color: var(--lighter-gray);
+  --md-code-hl-generic-color: var(--light-gray);
+  --md-code-hl-variable-color: hsla(45, 28%, 38%, 1);
 
   // Fonts
   // -------------

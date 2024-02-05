@@ -5,17 +5,15 @@
 @import "mixins/box-link";
 @import "mixins/circle-image";
 @import "mixins/external-links";
+@import "mixins/link-with-icon";
+
+@import "base/functions";
 
 @layer reset {
   @import "reset";
 }
 
-@layer frameworks {
-  @import "pygment_white";
-}
-
 @layer defaults {
-  @import "base/functions";
   @import "base/fonts";
   @import "base/typography";
   @import "base/layout";
@@ -42,7 +40,10 @@
   @import "components/profile-card";
   @import "components/event-card";
   @import "components/content";
+  @import "components/example-tabs";
+  @import "components/featured-posts";
   @import "components/footer";
+  @import "components/highlight";
   @import "components/image-list";
   @import "components/link-actions";
   @import "components/navbar";
@@ -59,6 +60,7 @@
   @import "pages/error";
   @import "pages/event";
   @import "pages/conference";
+  @import "pages/home";
   @import "pages/install";
   @import "pages/releases";
   @import "pages/sponsors";

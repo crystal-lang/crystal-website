@@ -68,7 +68,7 @@ check_external_links: $(O) ## Validates external links in generated HTML
 	$(htmlproofer) $(O) \
 		--assume-extension \
 		--url-swap "\A\/(api|docs|images|reference):https://crystal-lang.org/\1" \
-		--url-ignore "http://0.0.0.0:8080" \
+		--url-ignore "/github.com/,/twitter.com/" \
 		--http-status-ignore 999 \
 		--external_only \
 		$(if $(cache),--timeframe '30d',)

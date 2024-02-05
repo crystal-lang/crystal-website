@@ -1,0 +1,35 @@
+@mixin link-with-icon-base {
+  display: flex;
+  align-items: center;
+
+  &::before,
+  > img {
+    width: 1.3em;
+    aspect-ratio: 1;
+    object-fit: contain;
+    margin-inline-end: var(--padding-xxs);
+  }
+  &::before {
+    background-color: currentColor;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    mask-image: var(--link-icon);
+  }
+}
+
+@mixin link-with-icon-href($href, $image) {
+  &[href^="#{$href}"]::before {
+    content: "";
+    --link-icon: #{$image};
+  }
+}
+
+@mixin link-with-icon($image) {
+  @include link-with-icon-base();
+
+  &:before {
+    content: "";
+    --link-icon: #{$image};
+  }
+}

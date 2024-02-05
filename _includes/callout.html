@@ -1,8 +1,6 @@
-<aside class="callout callout--{{ include.callout }}">
-  {% if include.title %}
-    <strong class="callout-title">{{ include.title }}</strong>
-  {% endif %}
-  <div markdown="1">
-    {{ include.content }}
-  </div>
-</aside>
+<div class="callout callout--{{ include.callout }}">
+  {%- assign title_from_callout = include.callout | capitalize %}
+  <div class="callout-title">{{ include.title | default: title_from_callout | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+
+  {{- include.content | markdownify }}
+</div>
