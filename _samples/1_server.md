@@ -1,8 +1,9 @@
 ---
+short_name: HTTP Server
 title: Batteries included
 description: |
-  Crystal's API includes a whole range of classes to let you start working on your project with minimal dependencies.
-read_more: '[Check the API](https://crystal-lang.org/api/)'
+  Crystal's standard library comes with a whole range of libraries that let you start working on your project right away.
+read_more: '[Check the API docs](https://crystal-lang.org/api/)'
 playground: false
 ---
 ```crystal
@@ -14,8 +15,9 @@ server = HTTP::Server.new do |context|
   context.response.print "Hello world, got #{context.request.path}!"
 end
 
-puts "Listening on http://127.0.0.1:8080"
-server.listen(8080)
+address = server.bind(8080)
+puts "Listening on http://#{address}"
 
-# (This example can't be run from carc.in)
+# This call block until the process is terminated
+server.listen
 ```
