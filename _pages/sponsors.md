@@ -21,7 +21,7 @@ and below is a list of all the humans and organizations that have made it possib
   <p>Our Corporate Sponsorship tiers start at $5,000/month, but let’s talk and find a partnership model that suits you.</p>
   <a href="mailto:crystal@manas.tech" class="hex">Contact Us</a>
   </aside>
-  {% include pages/sponsors/top_sponsors.html %}
+  {%- include pages/sponsors/top_sponsors.html %}
 </section>
 
 <hr />
@@ -29,7 +29,7 @@ and below is a list of all the humans and organizations that have made it possib
 <section class="side-section reversed">
   <h2>Individual Support</h2>
 
-   {% include pages/sponsors/table.html %}
+   {%- include pages/sponsors/table.html %}
 
   <aside class="sponsors-sidebar">
   <p>If you like this project, you can become a sponsor in only 3 simple steps via OpenCollective.</p>

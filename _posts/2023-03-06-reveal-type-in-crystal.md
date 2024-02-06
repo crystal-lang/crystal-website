@@ -137,9 +137,9 @@ The following will give us the first part of the message.
 ```crystal
 {% raw %}
 macro reveal_type(t)
-  {% loc = "#{t.filename.id}:#{t.line_number}:#{t.column_number}" %}
-  {% puts "Revealed type #{loc.id}" %}
-  {% puts "  #{t.id}" %}
+  {%- loc = "#{t.filename.id}:#{t.line_number}:#{t.column_number}" %}
+  {%- puts "Revealed type #{loc.id}" %}
+  {%- puts "  #{t.id}" %}
   {{t}}
 end
 {% endraw %}
@@ -164,14 +164,14 @@ To overcome this we can use the fact that `def`s can have macro code.
 ```crystal
 {% raw %}
 def reveal_type_helper(t : T) : T forall T
-  {% puts "   : #{T}" %}
+  {%- puts "   : #{T}" %}
   t
 end
 
 macro reveal_type(t)
-  {% loc = "#{t.filename.id}:#{t.line_number}:#{t.column_number}" %}
-  {% puts "Revealed type #{loc.id}" %}
-  {% puts "  #{t.id}" %}
+  {%- loc = "#{t.filename.id}:#{t.line_number}:#{t.column_number}" %}
+  {%- puts "Revealed type #{loc.id}" %}
+  {%- puts "  #{t.id}" %}
   reveal_type_helper({{t}})
 end
 {% endraw %}
@@ -193,14 +193,14 @@ To force a different `reveal_type_helper` instance for each `reveal_type` invoca
 ```crystal
 {% raw %}
 def reveal_type_helper(t : T, l) : T forall T
-  {% puts "   : #{T}" %}
+  {%- puts "   : #{T}" %}
   t
 end
 
 macro reveal_type(t)
-  {% loc = "#{t.filename.id}:#{t.line_number}:#{t.column_number}" %}
-  {% puts "Revealed type #{loc.id}" %}
-  {% puts "  #{t.id}" %}
+  {%- loc = "#{t.filename.id}:#{t.line_number}:#{t.column_number}" %}
+  {%- puts "Revealed type #{loc.id}" %}
+  {%- puts "  #{t.id}" %}
   reveal_type_helper({{t}}, { {{loc.tr("/:.","___").id}}: 1 })
 end
 {% endraw %}
@@ -309,13 +309,13 @@ We could do an alternative `reveal_type` implementation that will preserve the m
 ```crystal
 {% raw %}
 def reveal_type_helper(t : T, l) : Nil forall T
-  {% puts "   : #{T}" %}
+  {%- puts "   : #{T}" %}
 end
 
 macro reveal_type(t)
-  {% loc = "#{t.filename.id}:#{t.line_number}:#{t.column_number}" %}
-  {% puts "Revealed type #{loc.id}" %}
-  {% puts "  #{t.id}" %}
+  {%- loc = "#{t.filename.id}:#{t.line_number}:#{t.column_number}" %}
+  {%- puts "Revealed type #{loc.id}" %}
+  {%- puts "  #{t.id}" %}
   %t = uninitialized typeof({{t}})
   reveal_type_helper(%t, { {{loc.tr("/:.","___").id}}: 1 })
   {{t}}
@@ -338,7 +338,7 @@ In the `reveal_type` macro we needed to show the expression and its location. Th
 ```crystal
 {% raw %}
 macro reveal_type(t)
-  {% t.raise "Lorem ipsum" %}
+  {%- t.raise "Lorem ipsum" %}
 end
 {% endraw %}
 ```
@@ -367,14 +367,14 @@ The final shape of our solutions can be easily added in our Crystal app for deve
 ```crystal
 {% raw %}
 def reveal_type_helper(t : T, l) : T forall T
-  {% puts "   : #{T}" %}
+  {%- puts "   : #{T}" %}
   t
 end
 
 macro reveal_type(t)
-  {% loc = "#{t.filename.id}:#{t.line_number}:#{t.column_number}" %}
-  {% puts "Revealed type #{loc.id}" %}
-  {% puts "  #{t.id}" %}
+  {%- loc = "#{t.filename.id}:#{t.line_number}:#{t.column_number}" %}
+  {%- puts "Revealed type #{loc.id}" %}
+  {%- puts "  #{t.id}" %}
   reveal_type_helper({{t}}, { {{loc.tr("/:.","___").id}}: 1 })
 end
 {% endraw %}

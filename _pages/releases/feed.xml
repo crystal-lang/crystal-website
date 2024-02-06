@@ -15,7 +15,7 @@ section: releases
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ page.url | absolute_url | xml_escape }}</id>
   {%- assign releases = site.releases | reverse -%}
-  {% for post in releases limit:10 %}
+  {%- for post in releases limit:10 %}
     <entry>
       <title>{{ post.title | xml_escape }}</title>
       {%- assign authors = post.author | split: ',' -%}
@@ -24,7 +24,7 @@ section: releases
         <name>{{ site.data.blog_authors[author].name }}</name>
         <uri>https://github.com/{{ author }}/</uri>
       </author>
-      {% endfor -%}
+      {%- endfor -%}
       <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />
       <published>{{ post.date | date_to_xmlschema }}</published>
       <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
@@ -34,5 +34,5 @@ section: releases
       {%- endif %}
       <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">{{ post.content | strip | xml_escape }}</content>
     </entry>
-  {% endfor %}
+  {%- endfor %}
 </feed>

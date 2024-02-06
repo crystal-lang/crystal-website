@@ -17,16 +17,16 @@ section: community
     <th><span>Description</span></th>
   </thead>
   <tbody>
-    {% for uip in site.data.companies %}
+    {%- for uip in site.data.companies %}
     <tr>
       <td>
-        {% if uip.url %}
+        {%- if uip.url %}
         <a href="{{uip.url}}" target="_blank" rel="sponsored nofollow">
           {{uip.name}}
         </a>
-        {% else %}
+        {%- else %}
         {{uip.name}}
-        {% endif %}
+        {%- endif %}
       </td>
       <td>
         {{uip.category}}
@@ -35,7 +35,7 @@ section: community
         {{uip.description | markdownify | remove: "<p>" | remove: "</p>" }}
       </td>
     </tr>
-    {% endfor %}
+    {%- endfor %}
   </tbody>
 </table>
 

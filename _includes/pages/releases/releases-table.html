@@ -15,12 +15,12 @@
           <time datetime="{{ release.date | date: '%F' }}">{{ release.date | date_to_string }}</time>
         </td>
         <td>
-          {% if forloop.index0 == 0 %}
+          {%- if forloop.index0 == 0 %}
             <span class="pill">latest</span>
-          {% endif %}
+          {%- endif %}
         </td>
         <td class="release-links">
-          {% include releases/links.html release = release %}
+          {%- include releases/links.html release = release %}
         </td>
       </tr>
     {%- endfor %}

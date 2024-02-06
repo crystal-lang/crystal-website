@@ -2,14 +2,14 @@
   <h1>{{ include.page_title | default: page.page_title | default: page.title }}</h1>
 
   <div class="page-description">
-    {{ page.description | markdownify }}
+    {{- page.description | markdownify }}
   </div>
 
-  {% if page.link_actions %}
+  {%- if page.link_actions %}
     <nav class="link-actions">
-      {% for action in page.link_actions %}
-        {{ action | markdownify | remove: "<p>" | remove: "</p>" }}
-      {% endfor %}
+      {%- for action in page.link_actions %}
+        {{- action | markdownify | remove: "<p>" | remove: "</p>" }}
+      {%- endfor %}
     </nav>
-  {% endif %}
+  {%- endif %}
 </header>

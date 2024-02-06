@@ -47,7 +47,7 @@ Hello World!
 ```crystal
 class Object
   def has_instance_var?(name) : Bool
-    {{ "{{" }} @type.instance_vars.map &.name.stringify }}.includes? name
+    {{- "{{" }} @type.instance_vars.map &.name.stringify }}.includes? name
   end
 end
 

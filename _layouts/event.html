@@ -11,32 +11,32 @@ layout: base
         <dd><time datetime="{{ page.start_date }}" itemprop="startDate">{{ page.date_text }}</time></dd>
         <dd><time datetime="{{ page.end_date }}" itemprop="endDate"></time></dd>
 
-      {% if page.location %}
+      {%- if page.location %}
         <dt>Location</dt>
         <dd class="location" itemprop="location">{{ page.location }}</dd>
-      {% endif %}
-      {% if page.organizer %}
+      {%- endif %}
+      {%- if page.organizer %}
         <dt>Organizer</dt>
         <dd class="organizer" itemprop="organizer">{{ page.organizer }}</dd>
-      {% endif %}
+      {%- endif %}
     </dl>
 
-    {% if page.description %}
+    {%- if page.description %}
       <div class="page-description" itemprop="description">
-        {{ page.description }}
+        {{- page.description }}
       </div>
-    {% endif %}
+    {%- endif %}
 
-    {% if page.link_actions %}
+    {%- if page.link_actions %}
       <nav class="link-actions">
-        {% for action in page.link_actions %}
-          {{ action | markdownify | remove: "<p>" | remove: "</p>" }}
-        {% endfor %}
+        {%- for action in page.link_actions %}
+          {{- action | markdownify | remove: "<p>" | remove: "</p>" }}
+        {%- endfor %}
       </nav>
-    {% endif %}
+    {%- endif %}
   </div>
 
   <div class="content">
-    {{ content }}
+    {{- content }}
   </div>
 </article>

@@ -18,12 +18,12 @@ guidance of the *Steering Council*. Both bodies are defined in the
   </aside>
 
   <div class="cards-list">
-    {% for member in site.data.team.core %}
-      {% if member[1].status == "active" %}
-        {% assign profile = member[1] %}
-        {% include components/profile-card.html profile=profile slug=member.first %}
-      {% endif %}
-    {% endfor %}
+    {%- for member in site.data.team.core %}
+      {%- if member[1].status == "active" %}
+        {%- assign profile = member[1] %}
+        {%- include components/profile-card.html profile=profile slug=member.first %}
+      {%- endif %}
+    {%- endfor %}
   </div>
 </section>
 
@@ -34,13 +34,13 @@ These awesome people have served as core team members in the past. They are list
   </aside>
 
   <div class="cards-list">
-    {% for member in site.data.team.alumni %}
+    {%- for member in site.data.team.alumni %}
       <div class="profile-mini" itemscope itemtype="https://schema.org/Person">
         <img src="/assets/authors/{{ member[0] }}.jpg" alt="Profile picture of {{ member[1].name }}" />
         <span class="name" itemprop="name">{{ member[1].name }}</span>
         <a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" itemprop="url" title="GitHub profile" class="ico github">@{{ member[1].github_handle | default: member[0] }}</a>
       </div>
-    {% endfor %}
+    {%- endfor %}
   </div>
 </section>
 
@@ -53,10 +53,10 @@ Some people help with administrative duties, for example related to the manageme
   </aside>
 
   <div class="cards-list">
-    {% for member in site.data.team.admin %}
-      {% assign profile = member[1] %}
-      {% include components/profile-card.html profile=profile slug=member.first %}
-    {% endfor %}
+    {%- for member in site.data.team.admin %}
+      {%- assign profile = member[1] %}
+      {%- include components/profile-card.html profile=profile slug=member.first %}
+    {%- endfor %}
   </div>
 </section>
 
@@ -68,16 +68,16 @@ These awesome people have been part of the team in the past but do no longer fil
   </aside>
 
   <div class="cards-list">
-    {% for member in site.data.team.admin_alumni %}
+    {%- for member in site.data.team.admin_alumni %}
       <div class="profile-mini" itemscope itemtype="https://schema.org/Person">
         <img src="/assets/authors/{{ member[0] }}.jpg" alt="Profile picture of {{ member[1].name }}" />
-          {% if member[1].role %}
+          {%- if member[1].role %}
             <span class="member_role">{{ member[1].role }}</span>
-          {% endif %}
+          {%- endif %}
         <span class="name" itemprop="name">{{ member[1].name }}</span>
         <a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" itemprop="url" title="GitHub profile" class="ico github">@{{ member[1].github_handle | default: member[0] }}</a>
       </div>
-    {% endfor %}
+    {%- endfor %}
   </div>
 </section>
 
@@ -94,12 +94,12 @@ assign issues/PRs and request reviews.
   </aside>
 
   <div class="cards-list">
-    {% for member in site.data.team.moderators %}
-      {% assign profile = member[1] %}
-      {% include components/profile-card.html profile=profile slug=member.first %}
-    {% else %}
+    {%- for member in site.data.team.moderators %}
+      {%- assign profile = member[1] %}
+      {%- include components/profile-card.html profile=profile slug=member.first %}
+    {%- else %}
     <em>none</em>
-    {% endfor %}
+    {%- endfor %}
   </div>
 </section>
 
