@@ -46,8 +46,7 @@ and below is a list of all the humans and organizations that have made it possib
 
   <dt>I am a sponsor contributing $5/month, but my URL is not listed</dt>
   <dd markdown="1">
-  We grab the website and avatar from your [Open Collective profile](https://opencollective.com)
-  or your [Bountysource profile](https://www.bountysource.com/settings).
+  We grab the website and avatar from your [Open Collective profile](https://opencollective.com).
   If that fails, we try to use your GitHub or Twitter accounts listed in
   that same profile.
   </dd>
