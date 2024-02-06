@@ -70,4 +70,4 @@ We expect all conference participants to abide by this Code of Conduct in all co
 
 ### Attribution
 
-This Code of Conduct was adapted from the [#causeascene CoC](https://hashtagcauseascene.com/code-of-conduct/).
+This Code of Conduct was adapted from the ~~[#causeascene CoC](https://hashtagcauseascene.com/code-of-conduct/)~~.
