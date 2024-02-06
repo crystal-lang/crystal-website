@@ -7,6 +7,10 @@
   # `encode': "\\xC3" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
   env.RUBYOPT = "-Eutf-8";
 
+  packages = (with pkgs; [
+    htmltest
+  ]);
+
   processes.serve.exec = "make serve";
 
   enterShell = ''
