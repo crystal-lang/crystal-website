@@ -4,6 +4,8 @@ layout: home
 section: home
 ---
 
+<h2 class="visually-hidden">News</h2>
+
 {% include posts/recent_news.html %}
 
 <div class="link-actions">
