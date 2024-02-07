@@ -55,15 +55,15 @@ sections:
 <hr />
 
 <div class="used-in-production">
-  {% for section in page.sections %}
+  {%- for section in page.sections %}
   <section>
     {%- assign icon = section.icon | prepend: 'icons/' | append: '.svg' %}
-    {% include elements/hex-icon.html file=icon %}
+    {%- include elements/hex-icon.html file=icon %}
 
     <h3 id="{{ section.name | slugify }}">{{ section.name }}</h3>
     {{- section.description | markdownify }}
 
     {%- include pages/used_in_prod/companies.html section=section.name %}
   </section>
-  {% endfor %}
+  {%- endfor %}
 </div>

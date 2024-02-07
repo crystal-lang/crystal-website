@@ -20,7 +20,7 @@
           {%- if entry.instructions_href %}
             <a href="{{ entry.instructions_href }}" title="Instructions for {{ entry.label | default: entry.title }}">
           {%- endif %}
-          {{- entry.title | markdownify }}
+          {{- entry.title | markdownify | remove: "<p>" | remove: "</p>" }}
           {%- if entry.instructions_href %}
             </a>
           {%- endif %}
