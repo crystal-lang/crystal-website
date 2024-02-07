@@ -28,7 +28,7 @@ This will allow:
 
 We will be hosting these packages at ~~[https://bintray.com/crystal](https://bintray.com/crystal)~~
 
-The current apt and rpm packages in [https://dist.crystal-lang.org](https://dist.crystal-lang.org/) will be available and receive stable updates until November 2020 as a transition period.
+The current apt and rpm packages in `dist.crystal-lang.org` will be available and receive stable updates until November 2020 as a transition period.
 
 The [installation script](https://crystal-lang.org/install.sh) allows installing the latest stable version by default:
 
