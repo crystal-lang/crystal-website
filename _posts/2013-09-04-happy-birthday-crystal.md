@@ -255,7 +255,7 @@ values = Pointer(Int32).malloc(10) # Ask for 10 ints
 ## Regular expressions
 
 Regular expressions are implemented, for now, with C bindings to the PCRE library. Again,
-[Regexp](https://github.com/crystal-lang/crystal/blob/fd6c0238f6e7725d307d4c010d8c860e38a46d72/src/regexp.cr) is entirely written in Crystal.
+`Regexp` is entirely written in Crystal.
 
 ```ruby
 "foobarbaz" =~ /(.+)bar(.+)/ #=> 0
