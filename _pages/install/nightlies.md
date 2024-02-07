@@ -22,7 +22,7 @@ ahead of time and avoid surprises with the next relase.
 
 {% include pages/install/section.html os="MacOS" channel="nightly" %}
 
-<a id="windows"></a>
+<span id="windows"></span>
 
 ## Windows (preview)
 

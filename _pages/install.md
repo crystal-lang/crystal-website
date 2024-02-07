@@ -49,7 +49,7 @@ Crystal is also available in [developer tooling](#developer-tools) on macOS.
 
 [**Read more about installing on _MacOS_**](/install/on_mac_os)
 
-<a id="windows"></a>
+<span id="windows"></span>
 
 ## Windows (preview)
 
@@ -100,7 +100,7 @@ timely and avoid surprises after the next relase.
 
 [**Read more about _Nightly Builds_**](/install/nightlies/)
 
-<a id="from_source"></a>
+<span id="from_source"></span>
 
 ## Building from Source
 
