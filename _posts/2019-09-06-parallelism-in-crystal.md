@@ -140,7 +140,7 @@ Mixing fork and multi-thread programs is problematic. There are a couple of refe
 
 * [Fork and existing threads?](https://stackoverflow.com/a/1074663/30948)
 * [Why threads can't fork](https://thorstenball.com/blog/2014/10/13/why-threads-cant-fork/)
-* ~~[Threads and fork(): think twice before mixing them](http://www.linuxprogrammingblog.com/threads-and-fork-think-twice-before-using-them)~~
+* [Threads and fork(): think twice before mixing them](https://web.archive.org/web/20190322202710/http://www.linuxprogrammingblog.com/threads-and-fork-think-twice-before-using-them)
 
 The `fork` method will not be available in multi-thread and will probably go away as a public API. The std-lib still needs fork to start subprocesses, but this scenario is safe because an exec is performed after the fork.
 
