@@ -120,7 +120,7 @@ Besides those that are explicitly named, this is a call out to
 [hundreds more contributors](https://github.com/crystal-lang/crystal/graphs/contributors)
 who put their work into the project.
 
-If you want to become a contributor, see our [Contributing Instructions](https://github.com/crystal-lang/crystal/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/crystal-lang/crystal/blob/master/CODE_OF_CONDUCT.m).
+If you want to become a contributor, see our [Contributing Instructions](https://github.com/crystal-lang/crystal/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/crystal-lang/crystal/blob/master/CODE_OF_CONDUCT.md).
   </aside>
   <div>
     <img src="https://opencollective.com/crystal-lang/contributors.svg?width=960" alt="">
