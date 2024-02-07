@@ -23,7 +23,7 @@ jobs:
         with:
           path: |
             ~/.cache/bundle
-            tmp/.htmlproofer
+            tmp/.htmltest
           key: gem-${{ hashFiles('Gemfile.lock') }}
           restore-keys: gem-
       - name: Build website

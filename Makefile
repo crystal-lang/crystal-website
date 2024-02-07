@@ -13,9 +13,7 @@
 
 O ?= _site## Output path
 
-cache ?=1## enable caching for htmlproofer external link check
-
-htmlproofer = htmlproofer
+htmltest = htmltest
 
 CONTENT_SOURCES := $(wildcard assets/**) $(wildcard _data/**) $(wildcard _events/**) $(wildcard _pages/**) $(wildcard _posts/**) $(wildcard _releases/**)
 SITE_SOURCES := feed.xml _config.yml index.html Makefile $(wildcard _includes/**) $(wildcard _layouts/**) $(wildcard _plugins/**) $(wildcard _sass/**) $(wildcard scripts/**) $(wildcard _style_guide/**)
@@ -55,23 +53,11 @@ fetch_opencollective: scripts/opencollective.cr
 
 .PHONY: check_html
 check_html: $(O) ## Validates generated HTML
-	$(htmlproofer) $(O) \
-		--assume-extension \
-		--url-swap "\A\/(images):https://crystal-lang.org/\1" \
-		--disable_external \
-		--allow-hash-href \
-		--checks-to-ignore ImageCheck \
-		--check-img-http
+	$(htmltest) --skip-external
 
 .PHONY: check_external_links
 check_external_links: $(O) ## Validates external links in generated HTML
-	$(htmlproofer) $(O) \
-		--assume-extension \
-		--url-swap "\A\/(api|docs|images|reference):https://crystal-lang.org/\1" \
-		--url-ignore "/github.com/,/twitter.com/" \
-		--http-status-ignore 999 \
-		--external_only \
-		$(if $(cache),--timeframe '30d',)
+	$(htmltest)
 
 .PHONY: clean
 clean: ## Removes output directory
