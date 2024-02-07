@@ -173,7 +173,7 @@ Constants and class variables are lazily initialized in some scenarios. We would
 
 We mentioned that the starting scheduling algorithm is a round-robin without fiber stealing. We attempted to have a metric of the load of each worker, but since workers can communicate within each other to delegate new fibers, computing the load would imply more state that needs to be synced. On top of that, in the current implementation there are references to fibers in the pipe used for communication, so the `@runnables` queue sizes are not an accurate metric.
 
-The GC had multi-thread support in the past, but the performance was not good enough. We finally implemented a RW-Lock between context switches (the readers) and the GC collection (the writer). The implementation of the RW-Lock is inspired in ~~[Concurrency Kit](http://concurrencykit.org/)~~ and does not use a Mutex.
+The GC had multi-thread support in the past, but the performance was not good enough. We finally implemented a RW-Lock between context switches (the readers) and the GC collection (the writer). The implementation of the RW-Lock is inspired in [Concurrency Kit](https://github.com/concurrencykit/ck) and does not use a Mutex.
 
 Unsurprisingly, but worth noticing, a compiler built with multi-thread support does not yet take advantage of the cores. Up until now, the compiler used `fork` when building programs in debug mode. So the `--threads` compiler option is ignored on multi-thread due to the issues described [before](#fork). This is a use case of `fork` that will not be supported in the future and will need to be rewritten with other constructs.
 
