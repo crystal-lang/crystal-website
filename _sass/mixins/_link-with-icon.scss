@@ -19,7 +19,7 @@
 }
 
 @mixin link-with-icon-href($href, $image) {
-  &[href^="#{$href}"]::before {
+  &[href^="#{$href}"]:not(:has(> img))::before {
     content: "";
     --link-icon: #{$image};
   }
