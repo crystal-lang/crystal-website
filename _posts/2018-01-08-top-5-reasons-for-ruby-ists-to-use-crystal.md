@@ -165,5 +165,5 @@ If you’re looking to try out the Crystal programming language, here are some g
 - [Crystal Play](https://play.crystal-lang.org/#/cr) - an online REPL-like tool for Crystal
 - [Install Crystal](/install)
 - [Crystal for Rubyists](http://www.crystalforrubyists.com/)
-- [Crystal Exercisms](http://exercism.io/languages/crystal/about)
+- [Crystal Exercisms](http://exercism.io/tracks/crystal/about)
 - [Create your own HTTP Server in minutes](https://crystal-lang.org/reference/getting_started/http_server.html)

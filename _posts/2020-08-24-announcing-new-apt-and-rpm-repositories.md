@@ -26,7 +26,7 @@ This will allow:
 - having statistics of version adoption
 - eventually splitting the current package in compiler, shards and maybe tools
 
-We will be hosting these packages at [https://bintray.com/crystal](https://bintray.com/crystal)
+We will be hosting these packages at ~~[https://bintray.com/crystal](https://bintray.com/crystal)~~
 
 The current apt and rpm packages in [https://dist.crystal-lang.org](https://dist.crystal-lang.org/) will be available and receive stable updates until November 2020 as a transition period.
 

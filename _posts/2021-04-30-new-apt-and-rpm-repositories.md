@@ -5,7 +5,7 @@ thumbnail: +
 author: straight-shoota
 ---
 
-With our previous distribution hosting at [bintray](https://bintray.com/crystal)
+With our previous distribution hosting at ~~[bintray](https://bintray.com/crystal)~~
 shutting down, we transitioned to the [Open Build Service (OBS)](https://build.opensuse.org),
 a cross-platform package building service provided by openSUSE.
 

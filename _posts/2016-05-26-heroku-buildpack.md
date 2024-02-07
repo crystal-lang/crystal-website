@@ -70,13 +70,13 @@ $ crystal src/heroku101.cr
 Listening on http://0.0.0.0:8080
 </pre>
 
-Open your browser at [http://0.0.0.0:8080](http://0.0.0.0:8080).
+Open your browser at <a href="http://0.0.0.0:8080" data-proofer-ignore>http://0.0.0.0:8080</a>.
 
 To stop the server just terminate the process by pressing `Ctrl+C`.
 
 ## Herokufy it
 
-Right now the project knows nothing about Heroku. To get started, a Heroku application needs first to be registered. The easiest way to do this is via the [Heroku toolbelt](https://toolbelt.heroku.com/):
+Right now the project knows nothing about Heroku. To get started, a Heroku application needs first to be registered. The easiest way to do this is via the ~~[Heroku toolbelt](https://toolbelt.heroku.com/)~~:
 
 <pre class="code">
 $ heroku create --buildpack https://github.com/crystal-lang/heroku-buildpack-crystal.git
