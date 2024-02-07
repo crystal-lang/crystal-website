@@ -17,6 +17,7 @@ body {
   color: var(--primary-text);
   font-family: var(--body-font);
   line-height: var(--line-height-base);
+  font-feature-settings: "kern", "liga";
 }
 
 @for $i from 1 through 5 {
