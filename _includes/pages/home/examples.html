@@ -1,16 +1,15 @@
-{%- assign samples = site.samples | sort: 'weight' %}
 <div class="example-tabs">
 
   <ul class="controls">
-    {%- for sample in samples %}
+    {%- for sample in site.samples %}
     <li>
-      <a href="#{{ sample.slug }}">{{ sample.short_name | default: sample.title }}</a>
+      <a href="#{{ sample.slug | slice: 2, 100 }}">{{ sample.short_name | default: sample.title }}</a>
     </li>
     {%- endfor %}
   </ul>
 
-  {%- for sample in samples %}
-    <div class="example-tab" id="{{ sample.slug }}">
+  {%- for sample in site.samples %}
+    <div class="example-tab" id="{{ sample.slug | slice: 2, 100 }}">
       <div class="example-description">
         <h3>{{ sample.title }}</h3>
         {{- sample.description | markdownify }}

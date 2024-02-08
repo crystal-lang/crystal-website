@@ -3,7 +3,6 @@ title: C-bindings
 description: |
   Crystal has a dedicated syntax to easily call native libraries, eliminating the need to reimplement low-level tasks.
 read_more: '[Learn how to bind to C libraries](https://crystal-lang.org/reference/syntax_and_semantics/c_bindings/)'
-weight: 5
 ---
 
 ```crystal
