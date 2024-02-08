@@ -31,7 +31,7 @@ and below is a list of all the humans and organizations that have made it possib
 
    {%- include pages/sponsors/table.html %}
 
-  <aside class="sponsors-sidebar">
+  <aside class="sponsors-sidebar" id="contribute">
   <p>If you like this project, you can become a sponsor in only 3 simple steps via OpenCollective.</p>
   <a href="https://opencollective.com/crystal-lang" class="hex">Contribute</a>
 
