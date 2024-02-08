@@ -3,7 +3,7 @@ layout: base
 ---
 
 <header>
-  <h1>{{ page.page_title | default: page.title }}</h1>
+  <h1>{{ page.page_title | default: page.title | liquify }}</h1>
 </header>
 
 {{ content }}
