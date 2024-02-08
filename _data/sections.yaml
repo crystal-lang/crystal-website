@@ -63,8 +63,9 @@ learning:
 newsletter:
   title: Newsletter
   breadcrumbs:
-    - title: Newsletter
-      url: /newsletter/
+    - title: Community
+      url: /community/
+      nav: community
   weight: 32
 
 releases:

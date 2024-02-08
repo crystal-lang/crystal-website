@@ -17,6 +17,8 @@ community:
   url: /sponsors/
 - label: Events
   url: /community/#events
+- label: Newsletter
+  url: /newsletter/
 - label: Forum
   url: https://forum.crystal-lang.org/
 - label: Governance
