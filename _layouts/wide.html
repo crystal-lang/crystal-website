@@ -2,8 +2,16 @@
 layout: base
 ---
 
-<header>
+<header class="wide-header">
   <h1>{{ page.page_title | default: page.title | liquify }}</h1>
+
+  {%- if page.link_actions %}
+  <nav class="link-actions" aria-label="Table of Contents">
+    {%- for action in page.link_actions %}
+      {{- action | markdownify | remove: "<p>" | remove: "</p>" }}
+    {%- endfor %}
+  </nav>
+  {%- endif %}
 </header>
 
 {{ content }}
