@@ -6,9 +6,24 @@ page_title: |
     {%- include icons/rss.svg %}
   </a>
 excerpt: Blog posts
-layout: wide
+layout: base
 section: blog
 ---
+{%- assign latest_release = site.releases | reverse | first %}
+
+<header class="wide-header">
+  <h1>{{ page.page_title | default: page.title | liquify }}</h1>
+
+  <div class="releases-info">
+    <strong>Latest release</strong>
+
+    <a href="{{ latest_release.url }}" class="hex">Crystal {{ latest_release.version }}</a>
+
+    <div class="link-actions">
+      <a href="/releases/">All release notes</a>
+    </div>
+  </div>
+</header>
 
 {% include posts/recent_news.html extra=true %}
 
