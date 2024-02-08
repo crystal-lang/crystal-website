@@ -1,9 +1,11 @@
 <table class="table" id="sponsors-tbl">
   <thead>
-    <th class="name"><span>Supporter</span></th>
-    <th class="currency" data-sort-method="number" aria-sort="descending"><span>This month</span></th>
-    <th class="currency" data-sort-method="number"><span>All time</span></th>
-    <th class="since" data-sort-method="date"><span>Since</span></th>
+    <tr>
+      <th scope="col" class="name"><span>Supporter</span></th>
+      <th scope="col" class="currency" data-sort-method="number" aria-sort="descending"><span>This month</span></th>
+      <th scope="col" class="currency" data-sort-method="number"><span>All time</span></th>
+      <th scope="col" class="since" data-sort-method="date"><span>Since</span></th>
+    </tr>
   </thead>
   <tbody>
     {%- for sp in site.data.sponsors %}
@@ -11,7 +13,7 @@
       <tr class="{{sponsor_class}}">
         <th class="name" scope="row">
           {%- if sp.url %}
-            <a href="{{sp.url}}" rel="sponsored nofollow">
+            <a href="{{sp.url}}" rel="sponsored nofollow" data-proofer-ignore>
           {%- endif %}
               {%- if sp.logo %}
                 <img src="/assets/{{ sp.logo }}" alt="" />

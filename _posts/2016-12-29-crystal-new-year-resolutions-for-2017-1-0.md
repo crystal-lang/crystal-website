@@ -50,4 +50,4 @@ Please do leave us your comments either here or through any of the [community ch
 
 <br/>
 
-If you want to help us achieve this goal, please consider supporting Crystal on [BountySource](https://salt.bountysource.com/teams/crystal-lang)!
+If you want to help us achieve this goal, please consider supporting Crystal on ~~[BountySource](https://salt.bountysource.com/teams/crystal-lang)~~!

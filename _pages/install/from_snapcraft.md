@@ -15,6 +15,4 @@ You can also install the latest nightly build by using the `edge` channel.
 sudo snap install crystal --classic --edge
 ```
 
-{% assign snapcraft_url = 'https://snapcraft.io/install/crystal/' | append: include.distro %}
-
-Find further information at [Crystal's snapcraft page]({{ snapcraft_url }})
+Find further information at [Crystal's snapcraft page](https://snapcraft.io/crystal/).

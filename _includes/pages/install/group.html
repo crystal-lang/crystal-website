@@ -20,7 +20,7 @@
           {%- if entry.instructions_href %}
             <a href="{{ entry.instructions_href }}" title="Instructions for {{ entry.label | default: entry.title }}">
           {%- endif %}
-          {{- entry.title | markdownify }}
+          {{- entry.title | markdownify | remove: "<p>" | remove: "</p>" }}
           {%- if entry.instructions_href %}
             </a>
           {%- endif %}
@@ -50,7 +50,10 @@
           {{- entry.example | markdownify }}
         </div>
         {%- if entry.repo_href %}
-          <a href="{{ entry.repo_href }}" title="{{ entry.repo_description }}" class="info">{% include icons/info.svg %}</a>
+          <a href="{{ entry.repo_href }}" title="{{ entry.repo_description }}" class="info">
+            {%- include icons/info.svg %}
+            <span class="visually-hidden">Repo info</span>
+          </a>
         {%- endif %}
       </div>
     {%- endfor %}

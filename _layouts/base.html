@@ -4,13 +4,19 @@ layout: skeleton
 # Inheriting layouts implement the page header and content.
 ---
 
+<a href="#top" class="visually-hidden">Skip to content</a>
+
 <header>
   {%- include site/nav.html %}
 </header>
 
+<hr class="visually-hidden" id="top">
+
 <main>
   {{- content }}
 </main>
+
+<hr class="visually-hidden">
 
 {% include site/edit-on-github.html %}
 <footer>

@@ -15,7 +15,7 @@ such as OOP and concurrent programming.
 
 [Crystal Programming](crystal_programming)
 
-<a id="crystal4Rubyists"></a>
+<span id="crystal4Rubyists"></span>
 
 ### Crystal for Rubyists
 
@@ -25,7 +25,7 @@ will help you to transition from Ruby to Crystal.
 
 [Crystal for Rubyists](https://www.crystalforrubyists.com/)
 
-<a id="exercism"></a>
+<span id="exercism"></span>
 
 ### Exercism
 

@@ -3,6 +3,7 @@
   display: grid;
   grid-template: "container";
   place-items: center;
+  font-size: 1rem;
 
   &:before {
     content: "";

@@ -10,7 +10,7 @@ I'm happy to announce the launch of [shardbox.org](https://shardbox.org), a data
 To be clear: Shardbox is not a shards registry. It won't serve as part of shards' dependency resolution, which works entirely decentralized. It just collects information about publicly available shards and serves as a catalog for the shards ecosystem. It's a tool for developers to help find existing shards they might want to use.
 If you're familiar with Ruby, think of it more like [The Ruby Toolbox](https://www.ruby-toolbox.com/) than [Rubygems](https://rubygems.org/).
 
-There are already services providing a similar functionality such as [crystalshards.org](https://crystalshards.org/) or [shards.info](https://shards.info/). So why do we need another one?
+There are already services providing a similar functionality such as ~~[crystalshards.org](https://crystalshards.org/)~~ or [shards.info](https://shards.info/). So why do we need another one?
 The existing services work as a relatively simple wrapper around the GitHub API and don't maintain their own database. While being relatively easy to implement, this approach can't fully support the capabilities of shards and provide in-depth information about shards and the relations inside the ecosystem.
 
 Most importantly, being focused on GitHub excludes any shards hosted elsewhere. Shardbox doesn't rely on any hosting provider and can work with any shard repository as long as it's publicly available. It can still use supplementary information provided by hosting providers, when available.

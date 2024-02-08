@@ -28,9 +28,9 @@ layout: base
     {%- endif %}
 
     {%- if page.link_actions %}
-      <nav class="link-actions">
+      <nav class="link-actions" aria-label="Table of Contents">
         {%- for action in page.link_actions %}
-          {{- action | markdownify }}
+          {{- action | markdownify | remove: "<p>" | remove: "</p>" }}
         {%- endfor %}
       </nav>
     {%- endif %}
