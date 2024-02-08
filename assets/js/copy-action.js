@@ -1,15 +1,11 @@
-/*document.querySelectorAll("pre").forEach(copy_action)*/
-
 window.copy_action = function($elem) {
   $a = document.createElement("button")
   $a.classList.add("copy-action")
   $a.setAttribute("title", "Copy content")
-  //$a.setAttribute("href", "#copy-action")
-  $img = document.createElement("img")
-  $img.setAttribute("alt", "Copy Content")
-  $img.classList.add("icon")
-  $img.setAttribute("src", "/assets/icons/copy-content.svg")
-  $a.append($img)
+  $label = document.createElement("div")
+  $label.setAttribute("alt", "Copy Content")
+  $label.classList.add("visually-hidden")
+  $a.append($label)
   $elem.append($a)
 
   $a.addEventListener("click", function(event){
