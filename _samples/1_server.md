@@ -4,7 +4,6 @@ description: |
   Crystal's API includes a whole range of classes to let you start working on your project with minimal dependencies.
 read_more: '[Check the API](https://crystal-lang.org/api/)'
 playground: false
-weight: 0
 ---
 ```crystal
 # A very basic HTTP server

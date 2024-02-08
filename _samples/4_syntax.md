@@ -3,7 +3,6 @@ title: Syntax
 description: |
   Crystal’s syntax is heavily inspired by Ruby’s, so it feels natural to read and easy to write, and has the added benefit of a lower learning curve for experienced Ruby devs.
 read_more: "[Start learning Crystal](https://crystal-lang.org/reference/getting_started/)"
-weight: 10
 ---
 ```crystal
 def longest_repetition(string)
