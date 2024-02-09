@@ -4,7 +4,7 @@ author: beta-ziliani
 summary: "Crystal is a good common ground for developers with different backgrounds."
 comment_href: https://disqus.com/home/discussion/crystal-lang/bright_and_manas_partner_together_to_create_crystal_development_tools_37/
 company: Bright Security
-image: /assets/blog/2024-02-02-bright-banner.jpg
+header_image: /assets/blog/2024-02-02-bright-banner.jpg
 categories:
 - success_stories
 ---

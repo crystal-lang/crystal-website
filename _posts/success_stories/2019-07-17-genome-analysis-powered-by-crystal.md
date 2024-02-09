@@ -3,7 +3,7 @@ title: Genome analysis powered by Crystal
 author: mpettinati
 description: Rapid rare disease diagnosis using genome analysis
 company: Diploid
-image: /assets/blog/2019-07-17-diploid.webp
+header_image: /assets/blog/2019-07-17-diploid.webp
 categories:
 - success_stories
 ---

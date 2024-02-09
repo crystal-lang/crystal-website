@@ -3,7 +3,7 @@ title: Crystal powered dashboards on the trucks of the future
 author: mpettinati
 summary: Nikola’s electric trucks use Crystal for their infotainment and telematics system.
 company: Nikola Motor Company
-image: /assets/blog/2020-02-11-nikola.webp
+header_image: /assets/blog/2020-02-11-nikola.webp
 categories:
 - success_stories
 ---
