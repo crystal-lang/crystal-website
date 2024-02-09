@@ -18,7 +18,9 @@ So, you might be wondering how can it do this so fast. The answer is **Crystal**
 
 For this particular project, **Crystal turned out to be between 4 and 6 times faster than Ruby**, which makes a big difference in terms of user experience. It means that for small data sets, Moon can present results in near real time (about 540 ms), which feels instantaneous to the user.
 
-Peter Schols, Diploid’s CEO, was very satisfied with these results, and said that *“Crystal [...] combines this still excellent performance with a very Ruby-like syntax. Given that the rest of our code base has been written in Ruby, it’s a great match. Moreover, Crystal has a Go-like concurrency model, so it basically takes the best from the Ruby world (expressive syntax, full OOP) and combines it with the best of Go (concurrency model, performance)”*.
+Peter Schols, Diploid’s CEO, was very satisfied with these results.
+
+> Crystal [...] combines this still excellent performance with a very Ruby-like syntax. Given that the rest of our code base has been written in Ruby, it’s a great match. Moreover, Crystal has a Go-like concurrency model, so it basically takes the best from the Ruby world (expressive syntax, full OOP) and combines it with the best of Go (concurrency model, performance).
 
 **People are talking about this story:**
 
