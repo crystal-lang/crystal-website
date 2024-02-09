@@ -26,7 +26,9 @@ pre {
   &.copied::before {
     opacity: 0.5;
     transform: scaleY(1);
-    transition: 800ms opacity, 200ms transform;
+    transition:
+      800ms opacity,
+      200ms transform;
   }
 
   &.copied::after {
@@ -42,9 +44,12 @@ pre {
     background: var(--light-gray);
     padding-inline: var(--padding-xs);
     border-radius: var(--padding-xs);
-    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 30%), 0 1px 3px 0 rgb(0 0 0 / 20%);
+    box-shadow:
+      0 1px 4px 0 rgb(0 0 0 / 30%),
+      0 1px 3px 0 rgb(0 0 0 / 20%);
   }
 }
+
 .copy-action {
   display: block;
   position: absolute;
@@ -57,12 +62,18 @@ pre {
   background: transparent;
   cursor: pointer;
 
+  &::before {
+    content: "";
+    display: block;
+    width: 2.5ch;
+    aspect-ratio: 1;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -960 960 960'%3E%3Cpath d='M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z'/%3E%3C/svg%3E%0A");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background: currentColor;
+  }
+
   &:not(:hover) {
     opacity: 0.5;
-  }
-  > .icon {
-    width: 2.5ch;
-    height: 2.5ch;
-    display: block;
   }
 }
