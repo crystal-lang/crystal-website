@@ -104,7 +104,9 @@ nav.footer-section {
 
 .newsletter-footer {
   flex-basis: 40%;
+}
 
+.newsletter-form {
   display: grid;
   grid-template-columns: minmax(15em, 25em) auto;
   grid-template-areas:
@@ -135,7 +137,7 @@ nav.footer-section {
 
 .link-items--social {
   @extend .ui-link;
-  
+
   flex-basis: 30%;
 
   display: flex;
