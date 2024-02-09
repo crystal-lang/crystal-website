@@ -44,6 +44,10 @@
       list-style: none;
       padding: 0;
       line-height: var(--line-height-md);
+
+      // FIXME: No idea why this is necessary, but without it the element is a
+      // bit too short and overflows.
+      height: fit-content;
     }
   }
 }
