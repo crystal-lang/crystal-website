@@ -14,8 +14,8 @@ layout: base
 
   {%- include posts/meta.html post = page %}
 
-  {%- if page.header_image %}
-    <img src="{{ page.header_image }}" class="post-image" alt="">
+  {%- if page.image %}
+    <img src="{{ page.image }}" class="post-image" alt="">
   {%- endif %}
 
   <div class="content" itemprop="articleBody">{{ content }}</div>

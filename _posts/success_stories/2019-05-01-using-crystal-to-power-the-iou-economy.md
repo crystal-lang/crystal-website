@@ -3,7 +3,7 @@ title: Using Crystal to power the IOU economy
 author: mpettinati
 description: Sikoba helps communities reduce their dependence on cash, by unlocking hidden financial resources.
 company: Sikoba
-header_image: /assets/blog/2019-05-01-sikoba.webp
+image: /assets/blog/2019-05-01-sikoba.webp
 categories:
 - success_stories
 ---
