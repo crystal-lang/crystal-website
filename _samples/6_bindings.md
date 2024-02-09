@@ -18,7 +18,7 @@ end
 # Call a C function like a Crystal method:
 puts LibM.pow(2.0, 4.0) # => 16.0
 
-# This example intentionally uses a simple stdandard C function to be succinct.
+# This example intentionally uses a simple standard C function to be succinct.
 # Of course you could do *this specific* calculation in native Crystal as well:
 # 2.0 ** 4.0 # => 16.0
 ```
