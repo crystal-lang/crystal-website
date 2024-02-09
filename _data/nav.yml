@@ -10,6 +10,16 @@ main:
 - label: Docs
   url: https://crystal-lang.org/reference/
 
+blog:
+- label: project
+  url: /blog/project/
+- label: technical
+  url: /blog/technical/
+- label: community
+  url: /blog/community/
+- label: success stories
+  url: /success-stories/
+
 community:
 - label: Team
   url: /team/

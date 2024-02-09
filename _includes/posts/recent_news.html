@@ -4,7 +4,8 @@
   {%- else %}
     {%- assign limit = 4 %}
   {%- endif %}
-  {%- for post in site.posts limit: limit %}
+  {%- assign posts = include.posts | default: site.posts %}
+  {%- for post in posts limit: limit %}
   <div class="post-teaser">
     <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
 
