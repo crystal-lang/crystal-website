@@ -67,3 +67,11 @@ sections:
   </section>
   {%- endfor %}
 </div>
+
+## Success stories
+
+{% include components/success-stories.html %}
+
+<div class="link-actions">
+  <a href="/success-stories/">More success stories</a>
+</div>
