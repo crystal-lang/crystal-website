@@ -43,3 +43,5 @@ The mobile app is written in React Native, while the web interface is written in
 ## The road ahead
 
 The Sikoba team has of late been focused on developing the blockchain infrastructure for their ecosystem, and on the launch of the Sikoba mainnet. In parallel, they have been busy with the development of the [BekiPay app](https://play.google.com/store/apps/details?id=com.sikoba.bekiPay&hl=en&gl=US), which will allow people and businesses of Luxembourg’s canton of Redange to use e-Bekis instead of paper Bekis, and cooperating with “Proyecto Banco Mujer” in Peru, a group of business women in Peru who are operating a small credit and savings ring that has started using the SikobaPay app to register loans.
+
+{% include components/testimonial-profile.html handle="alex-kampa" role="Founder & Director, Sikoba" %}

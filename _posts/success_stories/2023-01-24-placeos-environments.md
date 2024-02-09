@@ -63,3 +63,5 @@ One awesome use case is portable Linux executables. We developed a service that 
 For us Crystal is a perfect Web services platform and for doing most things you might otherwise use Ruby, Python or Go-lang for. We're using it to develop microservices of all shapes and sizes with both x86_64 and ARM64 support for Docker and k8s deployments.
 
 As more developers start using the language, and shards are built out, I can imagine Crystal surpassing both Ruby and Python as the go-to language. It has the benefits of Go-lang and Ruby in the one package, which is a pretty strong multiplier.
+
+{% include components/testimonial-profile.html handle="stakach" role="Engineering Lead, Place" %}

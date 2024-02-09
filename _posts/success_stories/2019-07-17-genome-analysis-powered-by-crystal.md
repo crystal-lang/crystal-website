@@ -20,6 +20,8 @@ For this particular project, **Crystal turned out to be between 4 and 6 times fa
 
 Peter Schols, Diploid’s CEO, was very satisfied with these results.
 
+{% include components/testimonial-profile.html handle="peter-schols" role="CEO, Diploid" %}
+
 > Crystal [...] combines this still excellent performance with a very Ruby-like syntax. Given that the rest of our code base has been written in Ruby, it’s a great match. Moreover, Crystal has a Go-like concurrency model, so it basically takes the best from the Ruby world (expressive syntax, full OOP) and combines it with the best of Go (concurrency model, performance).
 
 **People are talking about this story:**

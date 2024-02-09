@@ -46,4 +46,6 @@ It's been on our codebase for over two years now. We went through multiple itera
 
 Right now, we’re validating everything in terms of safety and security. Going forward in the next few months, we’ll be working on interfacing with mobile phones for remote control, all of which will be integrated with the Crystal app.
 
+{% include components/testimonial-profile.html handle="elorest" role="CIO & Software Architect, Nikola Motor Company" %}
+
 > I love working with Crystal. It has a lot of the happiness value that Ruby had at the beginning, and the community is doing really amazing things.
