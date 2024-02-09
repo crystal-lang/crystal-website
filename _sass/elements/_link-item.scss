@@ -24,9 +24,9 @@
   }
 
   p {
-    font-size: 90%;
     line-height: var(--line-height-md);
     color: var(--light-gray);
+    margin-block-start: var(--padding-xxs);
   }
 }
 
