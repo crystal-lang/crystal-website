@@ -2,24 +2,22 @@
 title: Concurrency Model
 short_name: Concurrency
 description: |
-  Crystal uses green threads, called fibers, to achieve concurrency. Fibers communicate with each other using channels, as in Go or Clojure, without having to turn to shared memory or locks.
-read_more: "[Read more about Crystal's concurrency model](https://crystal-lang.org/reference/guides/concurrency.html)"
+  Crystal uses green threads, called fibers, to achieve concurrency.
+  Fibers communicate with each other via channels without having to turn to shared memory or locks ([CSP](https://www.wikiwand.com/en/Communicating_sequential_processes)).
+read_more: "[Read more about concurrency](https://crystal-lang.org/reference/guides/concurrency.html)"
 ---
 ```crystal
 channel = Channel(Int32).new
-total_lines = 0
 
-sites = ["http://www.example.com", "http://info.cern.ch/"]
-
-sites.each do |site|
+3.times do |i|
   spawn do
-    channel.send site.size
+    3.times do |j|
+      channel.send 10 * (i + 1) + j
+    end
   end
 end
 
-sites.size.times do
-  total_lines += channel.receive
+9.times do
+  puts channel.receive
 end
-
-puts total_lines
 ```
