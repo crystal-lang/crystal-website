@@ -32,7 +32,8 @@ body > header {
   align-items: center;
 }
 
-body > footer {
+body:not(:has(.edit-on-github)) > footer,
+body > .edit-on-github {
   margin-top: auto;
 }
 

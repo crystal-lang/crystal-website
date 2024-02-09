@@ -18,24 +18,19 @@
   align-items: start;
   text-align: start;
 
-  > picture {
+  > img {
     width: 100%;
-    margin: 0;
     aspect-ratio: var(--golden-ratio);
+    object-fit: cover;
     transition: 300ms filter;
-
-    > img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
 
     + time {
       margin-block-start: var(--padding-sm);
     }
   }
+
   &:not(:hover, :focus-within) {
-    > picture {
+    > img {
       filter: grayscale(1) opacity(0.8);
     }
   }
