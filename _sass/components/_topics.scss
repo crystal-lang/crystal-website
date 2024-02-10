@@ -43,9 +43,12 @@
     margin-top: var(--padding-md);
   }
 
-  img.topic-icon {
-    @media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
+    img.topic-icon {
       filter: contrast(0);
+    }
+    .topic-icon svg {
+      fill: hsl(0, 0%, 50%);
     }
   }
 }
