@@ -54,12 +54,15 @@
 .avatar-list img {
   @include circle-image;
   background-color: var(--background-main);
-  box-shadow: 0 0 0 0.05em var(--background-main),
-    0 0 0 0.08em rgba(0, 0, 0, 0.15);
+  box-shadow:
+    0 0 0 0.05em var(--background-main),
+    0 0 0 0.08em color-mix(in srgb, var(--primary-text) 20%, transparent);
 }
 
 .avatar-list a:focus {
   outline: 2px solid transparent;
   /* Double-layer trick to work for dark and light backgrounds */
-  box-shadow: 0 0 0 0.08em #29344b, 0 0 0 0.12em var(--background-main);
+  box-shadow:
+    0 0 0 0.08em #29344b,
+    0 0 0 0.12em var(--background-main);
 }

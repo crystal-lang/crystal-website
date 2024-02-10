@@ -45,8 +45,8 @@ pre {
     padding-inline: var(--padding-xs);
     border-radius: var(--padding-xs);
     box-shadow:
-      0 1px 4px 0 rgb(0 0 0 / 30%),
-      0 1px 3px 0 rgb(0 0 0 / 20%);
+      0 1px 4px 0 color-mix(in srgb, var(--primary-text) 35%, transparent),
+      0 1px 3px 0 color-mix(in srgb, var(--primary-text) 25%, transparent);
   }
 }
 
