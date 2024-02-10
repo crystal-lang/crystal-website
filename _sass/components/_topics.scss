@@ -42,4 +42,10 @@
     align-self: end;
     margin-top: var(--padding-md);
   }
+
+  img.topic-icon {
+    @media (prefers-color-scheme: dark) {
+      filter: contrast(0);
+    }
+  }
 }

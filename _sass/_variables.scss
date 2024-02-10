@@ -24,6 +24,7 @@ $font-sizes: (
   --tainted-white: hsl(0, 0%, 96%);
   --alabaster: rgb(237, 237, 237);
   --black: hsl(0, 0%, 3%);
+  --pitch-black: var(--black);
   --light-gray: hsl(0, 0%, 44%);
   --tainted-black: hsl(0, 0%, 11%);
   --lighter-gray: hsl(0, 0%, 65%);
@@ -94,4 +95,36 @@ $font-sizes: (
   --md-code-hl-punctuation-color: var(--lighter-gray);
   --md-code-hl-comment-color: var(--lighter-gray);
   --md-code-hl-generic-color: var(--lighter-gray);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pitch-black: hsl(0, 0%, 3%);
+    --black: hsl(0, 0%, 11%);
+    --tainted-black: hsl(0, 0%, 16%);
+    --mine-shaft: hsl(0, 0%, 21%);
+
+    --light-gray: hsl(0, 0%, 56%);
+
+    --background-main: var(--black);
+    --background-secondary: var(--tainted-black);
+    --background-tertiary: var(--mine-shaft);
+
+    --primary-text: hsl(0, 0%, 90%);
+    --primary-code: var(--tainted-white);
+    --light-text: var(--lighter-gray);
+    --lighter-text: var(--tainted-white);
+
+    --link-color: currentColor;
+    --link-hover-color: var(--light-gray);
+
+    --highlight-bg: hsl(0, 0%, 27%);
+    --code-bg: hsl(0, 0%, 27%);
+
+    --border-light: hsl(0, 0%, 14%);
+    --border-color: hsl(0, 0%, 25%);
+    --border-color-heavy: hsl(0, 0%, 32%);
+
+    @include dark-mode-highlight;
+  }
 }
