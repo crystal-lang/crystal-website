@@ -22,12 +22,14 @@ $font-sizes: (
   // -------------
   --white: hsl(0, 0%, 100%);
   --tainted-white: hsl(0, 0%, 96%);
+  --alabaster: rgb(237, 237, 237);
   --black: hsl(0, 0%, 3%);
   --light-gray: hsl(0, 0%, 44%);
   --lighter-gray: hsl(0, 0%, 65%);
 
   --background-main: var(--white);
   --background-secondary: var(--tainted-white);
+  --background-tertiary: var(--alabaster);
 
   --primary-text: var(--black);
   --primary-code: var(--light-gray);
@@ -42,7 +44,7 @@ $font-sizes: (
   --highlight-bg: var(--tainted-white);
   --code-bg: var(--tainted-white);
 
-  --border-color-light: hsl(0, 0%, 93%);
+  --border-color-light: var(--alabaster);
   --border-color: hsl(0, 0%, 87%);
   --border-color-heavy: hsl(0, 0%, 84%);
 
