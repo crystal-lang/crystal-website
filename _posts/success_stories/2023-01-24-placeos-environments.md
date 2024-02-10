@@ -4,14 +4,16 @@ subtitle: "How PlaceOS creates and manages cohesive environments"
 author: stakach,pettimart
 summary: "<b>Stephen Von Takach Dukai</b>, <b>Engineering Lead</b> at PlaceOS, talks about their experience working with Crystal."
 comment_href: https://disqus.com/home/discussion/crystal-lang/automating_smart_buildings_with_crystal_how_placeos_creates_and_manages_cohesive_environments/
+image: /assets/blog/2023-01-24-placeos.png
+company: PlaceOS
+categories:
+- success_stories
 ---
-<img src="/assets/blog/2023-01-24-placeos.png" class="center" />
-
 [PlaceOS](https://place.technology/) provides a platform that allows a seamless integration between the physical and the digital. And then they automate it all, to create state-of-the-art cohesive ecosystems in the traditionally conservative space of facility management.
 
 We sat down with **Stephen Von Takach Dukai**, **Engineering Lead** at Place, to talk about their experience working with Crystal.
 
-## What projects are you currently using Crystal for? Are they all in production? Are they client-facing or internal tools?
+**What projects are you currently using Crystal for? Are they all in production? Are they client-facing or internal tools?**
 
 We're effectively a Crystal-lang house for all things backend. Most of what we do is running in production, both client-facing and internal tools. All services we built are Crystal except for one remaining Ruby service.
 
@@ -25,7 +27,7 @@ We're also a big proponent of open source, so you can find our work at:
 
 Also, some of our SaSS / cloud platform software, which includes platform management and billing software, is closed source —but that's all Crystal-lang too.
 
-## How did you learn about the language, and what went into the process of choosing it for your stack? What alternatives did you evaluate, and what other languages are you using?
+**How did you learn about the language, and what went into the process of choosing it for your stack? What alternatives did you evaluate, and what other languages are you using?**
 
 I think we first noticed Crystal when Mike Perham, creator of Sidekiq, released a Crystal-lang client.
 
@@ -36,7 +38,7 @@ Really the only other language that was close to meeting our needs was Go-lang, 
 
 The other language we use is TypeScript as our frontends are built on the Angular framework.
 
-## What were some advantages of developing in Crystal, and what were some problems?
+**What were some advantages of developing in Crystal, and what were some problems?**
 
 Coming from Ruby I personally have found Crystal to be a breath of fresh air. I originally moved from C++ and C# to Ruby, as the language I worked on day to day, and had a similar feeling back then.
 
@@ -46,7 +48,7 @@ Crystal solved most of what felt wrong with Ruby. Types and  the smart features 
 
 The biggest problem was probably a lack of mature shards at the time, but this just meant we could shape the missing pieces to meet our needs and porting Ruby Gems is typically not much of an issue. Frankly, it's amazing how many bugs we found in every gem we ported just thanks to the Crystal compiler.
 
-## What would you say is a benefit of using the language for your own operation, and what for your end customer?
+**What would you say is a benefit of using the language for your own operation, and what for your end customer?**
 
 The benefit to us is the developer productivity of Ruby, with increased confidence in what we're releasing and less focus required on performance. This translates to higher quality applications for customers and cleaner codebases for us.
 
@@ -54,10 +56,12 @@ One example of this is the web framework we built, [Spider-Gazelle](https://spid
 
 API documentation was time consuming for developers so this has increased our developer productivity, docs are more accurate (in many cases, now exist) and our compute expenditure is lower when compared to Ruby.
 
-## What kind of problems would you say Crystal solves best?
+**What kind of problems would you say Crystal solves best?**
 
 One awesome use case is portable Linux executables. We developed a service that can be deployed on the edge (typically network switches in a client's building) and this edge processor downloads statically linked drivers, which are Crystal executables built using musl libc.
 
 For us Crystal is a perfect Web services platform and for doing most things you might otherwise use Ruby, Python or Go-lang for. We're using it to develop microservices of all shapes and sizes with both x86_64 and ARM64 support for Docker and k8s deployments.
 
 As more developers start using the language, and shards are built out, I can imagine Crystal surpassing both Ruby and Python as the go-to language. It has the benefits of Go-lang and Ruby in the one package, which is a pretty strong multiplier.
+
+{% include components/testimonial-profile.html handle="stakach" role="Engineering Lead, Place" %}

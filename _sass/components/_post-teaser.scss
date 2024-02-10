@@ -4,10 +4,11 @@
   grid-template-columns: 4.5em 1fr;
   grid-template-rows: 1.4em 1.4em auto auto 1fr;
   grid-template-areas:
-    "images names"
-    "images date"
-    "images title"
-    "images content"
+    "avatars names"
+    "avatars date"
+    "avatars title"
+    "avatars image"
+    "avatars content"
     ". content";
 
   @media (max-width: 80ch) {
@@ -15,7 +16,7 @@
   }
 
   > .avatar-list {
-    grid-area: images;
+    grid-area: avatars;
     justify-self: center;
   }
 
@@ -37,14 +38,19 @@
   > .content {
     grid-area: content;
   }
+
+  > .post-image {
+    grid-area: image;
+  }
 }
 
 .post {
   @media (max-width: 80ch) {
     grid-template-areas:
-      "images names"
-      "images date"
+      "avatars names"
+      "avatars date"
       "title title"
+      "image image"
       "content content";
   }
 }
@@ -68,6 +74,10 @@
 .excerpt {
   margin-block-start: 0.2em;
   line-height: var(--line-height-md);
+}
+
+.post-image {
+  margin-block-start: var(--block-flow-md);
 }
 
 .post-title {

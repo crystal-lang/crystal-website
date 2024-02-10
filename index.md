@@ -19,3 +19,12 @@ section: home
 {% include components/sponsorship.html %}
 
 {% include components/top-sponsors.html %}
+
+## Success stories
+
+{% include components/posts-list.html posts=site.categories.success_stories limit=3 %}
+
+<div class="link-actions">
+  <a href="/success-stories/">More success stories</a>
+  <a href="/used_in_prod/">Used in production</a>
+</div>

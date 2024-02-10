@@ -14,6 +14,10 @@ layout: base
 
   {%- include posts/meta.html post = page %}
 
+  {%- if page.image %}
+    <img src="{{ page.image }}" class="post-image" alt="">
+  {%- endif %}
+
   <div class="content" itemprop="articleBody">{{ content }}</div>
 </article>
 
