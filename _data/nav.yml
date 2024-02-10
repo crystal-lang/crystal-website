@@ -17,7 +17,7 @@ blog:
   url: /blog/technical/
 - label: community
   url: /blog/community/
-- label: success stories
+- label: success
   url: /success-stories/
 
 community:
