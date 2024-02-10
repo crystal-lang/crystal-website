@@ -1,7 +1,7 @@
 ---
 title: "NeuraLegion and Crystal"
 author: neuralegion
-categories: success_stories
+categories: success
 company: Neuralegion
 ---
 

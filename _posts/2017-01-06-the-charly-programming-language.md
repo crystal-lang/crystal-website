@@ -3,7 +3,7 @@ title: "The Charly programming language"
 summary: "Guest blog post by Leonard Schütz"
 thumbnail: "ch"
 author: lschutz
-categories: success_stories
+categories: success
 company: Charly Language
 ---
 

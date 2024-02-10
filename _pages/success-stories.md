@@ -6,4 +6,4 @@ link_actions:
 - '[Used in production](/used_in_prod/)'
 ---
 
-{% include components/posts-list.html posts=site.categories.success_stories %}
+{% include components/posts-list.html posts=site.categories.success %}

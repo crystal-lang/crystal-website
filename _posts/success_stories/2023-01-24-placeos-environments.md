@@ -6,7 +6,7 @@ summary: "<b>Stephen Von Takach Dukai</b>, <b>Engineering Lead</b> at PlaceOS, t
 comment_href: https://disqus.com/home/discussion/crystal-lang/automating_smart_buildings_with_crystal_how_placeos_creates_and_manages_cohesive_environments/
 image: /assets/blog/2023-01-24-placeos.png
 company: PlaceOS
-categories: success_stories
+categories: success
 ---
 [PlaceOS](https://place.technology/) provides a platform that allows a seamless integration between the physical and the digital. And then they automate it all, to create state-of-the-art cohesive ecosystems in the traditionally conservative space of facility management.
 
