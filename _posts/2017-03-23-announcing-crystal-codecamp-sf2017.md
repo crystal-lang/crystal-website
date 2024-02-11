@@ -4,7 +4,7 @@ summary: ""
 thumbnail: "SF17"
 author: mdavid
 categories: community
-tags: community events
+tags: [community, events]
 ---
 
 We’re happy to announce that the Crystal team is coming to San Francisco!

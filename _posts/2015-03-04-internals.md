@@ -4,7 +4,7 @@ summary: Memory representation
 thumbnail: 0x
 author: asterite
 categories: technical
-tags: language codegen
+tags: [language, codegen]
 ---
 
 Let's talk about what Crystal does with your code: how it represents types in memory,

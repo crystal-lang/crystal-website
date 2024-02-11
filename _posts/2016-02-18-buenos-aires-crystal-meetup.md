@@ -4,7 +4,7 @@ summary: First meetup in Argentina
 thumbnail: m
 author: mdavid
 categories: community
-tags: community events
+tags: [community, events]
 ---
 
 On February 4th we hosted the first Crystal Meetup in Argentina.

@@ -4,7 +4,7 @@ summary:
 thumbnail: 👻
 author: bcardiff
 categories: technical
-tags: language types
+tags: [language, types]
 ---
 
 Let's play with an immutable Queue type. We want to:
