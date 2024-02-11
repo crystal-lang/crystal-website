@@ -1,10 +1,9 @@
 ---
 title: Snapcraft Summit Montréal
-summary: Updates in Crystal distributions and other news
+description: Updates in Crystal distributions and other news
 author: bcardiff
 categories: community
-tags: events
-tags: packaging
+tags: [events, packaging]
 ---
 
 The [Snapcraft Summit Montréal](https://snapcraft.io/blog/snapcraft-summit-montreal) took place between June 11th and June 13th, 2019 and people from different open-source projects gathered to iterate and work in a flawless manner, that would have taken far more time and resources if it wasn't for the summit. The shared goal was to improve the presence of each individual project in the [snapcraft.io](https://snapcraft.io) store. The plus side of the story was being able to meet the people behind different projects and share past experiences and current ideas.

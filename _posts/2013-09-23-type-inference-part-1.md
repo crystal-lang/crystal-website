@@ -4,7 +4,7 @@ thumbnail: x=
 summary: How type inference works
 author: bcardiff
 categories: technical
-tags: language types
+tags: [language, types]
 ---
 
 Type inference is a feature every programmer should love. It keep the programmer out of specifying types in the code, and is just so nice.
