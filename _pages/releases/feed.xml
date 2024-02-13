@@ -6,8 +6,8 @@ section: releases
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Crystal Releases</title>
-  {%- if site.description %}
-  <subtitle>{{ site.description | xml_escape }}</subtitle>
+  {%- if site.tagline %}
+  <subtitle>{{ site.tagline | xml_escape }}</subtitle>
   {%- endif %}
   <link href="{{ '/' | absolute_url }}" rel="alternate" type="text/html" />
   <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
