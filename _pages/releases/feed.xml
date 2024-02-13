@@ -21,7 +21,7 @@ section: releases
       {%- assign authors = post.author | split: ',' -%}
       {%- for author in authors %}
       <author>
-        <name>{{ site.data.blog_authors[author].name }}</name>
+        <name>{{ site.data.authors[author].name }}</name>
         <uri>https://github.com/{{ author }}/</uri>
       </author>
       {%- endfor -%}
