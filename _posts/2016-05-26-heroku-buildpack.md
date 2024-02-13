@@ -2,6 +2,8 @@
 title: Heroku Buildpack
 thumbnail: H
 author: bcardiff
+categories: technical
+tags: tooling
 ---
 
 At the end of 2014 a [first draft](https://github.com/manastech/heroku-buildpack-crystal/commit/b364f9115706a2a1c97ff40bd44aef1cf73e6288) of a [Heroku](//heroku.com) buildpack for crystal was createad. This was truly great. Being able to run crystal apps in the Heroku stack was charm idea.

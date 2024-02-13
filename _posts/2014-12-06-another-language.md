@@ -1,8 +1,9 @@
 ---
 title: Another language
 summary: What if...
-thumbnail: ??
 author: asterite
+categories: technical
+tags: [language, types]
 ---
 
 Crystal has global type inference. You can program without type annotations except

@@ -2,6 +2,7 @@
 title: "Diploid and Crystal"
 author: peterschols,ivo-balbaert
 description: "At Diploid, we have been using Crystal for quite some time now. We would like to share our experience in this interview, answering questions relevant to companies wanting to use Crystal for production."
+company: Diploid
 ---
 > _This guest post is an interview that Ivo Balbaert had with Peter Schols from [**Diploid**](http://www.diploid.com/) about their Crystal in Production story. This interview will also be part of the [**Programming Crystal** book](https://pragprog.com/book/crystal/crystal) that Ivo is writting - and we can't wait to read!_
 >

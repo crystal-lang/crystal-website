@@ -7,8 +7,9 @@
     <a href="/" rel="index up">Home</a>
   </span>
 
-  {%- if include.page.section -%}
-    {%- assign section = site.data.sections[include.page.section] -%}
+  {% assign section = include.page.section | default: layout.section %}
+  {%- if section -%}
+    {%- assign section = site.data.sections[section] -%}
     {%- for item in section.breadcrumbs %}
       {%- if item.nav %}
         {%- assign page_nav = item.nav -%}
@@ -27,6 +28,21 @@
         <span>{{ item.title }}</span>
       {%- endif %}
       </div>
+    {%- endfor %}
+  {%- endif %}
+
+  {%- assign categories = include.page.categories %}
+  {%- if categories | count > 0 %}
+    {%- for category in categories %}
+      {%- if forloop.first %}
+        {{ separator }}
+      {%- else %}
+        ,
+      {%- endif %}
+
+      <span class="breadcrumb breadcrumb--category">
+        <a href="{% if category == 'success' %}/success-stories{% else %}/blog/{{ category }}/{% endif %}">{{ category }}</a>
+      </span>
     {%- endfor %}
   {%- endif %}
 

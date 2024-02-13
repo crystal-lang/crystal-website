@@ -4,8 +4,7 @@ author: mpettinati
 description: Sikoba helps communities reduce their dependence on cash, by unlocking hidden financial resources.
 company: Sikoba
 image: /assets/blog/2019-05-01-sikoba.webp
-categories:
-- success_stories
+categories: success
 ---
 
 Sikoba is an IOU (“I owe you”) platform that automates the creation, tracking and finally clearing of debt between its users. While Sikoba can be used in a wide array of settings, like business to business contracts and clearings, it creates marketplaces for peer-to-peer credit-based transactions that is a great fit for small communities with struggling economies.

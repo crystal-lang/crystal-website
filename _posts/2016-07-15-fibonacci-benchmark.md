@@ -3,6 +3,8 @@ title: Fibonacci benchmark
 summary: "Ruby vs. Crystal"
 thumbnail: f
 author: asterite
+categories: technical
+tags: performance
 ---
 
 When trying out Crystal it's tempting, and very fun, to write small benchmarks to see

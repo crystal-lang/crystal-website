@@ -3,6 +3,8 @@ title: Garbage Collector
 summary: Enabled the Boehm GC
 thumbnail: gc
 author: waj
+categories: technical
+tags: language
 ---
 
 Finally Crystal will start giving some memory back to the operating system! Today we managed to fit the [Boehm-Demers-Weiser conservative garbage collector](https://www.hboehm.info/gc/) into the language.

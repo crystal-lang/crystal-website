@@ -2,6 +2,8 @@
 title: "Top 5 Reasons for Ruby-ists to Use Crystal"
 author: marksiemers
 description: "There are so many reasons for Rubysts to give Crystal a try - in this blogpost, Mark Siemers shares his top 5"
+categories: community
+tags: howto
 ---
 
 > _This is a guest post by [Mark Siemers](https://www.linkedin.com/in/marksiemers/), who kindly volunteered to suggest a series of Crystal blog posts. Expect more to come, or - even better - [contact us](http://twitter.com/intent/tweet?text=@CrystalLanguage%20I%20want%20to%20write%20about...) about writing your own post._

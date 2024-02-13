@@ -5,8 +5,7 @@ summary: "Crystal is a good common ground for developers with different backgrou
 comment_href: https://disqus.com/home/discussion/crystal-lang/bright_and_manas_partner_together_to_create_crystal_development_tools_37/
 company: Bright Security
 image: /assets/blog/2024-02-02-bright-banner.jpg
-categories:
-- success_stories
+categories: success
 ---
 
 [Bright Security](https://brightsec.com/) is a developer-centric Dynamic Application Security Testing Solution, also known as a DAST. Founded in 2018, their mission is to help organizations ship secure Applications and APIs at the speed of business, by enabling quick & iterative scans to identify true and critical security vulnerabilities without compromising quality or software delivery speeds.

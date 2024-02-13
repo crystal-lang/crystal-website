@@ -34,7 +34,7 @@ defaults:
       layout: post
       permalink: /:year/:month/:day/:title/
       is_post: true
-      section: blog
+      section: posts
   -
     scope:
       path: "_pages/install"

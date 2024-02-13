@@ -22,7 +22,7 @@ section: home
 
 ## Success stories
 
-{% include components/posts-list.html posts=site.categories.success_stories limit=3 %}
+{% include components/posts-list.html posts=site.categories.success limit=3 %}
 
 <div class="link-actions">
   <a href="/success-stories/">More success stories</a>

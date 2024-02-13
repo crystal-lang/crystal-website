@@ -3,6 +3,7 @@ title: "Launching the 2017 State of Crystal Survey"
 summary: ""
 thumbnail: ""
 author: sdogruyol
+categories: community
 ---
 
 Crystal is growing! As an awesome community, we’d really like to hear your opinions and decide how we should plan for the future. We are pleased to announce the launch of the official [2017 State of Crystal Survey](https://goo.gl/forms/Afl1rqvaO3LcaxHr1)! Whether or not you use Crystal today, we really want to know your opinions. Your feedback will help Crystal understand its strengths and weaknesses, and to determine development priorities for the future.

@@ -3,6 +3,8 @@ title: "Reveal type in Crystal"
 author: bcardiff
 summary: "Porting reveal_type from Sorbet to Crystal."
 comment_href: https://disqus.com/home/discussion/crystal-lang/reveal_type_in_crystal_42/
+categories: technical
+tags: howto
 ---
 
 Recently I came across [`reveal_type` from Sorbet](https://sorbet.org/docs/flow-sensitive#example) as a way to inspect the type of an expression, thanks [Brian Hicks](https://bytes.zone/). I wondered if that can be ported to Crystal. You can jump to the [conclusions](#conclusions) section if you want to copy-paste the good-enough™️ solution in your project.

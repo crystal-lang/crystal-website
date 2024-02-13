@@ -3,6 +3,8 @@ title: Introducing shardbox.org
 summary: A platform for discovering the shards ecosystem.
 author: straight-shoota
 comment_href: https://disqus.com/home/discussion/crystal-lang/introducing_shardboxorg_45/
+categories: community
+tags: ecosystem
 ---
 
 I'm happy to announce the launch of [shardbox.org](https://shardbox.org), a database for discovering shards.

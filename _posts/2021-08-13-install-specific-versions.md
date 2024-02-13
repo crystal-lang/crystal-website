@@ -3,6 +3,8 @@ title: Installing specific versions of Crystal's binary packages
 summary: Binary packages are now available for older releases on the Open Build Service
 thumbnail: +
 author: straight-shoota
+categories: technical
+tags: packaging
 ---
 
 When we [moved hosting of Crystal's binary packages](/2021/04/30/new-apt-and-rpm-repositories/) to the [Open Build Service (OBS)](https://build.opensuse.org),
