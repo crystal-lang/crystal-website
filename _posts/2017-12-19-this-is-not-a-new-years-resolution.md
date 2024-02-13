@@ -1,7 +1,7 @@
 ---
 title: "This is not a new year’s resolution"
 author: nditada
-summary: "Almost 1 year ago, we commited to 1.0. Here's Crystal's current status & future."
+description: "Almost 1 year ago, we commited to 1.0. Here's Crystal's current status & future."
 categories: project
 ---
 Almost 1 year ago, riding the wave of end of year optimism, [Manas.Tech](https://manas.tech/) ("we" from here on in this post) decided to commit to wrap up a 1.0 release during 2017 that would include all possible breaking changes to the language.

@@ -1,7 +1,7 @@
 ---
 title: "Lucky with Crystal - Fewer Bugs, Better Performance, Incredible Productivity"
 author: paulcsmith
-summary: "Lucky is a new Crystal web framework built to catch bugs at compile time, return responses incredibly quickly, and help you write maintainable code."
+description: "Lucky is a new Crystal web framework built to catch bugs at compile time, return responses incredibly quickly, and help you write maintainable code."
 categories: community
 tags: ecosystem
 ---

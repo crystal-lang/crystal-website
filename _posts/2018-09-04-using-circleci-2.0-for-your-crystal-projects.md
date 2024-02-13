@@ -1,7 +1,7 @@
 ---
 title: 'Using CircleCI 2.0 for your Crystal projects'
 author: bcardiff
-summary: "An up to date article showing how to use CircleCI 2.0 for your Crystal projects."
+description: "An up to date article showing how to use CircleCI 2.0 for your Crystal projects."
 categories: technical
 tags: devnotes
 ---

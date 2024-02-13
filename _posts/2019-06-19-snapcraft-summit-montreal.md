@@ -69,7 +69,7 @@ A basic `snapcraft.yaml` file to declare all the parts will look as follows:
 ```yaml
 name: crystal-hello
 version: "1.0"
-summary: Create the hello snap
+description: Create the hello snap
 summary: Create the hello snap
 
 grade: devel
