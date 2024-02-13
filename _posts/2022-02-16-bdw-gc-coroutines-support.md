@@ -1,7 +1,6 @@
 ---
 title: bdw-gc coroutines support
 summary: The support for multi-thread coroutines was gained by allowing the user to control the stack bottom of each thread.
-thumbnail: +
 author: bcardiff
 categories: technical
 tags: feature

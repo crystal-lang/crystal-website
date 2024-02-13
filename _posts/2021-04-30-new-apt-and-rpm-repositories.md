@@ -1,7 +1,6 @@
 ---
 title: Announcing new apt and rpm repositories
 summary: Binary packages built and distributed on the Open Build Service
-thumbnail: +
 author: straight-shoota
 categories: technical
 tags: packaging

@@ -1,7 +1,6 @@
 ---
 title: The future of Crystal
 summary: A short story
-thumbnail: 🎄
 author: asterite
 categories: project
 ---

@@ -1,7 +1,6 @@
 ---
 title: A story of compromises and types
 summary:
-thumbnail: 👻
 author: bcardiff
 categories: technical
 tags: [language, types]

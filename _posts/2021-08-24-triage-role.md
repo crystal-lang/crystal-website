@@ -1,7 +1,6 @@
 ---
 title: Community moderators
 summary: Contributors may level up their involvement with the project with the new role.
-thumbnail: +
 author: beta-ziliani
 categories: project
 ---

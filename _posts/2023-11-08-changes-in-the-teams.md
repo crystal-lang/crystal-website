@@ -1,7 +1,6 @@
 ---
 title: A farewell and a (second) welcome
 summary: Changes in the Crystal Team and the Core Team
-thumbnail: +
 author: beta-ziliani
 categories: project
 tags: [people, core-team]

@@ -1,7 +1,6 @@
 ---
 title: Split the repo!
 summary: where the git...
-thumbnail: G
 author: bcardiff
 categories: project
 ---

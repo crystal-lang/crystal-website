@@ -1,6 +1,5 @@
 ---
 title: Happy birthday, Crystal!
-thumbnail: h!
 summary: Crystal is one year old
 author: asterite
 categories: technical

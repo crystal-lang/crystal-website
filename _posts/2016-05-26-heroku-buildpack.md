@@ -1,6 +1,5 @@
 ---
 title: Heroku Buildpack
-thumbnail: H
 author: bcardiff
 categories: technical
 tags: tooling

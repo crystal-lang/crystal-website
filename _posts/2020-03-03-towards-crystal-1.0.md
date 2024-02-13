@@ -1,7 +1,6 @@
 ---
 title: Towards Crystal 1.0
 summary: The upcoming efforts to release Crystal 1.0
-thumbnail: +
 author: bcardiff
 comment_href: https://disqus.com/home/discussion/crystal-lang/towards_crystal_10_23/
 categories: project
