@@ -1,6 +1,6 @@
 ---
 title: Snapcraft Summit Montréal
-description: Updates in Crystal distributions and other news
+summary: Updates in Crystal distributions and other news
 author: bcardiff
 categories: community
 tags: [events, packaging]
