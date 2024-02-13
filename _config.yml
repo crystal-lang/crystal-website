@@ -68,6 +68,12 @@ defaults:
 twitter:
   username: CrystalLanguage
 
+social:
+  name: Crystal Language
+  links:
+  - https://fosstodon.org/@CrystalLanguage
+  - https://github.com/crystal-lang
+
 exclude:
 - "*.nix"
 - "devenv*"
