@@ -8,7 +8,15 @@ blog:
   breadcrumbs:
     - title: Blog
       url: /blog/
+      nav: blog
   weight: 10
+
+posts:
+  title: Posts
+  breadcrumbs:
+    - title: Blog
+      url: /blog/
+  weight: 15
 
 community:
   title: Community
@@ -63,8 +71,9 @@ learning:
 newsletter:
   title: Newsletter
   breadcrumbs:
-    - title: Newsletter
-      url: /newsletter/
+    - title: Community
+      url: /community/
+      nav: community
   weight: 32
 
 releases:

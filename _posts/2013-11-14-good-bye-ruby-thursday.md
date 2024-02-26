@@ -3,6 +3,8 @@ title: Good bye Ruby Thursday
 thumbnail: :)
 summary: Bootstraped the compiler
 author: asterite
+categories: technical
+tags: compiler
 ---
 
 If you don't know it already, Crystal is a programming language with syntax and semantics

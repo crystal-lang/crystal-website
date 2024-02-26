@@ -29,7 +29,7 @@ neuralegion:
   name: NeuraLegion
 ivo-balbaert:
   name: Ivo Balbaert
-peter-schols:
+peterschols:
   name: Peter Schols
 paulcsmith:
   name: Paul Smith
@@ -49,3 +49,7 @@ stakach:
   name: Stephen von Takach Dukai
 Remilia:
   name: Remilia Scarlet
+elorest:
+  name: Isaac Sloan
+alex-kampa:
+  name: Aleksander Kampa

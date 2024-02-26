@@ -3,6 +3,8 @@ title: Announcing new apt and rpm repositories
 summary: We are moving to Bintray for apt and rpm repositories and we are adding stable, unstable, nightly channels.
 thumbnail: +
 author: bcardiff
+categories: technical
+tags: packaging
 ---
 
 **UPDATE:** As of 2021-05-01, the bintray repositories are no longer available. The distribution packages are now hosted

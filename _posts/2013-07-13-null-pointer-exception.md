@@ -3,6 +3,8 @@ title: Null Pointer Exception
 thumbnail: NP
 summary: Crystal doesn't let you have a Null Pointer Exception
 author: asterite
+categories: technical
+tags: language
 ---
 
 Null pointer exceptions, also known as NPEs, are pretty common errors.

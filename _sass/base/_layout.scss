@@ -32,7 +32,8 @@ body > header {
   align-items: center;
 }
 
-body > footer {
+body:not(:has(.edit-on-github)) > footer,
+body > .edit-on-github {
   margin-top: auto;
 }
 
@@ -42,8 +43,7 @@ body > main {
   margin-block-end: var(--block-flow-lg);
 
   > header {
-    margin-block-start: var(--block-flow-md);
-    margin-block-end: var(--block-flow-sm);
+    margin-block: var(--block-flow-md);
 
     h1 {
       font-size: font-size(page_title);

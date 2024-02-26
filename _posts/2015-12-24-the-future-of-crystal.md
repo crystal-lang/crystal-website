@@ -3,6 +3,7 @@ title: The future of Crystal
 summary: A short story
 thumbnail: 🎄
 author: asterite
+categories: project
 ---
 
 (This post is part of [Crystal Advent Calendar 2015](http://www.adventar.org/calendars/800))

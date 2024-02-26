@@ -1,0 +1,47 @@
+.posts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+  gap: var(--padding-sm);
+
+  > * {
+    margin: 0;
+  }
+}
+
+.post-card {
+  --card-padding: 0;
+
+  @extend .card;
+
+  box-shadow: none;
+  width: auto;
+  align-items: start;
+  text-align: start;
+  font-size: 100%;
+
+  > img {
+    width: 100%;
+    aspect-ratio: var(--golden-ratio);
+    object-fit: cover;
+    transition: 300ms filter;
+    margin-block-end: var(--padding-sm);
+  }
+
+  &:not(:hover, :focus-within) {
+    > img {
+      filter: grayscale(1) opacity(0.8);
+    }
+  }
+
+  > .company {
+    margin-block-end: var(--padding-xxs);
+  }
+
+  > .name {
+    &.name {
+      // specificity hack to alter .post-title default
+      text-wrap: auto;
+    }
+    @extend .post-title;
+  }
+}

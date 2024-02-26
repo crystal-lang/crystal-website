@@ -3,6 +3,7 @@
   --sin-70: 0.93;
 
   --hex-bg: var(--white);
+  --hex-color: var(--black);
   --hex-bg-hover: var(--tainted-white);
 }
 
@@ -33,7 +34,7 @@
     margin-inline: auto;
   }
 
-  color: var(--primary-text);
+  color: var(--hex-color);
   font-weight: 500;
   text-transform: uppercase;
 

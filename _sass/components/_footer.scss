@@ -4,7 +4,7 @@
   width: 100vw;
   text-align: center;
   padding: var(--padding-sm);
-  background-color: var(--border-color-light);
+  background-color: var(--background-tertiary);
   font-size: 90%;
   color: var(--light-text);
   display: flex;
@@ -41,7 +41,7 @@ footer {
     right: 0;
 
     border-top: 1.5px solid var(--border-color);
-    background-color: var(--tainted-white);
+    background-color: var(--background-secondary);
   }
 
   > * {
@@ -104,7 +104,9 @@ nav.footer-section {
 
 .newsletter-footer {
   flex-basis: 40%;
+}
 
+.newsletter-form {
   display: grid;
   grid-template-columns: minmax(15em, 25em) auto;
   grid-template-areas:
@@ -135,7 +137,7 @@ nav.footer-section {
 
 .link-items--social {
   @extend .ui-link;
-  
+
   flex-basis: 30%;
 
   display: flex;

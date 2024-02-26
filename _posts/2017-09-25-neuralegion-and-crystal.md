@@ -1,6 +1,8 @@
 ---
 title: "NeuraLegion and Crystal"
 author: neuralegion
+categories: success
+company: Neuralegion
 ---
 
 > _This is a guest post from the team at [NeuraLegion](http://neuralegion.com), telling their Crystal in Production story. We'd like to thank them for taking the time to share their experience, and to invite any other companies or individuals using Crystal in a production environment to share theirs too - [**reach out**](/community/) if you'd like to!_

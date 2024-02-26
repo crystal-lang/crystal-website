@@ -9,6 +9,11 @@
     object-fit: contain;
     margin-inline-end: var(--padding-xxs);
   }
+  > img {
+    @media (prefers-color-scheme: dark) {
+      filter: contrast(0);
+    }
+  }
   &::before {
     background-color: currentColor;
     mask-repeat: no-repeat;

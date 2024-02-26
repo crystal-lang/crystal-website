@@ -10,6 +10,16 @@ main:
 - label: Docs
   url: https://crystal-lang.org/reference/
 
+blog:
+- label: project
+  url: /blog/project/
+- label: technical
+  url: /blog/technical/
+- label: community
+  url: /blog/community/
+- label: success
+  url: /success-stories/
+
 community:
 - label: Team
   url: /team/
@@ -17,6 +27,10 @@ community:
   url: /sponsors/
 - label: Events
   url: /community/#events
+- label: Used in production
+  url: /used_in_prod/
+- label: Newsletter
+  url: /newsletter/
 - label: Forum
   url: https://forum.crystal-lang.org/
 - label: Governance
@@ -61,6 +75,10 @@ home:
   url: /install/
 - label: Releases
   url: /releases/
+- label: Success stories
+  url: /success-stories/
+- label: Used in production
+  url: /used_in_prod/
 - label: Sitemap
   url: /sitemap/
 

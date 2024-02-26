@@ -1,0 +1,13 @@
+<section>
+  <div class="posts-list">
+    {%- for post in include.posts limit:include.limit %}
+    <article class="post-card">
+      <img src="{{ post.image | default: '/assets/icon.png' }}" alt="">
+      <span class="company">{{ post.company }}</span>
+      <a href="{{ post.url }}" class="name">
+        {{- post.title }}
+      </a>
+    </article>
+    {%- endfor %}
+  </div>
+</section>

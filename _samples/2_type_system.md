@@ -1,8 +1,13 @@
 ---
+short_name: Typing
 title: Type system
 description: |
-  Crystal is statically type checked, so any type errors will be caught early by the compiler rather than fail on runtime. Moreover, and to keep the language clean, Crystal has built-in type inference, so most type annotations are unneeded.
-read_more: "[Read more about Crystal's type system](https://crystal-lang.org/reference/syntax_and_semantics/types_and_methods.html)"
+  Crystal is statically typed and type errors are caught early by the compiler,
+  eliminating a range of type-related errors at runtime.
+
+  Yet type annotations are rarely necessary, thanks to powerful type inference.
+  This keeps the code clean and feels like a dynamic language.
+read_more: "[More about the type system](https://crystal-lang.org/reference/syntax_and_semantics/types_and_methods.html)"
 ---
 ```crystal
 def shout(x)

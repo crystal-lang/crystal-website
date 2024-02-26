@@ -22,12 +22,16 @@ $font-sizes: (
   // -------------
   --white: hsl(0, 0%, 100%);
   --tainted-white: hsl(0, 0%, 96%);
+  --alabaster: rgb(237, 237, 237);
   --black: hsl(0, 0%, 3%);
+  --pitch-black: var(--black);
   --light-gray: hsl(0, 0%, 44%);
+  --tainted-black: hsl(0, 0%, 11%);
   --lighter-gray: hsl(0, 0%, 65%);
 
   --background-main: var(--white);
   --background-secondary: var(--tainted-white);
+  --background-tertiary: var(--alabaster);
 
   --primary-text: var(--black);
   --primary-code: var(--light-gray);
@@ -42,9 +46,9 @@ $font-sizes: (
   --highlight-bg: var(--tainted-white);
   --code-bg: var(--tainted-white);
 
-  --border-color-light: hsl(0, 0%, 93%);
+  --border-color-light: var(--alabaster);
   --border-color: hsl(0, 0%, 87%);
-  --border-color-dark: hsl(0, 0%, 84%);
+  --border-color-heavy: hsl(0, 0%, 84%);
 
   --warning: hsl(31.2deg 100% 45%);
 
@@ -73,4 +77,54 @@ $font-sizes: (
   --code-font: "Roboto Mono", monospace;
 
   --content-width: 85ch;
+}
+
+@mixin dark-mode-highlight {
+  --code-bg: var(--tainted-black);
+  --md-code-fg-color: var(--lighter-text);
+
+  --md-code-hl-number-color: hsla(291, 45%, 65%, 1);
+  --md-code-hl-special-color: hsla(0, 67%, 65%, 1);
+  --md-code-hl-function-color: hsla(219, 54%, 68%, 1);
+  --md-code-hl-constant-color: hsla(17, 52%, 61%, 1);
+  --md-code-hl-keyword-color: hsla(219, 54%, 64%, 1);
+  --md-code-hl-string-color: hsla(130, 48%, 51%, 1);
+
+  --md-code-hl-name-color: var(--md-code-fg-color);
+  --md-code-hl-operator-color: var(--lighter-gray);
+  --md-code-hl-punctuation-color: var(--lighter-gray);
+  --md-code-hl-comment-color: var(--lighter-gray);
+  --md-code-hl-generic-color: var(--lighter-gray);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pitch-black: hsl(0, 0%, 3%);
+    --black: hsl(0, 0%, 11%);
+    --tainted-black: hsl(0, 0%, 16%);
+    --mine-shaft: hsl(0, 0%, 21%);
+
+    --light-gray: hsl(0, 0%, 56%);
+
+    --background-main: var(--black);
+    --background-secondary: var(--tainted-black);
+    --background-tertiary: var(--mine-shaft);
+
+    --primary-text: hsl(0, 0%, 90%);
+    --primary-code: var(--tainted-white);
+    --light-text: var(--lighter-gray);
+    --lighter-text: var(--tainted-white);
+
+    --link-color: currentColor;
+    --link-hover-color: var(--light-gray);
+
+    --highlight-bg: hsl(0, 0%, 27%);
+    --code-bg: hsl(0, 0%, 27%);
+
+    --border-light: hsl(0, 0%, 14%);
+    --border-color: hsl(0, 0%, 25%);
+    --border-color-heavy: hsl(0, 0%, 32%);
+
+    @include dark-mode-highlight;
+  }
 }

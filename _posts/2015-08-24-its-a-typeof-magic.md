@@ -3,6 +3,8 @@ title: It's a typeof magic
 summary: It's magic!
 thumbnail: t
 author: asterite
+categories: technical
+tags: [language, types]
 ---
 
 ## The story of typeof

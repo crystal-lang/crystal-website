@@ -22,11 +22,23 @@
       aspect-ratio: 1;
       object-fit: contain;
       transition: all 200ms;
+
+      @media (prefers-color-scheme: dark) {
+        &[src="/assets/m.svg"] {
+          filter: #{"contrast(0.7)"};
+        }
+      }
     }
 
-    &:not(:hover) img {
+    &:not(:hover) > img {
       filter: #{"grayscale()"};
       transform: scale(0.97);
+
+      @media (prefers-color-scheme: dark) {
+        &[src="/assets/m.svg"] {
+          filter: #{"grayscale() contrast(0.7)"};
+        }
+      }
     }
   }
 }

@@ -3,6 +3,7 @@ title: "Crystal new year resolutions for 2017: 1.0"
 summary: ""
 thumbnail: "🎉"
 author: spalladino
+categories: project
 ---
 
 Crystal has gone a long way since we [started it over five years ago](https://manas.tech/blog/2016/04/01/the-story-behind-crystal/). What was once an experiment to see if it was possible to have a compiled yet Ruby-like language, is now a trending language with over [7,000 github stargazers](https://github.com/crystal-lang/crystal/stargazers) and almost [1,400 shards](http://crystalshards.xyz/). Its popularity has risen considerably in the last few years, and we are incredibly proud to see something we have built resonating so much with the development community.

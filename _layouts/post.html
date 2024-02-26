@@ -8,11 +8,15 @@ layout: base
   <hgroup>
     <h1 class="post-title">{{ page.page_title | default: page.title }}</h1>
     {%- if page.subtitle %}
-    <h1 class="subtitle">{{ page.subtitle }}</h1>
+    <h2 class="subtitle">{{ page.subtitle }}</h2>
     {%- endif %}
   </hgroup>
 
   {%- include posts/meta.html post = page %}
+
+  {%- if page.image %}
+    <img src="{{ page.image }}" class="post-image" alt="">
+  {%- endif %}
 
   <div class="content" itemprop="articleBody">{{ content }}</div>
 </article>

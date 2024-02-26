@@ -26,11 +26,14 @@
 .breadcrumb {
   display: inline flex;
 
-  > :first-child {
-    padding-inline-end: var(--padding-xs);
-  }
-  &:not(:first-child) > :first-child {
+  padding-inline-end: var(--padding-xs);
+
+  &:not(:first-child) {
     padding-inline-start: var(--padding-xs);
+  }
+
+  &--category {
+    padding-inline-end: 0;
   }
 }
 
