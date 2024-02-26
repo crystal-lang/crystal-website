@@ -49,6 +49,12 @@ footer {
     line-height: var(--line-height-md);
     font-size: font-size(small);
   }
+
+  @media (prefers-color-scheme: dark) {
+    --hex-color: var(--lighter-text);
+    --hex-bg: var(--black);
+    --hex-bg-hover: var(--pitch-black);
+  }
 }
 
 .footer-nav {
@@ -131,7 +137,13 @@ nav.footer-section {
     > input[type="email"] {
       grid-area: input;
       width: 100%;
-      height: var(--hex-height); // --hex-height
+      height: var(--hex-height);
+      border: 1px solid var(--border-color);
+
+      @media (prefers-color-scheme: dark) {
+        color: var(--lighter-text);
+        background-color: var(--mine-shaft);
+      }
     }
   }
 }
