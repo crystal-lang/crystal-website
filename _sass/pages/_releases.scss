@@ -9,6 +9,11 @@ table.releases {
     &.latest-release {
       border-left-color: currentcolor;
     }
+
+    &:not(.minor-release) th {
+      font-weight: 400;
+      --link-color: var(--light-text);
+    }
   }
 
   > tbody > tr:hover {
