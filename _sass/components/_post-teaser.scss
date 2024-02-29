@@ -8,8 +8,8 @@
     "avatars date"
     "avatars title"
     "avatars image"
-    "avatars content"
-    ". content";
+    "avatars body"
+    ". body";
 
   @media (max-width: 80ch) {
     grid-template-columns: 3.5em 1fr;
@@ -35,8 +35,8 @@
   }
 
   > .excerpt,
-  > .content {
-    grid-area: content;
+  > .post__body {
+    grid-area: body;
   }
 
   > .post-image {
@@ -51,7 +51,7 @@
       "avatars date"
       "title title"
       "image image"
-      "content content";
+      "body body";
   }
 }
 
@@ -103,6 +103,11 @@
   }
 }
 
-.post > .content {
+.post > .post__body {
+  @include blockflow;
   margin-block-start: var(--block-flow-md);
+}
+
+#discourse-comments {
+  max-width: var(--content-width);
 }
