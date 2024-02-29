@@ -77,6 +77,7 @@
 }
 
 .post-image {
+  max-width: var(--content-width);
   margin-block-start: var(--block-flow-md);
 }
 
