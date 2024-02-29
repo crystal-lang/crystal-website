@@ -18,16 +18,18 @@ layout: base
     <img src="{{ page.image }}" class="post-image" alt="">
   {%- endif %}
 
-  <div class="content" itemprop="articleBody">{{ content }}</div>
-</article>
+  <div class="post__body">
+    <div class="content" itemprop="articleBody">{{ content }}</div>
 
-{% include discourse_comments.html %}
+    {% include discourse_comments.html %}
 
-{% if page.comment_href %}
-  <div class="comment_archive">
-    <a href="{{ page.comment_href }}"><strong>Comment archive for this post</strong></a>
+    {% if page.comment_href %}
+      <div class="comment_archive">
+        <a href="{{ page.comment_href }}"><strong>Comment archive for this post</strong></a>
+      </div>
+    {% endif %}
   </div>
-{% endif %}
+</article>
 
 <nav class="post-pagination" aria-label="Blog post navigation">
   {%- if page.next.url %}
