@@ -76,7 +76,8 @@
   line-height: var(--line-height-md);
 }
 
-.post-image {
+.post-image,
+.post > .partner-images {
   max-width: var(--content-width);
   margin-block-start: var(--block-flow-md);
 }
