@@ -1,3 +1,11 @@
+.wide-header {
+  display: flex;
+
+  > .releases-info {
+    margin-inline-start: auto;
+  }
+}
+
 .more-posts {
   display: flex;
   flex-direction: column;
@@ -6,5 +14,23 @@
   > .post-micro-teaser {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.releases-info {
+  padding: var(--padding-sm) var(--padding-md);
+  background-color: var(--background-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--padding-xs);
+  border-radius: 4px;
+
+  > strong {
+    @extend .h4;
+  }
+
+  > .hex {
+    margin-bottom: var(--padding-sm);
   }
 }

@@ -6,6 +6,38 @@ page_title: |
     {%- include icons/rss.svg %}
   </a>
 excerpt: Blog posts
-layout: category
+layout: base
 section: blog
 ---
+{%- assign latest_release = site.releases | reverse | first %}
+
+<header class="wide-header">
+  <h1>{{ page.page_title | default: page.title | liquify }}</h1>
+
+  <div class="releases-info">
+    <strong>Latest release</strong>
+
+    <a href="{{ latest_release.url }}" class="hex">Crystal {{ latest_release.version }}</a>
+
+    <div class="link-actions">
+      <a href="/releases/">All release notes</a>
+    </div>
+  </div>
+</header>
+
+{% include posts/recent_news.html extra=true %}
+
+<hr class="full-width" />
+
+<section>
+  <h1>More articles</h1>
+
+  <div class="more-posts">
+    {%- for post in site.posts offset: 5 %}
+    <div class="post-micro-teaser">
+      <time class="post-date" pubdate>{{ post.date | date_to_string }}</time>
+      <a href="{{post.url}}" class="post-title">{{post.title}}</a>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
