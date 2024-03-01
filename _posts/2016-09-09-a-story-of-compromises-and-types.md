@@ -1,6 +1,5 @@
 ---
 title: A story of compromises and types
-summary:
 author: bcardiff
 categories: technical
 tags: [language, types]
