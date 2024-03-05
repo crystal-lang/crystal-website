@@ -4,9 +4,9 @@ section: blog
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-  <title>{{ site.name | xml_escape }}</title>
-  {%- if site.description %}
-  <subtitle>{{ site.description | xml_escape }}</subtitle>
+  <title>{{ site.title | xml_escape }}</title>
+  {%- if site.tagline %}
+  <subtitle>{{ site.tagline | xml_escape }}</subtitle>
   {%- endif %}
   <link href="{{ '/' | absolute_url }}" rel="alternate" type="text/html" />
   <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
@@ -20,7 +20,7 @@ section: blog
       {%- assign authors = post.author | split: ',' %}
       {%- for author in authors %}
       <author>
-        <name>{{ site.data.blog_authors[author].name | default: author }}</name>
+        <name>{{ site.data.authors[author].name | default: author }}</name>
         <uri>https://github.com/{{ author }}/</uri>
       </author>
       {%- endfor %}

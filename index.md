@@ -2,6 +2,10 @@
 title: Crystal
 layout: home
 section: home
+description: |
+  Crystal is a general-purpose, object-oriented programming language.
+  With syntax inspired by Ruby, it's a compiled language with static type-checking.
+  Types are resolved by an advanced type inference algorithm.
 ---
 
 <h2 class="visually-hidden">News</h2>

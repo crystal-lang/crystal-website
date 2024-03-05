@@ -1,5 +1,5 @@
-name: The Crystal Programming Language
-description: A language for humans and computers
+title: The Crystal Programming Language
+tagline: A language for humans and computers
 url: https://crystal-lang.org
 logo: /assets/media/crystal_logo.svg
 
@@ -65,8 +65,16 @@ defaults:
     values:
       playground: true
 
+# Used by https://github.com/jekyll/jekyll-seo-tag
 twitter:
   username: CrystalLanguage
+
+# Used by https://github.com/jekyll/jekyll-seo-tag
+social:
+  name: Crystal Language
+  links:
+  - https://fosstodon.org/@CrystalLanguage
+  - https://github.com/crystal-lang
 
 exclude:
 - "*.nix"
