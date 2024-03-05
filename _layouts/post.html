@@ -14,8 +14,10 @@ layout: base
 
   {%- include posts/meta.html post = page %}
 
-  {%- if page.image %}
-    <img src="{{ page.image }}" class="post-image" alt="">
+  {%- if page.partner_images %}
+    {% include components/partner-images.html images=page.partner_images %}
+  {%- elsif page.image %}
+      <img src="{{ page.image }}" class="post-image" alt="">
   {%- endif %}
 
   <div class="post__body">
