@@ -30,6 +30,8 @@ tab_controls.forEach(a => {
   a.addEventListener('click', e => {
     e.preventDefault();
 
+    a.blur();
+
     tabs.childNodes.forEach(tab => {
       tab.classList?.remove("target")
     })
