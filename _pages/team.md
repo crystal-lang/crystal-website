@@ -114,6 +114,21 @@ assign issues/PRs and request reviews.
 <hr class="full">
 
 <section class="side-section">
+  <h2 id="crys">Language Mascot</h2>
+  <aside markdown="1">
+
+This is *Crys*, the language mascot.
+He likes shine things 🔮.
+
+  </aside>
+  <div>
+    <img src="/assets/crys.svg" style="max-width: 15em;" alt="Crys, the language mascot">
+  </div>
+</section>
+
+<hr class="full">
+
+<section class="side-section">
   <h2 id="contributors">Contributors</h2>
   <aside markdown="1">
 Besides those that are explicitly named, this is a call out to
