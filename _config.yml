@@ -65,9 +65,11 @@ defaults:
     values:
       playground: true
 
+# Used by https://github.com/jekyll/jekyll-seo-tag
 twitter:
   username: CrystalLanguage
 
+# Used by https://github.com/jekyll/jekyll-seo-tag
 social:
   name: Crystal Language
   links:
