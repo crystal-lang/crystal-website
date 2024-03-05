@@ -3,12 +3,12 @@ title: Linux
 page_title: Install on Linux
 ---
 
-We're building official DEB and RPM packages in the [Open Build Service (OBS)](https://build.opensuse.org),
-a cross-platform package building service provided by openSUSE.
-They are available in the [devel:languages:crystal](https://build.opensuse.org/project/show/devel:languages:crystal) project.
+Official DEB and RPM packages are available at [devel:languages:crystal](https://build.opensuse.org/project/show/devel:languages:crystal)
+on the [Open Build Service (OBS)](https://build.opensuse.org) and we provide an
+installer script for convenience.
 
-Many Linux distribution have Crystal available in their system packages, and
-there are also several community packages, see [the install overview](../#linux).
+Many Linux distributions provide Crystal in their system packages.
+There are several community-maintained packages as well, see [the install overview](../#linux).
 
 ## Installer
 
@@ -38,7 +38,12 @@ Install the 1.10 release:
 curl -fsSL https://crystal-lang.org/install.sh | sudo bash -s -- --version=1.10
 ```
 
-## Manual
+## Manual Packages
 
 As an alternative to the automatic installer, OBS offers [installation instructions](https://software.opensuse.org/download.html?project=devel%3Alanguages%3Acrystal&package=crystal)
 for many distribution package managers as well as binary downloads.
+
+## Tarball
+
+Alternatively, there are `.tar.gz` archives in each [release](https://github.com/crystal-lang/crystal/releases)
+for x86-64. See [Install from a tar.gz](/install/from_targz) for instructions.
