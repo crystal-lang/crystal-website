@@ -38,10 +38,10 @@ sudo make -C/usr/ports/lang/crystal reinstall clean
 sudo make -C/usr/ports/devel/shards reinstall clean
 ```
 
-To avoid building LLVM from source (which can take a long time), you can first install it from binary packages if you don't have it installed yet:
+To avoid building LLVM from source (which can take a long time), you can first install the binary package:
 
 ```bash
-sudo pkg install -y llvm60
+sudo pkg install -y llvm
 ```
 
 Alternatively, use a smart port builder like [Synth](https://github.com/jrmarino/synth), which automatically decides to download dependencies as binary packages when there's no reason to rebuild them.

@@ -26,8 +26,8 @@ cd /usr/ports/lang/crystal
 doas make clean install
 ```
 
-To avoid building dependencies from source (which can take a long time), you can first install them from binary packages:
+To avoid building LLVM from source (which can take a long time), you can first install the binary package:
 
 ```bash
-doas pkg_add llvm libiconv boehm-gc libevent2 pcre libyaml
+doas pkg_add llvm
 ```

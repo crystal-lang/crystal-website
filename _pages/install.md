@@ -23,11 +23,11 @@ link_actions:
 ---
 ## Linux
 
-Many Linux distribution have Crystal available in their system packages.
-It might not have the most recent version though.
+Many Linux distribution provide Crystal in their system packages.
+It might not be the most recent version though.
 Third party package managers are typically more up to date.
 
-DEB and RPM packages of the most recent release are available in our own package
+DEB and RPM packages are available in our own package
 repository and we provide an installer script for convenience.
 
 {% include pages/install/section.html os="Linux" %}
