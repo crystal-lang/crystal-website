@@ -5,5 +5,11 @@
     </a>
   </h2>
 
+  {% if include.description %}
+    <div class="center">
+      {{ include.description | markdownify }}
+    </div>
+  {% endif %}
+
   {% include components/top-sponsors-icons.html %}
 </section>

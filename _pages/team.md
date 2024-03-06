@@ -142,6 +142,8 @@ If you want to become a contributor, see our [Contributing Instructions](https:/
   </div>
 </section>
 
-{% include components/top-sponsors.html %}
+{% include components/top-sponsors.html description="Sponsors are an essential part of the team, as their funding makes all of this possible." %}
 
+<section>
 {% include components/sponsorship.html %}
+</section>
