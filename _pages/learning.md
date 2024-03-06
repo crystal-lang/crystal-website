@@ -32,4 +32,4 @@ will help you to transition from Ruby to Crystal.
 Get your hands on Crystal with a series of exercises, and compare your solution
 to that of the many members who tried already.
 
-[Crystal track on Excercism](https://exercism.org/tracks/crystal/)
+[Crystal track on Exercism](https://exercism.org/tracks/crystal/)
