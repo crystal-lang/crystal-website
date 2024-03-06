@@ -1,5 +1,5 @@
 @mixin box-link {
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -11,7 +11,7 @@
   &:focus {
     outline: none;
 
-    &::after {
+    &::before {
       outline: 0.14rem dotted var(--lighter-gray);
       outline-offset: 0.08em;
     }
