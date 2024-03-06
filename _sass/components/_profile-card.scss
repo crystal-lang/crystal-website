@@ -36,7 +36,9 @@
 .profile-mini {
   display: grid;
   line-height: 1.2;
-  grid-template-columns: 3.5em 1fr;
+  grid-template-columns: 4.7em 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: var(--padding-xs);
   font-size: 80%;
 
   > .name {
@@ -45,7 +47,6 @@
   }
 
   > img {
-    width: 3em;
     grid-row: 1/4;
     align-self: center;
   }
