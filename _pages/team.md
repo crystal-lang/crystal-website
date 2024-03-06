@@ -37,8 +37,10 @@ These awesome people have served as core team members in the past. They are list
     {%- for member in site.data.team.alumni %}
       <div class="profile-mini" itemscope itemtype="https://schema.org/Person">
         <img src="/assets/authors/{{ member[0] }}.jpg" alt="Profile picture of {{ member[1].name }}" />
-        <span class="name" itemprop="name">{{ member[1].name }}</span>
-        <a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" itemprop="url" title="GitHub profile" class="ico github">@{{ member[1].github_handle | default: member[0] }}</a>
+        <div>
+          <span class="name" itemprop="name">{{ member[1].name }}</span>
+          <a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" itemprop="url" title="GitHub profile" class="ico github">@{{ member[1].github_handle | default: member[0] }}</a>
+        </div>
       </div>
     {%- endfor %}
   </div>
@@ -71,11 +73,13 @@ These awesome people have been part of the team in the past but do no longer fil
     {%- for member in site.data.team.admin_alumni %}
       <div class="profile-mini" itemscope itemtype="https://schema.org/Person">
         <img src="/assets/authors/{{ member[0] }}.jpg" alt="Profile picture of {{ member[1].name }}" />
+        <div>
           {%- if member[1].role %}
             <span class="member_role">{{ member[1].role }}</span>
           {%- endif %}
-        <span class="name" itemprop="name">{{ member[1].name }}</span>
-        <a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" itemprop="url" title="GitHub profile" class="ico github">@{{ member[1].github_handle | default: member[0] }}</a>
+          <span class="name" itemprop="name">{{ member[1].name }}</span>
+          <a href="https://github.com/{{ member[1].github_handle | default: member[0] }}" itemprop="url" title="GitHub profile" class="ico github">@{{ member[1].github_handle | default: member[0] }}</a>
+        </div>
       </div>
     {%- endfor %}
   </div>

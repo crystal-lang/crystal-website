@@ -37,22 +37,22 @@
   display: grid;
   line-height: 1.2;
   grid-template-columns: 4.7em 1fr;
-  grid-template-rows: 1fr 1fr;
   column-gap: var(--padding-xs);
   font-size: 80%;
+  align-items: center;
 
-  > .name {
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
     font-weight: 500;
     font-size: 1.125em;
   }
 
   > img {
-    grid-row: 1/4;
     align-self: center;
-  }
-
-  > .name {
-    align-self: end;
   }
 }
 
@@ -63,7 +63,7 @@
 .profile-mini,
 .profile-card {
   > img {
-    border-radius: 50%;
+    @include circle-image;
   }
 }
 
