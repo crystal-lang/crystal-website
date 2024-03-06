@@ -1,7 +1,7 @@
 ---
 title: Success stories
 section: blog
-layout: page-wide
+layout: wide
 link_actions:
 - '[Used in production](/used_in_prod/)'
 ---
