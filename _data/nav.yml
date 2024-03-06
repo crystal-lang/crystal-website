@@ -11,13 +11,13 @@ main:
   url: https://crystal-lang.org/reference/
 
 blog:
-- label: project
+- label: Project
   url: /blog/project/
-- label: technical
+- label: Technical
   url: /blog/technical/
-- label: community
+- label: Community
   url: /blog/community/
-- label: success
+- label: Success
   url: /success-stories/
 
 community:
