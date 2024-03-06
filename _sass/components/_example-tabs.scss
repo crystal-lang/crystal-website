@@ -29,14 +29,6 @@
     }
   }
 
-  // &:not(:has(.example-tab:target))
-  //   > .example-tabs__controls
-  //   li:first-of-type
-  //   > a {
-  //   color: var(--tainted-white);
-  //   background-color: var(--code-bg);
-  // }
-
   display: grid;
   grid-template-columns: 18em 1fr;
   grid-template-areas:
