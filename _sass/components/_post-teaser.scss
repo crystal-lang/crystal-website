@@ -39,7 +39,8 @@
     grid-area: body;
   }
 
-  > .post-image {
+  > .post-image,
+  > .partner-images {
     grid-area: image;
   }
 }
