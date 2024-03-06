@@ -95,8 +95,8 @@ Nightly builds are the bleeding-edge version of Crystal, being a daily snapshot
 of the current development status in the [`master` branch](https://github.com/crystal-lang/crystal/tree/master).
 This is inherently less stable than proper a release, but allows trying out new
 features and testing compatibility with existing code bases.
-It's recomended to test against nightlies regularly in order to notice any issues
-timely and avoid surprises after the next relase.
+It's recommended to test against nightlies regularly in order to notice any issues
+timely and avoid surprises after the next release.
 
 [**Read more about _Nightly Builds_**](/install/nightlies/)
 

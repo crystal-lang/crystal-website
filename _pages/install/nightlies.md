@@ -11,8 +11,8 @@ Nightly builds are inherently less stable than proper releases.
 But they allow trying out new features and ensuring compatibility for existing
 code bases.
 
-It's recomended to test against nightlies regularly in order to notice any issues
-ahead of time and avoid surprises with the next relase.
+It's recommended to test against nightlies regularly in order to notice any issues
+ahead of time and avoid surprises with the next release.
 
 ## Linux
 
