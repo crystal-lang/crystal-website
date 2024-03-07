@@ -83,7 +83,7 @@ $font-sizes: (
 }
 
 @mixin dark-mode-highlight {
-  --code-bg: var(--mine-shaft);
+  --code-bg: var(--tainted-black);
   --md-code-fg-color: var(--lighter-text);
 
   --md-code-hl-number-color: hsla(291, 45%, 65%, 1);
@@ -139,5 +139,7 @@ $font-sizes: (
       drop-shadow(0 0 1px rgb(255 255 255 / 10%));
 
     @include dark-mode-highlight;
+
+    --code-bg: var(--mine-shaft);
   }
 }
