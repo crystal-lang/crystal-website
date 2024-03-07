@@ -2,4 +2,8 @@
   {%- for category in include.post.categories %}
     <a href="{% if category == 'success' %}/success-stories{% else %}/blog/{{ category }}/{% endif %}" class="category">{{ category | capitalize }}</a>
   {%- endfor %}
+
+  {%- for tag in include.post.tags %}
+  <a href="/blog/tags/{{ tag }}/" class="tag">#{{ tag }}</a>
+  {%- endfor %}
 </div>
