@@ -36,6 +36,10 @@ $(O): deps $(ALL_SOURCES)
 deps: Gemfile.lock
 	(bundle check 2>&1 > /dev/null) || bundle install
 
+.PHONY: optimize-svgs
+optimize-svgs:
+	svgo -r assets _includes --multipass --pretty --indent 2 --final-newline
+
 Gemfile.lock: Gemfile
 	bundle install
 
