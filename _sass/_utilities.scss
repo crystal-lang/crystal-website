@@ -28,11 +28,15 @@
 }
 
 .pill {
-  background: var(--border-color);
-  border-radius: 10px;
+  @extend .pill-form;
   font-size: font-size(small);
-  padding: 0 0.75em;
   font-weight: 400;
+}
+
+.pill-form {
+  background: var(--background-secondary);
+  border-radius: 10px;
+  padding: 0.2em 0.4em;
 }
 
 .label {

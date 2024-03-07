@@ -10,6 +10,8 @@
     <div class="post-micro-teaser">
       <time class="post-date" pubdate>{{ post.date | date_to_string }}</time>
       <a href="{{post.url}}" class="post-title">{{post.title}}</a>
+
+      {% include posts/taxonomy.html post=post %}
     </div>
     {%- endfor %}
   </div>
