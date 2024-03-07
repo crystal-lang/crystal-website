@@ -39,7 +39,8 @@
     grid-area: body;
   }
 
-  > .post-image {
+  > .post-image,
+  > .partner-images {
     grid-area: image;
   }
 }
@@ -78,7 +79,7 @@
 
 .post-image,
 .post > .partner-images {
-  max-width: var(--content-width);
+  max-width: min(100%, var(--content-width));
   margin-block-start: var(--block-flow-md);
 }
 
