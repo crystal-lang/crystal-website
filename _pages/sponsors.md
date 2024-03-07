@@ -44,17 +44,15 @@ and below is a list of all the humans and organizations that have made it possib
   for more details.
   </dd>
 
-  <dt>I am a sponsor contributing $5/month, but my URL is not listed</dt>
+  <dt>My URL is not listed</dt>
   <dd markdown="1">
-  We grab the website and avatar from your [Open Collective profile](https://opencollective.com).
-  If that fails, we try to use your GitHub or Twitter accounts listed in
-  that same profile.
+  When eligible, we grab the website and avatar from the sponsor's [Open Collective profile](https://opencollective.com).
+  If that fails, we try to use your GitHub or Twitter accounts listed in that same profile.
   </dd>
 
   <dt>When is this page updated?</dt>
   <dd markdown="1">
-  We update the current sponsors in this page at the beginning of each
-  month.
+  We update the current sponsors in this page weekly.
   </dd>
 
   <dt>How is the list ordered?</dt>
@@ -65,10 +63,7 @@ and below is a list of all the humans and organizations that have made it possib
 
   <dt>How long are contributors listed?</dt>
   <dd markdown="1">
-  Open Collective contributors are listed forever, but after three months of
-  the last payment they are considered as contributing $0 (that is, no link
-  is shown). Bounty Source contributors are erased as long as the site
-  consider them inactive, for technical reasons.
+  Contributors are listed forever, but after three months of the last payment they are considered as contributing $0.
   </dd>
 
   <dt>There seems to be an error, how can I fix it?</dt>

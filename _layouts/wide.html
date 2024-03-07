@@ -4,6 +4,10 @@ layout: base
 
 <header>
   <h1>{{ page.page_title | default: page.title | liquify }}</h1>
+
+  <div class="page-description">
+    {{- page.description | markdownify }}
+  </div>
 </header>
 
 {{ content }}

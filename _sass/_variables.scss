@@ -13,6 +13,9 @@ $font-sizes: (
   h4: math.pow($font-size-ratio, 1) * $font-size-base,
   h5: $font-size-base,
   h6: $font-size-base,
+  small: math.pow($font-size-ratio, -0.5) * $font-size-base,
+  xsmall: math.pow($font-size-ratio, -1) * $font-size-base,
+  xxsmall: math.pow($font-size-ratio, -1.5) * $font-size-base,
 );
 
 :root {

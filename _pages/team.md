@@ -121,8 +121,7 @@ assign issues/PRs and request reviews.
   <h2 id="crys">Language Mascot</h2>
   <aside markdown="1">
 
-This is *Crys*, the language mascot.
-He likes shine things 🔮.
+Meet *Crys*, the mascot of Crystal. He's smart and likes shiny things, so feed him with your best shards! 🔮
 
   </aside>
   <div>

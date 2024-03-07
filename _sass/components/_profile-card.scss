@@ -38,7 +38,7 @@
   line-height: 1.2;
   grid-template-columns: 4.7em 1fr;
   column-gap: var(--padding-xs);
-  font-size: 80%;
+  font-size: font-size(xsmall);
   align-items: center;
 
   > div {

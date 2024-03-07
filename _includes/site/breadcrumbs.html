@@ -41,7 +41,7 @@
       {%- endif %}
 
       <span class="breadcrumb breadcrumb--category">
-        <a href="{% if category == 'success' %}/success-stories{% else %}/blog/{{ category }}/{% endif %}">{{ category }}</a>
+        <a href="{% if category == 'success' %}/success-stories{% else %}/blog/{{ category }}/{% endif %}">{{ category | capitalize }}</a>
       </span>
     {%- endfor %}
   {%- endif %}

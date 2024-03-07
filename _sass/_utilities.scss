@@ -10,6 +10,7 @@
 .icon {
   > svg {
     height: 1.2em;
+    width: auto;
     fill: currentcolor;
     display: inline-block;
     vertical-align: text-bottom;
@@ -27,15 +28,19 @@
 }
 
 .pill {
-  background: var(--border-color);
-  border-radius: 10px;
-  font-size: 90%;
-  padding: 0 0.75em;
+  @extend .pill-form;
+  font-size: font-size(small);
   font-weight: 400;
 }
 
+.pill-form {
+  background: var(--background-secondary);
+  border-radius: 10px;
+  padding: 0.2em 0.4em;
+}
+
 .label {
-  font-size: 90%;
+  font-size: font-size(small);
   font-weight: 200;
   color: var(--lighter-text);
 }

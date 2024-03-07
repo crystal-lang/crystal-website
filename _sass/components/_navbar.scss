@@ -51,7 +51,7 @@ body > header {
     flex-wrap: wrap;
     justify-content: end;
     column-gap: var(--padding-xxs);
-    font-size: 80%;
+    font-size: font-size(xsmall);
   }
 
   li {

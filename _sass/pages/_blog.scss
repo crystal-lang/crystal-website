@@ -12,8 +12,25 @@
   gap: var(--block-flow-sm);
 
   > .post-micro-teaser {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "date taxonomy"
+      "title title";
+    align-items: baseline;
+    gap: var(--padding-xxs) var(--padding-xs);
+
+    > .post-date {
+      grid-area: date;
+    }
+
+    > .post-title {
+      grid-area: title;
+    }
+
+    > .taxonomy {
+      grid-area: taxonomy;
+    }
   }
 }
 
