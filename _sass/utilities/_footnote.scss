@@ -6,13 +6,13 @@
 .reversefootnote {
   @extend .ui-link;
 
-  font-size: 0.7rem;
+  font-size: font-size(xxsmall);
   font-weight: 600;
   color: var(--lighter-text);
 }
 
 sup[role="doc-noteref"] {
-  font-size: 0.71rem;
+  font-size: font-size(xxsmall);
 }
 
 .footnote:target,
@@ -22,7 +22,7 @@ sup[role="doc-noteref"] {
 }
 
 .footnotes {
-  font-size: 0.9em;
+  font-size: font-size(small);
   margin-block-start: var(--block-flow-md);
   border-top: 2px solid var(--highlight-bg);
   padding-block-start: 0.75em;
@@ -44,7 +44,7 @@ sup[role="doc-noteref"] {
   li::before {
     counter-increment: footnote;
     content: counter(footnote);
-    font-size: 0.71em;
+    font-size: font-size(xxsmall);
     font-weight: 500;
     vertical-align: super;
   }

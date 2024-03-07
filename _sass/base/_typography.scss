@@ -126,7 +126,7 @@ code {
 pre,
 :not(pre) > code {
   margin: 0;
-  font-size: 80%;
+  font-size: font-size(xsmall);
 
   &:not(.low-key) {
     background-color: var(--code-bg);

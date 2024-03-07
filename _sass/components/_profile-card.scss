@@ -37,7 +37,7 @@
   display: grid;
   line-height: 1.2;
   grid-template-columns: 3.5em 1fr;
-  font-size: 80%;
+  font-size: font-size(xsmall);
 
   > .name {
     font-weight: 500;

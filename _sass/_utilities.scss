@@ -30,13 +30,13 @@
 .pill {
   background: var(--border-color);
   border-radius: 10px;
-  font-size: 90%;
+  font-size: font-size(small);
   padding: 0 0.75em;
   font-weight: 400;
 }
 
 .label {
-  font-size: 90%;
+  font-size: font-size(small);
   font-weight: 200;
   color: var(--lighter-text);
 }

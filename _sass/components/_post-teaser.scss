@@ -61,8 +61,8 @@
 
 .post-date,
 .author-names {
-  font-size: 80%;
-  line-height: 1.3;
+  font-size: font-size(xsmall);
+  line-height: var(--line-height-sm);
 }
 
 .author-names {
