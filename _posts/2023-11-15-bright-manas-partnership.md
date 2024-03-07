@@ -4,6 +4,7 @@ author: beta-ziliani
 summary: "The story behind four development tools that were released recently"
 comment_href: https://disqus.com/home/discussion/crystal-lang/bright_and_manas_partner_together_to_create_crystal_development_tools_37/
 categories: project
+tags: [Manas.Tech, Bright, partnership, sponors, tooling, feature]
 image: /assets/blog/partners/manas+bright.png
 partner_images:
 - src: /assets/manas-orange.svg

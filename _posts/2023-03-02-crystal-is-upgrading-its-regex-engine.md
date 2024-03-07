@@ -4,7 +4,7 @@ author: beta-ziliani
 summary: "Crystal is upgrading from PCRE to PCRE2"
 comment_href: https://disqus.com/home/discussion/crystal-lang/heads_up_crystal_is_upgrading_its_regex_engine/
 categories: technical
-tags: feature
+tags: [feature, regex]
 ---
 
 Crystal uses since its inception the [PCRE](https://www.pcre.org/) library for dealing with regular expressions. This library has two major versions, and Crystal so far resorted to the first one (PCRE). However, this version reached its end of life. Therefore, for the next release (1.8) we are planning to move to its successor, PCRE2.
