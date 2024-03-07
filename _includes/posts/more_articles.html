@@ -1,0 +1,17 @@
+{% assign numposts = include.posts | size %}
+{% if numposts > 5 %}
+<hr class="full-width" />
+
+<section>
+  <h1>More articles</h1>
+
+  <div class="more-posts">
+    {%- for post in include.posts offset: 5 %}
+    <div class="post-micro-teaser">
+      <time class="post-date" pubdate>{{ post.date | date_to_string }}</time>
+      <a href="{{post.url}}" class="post-title">{{post.title}}</a>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+{% endif %}
