@@ -3,6 +3,10 @@
   align-self: center;
   justify-self: center;
   margin-inline: auto;
+
+  > p {
+    margin-inline: auto;
+  }
 }
 
 .small {
