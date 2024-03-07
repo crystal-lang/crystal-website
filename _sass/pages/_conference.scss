@@ -159,7 +159,7 @@ hr.custom-hr {
     width: fit-content;
     line-height: var(--line-height-sm);
     color: var(--lighter-text);
-    font-size: 90%;
+    font-size: font-size(small);
 
     .speaker-image {
       width: 36px;
@@ -235,7 +235,7 @@ hr.custom-hr {
   flex-wrap: wrap;
 }
 .session-summary {
-  font-size: 90%;
+  font-size: font-size(small);
   line-height: var(--line-height-md);
   color: var(--lighter-text);
 }
