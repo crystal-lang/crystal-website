@@ -4,6 +4,7 @@ gem 'jekyll', '~> 4.3'
 gem 'kramdown-parser-gfm'
 
 group :jekyll_plugins do
+  gem 'jekyll-archives'
   gem 'jekyll-seo-tag'
   gem 'jekyll-redirect-from'
   gem 'jekyll-relative-links'
