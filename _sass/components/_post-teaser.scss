@@ -2,14 +2,30 @@
 .post {
   display: grid;
   grid-template-columns: 4.5em 1fr;
-  grid-template-rows: 1.4em 1.4em auto auto 1fr;
-  grid-template-areas:
-    "avatars names"
-    "avatars date"
-    "avatars title"
-    "avatars image"
-    "avatars body"
-    ". body";
+
+  &.post-teaser {
+    grid-template-rows: 1.4em 1.4em auto auto 1fr auto;
+    grid-template-areas:
+      "avatars names"
+      "avatars date"
+      "avatars title"
+      "avatars image"
+      "avatars body"
+      ". body"
+      ". taxonomy";
+  }
+  &.post {
+    grid-template-rows: 1.4em 1.4em auto auto auto 1fr;
+    column-gap: var(--padding-xs);
+    grid-template-areas:
+      "avatars names"
+      "avatars date"
+      "avatars title"
+      "avatars taxonomy"
+      "avatars image"
+      "avatars body"
+      ". body";
+  }
 
   @media (max-width: 80ch) {
     grid-template-columns: 3.5em 1fr;
@@ -41,6 +57,11 @@
 
   > .post-image {
     grid-area: image;
+  }
+
+  > .taxonomy {
+    margin-block-start: var(--padding-xs);
+    grid-area: taxonomy;
   }
 }
 
@@ -80,6 +101,26 @@
 .post > .partner-images {
   max-width: var(--content-width);
   margin-block-start: var(--block-flow-md);
+}
+
+.taxonomy {
+  @extend .ui-link;
+
+  font-size: font-size(xsmall);
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline;
+  column-gap: var(--padding-xxs);
+  color: var(--lighter-text);
+  font-size: font-size(xsmall);
+  line-height: var(--line-height-sm);
+
+  .category {
+    @extend .pill-form;
+    font-weight: 500;
+  }
 }
 
 .post-title {

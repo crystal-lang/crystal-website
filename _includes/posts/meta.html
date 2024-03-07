@@ -19,3 +19,5 @@
   <span class="author-name" title="{{ author }}">{{ site.data.authors[author].name | default: author }}</span>
   {%- endfor %}
 </div>
+
+{% include posts/taxonomy.html post=include.post %}

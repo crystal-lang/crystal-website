@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-areas:
-      "date ."
+      "date taxonomy"
       "title title";
     align-items: baseline;
     gap: var(--padding-xxs) var(--padding-xs);
@@ -26,6 +26,10 @@
 
     > .post-title {
       grid-area: title;
+    }
+
+    > .taxonomy {
+      grid-area: taxonomy;
     }
   }
 }
