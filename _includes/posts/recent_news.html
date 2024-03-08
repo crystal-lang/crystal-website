@@ -5,7 +5,8 @@
     {%- assign limit = 4 %}
   {%- endif %}
   {%- assign posts = include.posts | default: site.posts %}
-  {%- for post in posts limit: limit %}
+  {%- assign offset = include.offset | default: 0 %}
+  {%- for post in posts limit: limit offset: offset %}
   <div class="post-teaser">
     <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
 
