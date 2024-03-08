@@ -11,7 +11,7 @@ partner_images:
   name: 84codes
   href: https://www.84codes.com/
 categories: project
-tags: [manas.tech, 84codes, multi-threading, partnership, sponsors]
+tags: [Manas.Tech, 84codes, multi-threading, partnership, sponsors]
 ---
 
 In 2019, we announced that Crystal had [multi-threading support](https://crystal-lang.org/2019/09/06/parallelism-in-crystal/). Since then, users wanting to squeeze a bit of those cores have the possibility to compile the app with the `-Dpreview_mt` flag and have access to parallel processing. However, five years later, the situation has not advanced much, with a working implementation that remains a preview feature.

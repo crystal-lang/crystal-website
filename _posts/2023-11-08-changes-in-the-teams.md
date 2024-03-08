@@ -4,7 +4,7 @@ summary: Changes in the Crystal Team and the Core Team
 thumbnail: +
 author: beta-ziliani
 categories: project
-tags: people
+tags: [people, core-team]
 ---
 
 [CrystalConf 2023](/events/2023-crystal-berlin) was a pivoting time for the Crystal Team —the team that works for Crystal at [Manas](https://manas.tech/)— and the Core Team —the team that governs Crystal. For the Crystal Team, it meant the last event and posting by —now former— Crystal Community Manager, [Mekhla Mukherjee](https://www.linkedin.com/in/mekhla-mukherjee/). Mekhla has done a terrific job building the Ambassadors Program, helping organize the conference, and taking care of the general communications of the project. Unfortunately, the funding for a full-time Community Manager has run out.
