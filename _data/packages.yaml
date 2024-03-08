@@ -32,7 +32,7 @@
     ```
   repo_href: https://packages.debian.org/sid/crystal
   repo_description: Crystal package in Debian sid/unstable
-  repology: debian_unstable/crystal-lang
+  repology: debian_unstable
 
 - type: system
   os: Linux
@@ -44,7 +44,7 @@
     ```
   repo_href: https://pkgs.alpinelinux.org/packages?name=crystal
   repo_description: Crystal package on Alpine Linux package index
-  repology: alpine_edge/crystal-lang
+  repology: alpine_edge
 
 - type: system
   os: Linux
@@ -56,7 +56,7 @@
     ```
   repo_href: https://archlinux.org/packages/extra/x86_64/crystal/
   repo_description: Crystal package on Arch Linux package index
-  repology: arch/crystal-lang
+  repology: arch
 
 - type: system
   os: Linux
@@ -69,7 +69,7 @@
     ```
   repo_href: https://packages.gentoo.org/packages/dev-lang/crystal
   repo_description: Crystal package on Gentoo package index
-  repology: gentoo/crystal-lang
+  repology: gentoo
 
 - type: community
   os: Linux
@@ -81,7 +81,7 @@
     ```
   repo_href: https://formulae.brew.sh/formula/crystal
   repo_description: Crystal package on Homebrew
-  repology: homebrew/crystal-lang
+  repology: homebrew
   repology: crystal
 
 - type: community
@@ -116,7 +116,7 @@
   example: '`crystal` package'
   repo_href: https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal
   repo_description: Crystal on Nix package search
-  repology: nix_unstable/crystal-lang
+  repology: nix_unstable
 
 - type: community
   os: Linux
@@ -146,7 +146,7 @@
     ```
   repo_href: https://formulae.brew.sh/formula/crystal
   repo_description: Crystal package on Homebrew
-  repology: homebrew/crystal-lang
+  repology: homebrew
 
 - type: community
   os: MacOS
@@ -168,7 +168,7 @@
   example: '`crystal` package'
   repo_href: https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal
   repo_description: Crystal on Nix package search
-  repology: nix_unstable/crystal-lang
+  repology: nix_unstable
 
 - type: community
   os: MacOS
@@ -180,7 +180,7 @@
     ```
   repo_href: https://ports.macports.org/port/crystal/summary/
   repo_description: Crystal port on MacPorts package index
-  repology: macports/crystal-lang
+  repology: macports
 
 ### Windows
 
@@ -220,7 +220,7 @@
   title: WinGet
   repo_href: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalLang/Crystal/
   repo_description: Crystal manifest in WinGet packages repository
-  repology: winget/crystal-lang
+  repology: winget
 
 ### FreeBSD
 
@@ -246,7 +246,7 @@
     ```
   repo_href: https://www.freshports.org/lang/crystal
   repo_description: Crystal port on Freshports.org
-  repology: freebsd/crystal-lang
+  repology: freebsd
 
 ### OpenBSD
 
@@ -271,7 +271,7 @@
     ```
   repo_href: https://openports.pl/path/lang/crystal
   repo_description: Crystal port on openports.pl
-  repology: openbsd/crystal-lang
+  repology: openbsd
 
 ### Android
 
@@ -286,7 +286,7 @@
     ```
   repo_href: https://github.com/termux/termux-packages/tree/master/packages/crystal
   repo_description: Crystal package manifest in the Termux package repository on GitHub
-  repology: termux/crystal-lang
+  repology: termux
 
 ### Docker
 
