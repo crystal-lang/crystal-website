@@ -113,10 +113,11 @@ $font-sizes: (
     --background-secondary: var(--tainted-black);
     --background-tertiary: var(--mine-shaft);
 
-    --primary-text: hsl(0, 0%, 90%);
+    --primary-text: hsl(0, 0%, 84%);
     --primary-code: var(--tainted-white);
     --light-text: var(--lighter-gray);
     --lighter-text: var(--tainted-white);
+    --header-color: var(--white);
 
     --link-color: currentColor;
     --link-hover-color: var(--light-gray);
