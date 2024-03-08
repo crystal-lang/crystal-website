@@ -1,10 +1,5 @@
 ---
 title: Releases
-page_title: |
-  Releases
-  <a class="icon" href="/releases/feed.xml" rel="alternate" title="Newsfeed for Crystal releases" aria-label="Releases newsfeed" type="application/atom+xml">
-    {%- include icons/rss.svg %}
-  </a>
 layout: page-wide
 section: releases
 description: |
@@ -15,6 +10,9 @@ description: |
 ---
 
 <div class="link-actions">
+  <a href="/releases/feed.xml" rel="alternate" title="Newsfeed for Crystal releases" aria-label="Releases newsfeed" type="application/atom+xml">
+    RSS
+  </a>
   <a href="/install">Installation instructions</a>
   <a href="https://github.com/crystal-lang/crystal/releases">GitHub Releases</a>
 </div>

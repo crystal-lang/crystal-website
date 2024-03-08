@@ -1,13 +1,13 @@
 ---
 title: News
-page_title: |
-  News
-  <a class="icon" href="/feed.xml" rel="alternate" title="Newsfeed for Crystal blog posts" aria-label="Blog newsfeed" type="application/atom+xml">
-    {%- include icons/rss.svg %}
-  </a>
 excerpt: Blog posts
-layout: page-wide
+layout: wide
 section: blog
+link_actions:
+- |
+  <a href="/feed.xml" rel="alternate" title="Newsfeed for Crystal blog posts" aria-label="Blog newsfeed" type="application/atom+xml">
+    RSS
+  </a>
 ---
 
 <div class="featured-posts featured-posts--extra-highlight">
@@ -33,6 +33,5 @@ section: blog
 </div>
 
 {% include posts/recent_news.html offset=1 %}
-
 
 {% include posts/more_articles.html posts=posts %}
