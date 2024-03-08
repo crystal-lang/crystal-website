@@ -13,6 +13,15 @@ overrides = Array(Sponsor).new
 
 update_other_sponsor_totals = ENV["UPDATE_OTHER_SPONSOR_TOTALS"]? == "1" || Time.utc.day == 1 # only do this on the first day of the month
 
+SPONSOR_DATA = begin
+  csv = CSV.new(File.read("#{__DIR__}/../_data/sponsors.csv"), headers: true)
+  hash = Hash(UInt64, Int32).new
+  csv.each do |row|
+    hash[Sponsor.id(row["name"], row["url"])] = row["all_time"].lchop("$").lchop("€").gsub(",", nil).to_i
+  end
+  hash
+end
+
 %w(opencollective.json bountysource.json others.json).each do |filename|
   File.open("#{__DIR__}/../_data/#{filename}") do |file|
     sponsors = Array(Sponsor).from_json(file)
@@ -21,7 +30,7 @@ update_other_sponsor_totals = ENV["UPDATE_OTHER_SPONSOR_TOTALS"]? == "1" || Time
       sponsors, overrides = sponsors.partition(&.overrides.nil?)
       if update_other_sponsor_totals
         sponsors.map! do |sponsor|
-          sponsor.all_time += sponsor.last_payment
+          sponsor.all_time = SPONSOR_DATA[sponsor.id] + sponsor.last_payment
           sponsor
         end
       end
