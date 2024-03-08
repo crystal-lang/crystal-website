@@ -63,6 +63,7 @@ body {
 
 h1 {
   font-size: font-size(h1);
+  color: var(--page-title-color, currentColor);
 }
 
 h2 {
