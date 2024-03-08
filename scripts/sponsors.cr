@@ -17,6 +17,10 @@ record Sponsor, name : String, url : String?, logo : String?, last_payment : Flo
   property time_last_payment : Time?
 
   def id : UInt64
+    self.class.id(name, url)
+  end
+
+  def self.id(name : String, url : String?)
     name.hash ^ (url || "").hash
   end
 
