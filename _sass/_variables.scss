@@ -105,7 +105,7 @@ $font-sizes: (
     --pitch-black: hsl(0, 0%, 3%);
     --black: hsl(0, 0%, 11%);
     --tainted-black: hsl(0, 0%, 16%);
-    --mine-shaft: hsl(0, 0%, 21%);
+    --mine-shaft: hsl(0, 0%, 19%);
 
     --light-gray: hsl(0, 0%, 56%);
 
@@ -128,6 +128,18 @@ $font-sizes: (
     --border-color: hsl(0, 0%, 25%);
     --border-color-heavy: hsl(0, 0%, 32%);
 
+    --hex-color: var(--lighter-text);
+    --hex-bg: var(--black);
+    --hex-bg-hover: var(--tainted-black);
+
+    --hex-shadow: drop-shadow(0 0 1px rgb(255 255 255 / 40%))
+      drop-shadow(0 0 1px rgb(255 255 255 / 10%));
+
+    --hex-hover-shadow: drop-shadow(0 0 1px rgba(255 255 255 / 100%))
+      drop-shadow(0 0 1px rgb(255 255 255 / 10%));
+
     @include dark-mode-highlight;
+
+    --code-bg: var(--mine-shaft);
   }
 }

@@ -26,18 +26,11 @@
   --hex-color: var(--white);
   --hex-bg-hover: var(--black);
 
-  --hex-hover-shadow: drop-shadow(0 0 1px rgba(255 255 255 / 10%))
-    drop-shadow(0 1px 0px rgba(255 255 255 / 40%))
-    drop-shadow(0 1px 1px rgba(255 255 255 / 20%));
-  --hex-shadow: drop-shadow(-0.5px -0.5px 0 rgba(255, 255, 255, 0.075))
-    drop-shadow(0.5px -0.5px 0 rgba(255, 255, 255, 0.075))
-    drop-shadow(-0.5px 0.5px 0 rgba(255, 255, 255, 0.075))
-    drop-shadow(0.5px 0.5px 0 rgba(255, 255, 255, 0.075));
+  --hex-shadow: drop-shadow(0 0 1px rgb(255 255 255 / 40%))
+    drop-shadow(0 0 1px rgb(255 255 255 / 10%));
 
-  --hex-hover-shadow: drop-shadow(-0.5px -0.5px 0 rgba(255, 255, 255, 0.45))
-    drop-shadow(0.5px -0.5px 0 rgba(255, 255, 255, 0.45))
-    drop-shadow(-0.5px 0.5px 0 rgba(255, 255, 255, 0.45))
-    drop-shadow(0.5px 0.5px 0 rgba(255, 255, 255, 0.45));
+  --hex-hover-shadow: drop-shadow(0 0 1px rgba(255 255 255 / 100%))
+    drop-shadow(0 0 1px rgb(255 255 255 / 10%));
 
   color: var(--primary-text);
 

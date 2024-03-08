@@ -9,9 +9,15 @@
     object-fit: contain;
     margin-inline-end: var(--padding-xxs);
   }
+  &:hover {
+    &:before,
+    img {
+      opacity: 0.7;
+    }
+  }
   > img {
     @media (prefers-color-scheme: dark) {
-      filter: contrast(0);
+      filter: #{"invert()"};
     }
   }
   &::before {

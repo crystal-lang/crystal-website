@@ -3,7 +3,7 @@ title: "Introduction: Mekhla Mukherjee, Community Manager"
 author: mekhla
 summary: "Crystal has a new Community Manager!"
 categories: project
-tags: people
+tags: [people]
 ---
 
 I am Mekhla Mukherjee from Mumbai, Maharashtra in India, the land of food, culture and immense diversity.

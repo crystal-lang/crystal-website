@@ -2,6 +2,7 @@
   @include external-links;
 
   width: 100vw;
+  width: 100cqw;
   text-align: center;
   padding: var(--padding-sm);
   background-color: var(--background-tertiary);
@@ -49,6 +50,12 @@ footer {
     line-height: var(--line-height-md);
     font-size: font-size(small);
   }
+
+  @media (prefers-color-scheme: dark) {
+    --hex-color: var(--lighter-text);
+    --hex-bg: var(--black);
+    --hex-bg-hover: var(--pitch-black);
+  }
 }
 
 .footer-nav {
@@ -59,7 +66,7 @@ footer {
   gap: var(--block-flow-md) var(--block-flow-sm);
 
   --container-max: 130ch;
-  --main-width: min(100vw - 3rem, var(--container-max, 110ch));
+  --main-width: min(100cqw - 3rem, var(--container-max, 110ch));
 
   .link-items {
     > h3 {
@@ -131,7 +138,13 @@ nav.footer-section {
     > input[type="email"] {
       grid-area: input;
       width: 100%;
-      height: var(--hex-height); // --hex-height
+      height: var(--hex-height);
+      border: 1px solid var(--border-color);
+
+      @media (prefers-color-scheme: dark) {
+        color: var(--lighter-text);
+        background-color: var(--mine-shaft);
+      }
     }
   }
 }
