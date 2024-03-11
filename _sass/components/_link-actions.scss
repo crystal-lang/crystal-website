@@ -5,7 +5,7 @@
   line-height: var(--line-height-sm);
   --link-external-postfix: none;
 
-  a:link {
+  > a {
     @include link-with-icon-base;
 
     $icon-mappings: (
