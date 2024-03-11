@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--padding-xs) var(--padding-sm);
-  line-height: var(--line-height-md);
+  line-height: var(--line-height-sm);
   --link-external-postfix: none;
 
   a:link {
