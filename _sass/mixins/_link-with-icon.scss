@@ -4,9 +4,9 @@
 
   &::before,
   > img {
+    display: inline-block;
     width: 1.3em;
     aspect-ratio: 1;
-    object-fit: contain;
     margin-inline-end: var(--padding-xxs);
   }
   &:hover {
@@ -16,20 +16,15 @@
     }
   }
   > img {
+    object-fit: contain;
     @media (prefers-color-scheme: dark) {
       filter: #{"invert()"};
     }
   }
   &::before {
     background-color: currentColor;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-image: var(--link-icon);
-    mask-image: var(--link-icon);
+    -webkit-mask: var(--link-icon) center / contain no-repeat;
+    mask: var(--link-icon) center / contain no-repeat;
   }
 }
 
