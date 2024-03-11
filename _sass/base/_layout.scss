@@ -23,6 +23,7 @@ body {
   // This is a workaround for 100vw not accounting for the width of the scrollbar gutter
   // https://www.smashingmagazine.com/2023/12/new-css-viewport-units-not-solve-classic-scrollbar-problem/#avoiding-the-classic-scrollbar-problem
   container-type: inline-size;
+  overflow: auto;
 }
 
 body > * {

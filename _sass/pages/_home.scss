@@ -142,11 +142,12 @@
 
       > canvas {
         grid-area: logo;
+        max-width: min(30cqw, 9em);
       }
 
       > svg {
         fill: currentColor;
-        width: 11em;
+        max-width: 11em;
         grid-area: text-logo;
         align-self: end;
       }
@@ -158,7 +159,19 @@
       display: grid;
       width: fit-content;
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: var(--padding-xs);
+      @media (max-width: 23em) {
+        grid-template-columns: 1fr 1fr;
+        > :last-child {
+          translate: calc(50% + var(--padding-xxs));
+        }
+      }
+      @media (max-width: 14em) {
+        grid-template-columns: 1fr;
+        > :last-child {
+          translate: none;
+        }
+      }
+      gap: var(--padding-xs);
     }
   }
 
