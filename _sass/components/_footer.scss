@@ -190,6 +190,7 @@ nav.footer-section {
     vertical-align: middle;
     margin-block-start: -0.2em;
     fill: currentColor;
+    margin-inline-start: var(--padding-xs);
   }
 
   &::before {
