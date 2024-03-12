@@ -73,8 +73,6 @@ home:
   url: /releases/
 - label: Success stories
   url: /success-stories/
-- label: Used in production
-  url: /used_in_prod/
 - label: Sitemap
   url: /sitemap/
 
