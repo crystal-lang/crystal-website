@@ -4,28 +4,26 @@
 
   &::before,
   > img {
+    display: inline-block;
     width: 1.3em;
     aspect-ratio: 1;
-    object-fit: contain;
     margin-inline-end: var(--padding-xxs);
   }
   &:hover {
-    &:before,
     img {
       opacity: 0.7;
     }
   }
   > img {
+    object-fit: contain;
     @media (prefers-color-scheme: dark) {
       filter: #{"invert()"};
     }
   }
   &::before {
     background-color: currentColor;
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-    mask-image: var(--link-icon);
+    -webkit-mask: var(--link-icon) center / contain no-repeat;
+    mask: var(--link-icon) center / contain no-repeat;
   }
 }
 

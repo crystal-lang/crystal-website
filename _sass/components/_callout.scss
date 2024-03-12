@@ -15,9 +15,8 @@
 
     &::before {
       content: "";
-      mask-repeat: no-repeat;
-      mask-size: contain;
-      mask-image: var(--callout-mask);
+      -webkit-mask: var(--callout-mask) center / contain no-repeat;
+      mask: var(--callout-mask) center / contain no-repeat;
       width: 1.3em;
       vertical-align: text-bottom;
       aspect-ratio: 1;
