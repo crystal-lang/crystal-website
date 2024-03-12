@@ -29,10 +29,6 @@ community:
   url: /community/#events
 - label: Used in production
   url: /used_in_prod/
-- label: Newsletter
-  url: /newsletter/
-- label: Forum
-  url: https://forum.crystal-lang.org/
 - label: Governance
   url: /community/governance/
 
@@ -77,8 +73,6 @@ home:
   url: /releases/
 - label: Success stories
   url: /success-stories/
-- label: Used in production
-  url: /used_in_prod/
 - label: Sitemap
   url: /sitemap/
 
