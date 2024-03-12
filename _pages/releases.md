@@ -1,10 +1,5 @@
 ---
 title: Releases
-page_title: |
-  Releases
-  <a class="icon" href="/releases/feed.xml" rel="alternate" title="Newsfeed for Crystal releases" aria-label="Releases newsfeed" type="application/atom+xml">
-    {%- include icons/rss.svg %}
-  </a>
 layout: page-wide
 section: releases
 description: |
@@ -12,11 +7,12 @@ description: |
 
   Minor releases are backwards-compatible so migrating to the most recent version
   is straightforward and recommended.
+link_actions:
+- <a href="/releases/feed.xml" rel="alternate" title="Newsfeed for Crystal releases" aria-label="Releases newsfeed" type="application/atom+xml">
+    RSS
+  </a>
+- '[Installation instructions](/install)'
+- '[GitHub Releases](https://github.com/crystal-lang/crystal/releases)'
 ---
-
-<div class="link-actions">
-  <a href="/install">Installation instructions</a>
-  <a href="https://github.com/crystal-lang/crystal/releases">GitHub Releases</a>
-</div>
 
 {% include pages/releases/releases-table.html %}

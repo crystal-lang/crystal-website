@@ -120,6 +120,9 @@ nav.footer-section {
   grid-template-areas:
     "label label"
     "input button";
+  @media (max-width: 20em) {
+    grid-template-areas: "label" "input" "button";
+  }
   column-gap: var(--padding-sm);
   align-content: flex-start;
   justify-content: flex-start;
@@ -140,11 +143,16 @@ nav.footer-section {
       width: 100%;
       height: var(--hex-height);
       border: 1px solid var(--border-color);
+      padding-inline: var(--padding-xs);
 
       @media (prefers-color-scheme: dark) {
         color: var(--lighter-text);
         background-color: var(--mine-shaft);
       }
+    }
+
+    > button {
+      grid-area: button;
     }
   }
 }

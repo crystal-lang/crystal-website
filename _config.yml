@@ -108,3 +108,10 @@ callouts: ["INFO", "NOTE", "THANKS", "WARNING"]
 relative_links:
   enabled:     true
   collections: true
+
+jekyll-archives:
+  enabled: [tags]
+  layouts:
+    tag: tag
+  permalinks:
+    tag: 'blog/tags/:name/'

@@ -1,19 +1,26 @@
 ---
 title: News
-page_title: |
-  News
-  <a class="icon" href="/feed.xml" rel="alternate" title="Newsfeed for Crystal blog posts" aria-label="Blog newsfeed" type="application/atom+xml">
-    {%- include icons/rss.svg %}
-  </a>
 excerpt: Blog posts
-layout: base
+layout: wide
 section: blog
+link_actions:
+- |
+  <a href="/feed.xml" rel="alternate" title="Newsfeed for Crystal blog posts" aria-label="Blog newsfeed" type="application/atom+xml">
+    RSS
+  </a>
 ---
-{%- assign latest_release = site.releases | reverse | first %}
 
-<header class="wide-header">
-  <h1>{{ page.page_title | default: page.title | liquify }}</h1>
+<div class="featured-posts featured-posts--extra-highlight">
+  {%- assign post = site.posts.first %}
+  <div class="post-teaser">
+    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
 
+    {%- include posts/meta.html post=post %}
+
+    <div class="excerpt">{{ post.summary | default: post.excerpt | markdownify }}</div>
+  </div>
+
+  {%- assign latest_release = site.releases | reverse | first %}
   <div class="releases-info">
     <strong>Latest release</strong>
 
@@ -23,8 +30,8 @@ section: blog
       <a href="/releases/">All release notes</a>
     </div>
   </div>
-</header>
+</div>
 
-{% include posts/recent_news.html extra=true %}
+{% include posts/recent_news.html offset=1 %}
 
 {% include posts/more_articles.html posts=posts %}

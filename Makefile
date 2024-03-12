@@ -27,7 +27,7 @@ build: $(O) ## Build site
 
 .PHONY: serve
 serve: deps ## Run a local HTTP server with this site
-	bundle exec jekyll serve --watch --livereload --incremental --strict_front_matter  --destination $(O)
+	bundle exec jekyll serve --watch --livereload --incremental --strict_front_matter --host 0.0.0.0 --destination $(O)
 
 $(O): deps $(ALL_SOURCES)
 	bundle exec jekyll build --strict_front_matter --destination $(O)

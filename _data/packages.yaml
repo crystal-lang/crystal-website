@@ -82,7 +82,6 @@
   repo_href: https://formulae.brew.sh/formula/crystal
   repo_description: Crystal package on Homebrew
   repology: homebrew
-  repology: crystal
 
 - type: community
   os: Linux

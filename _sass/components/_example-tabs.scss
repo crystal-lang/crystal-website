@@ -30,7 +30,7 @@
   }
 
   display: grid;
-  grid-template-columns: 18em 1fr;
+  grid-template-columns: min(18em, 50cqw) 1fr;
   grid-template-areas:
     "sample-controls sample-controls"
     "sample          sample";
