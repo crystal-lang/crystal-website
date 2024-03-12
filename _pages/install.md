@@ -5,7 +5,7 @@ layout: page-wide
 page_class: page--segmented
 section: docs
 description: |
-  Crystal packages are available from different sources.
+  Packages for [Crystal releases](/releases) are available from different sources.
   There are official ones provided the Crystal project, system packages and
   community-maintained packages.
   This page gives an overview of available installation methods.
