@@ -9,7 +9,7 @@ BlockVue,https://blockvue.com,SaaS products,"Virtual and VR tours for commercial
 Eat App,https://restaurant.eatapp.co,SaaS products,"Cloud-based applications for restaurants to increasing their efficiency and revenue through real-time restaurant reservations, automation and guest data management and CRM"
 Errordeck,https://www.errordeck.com,SaaS products,"An error monitoring service to help you find and handle exceptions and errors"
 GigSmart,https://gigsmart.com,SaaS products,"GigSmart is a staffing company that connects businesses looking for talent with individuals looking for work through their mobile and web applications",
-Heii On-Call,https://heiioncall.com/,SaaS products,"[On-call rotation scheduling](https://heiioncall.com/), alerting, escalations, and monitoring for APIs, websites, cronjobs, and more."
+Heii On-Call,https://heiioncall.com/,SaaS products,"On-call rotation scheduling, alerting, escalations, and monitoring for APIs, websites, cronjobs, and more."
 JSON Keeper,https://jsonkeeper.com,SaaS products,"Simple, static JSON hosting service for web and mobile apps"
 Mailer To Go,https://mailertogo.com,SaaS products,"Heroku Add-on for simple email delivery"
 Nabobil.no,https://nabobil.no,SaaS products,"Peer-to-peer car rental platform based in Norway"
@@ -47,7 +47,7 @@ Universal Layer,https://ulayer.net/,Communication & Networking,"Web Hosting Prov
 xevIT networking,https://www.xevit.com/en,Communication & Networking,"Communication, Networking, Security"
 APIHub,https://apihub.biz,Misc,"API Marketplace where developers can sell their web services. Developers can register their HTTP endpoints for free, then the HTTP APIs are available for public use."
 Concentric,https://concentric.health,Misc,"Transforming how we make decisions about our health. The market leading digital consent to treatment application"
-Kadalu Technologies,https://github.com/kadalu/moana,Misc,"An opinionated distributed Storage solution based on [GlusterFS](https://github.com/gluster/glusterfs)"
+Kadalu Technologies,https://github.com/kadalu/moana,Misc,"An opinionated distributed Storage solution based on GlusterFS"
 muse-dl,https://github.com/captn3m0/muse-dl,Misc,"An ebook downloader for Project MUSE, which stitches them together into a single-file using `pdftk`"
-Nginx Shiny Exporter,https://github.com/serge-name/nginx-prometheus-shiny-exporter,Misc,"An exporter for [Prometheus](https://prometheus.io/) monitoring"
+Nginx Shiny Exporter,https://github.com/serge-name/nginx-prometheus-shiny-exporter,Misc,"An exporter for Prometheus monitoring"
 Phenopolis,https://www.phenopolis.com/,Misc,"Image processing and Big Data analysis for medical science"
