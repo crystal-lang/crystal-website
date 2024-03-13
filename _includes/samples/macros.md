@@ -1,5 +1,11 @@
 {% highlight crystal %}
-class Object
+class Person
+  getter name : String
+  getter age  : Int32
+  
+  def initialize(@name : String, @age : Int32)
+  end 
+  
   def has_instance_var?(name) : Bool
     {% raw %}{{ @type.instance_vars.map &.name.stringify }}{% endraw %}.includes? name
   end
