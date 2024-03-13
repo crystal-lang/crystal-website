@@ -49,6 +49,7 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  object-fit: contain;
 }
 
 /* Inherit fonts for inputs and buttons */
