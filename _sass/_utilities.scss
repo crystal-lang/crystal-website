@@ -105,5 +105,6 @@ li {
 }
 
 .white-background {
-  background: #fff;
+  background: var(--white);
+  color: var(--black);
 }
