@@ -11,10 +11,31 @@ end
 all_sponsors_map = Hash(UInt64, Sponsor).new
 overrides = Array(Sponsor).new
 
+update_other_sponsor_totals = ENV["UPDATE_OTHER_SPONSOR_TOTALS"]? == "1" || Time.utc.day == 1 # only do this on the first day of the month
+
+SPONSOR_DATA = begin
+  csv = CSV.new(File.read("#{__DIR__}/../_data/sponsors.csv"), headers: true)
+  hash = Hash(UInt64, Int32).new
+  csv.each do |row|
+    hash[Sponsor.id(row["name"], row["url"])] = row["all_time"].lchop("$").lchop("€").gsub(",", nil).to_i
+  end
+  hash
+end
+
 %w(opencollective.json bountysource.json others.json).each do |filename|
   File.open("#{__DIR__}/../_data/#{filename}") do |file|
     sponsors = Array(Sponsor).from_json(file)
-    sponsors, overrides = sponsors.partition(&.overrides.nil?) if filename == "others.json"
+
+    if filename == "others.json"
+      sponsors, overrides = sponsors.partition(&.overrides.nil?)
+      if update_other_sponsor_totals
+        sponsors.map! do |sponsor|
+          sponsor.all_time = SPONSOR_DATA[sponsor.id] + sponsor.last_payment
+          sponsor
+        end
+      end
+    end
+
     sponsors.each do |sponsor|
       prev_sponsor = all_sponsors_map[sponsor.id]?
       all_sponsors_map[sponsor.id] = prev_sponsor ? sponsor.merge(prev_sponsor) : sponsor
@@ -41,7 +62,7 @@ overrides.each do |sponsor|
   end
 end
 
-all_sponsors.sort_by! { |s| {-level(s), -s.all_time, s.since, s.name} }
+all_sponsors.sort_by! { |s| {-s.last_payment, -s.all_time, s.since, s.name} }
 
 File.open("#{__DIR__}/../_data/sponsors.csv", "w") do |file|
   CSV.build(file) do |csv|
