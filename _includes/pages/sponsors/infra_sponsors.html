@@ -1,0 +1,8 @@
+<ul class="cards-list">
+  {%- for sp in site.data.infra_sponsors %}
+    <li class="sponsor-card card--borderless">
+      <a href="{{ sp.url }}" class="name" rel="sponsored nofollow">{{ sp.name }}</a>
+      <img src="/assets/{{ sp.logo }}" alt="Logo of {{sp.name}}">
+    </li>
+  {%- endfor %}
+</ul>

@@ -76,3 +76,12 @@ and below is a list of all the humans and organizations that have made it possib
   <p>Meet our <a href="/sponsors/original-sponsors/">original sponsors</a>.</p>
   </aside>
 </section>
+
+<hr />
+
+<section class="side-section">
+  <h2>Infrastructure sponsors</h2>
+  <aside class="content">
+  </aside>
+  {%- include pages/sponsors/infra_sponsors.html %}
+</section>
