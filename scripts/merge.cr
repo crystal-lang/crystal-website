@@ -41,7 +41,7 @@ overrides.each do |sponsor|
   end
 end
 
-all_sponsors.sort_by! { |s| {-level(s), -s.all_time, s.since, s.name} }
+all_sponsors.sort_by! { |s| {-s.last_payment, -s.all_time, s.since, s.name} }
 
 File.open("#{__DIR__}/../_data/sponsors.csv", "w") do |file|
   CSV.build(file) do |csv|
