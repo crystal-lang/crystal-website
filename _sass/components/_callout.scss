@@ -38,6 +38,23 @@
 
   &--thanks {
     --callout-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13.5,20C6.9,13.9 3.5,10.8 3.5,7.1C3.5,4 5.9,1.6 9,1.6C10.7,1.6 12.4,2.4 13.5,3.7C14.6,2.4 16.3,1.6 18,1.6C21.1,1.6 23.5,4 23.5,7.1C23.5,10.9 20.1,14 13.5,20M12,21.1C5.4,15.2 1.5,11.7 1.5,7C1.5,6.8 1.5,6.6 1.5,6.4C0.9,7.3 0.5,8.4 0.5,9.6C0.5,13.4 3.9,16.5 10.5,22.4L12,21.1Z' /%3E%3C/svg%3E");
+
+    p {
+      a {
+        @include link-with-colored-icon-base;
+        display: inline flex;
+        vertical-align: bottom;
+
+        $icon-mappings: (
+          "https://www.84codes.com/": "/assets/sponsors/84codes.svg",
+          "https://nikolamotor.com/": "/assets/sponsors/nikola.svg",
+        );
+
+        @each $href, $url in $icon-mappings {
+          @include link-with-icon-href($href, url($url));
+        }
+      }
+    }
   }
 
   &--warning {
@@ -51,7 +68,7 @@
     > .hex:last-child {
       translate: 0 50%;
       margin: auto;
-      margin-block-start: calc(-1 * var(--padding-sm));
+      margin-block-start: calc(-1 * var(--padding-xs));
     }
   }
 }
