@@ -15,6 +15,7 @@ record Sponsor, name : String, url : String?, logo : String?, last_payment : Flo
   property overrides : String?
   @[JSON::Field(converter: Time::Format.new("%b %-d, %Y"))]
   property time_last_payment : Time?
+  property? listed : Bool = true
 
   def id : UInt64
     self.class.id(name, url)
