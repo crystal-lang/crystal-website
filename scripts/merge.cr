@@ -64,11 +64,13 @@ end
 
 all_sponsors.sort_by! { |s| {-s.last_payment, -s.all_time, s.since, s.name} }
 
-File.open("#{__DIR__}/../_data/sponsors.csv", "w") do |file|
-  CSV.build(file) do |csv|
+write_csv("sponsors.csv", all_sponsors)
+
+def write_csv(filename, sponsors)
+  open_csv(filename) do |csv|
     csv.row "logo", "name", "url", "last_payment", "all_time", "since", "level"
 
-    all_sponsors.each do |sponsor|
+    sponsors.each do |sponsor|
       currency = sponsor.currency || "$"
 
       csv.row sponsor.logo,
@@ -78,6 +80,14 @@ File.open("#{__DIR__}/../_data/sponsors.csv", "w") do |file|
         "#{currency}#{sponsor.all_time.to_i.format}",
         sponsor.since.to_s("%b %-d, %Y"),
         level(sponsor)
+    end
+  end
+end
+
+def open_csv(filename, datadir = Path[__DIR__, "..", "_data"])
+  File.open(datadir.join(filename), "w") do |file|
+    CSV.build(file) do |csv|
+      yield csv
     end
   end
 end
