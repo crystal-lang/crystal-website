@@ -1,9 +1,5 @@
 <ul class="cards-list">
-  {%- assign sponsors_5000 = site.data.sponsors | where: "level", 5000 %}
-  {%- assign sponsors_2000 = site.data.sponsors | where: "level", 2000 %}
-  {%- assign sponsors_1000 = site.data.sponsors | where: "level", 1000 %}
-  {%- assign enterprise_sponsors = sponsors_5000 | concat: sponsors_2000 | concat: sponsors_1000 %}
-  {%- for sp in enterprise_sponsors %}
+  {%- for sp in site.data.sponsor_logos_l %}
     <li class="sponsor-card">
       <a href="{{ sp.url }}" class="name" rel="sponsored nofollow">{{ sp.name }}</a>
       <img src="/assets/{{ sp.logo }}" alt="Logo of {{sp.name}}">
