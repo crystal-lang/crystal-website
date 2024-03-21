@@ -1,4 +1,4 @@
-@mixin link-with-icon-base {
+@mixin link-with-icon-structure {
   display: flex;
   align-items: center;
 
@@ -20,10 +20,23 @@
       filter: #{"invert()"};
     }
   }
+}
+
+@mixin link-with-icon-base {
+  @include link-with-icon-structure;
+
   &::before {
     background-color: currentColor;
     -webkit-mask: var(--link-icon) center / contain no-repeat;
     mask: var(--link-icon) center / contain no-repeat;
+  }
+}
+
+@mixin link-with-colored-icon-base {
+  @include link-with-icon-structure;
+
+  &::before {
+    background: var(--link-icon) center / contain no-repeat;
   }
 }
 
