@@ -1,6 +1,6 @@
 <div class="taxonomy">
   {%- for category in include.post.categories %}
-    <a href="{% if category == 'success' %}/success-stories{% else %}/blog/{{ category | slugify }}/{% endif %}" class="category">{{ category | capitalize }}</a>
+    <a href="{% if category == 'success' %}/success-stories/{% else %}/blog/{{ category | slugify }}/{% endif %}" class="category">{{ category | capitalize }}</a>
   {%- endfor %}
 
   {%- for tag in include.post.tags %}
