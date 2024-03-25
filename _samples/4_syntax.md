@@ -5,16 +5,16 @@ description: |
 read_more: "[Start learning Crystal](https://crystal-lang.org/reference/getting_started/)"
 ---
 ```crystal
-def longest_repetition(string)
-  max = string
-          .chars
-          .chunk(&.itself)
-          .map(&.last)
-          .max_by(&.size)
+class String
+  def longest_repetition?
+    max = chars
+            .chunk(&.itself)
+            .map(&.last)
+            .max_by?(&.size)
 
-  max ? {max[0], max.size} : {"", 0}
+    {max[0], max.size} if max
+  end
 end
 
-# press ▶️ and check the result
-puts longest_repetition("aaabb")
+puts "aaabb".longest_repetition? # => {'a', 3}
 ```
