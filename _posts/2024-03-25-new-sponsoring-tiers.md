@@ -1,7 +1,7 @@
 ---
 title: New sponsoring tiers
 summary: We refurbish the tiers to provide more to our sponsors
-author: beta-ziliani
+author: beta-ziliani,straight-shoota
 ---
 
 We made several changes to the sponsor packages offered on the [OpenCollective sponsoring page](https://www.opencollective.com/crystal-lang).
@@ -34,7 +34,6 @@ Some of the perks in that tier may have changed. We understand this is a breakin
 If this affects you, please let us know at [crystal@manas.tech](mailto:crystal@manas.tech).
 
 The new perks will take a couple of days to take effect.
-We need some time to properly update everything.
 
 The Crystal project depends on your support and we're grateful
 for any contributions that help the development of the language and its ecosystem.
