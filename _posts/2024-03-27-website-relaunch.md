@@ -17,9 +17,9 @@ Some of the highlight improvements:
 * Responsive layout that fits small and large viewports
 * Refined typography
 * Enhanced site navigation system
-* Completely reorganised [homepage](/)
-* Completely reorganised [_Install_ page](/install/)
-* Completely reorganised [_Community_ page](/community/)
+* Completely reorganized [homepage](/)
+* Completely reorganized [_Install_ page](/install/)
+* Completely reorganized [_Community_ page](/community/)
 * New [_Releases_ page](/releases/)
 * New [_Sponsors_](/sponsors/) options
 * Taxonomy (categories and tags) for blog posts
