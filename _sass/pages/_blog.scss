@@ -64,10 +64,10 @@
     padding: 0;
     counter-reset: item;
     list-style-type: none;
-    li {
+    > li {
       padding-left: 2.5em;
     }
-    li:before {
+    > li:before {
       position: absolute;
       display: inline-block;
       content: counter(item) ".";
