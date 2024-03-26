@@ -13,8 +13,11 @@ The general structure of tiers hasn't changed. It's a bit more refined now with 
 We consider three groups of sponsorship levels with different target audiences:
 
 1. **Backer:** Individuals and small organizations who love Crystal and want to support it.
+   ![Backer sponsorship tiers](/assets/blog/2024/2024-03-26-open-collective-backers.webp)
 2. **Sponsor:** Individuals and organizations who want to support Crystal and maybe gain some visibility.
+   ![Sponsor sponsorship tiers](/assets/blog/2024/2024-03-26-open-collective-sponsors.webp)
 3. **Corporate:** Organizations who want to support Crystal and obtain support to move their business forward.
+   ![Corporate sponsorship tiers](/assets/blog/2024/2024-03-26-open-collective-corporate.webp)
 
 The thresholds for the individual tiers stay mostly the same. We thinned out some intermediary tiers that were barely used.
 
