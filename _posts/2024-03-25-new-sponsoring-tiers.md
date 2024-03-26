@@ -14,7 +14,7 @@ We consider three groups of sponsorship levels with different target audiences:
 
 1. **Backer:** Individuals and small organizations who love Crystal and want to support it.
 2. **Sponsor:** Individuals and organizations who want to support Crystal and maybe gain some visibility.
-3. **Corporate:** Organizations who want to support Crystal and gain support to move their business forward.
+3. **Corporate:** Organizations who want to support Crystal and obtain support to move their business forward.
 
 The thresholds for the individual tiers stay mostly the same. We thinned out some intermediary tiers that were barely used.
 
