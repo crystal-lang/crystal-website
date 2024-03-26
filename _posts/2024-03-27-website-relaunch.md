@@ -38,3 +38,5 @@ The underlying engine has remained the same: We're still using [Jekyll](https://
 The entire styles and many templates have been rebuilt from scratch to implement the new design. There has been good progress and broad browser adoption of modern web technologies that allows using some fancy new features like CSS layers and advanced grid layouts. We're still quite confident about good browser support with way over 90% coverage.
 
 The new website has gone through a lot of reviews and quality control, but there are inevitably gonna be some mishaps. If you find any issues, please report them to [the bug tracker](https://github.com/crystal-lang/crystal-website/issues).
+
+We hope the community loves the fresh look, and that newcomers find it easy to navigate and learn about our beloved language.
