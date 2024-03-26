@@ -17,10 +17,10 @@ Some of the highlight improvements:
 * Responsive layout that fits small and large viewports
 * Refined typography
 * Enhanced site navigation system
-* completely reorganised [homepage](/)
-* completely reorganised [_Install_ page](/install/)
-* completely reorganised [_Community_ page](/community/)
-* new [_Releases_ page](/releases/)
+* Completely reorganised [homepage](/)
+* Completely reorganised [_Install_ page](/install/)
+* Completely reorganised [_Community_ page](/community/)
+* New [_Releases_ page](/releases/)
 * Taxonomy (categories and tags) for blog posts
 * Dark mode support
 
