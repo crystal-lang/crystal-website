@@ -2,6 +2,8 @@
 title: New sponsoring tiers
 summary: We refurbish the tiers to provide more to our sponsors
 author: beta-ziliani,straight-shoota
+categories: project
+tags: [sponsors]
 ---
 
 We made several changes to the sponsor packages offered on the [OpenCollective sponsoring page](https://www.opencollective.com/crystal-lang).
