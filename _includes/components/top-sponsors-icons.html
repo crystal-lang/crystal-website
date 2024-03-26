@@ -1,5 +1,13 @@
-<div class="top-sponsors">
-  {%- for sponsor in site.data.top_sponsors %}
+<div class="top-sponsors top-sponsors--l">
+  {%- for sponsor in site.data.sponsor_logos_l %}
+    <a href="{{ sponsor.url }}" rel="nofollow sponsored">
+      <img src="/assets/{{ sponsor.logo }}" alt="">
+      {{- sponsor.name }}
+    </a>
+  {%- endfor %}
+</div>
+<div class="top-sponsors top-sponsors--s">
+  {%- for sponsor in site.data.sponsor_logos_s %}
     <a href="{{ sponsor.url }}" rel="nofollow sponsored">
       <img src="/assets/{{ sponsor.logo }}" alt="">
       {{- sponsor.name }}
