@@ -25,6 +25,16 @@
       "avatars image"
       "avatars body"
       ". body";
+
+    @media (max-width: 80ch) {
+      grid-template-areas:
+        "avatars names"
+        "avatars date"
+        "avatars title"
+        "avatars taxonomy"
+        "image image"
+        "body body";
+    }
   }
 
   @media (max-width: 80ch) {
