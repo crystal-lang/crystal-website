@@ -28,6 +28,22 @@ layout: none
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <script src="/assets/js/bundle.js" defer></script>
     {%- seo title=false %}
+
+    {%- unless page.image %}
+      {%- assign default_image = page.default_image | default: site.default_image %}
+      <meta property="og:image" content="{{ default_image.path }}" />
+      <meta property="twitter:image" content="{{ default_image.path }}" />
+      {%- if default_image.height %}
+        <meta property="og:image:height" content="{{ default_image.height }}" />
+      {%- endif %}
+      {%- if default_image.width %}
+        <meta property="og:image:width" content="{{ default_image.width }}" />
+      {%- endif %}
+      {%- if default_image.alt %}
+        <meta property="og:image:alt" content="{{ default_image.alt }}" />
+      {%- endif %}
+    {%- endunless %}
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="preload" href="/assets/fonts/roboto/roboto-v30-latin-300.woff2" as="font" type="font/woff2">
     <link rel="preload" href="/assets/fonts/roboto/roboto-v30-latin-regular.woff2" as="font" type="font/woff2">
