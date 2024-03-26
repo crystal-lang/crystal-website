@@ -19,6 +19,10 @@ We consider three groups of sponsorship levels with different target audiences:
 3. **Corporate:** Organizations who want to support Crystal and obtain support to move their business forward.
    ![Corporate sponsorship tiers](/assets/blog/2024/2024-03-26-open-collective-corporate.webp)
 
+There's also an open donation tier for a one-time contribution or continuous support at a value of your choice.
+
+![Donation](/assets/blog/2024/2024-03-26-open-collective-donation.webp)
+
 The thresholds for the individual tiers stay mostly the same. We thinned out some intermediary tiers that were barely used.
 
 Most relevant changes:
