@@ -5,17 +5,30 @@
   justify-content: center;
   margin-top: var(--block-flow-md);
 
-  > a {
-    --link-color: var(--primary-text);
-    --link-hover-color: var(--light-text);
+  @extend .ui-link;
 
+  --top-sponsors-icon-width: 11ch;
+  --top-sponsors-icon-filter: #{"contrast(2) grayscale()"};
+
+  --link-color: var(--primary-text);
+  --link-hover-color: var(--light-text);
+
+  &--s {
+    --top-sponsors-icon-width: 7ch;
+    --top-sponsors-icon-filter: #{"contrast(0.4) grayscale()"};
+    --link-color: var(--lighter-text);
+    font-size: font-size(xsmall);
+  }
+
+  > a {
     display: flex;
     flex-direction: column;
     row-gap: var(--padding-sm);
     align-items: center;
     text-align: center;
     line-height: var(--line-height-sm);
-    width: 11ch;
+    width: var(--top-sponsors-icon-width);
+    white-space: nowrap;
 
     > img {
       width: 80%;
@@ -31,7 +44,7 @@
     }
 
     &:not(:hover) > img {
-      filter: #{"grayscale()"};
+      filter: var(--top-sponsors-icon-filter);
       transform: scale(0.97);
 
       @media (prefers-color-scheme: dark) {

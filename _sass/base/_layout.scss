@@ -65,7 +65,8 @@ body > main > article {
 }
 
 article.page,
-article.page > header {
+article.page > header,
+.page-header {
   @include blockflow(var(--block-flow-md));
 }
 

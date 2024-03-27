@@ -115,3 +115,6 @@ jekyll-archives:
     tag: tag
   permalinks:
     tag: 'blog/tags/:name/'
+
+default_image:
+  path: /assets/banner.webp
