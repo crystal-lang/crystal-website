@@ -7,6 +7,8 @@
   # `encode': "\\xC3" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
   env.RUBYOPT = "-Eutf-8";
 
+  languages.crystal.enable = true;
+
   packages = (with pkgs; [
     htmltest
   ]);
