@@ -1,0 +1,19 @@
+<div class="profile-card" itemscope itemtype="https://schema.org/Person">
+  <strong class="name" itemprop="name">{{ include.profile.name }}</strong>
+  <span class="handle">@{{ include.profile.github_handle | default: include.slug }}</span>
+  <img src="/assets/authors/{{ include.slug }}.jpg" itemprop="image" alt="Photo of {{ include.profile.name }}" alt="Profile picture of {{ member[1].name }}" />
+
+  <div class="roles">
+    <span class="role" itemprop="jobTitle">{{ include.profile.role }}</span>
+    <span class="affiliation" itemprop="affiliation">{{ include.profile.affiliation }}</span>
+  </div>
+
+  <div class="profiles">
+    <a href="https://github.com/{{ include.profile.github_handle | default: include.slug }}" itemprop="url" title="{{ include.profile.github_handle | default: include.slug }} on GitHub" class="icon" aria-label="GitHub profile">
+      {%- include icons/github.svg %}
+    </a>
+    <a href="https://forum.crystal-lang.org/u/{{ include.profile.forum_handle | default: include.slug }}" itemprop="url" title="{{ include.profile.forum_handle | default: include.slug }} on the Crystal Forum" class="icon" aria-label="Crystal Forum profile">
+      {%- include icons/discourse.svg %}
+    </a>
+  </div>
+</div>

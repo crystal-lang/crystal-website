@@ -4,6 +4,8 @@ summary: An overview of what you can expect at Raw Crystal 2020 and some insight
 thumbnail: +
 author: lbarasti
 comment_href: https://disqus.com/home/discussion/crystal-lang/organising_a_crystal_conference_in_2020/
+categories: community
+tags: [community, events]
 ---
 
 Since I started exploring Crystal, I've always been impressed with how supportive people in the community were. It's the kind of feeling that makes you look forward to engage with fellow humans sharing a passion for building things.
@@ -51,7 +53,7 @@ If these times don't work for you, then despair not! I will be sharing the recor
 ## Code of conduct first
 Before launching a landing page for the event, I decided to define a code of conduct, to avoid any misunderstanding.
 
-I found [this article](https://blog.tito.io/posts/code-of-conduct-for-virtual-events/) on _Adapting Your Code of Conduct for Virtual Events_ extremely valuable, and ended up deriving the CoC for Raw Crystal 2020 from the one designed at [#causeascene](https://hashtagcauseascene.com/code-of-conduct/).
+I found [this article](https://blog.tito.io/posts/code-of-conduct-for-virtual-events/) on _Adapting Your Code of Conduct for Virtual Events_ extremely valuable, and ended up deriving the CoC for Raw Crystal 2020 from the one designed at ~~[#causeascene](https://hashtagcauseascene.com/code-of-conduct/)~~.
 
 You'll find the conference CoC on the closing paragraph of the [event page](https://www.eventbrite.co.uk/e/raw-crystal-2020-tickets-127439094763).
 

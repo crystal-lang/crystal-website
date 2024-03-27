@@ -2,6 +2,8 @@
 title: Heroku Buildpack
 thumbnail: H
 author: bcardiff
+categories: technical
+tags: tooling
 ---
 
 At the end of 2014 a [first draft](https://github.com/manastech/heroku-buildpack-crystal/commit/b364f9115706a2a1c97ff40bd44aef1cf73e6288) of a [Heroku](//heroku.com) buildpack for crystal was createad. This was truly great. Being able to run crystal apps in the Heroku stack was charm idea.
@@ -70,13 +72,13 @@ $ crystal src/heroku101.cr
 Listening on http://0.0.0.0:8080
 </pre>
 
-Open your browser at [http://0.0.0.0:8080](http://0.0.0.0:8080).
+Open your browser at <a href="http://0.0.0.0:8080" data-proofer-ignore>http://0.0.0.0:8080</a>.
 
 To stop the server just terminate the process by pressing `Ctrl+C`.
 
 ## Herokufy it
 
-Right now the project knows nothing about Heroku. To get started, a Heroku application needs first to be registered. The easiest way to do this is via the [Heroku toolbelt](https://toolbelt.heroku.com/):
+Right now the project knows nothing about Heroku. To get started, a Heroku application needs first to be registered. The easiest way to do this is via the ~~[Heroku toolbelt](https://toolbelt.heroku.com/)~~:
 
 <pre class="code">
 $ heroku create --buildpack https://github.com/crystal-lang/heroku-buildpack-crystal.git

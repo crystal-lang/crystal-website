@@ -3,6 +3,8 @@ title: Memories from CrystalConf
 author: straight-shoota
 summary: Impressions from the conference in Berlin
 comment_href: https://disqus.com/home/discussion/crystal-lang/memories_from_crystalconf/
+categories: project community
+tags: [events, crystalconf, berlin]
 ---
 
 CrystalConf 2023 was a sounding success with a terrific lineup of speakers and talks.

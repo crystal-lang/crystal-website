@@ -1,0 +1,53 @@
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18ch, 1fr));
+  gap: var(--padding-sm);
+
+  > * {
+    margin: 0;
+  }
+}
+
+.event-card {
+  --card-padding: 0;
+
+  @extend .card;
+
+  box-shadow: none;
+  width: auto;
+  align-items: start;
+  text-align: start;
+
+  > img {
+    width: 100%;
+    aspect-ratio: var(--golden-ratio);
+    object-fit: cover;
+    transition: 300ms filter;
+
+    + time {
+      margin-block-start: var(--padding-sm);
+    }
+  }
+
+  &:not(:hover, :focus-within) {
+    > img {
+      filter: grayscale(1) opacity(0.8);
+    }
+  }
+
+  > .name {
+    margin-block-start: var(--padding-xxs);
+  }
+
+  > time {
+    color: var(--lighter-text);
+    margin-block-start: 0;
+  }
+
+  > .location {
+    margin-block-start: var(--padding-xs);
+    font-size: 87.5%;
+    text-transform: uppercase;
+    color: var(--lighter-text);
+  }
+}

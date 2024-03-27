@@ -5,6 +5,7 @@ thumbnail: +
 author: nditada
 release_notes: false
 comment_href: https://disqus.com/home/discussion/crystal-lang/crystal_core_team_announcements/
+categories: project
 ---
 
 A lot has been going on in the Crystal Core Team, and the community has voiced its need for more (and more frequent) communication. This post is an attempt to catch up with that. I'm taking the license of using "we" for both Crystal and Manas.Tech in this short update.

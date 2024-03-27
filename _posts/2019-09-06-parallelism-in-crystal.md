@@ -3,6 +3,8 @@ title: Parallelism in Crystal
 summary: Use more of your core power
 author: waj,bcardiff
 comment_href: https://disqus.com/home/discussion/crystal-lang/parallelism_in_crystal_88/
+categories: technical
+tags: feature
 ---
 
 Crystal has made a huge step forward to have parallelism as a first class citizen. In short, you can set up the number of worker threads on runtime and each new fiber will be scheduled to run on one of them. Channel and select will work seamlessly. You are allowed to share memory between workers, but you will probably need to take care of some synchronization to keep the state consistent.
@@ -140,7 +142,7 @@ Mixing fork and multi-thread programs is problematic. There are a couple of refe
 
 * [Fork and existing threads?](https://stackoverflow.com/a/1074663/30948)
 * [Why threads can't fork](https://thorstenball.com/blog/2014/10/13/why-threads-cant-fork/)
-* [Threads and fork(): think twice before mixing them](http://www.linuxprogrammingblog.com/threads-and-fork-think-twice-before-using-them)
+* [Threads and fork(): think twice before mixing them](https://web.archive.org/web/20190322202710/http://www.linuxprogrammingblog.com/threads-and-fork-think-twice-before-using-them)
 
 The `fork` method will not be available in multi-thread and will probably go away as a public API. The std-lib still needs fork to start subprocesses, but this scenario is safe because an exec is performed after the fork.
 
@@ -173,7 +175,7 @@ Constants and class variables are lazily initialized in some scenarios. We would
 
 We mentioned that the starting scheduling algorithm is a round-robin without fiber stealing. We attempted to have a metric of the load of each worker, but since workers can communicate within each other to delegate new fibers, computing the load would imply more state that needs to be synced. On top of that, in the current implementation there are references to fibers in the pipe used for communication, so the `@runnables` queue sizes are not an accurate metric.
 
-The GC had multi-thread support in the past, but the performance was not good enough. We finally implemented a RW-Lock between context switches (the readers) and the GC collection (the writer). The implementation of the RW-Lock is inspired in [Concurrency Kit](http://concurrencykit.org/) and does not use a Mutex.
+The GC had multi-thread support in the past, but the performance was not good enough. We finally implemented a RW-Lock between context switches (the readers) and the GC collection (the writer). The implementation of the RW-Lock is inspired in [Concurrency Kit](https://github.com/concurrencykit/ck) and does not use a Mutex.
 
 Unsurprisingly, but worth noticing, a compiler built with multi-thread support does not yet take advantage of the cores. Up until now, the compiler used `fork` when building programs in debug mode. So the `--threads` compiler option is ignored on multi-thread due to the issues described [before](#fork). This is a use case of `fork` that will not be supported in the future and will need to be rewritten with other constructs.
 
@@ -203,4 +205,4 @@ The challenges found in Array appear in every manipulation of pointers. Pointers
 
 Although there is some pending work to be done before we can claim that multi-thread mode is a first class citizen of the language, having this update in the runtime is definitely a huge step forward. We want to collect feedback and keep iterating so that, in the next couple of releases, we can remove the `preview` from `preview_mt`.
 
-We have been able to do all of this thanks to the continued support of [84codes](https://www.84codes.com/), and every other [sponsor](/sponsors). It is extremely important for us to sustain the support through donations, so that we can maintain this development pace. [OpenCollective](https://opencollective.com/crystal-lang) and [Bountysource](https://salt.bountysource.com/teams/crystal-lang) are two available channels for that. Reach out to [crystal@manas.tech](mailto:crystal@manas.tech) if you’d like to become a direct sponsor or find other ways to support Crystal. We thank you in advance!
+We have been able to do all of this thanks to the continued support of [84codes](https://www.84codes.com/), and every other [sponsor](/sponsors). It is extremely important for us to sustain the support through donations, so that we can maintain this development pace. [OpenCollective](https://opencollective.com/crystal-lang) and ~~[Bountysource](https://salt.bountysource.com/teams/crystal-lang)~~ are two available channels for that. Reach out to [crystal@manas.tech](mailto:crystal@manas.tech) if you’d like to become a direct sponsor or find other ways to support Crystal. We thank you in advance!

@@ -1,0 +1,60 @@
+<nav class="breadcrumbs" aria-label="Breadcrumbs">
+  {%- capture separator %}<span aria-hidden="true">/</span>{% endcapture -%}
+  {%- assign page_title = nil -%}
+  {%- assign page_nav = nil -%}
+
+  <span class="breadcrumb">
+    <a href="/" rel="index up">Home</a>
+  </span>
+
+  {% assign section = include.page.section | default: layout.section %}
+  {%- if section -%}
+    {%- assign section = site.data.sections[section] -%}
+    {%- for item in section.breadcrumbs %}
+      {%- if item.nav %}
+        {%- assign page_nav = item.nav -%}
+      {%- endif %}
+      {%- if item.url == include.page.url -%}
+        {%- assign page_title = item.title -%}
+        {%- break -%}
+      {%- endif -%}
+
+      {{- separator }}
+
+      <div class="breadcrumb">
+      {%- if item.url -%}
+        <a href="{{ item.url }}" rel="up">{{ item.title }}</a>
+      {%- else -%}
+        <span>{{ item.title }}</span>
+      {%- endif %}
+      </div>
+    {%- endfor %}
+  {%- endif %}
+
+  {%- assign categories = include.page.categories %}
+  {%- if categories | count > 0 %}
+    {%- for category in categories %}
+      {%- if forloop.first %}
+        {{ separator }}
+      {%- else %}
+        ,
+      {%- endif %}
+
+      <span class="breadcrumb breadcrumb--category">
+        <a href="{% if category == 'success' %}/success-stories/{% else %}/blog/{{ category }}/{% endif %}">{{ category | capitalize }}</a>
+      </span>
+    {%- endfor %}
+  {%- endif %}
+
+  {%- if page_title %}
+    {{- separator }}
+
+    <span class="breadcrumb">
+      <a href="{{ include.page.url }}" aria-current="page">{{ page_title }}</a>
+    </span>
+  {%- endif %}
+</nav>
+
+<nav class="section-links" aria-label="Section links">
+  {%- include site/nav_links.html section=page_nav %}
+</nav>

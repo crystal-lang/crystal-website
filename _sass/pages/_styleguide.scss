@@ -1,0 +1,32 @@
+.styleguide {
+  padding-block: var(--block-flow, var(--block-flow-sm));
+
+  @include blockflow;
+
+  > .styleguide-preview {
+    @extend .content;
+
+    border: 1px solid var(--border-color);
+    border-radius: 0.425rem;
+    padding: var(--padding-sm);
+
+    max-width: unset;
+
+    &:not(.wide) {
+      width: var(--content-width);
+    }
+  }
+
+  > details {
+    clear: both;
+
+    pre {
+      white-space: pre-line;
+    }
+  }
+}
+
+.styleguide-preview {
+  resize: both;
+  overflow: scroll;
+}

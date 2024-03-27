@@ -1,0 +1,16 @@
+.full-width-rule {
+  @extend .full-width;
+  display: grid;
+  grid-template: "container";
+  place-items: center;
+  font-size: 1rem;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100vw;
+    width: 100cqw;
+    position: absolute;
+    border-block-end: 0.16ch solid var(--border-color);
+  }
+}

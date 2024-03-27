@@ -1,0 +1,50 @@
+.link-items {
+  > h3 {
+    font-weight: 200;
+    margin-bottom: var(--padding-sm);
+  }
+
+  .link-item + .link-item {
+    margin-top: var(--block-flow-sm);
+  }
+}
+
+.link-item {
+  @extend .icon-prefix;
+  margin-inline-start: 0;
+
+  .link-item__main {
+    --link-color: var(--primary-text);
+    font-weight: 500;
+
+    > em {
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  p {
+    line-height: var(--line-height-md);
+    color: var(--light-gray);
+    margin-block-start: var(--padding-xxs);
+  }
+}
+
+.icon-prefix {
+  position: relative;
+  font-size: font-size(small);
+  line-height: var(--line-height-md);
+  margin-inline-start: 1.2em;
+  color: var(--light-gray);
+
+  > svg:first-child,
+  > :any-link > svg:first-child {
+    width: 1.2em;
+    height: auto;
+    position: absolute;
+    right: calc(100% + 0.3em);
+    margin-top: 0.15em;
+
+    fill: currentColor;
+  }
+}

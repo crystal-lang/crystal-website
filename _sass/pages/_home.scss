@@ -1,390 +1,184 @@
-.main {
-  // Changes to the default layout for main page
-  .header-section {
-    background-color: transparent;
-    min-height: 485px;
-    position: relative;
-    h1.title {
-      color: $white;
-    }
-    .subtitle {
-      color: $white;
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
+.layout--home > header {
+  color-scheme: dark;
+  grid-template-columns:
+    1fr minmax(min-content, var(--main-width)) minmax(0, min-content)
+    1fr;
+  grid-template-areas:
+    ". main    util    util"
+    ". intro   intro   .   "
+    ". samples samples .   ";
+
+  position: relative;
+  background-color: var(--pitch-black);
+
+  --primary-text: var(--white);
+  --link-color: currentColor;
+  --link-hover-color: hsl(0, 0%, 80%);
+  --light-text: hsl(0, 0%, 80%);
+  --lighter-text: var(--white);
+
+  .highlight {
+    @include dark-mode-highlight;
   }
 
-  p.main-actions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  --code-bg: hsl(0, 0%, 13%);
+  --hex-bg: var(--black);
+  --hex-color: var(--white);
+  --hex-bg-hover: var(--black);
 
-    @media only screen and (min-width: 601px) {
-      flex-direction: row;
-    }
+  --hex-shadow: drop-shadow(0 0 1px rgb(255 255 255 / 40%))
+    drop-shadow(0 0 1px rgb(255 255 255 / 10%));
 
-    .btn {
-      margin: 8px;
-    }
-  }
+  --hex-hover-shadow: drop-shadow(0 0 1px rgba(255 255 255 / 100%))
+    drop-shadow(0 0 1px rgb(255 255 255 / 10%));
 
-  nav {
-    background-color: transparent;
-    border: none;
-    ul#nav-desktop {
-      li a {
-        color: $white;
-      }
-    }
-    a.button-collapse {
-      color: $white;
-    }
-  }
+  color: var(--primary-text);
 
-  &:not(.conference) nav {
-    background-color: transparent;
-    border-bottom: 0px;
-    position: relative;
-    text-align: center;
-    z-index: 1000;
-
-
-    ul#nav-desktop {
-      display: inline-block;
-      float: none !important;
-      margin: 0 auto !important;
-      li a {
-        color: $white;
-        &:hover {
-          border-color: $white;
-        }
-        &.selected {
-          border-bottom: 5px solid $white;
-        }
-      }
-    }
-  }
-  #crystal-container {
-    text-align: center;
-    margin-bottom: 15px;
-    #Crystal {
-      fill: #ffffff;
-    }
-  }
-  &:not(.conference) #logo-container {
-    width: 160px;
-    height: 160px;
-    #logo-canvas {
-      width: 150px;
-      height: 150px;
-    }
-  }
-
-  #delaunay {
-    @extend .black;
+  &::before {
+    content: "";
     position: absolute;
-    top: -96px;
+    display: block;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    z-index: -1;
+
+    z-index: 0;
+    opacity: 0.5;
+
+    background-image: url(/assets/home/pattern.svg);
+    background-repeat: no-repeat;
+    background-size: clamp(30vw, max(80rem, 50vw), 250vw) auto;
+    background-position: clamp(-15vw, -40rem + 50vw, 0px) top;
   }
 
-  canvas.delaunay {
-    position: absolute;
-    background-color: $black;
-    top: 0;
-    bottom: 15px;
+  > * {
+    z-index: 1;
   }
 
-  .container {
-    // Removed container width for the banners,
-    // so this is making up for it.
-    width: 70%;
-    max-width: 1280px;
-    margin: 0 auto;
-  }
+  > .mainnav {
+    justify-self: center;
+    font-size: var(--font-size-lead);
 
-  @media only screen and (max-width: 992px) {
-    // The 70% fix for container should be undone in mobile.
-    .container {
-      width: 90%;
+    ul {
+      column-gap: var(--padding-sm);
     }
   }
 
-  p.read-more > a {
-    word-break: break-all;
-  }
+  @media (max-width: 30em) {
+    grid-template-areas:
+      ". main    main    util"
+      ". intro   intro   util   "
+      ". samples samples samples   ";
 
-  .sponsors-list {
-    text-align: center;
-    // border-bottom: 1px solid $light-gray;
-  }
-  .sponsor {
-    display: inline-block;
-    margin: 40px 45px;
-    text-align: center;
-    position: relative;
-    img {
-      width: 96px;
-      height: 96px;
-      display: block;
-      filter: grayscale(100%);
-      border-radius: 50%;
-      margin: 20px auto 50px auto;
+    > .mainnav {
+      justify-self: start;
     }
-    &:hover {
-      img {
-        filter: grayscale(0%);
-      }
+    > .utilnav {
+      flex-direction: column;
+      align-self: start;
     }
   }
 
-  .community-list {
-    text-align: center;
+  > .intro {
+    grid-area: intro;
+    display: grid;
+    grid-template-columns: minmax(11em, 18em) 1fr;
+    grid-template-rows: 3fr 1fr auto;
+    column-gap: var(--block-flow-xs);
+    row-gap: var(--block-flow-xs);
+    grid-template-areas:
+      "logo      motto"
+      "text-logo actions"
+      "release   actions";
+    justify-items: center;
+    align-items: center;
+    margin-block: var(--block-flow-sm);
 
-    .item {
-      display: inline-block;
-      margin: 45px 0 0 0;
-      text-align: left;
-      span.small {
-        display: block;
-        margin: 5px 0;
-      }
-      i, span.with_icon {
-        color: $black;
-      }
+    @media (max-width: 40em) {
+      margin-block-start: var(--block-flow-sm);
+      grid-template-columns: 2fr auto 1fr;
+      grid-template-rows: 3fr 2fr auto auto;
+      grid-template-rows: initial;
+      grid-template-areas:
+        "logo text-logo ."
+        "logo release ."
+        "motto motto motto"
+        "actions actions actions";
     }
-  }
 
-  &:not(.conference) h2 {
-    margin: 100px 0 30px 0;
-  }
-  hr.fullwidth {
-    background: $light-gray;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    border: none;
-    height: 1px;
-  }
-
-  .latest-release {
-    font-family: "Roboto Mono", monospace;
-    text-transform: inherit;
-    margin-top: 70px;
-    font-size: 48px;
-    color: #999999;
-    a { color: #000000; }
-  }
-}
-
-.header-section {
-  .btn-flat {
-    border: 2px solid $white;
-    color: $white;
-    padding: 0 42px;
-    &:active {
-      background-color: $black;
-    }
-    &:hover {
-      color: $black;
-      background-color: $white;
-    }
-  }
-}
-
-.banner.sponsorship {
-  margin-top: 0;
-  border-top: 1px solid $light-gray;
-
-  .flag-logos {
-    display: inline;
-    span {
-      margin: 0 3px;
-    }
-  }
-  .sponsorship-logo{
-    height: 28px;
-  }
-  .oc-logo {
-    height: 18px;
-  }
-  .flag {
-    a { border-bottom: 0; }
-  }
-  @media only screen and (max-width: 768px) {
-    .flag-logos {
-      display: block;
+    > .motto {
+      grid-area: motto;
+      font-weight: 300;
+      font-size: font-size(h2);
+      align-self: end;
       text-align: center;
+      text-wrap: balance;
     }
-  }
-}
 
-.flag {
-  margin: auto;
-  width: max-content;
-  background-color: $white;
-  line-height: 30px;
-  border-radius: 35px;
-  border: 1px solid $light-gray;
-  padding: 2px 25px;
-  white-space: nowrap;
-  z-index: 1;
+    > .latest-release-info {
+      @extend .small;
+      grid-area: release;
+      align-self: start;
+    }
 
-  &.hr::before {
-    border-top: 1px solid $light-gray;
-    position: absolute;
-    left: 0;
-    right: 0;
-    content: "";
-    z-index: -1;
-    margin-top: 14px;
-  }
+    > .brand-logo {
+      // grid-area: logo;
+      // display: flex;
+      // align-items: center;
+      // row-gap: var(--padding-sm);
+      // column-gap: var(--padding-md);
+      display: contents;
 
-  h3 {
-    display: inline-block;
-    background-color: $white;
-    margin-top: 0;
-  }
-  a {
-    border-bottom: 1px solid $primary-text;
-    margin-left: 8px;
-  }
-}
-
-.contributing-link {
-  color: #03A9F4;
-  border-bottom: 0;
-  &:hover {
-    color: #03A9F4;
-    border-bottom: 1px solid #03A9F4;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .btn-flat {
-    display: block;
-    width: 80%;
-    margin-right: 0;
-    margin: 0 auto 1rem !important;
-  }
-  .btn-large {
-    font-size: 18px;
-  }
-  .main .banner.sponsorship {
-    margin-top: 0px;
-    .flag {
-      line-height: 1.3;
-      border-radius: 0px;
-      padding: 6px 25px;
-      white-space: normal;
-      display: block;
-      &:before {
-        display: none;
+      // @media (min-width: 40em) {
+      //   margin-block-start: var(--block-flow-sm);
+      //   flex-direction: column;
+      // }
+      @media (max-width: 40em) {
+        > canvas {
+          justify-self: end;
+        }
       }
-      .flag-logos {
-        line-height: 1.6;
+
+      > canvas {
+        grid-area: logo;
+        max-width: min(30cqw, 9em);
+      }
+
+      > svg {
+        fill: currentColor;
+        max-width: 11em;
+        grid-area: text-logo;
+        align-self: end;
       }
     }
-  }
-}
 
-@media only screen and (min-width: 841px) {
-  .register-mobile {
-    display: none;
-  }
-}
+    .actions {
+      grid-area: actions;
 
-@media only screen and (max-width: 600px) {
-  .main:not(.conference) {
-    nav {
-      a.brand-logo {
-        position: absolute;
-        left: calc(50% - 15px);
-        top: 2rem;
+      display: grid;
+      width: fit-content;
+      grid-template-columns: 1fr 1fr 1fr;
+      @media (max-width: 23em) {
+        grid-template-columns: 1fr 1fr;
+        > :last-child {
+          translate: calc(50% + var(--padding-xxs));
+        }
       }
-    }
-    .header-section.valign-wrapper {
-      display: block;
-    }
-    #crystal-container {
-      margin-bottom: 5px;
-      #Crystal {
-        width: 150px !important;
-        height: auto !important;
+      @media (max-width: 14em) {
+        grid-template-columns: 1fr;
+        > :last-child {
+          translate: none;
+        }
       }
-    }
-    #logo-container {
-      width: 110px;
-      height: 110px;
-      #logo-canvas {
-        width: 100px;
-        height: 100px;
-      }
+      gap: var(--padding-xs);
     }
   }
-}
 
-.top-banner {
-  background: #828282;
+  margin-block-end: var(--block-flow-md);
 
-  a {
-    color: $white;
-
-    line-height: 60px;
-    padding: 0;
-    height: 120px;
-
-    display: flex;
-    flex-flow: column;
-    flex-wrap: nowrap;
-  }
-
-  .tb-register {
-    background: #9d9d9d;
-    font-family: "Roboto Mono", monospace;
-    font-size: 1.3rem;
-    font-style: italic;
-    padding: 0 1rem;
-    text-align: center;
-  }
-
-  .tb-title {
-    font-size: 1.15rem;
-    padding: 0 0.5em;
-    text-align: center;
-  }
-
-  .tb-thin {
-    font-weight: 200;
-  }
-
-  .tb-gap {
-    flex-grow: 1;
-  }
-
-  .tb-date {
-    font-size: .9rem;
-    padding: 0 0.5em;
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 841px) {
-  .top-banner {
-    a {
-      flex-flow: row;
-      height: 60px;
-    }
-
-    .tb-title {
-      text-align: left;
-    }
-
-    .tb-date {
-      display: flex;
-    }
+  > .example-tabs {
+    grid-area: samples;
+    margin-block-end: calc(-1 * var(--block-flow-md));
   }
 }

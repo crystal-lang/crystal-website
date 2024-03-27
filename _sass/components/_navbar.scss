@@ -1,0 +1,104 @@
+body > header {
+  @extend .ui-link;
+  --link-external-postfix: "";
+
+  --link-color: var(--light-text);
+  --link-hover-color: var(--primary-text);
+  padding: var(--padding-xs);
+
+  width: 100vw;
+  width: 100cqw;
+  display: grid;
+  grid-template-columns:
+    minmax(
+      min-content,
+      calc(
+        (100cqw - var(--main-width)) / 2 - var(--padding-xs) - var(--padding-sm)
+      )
+    )
+    minmax(min-content, var(--main-width)) auto max-content;
+  grid-template-areas: "logo breadcrumbs main util";
+
+  column-gap: var(--padding-sm);
+
+  .nav-start {
+    grid-area: logo;
+    display: grid;
+    justify-content: start;
+  }
+  .section-nav {
+    grid-area: breadcrumbs;
+  }
+  .mainnav {
+    grid-area: main;
+    justify-self: end;
+  }
+  .utilnav {
+    grid-area: util;
+  }
+
+  > .section-nav {
+    margin: 0;
+  }
+}
+
+.mainnav {
+  align-self: center;
+
+  ul {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    column-gap: var(--padding-xxs);
+    font-size: font-size(xsmall);
+  }
+
+  li {
+    @include external-links;
+
+    all: unset;
+
+    > a {
+      display: block;
+      padding: 0 var(--padding-xxs);
+      cursor: pointer;
+
+      &[aria-current="page"] {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.utilnav {
+  display: flex;
+  justify-self: end;
+  justify-content: end;
+  align-items: center;
+  gap: 1em;
+
+  body:not(.layout--home) & {
+    @media (max-width: 50em) {
+      flex-direction: column;
+    }
+  }
+
+  > a {
+    display: flex;
+  }
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+
+  --link-color: var(--primary-text);
+  --link-hover-color: var(--light-text);
+
+  > svg {
+    height: 1.5em;
+    fill: currentcolor;
+  }
+}

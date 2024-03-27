@@ -1,70 +1,169 @@
-.container.install {
-  padding: 8rem 0 5rem;
-  .distro-title {
-    @extend .black-text;
-    text-align: center;
-    margin-bottom: 5rem;
+.install-panels {
+  display: grid;
+  grid-template-columns: [section] 1fr [title] 1.8fr [version] 62px [command] 4fr [info] 3ch [end];
+  margin-block-start: var(--block-flow-sm);
+}
+
+.install-group {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  column-gap: var(--padding-xs);
+  border-top: 1.4px solid var(--border-color);
+  // FIXME: This line had to be disabled because it crashes Chrome: https://github.com/crystal-lang/crystal-website/issues/579
+  //   align-items: baseline;
+  // The following workaround adjusts the spacing on the h3 element to match the
+  // result of baseline alignment. Visual impression should be identical
+  // BEGIN WORKAROUND
+  > h3 {
+    padding: calc(var(--padding-xs) + var(--padding-xxs)) 0;
+    line-height: var(--line-height-lg);
   }
-  h2 {
-    text-transform: none;
+  // END WORKAROUND
+
+  grid-template-areas: "section entries entries entries entries";
+}
+
+.install-group > h3 {
+  @extend .h5;
+
+  grid-area: section;
+}
+
+.install-entries {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-area: entries;
+}
+
+.install-entry {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-areas: "title version command info" "targets version command info";
+  grid-template-rows: auto 1fr;
+  grid-column: 1 / -1;
+  --link-color: var(--body-text);
+  align-items: baseline;
+  padding: var(--padding-xxs) 0;
+
+  &:not(:first-child) {
+    border-top: 1.4px solid var(--border-color);
   }
-  @media only screen and (max-width: 600px) {
-    padding: 5rem 0;
-    h1 {
-      font-size: 3.4rem;
-      &.distro-title {
-        margin-bottom: 2rem;
+  > .title {
+    grid-area: title;
+  }
+
+  > .targets {
+    font-size: font-size(xsmall);
+    grid-area: targets;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--padding-sm) var(--padding-xs);
+
+    > code {
+      background: transparent;
+      padding: 0;
+      color: var(--lighter-text);
+    }
+  }
+
+  > .example {
+    grid-area: command;
+    margin-left: 0 var(--padding-xs);
+
+    .highlight {
+      > pre {
+        padding: var(--padding-xs);
       }
     }
+
+    > p {
+      padding: calc(var(--padding-xs) * 0.6);
+    }
   }
-  h1 a:hover {
-    @extend .black-text;
+
+  > .repo-badge {
+    --link-external-postfix: none;
+    grid-area: version;
+    justify-self: flex-end;
+  }
+
+  > .instructions {
+    grid-area: instructions;
+    justify-self: flex-start;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 85%;
+    /*---.btn */
+    border: 1px solid currentColor;
+    padding: 0 var(--padding-xs);
+    margin-top: var(--padding-xs);
+    align-content: center;
+    align-self: flex-end;
+    --link-color: var(--body-text);
+    --link-hover-color: var(--light-text);
+  }
+  > .info {
+    --link-external-postfix: none;
+    grid-area: info;
+    font-size: font-size(small);
+    justify-self: center;
+    --link-color: var(--lighter-text);
+    --link-hover-color: var(--light-text);
+    margin-right: var(--padding-xs);
+    > svg {
+      transform: translateY(0.6ch);
+    }
   }
 }
 
-.distro-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  grid-gap: 5rem 0;
-  > div {
-    text-align: center;
-    .distro-icon {
-      height: 40px;
-    }
-    img {
-      width: 30px;
-    }
-    a {
-      color: $black;
+img.version-badge {
+  display: inline-block;
+  vertical-align: sub;
+  transition: all 0.25s;
+
+  @media not (prefers-color-scheme: dark) {
+    filter: invert(49%) saturate(8000%) brightness(120%) contrast(500%)
+      sepia(40%) saturate(85%);
+
+    :any-link:hover > & {
+      filter: invert(49%) saturate(8000%) brightness(120%) contrast(500%)
+        sepia(40%) saturate(85%) brightness(75%);
     }
   }
 }
 
-.done-install {
-  text-align: center;
-  padding: 4rem 0 3rem;
+@media (max-width: 50em) {
+  .install-panels {
+    grid-template-columns: [title] 1.8fr [version] 46px [command] 4fr [info] 2.5ch [end];
+    column-gap: var(--padding-xs);
+  }
+  .install-group {
+    grid-template-areas: "section section section section" "entries entries entries entries";
+    padding-block: var(--padding-sm);
+    border-top: none;
 
-  h1, h2 {
-    @extend .grey-text;
-    font-family: $codeFont;
-    margin-bottom: 3rem;
-  }
-
-  h1 {
-    font-size: 48px;
-  }
-  h2 {
-    margin-top: 3.5rem;
-    font-size: 36px;
-    font-weight: normal;
-    text-transform: none;
-  }
-  @media only screen and (max-width: 600px) {
-    h1 {
-      font-size: 2.3rem;
+    > h3 {
+      font-size: font-size(h4);
     }
-    h2 {
-      font-size: 1.8rem;
+  }
+}
+@media (max-width: 37em) {
+  .install-panels {
+    grid-template-columns: [title] 1.8fr [targets] auto [version] 46px [info] 2.5ch [end];
+    column-gap: var(--padding-sm);
+  }
+  .install-entry {
+    row-gap: var(--padding-xs);
+    padding-block: var(--padding-sm);
+    grid-template-areas: "title targets version info" "command command command command";
+
+    > p {
+      padding: 0;
+    }
+
+    > .targets {
+      justify-content: end;
     }
   }
 }

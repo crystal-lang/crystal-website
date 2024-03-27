@@ -3,6 +3,7 @@ title: Community moderators
 summary: Contributors may level up their involvement with the project with the new role.
 thumbnail: +
 author: beta-ziliani
+categories: project
 ---
 
 Following GitHub's <a href="https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization"><i>Triage role</i></a>, we decided to create the _Community moderator_ role.

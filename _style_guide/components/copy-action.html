@@ -1,0 +1,19 @@
+---
+title: Copy Action
+type: components
+---
+
+This component adds a copy button to an element (primarily intended for code blocks)
+which writes the content of the element to the clipboard.
+
+<div class="enable-copy-action">
+{% highlight crystal %}
+puts "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+  has been the industry's standard dummy text ever since the 1500s, when an unknown printer."
+{% endhighlight %}
+</div>
+
+<script src="/assets/js/copy-action.js"></script>
+<script>
+document.querySelectorAll(".enable-copy-action pre").forEach(copy_action)
+</script>

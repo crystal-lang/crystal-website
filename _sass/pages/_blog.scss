@@ -1,150 +1,68 @@
-@charset "UTF-8";
+.more-posts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--block-flow-sm);
 
-.author {
-  height: 55px;
-  .author_name {
-    color: $black;
-    display: block;
-  }
-  .date {
-    display: block;
-  }
-  img {
-    width: 50px;
-    height: 50px;
-    float: left;
-    margin-right: 11px;
-    margin-top: -4px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-}
+  > .post-micro-teaser {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "date taxonomy"
+      "title title";
+    align-items: baseline;
+    gap: var(--padding-xxs) var(--padding-xs);
 
-.blog-post {
-  .title {
-    font-size: 22px;
-  }
-  p.summary {
-    margin-top: 5px;
-  }
-}
-
-.post-header {
-  min-height: 380px;
-  // Set it arbitrarily because helpers for vertical align (and alternatives I tried) all messed
-  // up with the alignement of the columns
-  padding-top: 120px;
-  .row {
-    margin: auto 5px;
-  }
-
-  .author_name {
-    margin-right: 0.5em;
-    display: inline;
-  }
-
-  .title {
-    color: $black;
-    font-size: 48px;
-    line-height: 70px;
-  }
-}
-
-.row .footnotes p {
-  margin: 0
-}
-
-.post-layout {
-  color: black;
-  a {
-    color: black;
-  }
-
-  ol {
-    padding: 0;
-    counter-reset: item;
-    list-style-type: none;
-    > li {
-      padding-left: 2.5em;
+    > .post-date {
+      grid-area: date;
     }
-    > li:before {
-      position: absolute;
-      display: inline-block;
-      content: counter(item) ".";
-      counter-increment: item;
-      width: 1.5em;
-      margin-left: -1.5em;
-      font-weight: 500;
-      color: $primary-text;
+
+    > .post-title {
+      grid-area: title;
     }
-  }
 
-  ul {
-    padding: 0;
-    list-style-type: none;
-    li {
-      padding-left: 2.5em;
-    }
-    li:before {
-      position: absolute;
-      display: inline-block;
-      content: "▪";
-      width: 1.5em;
-      margin-left: -1.5em;
-      font-weight: 500;
-      color: $primary-text;
-    }
-  }
-  h1, h2 {
-    @extend h2;
-    margin-top: 100px;
-  }
-
-  hr {
-    border: none;
-    border-top: 1px solid #D7D7D7;
-  }
-}
-
-pre {
-  margin: 0 2em;
-}
-@media only screen and (max-width: 992px) {
-  pre {
-    margin: 0 1em;
-  }
-}
-
-.share {
-  color: $primary-text;
-  .title {
-    text-transform: uppercase;
-  }
-  .share-item {
-    margin: 30px 7px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .share-title {
-    display: inline-block;
-  }
-  .share-list {
-    display: inline-block;
-    a {
-      display: inline-block;
-    }
-    .share-item {
-      margin: 7px 30px;
+    > .taxonomy {
+      grid-area: taxonomy;
     }
   }
 }
 
-code {
-  font-family: $codeFont;
-  font-weight: 500;
+.releases-info {
+  padding: var(--padding-sm) var(--padding-md);
+  background-color: var(--background-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--padding-xs);
+  border-radius: 4px;
+
+  > strong {
+    @extend .h4;
+  }
+
+  > .hex {
+    margin-bottom: var(--padding-sm);
+  }
 }
 
-.hidden {
-  display: none;
+.featured-posts:has(> .releases-info) {
+  grid-template-columns: 1fr max(18em, 30%);
+
+  > :first-child {
+    grid-column: 1 / -2;
+  }
+
+  @media (max-width: 49em) {
+    grid-template-columns: 1fr;
+
+    > .releases-info {
+      flex-direction: row;
+      order: -1;
+
+      > .hex {
+        margin-bottom: 0;
+        margin-right: var(--padding-sm);
+      }
+    }
+  }
 }

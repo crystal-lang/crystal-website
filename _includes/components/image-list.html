@@ -1,0 +1,10 @@
+<div class="image-list">
+  {%- for item in include.items %}
+    <div class="item">
+      {%- include elements/hex-icon.html file=item.image %}
+      <div class="small">
+        {{- item.description }}
+      </div>
+    </div>
+  {%- endfor %}
+</div>

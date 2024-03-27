@@ -3,43 +3,42 @@ layout: base
 # Layout for blog posts including post header and body
 # Doesn't use the page layout because posts have a special header
 ---
-{% include posts/header.html %}
 
-<main>
-  <div class="container">
-    <div class="row post-layout">
-      <div class="col m2 share">
-        <p class="title small share-title">Share</p>
-        <div class="share-list">
-          {% assign share_url = site.url | append: page.url | cgi_escape %}
-          <a href="https://twitter.com/intent/tweet?url={{ share_url }}&text={{ page.title | cgi_escape }}&via=CrystalLanguage" target="_blank">
-            <div class="share-item"><i class="extra-icons twitter gray"></i></div>
-          </a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank">
-            <div class="share-item"><i class="extra-icons facebook gray"></i></div>
-          </a>
-          <a href="https://plus.google.com/share?url={{ share_url }}" target="_blank">
-            <div class="share-item"><i class="extra-icons google_plus gray"></i></div>
-            </a>
-        </div>
-      </div>
+<article class="post" itemscope itemtype="https://schema.org/Article">
+  <hgroup>
+    <h1 class="post-title">{{ page.page_title | default: page.title }}</h1>
+    {%- if page.subtitle %}
+    <h2 class="subtitle">{{ page.subtitle }}</h2>
+    {%- endif %}
+  </hgroup>
 
-      <div class="col s12 m9">
-        {{ content }}
-      </div>
-      <div class="col m1"></div>
-    </div>
+  {%- include posts/meta.html post = page %}
+
+  {%- if page.partner_images %}
+    {% include components/partner-images.html images=page.partner_images %}
+  {%- elsif page.image %}
+      <img src="{{ page.image }}" class="post-image" alt="">
+  {%- endif %}
+
+  <div class="post__body">
+    <div class="content" itemprop="articleBody">{{ content }}</div>
 
     {% include discourse_comments.html %}
-    
+
     {% if page.comment_href %}
-      <div class="row disqus">
-        <div class="col m2"></div>
-        <div class="col s12 m9">
-          <a href="{{ page.comment_href }}" class="btn btn-flat">Comment archive for this post</a>
-        </div>
-        <div class="col m1"></div>
+      <div class="comment_archive">
+        <a href="{{ page.comment_href }}"><strong>Comment archive for this post</strong></a>
       </div>
     {% endif %}
   </div>
-</main>
+</article>
+
+<nav class="post-pagination" aria-label="Blog post navigation">
+  {%- if page.next.url %}
+    <a rel="next" href="{{page.next.url}}">{{page.next.title}}</a>
+  {%- endif %}
+
+  {%- if page.previous.url %}
+    <a rel="prev" href="{{page.previous.url}}">{{page.previous.title}}</a>
+  {%- endif %}
+</nav>

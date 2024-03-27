@@ -1,0 +1,30 @@
+@mixin blockflow($width: var(--block-flow-sm)) {
+  :where(& > *) {
+    margin-block: 0;
+
+    + * {
+      margin-block-start: var(--block-flow, $width);
+
+      &:is(hr, .full-width-rule),
+      &:is(.link-actions) {
+        margin-block-start: var(--block-flow-md);
+      }
+    }
+  }
+
+  :where(& > :is(hr, .full-width-rule) + *) {
+    margin-block-start: var(--block-flow-md);
+  }
+
+  :where(& > :is(h1, h2, h3, h4) + *) {
+    margin-block-start: var(--block-flow-xs);
+  }
+
+  :where(& > section + section) {
+    margin-block-start: var(--block-flow-lg);
+  }
+
+  :where(& > p + p) {
+    margin-block-start: var(--block-flow-xs);
+  }
+}

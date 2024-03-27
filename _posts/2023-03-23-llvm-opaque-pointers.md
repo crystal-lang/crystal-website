@@ -3,6 +3,8 @@ title: "LLVM opaque pointer support has landed"
 author: HertzDevil
 summary: Updates to the LLVM bindings bring support for LLVM 15+ and significant improvements in codegen performance in the next release.
 comment_href: https://disqus.com/home/discussion/crystal-lang/llvm_opaque_pointer_support_has_landed_99/
+categories: technical
+tags: [feature, codegen, llvm]
 ---
 
 Crystal 1.8, the upcoming minor release, will support LLVM's opaque pointers for the first time, allowing the compiler to be built with LLVM 15 or above. Additionally, this update brings a significant improvement to compilation times.
@@ -83,15 +85,15 @@ If your Crystal project uses the stdlib's LLVM API directly, there are some depr
 
 On the other hand, if you do use Crystal to build other LLVM frontends using Crystal's `LLVM` APIs, please note that Crystal will stop supporting LLVM versions below 8.0 as part of the migration, because 8.0 is the first version where LLVM accepts a separate type for the instructions affected by opaque pointers, like the `getelementptr` above. [All features that depend on typed pointers are deprecated](https://github.com/crystal-lang/crystal/pull/13172), regardless of whether LLVM 15 is actually used. The following is the full list of affected methods:
 
-* `LLVM::Type#element_type`:  
+* `LLVM::Type#element_type`:
   On LLVM 15 or above, calling this method on a pointer type raises an exception.
-* `LLVM::Function#function_type`, `#return_type`, `#varargs?`  
+* `LLVM::Function#function_type`, `#return_type`, `#varargs?`
   There is no quick migration for these methods. However, if the function was constructed via `LLVM::FunctionCollection#add`, that method now has additional overloads that can take an LLVM function type directly. This allows you to use `LLVM::Type.function` and store the type somewhere else before constructing the function.
-* `LLVM::Builder#call(func : LLVM::Function, ...)`, `#invoke(fn : LLVM::Function, ...)`  
+* `LLVM::Builder#call(func : LLVM::Function, ...)`, `#invoke(fn : LLVM::Function, ...)`
   They are equivalent to `call(func.function_type, func, ...)` and `invoke(fn.function_type, fn, ...)` respectively. Note that `#function_type` is deprecated and does not work on LLVM 15+.
-* `LLVM::Builder#load(ptr, ...)`  
+* `LLVM::Builder#load(ptr, ...)`
   This is equivalent to `load(ptr.type.element_type, ptr, ...)`. Note that `#element_type` will raise on LLVM 15+.
-* `LLVM::Builder#gep(value, ...)`, `LLVM::Builder#inbounds_gep(value, ...)`  
+* `LLVM::Builder#gep(value, ...)`, `LLVM::Builder#inbounds_gep(value, ...)`
   They are equivalent to `gep(value.type, value, ...)` and `inbounds_gep(value.type, value, ...)` respectively. Note that `#type` is simply the opaque pointer type on LLVM 15+.
 
 Additionally, even though LLVM 15 provides an opt-in flag to enable typed pointer support, Crystal does not use this flag at all, which makes upgrading to LLVM 16 and above much easier, as LLVM will eventually remove this flag.

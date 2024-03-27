@@ -3,11 +3,22 @@ layout: skeleton
 # Base layout with site-specific framing: Top nav and footer
 # Inheriting layouts implement the page header and content.
 ---
-<div class="wrapper {{ page.custom_body_classes | join: ' '}}">
-  <!-- {% include site/conference_header.html %} -->
-  {% include site/nav.html %}
 
-  {{ content }}
+<a href="#top" class="visually-hidden">Skip to content</a>
 
-  {% include site/footer.html %}
-</div>
+<header>
+  {%- include site/nav.html %}
+</header>
+
+<hr class="visually-hidden" id="top">
+
+<main>
+  {{- content }}
+</main>
+
+<hr class="visually-hidden">
+
+{% include site/edit-on-github.html %}
+<footer>
+  {%- include site/footer.html %}
+</footer>

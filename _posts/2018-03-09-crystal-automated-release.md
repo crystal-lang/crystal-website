@@ -2,10 +2,12 @@
 title: "Crystal Automated Release"
 author: bcardiff
 description: "How the build process was updated and what else can be done"
+categories: technical
+tags: devnotes
 ---
 
 ## Intro
-As we shared at [the end of 2017](https://crystal-lang.org/2017/12/19/this-is-not-a-new-years-resolution.html), we restarted this year working on a plan towards 1.0. Our first stop was improving the automation of releases. Thanks to the [donations](https://salt.bountysource.com/teams/crystal-lang) of December and part of January, we managed to put 80 hours of work into this. Thanks as usual for the help!
+As we shared at [the end of 2017](https://crystal-lang.org/2017/12/19/this-is-not-a-new-years-resolution.html), we restarted this year working on a plan towards 1.0. Our first stop was improving the automation of releases. Thanks to the ~~[donations](https://salt.bountysource.com/teams/crystal-lang)~~ of December and part of January, we managed to put 80 hours of work into this. Thanks as usual for the help!
 
 ## How things used to be
 For a long time, we managed Crystal’s release and distribution process through  [omnibus-crystal](https://github.com/crystal-lang/omnibus-crystal). Even though parts of the process were automatic, it involved many manual steps that required  launching virtual machines for different distros to generate pkg, deb, tar.gz, etc.
@@ -150,7 +152,7 @@ Well, there are still a couple of things more to improve and get done. It never 
 ## Next steps
 
 Our next goal is to research on improving the compiler's performance. For that, we will be making a pass on language semantics to round off some of the known problems we know are there. That will allows us to solidify the language so that we can guarantee no breaking-changes post 1.0.
-We have 41 hours left from January and 64 hours from donations received during February that we’ll invest during March on this. Please continue to [support our work](https://salt.bountysource.com/teams/crystal-lang), it makes a huge difference!
+We have 41 hours left from January and 64 hours from donations received during February that we’ll invest during March on this. Please continue to ~~[support our work](https://salt.bountysource.com/teams/crystal-lang)~~, it makes a huge difference!
 
-[^update-ruby]: the Ruby versions available in OSX CircleCI VMs are limited. Installing & building a specific Ruby version takes some time [https://discuss.circleci.com/t/cache-of-installed-ruby/19606](https://discuss.circleci.com/t/cache-of-installed-ruby/19606)
+[^update-ruby]: the Ruby versions available in OSX CircleCI VMs are limited. Installing & building a specific Ruby version takes some time ~~[https://discuss.circleci.com/t/cache-of-installed-ruby/19606](https://discuss.circleci.com/t/cache-of-installed-ruby/19606)~~
 [^distro-deps]: [https://github.com/crystal-lang/crystal/issues/5650](https://github.com/crystal-lang/crystal/issues/5650)

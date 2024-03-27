@@ -1,5 +1,5 @@
-<div class="color-item col s4">
-  <div class="color-sample {{ include.class }}"></div>
-  <span class="color-name small">{{ include.color }}</span>
-  <span class="color-name small">{{ include.hex }}</span>
+<div class="card card--borderless">
+  <div class="color-sample" style="--color-sample-color: {{ include.hex }};"></div>
+  <span class="name">{{ include.color }}</span>
+  <code class="low-key">{{ include.hex }}</code>
 </div>

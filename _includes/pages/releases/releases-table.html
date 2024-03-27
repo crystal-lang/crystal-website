@@ -1,0 +1,29 @@
+<table class="releases">
+  <thead>
+    <tr>
+      <th scope="col">Version</th>
+      <th scope="col" colspan="2">Release Date</th>
+      <th scope="col" aria-label="Links"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- assign releases = site.releases | reverse %}
+    {%- for release in releases %}
+      {%- assign suffix = release.version | slice: -2, 2 %}
+      <tr class="{% if forloop.index0 == 0 %}latest-release{% endif %}{% if suffix == '.0' %} minor-release{% endif %}">
+        <th scope="row"><a href="{{ release.url }}">{{release.version}}</a></th>
+        <td class="release-date">
+          <time datetime="{{ release.date | date: '%F' }}">{{ release.date | date_to_string }}</time>
+        </td>
+        <td>
+          {%- if forloop.index0 == 0 %}
+            <span class="pill">latest</span>
+          {%- endif %}
+        </td>
+        <td class="release-links">
+          {%- include releases/links.html release = release %}
+        </td>
+      </tr>
+    {%- endfor %}
+  </tbody>
+</table>

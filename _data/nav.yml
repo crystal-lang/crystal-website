@@ -1,19 +1,105 @@
 main:
-- label: Home
-  url: /
-- label: Forum
-  url: https://forum.crystal-lang.org
 - label: Blog
   url: /blog/
+- label: Install
+  url: /install
 - label: Sponsors
   url: /sponsors/
 - label: Community
   url: /community/
-- label: Conference
-  url: /conference/
-- label: Team
-  url: /team/
 - label: Docs
   url: https://crystal-lang.org/reference/
-- label: GitHub
-  url: https://github.com/crystal-lang/crystal
+
+blog:
+- label: Project
+  url: /blog/project/
+- label: Technical
+  url: /blog/technical/
+- label: Community
+  url: /blog/community/
+- label: Success
+  url: /success-stories/
+
+community:
+- label: Team
+  url: /team/
+- label: Sponsors
+  url: /sponsors/
+- label: Events
+  url: /community/#events
+- label: Used in production
+  url: /used_in_prod/
+- label: Governance
+  url: /community/governance/
+
+docs:
+- label: Getting Started
+  url: https://crystal-lang.org/reference/getting_started/
+- label: Tutorials
+  url: https://crystal-lang.org/reference/tutorials
+- label: API Docs
+  url: https://crystal-lang.org/api
+- label: Specification
+  url: https://crystal-lang.org/reference/syntax_and_semantics
+- label: Guides
+  url: https://crystal-lang.org/reference/guides
+- label: Media
+  url: /media/
+
+docs_intern:
+- label: Install
+  url: /install/
+- label: Media
+  url: /media/
+- label: Learning
+  url: /learning/
+
+install:
+- label: Linux
+  url: /install/on_linux
+- label: MacOS
+  url: /install/on_mac_os
+- label: Windows
+  url: /install/on_windows
+- label: Nightlies
+  url: /install/nightlies
+
+home:
+- label: Blog
+  url: /blog/
+- label: Install
+  url: /install/
+- label: Releases
+  url: /releases/
+- label: Success stories
+  url: /success-stories/
+- label: Sitemap
+  url: /sitemap/
+
+install:
+- label: Linux
+  url: /install/on_linux/
+- label: MacOS
+  url: /install/on_mac_os/
+- label: Windows
+  url: /install/on_windows/
+- label: Asdf
+  url: /install/from_asdf/
+- label: Scoop
+  url: /install/from_scoop/
+- label: Snapcraft
+  url: /install/from_snapcraft/
+- label: Gentoo
+  url: /install/on_gentoo_linux/
+- label: FreeBSD
+  url: /install/on_freebsd/
+- label: OpenBSD
+  url: /install/on_openbsd/
+- label: Termux
+  url: /install/on_termux/
+- label: Tarball
+  url: /install/from_targz/
+- label: Source
+  url: /install/from_sources/
+- label: Nightlies
+  url: /install/nightlies/

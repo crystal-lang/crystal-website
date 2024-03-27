@@ -3,9 +3,11 @@ title: Announcing new apt and rpm repositories
 summary: Binary packages built and distributed on the Open Build Service
 thumbnail: +
 author: straight-shoota
+categories: technical
+tags: packaging
 ---
 
-With our previous distribution hosting at [bintray](https://bintray.com/crystal)
+With our previous distribution hosting at ~~[bintray](https://bintray.com/crystal)~~
 shutting down, we transitioned to the [Open Build Service (OBS)](https://build.opensuse.org),
 a cross-platform package building service provided by openSUSE.
 

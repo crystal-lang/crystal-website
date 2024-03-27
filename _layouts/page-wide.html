@@ -1,0 +1,10 @@
+---
+layout: base
+# Generic layout for pages, including page header and body
+---
+
+<article class="page {{ page.page_class }}">
+  {%- include site/page-header.html %}
+
+  <div class="content content--wide">{{ content }}</div>
+</article>

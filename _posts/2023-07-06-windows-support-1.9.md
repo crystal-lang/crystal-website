@@ -2,6 +2,8 @@
 title: "Windows support in Crystal 1.9"
 author: HertzDevil
 summary: GUI installer, load-time dynamic linking support, and more
+categories: technical
+tags: [feature, windows, linking]
 ---
 
 With the [release of Crystal 1.9](/2023/07/11/1.9.0-released), the compiler and the standard library have made a big step towards tier 1 support for x64 Windows with the MSVC toolchain. While an official Windows release isn't ready yet, only few outstanding issues remain and we expect them to be resolved in the following months. This post is a brief overview of what [1.9 has achieved](https://github.com/crystal-lang/crystal/pulls?q=is%3Apr+milestone%3A1.9.0+is%3Aclosed+label%3Aplatform%3Awindows) and what else needs to be achieved.

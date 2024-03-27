@@ -1,7 +1,8 @@
 ---
 title: Living Style Guide
-layout: page
+layout: page-wide
 permalink: /style-guide/
+section: internal
 ---
 
 <div class="container">
@@ -11,6 +12,16 @@ Where applicable links to a component's Sass partial and/or Jekyll include are p
 </div>
 
 {% assign componentsByType = site.style_guide | group_by: "type" %}
+
+<div class="container">
+  <ul>
+    {%- for type in componentsByType %}
+      <li>
+        <a href="#{{ type.name }}">{{ type.name | capitalize }}</a>
+      </li>
+    {%- endfor %}
+  </ul>
+</div>
 
 {% for type in componentsByType %}
 <h2 id="{{ type.name }}" class="cf">{{ type.name | capitalize }}</h2>

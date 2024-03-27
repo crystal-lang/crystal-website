@@ -2,15 +2,13 @@
   {
     "name": "Manas.Tech",
     "url": "https://manas.tech/",
-    "logo": "sponsors/manas.png",
+    "logo": "manas-orange.svg",
     "last_payment": 5000,
     "all_time": 1300000,
     "since": "Jun 19, 2009"
   },
   {
     "name": "Nikola Motor Company",
-    "url": "https://nikolamotor.com/",
-    "logo": "sponsors/nikola_motor_company.png",
     "last_payment": 0,
     "all_time": 165000,
     "since": "Mar 1, 2020"
@@ -30,5 +28,14 @@
     "last_payment": 0,
     "all_time": 425,
     "since": "Apr 14, 2019"
+  },
+  {
+    "name": "Works on Arm",
+    "url": "https://developer.arm.com/solutions/infrastructure/works-on-arm",
+    "logo": "sponsors/woa.png",
+    "last_payment": 500,
+    "all_time": 0,
+    "since": "Jul 22, 2021",
+    "listed": false
   }
 ]

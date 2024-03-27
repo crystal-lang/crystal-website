@@ -1,0 +1,22 @@
+DirectoryPath: _site
+IgnoreDirectoryMissingTrailingSlash: true
+IgnoreAltEmpty: true
+IgnoreAltMissing: true
+IgnoreURLs:
+# These sites seem to block automated requests
+# Ref: https://github.com/wjdp/htmltest/issues/165
+- ^https?://twitter\.com\b               # all requests result in 400
+- ^https?://t\.co\b                      # all requests result in 400
+- ^https?://(www\.)?reddit\.com\b        # all requests result in 403
+- ^https?://(www\.)?linkedin\.com\b      # all requests result in 999
+- ^https://us6\.campaign-archive\.com\b  # all requests result in 404
+- ^https://cdn\.pbrd\.co\b               # all requests result in 403
+- ^https://software\.opensuse\.org\b     # all requests result in 400
+- ^https://(www\.)?youtube\.com\b        # all requests result in 404
+
+# Skip archive.org links to avoid unnecessary requests.
+# Archive links should usually exists, but requests are heavy.
+- ^https://web\.archive\.org\b
+
+# GitHub can shut down due to too many requests, but usually works (might need to fill the cache in multiple steps)
+# - ^https?://github\.com\b

@@ -1,0 +1,86 @@
+archive:
+  title: Archive
+  breadcrumbs:
+    - title: Archive
+
+blog:
+  title: Blog
+  breadcrumbs:
+    - title: Blog
+      url: /blog/
+      nav: blog
+  weight: 10
+
+posts:
+  title: Posts
+  breadcrumbs:
+    - title: Blog
+      url: /blog/
+  weight: 15
+
+community:
+  title: Community
+  breadcrumbs:
+    - title: Community
+      url: /community/
+      nav: community
+  weight: 30
+
+docs:
+  title: Documentation
+  breadcrumbs:
+    - title: Docs
+      nav: docs_intern
+  weight: 20
+
+events:
+  title: Events
+  breadcrumbs:
+    - title: Community
+      url: /community/
+    - title: Events
+      url: /community/#events
+      nav: community
+  weight: 31
+
+home:
+  title: Home
+  weight: 1
+
+install:
+  title: Install
+  breadcrumbs:
+    - title: Docs
+    - title: Install
+      url: /install/
+      nav: install
+  weight: 22
+
+internal:
+  titel: Internal
+  breadcrumbs:
+    - title: Internal
+
+learning:
+  title: Learning
+  breadcrumbs:
+    - title: Learning
+      url: /learning/
+  weight: 21
+
+newsletter:
+  title: Newsletter
+  breadcrumbs:
+    - title: Community
+      url: /community/
+      nav: community
+  weight: 32
+
+releases:
+  title: Releases
+  breadcrumbs:
+  - title: Releases
+    url: /releases/
+  weight: 24
+
+unspecified:

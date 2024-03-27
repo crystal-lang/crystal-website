@@ -1,0 +1,23 @@
+<time class="post-date" pubdate datetime="{{ include.post.date | date_to_xml }}"
+  >{{ include.post.date | date_to_string }}</time
+>
+{% assign authors = include.post.author | split: ',' %}
+<ul class="avatar-list" aria-hidden="true">
+  {%- for author in authors %}
+  <li>
+    <a title="{{ site.data.authors[author].name | default: author }}">
+      <img
+        src="/assets/authors/{{ author }}.jpg"
+        alt=""
+      />
+    </a>
+  </li>
+  {%- endfor %}
+</ul>
+<div class="author-names">
+  {%- for author in authors %}
+  <span class="author-name" title="{{ author }}">{{ site.data.authors[author].name | default: author }}</span>
+  {%- endfor %}
+</div>
+
+{% include posts/taxonomy.html post=include.post %}

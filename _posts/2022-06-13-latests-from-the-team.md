@@ -3,6 +3,7 @@ title: Latests news from the Crystal Team
 summary: A sneak peak of what kept the team busy in the past months
 thumbnail: +
 author: beta-ziliani
+categories: project
 ---
 
 Here we tell the community what's been on the team's plate for the last couple of months, focusing on those aspects that aren't visible in Crystal's main repo.
@@ -28,7 +29,7 @@ A significant part of the time of an application goes into allocating/deallocati
 1. Can a modern collector perform better for some applications?
 2. Can we _own_ the collector and improve its performance exploiting the internal knowledge of Crystal's memory mapping?
 
-We started researching using an existing [garbage collector](https://github.com/ysbaddaden/gc) based on [IMMIX](https://www.cs.utexas.edu/users/speedway/DaCapo/papers/immix-pldi-2008.pdf), created for Crystal by former core-team member Julien Portalier. Currently, we're at the point in which it's usable in Linux, to the point that we can compile Crystal with it.
+We started researching using an existing [garbage collector](https://github.com/ysbaddaden/gc) based on [IMMIX](http://users.cecs.anu.edu.au/~steveb/pubs/papers/immix-pldi-2008.pdf), created for Crystal by former core-team member Julien Portalier. Currently, we're at the point in which it's usable in Linux, to the point that we can compile Crystal with it.
 
 As a side benefit, adding a second collector gives us the experience to eventually incorporate the still green [Memory Management Toolkit](https://www.mmtk.io/), which aims at having different collectors to pick from using a unified interface.
 

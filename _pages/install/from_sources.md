@@ -1,5 +1,6 @@
 ---
-subtitle: From sources
+title: Source Install
+page_title: Build from sources
 ---
 
 If you want to contribute then you might want to install Crystal from sources.
@@ -20,4 +21,4 @@ If you want to contribute then you might want to install Crystal from sources.
 
 If you would like more information about `bin/crystal`, check out the [using the compiler](https://crystal-lang.org/reference/using_the_compiler/) documentation.
 
-Note: The actual binary is built in to `.build/crystal`, but the `bin/crystal` wrapper script is what you should use to run crystal.
+Note: The actual binary is built in to `.build/crystal`, but the `bin/crystal` wrapper script is what you should use to run crystal with the local copy of the standard library.

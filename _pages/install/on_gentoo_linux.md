@@ -1,5 +1,6 @@
 ---
-subtitle: On Gentoo Linux
+title: Gentoo Linux
+page_title: Install on Gentoo Linux
 ---
 
 Gentoo Linux includes the Crystal compiler in the main overlay.

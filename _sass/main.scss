@@ -1,35 +1,79 @@
-// Reset styles
-@import "reset";
+@layer reset, frameworks, defaults, pattern, elements, components, pages, utilities;
 
-// Configuration
 @import "variables";
+@import "mixins/blockflow";
+@import "mixins/box-link";
+@import "mixins/circle-image";
+@import "mixins/external-links";
+@import "mixins/link-with-icon";
 
-// Base style
-@import "materialize";
-@import "fonts";
+@import "base/functions";
 
-// Generic styles
-@import "site";
-@import "typography";
-@import "pygment_overrides";
-@import "pygment_white";
-@import "sprites";
+@layer reset {
+  @import "reset";
+}
 
-// Imports for components
-@import "components/callout";
-@import "components/code_block";
-@import "components/footer";
+@layer defaults {
+  @import "base/fonts";
+  @import "base/typography";
+  @import "base/layout";
+}
 
-// Imports for specific pages
-@import "pages/blog";
-@import "pages/books";
-@import "pages/community";
-@import "pages/conference";
-@import "pages/error";
-@import "pages/home";
-@import "pages/install";
-@import "pages/media";
-@import "pages/sponsors";
-@import "pages/style-guide";
-@import "pages/team";
-@import "pages/used_in_prod";
+@layer elements {
+  @import "elements/avatar-list";
+  @import "elements/color-sample";
+  @import "elements/hex";
+  @import "elements/hex-icon";
+  @import "elements/link-item";
+  @import "elements/table";
+}
+
+@layer components {
+  @import "components/attributes";
+  @import "components/book-authors";
+  @import "components/book-presenter";
+  @import "components/breadcrumbs";
+  @import "components/callout";
+  @import "components/card";
+  @import "components/cards-list";
+  @import "components/copy-action";
+  @import "components/profile-card";
+  @import "components/event-card";
+  @import "components/post-card";
+  @import "components/content";
+  @import "components/example-tabs";
+  @import "components/featured-posts";
+  @import "components/footer";
+  @import "components/highlight";
+  @import "components/image-list";
+  @import "components/link-actions";
+  @import "components/navbar";
+  @import "components/partner-images";
+  @import "components/post-teaser";
+  @import "components/post-navigation";
+  @import "components/side-section";
+  @import "components/sponsor-card";
+  @import "components/testimonial-profile";
+  @import "components/top-sponsors";
+  @import "components/topics";
+}
+
+@layer pages {
+  @import "pages/blog";
+  @import "pages/error";
+  @import "pages/event";
+  @import "pages/conference";
+  @import "pages/home";
+  @import "pages/install";
+  @import "pages/releases";
+  @import "pages/sponsors";
+  @import "pages/styleguide";
+  @import "pages/used-in-prod";
+}
+
+@layer utilities {
+  @import "utilities";
+  @import "utilities/text";
+  @import "utilities/footnote";
+  @import "utilities/full-width-rule";
+}

@@ -2,6 +2,8 @@
 title: "Changes in the Steering Committee"
 author: nditada
 summary: Juan Wajnerman is stepping down from his position, with Beta Ziliani taking his place.
+categories: project
+tags: [people, core-team]
 ---
 
 The [Steering Council](https://crystal-lang.org/community/governance/#the-steering-council) is Crystal's core government authority. Since its inception it is formed by the original creators of the language: Ary Borenzweig, Brian Cardiff and Juan Wajnerman, who also serve as Core Team members.

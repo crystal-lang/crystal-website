@@ -1,0 +1,11 @@
+.link-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding-xs) var(--padding-sm);
+  line-height: var(--line-height-sm);
+  --link-external-postfix: none;
+
+  > a {
+    @include link-with-icon-themed;
+  }
+}

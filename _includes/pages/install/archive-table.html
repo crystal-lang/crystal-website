@@ -1,0 +1,26 @@
+<table>
+  <caption>{{ include.caption }}</caption>
+  <thead>
+    <tr>
+      <th scope="col">OS</th>
+      <th scope="col">Type</th>
+      <th scope="col" width="55%">Download</th>
+    </tr>
+  </thead>
+  {%- assign entries = include.packages | where_exp: "entry", "entry.archive_href" %}
+  {%- assign latest_release = site.releases | reverse | first %}
+  {%- assign version = latest_release.version %}
+  <tbody>
+    {%- for entry in entries %}
+    <tr>
+      <th scope="row">{{ entry.os }}</th>
+      <td>{{ entry.title | markdownify | remove: '<p>' | remove: '</p>' }}</td>
+      <td>
+        {%- for arch in entry.arch %}
+          <a href="{{ entry.archive_href | liquify }}"><code class="low-key">{{ arch }}</code></a>{% unless forloop.last %}, {% endunless %}
+        {%- endfor %}
+      </td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>

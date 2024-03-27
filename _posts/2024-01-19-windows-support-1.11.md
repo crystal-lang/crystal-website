@@ -3,6 +3,8 @@ title: "Windows support in Crystal 1.11"
 author: HertzDevil
 summary: Playground, preliminary interpreter support, and better dynamic linking
 comment_href: https://disqus.com/home/discussion/crystal-lang/windows_support_in_crystal_111_67/
+categories: technical
+tags: [feature, windows, linking, interpreter]
 ---
 
 It has been 6 months since we last reported on the [status of Windows support in Crystal 1.9](/2023/07/06/windows-support-1.9). Although there aren't as many changes in [1.10](https://github.com/crystal-lang/crystal/pulls?q=is%3Apr+milestone%3A1.10.0+is%3Aclosed+label%3Aplatform%3Awindows) and [1.11](https://github.com/crystal-lang/crystal/pulls?q=is%3Apr+milestone%3A1.11.0+is%3Aclosed+label%3Aplatform%3Awindows), we have nonetheless made some significant breakthroughs which will be described below.

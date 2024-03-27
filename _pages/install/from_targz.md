@@ -1,5 +1,6 @@
 ---
-subtitle: From tar.gz
+title: Tarball
+page_title: Install from Tarball
 ---
 
 You can download Crystal in a standalone `.tar.gz` file with everything you need to get started.
@@ -19,3 +20,11 @@ Then you can invoke the compiler by just typing:
 ```bash
 crystal --version
 ```
+
+{% assign latest_release = site.releases | reverse | first %}
+{% capture caption %}
+Downloads for latest release {{ latest_release.version }}
+{% endcapture %}
+
+{% include pages/install/archive-table.html packages=site.data.packages caption=caption %}
+{% include pages/install/archive-table.html packages=site.data.packages-nightly caption="Downloads for nightly build" %}
