@@ -31,8 +31,10 @@
     mask: var(--link-icon) center / contain no-repeat;
   }
 
-  &:not(:hover) > img {
-    filter: #{"grayscale()"};
+  @media not (prefers-color-scheme: dark) {
+    &:not(:hover) > img {
+      filter: #{"grayscale()"};
+    }
   }
 }
 
