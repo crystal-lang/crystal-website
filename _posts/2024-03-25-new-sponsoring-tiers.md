@@ -31,8 +31,8 @@ Most relevant changes:
 
 1. Backlinks from the [Sponsor page](https://www.crystal-lang.org/sponsors) are available at the *Backer L* tier ($25).
 2. New options to improve visibility of sponsors:
-  * Logo and link in the [release posts](https://crystal-lang.org/blog/#release_notes) at *Silver Sponsor* ($350)
-  * Logo and link in the [newsletter](https://crystal-lang.org/#newsletter), [README](https://github.com/crystal-lang/crystal/blob/master/README.md), presentations and other communication materials at *Gold Sponsor* ($750)
+  * Logo and link in the [release posts](https://crystal-lang.org/releases) at *Silver Sponsor* ($350)
+  * Logo and link in the [newsletter](https://crystal-lang.org/newsletter), [README](https://github.com/crystal-lang/crystal/blob/master/README.md), presentations and other communication materials at *Gold Sponsor* ($750)
 3. Sponsor logos on the [homepage](https://www.crystal-lang.org) are shown in two different sizes:
   * Small logo at *Silver Sponsor* ($350)
   * Big logo at *Gold Sponsor* ($750)
