@@ -65,19 +65,19 @@
 
 ### Windows
 
-- type: crystal
-  os: Windows
-  arch: [x86_64]
-  title: Installer (`.exe`)
-  instructions_href: /install/on_windows/
-  # archive_href: https://nightly.link/crystal-lang/crystal/workflows/win/master/crystal-installer.zip
+# - type: crystal
+#   os: Windows
+#   arch: [x86_64]
+#   title: Installer (`.exe`)
+#   instructions_href: /install/on_windows/
+#   archive_href: https://nightly.link/crystal-lang/crystal/workflows/win/master/crystal-installer.zip
 
-- type: crystal
-  os: Windows
-  arch: [x86_64]
-  title: Portable Archive (`.zip`)
-  instructions_href: /install/on_windows/
-  # archive_href: https://nightly.link/crystal-lang/crystal/workflows/win/master/crystal.zip
+# - type: crystal
+#   os: Windows
+#   arch: [x86_64]
+#   title: Portable Archive (`.zip`)
+#   instructions_href: /install/on_windows/
+#   archive_href: https://nightly.link/crystal-lang/crystal/workflows/win/master/crystal.zip
 
 - type: community
   os: Windows
