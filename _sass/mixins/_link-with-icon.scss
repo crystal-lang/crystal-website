@@ -30,10 +30,6 @@
     -webkit-mask: var(--link-icon) center / contain no-repeat;
     mask: var(--link-icon) center / contain no-repeat;
   }
-
-  &:not(:hover) > img {
-    filter: #{"grayscale()"};
-  }
 }
 
 @mixin link-with-colored-icon-base {
