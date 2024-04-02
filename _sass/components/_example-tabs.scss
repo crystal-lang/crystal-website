@@ -78,8 +78,9 @@
         row-gap: var(--padding-sm);
       }
 
-      padding-inline-start: var(--padding-xs);
-      margin-inline-start: calc(-1 * var(--padding-xs));
+      // FIXME(#759): This is disabled as a workaround for vanishing scroll bars
+      // padding-inline-start: var(--padding-xs);
+      // margin-inline-start: calc(-1 * var(--padding-xs));
 
       > .example-description {
         grid-area: sample-side;
