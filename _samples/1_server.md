@@ -15,7 +15,7 @@ server = HTTP::Server.new do |context|
   context.response.print "Hello world, got #{context.request.path}!"
 end
 
-address = server.bind(8080)
+address = server.bind_tcp(8080)
 puts "Listening on http://#{address}"
 
 # This call block until the process is terminated
