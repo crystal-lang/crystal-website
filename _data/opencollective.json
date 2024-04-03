@@ -5,46 +5,52 @@
     "last_payment": 5.0,
     "all_time": 5.0,
     "since": "Mar 19, 2024",
-    "time_last_payment": "Mar 19, 2024"
+    "time_last_payment": "Mar 19, 2024",
+    "listed": true
   },
   {
     "name": "Masaaki Aoyagi",
     "last_payment": 5.0,
     "all_time": 5.0,
     "since": "Mar 13, 2024",
-    "time_last_payment": "Mar 13, 2024"
+    "time_last_payment": "Mar 13, 2024",
+    "listed": true
   },
   {
     "name": "Fulgurance",
     "url": "https://github.com/fulgurance",
     "last_payment": 5.0,
-    "all_time": 5.0,
+    "all_time": 10.0,
     "since": "Mar 6, 2024",
-    "time_last_payment": "Mar 6, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "APKSpeed",
     "url": "https://apkspeed.com",
     "last_payment": 5.0,
-    "all_time": 5.0,
+    "all_time": 10.0,
     "since": "Feb 23, 2024",
-    "time_last_payment": "Feb 23, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "SocialWick",
     "url": "https://www.socialwick.com/instagram/followers",
     "last_payment": 10.0,
-    "all_time": 20.0,
+    "all_time": 30.0,
     "since": "Feb 14, 2024",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "DEV-3 - Web Development Company",
     "url": "https://dev-3.com",
     "last_payment": 5.0,
-    "all_time": 10.0,
+    "all_time": 15.0,
     "since": "Feb 10, 2024",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "snaptik",
@@ -52,23 +58,26 @@
     "last_payment": 10.0,
     "all_time": 20.0,
     "since": "Feb 7, 2024",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Mar 2, 2024",
+    "listed": true
   },
   {
     "name": "Buy Youtube Views",
     "url": "https://organicsocialboost.com/buy-youtube-video-views/",
     "last_payment": 5.0,
-    "all_time": 10.0,
+    "all_time": 15.0,
     "since": "Feb 6, 2024",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "Blastup",
     "url": "https://blastup.com/buy-instagram-likes",
     "last_payment": 5.0,
-    "all_time": 10.0,
+    "all_time": 15.0,
     "since": "Jan 25, 2024",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "RedMoonPie",
@@ -76,23 +85,26 @@
     "last_payment": 10.0,
     "all_time": 20.0,
     "since": "Jan 24, 2024",
-    "time_last_payment": "Feb 24, 2024"
+    "time_last_payment": "Feb 24, 2024",
+    "listed": true
   },
   {
     "name": "Casino Extreme No Deposit Bonus",
     "url": "https://www.outlookindia.com/outlook-spotlight/best-casino-extreme-no-deposit-bonuses-free-chip-bonus-codes-updated-for-news-340286",
     "last_payment": 10.0,
-    "all_time": 20.0,
+    "all_time": 30.0,
     "since": "Jan 17, 2024",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "$200 no deposit bonus 200 free spins real money",
     "url": "https://www.outlookindia.com/outlook-spotlight/200-dollar-no-deposit-news-338245",
     "last_payment": 10.0,
-    "all_time": 20.0,
+    "all_time": 30.0,
     "since": "Jan 17, 2024",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "Celebian",
@@ -100,75 +112,84 @@
     "last_payment": 5.0,
     "all_time": 15.0,
     "since": "Jan 9, 2024",
-    "time_last_payment": "Mar 9, 2024"
+    "time_last_payment": "Mar 9, 2024",
+    "listed": true
   },
   {
     "name": "SnapTik",
     "url": "https://snaptik.pro/id",
     "last_payment": 5.0,
-    "all_time": 15.0,
+    "all_time": 20.0,
     "since": "Dec 23, 2023",
-    "time_last_payment": "Feb 23, 2024"
+    "time_last_payment": "Mar 23, 2024",
+    "listed": true
   },
   {
     "name": "LightCDN",
     "url": "https://www.lightcdn.com",
     "last_payment": 10.0,
-    "all_time": 40.0,
+    "all_time": 50.0,
     "since": "Dec 14, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "LightNode",
     "url": "https://www.lightnode.com",
     "last_payment": 10.0,
-    "all_time": 40.0,
+    "all_time": 50.0,
     "since": "Dec 7, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "Unlimited Marketing",
     "url": "https://Unlimitedmarketing.net",
     "last_payment": 5.0,
-    "all_time": 20.0,
+    "all_time": 25.0,
     "since": "Nov 29, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "InsaDown - Instagram Downloader",
-    "url": "https://insadown.com",
-    "last_payment": 5.0,
+    "last_payment": 0.0,
     "all_time": 15.0,
     "since": "Nov 29, 2023",
-    "time_last_payment": "Feb 2, 2024"
+    "time_last_payment": "Feb 2, 2024",
+    "listed": true
   },
   {
     "name": "BitStarz Bonus Code",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Nov 28, 2023",
-    "time_last_payment": "Jan 2, 2024"
+    "time_last_payment": "Jan 2, 2024",
+    "listed": true
   },
   {
     "name": "No Deposit Bonuses",
     "last_payment": 0.0,
     "all_time": 15.0,
     "since": "Nov 9, 2023",
-    "time_last_payment": "Jan 2, 2024"
+    "time_last_payment": "Jan 2, 2024",
+    "listed": true
   },
   {
     "name": "Dopoid",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Oct 23, 2023",
-    "time_last_payment": "Oct 23, 2023"
+    "time_last_payment": "Oct 23, 2023",
+    "listed": true
   },
   {
     "name": "Daniel Salazar",
     "last_payment": 10.0,
     "all_time": 60.0,
     "since": "Oct 15, 2023",
-    "time_last_payment": "Mar 15, 2024"
+    "time_last_payment": "Mar 15, 2024",
+    "listed": true
   },
   {
     "name": "TopCasinoSearch",
@@ -176,220 +197,250 @@
     "last_payment": 5.0,
     "all_time": 30.0,
     "since": "Oct 13, 2023",
-    "time_last_payment": "Mar 13, 2024"
+    "time_last_payment": "Mar 13, 2024",
+    "listed": true
   },
   {
     "name": "Best Casinos Australia - BCA",
     "url": "https://best-casinos-australia.com/",
     "last_payment": 5.0,
-    "all_time": 30.0,
+    "all_time": 35.0,
     "since": "Oct 1, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "Chudovo",
     "url": "https://chudovo.com/",
     "last_payment": 5.0,
-    "all_time": 30.0,
+    "all_time": 35.0,
     "since": "Sep 22, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Crescitaly",
     "url": "https://crescitaly.com",
     "last_payment": 5.0,
-    "all_time": 30.0,
+    "all_time": 35.0,
     "since": "Sep 21, 2023",
-    "time_last_payment": "Mar 4, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Free Spider Solitaire Online",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Sep 11, 2023",
-    "time_last_payment": "Dec 2, 2023"
+    "time_last_payment": "Dec 2, 2023",
+    "listed": true
   },
   {
     "name": "Instagram Story Viewer",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Aug 23, 2023",
-    "time_last_payment": "Dec 2, 2023"
+    "time_last_payment": "Dec 2, 2023",
+    "listed": true
   },
   {
     "name": "Alex Braha Stoll",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Aug 14, 2023",
-    "time_last_payment": "Sep 2, 2023"
+    "time_last_payment": "Sep 2, 2023",
+    "listed": true
   },
   {
     "name": "implant de par Turcia",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Jul 26, 2023",
-    "time_last_payment": "Jul 26, 2023"
+    "time_last_payment": "Jul 26, 2023",
+    "listed": true
   },
   {
     "name": "buyyoutubviews.com",
     "last_payment": 0.0,
     "all_time": 30.0,
     "since": "Jul 19, 2023",
-    "time_last_payment": "Oct 2, 2023"
+    "time_last_payment": "Oct 2, 2023",
+    "listed": true
   },
   {
     "name": "Buy Instagram Comments Twicsy",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Jul 7, 2023",
-    "time_last_payment": "Jul 7, 2023"
+    "time_last_payment": "Jul 7, 2023",
+    "listed": true
   },
   {
     "name": "Buy Instagram Followers Twicsy",
     "url": "https://twicsy.com/buy-instagram-followers",
     "last_payment": 10.0,
-    "all_time": 90.0,
+    "all_time": 100.0,
     "since": "Jul 7, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Casino Withdrawal Times",
     "last_payment": 0.0,
     "all_time": 30.0,
     "since": "Jun 28, 2023",
-    "time_last_payment": "Dec 2, 2023"
+    "time_last_payment": "Dec 2, 2023",
+    "listed": true
   },
   {
     "name": "EaseUS RecExperts",
     "url": "https://recorder.easeus.com",
     "last_payment": 10.0,
-    "all_time": 90.0,
+    "all_time": 100.0,
     "since": "Jun 28, 2023",
-    "time_last_payment": "Feb 28, 2024"
+    "time_last_payment": "Mar 28, 2024",
+    "listed": true
   },
   {
     "name": "EaseUS Germany",
     "url": "https://www.easeus.de/",
     "last_payment": 10.0,
-    "all_time": 90.0,
+    "all_time": 100.0,
     "since": "Jun 28, 2023",
-    "time_last_payment": "Feb 28, 2024"
+    "time_last_payment": "Mar 28, 2024",
+    "listed": true
   },
   {
     "name": "ReverseProxy.com",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Jun 19, 2023",
-    "time_last_payment": "Jun 19, 2023"
+    "time_last_payment": "Jun 19, 2023",
+    "listed": true
   },
   {
     "name": "Eddy Luten",
     "url": "https://luten.dev/",
     "last_payment": 25.0,
-    "all_time": 105.0,
+    "all_time": 130.0,
     "since": "Jun 18, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "GhostGram",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Jun 18, 2023",
-    "time_last_payment": "Aug 2, 2023"
+    "time_last_payment": "Aug 2, 2023",
+    "listed": true
   },
   {
     "name": "People Search",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Jun 16, 2023",
-    "time_last_payment": "Jun 16, 2023"
+    "time_last_payment": "Jun 16, 2023",
+    "listed": true
   },
   {
     "name": "Poprey",
     "url": "https://poprey.com/get-free-instagram-views",
     "last_payment": 10.0,
-    "all_time": 90.0,
+    "all_time": 100.0,
     "since": "Jun 16, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "Deposit Casinos",
     "last_payment": 0.0,
     "all_time": 35.0,
     "since": "May 31, 2023",
-    "time_last_payment": "Dec 2, 2023"
+    "time_last_payment": "Dec 2, 2023",
+    "listed": true
   },
   {
     "name": "JustinsRepo",
     "last_payment": 0.0,
     "all_time": 40.0,
     "since": "May 25, 2023",
-    "time_last_payment": "Dec 25, 2023"
+    "time_last_payment": "Dec 25, 2023",
+    "listed": true
   },
   {
     "name": "Josh Rickard",
     "last_payment": 10.0,
-    "all_time": 110.0,
+    "all_time": 120.0,
     "since": "May 10, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "egtslot",
     "last_payment": 0.0,
     "all_time": 40.0,
     "since": "May 8, 2023",
-    "time_last_payment": "Dec 2, 2023"
+    "time_last_payment": "Dec 2, 2023",
+    "listed": true
   },
   {
     "name": "Frisco Del Rosario",
     "last_payment": 0.0,
     "all_time": 11.0,
     "since": "May 7, 2023",
-    "time_last_payment": "Nov 8, 2023"
+    "time_last_payment": "Nov 8, 2023",
+    "listed": true
   },
   {
     "name": "Jeremy Woertink",
     "last_payment": 25.0,
-    "all_time": 300.0,
+    "all_time": 325.0,
     "since": "Mar 30, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "GOKI MORI",
     "last_payment": 1.0,
-    "all_time": 16.0,
+    "all_time": 17.0,
     "since": "Mar 16, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "infinitary",
     "url": "https://infinitary.org/",
     "last_payment": 10.0,
-    "all_time": 130.0,
+    "all_time": 140.0,
     "since": "Mar 9, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Vl",
     "last_payment": 0.0,
     "all_time": 1.0,
     "since": "Mar 8, 2023",
-    "time_last_payment": "Mar 8, 2023"
+    "time_last_payment": "Mar 8, 2023",
+    "listed": true
   },
   {
     "name": "Soc-Promotion",
     "url": "https://soc-promotion.com/instagram/likes",
     "last_payment": 5.0,
-    "all_time": 65.0,
+    "all_time": 70.0,
     "since": "Mar 2, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "Kiekkotorni - Nikotiinipussit",
     "last_payment": 0.0,
     "all_time": 45.0,
     "since": "Feb 24, 2023",
-    "time_last_payment": "Nov 2, 2023"
+    "time_last_payment": "Nov 2, 2023",
+    "listed": true
   },
   {
     "name": "Bubble Shooter",
@@ -397,59 +448,67 @@
     "last_payment": 5.0,
     "all_time": 70.0,
     "since": "Feb 13, 2023",
-    "time_last_payment": "Mar 13, 2024"
+    "time_last_payment": "Mar 13, 2024",
+    "listed": true
   },
   {
     "name": "AusmalbildTV",
     "url": "https://ausmalbildtv.de/",
     "last_payment": 5.0,
-    "all_time": 45.0,
+    "all_time": 50.0,
     "since": "Feb 10, 2023",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Concentric",
     "url": "https://concentric.health",
     "logo": "sponsors/concentric.png",
     "last_payment": 75.0,
-    "all_time": 1050.0,
+    "all_time": 1125.0,
     "since": "Feb 2, 2023",
-    "time_last_payment": "Mar 5, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "kachick",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Jan 29, 2023",
-    "time_last_payment": "Jan 29, 2023"
+    "time_last_payment": "Jan 29, 2023",
+    "listed": true
   },
   {
     "name": "hasan kahraman",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Jan 28, 2023",
-    "time_last_payment": "Jan 28, 2023"
+    "time_last_payment": "Jan 28, 2023",
+    "listed": true
   },
   {
     "name": "Fresh Engagements",
     "last_payment": 0.0,
     "all_time": 35.0,
     "since": "Jan 24, 2023",
-    "time_last_payment": "Aug 2, 2023"
+    "time_last_payment": "Aug 2, 2023",
+    "listed": true
   },
   {
     "name": "Displaybenchmark",
     "last_payment": 0.0,
     "all_time": 35.0,
     "since": "Jan 20, 2023",
-    "time_last_payment": "Aug 2, 2023"
+    "time_last_payment": "Aug 2, 2023",
+    "listed": true
   },
   {
     "name": "Famium",
     "last_payment": 0.0,
     "all_time": 35.0,
     "since": "Jan 17, 2023",
-    "time_last_payment": "Aug 2, 2023"
+    "time_last_payment": "Aug 2, 2023",
+    "listed": true
   },
   {
     "name": "Hiptoro",
@@ -457,7 +516,8 @@
     "last_payment": 5.0,
     "all_time": 75.0,
     "since": "Jan 17, 2023",
-    "time_last_payment": "Mar 17, 2024"
+    "time_last_payment": "Mar 17, 2024",
+    "listed": true
   },
   {
     "name": "DeFiCasinos.io",
@@ -465,101 +525,115 @@
     "last_payment": 5.0,
     "all_time": 75.0,
     "since": "Dec 29, 2022",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Mar 1, 2024",
+    "listed": true
   },
   {
     "name": "Josephine Pfeiffer",
     "url": "https://josie.lol/",
     "last_payment": 10.0,
-    "all_time": 160.0,
+    "all_time": 170.0,
     "since": "Dec 16, 2022",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Twicsy",
     "url": "https://twicsy.com/buy-instagram-likes",
     "last_payment": 10.0,
-    "all_time": 160.0,
+    "all_time": 170.0,
     "since": "Dec 14, 2022",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "wildcasinoreview.com",
     "last_payment": 0.0,
     "all_time": 50.0,
     "since": "Dec 9, 2022",
-    "time_last_payment": "Jan 2, 2023"
+    "time_last_payment": "Jan 2, 2023",
+    "listed": true
   },
   {
     "name": "Inkognito",
     "last_payment": 0.0,
     "all_time": 2.0,
     "since": "Nov 27, 2022",
-    "time_last_payment": "Nov 27, 2022"
+    "time_last_payment": "Nov 27, 2022",
+    "listed": true
   },
   {
     "name": "Aviator Game",
     "last_payment": 0.0,
     "all_time": 65.0,
     "since": "Nov 25, 2022",
-    "time_last_payment": "Dec 1, 2023"
+    "time_last_payment": "Dec 1, 2023",
+    "listed": true
   },
   {
     "name": "Crash Game",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Nov 25, 2022",
-    "time_last_payment": "Jan 2, 2023"
+    "time_last_payment": "Jan 2, 2023",
+    "listed": true
   },
   {
     "name": "Ark",
     "last_payment": 0.0,
     "all_time": 250.0,
     "since": "Nov 1, 2022",
-    "time_last_payment": "Nov 1, 2022"
+    "time_last_payment": "Nov 1, 2022",
+    "listed": true
   },
   {
     "name": "Denys Holius",
     "last_payment": 0.0,
     "all_time": 25.0,
     "since": "Oct 21, 2022",
-    "time_last_payment": "Mar 2, 2023"
+    "time_last_payment": "Mar 2, 2023",
+    "listed": true
   },
   {
     "name": "CasinoWizard",
     "url": "https://thecasinowizard.com/",
     "last_payment": 5.0,
-    "all_time": 80.0,
+    "all_time": 85.0,
     "since": "Oct 19, 2022",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Jonathan Siegel",
     "last_payment": 0.0,
     "all_time": 1950.0,
     "since": "Sep 12, 2022",
-    "time_last_payment": "Sep 1, 2023"
+    "time_last_payment": "Sep 1, 2023",
+    "listed": true
   },
   {
     "name": "Casinofree.eu",
     "last_payment": 0.0,
     "all_time": 25.0,
     "since": "Aug 23, 2022",
-    "time_last_payment": "Aug 23, 2022"
+    "time_last_payment": "Aug 23, 2022",
+    "listed": true
   },
   {
     "name": "Jeffrey Crochet",
     "last_payment": 5.0,
-    "all_time": 190.0,
+    "all_time": 195.0,
     "since": "Aug 6, 2022",
-    "time_last_payment": "Mar 6, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "RushRadar: The Best Articles, Reviews, and Referral Codes",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Jul 30, 2022",
-    "time_last_payment": "Jul 30, 2022"
+    "time_last_payment": "Jul 30, 2022",
+    "listed": true
   },
   {
     "name": "Seth Falco",
@@ -567,129 +641,145 @@
     "last_payment": 5.0,
     "all_time": 120.0,
     "since": "Jul 23, 2022",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Mar 1, 2024",
+    "listed": true
   },
   {
     "name": "Scommetteronline.info",
     "last_payment": 0.0,
     "all_time": 175.0,
     "since": "Jul 22, 2022",
-    "time_last_payment": "Jan 22, 2023"
+    "time_last_payment": "Jan 22, 2023",
+    "listed": true
   },
   {
     "name": "BETTING SITES NOT ON GAMSTOP",
     "last_payment": 0.0,
     "all_time": 35.0,
     "since": "Jul 4, 2022",
-    "time_last_payment": "Jan 2, 2023"
+    "time_last_payment": "Jan 2, 2023",
+    "listed": true
   },
   {
     "name": "Stayatcasinos.com",
     "last_payment": 0.0,
     "all_time": 25.0,
     "since": "Jul 4, 2022",
-    "time_last_payment": "Nov 2, 2022"
+    "time_last_payment": "Nov 2, 2022",
+    "listed": true
   },
   {
     "name": "CouponBlender",
-    "url": "https://www.couponblender.com/",
-    "last_payment": 5.0,
+    "last_payment": 0.0,
     "all_time": 100.0,
     "since": "Jun 30, 2022",
-    "time_last_payment": "Feb 1, 2024"
+    "time_last_payment": "Feb 1, 2024",
+    "listed": true
   },
   {
     "name": "Insacret",
-    "url": "https://insacret.com/",
-    "last_payment": 5.0,
+    "last_payment": 0.0,
     "all_time": 75.0,
     "since": "Jun 29, 2022",
-    "time_last_payment": "Feb 2, 2024"
+    "time_last_payment": "Feb 2, 2024",
+    "listed": true
   },
   {
     "name": "Realmoneycasinoonline.ca",
     "last_payment": 0.0,
     "all_time": 25.0,
     "since": "Jun 26, 2022",
-    "time_last_payment": "Oct 26, 2022"
+    "time_last_payment": "Oct 26, 2022",
+    "listed": true
   },
   {
     "name": "SureBet",
     "url": "https://www.sure.bet/casinos-not-on-gamstop/",
     "last_payment": 5.0,
-    "all_time": 105.0,
+    "all_time": 110.0,
     "since": "Jun 17, 2022",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Sekeol Kim",
     "last_payment": 10.0,
-    "all_time": 220.0,
+    "all_time": 230.0,
     "since": "May 23, 2022",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Laborando",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "May 13, 2022",
-    "time_last_payment": "Jun 13, 2022"
+    "time_last_payment": "Jun 13, 2022",
+    "listed": true
   },
   {
     "name": "Benjamin Klotz",
     "last_payment": 0.0,
     "all_time": 310.0,
     "since": "May 2, 2022",
-    "time_last_payment": "Aug 13, 2023"
+    "time_last_payment": "Aug 13, 2023",
+    "listed": true
   },
   {
     "name": "Ivan Rybalko",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Apr 19, 2022",
-    "time_last_payment": "Jun 1, 2022"
+    "time_last_payment": "Jun 1, 2022",
+    "listed": true
   },
   {
     "name": "Tracy Nowak",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Apr 7, 2022",
-    "time_last_payment": "Apr 7, 2022"
+    "time_last_payment": "Apr 7, 2022",
+    "listed": true
   },
   {
     "name": "Sebastian Szturo",
     "last_payment": 0.0,
     "all_time": 40.0,
     "since": "Mar 29, 2022",
-    "time_last_payment": "Jul 1, 2022"
+    "time_last_payment": "Jul 1, 2022",
+    "listed": true
   },
   {
     "name": "BestForAndroid",
     "last_payment": 0.0,
     "all_time": 15.0,
     "since": "Mar 27, 2022",
-    "time_last_payment": "May 27, 2022"
+    "time_last_payment": "May 27, 2022",
+    "listed": true
   },
   {
     "name": "Sufi Meditation",
     "last_payment": 0.0,
     "all_time": 75.0,
     "since": "Mar 26, 2022",
-    "time_last_payment": "Jun 10, 2023"
+    "time_last_payment": "Jun 10, 2023",
+    "listed": true
   },
   {
     "name": "SHAREHEALTHCARE.COM",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Mar 18, 2022",
-    "time_last_payment": "Apr 18, 2022"
+    "time_last_payment": "Apr 18, 2022",
+    "listed": true
   },
   {
     "name": "bit4bit",
     "last_payment": 0.0,
     "all_time": 115.0,
     "since": "Mar 9, 2022",
-    "time_last_payment": "Jan 1, 2024"
+    "time_last_payment": "Jan 1, 2024",
+    "listed": true
   },
   {
     "name": "Anton Maminov",
@@ -697,7 +787,8 @@
     "last_payment": 5.0,
     "all_time": 125.0,
     "since": "Feb 23, 2022",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Mar 1, 2024",
+    "listed": true
   },
   {
     "name": "PROXYONE LLC",
@@ -705,112 +796,128 @@
     "last_payment": 5.0,
     "all_time": 130.0,
     "since": "Feb 21, 2022",
-    "time_last_payment": "Mar 21, 2024"
+    "time_last_payment": "Mar 21, 2024",
+    "listed": true
   },
   {
     "name": "StateTax.io",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Jan 26, 2022",
-    "time_last_payment": "Mar 1, 2022"
+    "time_last_payment": "Mar 1, 2022",
+    "listed": true
   },
   {
     "name": "speg",
     "last_payment": 3.94,
-    "all_time": 107.44,
+    "all_time": 111.38,
     "since": "Jan 10, 2022",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "creatable",
     "last_payment": 0.0,
     "all_time": 25.0,
     "since": "Jan 5, 2022",
-    "time_last_payment": "Jan 5, 2022"
+    "time_last_payment": "Jan 5, 2022",
+    "listed": true
   },
   {
     "name": "Skurhse Rage 🌆🌃🌌",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Dec 21, 2021",
-    "time_last_payment": "Jan 21, 2022"
+    "time_last_payment": "Jan 21, 2022",
+    "listed": true
   },
   {
     "name": "Billigzonen.dk",
     "last_payment": 0.0,
     "all_time": 25.0,
     "since": "Dec 21, 2021",
-    "time_last_payment": "Apr 21, 2022"
+    "time_last_payment": "Apr 21, 2022",
+    "listed": true
   },
   {
     "name": "Dan-Do",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Dec 14, 2021",
-    "time_last_payment": "Dec 14, 2021"
+    "time_last_payment": "Dec 14, 2021",
+    "listed": true
   },
   {
     "name": "prointernet.in.ua",
     "last_payment": 0.0,
     "all_time": 30.0,
     "since": "Dec 13, 2021",
-    "time_last_payment": "May 1, 2022"
+    "time_last_payment": "May 1, 2022",
+    "listed": true
   },
   {
     "name": "Jim Abraham",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Dec 9, 2021",
-    "time_last_payment": "Mar 1, 2022"
+    "time_last_payment": "Mar 1, 2022",
+    "listed": true
   },
   {
     "name": "Kanda Software",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Nov 29, 2021",
-    "time_last_payment": "Nov 29, 2021"
+    "time_last_payment": "Nov 29, 2021",
+    "listed": true
   },
   {
     "name": "Screen Recorder",
     "last_payment": 0.0,
     "all_time": 1000.0,
     "since": "Nov 19, 2021",
-    "time_last_payment": "Mar 1, 2022"
+    "time_last_payment": "Mar 1, 2022",
+    "listed": true
   },
   {
     "name": "Screen recorder",
     "last_payment": 0.0,
     "all_time": 1000.0,
     "since": "Nov 19, 2021",
-    "time_last_payment": "Mar 1, 2022"
+    "time_last_payment": "Mar 1, 2022",
+    "listed": true
   },
   {
     "name": "Michael Wagner",
     "last_payment": 5.0,
     "all_time": 145.0,
     "since": "Nov 11, 2021",
-    "time_last_payment": "Mar 11, 2024"
+    "time_last_payment": "Mar 11, 2024",
+    "listed": true
   },
   {
     "name": "Messaged",
     "last_payment": 0.0,
     "all_time": 15.0,
     "since": "Nov 10, 2021",
-    "time_last_payment": "Jan 6, 2022"
+    "time_last_payment": "Jan 6, 2022",
+    "listed": true
   },
   {
     "name": "Blackjack77russia.com",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Nov 1, 2021",
-    "time_last_payment": "Nov 1, 2021"
+    "time_last_payment": "Nov 1, 2021",
+    "listed": true
   },
   {
     "name": "Tommi Aaltonen",
     "last_payment": 0.0,
     "all_time": 60.0,
     "since": "Oct 28, 2021",
-    "time_last_payment": "Sep 28, 2022"
+    "time_last_payment": "Sep 28, 2022",
+    "listed": true
   },
   {
     "name": "maltidsbarometeret",
@@ -818,238 +925,272 @@
     "last_payment": 5.0,
     "all_time": 150.0,
     "since": "Oct 19, 2021",
-    "time_last_payment": "Mar 19, 2024"
+    "time_last_payment": "Mar 19, 2024",
+    "listed": true
   },
   {
     "name": "Igor Polyakov",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Oct 16, 2021",
-    "time_last_payment": "Oct 16, 2021"
+    "time_last_payment": "Oct 16, 2021",
+    "listed": true
   },
   {
     "name": "Adam Stephens",
     "last_payment": 0.0,
     "all_time": 15.0,
     "since": "Oct 14, 2021",
-    "time_last_payment": "Dec 2, 2021"
+    "time_last_payment": "Dec 2, 2021",
+    "listed": true
   },
   {
     "name": "Mauricio Gomes",
-    "last_payment": 0.0,
-    "all_time": 460.0,
+    "url": "https://mauriciogomes.com",
+    "last_payment": 25.0,
+    "all_time": 485.0,
     "since": "Oct 8, 2021",
-    "time_last_payment": "Nov 11, 2023"
+    "time_last_payment": "Mar 29, 2024",
+    "listed": true
   },
   {
     "name": "Real Targeted Traffic",
     "last_payment": 0.0,
     "all_time": 120.0,
     "since": "Oct 7, 2021",
-    "time_last_payment": "Sep 6, 2022"
+    "time_last_payment": "Sep 6, 2022",
+    "listed": true
   },
   {
     "name": "Targeted Web Traffic",
     "last_payment": 0.0,
     "all_time": 120.0,
     "since": "Oct 7, 2021",
-    "time_last_payment": "Sep 6, 2022"
+    "time_last_payment": "Sep 6, 2022",
+    "listed": true
   },
   {
     "name": "Mia Bennett",
     "url": "https://chillfox.com/",
     "last_payment": 5.0,
-    "all_time": 150.0,
+    "all_time": 155.0,
     "since": "Oct 1, 2021",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "HelppoHinta.fi",
     "last_payment": 0.0,
     "all_time": 115.0,
     "since": "Oct 1, 2021",
-    "time_last_payment": "Oct 1, 2023"
+    "time_last_payment": "Oct 1, 2023",
+    "listed": true
   },
   {
     "name": "Alexander Adam",
     "url": "https://github.com/alexanderadam/alexanderadam#-about-me",
     "last_payment": 10.0,
-    "all_time": 300.0,
+    "all_time": 310.0,
     "since": "Oct 1, 2021",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "eason.ye",
     "last_payment": 0.0,
     "all_time": 140.0,
     "since": "Sep 17, 2021",
-    "time_last_payment": "Jan 1, 2024"
+    "time_last_payment": "Jan 1, 2024",
+    "listed": true
   },
   {
     "name": "xstats.gg",
     "last_payment": 0.0,
     "all_time": 95.0,
     "since": "Sep 14, 2021",
-    "time_last_payment": "Mar 1, 2023"
+    "time_last_payment": "Mar 1, 2023",
+    "listed": true
   },
   {
     "name": "CHUNG TSAI",
     "last_payment": 0.0,
     "all_time": 625.0,
     "since": "Sep 3, 2021",
-    "time_last_payment": "Sep 1, 2023"
+    "time_last_payment": "Sep 1, 2023",
+    "listed": true
   },
   {
     "name": "Elvis Begluk",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Aug 27, 2021",
-    "time_last_payment": "Aug 27, 2021"
+    "time_last_payment": "Aug 27, 2021",
+    "listed": true
   },
   {
     "name": "Taletidskortnu",
     "url": "https://taletidskort.nu",
     "last_payment": 5.0,
-    "all_time": 155.0,
+    "all_time": 160.0,
     "since": "Aug 25, 2021",
-    "time_last_payment": "Feb 25, 2024"
+    "time_last_payment": "Mar 25, 2024",
+    "listed": true
   },
   {
     "name": "Dmitri Goutnik",
     "last_payment": 0.0,
     "all_time": 105.0,
     "since": "Aug 24, 2021",
-    "time_last_payment": "Apr 2, 2023"
+    "time_last_payment": "Apr 2, 2023",
+    "listed": true
   },
   {
     "name": "Casinos Hunter Bitcoin",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Aug 20, 2021",
-    "time_last_payment": "Aug 20, 2021"
+    "time_last_payment": "Aug 20, 2021",
+    "listed": true
   },
   {
     "name": "SlotoKing",
     "last_payment": 0.0,
     "all_time": 75.0,
     "since": "Aug 18, 2021",
-    "time_last_payment": "Aug 18, 2021"
+    "time_last_payment": "Aug 18, 2021",
+    "listed": true
   },
   {
     "name": "sol.vin",
     "last_payment": 0.0,
     "all_time": 50.0,
     "since": "Aug 12, 2021",
-    "time_last_payment": "Sep 2, 2021"
+    "time_last_payment": "Sep 2, 2021",
+    "listed": true
   },
   {
     "name": "Bookyourdata.com",
     "url": "https://www.bookyourdata.com",
     "last_payment": 10.0,
-    "all_time": 320.0,
+    "all_time": 330.0,
     "since": "Aug 10, 2021",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Billigstbredbaand.dk",
     "last_payment": 0.0,
     "all_time": 30.0,
     "since": "Jul 26, 2021",
-    "time_last_payment": "Dec 30, 2021"
+    "time_last_payment": "Dec 30, 2021",
+    "listed": true
   },
   {
     "name": "PlaceOS",
     "url": "https://place.technology/",
     "logo": "sponsors/placeos.png",
     "last_payment": 250.0,
-    "all_time": 7250.0,
+    "all_time": 7500.0,
     "since": "Jul 26, 2021",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Ismael Abreu",
     "last_payment": 0.0,
     "all_time": 35.0,
     "since": "Jul 23, 2021",
-    "time_last_payment": "Jan 23, 2022"
+    "time_last_payment": "Jan 23, 2022",
+    "listed": true
   },
   {
     "name": "Simon Eskildsen",
     "last_payment": 0.0,
     "all_time": 225.0,
     "since": "Jul 21, 2021",
-    "time_last_payment": "Apr 2, 2022"
+    "time_last_payment": "Apr 2, 2022",
+    "listed": true
   },
   {
     "name": "Liberatys",
     "last_payment": 0.0,
     "all_time": 40.0,
     "since": "Jul 10, 2021",
-    "time_last_payment": "Oct 2, 2021"
+    "time_last_payment": "Oct 2, 2021",
+    "listed": true
   },
   {
     "name": "Joseph Method",
     "last_payment": 5.0,
     "all_time": 165.0,
     "since": "Jul 9, 2021",
-    "time_last_payment": "Mar 9, 2024"
+    "time_last_payment": "Mar 9, 2024",
+    "listed": true
   },
   {
     "name": "Agloks",
     "last_payment": 5.0,
-    "all_time": 165.0,
+    "all_time": 170.0,
     "since": "Jul 8, 2021",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Dedicated Stars",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Jul 5, 2021",
-    "time_last_payment": "Jul 19, 2021"
+    "time_last_payment": "Jul 19, 2021",
+    "listed": true
   },
   {
     "name": "Daiki Sato",
     "last_payment": 0.0,
     "all_time": 60.0,
     "since": "Jul 3, 2021",
-    "time_last_payment": "Jun 2, 2022"
+    "time_last_payment": "Jun 2, 2022",
+    "listed": true
   },
   {
     "name": "Renkaatsopivasti",
     "url": "https://renkaatsopivasti.fi",
     "last_payment": 5.0,
-    "all_time": 165.0,
+    "all_time": 170.0,
     "since": "Jul 2, 2021",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "NoAccountCasinos",
     "last_payment": 0.0,
     "all_time": 50.0,
     "since": "Jul 1, 2021",
-    "time_last_payment": "Nov 3, 2021"
+    "time_last_payment": "Nov 3, 2021",
+    "listed": true
   },
   {
     "name": "Provided.io",
     "last_payment": 0.0,
     "all_time": 140.0,
     "since": "Jun 15, 2021",
-    "time_last_payment": "Sep 1, 2023"
+    "time_last_payment": "Sep 1, 2023",
+    "listed": true
   },
   {
     "name": "lowkey",
     "last_payment": 10.0,
     "all_time": 2620.0,
     "since": "Jun 12, 2021",
-    "time_last_payment": "Mar 18, 2024"
+    "time_last_payment": "Mar 18, 2024",
+    "listed": true
   },
   {
     "name": "STORED Enterprises Limited",
     "last_payment": 0.0,
     "all_time": 25.0,
     "since": "Jun 9, 2021",
-    "time_last_payment": "Jun 9, 2021"
+    "time_last_payment": "Jun 9, 2021",
+    "listed": true
   },
   {
     "name": "Windesol Sähkön Kilpailutus",
@@ -1057,1035 +1198,1178 @@
     "last_payment": 5.0,
     "all_time": 170.0,
     "since": "Jun 8, 2021",
-    "time_last_payment": "Mar 8, 2024"
+    "time_last_payment": "Mar 8, 2024",
+    "listed": true
   },
   {
     "name": "Netin nopeustesti",
     "url": "https://netinnopeustesti.com/",
     "last_payment": 5.0,
-    "all_time": 170.0,
+    "all_time": 175.0,
     "since": "May 27, 2021",
-    "time_last_payment": "Feb 29, 2024"
+    "time_last_payment": "Mar 30, 2024",
+    "listed": true
   },
   {
     "name": "Casinoonlineaams.com",
     "url": "https://www.casinoonlineaams.com",
     "last_payment": 25.0,
-    "all_time": 850.0,
+    "all_time": 875.0,
     "since": "May 26, 2021",
-    "time_last_payment": "Feb 26, 2024"
+    "time_last_payment": "Mar 26, 2024",
+    "listed": true
   },
   {
     "name": "Vladislav Kuznetsov",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Apr 28, 2021",
-    "time_last_payment": "Apr 28, 2021"
+    "time_last_payment": "Apr 28, 2021",
+    "listed": true
   },
   {
     "name": "Mikihiro Hamaguchi",
     "last_payment": 0.0,
     "all_time": 100.0,
     "since": "Apr 26, 2021",
-    "time_last_payment": "Dec 1, 2022"
+    "time_last_payment": "Dec 1, 2022",
+    "listed": true
   },
   {
     "name": "Yann Carlen",
     "last_payment": 0.0,
     "all_time": 35.0,
     "since": "Apr 14, 2021",
-    "time_last_payment": "Jan 6, 2022"
+    "time_last_payment": "Jan 6, 2022",
+    "listed": true
   },
   {
     "name": "Pavel Dušánek",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Apr 14, 2021",
-    "time_last_payment": "Apr 14, 2021"
+    "time_last_payment": "Apr 14, 2021",
+    "listed": true
   },
   {
     "name": "Christian Meredith",
     "last_payment": 0.0,
     "all_time": 37.0,
     "since": "Apr 12, 2021",
-    "time_last_payment": "Dec 1, 2021"
+    "time_last_payment": "Dec 1, 2021",
+    "listed": true
   },
   {
     "name": "mointech GmbH",
     "last_payment": 0.0,
     "all_time": 300.0,
     "since": "Apr 8, 2021",
-    "time_last_payment": "Jul 1, 2021"
+    "time_last_payment": "Jul 1, 2021",
+    "listed": true
   },
   {
     "name": "Bilal Budhani",
     "last_payment": 0.0,
     "all_time": 50.0,
     "since": "Apr 3, 2021",
-    "time_last_payment": "Aug 1, 2021"
+    "time_last_payment": "Aug 1, 2021",
+    "listed": true
   },
   {
     "name": "GoMage",
     "last_payment": 0.0,
     "all_time": 1.0,
     "since": "Apr 1, 2021",
-    "time_last_payment": "Apr 1, 2021"
+    "time_last_payment": "Apr 1, 2021",
+    "listed": true
   },
   {
     "name": "Lampros Chaidas",
     "last_payment": 10.0,
-    "all_time": 360.0,
+    "all_time": 370.0,
     "since": "Mar 29, 2021",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "萌太",
     "last_payment": 0.0,
     "all_time": 25.0,
     "since": "Mar 29, 2021",
-    "time_last_payment": "Aug 1, 2021"
+    "time_last_payment": "Aug 1, 2021",
+    "listed": true
   },
   {
     "name": "Guillermo Siliceo Trueba",
     "last_payment": 0.0,
     "all_time": 40.0,
     "since": "Mar 26, 2021",
-    "time_last_payment": "Nov 1, 2021"
+    "time_last_payment": "Nov 1, 2021",
+    "listed": true
   },
   {
     "name": "Svetlin Simonyan",
     "last_payment": 0.0,
     "all_time": 175.0,
     "since": "Mar 25, 2021",
-    "time_last_payment": "Oct 1, 2021"
+    "time_last_payment": "Oct 1, 2021",
+    "listed": true
   },
   {
     "name": "Rob Hill",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Mar 25, 2021",
-    "time_last_payment": "Mar 25, 2021"
+    "time_last_payment": "Mar 25, 2021",
+    "listed": true
   },
   {
     "name": "Auttawut Wiriyakreng",
     "last_payment": 5.0,
-    "all_time": 180.0,
+    "all_time": 185.0,
     "since": "Mar 25, 2021",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Askhat Saiapov",
     "last_payment": 0.0,
     "all_time": 25.0,
     "since": "Mar 23, 2021",
-    "time_last_payment": "Aug 1, 2021"
+    "time_last_payment": "Aug 1, 2021",
+    "listed": true
   },
   {
     "name": "Mykhaylo Sorochan",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Mar 23, 2021",
-    "time_last_payment": "Mar 23, 2021"
+    "time_last_payment": "Mar 23, 2021",
+    "listed": true
   },
   {
     "name": "Stas Syritsyn",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Mar 22, 2021",
-    "time_last_payment": "Mar 22, 2021"
+    "time_last_payment": "Mar 22, 2021",
+    "listed": true
   },
   {
     "name": "Jaime Ortiz",
     "last_payment": 0.0,
     "all_time": 400.0,
     "since": "Mar 20, 2021",
-    "time_last_payment": "Apr 2, 2022"
+    "time_last_payment": "Apr 2, 2022",
+    "listed": true
   },
   {
     "name": "Gitpod",
     "last_payment": 0.0,
     "all_time": 1.0,
     "since": "Mar 9, 2021",
-    "time_last_payment": "Mar 9, 2021"
+    "time_last_payment": "Mar 9, 2021",
+    "listed": true
   },
   {
     "name": "Haiting Zhang",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Mar 8, 2021",
-    "time_last_payment": "Mar 8, 2021"
+    "time_last_payment": "Mar 8, 2021",
+    "listed": true
   },
   {
     "name": "Writers Per Hour",
     "last_payment": 0.0,
     "all_time": 425.0,
     "since": "Mar 6, 2021",
-    "time_last_payment": "Jul 1, 2022"
+    "time_last_payment": "Jul 1, 2022",
+    "listed": true
   },
   {
     "name": "Bromine0x23",
     "url": "https://twitter.com/bromine0x23",
     "last_payment": 10.0,
-    "all_time": 300.0,
+    "all_time": 310.0,
     "since": "Feb 27, 2021",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Foxyanski",
     "last_payment": 0.0,
     "all_time": 1.0,
     "since": "Feb 24, 2021",
-    "time_last_payment": "Feb 24, 2021"
+    "time_last_payment": "Feb 24, 2021",
+    "listed": true
   },
   {
     "name": "Adam Zacharias",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Feb 22, 2021",
-    "time_last_payment": "Feb 22, 2021"
+    "time_last_payment": "Feb 22, 2021",
+    "listed": true
   },
   {
     "name": "Mamafacts",
     "last_payment": 0.0,
     "all_time": 70.0,
     "since": "Feb 9, 2021",
-    "time_last_payment": "Mar 2, 2022"
+    "time_last_payment": "Mar 2, 2022",
+    "listed": true
   },
   {
     "name": "New Casinos Australia",
     "last_payment": 0.0,
     "all_time": 2.0,
     "since": "Feb 5, 2021",
-    "time_last_payment": "Feb 5, 2021"
+    "time_last_payment": "Feb 5, 2021",
+    "listed": true
   },
   {
     "name": "Book of Ra German",
     "last_payment": 0.0,
     "all_time": 15.0,
     "since": "Feb 2, 2021",
-    "time_last_payment": "Apr 1, 2021"
+    "time_last_payment": "Apr 1, 2021",
+    "listed": true
   },
   {
     "name": "Fabien LEFEBVRE",
     "last_payment": 0.0,
     "all_time": 90.0,
     "since": "Jan 25, 2021",
-    "time_last_payment": "Oct 1, 2021"
+    "time_last_payment": "Oct 1, 2021",
+    "listed": true
   },
   {
     "name": "Werner Stein",
     "last_payment": 15.0,
-    "all_time": 470.0,
+    "all_time": 485.0,
     "since": "Jan 24, 2021",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Leadscanner",
     "last_payment": 0.0,
     "all_time": 2.0,
     "since": "Jan 21, 2021",
-    "time_last_payment": "Jan 21, 2021"
+    "time_last_payment": "Jan 21, 2021",
+    "listed": true
   },
   {
     "name": "Barry Tolnas",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Jan 17, 2021",
-    "time_last_payment": "Jan 17, 2021"
+    "time_last_payment": "Jan 17, 2021",
+    "listed": true
   },
   {
     "name": "FindContinuingCare",
     "last_payment": 0.0,
     "all_time": 100.0,
     "since": "Jan 11, 2021",
-    "time_last_payment": "Aug 1, 2022"
+    "time_last_payment": "Aug 1, 2022",
+    "listed": true
   },
   {
     "name": "Sell Your Phoenix House Fast",
     "last_payment": 0.0,
     "all_time": 15.0,
     "since": "Jan 3, 2021",
-    "time_last_payment": "Mar 1, 2021"
+    "time_last_payment": "Mar 1, 2021",
+    "listed": true
   },
   {
     "name": "Marko Požega",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Dec 29, 2020",
-    "time_last_payment": "Apr 1, 2021"
+    "time_last_payment": "Apr 1, 2021",
+    "listed": true
   },
   {
     "name": "PrestoDoctor",
-    "url": "https://prestodoctor.com",
-    "logo": "sponsors/prestodoctor.png",
-    "last_payment": 75.0,
+    "last_payment": 0.0,
     "all_time": 4500.0,
     "since": "Dec 28, 2020",
-    "time_last_payment": "Feb 1, 2024"
+    "time_last_payment": "Feb 1, 2024",
+    "listed": true
   },
   {
     "name": "Josh Hollenbeck",
     "last_payment": 10.0,
-    "all_time": 390.0,
+    "all_time": 400.0,
     "since": "Dec 19, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Alberto Corbi",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Dec 14, 2020",
-    "time_last_payment": "Dec 14, 2020"
+    "time_last_payment": "Dec 14, 2020",
+    "listed": true
   },
   {
     "name": "ATNOS",
     "last_payment": 0.0,
     "all_time": 675.0,
     "since": "Dec 11, 2020",
-    "time_last_payment": "Aug 1, 2021"
+    "time_last_payment": "Aug 1, 2021",
+    "listed": true
   },
   {
     "name": "OvrClock",
     "url": "https://ovrclock.com",
     "last_payment": 5.0,
-    "all_time": 200.0,
+    "all_time": 205.0,
     "since": "Dec 11, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "anapsix",
     "url": "https://blog.random.io",
     "last_payment": 5.0,
-    "all_time": 200.0,
+    "all_time": 205.0,
     "since": "Dec 2, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Ryan Maki",
     "logo": "sponsors/ryan_maki.png",
     "last_payment": 75.0,
-    "all_time": 3000.0,
+    "all_time": 3075.0,
     "since": "Dec 2, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "I.I. Jeliuc Alexandr",
     "last_payment": 0.0,
     "all_time": 80.0,
     "since": "Dec 1, 2020",
-    "time_last_payment": "Jul 2, 2021"
+    "time_last_payment": "Jul 2, 2021",
+    "listed": true
   },
   {
     "name": "JoinGames",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Nov 25, 2020",
-    "time_last_payment": "Nov 25, 2020"
+    "time_last_payment": "Nov 25, 2020",
+    "listed": true
   },
   {
     "name": "Dutchie",
     "last_payment": 0.0,
     "all_time": 3450.0,
     "since": "Nov 23, 2020",
-    "time_last_payment": "Oct 1, 2022"
+    "time_last_payment": "Oct 1, 2022",
+    "listed": true
   },
   {
     "name": "Dale C Earl",
     "last_payment": 0.0,
     "all_time": 100.0,
     "since": "Nov 23, 2020",
-    "time_last_payment": "Nov 23, 2020"
+    "time_last_payment": "Nov 23, 2020",
+    "listed": true
   },
   {
     "name": "Kiirlaenud",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Nov 20, 2020",
-    "time_last_payment": "Mar 1, 2021"
+    "time_last_payment": "Mar 1, 2021",
+    "listed": true
   },
   {
     "name": "Joppy",
     "last_payment": 0.0,
     "all_time": 50.0,
     "since": "Nov 19, 2020",
-    "time_last_payment": "Nov 19, 2020"
+    "time_last_payment": "Nov 19, 2020",
+    "listed": true
   },
   {
     "name": "Thanassis Papapostolou",
     "last_payment": 0.0,
     "all_time": 1.0,
     "since": "Nov 10, 2020",
-    "time_last_payment": "Nov 10, 2020"
+    "time_last_payment": "Nov 10, 2020",
+    "listed": true
   },
   {
     "name": "Mark Raymond Jr.",
     "last_payment": 0.0,
     "all_time": 55.0,
     "since": "Nov 9, 2020",
-    "time_last_payment": "Mar 1, 2022"
+    "time_last_payment": "Mar 1, 2022",
+    "listed": true
   },
   {
     "name": "ParticleBrand",
     "last_payment": 0.0,
     "all_time": 25.0,
     "since": "Nov 8, 2020",
-    "time_last_payment": "Mar 1, 2021"
+    "time_last_payment": "Mar 1, 2021",
+    "listed": true
   },
   {
     "name": "Ian Rash",
     "last_payment": 0.0,
     "all_time": 50.0,
     "since": "Oct 19, 2020",
-    "time_last_payment": "Oct 19, 2020"
+    "time_last_payment": "Oct 19, 2020",
+    "listed": true
   },
   {
     "name": "GermanTechJobs",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Oct 18, 2020",
-    "time_last_payment": "Oct 18, 2020"
+    "time_last_payment": "Oct 18, 2020",
+    "listed": true
   },
   {
     "name": "Ricardo Tomasi",
     "url": "https://ricardo.cc",
     "last_payment": 25.0,
-    "all_time": 1050.0,
+    "all_time": 1075.0,
     "since": "Oct 9, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Edward Loveall",
     "last_payment": 5.0,
     "all_time": 210.0,
     "since": "Sep 29, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Mar 1, 2024",
+    "listed": true
   },
   {
     "name": "Will Lewis",
     "last_payment": 5.0,
-    "all_time": 345.0,
+    "all_time": 350.0,
     "since": "Sep 25, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "SwissDev Jobs",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Sep 24, 2020",
-    "time_last_payment": "Sep 24, 2020"
+    "time_last_payment": "Sep 24, 2020",
+    "listed": true
   },
   {
     "name": "Claudio G Macedo Jr",
     "last_payment": 0.0,
     "all_time": 3.0,
     "since": "Sep 18, 2020",
-    "time_last_payment": "Sep 18, 2020"
+    "time_last_payment": "Sep 18, 2020",
+    "listed": true
   },
   {
     "name": "Andrew Larin",
     "last_payment": 0.0,
     "all_time": 35.0,
     "since": "Sep 15, 2020",
-    "time_last_payment": "Mar 1, 2021"
+    "time_last_payment": "Mar 1, 2021",
+    "listed": true
   },
   {
     "name": "Vulk Cooperative",
     "url": "https://www.vulk.coop",
     "logo": "sponsors/vulk_cooperative.png",
     "last_payment": 75.0,
-    "all_time": 5700.0,
+    "all_time": 5775.0,
     "since": "Sep 10, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Kalle Fagerberg",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Sep 10, 2020",
-    "time_last_payment": "Sep 10, 2020"
+    "time_last_payment": "Sep 10, 2020",
+    "listed": true
   },
   {
     "name": "James Hill",
     "last_payment": 0.0,
     "all_time": 100.0,
     "since": "Sep 8, 2020",
-    "time_last_payment": "Sep 8, 2020"
+    "time_last_payment": "Sep 8, 2020",
+    "listed": true
   },
   {
     "name": "Turun Sahkomies",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Sep 8, 2020",
-    "time_last_payment": "Oct 1, 2020"
+    "time_last_payment": "Oct 1, 2020",
+    "listed": true
   },
   {
     "name": "Pro Tech Reviewer",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Sep 3, 2020",
-    "time_last_payment": "Oct 8, 2020"
+    "time_last_payment": "Oct 8, 2020",
+    "listed": true
   },
   {
     "name": "Xiuzhong Li",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Aug 31, 2020",
-    "time_last_payment": "Oct 1, 2020"
+    "time_last_payment": "Oct 1, 2020",
+    "listed": true
   },
   {
     "name": "Philipp Claßen",
     "last_payment": 0.0,
     "all_time": 290.0,
     "since": "Aug 27, 2020",
-    "time_last_payment": "Jan 1, 2023"
+    "time_last_payment": "Jan 1, 2023",
+    "listed": true
   },
   {
     "name": "Nookwit",
     "last_payment": 0.0,
     "all_time": 600.0,
     "since": "Aug 27, 2020",
-    "time_last_payment": "Apr 1, 2021"
+    "time_last_payment": "Apr 1, 2021",
+    "listed": true
   },
   {
     "name": "Open Collective",
     "last_payment": 0.0,
-    "all_time": 285.0,
+    "all_time": 295.0,
     "since": "Aug 24, 2020",
-    "time_last_payment": "Mar 23, 2024"
+    "time_last_payment": "Apr 3, 2024",
+    "listed": true
   },
   {
     "name": "Leonardo Kewitz",
     "url": "https://kewitz.js.org",
     "last_payment": 10.0,
-    "all_time": 285.0,
+    "all_time": 295.0,
     "since": "Aug 24, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Evtimiy Mihaylov",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Aug 22, 2020",
-    "time_last_payment": "Aug 22, 2020"
+    "time_last_payment": "Aug 22, 2020",
+    "listed": true
   },
   {
     "name": "Speekify",
     "last_payment": 0.0,
     "all_time": 45.0,
     "since": "Aug 20, 2020",
-    "time_last_payment": "May 1, 2021"
+    "time_last_payment": "May 1, 2021",
+    "listed": true
   },
   {
     "name": "omerakgoz34",
     "last_payment": 0.0,
     "all_time": 1.0,
     "since": "Aug 13, 2020",
-    "time_last_payment": "Aug 13, 2020"
+    "time_last_payment": "Aug 13, 2020",
+    "listed": true
   },
   {
     "name": "Kunal Gurnani",
     "last_payment": 0.0,
     "all_time": 15.0,
     "since": "Aug 10, 2020",
-    "time_last_payment": "Mar 22, 2021"
+    "time_last_payment": "Mar 22, 2021",
+    "listed": true
   },
   {
     "name": "Randy Diaz",
     "last_payment": 0.0,
     "all_time": 30.0,
     "since": "Aug 7, 2020",
-    "time_last_payment": "Jan 4, 2021"
+    "time_last_payment": "Jan 4, 2021",
+    "listed": true
   },
   {
     "name": "Matt Berry",
     "url": "https://mattrb.com",
     "last_payment": 5.0,
-    "all_time": 220.0,
+    "all_time": 225.0,
     "since": "Aug 7, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Andrew Lewman",
     "last_payment": 0.0,
     "all_time": 1050.0,
     "since": "Aug 6, 2020",
-    "time_last_payment": "Feb 1, 2021"
+    "time_last_payment": "Feb 1, 2021",
+    "listed": true
   },
   {
     "name": "Gabriel Sales Seixas",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Jul 30, 2020",
-    "time_last_payment": "Jul 30, 2020"
+    "time_last_payment": "Jul 30, 2020",
+    "listed": true
   },
   {
     "name": "vinit joshi",
     "last_payment": 10.0,
-    "all_time": 90.0,
+    "all_time": 100.0,
     "since": "Jul 14, 2020",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 2, 2024",
+    "listed": true
   },
   {
     "name": "Andra Antariksa Prihadi",
     "last_payment": 0.0,
     "all_time": 1.0,
     "since": "Jul 5, 2020",
-    "time_last_payment": "Jul 5, 2020"
+    "time_last_payment": "Jul 5, 2020",
+    "listed": true
   },
   {
     "name": "Andrea Manzini",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Jun 18, 2020",
-    "time_last_payment": "Jun 18, 2020"
+    "time_last_payment": "Jun 18, 2020",
+    "listed": true
   },
   {
     "name": "Guoliang Cao",
     "last_payment": 0.0,
     "all_time": 15.0,
     "since": "Jun 14, 2020",
-    "time_last_payment": "Jun 14, 2020"
+    "time_last_payment": "Jun 14, 2020",
+    "listed": true
   },
   {
     "name": "Aanand Natarajan",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Jun 12, 2020",
-    "time_last_payment": "Dec 16, 2021"
+    "time_last_payment": "Dec 16, 2021",
+    "listed": true
   },
   {
     "name": "Nobuaki Tanaka",
     "url": "https://twitter.com/tomerun",
     "last_payment": 5.0,
-    "all_time": 230.0,
+    "all_time": 235.0,
     "since": "Jun 10, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Valentin Baca",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Jun 10, 2020",
-    "time_last_payment": "Jul 2, 2020"
+    "time_last_payment": "Jul 2, 2020",
+    "listed": true
   },
   {
     "name": "Oleksii Neishchenko",
     "last_payment": 5.0,
-    "all_time": 230.0,
+    "all_time": 235.0,
     "since": "Jun 9, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "DocSpring",
     "last_payment": 0.0,
     "all_time": 450.0,
     "since": "Jun 1, 2020",
-    "time_last_payment": "Nov 1, 2020"
+    "time_last_payment": "Nov 1, 2020",
+    "listed": true
   },
   {
     "name": "NekoIT",
     "last_payment": 0.0,
     "all_time": 190.0,
     "since": "May 31, 2020",
-    "time_last_payment": "Dec 1, 2021"
+    "time_last_payment": "Dec 1, 2021",
+    "listed": true
   },
   {
     "name": "Luan Dias",
     "last_payment": 0.0,
     "all_time": 22.0,
     "since": "May 28, 2020",
-    "time_last_payment": "Mar 1, 2022"
+    "time_last_payment": "Mar 1, 2022",
+    "listed": true
   },
   {
     "name": "Artem Napolskih",
     "last_payment": 5.0,
-    "all_time": 140.0,
+    "all_time": 145.0,
     "since": "May 22, 2020",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Kevin Hovsäter",
     "logo": "sponsors/kevin_hovsäter.jpg",
     "last_payment": 75.0,
-    "all_time": 605.0,
+    "all_time": 680.0,
     "since": "May 22, 2020",
-    "time_last_payment": "Mar 2, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Crescer",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "May 10, 2020",
-    "time_last_payment": "May 10, 2020"
+    "time_last_payment": "May 10, 2020",
+    "listed": true
   },
   {
     "name": "Rodrigo Pereira de Mendonça",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "May 9, 2020",
-    "time_last_payment": "May 9, 2020"
+    "time_last_payment": "May 9, 2020",
+    "listed": true
   },
   {
     "name": "Glen A-B",
     "last_payment": 10.0,
-    "all_time": 285.0,
+    "all_time": 305.0,
     "since": "May 5, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Szymon Madeja",
     "last_payment": 0.0,
     "all_time": 70.0,
     "since": "May 5, 2020",
-    "time_last_payment": "Jun 1, 2021"
+    "time_last_payment": "Jun 1, 2021",
+    "listed": true
   },
   {
     "name": "Karel Pavlíček",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Apr 20, 2020",
-    "time_last_payment": "Apr 20, 2020"
+    "time_last_payment": "Apr 20, 2020",
+    "listed": true
   },
   {
     "name": "Massimiliano Bertinetti",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Apr 9, 2020",
-    "time_last_payment": "Apr 9, 2020"
+    "time_last_payment": "Apr 9, 2020",
+    "listed": true
   },
   {
     "name": "Kagi",
     "url": "https://kagi.com",
     "last_payment": 25.0,
-    "all_time": 1200.0,
+    "all_time": 1225.0,
     "since": "Apr 8, 2020",
-    "time_last_payment": "Feb 29, 2024"
+    "time_last_payment": "Mar 30, 2024",
+    "listed": true
   },
   {
     "name": "Jared Smith",
     "url": "https://www.linkedin.com/in/jaredsmithse/",
     "last_payment": 5.0,
-    "all_time": 205.0,
+    "all_time": 210.0,
     "since": "Apr 6, 2020",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Darwin",
     "last_payment": 0.0,
     "all_time": 105.0,
     "since": "Apr 5, 2020",
-    "time_last_payment": "Dec 1, 2021"
+    "time_last_payment": "Dec 1, 2021",
+    "listed": true
   },
   {
     "name": "Mehdi Drissi",
     "last_payment": 0.0,
     "all_time": 25.0,
     "since": "Mar 27, 2020",
-    "time_last_payment": "Mar 27, 2020"
+    "time_last_payment": "Mar 27, 2020",
+    "listed": true
   },
   {
     "name": "Hotmagma",
     "last_payment": 0.0,
     "all_time": 60.0,
     "since": "Mar 16, 2020",
-    "time_last_payment": "Mar 1, 2021"
+    "time_last_payment": "Mar 1, 2021",
+    "listed": true
   },
   {
     "name": "Doxford",
     "last_payment": 0.0,
     "all_time": 1.0,
     "since": "Mar 14, 2020",
-    "time_last_payment": "Mar 14, 2020"
+    "time_last_payment": "Mar 14, 2020",
+    "listed": true
   },
   {
     "name": "Kasper Holbek Jensen",
     "last_payment": 0.0,
     "all_time": 105.0,
     "since": "Mar 11, 2020",
-    "time_last_payment": "Nov 1, 2021"
+    "time_last_payment": "Nov 1, 2021",
+    "listed": true
   },
   {
     "name": "Braydon Kains",
     "last_payment": 0.0,
     "all_time": 100.0,
     "since": "Mar 8, 2020",
-    "time_last_payment": "Oct 1, 2021"
+    "time_last_payment": "Oct 1, 2021",
+    "listed": true
   },
   {
     "name": "RemoteTeam.com",
     "last_payment": 0.0,
     "all_time": 85.0,
     "since": "Feb 29, 2020",
-    "time_last_payment": "Jul 1, 2021"
+    "time_last_payment": "Jul 1, 2021",
+    "listed": true
   },
   {
     "name": "Digital Bank Guide",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Jan 29, 2020",
-    "time_last_payment": "May 2, 2020"
+    "time_last_payment": "May 2, 2020",
+    "listed": true
   },
   {
     "name": "Julien Elbaz",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Jan 11, 2020",
-    "time_last_payment": "Jan 11, 2020"
+    "time_last_payment": "Jan 11, 2020",
+    "listed": true
   },
   {
     "name": "Algolia",
     "last_payment": 0.0,
     "all_time": 51.0,
     "since": "Dec 19, 2019",
-    "time_last_payment": "Dec 19, 2019"
+    "time_last_payment": "Dec 19, 2019",
+    "listed": true
   },
   {
     "name": "Anton Orel",
     "last_payment": 0.0,
     "all_time": 75.0,
     "since": "Nov 26, 2019",
-    "time_last_payment": "Nov 26, 2019"
+    "time_last_payment": "Nov 26, 2019",
+    "listed": true
   },
   {
     "name": "Shield My IP",
     "last_payment": 0.0,
     "all_time": 35.0,
     "since": "Nov 10, 2019",
-    "time_last_payment": "May 12, 2020"
+    "time_last_payment": "May 12, 2020",
+    "listed": true
   },
   {
     "name": "Wesley Moore",
     "last_payment": 0.0,
     "all_time": 50.0,
     "since": "Nov 4, 2019",
-    "time_last_payment": "Aug 2, 2020"
+    "time_last_payment": "Aug 2, 2020",
+    "listed": true
   },
   {
     "name": "Jonathan Gnagy",
     "last_payment": 1.0,
-    "all_time": 89.0,
+    "all_time": 90.0,
     "since": "Oct 31, 2019",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Raels Koder",
     "last_payment": 25.0,
-    "all_time": 1325.0,
+    "all_time": 1350.0,
     "since": "Oct 30, 2019",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Patric Vormstein",
     "last_payment": 0.0,
     "all_time": 95.0,
     "since": "Oct 25, 2019",
-    "time_last_payment": "May 1, 2021"
+    "time_last_payment": "May 1, 2021",
+    "listed": true
   },
   {
     "name": "Takuya Matsunaga",
     "last_payment": 0.0,
     "all_time": 5.0,
     "since": "Oct 24, 2019",
-    "time_last_payment": "Oct 24, 2019"
+    "time_last_payment": "Oct 24, 2019",
+    "listed": true
   },
   {
     "name": "Ryan Prior",
     "url": "https://www.ryanprior.com",
     "last_payment": 5.0,
-    "all_time": 270.0,
+    "all_time": 275.0,
     "since": "Oct 7, 2019",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Austin Vecchio",
     "last_payment": 0.0,
     "all_time": 65.0,
     "since": "Oct 4, 2019",
-    "time_last_payment": "Oct 1, 2020"
+    "time_last_payment": "Oct 1, 2020",
+    "listed": true
   },
   {
     "name": "Michael Lang",
     "last_payment": 0.0,
     "all_time": 75.0,
     "since": "Sep 30, 2019",
-    "time_last_payment": "Sep 30, 2019"
+    "time_last_payment": "Sep 30, 2019",
+    "listed": true
   },
   {
     "name": "Eric",
     "last_payment": 0.0,
     "all_time": 75.0,
     "since": "Sep 26, 2019",
-    "time_last_payment": "Sep 26, 2019"
+    "time_last_payment": "Sep 26, 2019",
+    "listed": true
   },
   {
     "name": "WPsetup",
     "last_payment": 0.0,
     "all_time": 150.0,
     "since": "Sep 2, 2019",
-    "time_last_payment": "Feb 2, 2022"
+    "time_last_payment": "Feb 2, 2022",
+    "listed": true
   },
   {
     "name": "Level UP Solutions",
     "last_payment": 0.0,
     "all_time": 185.0,
     "since": "Sep 1, 2019",
-    "time_last_payment": "Feb 1, 2022"
+    "time_last_payment": "Feb 1, 2022",
+    "listed": true
   },
   {
     "name": "Max Fierke",
     "url": "https://www.maxfierke.com",
     "last_payment": 25.0,
-    "all_time": 1050.0,
+    "all_time": 1075.0,
     "since": "Jul 21, 2019",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "Ben Morrison",
     "last_payment": 0.0,
     "all_time": 15.0,
     "since": "Jul 20, 2019",
-    "time_last_payment": "Jul 20, 2019"
+    "time_last_payment": "Jul 20, 2019",
+    "listed": true
   },
   {
     "name": "Alexis Anand",
     "last_payment": 0.0,
     "all_time": 55.0,
     "since": "Jun 29, 2019",
-    "time_last_payment": "Apr 2, 2020"
+    "time_last_payment": "Apr 2, 2020",
+    "listed": true
   },
   {
     "name": "Bernardo Anderson",
     "last_payment": 0.0,
     "all_time": 36.0,
     "since": "Jun 1, 2019",
-    "time_last_payment": "Nov 1, 2020"
+    "time_last_payment": "Nov 1, 2020",
+    "listed": true
   },
   {
     "name": "Liu Chong",
     "last_payment": 0.0,
     "all_time": 40.0,
     "since": "May 27, 2019",
-    "time_last_payment": "Dec 1, 2019"
+    "time_last_payment": "Dec 1, 2019",
+    "listed": true
   },
   {
     "name": "Kentaro Tanaka",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Apr 1, 2019",
-    "time_last_payment": "Apr 1, 2019"
+    "time_last_payment": "Apr 1, 2019",
+    "listed": true
   },
   {
     "name": "Junyi Wang",
     "last_payment": 0.0,
     "all_time": 35.0,
     "since": "Mar 22, 2019",
-    "time_last_payment": "Sep 1, 2019"
+    "time_last_payment": "Sep 1, 2019",
+    "listed": true
   },
   {
     "name": "Alex Malone",
     "last_payment": 0.0,
     "all_time": 300.0,
     "since": "Mar 15, 2019",
-    "time_last_payment": "May 1, 2019"
+    "time_last_payment": "May 1, 2019",
+    "listed": true
   },
   {
     "name": "Daniel Sokil",
     "last_payment": 0.0,
     "all_time": 20.0,
     "since": "Feb 23, 2019",
-    "time_last_payment": "Feb 23, 2019"
+    "time_last_payment": "Feb 23, 2019",
+    "listed": true
   },
   {
     "name": "George Protacio-Karaszi",
     "last_payment": 0.0,
     "all_time": 220.0,
     "since": "Feb 6, 2019",
-    "time_last_payment": "Oct 1, 2020"
+    "time_last_payment": "Oct 1, 2020",
+    "listed": true
   },
   {
     "name": "Tom Metge",
     "last_payment": 0.0,
     "all_time": 100.0,
     "since": "Jan 15, 2019",
-    "time_last_payment": "Jan 15, 2019"
+    "time_last_payment": "Jan 15, 2019",
+    "listed": true
   },
   {
     "name": "Kristine Robison",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Jan 14, 2019",
-    "time_last_payment": "Jan 14, 2019"
+    "time_last_payment": "Jan 14, 2019",
+    "listed": true
   },
   {
     "name": "Roman Pushkin",
     "last_payment": 0.0,
     "all_time": 300.0,
     "since": "Jan 11, 2019",
-    "time_last_payment": "Mar 25, 2021"
+    "time_last_payment": "Mar 25, 2021",
+    "listed": true
   },
   {
     "name": "epergo",
     "last_payment": 0.0,
     "all_time": 45.0,
     "since": "Jan 2, 2019",
-    "time_last_payment": "Mar 31, 2020"
+    "time_last_payment": "Mar 31, 2020",
+    "listed": true
   },
   {
     "name": "Triplebyte",
     "last_payment": 0.0,
     "all_time": 640.0,
     "since": "Dec 28, 2018",
-    "time_last_payment": "Mar 23, 2024"
+    "time_last_payment": "Apr 3, 2024",
+    "listed": true
   },
   {
     "name": "Mark Sinclair",
     "last_payment": 0.0,
     "all_time": 50.0,
     "since": "Dec 28, 2018",
-    "time_last_payment": "Dec 28, 2018"
+    "time_last_payment": "Dec 28, 2018",
+    "listed": true
   },
   {
     "name": "Tumbler Lock",
     "last_payment": 0.0,
     "all_time": 1500.0,
     "since": "Dec 27, 2018",
-    "time_last_payment": "Sep 1, 2019"
+    "time_last_payment": "Sep 1, 2019",
+    "listed": true
   },
   {
     "name": "David García Alonso",
     "last_payment": 0.0,
     "all_time": 10.0,
     "since": "Dec 19, 2018",
-    "time_last_payment": "Dec 19, 2018"
+    "time_last_payment": "Dec 19, 2018",
+    "listed": true
   },
   {
     "name": "Julien Reichardt",
     "last_payment": 0.0,
     "all_time": 1150.0,
     "since": "Dec 13, 2018",
-    "time_last_payment": "Sep 1, 2022"
+    "time_last_payment": "Sep 1, 2022",
+    "listed": true
   },
   {
     "name": "Hendrik Mans",
     "last_payment": 0.0,
     "all_time": 150.0,
     "since": "Dec 13, 2018",
-    "time_last_payment": "Feb 1, 2020"
+    "time_last_payment": "Feb 1, 2020",
+    "listed": true
   },
   {
     "name": "Blitline",
     "url": "https://www.blitline.com",
     "logo": "sponsors/blitline.png",
     "last_payment": 75.0,
-    "all_time": 4800.0,
+    "all_time": 4875.0,
     "since": "Dec 12, 2018",
-    "time_last_payment": "Mar 1, 2024"
+    "time_last_payment": "Apr 1, 2024",
+    "listed": true
   },
   {
     "name": "nditada",
     "last_payment": 0.0,
     "all_time": 30.0,
     "since": "Dec 12, 2018",
-    "time_last_payment": "May 1, 2019"
+    "time_last_payment": "May 1, 2019",
+    "listed": true
   }
 ]
