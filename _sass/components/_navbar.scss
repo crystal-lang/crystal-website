@@ -7,13 +7,12 @@ body > header {
   padding: var(--padding-xs);
 
   width: 100vw;
-  width: 100cqw;
   display: grid;
   grid-template-columns:
     minmax(
       min-content,
       calc(
-        (100cqw - var(--main-width)) / 2 - var(--padding-xs) - var(--padding-sm)
+        (100vw - var(--main-width)) / 2 - var(--padding-xs) - var(--padding-sm)
       )
     )
     minmax(min-content, var(--main-width)) auto max-content;

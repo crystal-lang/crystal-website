@@ -2,7 +2,6 @@
   @include external-links;
 
   width: 100vw;
-  width: 100cqw;
   text-align: center;
   padding: var(--padding-sm);
   background-color: var(--background-tertiary);
@@ -66,7 +65,7 @@ footer {
   gap: var(--block-flow-md) var(--block-flow-sm);
 
   --container-max: 130ch;
-  --main-width: min(100cqw - 3rem, var(--container-max, 110ch));
+  --main-width: min(100vw - 3rem, var(--container-max, 110ch));
 
   .link-items {
     > h3 {
