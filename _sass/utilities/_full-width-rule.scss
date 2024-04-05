@@ -1,7 +1,6 @@
 .full-width-rule {
   display: grid;
-  grid-template: "container";
-  place-items: center;
+  justify-items: center;
   font-size: 1rem;
 
   &:before {
@@ -11,5 +10,12 @@
     inset-inline: 0;
 
     border-block-end: 0.16ch solid var(--border-color);
+  }
+
+  // FIXME: This workaround with hard-coded margin is for WebKit which apparently
+  // fails to honor `align-items: center` and places `:before` at the top.
+  &:has(.hex):before {
+    transform: translateY(-50%);
+    margin-top: 1.25em;
   }
 }
