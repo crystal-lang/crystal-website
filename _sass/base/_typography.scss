@@ -10,7 +10,7 @@
   font-size: 1.4em;
   font-size: clamp(90%, min(1.4vw, 2.3vh), 120%);
 
-  --link-underline-default: underline clamp(1.8px, 0.06em, 4px);
+  --link-underline-default: underline;
 }
 
 body {
@@ -93,7 +93,8 @@ p {
 :any-link {
   color: var(--link-color);
   text-underline-offset: 0.13em;
-  text-decoration: var(--link-underline, var(--link-underline-default));
+  text-decoration-line: var(--link-underline, var(--link-underline-default));
+  text-decoration-thickness: clamp(1.8px, 0.06em, 4px);
   text-decoration-color: var(--lighter-gray);
   cursor: pointer;
 
