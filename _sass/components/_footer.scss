@@ -189,4 +189,14 @@ nav.footer-section {
     border-block-start: 1.5px solid var(--border-color);
     margin-block-start: calc(-1 * var(--block-flow-sm));
   }
+
+  // FIXME: The following two rules are a workaround for WebKit which would
+  // otherwise not stretch the paragraphs wide enough so that the second one
+  // would be rendered with a line break despite being enough space available.
+  > * {
+    flex-grow: 1;
+  }
+  > :last-child {
+    text-align: right;
+  }
 }
