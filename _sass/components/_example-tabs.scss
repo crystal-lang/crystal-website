@@ -102,7 +102,11 @@
           line-height: var(--line-height-sm);
 
           > a {
-            width: fit-content;
+            // FIXME: This rule is deactivated because it's wonky in WebKit
+            // Apparently `fit-content` isn't calculated properly and the text
+            // regularly includes a line break, even though there would be enough
+            // space to grow.
+            // width: fit-content;
 
             @include link-with-icon(
               url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z'/%3E%3C/svg%3E")
