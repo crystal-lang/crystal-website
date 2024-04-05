@@ -7,5 +7,10 @@
 
   > a {
     @include link-with-icon-themed;
+
+    // FIXME: This is a workaround for WebKit weirdly introducing arbitrary
+    // line breaks
+    // https://github.com/crystal-lang/crystal-website/issues/766
+    white-space: nowrap;
   }
 }
