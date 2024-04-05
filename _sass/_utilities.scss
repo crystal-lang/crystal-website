@@ -21,12 +21,6 @@
   --link-hover-color: var(--lighter-text);
 }
 
-.full-width {
-  width: 100vw;
-  transform: translateX(-50%);
-  margin-left: 50%;
-}
-
 .pill {
   @extend .pill-form;
   font-size: font-size(small);
