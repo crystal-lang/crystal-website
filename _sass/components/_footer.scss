@@ -1,8 +1,7 @@
 .edit-on-github {
   @include external-links;
 
-  width: 100vw;
-  width: 100cqw;
+  max-width: none;
   text-align: center;
   padding: var(--padding-sm);
   background-color: var(--background-tertiary);
@@ -19,34 +18,23 @@
 }
 
 footer {
+  --container-max: 130ch;
   display: flex;
   flex-direction: column;
   gap: var(--block-flow-md);
+  align-items: center;
+  padding-inline: 1.5rem;
 
   padding-block: var(--block-flow-sm);
   --link-color: var(--light-text);
   --link-hover-color: var(--lighter-text);
 
-  position: relative;
-
-  &::after {
-    content: "";
-
-    @extend .full-width;
-
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    right: 0;
-
-    border-top: 1.5px solid var(--border-color);
-    background-color: var(--background-secondary);
-  }
+  border-top: 1.5px solid var(--border-color);
+  background-color: var(--background-secondary);
 
   > * {
-    z-index: 1;
+    width: 100%;
+    max-width: var(--container-max, 120ch);
     line-height: var(--line-height-md);
     font-size: font-size(small);
   }
@@ -64,9 +52,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(max(9em, 17%), 1fr));
   gap: var(--block-flow-md) var(--block-flow-sm);
-
-  --container-max: 130ch;
-  --main-width: min(100cqw - 3rem, var(--container-max, 110ch));
 
   .link-items {
     > h3 {
@@ -195,8 +180,6 @@ nav.footer-section {
 
   &::before {
     content: "";
-
-    @extend .full-width;
 
     display: block;
     position: absolute;

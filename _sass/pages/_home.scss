@@ -1,7 +1,7 @@
 .layout--home > header {
   color-scheme: dark;
   grid-template-columns:
-    1fr minmax(min-content, var(--main-width)) minmax(0, min-content)
+    1fr minmax(min-content, var(--container-max, 120ch)) minmax(0, min-content)
     1fr;
   grid-template-areas:
     ". main    util    util"

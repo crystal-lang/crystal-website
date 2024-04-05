@@ -18,17 +18,7 @@ body {
   min-height: 100vh;
   background-color: var(--background-main);
 
-  --main-width: min(100cqw - 3rem, var(--container-max, 120ch));
-
-  // This is a workaround for 100vw not accounting for the width of the scrollbar gutter
-  // https://www.smashingmagazine.com/2023/12/new-css-viewport-units-not-solve-classic-scrollbar-problem/#avoiding-the-classic-scrollbar-problem
-  container-type: inline-size;
   overflow: auto;
-}
-
-body > * {
-  width: var(--main-width);
-  margin-inline: auto;
 }
 
 body > header {
@@ -44,6 +34,9 @@ body > .edit-on-github {
 
 body > main {
   @include blockflow(var(--block-flow-lg));
+  margin-inline: 1.5rem;
+  align-self: center;
+  max-width: var(--container-max, 120ch);
 
   margin-block-end: var(--block-flow-lg);
 
