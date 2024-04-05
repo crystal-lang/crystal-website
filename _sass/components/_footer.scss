@@ -190,6 +190,11 @@ nav.footer-section {
     margin-block-start: calc(-1 * var(--block-flow-sm));
   }
 
+  a[href="https://manas.tech"]
+  {
+    white-space: nowrap;
+  }
+
   // FIXME: The following two rules are a workaround for WebKit which would
   // otherwise not stretch the paragraphs wide enough so that the second one
   // would be rendered with a line break despite being enough space available.
