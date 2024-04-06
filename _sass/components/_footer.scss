@@ -50,7 +50,7 @@ footer {
   @extend .ui-link;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(max(9em, 17%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(clamp(17%, 9em, 100%), 1fr));
   gap: var(--block-flow-md) var(--block-flow-sm);
 
   .link-items {

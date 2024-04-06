@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(min(100%, var(--min, 25em)), 1fr)
+    minmax(min(100%, min(100%, var(--min, 25em))), 1fr)
   );
 
   gap: var(--block-flow-sm);
