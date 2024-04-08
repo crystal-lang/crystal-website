@@ -1,6 +1,6 @@
 .topics {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14em), 1fr));
 
   column-gap: var(--padding-md);
   row-gap: var(--padding-lg);

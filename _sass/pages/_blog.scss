@@ -54,14 +54,16 @@
 
   @media (max-width: 49em) {
     grid-template-columns: 1fr;
-
     > .releases-info {
-      flex-direction: row;
       order: -1;
 
-      > .hex {
-        margin-bottom: 0;
-        margin-right: var(--padding-sm);
+      @media (min-width: 22em) {
+        flex-direction: row;
+
+        > .hex {
+          margin-bottom: 0;
+          margin-right: var(--padding-sm);
+        }
       }
     }
   }

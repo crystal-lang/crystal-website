@@ -1,6 +1,6 @@
 .book-authors {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20em), 1fr));
 
   column-gap: var(--padding-md);
   row-gap: var(--padding-lg);
