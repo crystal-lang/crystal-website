@@ -18,6 +18,6 @@ end
 address = server.bind_tcp(8080)
 puts "Listening on http://#{address}"
 
-# This call block until the process is terminated
+# This call blocks until the process is terminated
 server.listen
 ```
