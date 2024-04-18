@@ -9,7 +9,7 @@ const startLogoAnimation = function() {
 const setIPhoneDataAttribute = function() {
   let platform = navigator?.userAgent || navigator?.platform || 'unknown'
 
- if(/iPhone/.test(platform) || true) {
+ if(/iPhone/.test(platform)) {
   document.documentElement.dataset.uaIphone = true;
  }
 }
