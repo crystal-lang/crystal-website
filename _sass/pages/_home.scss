@@ -34,7 +34,9 @@
 
   color: var(--primary-text);
 
-  &::before {
+  // FIXME: Disabled as a workaround to fix rendering in Safari on iPhone
+  // See https://github.com/crystal-lang/crystal-website/issues/758#issuecomment-2053688906
+  html:not([data-ua-iphone]) &::before {
     content: "";
     position: absolute;
     display: block;
@@ -49,10 +51,8 @@
     background-image: url(/assets/home/pattern.svg);
     background-repeat: no-repeat;
 
-    // FIXME: Disabled as a workaround to fix rendering in Safari on iPhone
-    // See https://github.com/crystal-lang/crystal-website/issues/758#issuecomment-2053688906
-    // background-size: clamp(30vw, max(80rem, 50vw), 250vw) auto;
-    // background-position: clamp(-15vw, -40rem + 50vw, 0px) top;
+    background-size: clamp(30vw, max(80rem, 50vw), 250vw) auto;
+    background-position: clamp(-15vw, -40rem + 50vw, 0px) top;
   }
 
   > * {
