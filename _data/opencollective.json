@@ -1,5 +1,31 @@
 [
   {
+    "name": "Arseny",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "Apr 22, 2024",
+    "time_last_payment": "Apr 22, 2024",
+    "listed": true
+  },
+  {
+    "name": "Social followers",
+    "url": "https://www.socialfollowers.uk/",
+    "last_payment": 25.0,
+    "all_time": 25.0,
+    "since": "Apr 19, 2024",
+    "time_last_payment": "Apr 19, 2024",
+    "listed": true
+  },
+  {
+    "name": "DigiEdusta",
+    "url": "https://digiedusta.fi",
+    "last_payment": 5.0,
+    "all_time": 5.0,
+    "since": "Apr 16, 2024",
+    "time_last_payment": "Apr 16, 2024",
+    "listed": true
+  },
+  {
     "name": "Todd Sundsted",
     "last_payment": 25.0,
     "all_time": 25.0,
@@ -194,9 +220,9 @@
   {
     "name": "Daniel Salazar",
     "last_payment": 10.0,
-    "all_time": 60.0,
+    "all_time": 70.0,
     "since": "Oct 15, 2023",
-    "time_last_payment": "Mar 15, 2024",
+    "time_last_payment": "Apr 15, 2024",
     "listed": true
   },
   {
@@ -522,9 +548,9 @@
     "name": "Hiptoro",
     "url": "https://hiptoro.com",
     "last_payment": 5.0,
-    "all_time": 75.0,
+    "all_time": 80.0,
     "since": "Jan 17, 2023",
-    "time_last_payment": "Mar 17, 2024",
+    "time_last_payment": "Apr 17, 2024",
     "listed": true
   },
   {
@@ -802,9 +828,9 @@
     "name": "PROXYONE LLC",
     "url": "https://proxyone.eu/",
     "last_payment": 5.0,
-    "all_time": 130.0,
+    "all_time": 135.0,
     "since": "Feb 21, 2022",
-    "time_last_payment": "Mar 21, 2024",
+    "time_last_payment": "Apr 21, 2024",
     "listed": true
   },
   {
@@ -931,9 +957,9 @@
     "name": "maltidsbarometeret",
     "url": "https://maltidsbarometeret.dk",
     "last_payment": 5.0,
-    "all_time": 150.0,
+    "all_time": 155.0,
     "since": "Oct 19, 2021",
-    "time_last_payment": "Mar 19, 2024",
+    "time_last_payment": "Apr 19, 2024",
     "listed": true
   },
   {
@@ -1186,10 +1212,10 @@
   },
   {
     "name": "lowkey",
-    "last_payment": 10.0,
-    "all_time": 2620.0,
+    "last_payment": 75.0,
+    "all_time": 2695.0,
     "since": "Jun 12, 2021",
-    "time_last_payment": "Mar 18, 2024",
+    "time_last_payment": "Apr 18, 2024",
     "listed": true
   },
   {
@@ -1543,7 +1569,7 @@
   },
   {
     "name": "anapsix",
-    "url": "https://blog.random.io",
+    "url": "https://blog.random.io/",
     "last_payment": 5.0,
     "all_time": 205.0,
     "since": "Dec 2, 2020",
@@ -1767,7 +1793,7 @@
     "last_payment": 0.0,
     "all_time": 295.0,
     "since": "Aug 24, 2020",
-    "time_last_payment": "Apr 15, 2024",
+    "time_last_payment": "Apr 23, 2024",
     "listed": true
   },
   {
@@ -1878,10 +1904,10 @@
   },
   {
     "name": "Aanand Natarajan",
-    "last_payment": 0.0,
-    "all_time": 10.0,
+    "last_payment": 10.0,
+    "all_time": 20.0,
     "since": "Jun 12, 2020",
-    "time_last_payment": "Dec 16, 2021",
+    "time_last_payment": "Apr 18, 2024",
     "listed": true
   },
   {
@@ -2319,7 +2345,7 @@
     "last_payment": 0.0,
     "all_time": 640.0,
     "since": "Dec 28, 2018",
-    "time_last_payment": "Apr 15, 2024",
+    "time_last_payment": "Apr 23, 2024",
     "listed": true
   },
   {
