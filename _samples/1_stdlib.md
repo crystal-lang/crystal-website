@@ -1,5 +1,5 @@
 ---
-short_name: HTTP Server
+short_name: Rich stdlib
 title: Batteries included
 description: |
   Crystal's standard library comes with a whole range of libraries that let you start working on your project right away.
