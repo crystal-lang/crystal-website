@@ -5,7 +5,12 @@ require "./sponsors"
 LEVELS = [5000, 2000, 1000, 500, 250, 150, 75, 25, 10, 5, 1, 0]
 
 def level(sponsor : Sponsor)
-  LEVELS.find { |amount| amount <= sponsor.last_payment.to_i }.not_nil!
+  level = LEVELS.find { |amount| amount <= sponsor.last_payment.to_i }
+  return level if level
+
+  # Refunds appear as negative payments. Unfortunately the level is lost.
+  Log.warn { "Can't find level for '#{sponsor.name}' paying '#{sponsor.last_payment}'" }
+  0
 end
 
 all_sponsors_map = Hash(UInt64, Sponsor).new
