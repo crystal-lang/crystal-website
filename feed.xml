@@ -31,7 +31,7 @@ section: blog
       {%- if post.excerpt and post.excerpt != empty %}
       <summary type="html">{{ post.excerpt | strip_html | normalize_whitespace | xml_escape }}</summary>
       {%- endif %}
-      <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">{{ post.content | strip | xml_escape }}</content>
+      <content type="html" xml:base="{{ site.url | xml_escape }}">{{ post.content | strip | xml_escape }}</content>
     </entry>
   {%- endfor %}
 </feed>
