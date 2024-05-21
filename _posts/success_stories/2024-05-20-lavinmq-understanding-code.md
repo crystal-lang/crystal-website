@@ -9,7 +9,8 @@ categories: success
 
 **Building LavinMQ in Crystal was an active choice, as maintaining control over the codebase was a high priority. A decade of learning has prioritized fast updates and easy bug fixes. At the same time, choosing Crystal provided the opportunity to enhance application performance.**
 
-[LavinMQ](https://lavinmq.com/) was built by experienced developers from 84codes, founders of one of the largest [cloud messaging platforms](https://www.cloudamqp.com/), CloudAMQP. By prioritizing the insurance of stable communication and reliable message delivery in and between services, LavinMQ was built to process data quickly and efficiently while allowing decoupled system components to operate independently and scale as needed.
+[LavinMQ](https://lavinmq.com/) was built by experienced developers from 84codes, founders of one of the largest cloud messaging platforms, [CloudAMQP](https://www.cloudamqp.com/). By prioritizing the insurance of stable communication and reliable message delivery in and between services, LavinMQ was built to process data quickly and efficiently while allowing decoupled system components to operate independently and scale as needed.
+
 
 LavinMQ can handle numerous connections between the publisher, the queue, and the consumer, which is often a requirement in e.g., IoT architectures. It’s an open-source message broker, pre-optimized to be extremely fast compared to other brokers, and can easily handle 1 million messages per second.
 
@@ -35,11 +36,27 @@ But the other half, as mentioned in [their blog](https://lavinmq.com/blog/crysta
 
 3. Crystal's stdlib and compiler are written in Crystal itself. One of Crystal's golden characteristics is its readability, making it possible to read the code that is going to be run by the program without having to resort to another, typically lower-level  language.
 
-The latter is the main point of this post. In fact, the documentation of the standard library points to the code, making the performance implications of calling a certain method explicit. As an example that will come up later, the documentation for the `file` method of the `Digest` class can be found [here](https://crystal-lang.org/api/1.12.1/Digest.html#file%28file_name%3APath%7CString%29%3Aself-instance-method). Clicking on [[View source](https://github.com/crystal-lang/crystal/blob/4cea10199/src/digest/digest.cr#L214)] we land in the method’s code.
+The latter is the main point of this post. In fact, the documentation of the standard library points to the code, making the performance implications of calling a certain method explicit. For example, look at the [documentation for `Digest.file`](https://crystal-lang.org/api/1.12.1/Digest.html#file%28file_name%3APath%7CString%29%3Aself-instance-method). Clicking on [*View source*](https://github.com/crystal-lang/crystal/blob/4cea10199/src/digest/digest.cr#L214) we land in the method’s code.
 
-The importance of being able to read, understand, and even contribute to the language and its stdlib is exemplified in [one](https://github.com/crystal-lang/crystal/pull/13780) of the [several PRs](https://github.com/crystal-lang/crystal/pulls?q=is%3Apr+author%3Acarlhoerberg+) that 84codes contributed to Crystal. Details are not important, but if you’re curious, they noted that in the aforementioned `Digest` class’s method there was a duplication of buffering. The following picture shows the contribution: you can find in green the added line and comment explaining why it makes sense to remove the buffering in the `io` object.
 
-![diff](/assets/blog/2024-05-20-digest-diff.png)
+The importance of being able to read, understand, and even contribute to the language and its stdlib is exemplified in [one](https://github.com/crystal-lang/crystal/pull/13780) of the [several PRs](https://github.com/crystal-lang/crystal/pulls?q=is%3Apr+author%3Acarlhoerberg+) that 84codes contributed to Crystal. Details are not important, but if you’re curious, they noted that in the aforementioned `Digest` class’s method there was a duplication of buffering. The following extract shows the main part of the contribution: you can find in green the added line and comment explaining why it makes sense to remove the buffering in the `io` object.
+
+
+```diff
+diff --git a/src/digest/digest.cr b/src/digest/digest.cr
+index e6a401e90545..bc38599da7f8 100644
+--- a/src/digest/digest.cr
++++ b/src/digest/digest.cr
+@@ -213,6 +213,7 @@ abstract class Digest
+   # Reads the file's content and updates the digest with it.
+   def file(file_name : Path | String) : self
+     File.open(file_name) do |io|
++      # `#update` works with big buffers so there's no need for additional read buffering in the file
++      io.read_buffering = false
+       self << io
+     end
+   end
+```
 
 One little line, yet it can have a noticeable impact on the application. Having the same language for the application and the libraries the code depends upon is a great advantage in understanding the behavior of the code and its performance implications.
 
