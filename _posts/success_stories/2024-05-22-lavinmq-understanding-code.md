@@ -2,7 +2,7 @@
 title: "LavinMQ: Understanding code to get the best performance"
 summary: "Crystal was chosen for maintaining control over the entire codebase."
 author: beta-ziliani
-image: /assets/blog/2024-05-22-lavinmq-terminal.png
+image: /assets/blog/2024-05-20-lavinmq-terminal.png
 company: 84codes
 categories: success
 ---
