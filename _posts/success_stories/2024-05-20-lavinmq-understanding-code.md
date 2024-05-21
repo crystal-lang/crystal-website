@@ -11,7 +11,6 @@ categories: success
 
 [LavinMQ](https://lavinmq.com/) was built by experienced developers from 84codes, founders of one of the largest cloud messaging platforms, [CloudAMQP](https://www.cloudamqp.com/). By prioritizing the insurance of stable communication and reliable message delivery in and between services, LavinMQ was built to process data quickly and efficiently while allowing decoupled system components to operate independently and scale as needed.
 
-
 LavinMQ can handle numerous connections between the publisher, the queue, and the consumer, which is often a requirement in e.g., IoT architectures. It’s an open-source message broker, pre-optimized to be extremely fast compared to other brokers, and can easily handle 1 million messages per second.
 
 LavinMQ includes all the features people want the most and leaves just a small memory footprint, supporting:
@@ -38,9 +37,7 @@ But the other half, as mentioned in [their blog](https://lavinmq.com/blog/crysta
 
 The latter is the main point of this post. In fact, the documentation of the standard library points to the code, making the performance implications of calling a certain method explicit. For example, look at the [documentation for `Digest.file`](https://crystal-lang.org/api/1.12.1/Digest.html#file%28file_name%3APath%7CString%29%3Aself-instance-method). Clicking on [*View source*](https://github.com/crystal-lang/crystal/blob/4cea10199/src/digest/digest.cr#L214) we land in the method’s code.
 
-
-The importance of being able to read, understand, and even contribute to the language and its stdlib is exemplified in [one](https://github.com/crystal-lang/crystal/pull/13780) of the [several PRs](https://github.com/crystal-lang/crystal/pulls?q=is%3Apr+author%3Acarlhoerberg+) that 84codes contributed to Crystal. Details are not important, but if you’re curious, they noted that in the aforementioned `Digest` class’s method there was a duplication of buffering. The following extract shows the main part of the contribution: you can find in green the added line and comment explaining why it makes sense to remove the buffering in the `io` object.
-
+The importance of being able to read, understand, and even contribute to the language and its stdlib is exemplified in [one](https://github.com/crystal-lang/crystal/pull/13780) of the [several PRs](https://github.com/crystal-lang/crystal/pulls?q=is%3Apr+author%3Acarlhoerberg+) that 84codes contributed to Crystal. Details are not important, but if you’re curious, they noted that in the aforementioned `Digest` class’s method there was a duplication of buffering. The following extract shows the main part of the contribution; the diff with the added line and comment explaining why it makes sense to remove the buffering in the `io` object.
 
 ```diff
 diff --git a/src/digest/digest.cr b/src/digest/digest.cr
@@ -62,6 +59,6 @@ One little line, yet it can have a noticeable impact on the application. Having 
 
 Before closing, we’d like to note that 84codes is not only responsible for numerous improvements to the standard library: 84codes is also the main sponsor supporting the development of Crystal. In order to push the limits of the language even further, at the time of writing they are supporting a large effort to improve [the parallel execution](https://crystal-lang.org/2024/02/09/84codes-manas-mt/) of Crystal programs. Perhaps the next version of LavinMQ will push the limits even further with the help of the Crystal Team!
 
-{% include components/testimonial-profile.html handle="carl" role="CEO, 84codes" %}
+{% include components/testimonial-profile.html handle="carlhoerberg" role="CEO, 84codes" %}
 
 > Crystal uniquely balances readability and performance. Moreover, we are able to boost our application performance by being able to understand the underlying code that runs our application.
