@@ -1,6 +1,6 @@
 ---
 title: "LavinMQ: Understanding code to get the best performance"
-summary: "Building LavinMQ in Crystal was an active choice, as maintaining control over the codebase was a high priority."
+summary: "Crystal was chosen for maintaining control over the entire codebase."
 author: beta-ziliani
 image: /assets/blog/2024-05-20-lavinmq-terminal.png
 company: 84codes
