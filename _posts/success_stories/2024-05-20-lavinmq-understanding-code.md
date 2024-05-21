@@ -7,7 +7,7 @@ company: 84codes
 categories: success
 ---
 
-**Building LavinMQ in Crystal was an active choice, as maintaining control over the codebase was a high priority. A decade of learning has prioritized fast updates and easy bug fixes. At the same time, choosing Crystal provided the opportunity to enhance application performance.**
+Building LavinMQ in Crystal was an active choice, as maintaining control over the codebase was a high priority. A decade of learning has prioritized fast updates and easy bug fixes. At the same time, choosing Crystal provided the opportunity to enhance application performance.
 
 [LavinMQ](https://lavinmq.com/) was built by experienced developers from 84codes, founders of one of the largest cloud messaging platforms, [CloudAMQP](https://www.cloudamqp.com/). By prioritizing the insurance of stable communication and reliable message delivery in and between services, LavinMQ was built to process data quickly and efficiently while allowing decoupled system components to operate independently and scale as needed.
 
