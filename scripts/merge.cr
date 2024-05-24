@@ -85,7 +85,7 @@ def write_csv(filename, sponsors)
       csv.row sponsor.logo,
         sponsor.name,
         sponsor.url,
-        "#{currency}#{(last_payment < 0 ? 0 : last_payment).format}",
+        "#{currency}#{last_payment.clamp(0..).format}",
         "#{currency}#{sponsor.all_time.to_i.format}",
         sponsor.since.to_s("%b %-d, %Y"),
         level(sponsor)
