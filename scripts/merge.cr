@@ -80,10 +80,12 @@ def write_csv(filename, sponsors)
     sponsors.each do |sponsor|
       currency = sponsor.currency || "$"
 
+      last_payment = sponsor.last_payment.to_i
+
       csv.row sponsor.logo,
         sponsor.name,
         sponsor.url,
-        "#{currency}#{sponsor.last_payment.to_i.format}",
+        "#{currency}#{(last_payment < 0 ? 0 : last_payment).format}",
         "#{currency}#{sponsor.all_time.to_i.format}",
         sponsor.since.to_s("%b %-d, %Y"),
         level(sponsor)
