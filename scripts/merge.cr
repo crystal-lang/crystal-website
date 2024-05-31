@@ -70,7 +70,7 @@ end
 all_sponsors.sort_by! { |s| {-s.last_payment, -s.all_time, s.since, s.name} }
 
 write_csv("sponsors.csv", all_sponsors.select(&.listed?))
-write_csv("sponsor_logos_l.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i > 1000 })
+write_csv("sponsor_logos_l.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i > 1000 && sponsor.logo })
 write_csv("sponsor_logos_s.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i.in?(250...750) })
 
 def write_csv(filename, sponsors)
