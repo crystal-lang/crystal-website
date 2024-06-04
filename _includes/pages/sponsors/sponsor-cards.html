@@ -1,10 +1,10 @@
 <ul class="cards-list">
   {%- for sp in site.data.sponsor_logos_l %}
-    <li class="sponsor-card">
-      <a href="{{ sp.url }}" class="name" rel="sponsored nofollow">{{ sp.name }}</a>
-      <img src="/assets/{{ sp.logo }}" alt="Logo of {{sp.name}}">
-      <span class="last-payment" title="Last payment">{{ sp.last_payment }} per month since {{ sp.since }}</span>
-      <span class="all-time" title="All-time total">{{ sp.all_time }}</span>
-    </li>
+  <li class="sponsor-card">
+    <a href="{{ sp.url }}" class="name" rel="sponsored nofollow">{{ sp.name }}</a>
+    {% include components/sponsor-image.html logo=sp.logo %}
+    <span class="last-payment" title="Last payment">{{ sp.last_payment }} per month since {{ sp.since }}</span>
+    <span class="all-time" title="All-time total">{{ sp.all_time }}</span>
+  </li>
   {%- endfor %}
 </ul>
