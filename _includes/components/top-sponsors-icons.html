@@ -1,7 +1,11 @@
 <div class="top-sponsors top-sponsors--l">
   {%- for sponsor in site.data.sponsor_logos_l %}
     <a href="{{ sponsor.url }}" rel="nofollow sponsored">
-      <img src="/assets/{{ sponsor.logo }}" alt="">
+      {%- if sponsor.logo %}
+        <img src="/assets/{{ sponsor.logo }}" alt="">
+      {%- else %}
+        <img src="/assets/sponsors/empty.svg" alt="">
+      {%- endif %}
       {{- sponsor.name }}
     </a>
   {%- endfor %}
@@ -9,7 +13,11 @@
 <div class="top-sponsors top-sponsors--s">
   {%- for sponsor in site.data.sponsor_logos_s %}
     <a href="{{ sponsor.url }}" rel="nofollow sponsored">
-      <img src="/assets/{{ sponsor.logo }}" alt="">
+      {%- if sponsor.logo %}
+        <img src="/assets/{{ sponsor.logo }}" alt="">
+      {%- else %}
+        <img src="/assets/sponsors/empty.svg" alt="">
+      {%- endif %}
       {{- sponsor.name }}
     </a>
   {%- endfor %}
