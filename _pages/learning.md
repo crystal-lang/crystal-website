@@ -41,8 +41,8 @@ to that of the many members who tried already.
 Keep your Crystal skills sharp by learning how to build real things. Practice interesting programming challenges like building your own Git, Redis, Docker, and even SQLite from scratch.
 
 > **NOTE:**
-> Registration is free, and with the link below you can get a 40% discount when upgrading to a paid plan.
+> Registration to CodeCrafters is free. With the link below you can get a 40% discount when upgrading to a paid plan.
 >
-> 60% of what you pay will come back to help developing Crystal!
+> If you opt to pay, 60% of the income will come back to the Crystal team to help developing Crystal!
 
 [Discounted access](https://app.codecrafters.io/join?via=crystal-team)
