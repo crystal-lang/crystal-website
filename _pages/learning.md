@@ -33,3 +33,16 @@ Get your hands on Crystal with a series of exercises, and compare your solution
 to that of the many members who tried already.
 
 [Crystal track on Exercism](https://exercism.org/tracks/crystal/)
+
+<span id="codecrafters"></span>
+
+### CodeCrafters
+
+Keep your Crystal skills sharp by learning how to build real things. Practice interesting programming challenges like building your own Git, Redis, Docker, and even SQLite from scratch.
+
+> **NOTE:**
+> Registration is free, and with the link below you can get a 40% discount when upgrading to a paid plan.
+>
+> 60% of what you pay will come back to help developing Crystal!
+
+[Discounted access](https://app.codecrafters.io/join?via=crystal-team)
