@@ -258,7 +258,7 @@
   },
   {
     "name": "Daniel Salazar",
-    "last_payment": 10.0,
+    "last_payment": 0.0,
     "all_time": 70.0,
     "since": "Oct 15, 2023",
     "time_last_payment": "Apr 15, 2024",
@@ -268,9 +268,9 @@
     "name": "TopCasinoSearch",
     "url": "https://www.topcasinosearch.com/",
     "last_payment": 5.0,
-    "all_time": 40.0,
+    "all_time": 45.0,
     "since": "Oct 13, 2023",
-    "time_last_payment": "May 13, 2024",
+    "time_last_payment": "Jun 13, 2024",
     "listed": true
   },
   {
@@ -520,9 +520,9 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5.0,
-    "all_time": 80.0,
+    "all_time": 85.0,
     "since": "Feb 13, 2023",
-    "time_last_payment": "May 13, 2024",
+    "time_last_payment": "Jun 13, 2024",
     "listed": true
   },
   {
@@ -855,7 +855,7 @@
   },
   {
     "name": "Anton Maminov",
-    "url": "https://twitter.com/AntonMaminov",
+    "url": "https://github.com/mamantoha",
     "last_payment": 5.0,
     "all_time": 140.0,
     "since": "Feb 23, 2022",
@@ -962,9 +962,9 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5.0,
-    "all_time": 155.0,
+    "all_time": 160.0,
     "since": "Nov 11, 2021",
-    "time_last_payment": "May 11, 2024",
+    "time_last_payment": "Jun 11, 2024",
     "listed": true
   },
   {
@@ -1194,9 +1194,9 @@
   {
     "name": "Joseph Method",
     "last_payment": 5.0,
-    "all_time": 175.0,
+    "all_time": 180.0,
     "since": "Jul 9, 2021",
-    "time_last_payment": "May 9, 2024",
+    "time_last_payment": "Jun 9, 2024",
     "listed": true
   },
   {
@@ -1268,9 +1268,9 @@
     "name": "Windesol Sähkön Kilpailutus",
     "url": "https://windesol.fi",
     "last_payment": 5.0,
-    "all_time": 180.0,
+    "all_time": 185.0,
     "since": "Jun 8, 2021",
-    "time_last_payment": "May 8, 2024",
+    "time_last_payment": "Jun 8, 2024",
     "listed": true
   },
   {
@@ -1831,7 +1831,7 @@
     "last_payment": 0.0,
     "all_time": 305.0,
     "since": "Aug 24, 2020",
-    "time_last_payment": "Jun 8, 2024",
+    "time_last_payment": "Jun 15, 2024",
     "listed": true
   },
   {
@@ -2383,7 +2383,7 @@
     "last_payment": 0.0,
     "all_time": 640.0,
     "since": "Dec 28, 2018",
-    "time_last_payment": "Jun 8, 2024",
+    "time_last_payment": "Jun 15, 2024",
     "listed": true
   },
   {
