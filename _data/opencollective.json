@@ -1,5 +1,14 @@
 [
   {
+    "name": "IGComment",
+    "url": "https://igcomment.com",
+    "last_payment": 10.0,
+    "all_time": 10.0,
+    "since": "Jun 21, 2024",
+    "time_last_payment": "Jun 21, 2024",
+    "listed": true
+  },
+  {
     "name": "Buy 5 star Google Reviews by SidesMedia",
     "url": "https://sidesmedia.com/buy-google-reviews/",
     "last_payment": 5.0,
@@ -588,9 +597,9 @@
     "name": "Hiptoro",
     "url": "https://hiptoro.com",
     "last_payment": 5.0,
-    "all_time": 85.0,
+    "all_time": 90.0,
     "since": "Jan 17, 2023",
-    "time_last_payment": "May 17, 2024",
+    "time_last_payment": "Jun 17, 2024",
     "listed": true
   },
   {
@@ -866,9 +875,9 @@
     "name": "PROXYONE LLC",
     "url": "https://proxyone.eu/",
     "last_payment": 5.0,
-    "all_time": 140.0,
+    "all_time": 145.0,
     "since": "Feb 21, 2022",
-    "time_last_payment": "May 21, 2024",
+    "time_last_payment": "Jun 21, 2024",
     "listed": true
   },
   {
@@ -995,9 +1004,9 @@
     "name": "maltidsbarometeret",
     "url": "https://maltidsbarometeret.dk",
     "last_payment": 5.0,
-    "all_time": 160.0,
+    "all_time": 165.0,
     "since": "Oct 19, 2021",
-    "time_last_payment": "May 19, 2024",
+    "time_last_payment": "Jun 19, 2024",
     "listed": true
   },
   {
@@ -1251,9 +1260,9 @@
   {
     "name": "lowkey",
     "last_payment": 75.0,
-    "all_time": 2770.0,
+    "all_time": 2845.0,
     "since": "Jun 12, 2021",
-    "time_last_payment": "May 18, 2024",
+    "time_last_payment": "Jun 18, 2024",
     "listed": true
   },
   {
@@ -1831,7 +1840,7 @@
     "last_payment": 0.0,
     "all_time": 305.0,
     "since": "Aug 24, 2020",
-    "time_last_payment": "Jun 15, 2024",
+    "time_last_payment": "Jun 23, 2024",
     "listed": true
   },
   {
@@ -2383,7 +2392,7 @@
     "last_payment": 0.0,
     "all_time": 640.0,
     "since": "Dec 28, 2018",
-    "time_last_payment": "Jun 15, 2024",
+    "time_last_payment": "Jun 23, 2024",
     "listed": true
   },
   {
