@@ -46,7 +46,7 @@ team = "crystal-lang"
 opencollective = OpenCollective::API.new(team)
 sponsors = SponsorsBuilder.new
 
-dateOfGrace = Time.utc - 3.months
+dateOfGrace = Time.utc - 2.months
 opencollective.members.each do |member|
   next unless member.role == "BACKER"
 
@@ -58,7 +58,7 @@ opencollective.members.each do |member|
   url = member.website || member.twitter || member.github
   logo = member.image
 
-  # We consider a member as not paying anything if it's inactive or it haven't sponsored in the last 3 months
+  # We consider a member as not paying anything if it's inactive or it haven't sponsored in the last 2 months
   if member.isActive && member.lastTransactionAt > dateOfGrace
     amount = member.lastTransactionAmount
   else
