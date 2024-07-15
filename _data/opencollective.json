@@ -36,8 +36,7 @@
   },
   {
     "name": "Buy 5 star Google Reviews by SidesMedia",
-    "url": "https://sidesmedia.com/buy-google-reviews/",
-    "last_payment": 5.0,
+    "last_payment": 0.0,
     "all_time": 5.0,
     "since": "May 12, 2024",
     "time_last_payment": "May 12, 2024",
@@ -231,8 +230,7 @@
   },
   {
     "name": "LightCDN",
-    "url": "https://www.lightcdn.com",
-    "last_payment": 10.0,
+    "last_payment": 0.0,
     "all_time": 60.0,
     "since": "Dec 14, 2023",
     "time_last_payment": "May 11, 2024",
@@ -300,9 +298,9 @@
     "name": "TopCasinoSearch",
     "url": "https://www.topcasinosearch.com/",
     "last_payment": 5.0,
-    "all_time": 45.0,
+    "all_time": 50.0,
     "since": "Oct 13, 2023",
-    "time_last_payment": "Jun 13, 2024",
+    "time_last_payment": "Jul 13, 2024",
     "listed": true
   },
   {
@@ -551,9 +549,9 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5.0,
-    "all_time": 85.0,
+    "all_time": 90.0,
     "since": "Feb 13, 2023",
-    "time_last_payment": "Jun 13, 2024",
+    "time_last_payment": "Jul 13, 2024",
     "listed": true
   },
   {
@@ -993,9 +991,9 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5.0,
-    "all_time": 160.0,
+    "all_time": 165.0,
     "since": "Nov 11, 2021",
-    "time_last_payment": "Jun 11, 2024",
+    "time_last_payment": "Jul 11, 2024",
     "listed": true
   },
   {
@@ -1225,9 +1223,9 @@
   {
     "name": "Joseph Method",
     "last_payment": 5.0,
-    "all_time": 180.0,
+    "all_time": 185.0,
     "since": "Jul 9, 2021",
-    "time_last_payment": "Jun 9, 2024",
+    "time_last_payment": "Jul 9, 2024",
     "listed": true
   },
   {
@@ -1860,7 +1858,7 @@
     "last_payment": 0.0,
     "all_time": 305.0,
     "since": "Aug 24, 2020",
-    "time_last_payment": "Jul 8, 2024",
+    "time_last_payment": "Jul 15, 2024",
     "listed": true
   },
   {
@@ -2411,7 +2409,7 @@
     "last_payment": 0.0,
     "all_time": 640.0,
     "since": "Dec 28, 2018",
-    "time_last_payment": "Jul 8, 2024",
+    "time_last_payment": "Jul 15, 2024",
     "listed": true
   },
   {
