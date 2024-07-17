@@ -18,9 +18,13 @@ Crystal on Windows requires the following prerequisites:
 * Windows 10 SDK, which is available as a component from the above installers.
 * [Developer mode is enabled](https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development) in Windows Settings.
 
-The `.zip` file is the portable package and can be extracted into any location. To use Crystal from any location, the installation directory should be manually added to the `PATH` environment variable.
+Next download a crystal release file (see above).
+
+The `.zip` file is the portable package and can be extracted into any location. To use Crystal from that location, either call its crystal.exe directly, or
+the installation directory can be manually added to the `PATH` environment variable.
 
 The `.exe` file is the GUI installer; simply follow the instructions in the installation wizard. The GUI installer generates a warning if it detects that the above prerequisites aren't met.
+By default it adds crystal to the `PATH` environment variable.
 
 ## Upgrade
 
