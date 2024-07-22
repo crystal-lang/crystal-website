@@ -20,7 +20,7 @@ Crystal on Windows requires the following prerequisites:
 
 Next download a crystal release file (see above).
 
-The `.zip` file is the portable package and can be extracted into any location. To use Crystal from that location, either call its crystal.exe directly, or
+The `.zip` file is the portable package and can be extracted into any location. To use Crystal from that location, either call its `crystal.exe` directly, or
 the installation directory can be manually added to the `PATH` environment variable.
 
 The `.exe` file is the GUI installer; simply follow the instructions in the installation wizard. The GUI installer generates a warning if it detects that the above prerequisites aren't met.
