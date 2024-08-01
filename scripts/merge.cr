@@ -35,7 +35,12 @@ end
       sponsors, overrides = sponsors.partition(&.overrides.nil?)
       if update_other_sponsor_totals
         sponsors.map! do |sponsor|
-          sponsor.all_time = SPONSOR_DATA[sponsor.id] + sponsor.last_payment
+          prev_value = SPONSOR_DATA[sponsor.id]?
+          if !prev_value
+            Log.warn { "Can't find sponsor '#{sponsor.name}' in sponsors.csv" }
+            prev_value = 0
+          end
+          sponsor.all_time = prev_value + sponsor.last_payment
           sponsor
         end
       end
