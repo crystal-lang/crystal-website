@@ -8,9 +8,8 @@
 </div>
 <div class="top-sponsors top-sponsors--s">
   {%- for sponsor in site.data.sponsor_logos_s %}
-    <a href="{{ sponsor.url }}" rel="nofollow sponsored">
-      <img src="/assets/{{ sponsor.logo }}" alt="">
-      {{- sponsor.name }}
+    <a href="{{ sponsor.url }}" rel="nofollow sponsored" title="{{- sponsor.name }}">
+      <img src="/assets/{{ sponsor.logo }}" alt="{{- sponsor.name }}">
     </a>
   {%- endfor %}
 </div>
