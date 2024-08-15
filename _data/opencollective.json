@@ -1,5 +1,14 @@
 [
   {
+    "name": "Thunderclap.com",
+    "url": "https://thunderclap.com/",
+    "last_payment": 25.0,
+    "all_time": 25.0,
+    "since": "Aug 14, 2024",
+    "time_last_payment": "Aug 14, 2024",
+    "listed": true
+  },
+  {
     "name": "Buy Google Reviews",
     "url": "https://buyreviewz.com/buy-google-reviews",
     "logo": "sponsors/buy_google_reviews.jpg",
@@ -316,9 +325,9 @@
     "name": "TopCasinoSearch",
     "url": "https://www.topcasinosearch.com/",
     "last_payment": 5.0,
-    "all_time": 50.0,
+    "all_time": 55.0,
     "since": "Oct 13, 2023",
-    "time_last_payment": "Jul 13, 2024",
+    "time_last_payment": "Aug 13, 2024",
     "listed": true
   },
   {
@@ -558,9 +567,9 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5.0,
-    "all_time": 90.0,
+    "all_time": 95.0,
     "since": "Feb 13, 2023",
-    "time_last_payment": "Jul 13, 2024",
+    "time_last_payment": "Aug 13, 2024",
     "listed": true
   },
   {
@@ -1000,9 +1009,9 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5.0,
-    "all_time": 165.0,
+    "all_time": 170.0,
     "since": "Nov 11, 2021",
-    "time_last_payment": "Jul 11, 2024",
+    "time_last_payment": "Aug 11, 2024",
     "listed": true
   },
   {
@@ -1232,9 +1241,9 @@
   {
     "name": "Joseph Method",
     "last_payment": 5.0,
-    "all_time": 185.0,
+    "all_time": 190.0,
     "since": "Jul 9, 2021",
-    "time_last_payment": "Jul 9, 2024",
+    "time_last_payment": "Aug 9, 2024",
     "listed": true
   },
   {
@@ -1866,7 +1875,7 @@
     "last_payment": 0.0,
     "all_time": 305.0,
     "since": "Aug 24, 2020",
-    "time_last_payment": "Aug 8, 2024",
+    "time_last_payment": "Aug 15, 2024",
     "listed": true
   },
   {
@@ -2417,7 +2426,7 @@
     "last_payment": 0.0,
     "all_time": 640.0,
     "since": "Dec 28, 2018",
-    "time_last_payment": "Aug 8, 2024",
+    "time_last_payment": "Aug 15, 2024",
     "listed": true
   },
   {
