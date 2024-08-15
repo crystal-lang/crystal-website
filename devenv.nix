@@ -22,7 +22,11 @@
 
   pre-commit.hooks = {
     markdownlint.enable = true;
-    prettier.enable = true;
+    prettier = {
+      enable = true;
+      settings = {
+        write = true;
+      };
+    };
   };
-  pre-commit.settings.prettier.write = true;
 }
