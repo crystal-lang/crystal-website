@@ -122,7 +122,7 @@ SHA256   1.34M (744.61ns) (± 0.52%)   225B/op   1.38× slower
 Blake3   1.85M (539.81ns) (± 1.22%)  80.0B/op        fastest
 ```
 
-And… the performance gain is almost entirely gone.
+And… performance is crashing down.
 
 ## What is going on?
 
