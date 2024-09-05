@@ -12,7 +12,7 @@ To my surprise, performance was pretty bad, and this post is the written legacy 
 
 ## Let’s benchmark
 
-One of the points for BLAKE3 is that it’s magnitudes faster than alternative hash digests; the authors claim almost 14 times faster than SHA256 for example. I wrote a quick benchmark, comparing `Digest::Blake3` to `Digest::SHA256` (backed by OpenSSL) that is usually my default choice for my use cases, for example hash a session id made of 32 bytes.
+One of the points for BLAKE3 is that it’s magnitudes faster than alternative hash digests; the authors claim almost 14 times faster than SHA256 for example. I wrote a quick benchmark, comparing `Digest::Blake3` to `Digest::SHA256` (backed by OpenSSL) that is usually my default choice for my use cases, for example to hash a session id made of 32 bytes.
 
 ```crystal
 require "benchmark"
@@ -41,7 +41,7 @@ And the winner is… SHA256! What?
 
 The benchmark shows that `Digest::Blake3` allocates 2.13KB of memory in the HEAP for each iteration. Looking into the BLAKE3 algorithm, this is by design: the algorithm needs almost 2KB of state to compute the hash digest. That’s a lot of memory, and such a benchmark allocates memory just to throw it away immediately. Repeated HEAP allocations slow things down, as it puts pressure on the GC (it needs to regularly mark/sweep the memory which is a slow and blocking operation).
 
-> [!TIP]
+> **NOTE:** Tip
 > Take away: the design of `Digest` isn’t playing nice with algorithms that need lots of memory, at least for small strings.
 
 We only need the hexstring to be allocated in the HEAP, the 2KB are allocated and thrown away so we can try to put them on the stack and call the C functions directly. Let’s verify if it improves the situation.
@@ -136,8 +136,8 @@ crystal build --release --emit llvm-ir --no-debug bench.cr
 
 The above command will generate a `bench.ll` file in the current directory. We build in release mode so that LLVM will optimize the code, and tell Crystal to not generate debug information to improve the readability. Sadly, I couldn't find anything weird there.
 
-> [!NOTE]
-> While I’m writing this blog post I notice that the LLVM IR does exhibit the exact same issue as the disassembly below. I have no idea how I didn’t notice it… maybe I forgot `--release` :facepalm:
+> **NOTE:**
+> While I’m writing this blog post I notice that the LLVM IR does exhibit the exact same issue as the disassembly below. I have no idea how I didn’t notice it… maybe I forgot `--release` 🤦
 
 Let’s go deeper and inspect the generated assembly for my CPU. We can disassemble the executable with `objdump -d` for example, and this time I immediately noticed something weird: the function calls `Blake3::Hasher.new` followed by pages of MOV instructions, while the disassembly of the direct C function calls are just a few instructions and function calls.
 
@@ -219,7 +219,7 @@ Performance is finally on par with calling the C functions directly. It means th
 
 ## What’s happening
 
-The struct is initialized then the 2KB are *copied* using too many assembly instructions to count them. Sure, it all happens on the stack, but it takes a awful lot of CPU time to copy all that, and it appears to do so *twice*? No wonder performance gets destroyed.
+The struct is first initialized, then the 2KB are *copied* using too many assembly instructions to count them. Sure, it all happens on the stack, but it takes a awful lot of CPU time to copy all that, and it appears to do so *twice*? No wonder performance gets destroyed.
 
 Structs are initialized exactly like classes are: through constructor methods. While classes return a reference (one pointer) structs return the value itself that must be copied which can be an expensive operation. This is the origin of the problem. The Crystal codegen always generates a constructor method that looks like that:
 
@@ -250,5 +250,5 @@ We saw that LLVM sometimes optimizes the copy away and sometimes doesn’t. But 
 * When the ivar is an `UInt64` or `UInt64[1]` (64-bit) the assembly changes slightly (a few MOV and LEA instructions more) despite the struct being exactly the same size than the pointer and the same alignment;
 * When the ivar is a `UInt64[2]` or two pointers (128-bit), the assembly starts to involve some XMM registers to copy the struct.
 
-> [!TIP]
+> **NOTE:** Tip
 > The struct is a free abstraction (in terms of runtime) when it wraps one pointer. It involves some overhead as soon as it wraps anything else or more data.
