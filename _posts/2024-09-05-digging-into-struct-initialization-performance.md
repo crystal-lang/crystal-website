@@ -41,10 +41,7 @@ And the winner is… SHA256! What?
 
 The benchmark shows that `Digest::Blake3` allocates 2.13KB of memory in the HEAP for each iteration. Looking into the BLAKE3 algorithm, this is by design: the algorithm needs almost 2KB of state to compute the hash digest. That’s a lot of memory, and such a benchmark allocates memory just to throw it away immediately. Repeated HEAP allocations slow things down, as it puts pressure on the GC (it needs to regularly mark/sweep the memory which is a slow and blocking operation).
 
-> **NOTE:** Tip
-> Take away: the design of `Digest` isn’t playing nice with algorithms that need lots of memory, at least for small strings.
-
-We only need the hexstring to be allocated in the HEAP, the 2KB are allocated and thrown away so we can try to put them on the stack and call the C functions directly. Let’s verify if it improves the situation.
+We only need the hexstring to be allocated in the HEAP. The 2KB are allocated and thrown away, so maybe we can try to put them on the stack and call the C functions directly? Let’s verify if it improves the situation.
 
 ```crystal
 require "benchmark"
@@ -72,7 +69,7 @@ SHA256   1.33M (754.01ns) (± 1.09%)   225B/op   3.40× slower
 Blake3   4.51M (221.76ns) (± 2.57%)  80.0B/op        fastest
 ```
 
-We now only allocate 80 bytes for each digest (for the hexstring) and BLAKE3 is much faster! We’re far from the 14× claim, but the data to hash is small, and the C library chose the SSE4.1 assembly for my CPU; the AVX512 assembly would likely be faster, but my CPU doesn’t support it.
+We now only allocate 80 bytes for each digest (for the hexstring) and BLAKE3 is much faster! We’re far from the 14× claim, but the data to hash is small, and the C library chose the SSE4.1 assembly for my CPU; the AVX512 assembly could be faster, but my CPU doesn’t support it.
 
 ## Let’s refactor as idiomatic Crystal
 
