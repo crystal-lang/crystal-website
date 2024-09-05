@@ -14,7 +14,7 @@ To my surprise, performance was pretty bad, and this post is the written legacy 
 
 One of the points for BLAKE3 is that it’s magnitudes faster than alternative hash digests; the authors claim almost 14 times faster than SHA256 for example. I wrote a quick benchmark, comparing `Digest::Blake3` to `Digest::SHA256` (backed by OpenSSL) that is usually my default choice for my use cases, for example hash a session id made of 32 bytes.
 
-```ruby
+```crystal
 require "benchmark"
 require "blake3"
 require "digest/sha256"
@@ -46,7 +46,7 @@ The benchmark shows that `Digest::Blake3` allocates 2.13KB of memory in the HEAP
 
 We only need the hexstring to be allocated in the HEAP, the 2KB are allocated and thrown away so we can try to put them on the stack and call the C functions directly. Let’s verify if it improves the situation.
 
-```ruby
+```crystal
 require "benchmark"
 require "blake3"
 require "digest/sha256"
@@ -78,7 +78,7 @@ We now only allocate 80 bytes for each digest (for the hexstring) and BLAKE3 is 
 
 With the performance back, I went on with refactoring the shard, wrapping the C functions inside a `struct` so we get a nice, idiomatic and optimized Crystal. At best we can use the struct directly, for example in the one time uses of `Digest::Blake3.hexdigest`. At worst I’ll embed it in the class for the yielding and streaming cases that will need to allocate 2KB in the HEAP, but the longer the message to hash, the less impactful the initial HEAP allocation is.
 
-```ruby
+```crystal
 require "benchmark"
 require "blake3"
 require "digest/sha256"
@@ -205,7 +205,7 @@ All the MOV instructions look like we are… copying the struct?
 
 I tried to allocate the struct on the stack and call an `init` method on it (it merely calls `#initialize` but we can’t call it directly because `#initialize` methods are protected). The only change in the `blake3` method is:
 
-```ruby
+```crystal
 hasher = uninitialized Blake3Hasher
 hasher.init
 ```
@@ -223,7 +223,7 @@ The struct is initialized then the 2KB are *copied* using too many assembly inst
 
 Structs are initialized exactly like classes are: through constructor methods. While classes return a reference (one pointer) structs return the value itself that must be copied which can be an expensive operation. This is the origin of the problem. The Crystal codegen always generates a constructor method that looks like that:
 
-```ruby
+```crystal
 struct Blake3Hasher
   def self.new(*args, **kwargs) : self
     value = uninitialized self
