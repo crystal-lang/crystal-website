@@ -8,7 +8,7 @@ tags: [language,performance]
 
 I toyed with BLAKE3 some months ago. I wanted to verify how much faster was BLAKE3 versus SHA256 in Crystal, and see if it would bring some free improvement. Luckily there is [a shard](https://github.com/didactic-drunk/blake3.cr) wrapping the [official library](https://github.com/BLAKE3-team/BLAKE3) that is highly optimized with custom assembly for different CPU features (SSE, AVX2, NEON …).
 
-To my surprise, performance was pretty bad, and this post is the written legacy of the quest to understand why. Be prepared to dig into technical details and how language design can impact performance.
+To my surprise, performance was pretty bad. This post is the written legacy of the quest to understand why. Be prepared to dig into technical details and how language design can impact performance.
 
 ## Let’s benchmark
 
@@ -30,7 +30,7 @@ Benchmark.ips do |x|
 end
 ```
 
-```
+```text
 SHA256   1.33M (753.33ns) (± 0.91%)    224B/op        fastest
 Blake3   1.21M (827.21ns) (± 0.79%)  2.13kB/op   1.10× slower
 ```
@@ -60,7 +60,7 @@ end
 Benchmark.ips do |x|
   bytes = Random::Secure.random_bytes(32)
   x.report("SHA256") { Digest::SHA256.hexdigest(bytes) }
-  x.report("Blake3") { blake3_hexstring(bytes) }
+  x.report("Blake3 (hexstring)") { blake3_hexstring(bytes) }
 end
 ```
 
