@@ -10,9 +10,20 @@ I toyed with BLAKE3 some months ago. I wanted to verify how much faster was BLAK
 
 To my surprise, performance was pretty bad. This post is the written legacy of the quest to understand why. Be prepared to dig into technical details and how language design can impact performance.
 
+Here's a `shard.yml` if you want to try to run the benchmarks at home:
+
+```yml
+name: blake3-struct-test
+version: 0.1.0
+dependencies:
+  blake3:
+    github: didactic-drunk/blake3.cr
+    commit: d7ac0b7ff8f766b528cc99170664402518dd78b4
+```
+
 ## Let’s benchmark
 
-One of the points for BLAKE3 is that it’s magnitudes faster than alternative hash digests; the authors claim almost 14 times faster than SHA256 for example. I wrote a quick benchmark, comparing `Digest::Blake3` to `Digest::SHA256` (backed by OpenSSL) that is usually my default choice for my use cases, for example to hash a session id made of 32 bytes.
+One of selling the points for BLAKE3 is that it’s magnitudes faster than alternative hash digests; the authors claim almost 14 times faster than SHA256 for example. I wrote a quick benchmark, comparing `Digest::Blake3` to `Digest::SHA256` (backed by OpenSSL) that is usually my default choice for my use cases, for example to hash a session id made of 32 bytes.
 
 ```crystal
 require "benchmark"
