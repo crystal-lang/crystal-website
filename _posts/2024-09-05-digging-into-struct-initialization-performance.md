@@ -6,7 +6,7 @@ categories: technical
 tags: [language,performance]
 ---
 
-I toyed with BLAKE3 some months ago. I wanted to verify how much faster was BLAKE3 versus SHA256 in Crystal, and see if it would bring some free improvement. Luckily there is [a shard](https://github.com/didactic-drunk/blake3.cr) wrapping the [official library](https://github.com/BLAKE3-team/BLAKE3) that is highly optimized with custom assembly for different CPU features (SSE, AVX2, NEON …).
+I started toying with BLAKE3 and I quickly wanted to assess how much faster it was compared to SHA256 in Crystal, and see if it would bring some free improvement. Luckily there is [a shard](https://github.com/didactic-drunk/blake3.cr) wrapping the [official library](https://github.com/BLAKE3-team/BLAKE3) that is highly optimized with custom assembly for different CPU features (SSE, AVX2, NEON …).
 
 To my surprise, performance was pretty bad. This post is the written legacy of the quest to understand why. Be prepared to dig into technical details and how language design can impact performance.
 
@@ -23,7 +23,7 @@ dependencies:
 
 ## Let’s benchmark
 
-One of selling the points for BLAKE3 is that it’s magnitudes faster than alternative hash digests; the authors claim almost 14 times faster than SHA256 for example. I wrote a quick benchmark, comparing `Digest::Blake3` to `Digest::SHA256` (backed by OpenSSL) that is usually my default choice for my use cases, for example to hash a session id made of 32 bytes.
+One of the selling points for BLAKE3 is that it’s magnitudes faster than alternative hash digests; the authors claim almost 14 times faster than SHA256 for example. I wrote a quick benchmark, comparing `Digest::Blake3` to `Digest::SHA256` (backed by OpenSSL) that is usually my default choice for my use cases, for example to hash a session id made of 32 bytes.
 
 ```crystal
 require "benchmark"
