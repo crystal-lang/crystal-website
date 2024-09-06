@@ -20,6 +20,7 @@ require "blake3"
 require "digest/sha256"
 
 class Digest::Blake3 < ::Digest
+  # inject the class methods because the shard doesn't
   extend ::Digest::ClassMethods
 end
 
@@ -59,12 +60,12 @@ end
 
 Benchmark.ips do |x|
   bytes = Random::Secure.random_bytes(32)
-  x.report("SHA256") { Digest::SHA256.hexdigest(bytes) }
-  x.report("Blake3 (hexstring)") { blake3_hexstring(bytes) }
+  x.report("SHA256") { Digest::SHA256.hexstring(bytes) }
+  x.report("Blake3") { blake3_hexstring(bytes) }
 end
 ```
 
-```
+```text
 SHA256   1.33M (754.01ns) (± 1.09%)   225B/op   3.40× slower
 Blake3   4.51M (221.76ns) (± 2.57%)  80.0B/op        fastest
 ```
@@ -114,7 +115,7 @@ Benchmark.ips do |x|
 end
 ```
 
-```
+```text
 SHA256   1.34M (744.61ns) (± 0.52%)   225B/op   1.38× slower
 Blake3   1.85M (539.81ns) (± 1.22%)  80.0B/op        fastest
 ```
@@ -127,8 +128,8 @@ We still only allocate 80B in the HEAP because structs are allocated on the stac
 
 There are no more hints to understand what’s happening here. We must dig into the generated code to do any further investigation. I generated the LLVM IR for the above benchmark: 
 
-```
-crystal build --release --emit llvm-ir --no-debug bench.cr
+```console
+$ crystal build --release --emit llvm-ir --no-debug bench.cr
 ```
 
 The above command will generate a `bench.ll` file in the current directory. We build in release mode so that LLVM will optimize the code, and tell Crystal to not generate debug information to improve the readability. Sadly, I couldn't find anything weird there.
@@ -140,7 +141,7 @@ Let’s go deeper and inspect the generated assembly for my CPU. We can disassem
 
 Here is the disassembly for the slow `struct` case. Looking into the rest of the disassembly, the same is happening inside `Blake3Hasher.new` when initializing `@hasher`: too many repeated MOV instructions to count.
 
-```
+```text
 000000000003cf70 <~procProc(Nil)@bench.cr:35>:
    (... snip...)
    3cfa0:       e8 0b 1d 00 00          callq  3ecb0 <*Blake3Hasher::new:Blake3Hasher>
@@ -162,9 +163,9 @@ Here is the disassembly for the slow `struct` case. Looking into the rest of the
    (... snip ...)
 ```
 
-Here is the disassembly for the optimized version (the inlined C calls). It’s so small that I don’t need to snip anything. Even if you don’t know assembly (I don’t know much myself): it reserves space on the stack (0x7b0), saves/restores callee-saved registers and calls the functions:
+Here is the disassembly for a release build (LLVM inlined the C calls). It’s so small that I don’t need to snip anything. It's quite readable, even if you don’t know assembly (I don’t know much myself): it reserves space on the stack (0x7b0), saves/restores callee-saved registers and calls the functions:
 
-```
+```text
 000000000003cfb0 <~procProc(Nil)@bench.cr:44>:
    3cfb0:       41 57                   push   %r15
    3cfb2:       41 56                   push   %r14
@@ -200,14 +201,14 @@ Here is the disassembly for the optimized version (the inlined C calls). It’s 
 
 All the MOV instructions look like we are… copying the struct?
 
-I tried to allocate the struct on the stack and call an `init` method on it (it merely calls `#initialize` but we can’t call it directly because `#initialize` methods are protected). The only change in the `blake3` method is:
+I tried to allocate the struct on the stack and call an `init` method on it —it merely calls `#initialize` but we can’t call it directly because `#initialize` methods are protected in Crystal. The only change in the `blake3_hexstring` method is:
 
 ```crystal
 hasher = uninitialized Blake3Hasher
 hasher.init
 ```
 
-```
+```text
 SHA256 944.38k (  1.06µs) (± 0.97%)   225B/op   3.50× slower
 Blake3   3.30M (302.91ns) (± 2.24%)  80.0B/op        fastest
 ```
@@ -216,7 +217,7 @@ Performance is finally on par with calling the C functions directly. It means th
 
 ## What’s happening
 
-The struct is first initialized, then the 2KB are *copied* using too many assembly instructions to count them. Sure, it all happens on the stack, but it takes a awful lot of CPU time to copy all that, and it appears to do so *twice*? No wonder performance gets destroyed.
+The struct is first initialized, then the 2KB are *copied* using too many assembly instructions to count them. Sure, it all happens on the stack, but it takes an awful lot of CPU time to copy all that, and it appears to do so *twice*? No wonder performance gets destroyed.
 
 Structs are initialized exactly like classes are: through constructor methods. While classes return a reference (one pointer) structs return the value itself that must be copied which can be an expensive operation. This is the origin of the problem. The Crystal codegen always generates a constructor method that looks like that:
 
@@ -231,20 +232,20 @@ end
 ```
 
 > [!TIP]
-> The problem originates from the Ruby syntax. The `#new` constructor is very nice and applies well to classes, but the design applies poorly to Crystal structs as it encourages copies that won’t be optimized by LLVM. Other languages, such as C, Go or Rust don’t have this problem because they’re not object-oriented languages: you declare a variable (undefined) then call a function to initialize it (with a pointer to the struct).
+> We can say that the problem originates from the Ruby syntax. The `.new` constructor is very nice and applies well to classes, but the design applies poorly to Crystal structs as it encourages copies that won’t be optimized by LLVM. Other languages, such as C, Go or Rust don’t have this problem because they’re not object-oriented languages: you declare a variable (undefined) then call a function to initialize it (with a pointer to the struct).
 
 So here is the crux of the issue: when we initialize a struct, the struct is copied on the stack. It's barely noticeable when it's a few bytes but it’s painful once the struct goes bigger. LLVM inlines everything into a single method in release mode, and it does optimize the struct & its methods away, but it won’t optimize the copy away, which is surprising.
 
 ## Can we fix it?
 
-Instead of generating a constructor for structs, the Crystal codegen could declare the variable on the stack then call `#initialize` as I did above. But that may be easier said than done; if you have any custom constructors on your structs, the issue will come back for example, though maybe [Ameba](https://github.com/crystal-ameba/ameba) could warn about it?
+Instead of generating a constructor for structs, the Crystal codegen could declare the variable on the stack then call `#initialize` as I did above. Still, that may be easier said than done; if you have any custom constructors on your structs, the issue will come back for example, but maybe [Ameba](https://github.com/crystal-ameba/ameba) could warn about it?
 
 ## Bonus
 
-We saw that LLVM sometimes optimizes the copy away and sometimes doesn’t. But what's the threshold? I ran some tests and found out that:
+We saw that LLVM sometimes optimizes the copy away and sometimes doesn’t. But what's the threshold? I ran some tests and reading the disassembly or release builds I found out that:
 
 * When the ivar is a `Pointer` (64-bit), the struct is fully abstracted away;
-* When the ivar is an `UInt64` or `UInt64[1]` (64-bit) the assembly changes slightly (a few MOV and LEA instructions more) despite the struct being exactly the same size than the pointer and the same alignment;
+* When the ivar is an `UInt64` or `UInt64[1]` (64-bit) the assembly changes slightly (a few MOV and LEA instructions more) despite the struct being exactly the same size than the pointer with the same alignment;
 * When the ivar is a `UInt64[2]` or two pointers (128-bit), the assembly starts to involve some XMM registers to copy the struct.
 
 > **NOTE:** Tip
