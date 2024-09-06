@@ -231,7 +231,7 @@ struct Blake3Hasher
 end
 ```
 
-> [!TIP]
+> **INFO:** Tip
 > We can say that the problem originates from the Ruby syntax. The `.new` constructor is very nice and applies well to classes, but the design applies poorly to Crystal structs as it encourages copies that won’t be optimized by LLVM. Other languages, such as C, Go or Rust don’t have this problem because they’re not object-oriented languages: you declare a variable (undefined) then call a function to initialize it (with a pointer to the struct).
 
 So here is the crux of the issue: when we initialize a struct, the struct is copied on the stack. It's barely noticeable when it's a few bytes but it’s painful once the struct goes bigger. LLVM inlines everything into a single method in release mode, and it does optimize the struct & its methods away, but it won’t optimize the copy away, which is surprising.
