@@ -2,7 +2,7 @@ require "csv"
 require "log"
 require "./sponsors"
 
-LEVELS = [5000, 2000, 1000, 500, 250, 150, 75, 25, 10, 5, 1, 0]
+LEVELS = [5000, 2000, 750, 350, 75, 25, 10, 5, 1, 0]
 
 def level(sponsor : Sponsor)
   level = LEVELS.find { |amount| amount <= sponsor.last_payment.to_i }
@@ -75,8 +75,9 @@ end
 all_sponsors.sort_by! { |s| {-s.last_payment, -s.all_time, s.since, s.name} }
 
 write_csv("sponsors.csv", all_sponsors.select(&.listed?))
-write_csv("sponsor_logos_l.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i > 1000 })
-write_csv("sponsor_logos_s.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i.in?(250...1000) })
+write_csv("sponsor_logos_l.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i >= 750 })
+# NOTE: It should be 350, but we kept 250 to include PlaceOS
+write_csv("sponsor_logos_s.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i.in?(250...750) })
 
 def write_csv(filename, sponsors)
   open_csv(filename) do |csv|
