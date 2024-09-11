@@ -63,7 +63,7 @@ and below is a list of all the humans and organizations that have made it possib
 
   <dt>How long are contributors listed?</dt>
   <dd markdown="1">
-  Contributors are listed forever, but after three months of the last payment they are considered as contributing $0.
+  Contributors are listed forever, but after two months of the last payment they are considered as contributing $0.
   </dd>
 
   <dt>There seems to be an error, how can I fix it?</dt>
