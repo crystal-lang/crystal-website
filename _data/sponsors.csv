@@ -1,9 +1,9 @@
 logo,name,url,last_payment,all_time,since,level
 sponsors/84.png,84codes,https://www.84codes.com/,"€22,000","€369,000","Apr 1, 2018",5000
 manas-orange.svg,Manas.Tech,https://manas.tech/,"$5,000","$1,300,000","Jun 19, 2009",5000
-sponsors/buy_instagram_followers_thunderclapit.png,Buy Instagram Followers Thunderclapit,https://thunderclap.it/buy-instagram-followers,$750,"$1,500","Aug 7, 2024",500
-sponsors/buy_google_reviews.jpg,Buy Google Reviews,https://buyreviewz.com/buy-google-reviews,$750,$750,"Aug 7, 2024",500
-sponsors/placeos.png,PlaceOS,https://place.technology/,$250,"$8,750","Jul 26, 2021",250
+sponsors/buy_google_reviews.jpg,Buy Google Reviews,https://buyreviewz.com/buy-google-reviews,$750,"$1,500","Aug 7, 2024",750
+sponsors/buy_instagram_followers_thunderclapit.png,Buy Instagram Followers Thunderclapit,https://thunderclap.it/buy-instagram-followers,$750,"$1,500","Aug 7, 2024",750
+sponsors/placeos.png,PlaceOS,https://place.technology/,$250,"$8,750","Jul 26, 2021",75
 sponsors/blitline.png,Blitline,https://www.blitline.com,$75,"$5,250","Dec 12, 2018",75
 sponsors/ryan_maki.png,Ryan Maki,,$75,"$3,450","Dec 2, 2020",75
 ,lowkey,,$75,"$2,995","Jun 12, 2021",75
@@ -28,7 +28,7 @@ sponsors/jeremy_woertink.png,Jeremy Woertink,,$75,$650,"Mar 30, 2023",75
 ,Social followers,https://www.socialfollowers.uk/,$25,$100,"Apr 19, 2024",25
 ,LeoFame,https://leofame.com/buy-instagram-followers,$25,$100,"Jun 28, 2024",25
 ,Thunderclap.com,https://thunderclap.com/,$25,$50,"Aug 14, 2024",25
-,Buzzoid - Buy Instagram Followers,,$25,$25,"Aug 25, 2024",25
+,Buzzoid - Buy Instagram Followers,https://buzzoid.com/buy-instagram-followers/,$25,$25,"Aug 25, 2024",25
 ,pitosalas,,$20,$825,"Dec 20, 2017",10
 ,Werner Stein,,$15,$545,"Jan 24, 2021",10
 ,Andrey A. Konovalov,http://sysadminblog.ru,$14,$428,"Mar 6, 2018",10
@@ -84,7 +84,7 @@ sponsors/jeremy_woertink.png,Jeremy Woertink,,$75,$650,"Mar 30, 2023",75
 ,igorkasyanchuk,https://phototo.com.ua/,$5,$205,"Nov 2, 2017",5
 ,Martin Honermeyer,,$5,$205,"Jul 24, 2018",5
 ,Agloks,,$5,$195,"Jul 8, 2021",5
-,Joseph Method,,$5,$190,"Jul 9, 2021",5
+,Joseph Method,,$5,$195,"Jul 9, 2021",5
 ,elliot,,$5,$185,"Dec 9, 2018",5
 ,Taletidskortnu,https://taletidskort.nu,$5,$185,"Aug 25, 2021",5
 ,devtrackers.gg,https://devtrackers.gg,$5,$180,"Dec 9, 2018",5
@@ -92,7 +92,7 @@ sponsors/jeremy_woertink.png,Jeremy Woertink,,$75,$650,"Mar 30, 2023",75
 ,nilsding,https://nilsding.org,$5,$175,"Jan 18, 2019",5
 ,mavu,,$5,$175,"Jan 23, 2019",5
 ,maltidsbarometeret,https://maltidsbarometeret.dk,$5,$175,"Oct 19, 2021",5
-,Michael Wagner,,$5,$170,"Nov 11, 2021",5
+,Michael Wagner,,$5,$175,"Nov 11, 2021",5
 ,karupanerura,http://karupas.org/,$5,$155,"May 4, 2019",5
 ,PROXYONE LLC,https://proxyone.eu/,$5,$155,"Feb 21, 2022",5
 ,Anton Maminov,https://github.com/mamantoha,$5,$155,"Feb 23, 2022",5
@@ -104,10 +104,10 @@ sponsors/jeremy_woertink.png,Jeremy Woertink,,$75,$650,"Mar 30, 2023",75
 ,Wolfgang Klinger,,$5,$110,"Mar 9, 2020",5
 ,CasinoWizard,https://thecasinowizard.com/,$5,$110,"Oct 19, 2022",5
 ,Hiptoro,https://hiptoro.com,$5,$100,"Jan 17, 2023",5
-,Bubble Shooter,https://www.bubbleshooter.net/,$5,$95,"Feb 13, 2023",5
+,Bubble Shooter,https://www.bubbleshooter.net/,$5,$100,"Feb 13, 2023",5
 ,Soc-Promotion,https://soc-promotion.com/instagram/likes,$5,$95,"Mar 2, 2023",5
 ,AusmalbildTV,https://ausmalbildtv.de/,$5,$75,"Feb 10, 2023",5
-,TopCasinoSearch,https://www.topcasinosearch.com/,$5,$55,"Oct 13, 2023",5
+,TopCasinoSearch,https://www.topcasinosearch.com/,$5,$60,"Oct 13, 2023",5
 ,Unlimited Marketing,https://Unlimitedmarketing.net,$5,$45,"Nov 29, 2023",5
 ,SnapTik,https://snaptik.pro/id,$5,$45,"Dec 23, 2023",5
 ,Celebian,https://celebian.com/,$5,$45,"Jan 9, 2024",5
@@ -115,7 +115,7 @@ sponsors/jeremy_woertink.png,Jeremy Woertink,,$75,$650,"Mar 30, 2023",75
 ,Blastup,https://blastup.com/buy-instagram-likes,$5,$40,"Jan 25, 2024",5
 ,APKGosh,https://apkhihe.com/,$5,$35,"Feb 23, 2024",5
 ,Fulgurance,https://github.com/fulgurance,$5,$35,"Mar 6, 2024",5
-,No-code Web Scraper,https://automatio.co/,$5,$16,"Aug 23, 2024",5
+,No-code Web Scraper,https://automatio.ai/,$5,$16,"Aug 23, 2024",5
 ,Supercocuk,https://supercocuk.org/,$5,$15,"Jun 25, 2024",5
 ,Friesi,,$5,$5,"Aug 5, 2024",5
 ,Que Narras,https://www.quenarras.com/,$5,$5,"Sep 3, 2024",5
