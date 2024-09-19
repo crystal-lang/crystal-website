@@ -3,6 +3,7 @@ title: "The Power of Crystal: A language for humans and computers @ Helvetic Rub
 author: straight-shoota
 summary: "A talk by Johannes Müller about Crystal at a Ruby Conference in Switzerland"
 categories: community
+image: "/assets/blog/2024/2024-09-19 helvetic-ruby power of crystal.jpg"
 tags: [talk, ruby, helvetic-ruby, conference]
 ---
 
@@ -20,5 +21,3 @@ During the event I got to talk to many people about Crystal.
 The exposure had a very wide range: Some had never heard of Crystal, others had wanted to learn more and try it out, and quite a few were already experienced using it in production.
 
 ![](/assets/blog/2024/2024-09-19 helvetic-ruby johannes müller.jpg)
-
-![](/assets/blog/2024/2024-09-19 helvetic-ruby power of crystal.jpg)
