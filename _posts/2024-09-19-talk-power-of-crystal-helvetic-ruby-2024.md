@@ -7,7 +7,7 @@ image: "/assets/blog/2024/2024-09-19 helvetic-ruby power of crystal.jpg"
 tags: [talk, ruby, helvetic-ruby, conference]
 ---
 
-A couple months ago I gave a talk at [Helvetic Ruby 2024](https://helvetic-ruby.ch/2024) about Crystal.
+I gave a talk at [Helvetic Ruby 2024](https://helvetic-ruby.ch/2024) about Crystal.
 It's tailored to the perspective of Rubyists, but prior Ruby experience is not required to follow along.
 
 The recording is [available on Youtube](https://www.youtube.com/watch?v=XdOh82qLzZQ):
