@@ -18,6 +18,13 @@ Slides are at [github.com/straight-shoota/power-of-crystal](https://github.com/s
 
 The conference did not allow questions from the audience. But there were great opportunities for socializing and discussion with the speakers during long breaks between talks.
 During the event I got to talk to many people about Crystal.
-The exposure had a very wide range: Some had never heard of Crystal, others had wanted to learn more and try it out, and quite a few were already experienced using it in production.
+The exposure to Crystal spans a very wide range: Some had never heard of Crystal, others had wanted to learn more and try it out, and quite a few enthusiasts with experience in production use.
+
+I really enjoyed the experience. It was a great opportunity to expose Crystal to different audiences.
+In many encounters we discussed the features and future of Crystal.
+I'd like to encourage everyone to do that as well. It's great to meet peers and exchange ideas, be it in a physical location or a virtual space.
+
+If you'd like to spread the word about Crystal in a talk, workshop or other event, feel free to reach out for support.
+The Crystal Team is happy to help you shape it.
 
 ![](/assets/blog/2024/2024-09-19 helvetic-ruby johannes müller.jpg)
