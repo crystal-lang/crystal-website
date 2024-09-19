@@ -79,6 +79,7 @@ social:
 exclude:
 - "*.nix"
 - "devenv*"
+- ".devenv/"
 - docker-compose.yml
 - docker-compose.*.yml
 - Gemfile
