@@ -1,5 +1,22 @@
 [
   {
+    "name": "Paulo Gabriel da Silveira Sarlo",
+    "last_payment": 25.0,
+    "all_time": 25.0,
+    "since": "Sep 30, 2024",
+    "time_last_payment": "Sep 30, 2024",
+    "listed": true
+  },
+  {
+    "name": "Buy Instagram followers",
+    "url": "https://myinstafollow.com/",
+    "last_payment": 25.0,
+    "all_time": 25.0,
+    "since": "Sep 26, 2024",
+    "time_last_payment": "Sep 26, 2024",
+    "listed": true
+  },
+  {
     "name": "Andrzej Kilijański",
     "last_payment": 1.0,
     "all_time": 1.0,
@@ -177,9 +194,9 @@
   {
     "name": "Alexander Kutsan",
     "last_payment": 10.0,
-    "all_time": 50.0,
+    "all_time": 60.0,
     "since": "Apr 29, 2024",
-    "time_last_payment": "Sep 3, 2024",
+    "time_last_payment": "Sep 29, 2024",
     "listed": true
   },
   {
@@ -329,9 +346,9 @@
     "name": "SnapTik",
     "url": "https://snaptik.pro/id",
     "last_payment": 5.0,
-    "all_time": 45.0,
+    "all_time": 50.0,
     "since": "Dec 23, 2023",
-    "time_last_payment": "Aug 23, 2024",
+    "time_last_payment": "Sep 23, 2024",
     "listed": true
   },
   {
@@ -485,18 +502,18 @@
     "name": "EaseUS RecExperts",
     "url": "https://recorder.easeus.com",
     "last_payment": 10.0,
-    "all_time": 150.0,
+    "all_time": 160.0,
     "since": "Jun 28, 2023",
-    "time_last_payment": "Aug 28, 2024",
+    "time_last_payment": "Sep 28, 2024",
     "listed": true
   },
   {
     "name": "EaseUS Germany",
     "url": "https://www.easeus.de/",
     "last_payment": 10.0,
-    "all_time": 150.0,
+    "all_time": 160.0,
     "since": "Jun 28, 2023",
-    "time_last_payment": "Aug 28, 2024",
+    "time_last_payment": "Sep 28, 2024",
     "listed": true
   },
   {
@@ -995,7 +1012,7 @@
   },
   {
     "name": "speg",
-    "last_payment": 3.94,
+    "last_payment": 0.0,
     "all_time": 127.14,
     "since": "Jan 10, 2022",
     "time_last_payment": "Aug 1, 2024",
@@ -1217,9 +1234,9 @@
     "name": "Taletidskortnu",
     "url": "https://taletidskort.nu",
     "last_payment": 5.0,
-    "all_time": 185.0,
+    "all_time": 190.0,
     "since": "Aug 25, 2021",
-    "time_last_payment": "Aug 25, 2024",
+    "time_last_payment": "Sep 25, 2024",
     "listed": true
   },
   {
@@ -1397,9 +1414,9 @@
     "name": "Casinoonlineaams.com",
     "url": "https://www.casinoonlineaams.com",
     "last_payment": 25.0,
-    "all_time": 1000.0,
+    "all_time": 1025.0,
     "since": "May 26, 2021",
-    "time_last_payment": "Aug 26, 2024",
+    "time_last_payment": "Sep 26, 2024",
     "listed": true
   },
   {
@@ -1718,8 +1735,7 @@
   },
   {
     "name": "anapsix",
-    "url": "https://blog.random.io/",
-    "last_payment": 5.0,
+    "last_payment": 0.0,
     "all_time": 225.0,
     "since": "Dec 2, 2020",
     "time_last_payment": "Aug 1, 2024",
@@ -1940,7 +1956,7 @@
     "last_payment": 0.0,
     "all_time": 305.0,
     "since": "Aug 24, 2020",
-    "time_last_payment": "Sep 23, 2024",
+    "time_last_payment": "Oct 1, 2024",
     "listed": true
   },
   {
@@ -2115,8 +2131,7 @@
   },
   {
     "name": "Kevin Hovsäter",
-    "logo": "sponsors/kevin_hovsäter.jpg",
-    "last_payment": 75.0,
+    "last_payment": 0.0,
     "all_time": 980.0,
     "since": "May 22, 2020",
     "time_last_payment": "Aug 1, 2024",
@@ -2174,9 +2189,9 @@
     "name": "Kagi",
     "url": "https://kagi.com",
     "last_payment": 25.0,
-    "all_time": 1350.0,
+    "all_time": 1375.0,
     "since": "Apr 8, 2020",
-    "time_last_payment": "Aug 30, 2024",
+    "time_last_payment": "Sep 30, 2024",
     "listed": true
   },
   {
@@ -2294,7 +2309,7 @@
   },
   {
     "name": "Jonathan Gnagy",
-    "last_payment": 1.0,
+    "last_payment": 0.0,
     "all_time": 94.0,
     "since": "Oct 31, 2019",
     "time_last_payment": "Aug 1, 2024",
@@ -2491,7 +2506,7 @@
     "last_payment": 0.0,
     "all_time": 640.0,
     "since": "Dec 28, 2018",
-    "time_last_payment": "Sep 23, 2024",
+    "time_last_payment": "Oct 1, 2024",
     "listed": true
   },
   {
