@@ -17,12 +17,12 @@ make your applications resilient to sudden excesses in demand, impose order, max
 develop self-healing mechanisms, and a long list of other superpowers.
 
 Needless to say, building a fast, reliable, secure and feature rich queue system is Hard(TM). Luckily, us crystallers are in fantastic
-hands in that regard: LavinMQ is a world class message queuing system that not only supports writing your queue publishers and consumers
+hands in that regard: [LavinMQ](https://lavinmq.com/) is a world class message queuing system that not only supports writing your queue publishers and consumers
 in Crystal, but it is *built in Crystal* itself.
 
-That's why we couldn't be more thrilled to share that, together with the LavinMQ team, we will be co-running a Crystal+LavinMQ challenge
-in the context of the Major League Hacking OpenSource Global Hack Week 2024. This will be a super fun opportunity to learn how to
+That's why we couldn't be more thrilled to share that, together with the LavinMQ team, [we will be co-running a Crystal+LavinMQ challenge](https://lavinmq.com/blog/lavinmq-crystal-hackathon)
+in the context of the [Major League Hacking OpenSource Global Hack Week 2024](https://events.mlh.io/events/11512). This will be a super fun opportunity to learn how to
 build robust message queueing architectures without leaving the comforts of Crystal <3. 
 
-Interested to join? Check out LavinMQ's announcement post to find all the details. See you there!
+Interested to join? Check out [LavinMQ's announcement post](https://lavinmq.com/blog/lavinmq-crystal-hackathon) to find all the details. See you there!
 
