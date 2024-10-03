@@ -3,7 +3,7 @@ title: "Let's hack together at OpenSource Global Hack Week!"
 author: mverzilli
 summary: "Join the Crystal Core Team and our friends at 84codes at Major League Hacking OpenSource Global Hack Week 2024, starting on October 4th."
 categories: community
-tags: [talk, hackathon, foss, beginner-friendly]
+tags: [talk, hackathon, foss, beginner-friendly, 84codes, lavinmq]
 ---
 
 It's an established fact that we in the Crystal language community are kind of obsessed with high-performance software.
