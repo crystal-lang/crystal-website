@@ -8,14 +8,17 @@
   @extend .ui-link;
 
   --top-sponsors-icon-width: 11ch;
-  --top-sponsors-icon-filter: #{"contrast(2) grayscale()"};
+  --top-sponsors-icon-filter: #{"grayscale()"};
 
   --link-color: var(--primary-text);
   --link-hover-color: var(--light-text);
 
+  @media (prefers-color-scheme: dark) {
+    --top-sponsors-icon-filter: #{"invert() contrast(0.78) grayscale()"};
+  }
+
   &--s {
     --top-sponsors-icon-width: 7ch;
-    --top-sponsors-icon-filter: #{"contrast(0.4) grayscale()"};
     --link-color: var(--lighter-text);
     font-size: font-size(xsmall);
   }
