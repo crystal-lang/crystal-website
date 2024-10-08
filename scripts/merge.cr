@@ -75,7 +75,8 @@ end
 all_sponsors.sort_by! { |s| {-s.last_payment, -s.all_time, s.since, s.name} }
 
 write_csv("sponsors.csv", all_sponsors.select(&.listed?))
-write_csv("sponsor_logos_l.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i >= 750 })
+write_csv("sponsor_logos_l.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i >= 2000 })
+write_csv("sponsor_logos_gold.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i.in?(750...2000) })
 # NOTE: It should be 350, but we kept 250 to include PlaceOS
 write_csv("sponsor_logos_s.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i.in?(250...750) })
 
