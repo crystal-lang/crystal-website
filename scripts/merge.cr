@@ -16,8 +16,6 @@ end
 all_sponsors_map = Hash(UInt64, Sponsor).new
 overrides = Array(Sponsor).new
 
-update_other_sponsor_totals = ENV["UPDATE_OTHER_SPONSOR_TOTALS"]? == "1" || Time.utc.day == 1 # only do this on the first day of the month
-
 SPONSOR_DATA = begin
   csv = CSV.new(File.read("#{__DIR__}/../_data/sponsors.csv"), headers: true)
   hash = Hash(UInt64, Int32).new
@@ -32,17 +30,13 @@ end
   sponsors = Array(Sponsor).from_json(File.read(path))
 
   if filename == "others.json"
-    sponsors, overrides = sponsors.partition(&.overrides.nil?)
-    if update_other_sponsor_totals
-      sponsors.map! do |sponsor|
-        prev_value = SPONSOR_DATA[sponsor.id]?
-        if !prev_value
-          Log.warn { "Can't find sponsor '#{sponsor.name}' in sponsors.csv" }
-          prev_value = 0
-        end
-        sponsor.all_time = prev_value + sponsor.last_payment
-        sponsor
+    now = Time.utc
+    sponsors.map!(&.update_all_time!(now))
+    File.open(path, "w") do |file|
+      JSON.build(file, indent: 2) do |builder|
+        sponsors.to_json(builder)
       end
+      file.puts # write newline at end of file
     end
 
     sponsors, overrides = sponsors.partition(&.overrides.nil?)
