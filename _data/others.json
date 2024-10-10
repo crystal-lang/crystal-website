@@ -4,7 +4,8 @@
     "url": "https://manas.tech/",
     "logo": "manas-orange.svg",
     "last_payment": 5000,
-    "all_time": 1300000,
+    "time_last_payment": "Oct 8, 2024",
+    "all_time": 1335000,
     "since": "Jun 19, 2009"
   },
   {
@@ -18,7 +19,8 @@
     "url": "https://www.84codes.com/",
     "logo": "sponsors/84.png",
     "last_payment": 22000,
-    "all_time": 369000,
+    "time_last_payment": "Oct 8, 2024",
+    "all_time": 523000,
     "currency": "€",
     "since": "Apr 1, 2018"
   },
@@ -49,7 +51,7 @@
   {
     "overrides": "Buy Instagram Followers & Likes",
     "name": "LeoFame",
-    "url:": "https://leofame.com",
+    "url": "https://leofame.com",
     "last_payment": 25,
     "all_time": 0,
     "since": "Jun 28, 2024"

@@ -53,6 +53,37 @@ record Sponsor, name : String, url : String?, logo : String?, last_payment : Flo
     return {other.last_payment, other.time_last_payment} if time_last_payment.nil? || time_last_payment.not_nil! < other.time_last_payment.not_nil!
     {last_payment, time_last_payment}
   end
+
+  def update_all_time!(now)
+    return self if overrides || last_payment.zero?
+    time_last_payment = self.time_last_payment || return self
+
+    months_since_last_payment = (now.year - time_last_payment.year) * 12 + now.month - time_last_payment.month
+    return self unless months_since_last_payment > 0
+
+    self.time_last_payment = now
+    self.all_time += (months_since_last_payment * last_payment)
+    self
+  end
+
+  def to_json(builder : JSON::Builder)
+    builder.object do
+      builder.field "overrides", overrides if overrides
+      builder.field "name", name
+      builder.field "url", url if url
+      builder.field "logo", logo if logo
+      builder.field "last_payment", last_payment.to_i
+      if time_last_payment = self.time_last_payment
+        builder.field "time_last_payment", time_last_payment.to_s("%b %-d, %Y")
+      end
+      builder.field "all_time", all_time.to_i
+      builder.field "currency", currency if currency
+      if since = self.since
+        builder.field "since", since.to_s("%b %-d, %Y")
+      end
+      builder.field "listed", listed? unless listed?
+    end
+  end
 end
 
 class SponsorsBuilder
