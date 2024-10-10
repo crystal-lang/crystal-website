@@ -73,6 +73,16 @@ admin:
     role: Developer
     affiliation: Manas.Tech
 
+  mverzilli:
+    name: Martin Verzilli
+    role: Developer
+    affiliation: Manas.Tech
+
+  manumoreira:
+    name: Manuel Moreira
+    role: Project Management
+    affiliation: Manas.Tech
+
 admin_alumni:
   caspiano:
     name: Caspian Baska

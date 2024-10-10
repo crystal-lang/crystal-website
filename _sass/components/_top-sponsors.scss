@@ -13,6 +13,10 @@
   --link-color: var(--primary-text);
   --link-hover-color: var(--light-text);
 
+  @media (prefers-color-scheme: dark) {
+    --top-sponsors-icon-filter: #{"invert() contrast(0.78) grayscale()"};
+  }
+
   &--corporate {
     gap: var(--padding-md);
   }
