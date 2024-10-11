@@ -1,13 +1,13 @@
 .top-sponsors {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--padding-md);
+  gap: var(--padding-sm);
   justify-content: center;
   margin-top: var(--block-flow-md);
 
   @extend .ui-link;
 
-  --top-sponsors-icon-width: 11ch;
+  --top-sponsors-icon-width: 12ch;
   --top-sponsors-icon-filter: #{"grayscale()"};
 
   --link-color: var(--primary-text);
@@ -17,8 +17,20 @@
     --top-sponsors-icon-filter: #{"invert() contrast(0.78) grayscale()"};
   }
 
-  &--s {
-    --top-sponsors-icon-width: 7ch;
+  &--corporate {
+    gap: var(--padding-md);
+  }
+
+  &--gold {
+    --top-sponsors-icon-width: 10ch;
+    --top-sponsors-icon-filter: #{"grayscale()"};
+    --link-color: var(--lighter-text);
+    font-size: font-size(xsmall);
+  }
+
+  &--silver {
+    --top-sponsors-icon-width: 6ch;
+    --top-sponsors-icon-filter: #{"grayscale()"};
     --link-color: var(--lighter-text);
     font-size: font-size(xsmall);
   }

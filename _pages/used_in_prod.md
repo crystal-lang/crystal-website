@@ -50,7 +50,14 @@ sections:
       Organizations that provide software engineering services
 ---
 
-{% include components/top-sponsors-icons.html %}
+<div class="top-sponsors top-sponsors--corporate">
+  {%- for sponsor in site.data.sponsor_logos_corporate %}
+    <a href="{{ sponsor.url }}" rel="nofollow sponsored">
+      <img src="/assets/{{ sponsor.logo }}" alt="">
+      {{- sponsor.name }}
+    </a>
+  {%- endfor %}
+</div>
 
 <hr />
 
