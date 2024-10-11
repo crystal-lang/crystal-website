@@ -27,7 +27,7 @@ and below is a list of all the humans and organizations that have made it possib
 <hr />
 
 <section class="side-section reversed">
-  <h2>Individual Support</h2>
+  <h2>Supporters</h2>
 
    {%- include pages/sponsors/table.html %}
 
