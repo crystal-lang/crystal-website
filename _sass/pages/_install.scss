@@ -121,16 +121,6 @@ img.version-badge {
   display: inline-block;
   vertical-align: sub;
   transition: all 0.25s;
-
-  @media not (prefers-color-scheme: dark) {
-    filter: invert(49%) saturate(8000%) brightness(120%) contrast(500%)
-      sepia(40%) saturate(85%);
-
-    :any-link:hover > & {
-      filter: invert(49%) saturate(8000%) brightness(120%) contrast(500%)
-        sepia(40%) saturate(85%) brightness(75%);
-    }
-  }
 }
 
 @media (max-width: 50em) {
