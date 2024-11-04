@@ -1,79 +1,63 @@
 ---
-title: Looking through a Crystal the functional types `Maybe` and `Result`
-summary: Crystal's typechecker resembles at times that of modern functional languages. We take and Crystallize the two most widely known types from the functional world.
+title: Looking through a Crystal the functional paradigm
+summary: Crystal's typechecker resembles at times that of modern functional languages. How does it look like to push Crystal's functional capabilities further?
 author: beta-ziliani
 ---
 
-If someone posts a claim "_Crystal is a functional language_", they would be given a grim look. I mean, classes and inheritance are all over the place in the stdlib. Surely it's an object-oriented language, right?
+If someone claims "_Crystal is a functional language_", they would be given a grim look. I mean, classes and inheritance are all over the place in the stdlib. Surely it's an object-oriented language, right?
 
-However, language's paradigms are like genders: there are many, and you are not restricted to just have one all the time. And while it's true that Crystal is _mostly_ object-oriented, it has some bits of functional aspects to it.
+However, language's paradigms are like genders: there are many, and you are not restricted to just have one all the time. And while it's true that Crystal is _mostly_ object-oriented, it has some features that are often associated with functional programming.
 
-In the functional world, there are two types that are used a lot, the `Maybe` type (aka `Option`) and the `Result` type. They are very useful to deal with nil objects and exceptions, respectively, and this is why they're present in the stdlibs of modern languages.
+<!-- In the functional world, there are two types that are used a lot, the `Maybe` type (aka `Option`) and the `Result` type. They are very useful to deal with nil objects and exceptions, respectively, and this is why they're present in the stdlibs of modern languages. -->
 
-In this post I will explain how to code these types in Crystal, and why you might care. I won't expect readers to know these types nor Crystal, and I hope the examples will be simple enough for anybody with basic CS background to be able to follow.
+In this post I will explain some functional bits of Crystal, and why you might care. I will also point at missing aspects in Crystal that might help strengthen its functional bits.
 
-## The `Maybe` type
+I won't expect readers to know functional programming nor Crystal, and I hope the examples will be simple enough for anybody with basic programming background to be able to follow.
 
-If I have to say what's the most itchy aspect of dynamic languages, I'd say dealing with nil objects. Unless you use [powerful analyzers](), and struggle with their [false positives](), or do heavy testing of your functions, your program might pop a nil object all of the sudden. And unless you've did some heavy [defensive programming](), your application will certainly crash.
+## The example
 
-In languages with a type discipline, such as typed functional languages, types identify where those nil objects are, and they force us to consider them. In short: fewer tests needed, little defensive programming required. This is why such languages come with what is known as the `Maybe` type (e.g., [Rust](), [Scala](), [Elm]()).
+<!-- ## Nil/Null Pointer Exceptions and How To Avoid Them
+
+What have Java, Python, and Ruby in common? Having to deal with nil/null objects properly to avoid crashes. Unless you use [powerful analyzers](https://engineering.fb.com/2022/11/22/developer-tools/meta-java-nullsafe/), or do heavy testing of your functions, your program might pop a nil object all of the sudden. And unless you've did some heavy [defensive programming](https://en.wikipedia.org/wiki/Defensive_programming), your application will certainly crash.
+
+In languages with a type discipline, such as typed functional languages, types identify where those nil objects are, and they force us to consider them. In short: fewer tests needed, little defensive programming required. This is why such languages come with what is known as the `Maybe` or `Option` type (e.g., [Rust](https://doc.rust-lang.org/std/option/), [Scala](https://www.scala-lang.org/api/scala/Option.html), [Haskell](https://hackage.haskell.org/package/base/docs/Data-Maybe.html)).
 
 The idea is the following: when you have an object of a given type, say, a `String`, you know you **have** a string. It can't be nil. And if you _need_ it to be _nillable_, you wrap it in the `Maybe` type: `Maybe(String)`. Crystal doesn't have such type, but have something similar, called _nillable types_. We're going to highlight the differences later.
 
-An example: we are going to receive a string, and according to the case, we're going to respond with another string. If the input string is not one of the expected ones, we return nil:
+Maybe types not only help identifying which objects can be nil; it also allows us to avoid raising exceptions. Exceptions are costly, not only from the performance perspective, but also in terms of safety. Therefore, in functional languages they are looked down upon, and are only used in exceptional situations that aren't expected to be part of the normal course of an application. -->
 
-```crystal
-def parse(input : String) : String?
+As a running example, we will make a simple parser and point at problems and possible solutions of its implementation. Let's assume it takes a string and produces an element of some type, say `Ast`, that only has two subtypes: `Hello` and `World`. A first attempt could look like:
+
+```cr
+abstract class Ast
+end
+
+class Hello < Ast
+end
+
+class World < Ast
+end
+
+def parse(input : String) : Ast
   case input
   when "hello"
-    "world"
-  when "goodbye"
-    "_cruel_ world"
-  else
-    nil
+    Hello.new
+  when "world"
+    World.new
   end
 end
 ```
 
-Note the `String?` type. This is how we make `String` nillable. When calling this function, we need to handle the situation that the string might not be there:
+This definition has a problem, and when we try to use the function `parse` the compiler shows it to us:
 
-```crystal
-input = gets
-response = parse input
+> ```
+> error in line 10
+> Error: method ::parse must return Ast but it is returning (Ast | Nil)
+> ```
 
-case response
-when String
-  puts response.uppercase
-when Nil
-  puts "The input provided is invalid: #{input}"
-end
-```
+We'll see the details of this error later, but essentially, it's telling us to consider any other case, and not just the two strings `hello` and `world`. When considering the problem in abstract, in very rare situations we can be expect the string to be exactly what we ask for. Therefore, in the normal execution of an application we _must_ expect things to go wrong, and properly handle that situation.
 
-Raising an exception is a costly operation, not only from the performance perspective, but also in terms of safety. Therefore, in functional languages they are looked down upon, and are only used in exceptional situations that aren't expected to be part of the normal course of an application.
-
-A concrete example: a parser. Let's assume it takes a string and produces an element of some type, say `Ast`. A typical definition could start with
-
-```cr
-def parse(input : String) : Ast
-```
-
-The problem is what to do if there's an error. In very rare situations `input` can be expected to be a well formed string, even more so if it's generated by a human. Therefore, in the normal execution of an application we _must_ expect things to go wrong. We might be tempted to raise an exception, but then, we put the burden of the users of the function: they must read the documentation or take a guess that it will throw an exception (and which one!).
-
-### Return?
-
-One alternative, widely used in the stdlib, is to use a [nilable type](https://crystal-lang.org/reference/1.6/syntax_and_semantics/type_grammar.html#nilable) in the case of failure. In that case, our function will have the following type:
-
-```cr
-def parse(input : String) : Ast?  # Note the ending `?`
-```
-
-This has an obvious advantage: the user can't ignore that this function might _not_ return an `Ast`. Safer code! Additionally, the stdlib includes methods for easily handling nilable types (🤓 fact: nilable types are _almost_ [option types](https://en.wikipedia.org/wiki/Option_type)).
-
-However, using a nilable type also has an obvious problem: we can't tell what went wrong.
-
-### Return (the exception)
-
-With [union types](https://crystal-lang.org/reference/syntax_and_semantics/type_grammar.html#union) it's easy to provide information about the issues found in the input provided to our parsing function:
+The first possible solution might be to raise an exception:
 
 ```cr
 class ParseException < Exception
@@ -85,27 +69,102 @@ class ParseException < Exception
   end
 end
 
-alias ParseResult = Ast | ParseException
-
-def parse(input : String) : ParseResult
-```
-
-Now, when using `parse`, we must consider the exception. This is easy to do with a [case statement](https://crystal-lang.org/reference/1.6/syntax_and_semantics/case.html#union-type-checks):
-
-```cr
-case result = parse "this is an example"
-in Ast
-  puts "yay!"
-in ParseException
-  STDERR.puts "#{result.issue} at #{result.line}:#{result.col}"
+def parse(input : String) : Ast
+  case input
+  ... # same code as before
+  else
+    raise ParseException.new("Unexpected input: #{input}", 0, 0)
+  end
 end
 ```
 
-Note the following: we can easily add other possible exceptions. For instance, if we are reading from a file, might want to make a distinction between file errors and parsing ones, we can add the corresponding exception to the union. And since the `case` (as written above) is _exhaustive_, any missing case will fail at compile time.
+When using the function, we need to consider the exception:
+
+```cr
+def main
+  parse "hello"
+rescue e : ParseException
+  STDERR.puts "#{e.issue} at #{e.line}:#{e.col}"
+end
+```
+
+This solution works, but it has two drawbacks:
+
+ 1. Exceptions are not part of the type: we need to read the documentation or the code in order to find if an exception is raised, and which one.
+ 2. Exceptions are computationally heavy: they build a stack trace even in cases where traces aren't necessary.
+
+### Return?
+
+An alternative, widely used in Crystal's stdlib, is to use a [nilable type](https://crystal-lang.org/reference/1.14/syntax_and_semantics/type_grammar.html#nilable) in the case of failure. In that case, our function will have the following type:
+
+```cr
+def parse(input : String) : Ast?
+```
+
+Note the `Ast?` type. This is how we make `Ast` nillable.  This has an obvious advantage: the user can't ignore that this function might _not_ return an `Ast`. Safer code! Additionally, the stdlib includes methods for easily handling nilable types (🤓 fact: nilable types are _almost_ [option types](https://en.wikipedia.org/wiki/Option_type)).
+
+With nillable types we can roll back to our version without the exception:
+
+```cr
+def parse(input : String) : Ast?
+  case input
+  when "hello"
+    Hello.new
+  when "world"
+    World.new
+  end
+end
+```
+
+When calling this function, we need to handle the situation that the string might not be there:
+
+```cr
+def main
+  input = "hello"
+  case parse(input)
+  in Ast
+    puts "OK"
+  in Nil
+    puts "The input provided is invalid: #{input}"
+  end  
+end
+```
+
+This solution removes the drawbacks from raising the exception, but now adds a new one: we can't tell what went wrong.
+
+### Return (the exception)
+
+Nillable types are a particular case of [union types](https://crystal-lang.org/reference/syntax_and_semantics/type_grammar.html#union), in which the return type (`Ast` in our case) is extended with another type (`Nil`). Indeed, when we write `Ast?`, the compiler sees `Ast | Nil`. Then, instead of returning `nil` (the implicit object with type `Nil` returned by `parse`), we can return the exception:
+
+```cr
+def parse(input : String) : Ast | ParseException
+  case input
+  ... # same code as before
+  else
+    ParseException.new("Unexpected input: #{input}", 0, 0)
+  end
+end
+```
+
+Our `main` function changes to:
+
+```cr
+def main
+  result = parse "hello"
+  case result
+  in Ast
+    puts "OK"
+  in ParseException
+    STDERR.puts "#{result.issue} at #{result.line}:#{result.col}"
+  end
+end
+```
+
+Note the following: we can easily add other possibles exceptions to the union. For instance, if we are reading from a file, might want to make a distinction between file errors and parsing ones. Then, we add `IO::Error` to the returning type, and since the `case` (as written above) is _exhaustive_, any missing case will fail at compile time.
 
 ### Give me the gun, I want to shoot at my foot
 
-Having to `case` at each returned object might sound like a bit too much. No need to suffer: we can mimic the same idea as with `Nil` and extend the `Object` class with a `pure!` method to _assume_ an object is the pure value and not an exception:
+Having to `case` at each returned object might sound like a bit too much. No need to suffer: we can mimic the same idea as with `Nil`'s [`not_nil!`](https://crystal-lang.org/api/1.14.0/Object.html#not_nil%21-instance-method) method, and extend the `Object` and `Eception` classes with a `pure!` method to _assume_ a value exists and is not an exception:
 
 ```cr
 class Object
@@ -121,13 +180,13 @@ class Exception
 end
 ```
 
-With this extension we can now assume a call to `parse` won't fail (or the exception will explode in our face!):
+With this extension we can assume calling `parse` won't fail (or the exception will explode in our face!):
 
 ```cr
-parse("hello").pure!.to_s + " pure world"
+parse("hello").pure!
 ```
 
-### The missing bits
+<!-- ### The missing bits
 
 The current status of the stdlib and compiler support is missing two things:
 
@@ -142,6 +201,7 @@ The current status of the stdlib and compiler support is missing two things:
 ```cr
 alias Result(T) = T | Exception
 ```
+-->
 
 ## First-class functions
 
@@ -151,7 +211,7 @@ Let's continue the idea that we developed in the previous section. We have a met
 
 ```cr
 class File
-  def self.read_lines(filename : String) : Array(String) | FileException
+  def self.read_lines(filename : String) : Array(String) | IO::Error
     # Code to read the file, returning the exception if there's a problem
   end
 end
@@ -176,16 +236,10 @@ end
 Together, we can read a file, join its lines, and then parse it with:
 
 ```cr
-File.read_lines("/tmp/test").chain(&.join.try(&->parse(String)))
+File.read_lines("/tmp/test").chain {|lines| parse lines.join(" ")}
 ```
 
-At first, this might be difficult to parse, in particular for non-crystalists. In essence, `chain` will pass the lines to the block (what's after the first `&`), otherwise it will return the `FileException`. The lines are `join`ed, and the result passed to the `parse` function using the `Object#try` method that simply passes the object to the function. The syntax `&->` allows us to pass a function as argument, when a block is expected.
-
-An alternative form could be using an inline block:
-
-```cr
-File.read_lines("/tmp/test").chain {|lines| parse lines.join}
-```
+At first, this might be difficult to parse, in particular for non-crystalists. In essence, `chain` will pass the lines to the block (what's between `{}`), otherwise it will return the `IO::Error`. The lines are `join`ed, and the result passed to the `parse` function.
 
 ## Algebraic Data Types and pattern matching
 
