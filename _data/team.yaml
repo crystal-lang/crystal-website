@@ -53,7 +53,7 @@ core:
 admin:
   nditada:
     name: Nicolás di Tada
-    role: CTO
+    role: CFO
     affiliation: Manas.Tech
 
   mgarcia:
@@ -75,7 +75,7 @@ admin:
 
   mverzilli:
     name: Martin Verzilli
-    role: Developer
+    role: CTO
     affiliation: Manas.Tech
 
   manumoreira:
