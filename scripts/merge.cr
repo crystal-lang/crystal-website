@@ -16,8 +16,6 @@ end
 all_sponsors_map = Hash(UInt64, Sponsor).new
 overrides = Array(Sponsor).new
 
-update_other_sponsor_totals = ENV["UPDATE_OTHER_SPONSOR_TOTALS"]? == "1" || Time.utc.day == 1 # only do this on the first day of the month
-
 SPONSOR_DATA = begin
   csv = CSV.new(File.read("#{__DIR__}/../_data/sponsors.csv"), headers: true)
   hash = Hash(UInt64, Int32).new
@@ -28,28 +26,25 @@ SPONSOR_DATA = begin
 end
 
 %w(opencollective.json bountysource.json others.json).each do |filename|
-  File.open("#{__DIR__}/../_data/#{filename}") do |file|
-    sponsors = Array(Sponsor).from_json(file)
+  path = "#{__DIR__}/../_data/#{filename}"
+  sponsors = Array(Sponsor).from_json(File.read(path))
 
-    if filename == "others.json"
-      sponsors, overrides = sponsors.partition(&.overrides.nil?)
-      if update_other_sponsor_totals
-        sponsors.map! do |sponsor|
-          prev_value = SPONSOR_DATA[sponsor.id]?
-          if !prev_value
-            Log.warn { "Can't find sponsor '#{sponsor.name}' in sponsors.csv" }
-            prev_value = 0
-          end
-          sponsor.all_time = prev_value + sponsor.last_payment
-          sponsor
-        end
+  if filename == "others.json"
+    now = Time.utc
+    sponsors.map!(&.update_all_time!(now))
+    File.open(path, "w") do |file|
+      JSON.build(file, indent: 2) do |builder|
+        sponsors.to_json(builder)
       end
+      file.puts # write newline at end of file
     end
 
-    sponsors.each do |sponsor|
-      prev_sponsor = all_sponsors_map[sponsor.id]?
-      all_sponsors_map[sponsor.id] = prev_sponsor ? sponsor.merge(prev_sponsor) : sponsor
-    end
+    sponsors, overrides = sponsors.partition(&.overrides.nil?)
+  end
+
+  sponsors.each do |sponsor|
+    prev_sponsor = all_sponsors_map[sponsor.id]?
+    all_sponsors_map[sponsor.id] = prev_sponsor ? sponsor.merge(prev_sponsor) : sponsor
   end
 end
 
@@ -75,9 +70,10 @@ end
 all_sponsors.sort_by! { |s| {-s.last_payment, -s.all_time, s.since, s.name} }
 
 write_csv("sponsors.csv", all_sponsors.select(&.listed?))
-write_csv("sponsor_logos_l.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i >= 750 })
+write_csv("sponsor_logos_corporate.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i >= 2000 && (sponsor.logo.try(&.starts_with?("sponsors/")) || sponsor.logo == "manas-orange.svg") })
+write_csv("sponsor_logos_gold.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i.in?(750...2000) })
 # NOTE: It should be 350, but we kept 250 to include PlaceOS
-write_csv("sponsor_logos_s.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i.in?(250...750) })
+write_csv("sponsor_logos_silver.csv", all_sponsors.select { |sponsor| sponsor.last_payment.to_i.in?(250...750) })
 
 def write_csv(filename, sponsors)
   open_csv(filename) do |csv|
