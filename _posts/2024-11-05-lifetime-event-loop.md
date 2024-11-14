@@ -28,7 +28,7 @@ More technical details are available in [RFC #0009].
 ## Effects
 
 The new implementation has been merged into `master` and is available in
-[nightly builds](/install/nightly).
+[nightly builds](/install/nightlies).
 
 No changes in user code are required, everything plugs right in.
 
