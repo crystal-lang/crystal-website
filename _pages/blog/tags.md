@@ -1,7 +1,7 @@
 ---
 title: Tags
 layout: page
-section: blog
+section: tags
 ---
 
 {% capture counts_with_tags_string %}{% for tag in site.tags %}{{ tag[1] | size | prepend:"000000" | slice:-6,6 }}:{{ tag[0] }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
