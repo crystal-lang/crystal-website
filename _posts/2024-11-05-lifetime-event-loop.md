@@ -36,8 +36,9 @@ The new implementation is supported on Linux, macOS, FreeBSD and Android and
 automatically enabled on these systems. Read [more about
 availability][availability] in the RFC.
 
-All other operating systems keep the previous event loop driver: `libevent` on
-Unix systems, `IOCP` on Windows.
+For the time being other UNIX operating systems still use the `libevent` event loop by default (regressions, issues or untested). You can still force enable it using `-Devloop=kqueue` (BSDs) or `-Devloop=epoll` (e.g. Solaris).
+
+Windows is unaffected and keeps using `IOCP`.
 
 In case of performance regression or other issues, you can switch
 back to the legacy event loop implementation with the compile-time flag
