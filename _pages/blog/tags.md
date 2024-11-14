@@ -13,7 +13,7 @@ section: tags
 <div>
   <div>
     {% assign count = posts | size %}
-    <a href="/blog/tags/{{ tag }}" class="tag">#{{ tag }}</a>{% if count > 1 %} <small>({{ count }} posts)</small>{% endif %}
+    <a href="/blog/tags/{{ tag | slugify }}" class="tag">#{{ tag }}</a>{% if count > 1 %} <small>({{ count }} posts)</small>{% endif %}
   </div>
   <div style="margin-top: 0;">
   <ul>
