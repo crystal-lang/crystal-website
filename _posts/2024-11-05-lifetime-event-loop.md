@@ -17,9 +17,11 @@ selectors, [`epoll`](https://linux.die.net/man/7/epoll) (Linux, Android) and
 [`kqueue`](https://man.freebsd.org/cgi/man.cgi?kqueue) (BSDs, macOS) instead of
 going through [`libevent`](https://libevent.org/).
 
-In the process we're changing that file descriptors now stay subscribed to the
-event loop for their entire lifetime, instead of being added and removed on
-every single operation. This reduces overhead and improves performance.
+We're removing an external dependency and take control over a core runtime
+feature. It also changes how file descriptors are treated: instead of being
+added and removed on every blocking IO operation, the file descriptors are now
+added once and kept for their full lifetime, which is how epoll and kqueue have
+been designed. This reduces overhead and improves performance.
 
 This post highlights the relevant information for users.
 
