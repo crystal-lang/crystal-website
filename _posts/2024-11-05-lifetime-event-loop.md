@@ -54,7 +54,7 @@ programs.
 
 In some cases the new implementation may cause issues. You can switch
 back to the old event loop implementation with the compile-time flag
-`-Deventloop=libevent`.
+`-Devloop=libevent`.
 
 We are aware of some potential regressions but believe they are quite rare and
 should not hinder general availability of this new feature. Exposure through
