@@ -79,7 +79,8 @@ For example: Let's assume fiber `A` running on thread `X` waits on file
 descriptor `4`. While this operation is still pending, fiber `B` running on
 thread `Y` tries to start another operation on file descriptor `4`. This is now
 going to raise. File descriptors can only be owned by a single event loop
-instance.
+instance _at a time_. We can still transfer sockets and files without pending
+operations across fibers without risks.
 
 This limitation will be mitigated with the arrival of execution contexts from
 [RFC #0002] which share one event loop instance between all threads in a
