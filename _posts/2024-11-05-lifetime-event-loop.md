@@ -38,7 +38,9 @@ The new implementation is supported on Linux, macOS, FreeBSD and Android and
 automatically enabled on these systems. Read [more about
 availability][availability] in the RFC.
 
-For the time being other UNIX operating systems still use the `libevent` event loop by default (regressions, issues or untested). You can still force enable it using `-Devloop=kqueue` (BSDs) or `-Devloop=epoll` (e.g. Solaris).
+For the time being other UNIX operating systems still use the `libevent` event
+loop by default (regressions, issues or untested). You can still force enable it
+using `-Devloop=kqueue` (BSDs) or `-Devloop=epoll` (e.g. Solaris).
 
 Windows is unaffected and keeps using `IOCP`.
 
