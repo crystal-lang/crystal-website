@@ -1,9 +1,12 @@
 ---
-title: "Lifetime Event Loop"
+title: "A new Event Loop for UNIX operating systems"
 author: straight-shoota,ysbaddaden
-summary: ""
+summary: >
+  We're changing how the event loop operates. This improves performance,
+  removes `libevent` as a runtime dependency, and paves the way to
+  multi-threading.
 categories: technical
-tags: [feature, eventloop, concurrency]
+tags: [feature, eventloop, concurrency, 84codes]
 ---
 
 A core component of Crystal's concurrency model is the **event loop**. It
