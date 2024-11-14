@@ -44,22 +44,19 @@ using `-Devloop=kqueue` (BSDs) or `-Devloop=epoll` (e.g. Solaris).
 
 Windows is unaffected and keeps using `IOCP`.
 
-In case of performance regression or other issues, you can switch
-back to the legacy event loop implementation with the compile-time flag
-`-Deventloop=libevent`.
-
 Dropping `libevent` removes an external runtime dependency from Crystal
 programs.
 
 ## Caveats
 
-In some cases the new implementation may cause issues. If you're affected,
-we recommend falling back to `libevent` with `-Deventloop=libevent`.
+In some cases the new implementation may cause issues. You can switch
+back to the old event loop implementation with the compile-time flag
+`-Deventloop=libevent`.
 
-We are aware of some scenarios but believe they are quite rare and should not
-hinder general availability of this new feature. Exposure through nightly builds
-should help us gather more usage data to assess whether there are any more
-noteworthy implications we have not been aware of.
+We are aware of some potential regressions but believe they are quite rare and
+should not hinder general availability of this new feature. Exposure through
+nightly builds should help us gather more usage data to assess whether there are
+any more noteworthy implications we have not been aware of.
 
 ### Timers and Timeouts
 
