@@ -86,6 +86,14 @@ This limitation will be mitigated with the arrival of execution contexts from
 [RFC #0002] which share one event loop instance between all threads in a
 context.
 
+> **THANKS:**
+>
+> This feature is part of [the ongoing effort to improve multi threading in
+> Crystal](/2024/02/09/84codes-manas-mt/) sponsored by
+> [84codes](https://www.84codes.com/).
+>
+> Thanks for supporting the language and letting it shine!
+
 [#14996]: https://github.com/crystal-lang/crystal/pull/14996
 [availability]: https://github.com/crystal-lang/rfcs/blob/rfc/lifetime-event_loop/text/0009-lifetime-event_loop.md#availability
 [RFC #0002]: https://github.com/crystal-lang/rfcs/pull/2
