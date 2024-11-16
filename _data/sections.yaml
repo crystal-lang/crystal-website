@@ -11,6 +11,17 @@ blog:
       nav: blog
   weight: 10
 
+tags:
+  title: Tags
+  breadcrumbs:
+    - title: Blog
+      url: /blog/
+      nav: blog
+    - title: Tags
+      url: /blog/tags/
+      nav: tags
+  weight: 10
+
 posts:
   title: Posts
   breadcrumbs:
