@@ -5,6 +5,7 @@ author: beta-ziliani
 image: /assets/blog/2024-05-22-lavinmq-terminal.png
 company: 84codes
 categories: success
+tags: [84codes]
 ---
 
 Building LavinMQ in Crystal was an active choice, as maintaining control over the codebase was a high priority. A decade of learning has prioritized fast updates and easy bug fixes. At the same time, choosing Crystal provided the opportunity to enhance application performance.
