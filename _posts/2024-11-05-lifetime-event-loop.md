@@ -100,6 +100,6 @@ efficient data structure. We're already working on that.
 > Thanks for supporting the language and letting it shine!
 
 [#14996]: https://github.com/crystal-lang/crystal/pull/14996
-[availability]: https://github.com/crystal-lang/rfcs/blob/rfc/lifetime-event_loop/text/0009-lifetime-event_loop.md#availability
+[availability]: https://github.com/crystal-lang/rfcs/blob/main/text/0009-lifetime-event_loop.md#availability
 [RFC #0002]: https://github.com/crystal-lang/rfcs/pull/2
-[RFC #0009]: https://github.com/crystal-lang/rfcs/pull/9
+[RFC #0009]: https://github.com/crystal-lang/rfcs/blob/main/text/0009-lifetime-event_loop.md
