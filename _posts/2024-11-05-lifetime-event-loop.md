@@ -75,8 +75,6 @@ efficient data structure. We're already working on that.
 The new implementation works well with the multi-threading preview
 (`-Dpreview_mt`), having one event loop instance per thread.
 
-There is on caveat though: Moving file descriptors with pending operations
-between event loop instances – i.e. between threads – is an error.
 
 There is one caveat though: file descriptors can only be owned by a single
 event loop instance _at a time_. A file descriptor _can be moved_ from one
