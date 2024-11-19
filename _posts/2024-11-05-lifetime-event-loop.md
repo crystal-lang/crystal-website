@@ -61,15 +61,6 @@ should not hinder general availability of this new feature. Exposure through
 nightly builds should help us gather more usage data to assess whether there are
 any more noteworthy implications we have not been aware of.
 
-### Timers and Timeouts
-
-At this point, there's a missing optimization for timers (`sleep 1.second`) and
-timeouts (`socket.read_timeout = 1.second`). In case you're using lots of them,
-it might lead to performance degradation.
-
-This is only a temporary limitation until we finish the implementation of an
-efficient data structure. We're already working on that.
-
 ### Multi-Threading
 
 The new implementation works well with the multi-threading preview
@@ -90,6 +81,15 @@ going to raise.
 This limitation will be mitigated with the arrival of execution contexts from
 [RFC #0002] which share one event loop instance between all threads in a
 context.
+
+### Timers and Timeouts
+
+At this point, there's a missing optimization for timers (`sleep 1.second`) and
+timeouts (`socket.read_timeout = 1.second`). In case you're using lots of them,
+it might lead to performance degradation.
+
+This is only a temporary limitation until we finish the implementation of an
+efficient data structure. We're already working on that.
 
 > **THANKS:**
 >
