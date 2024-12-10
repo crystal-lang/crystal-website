@@ -25,6 +25,14 @@
     "since": "Apr 1, 2018"
   },
   {
+    "overrides": "MailerToGo",
+    "name": "MailerToGo",
+    "logo": "sponsors/mailertogo.svg",
+    "last_payment": 0,
+    "all_time": 0,
+    "since": "Dec 7, 2024"
+  },
+  {
     "overrides": "Bookyourdata.com",
     "name": "Bookyourdata.com",
     "last_payment": 0,
