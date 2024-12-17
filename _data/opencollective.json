@@ -1,5 +1,13 @@
 [
   {
+    "name": "Backlink Bento",
+    "url": "https://www.backlinkbento.com/",
+    "last_payment": 25,
+    "time_last_payment": "Dec 10, 2024",
+    "all_time": 25,
+    "since": "Dec 10, 2024"
+  },
+  {
     "name": "MailerToGo",
     "url": "https://MailerToGo.com",
     "logo": "sponsors/mailertogo.png",
@@ -80,7 +88,7 @@
   },
   {
     "name": "Michał Rosiak",
-    "last_payment": 25,
+    "last_payment": 0,
     "time_last_payment": "Oct 15, 2024",
     "all_time": 25,
     "since": "Oct 15, 2024"
@@ -170,7 +178,7 @@
     "since": "Aug 25, 2024"
   },
   {
-    "name": "No-code Web Scraper",
+    "name": "Automatio AI",
     "url": "https://automatio.ai/",
     "last_payment": 5,
     "time_last_payment": "Dec 2, 2024",
@@ -178,8 +186,8 @@
     "since": "Aug 23, 2024"
   },
   {
-    "name": "Buy Telegram Members & Views",
-    "url": "https://www.reddit.com/r/TikTokExpert/comments/1guym8c/where_can_i_buy_telegram_members_views/",
+    "name": "Buy X Followers",
+    "url": "https://www.reddit.com/r/TikTokExpert/comments/1gb5qvm/where_can_i_buy_twitter_x_followers_likes/",
     "last_payment": 10,
     "time_last_payment": "Dec 2, 2024",
     "all_time": 40,
@@ -460,8 +468,8 @@
     "name": "TopCasinoSearch",
     "url": "https://www.topcasinosearch.com/",
     "last_payment": 5,
-    "time_last_payment": "Nov 13, 2024",
-    "all_time": 70,
+    "time_last_payment": "Dec 13, 2024",
+    "all_time": 75,
     "since": "Oct 13, 2023"
   },
   {
@@ -670,8 +678,8 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5,
-    "time_last_payment": "Nov 13, 2024",
-    "all_time": 110,
+    "time_last_payment": "Dec 13, 2024",
+    "all_time": 115,
     "since": "Feb 13, 2023"
   },
   {
@@ -1056,8 +1064,8 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5,
-    "time_last_payment": "Nov 11, 2024",
-    "all_time": 185,
+    "time_last_payment": "Dec 11, 2024",
+    "all_time": 190,
     "since": "Nov 11, 2021"
   },
   {
@@ -1818,7 +1826,7 @@
   {
     "name": "Open Collective",
     "last_payment": 0,
-    "time_last_payment": "Dec 10, 2024",
+    "time_last_payment": "Dec 17, 2024",
     "all_time": 305,
     "since": "Aug 24, 2020"
   },
@@ -2293,7 +2301,7 @@
   {
     "name": "Triplebyte",
     "last_payment": 0,
-    "time_last_payment": "Dec 10, 2024",
+    "time_last_payment": "Dec 17, 2024",
     "all_time": 640,
     "since": "Dec 28, 2018"
   },
