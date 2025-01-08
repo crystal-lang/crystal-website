@@ -77,11 +77,6 @@ admin:
     role: Communication
     affiliation: Manas.Tech
 
-  ftarulla:
-    name: Francisco Tarulla
-    role: Developer
-    affiliation: Manas.Tech
-
   mverzilli:
     name: Martin Verzilli
     role: CTO
@@ -104,6 +99,11 @@ admin_alumni:
     affiliation: Manas.Tech
     github_handle: mekhla18
     forum_handle: mekhla18
+
+  ftarulla:
+    name: Francisco Tarulla
+    role: Developer
+    affiliation: Manas.Tech
 
 alumni:
   waj:
