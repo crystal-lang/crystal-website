@@ -44,9 +44,13 @@ core:
     name: Stephanie Wilde-Hobbs
     status: active
 
-
   ysbaddaden:
     name: Julien Portalier
+    status: active
+    affiliation: Manas.Tech
+
+  mverzilli:
+    name: Martin Verzilli
     status: active
     affiliation: Manas.Tech
 
@@ -102,9 +106,6 @@ alumni:
 
   ggiraldez:
     name: Gustavo Giraldez
-
-  mverzilli:
-    name: Martin Verzilli
 
   spalladino:
     name: Santiago Palladino
