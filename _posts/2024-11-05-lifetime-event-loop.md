@@ -32,8 +32,7 @@ More technical details are available in [RFC #0009].
 
 ## Effects
 
-The new implementation has been merged into `master` and is available in
-[nightly builds](/install/nightlies).
+The new implementation is released in [1.15.0].
 
 No changes in user code are required, everything plugs right in.
 
@@ -65,7 +64,6 @@ any more noteworthy implications we have not been aware of.
 
 The new implementation works well with the multi-threading preview
 (`-Dpreview_mt`), having one event loop instance per thread.
-
 
 There is one caveat though: file descriptors can only be owned by a single
 event loop instance _at a time_. A file descriptor _can be moved_ from one
@@ -103,3 +101,4 @@ efficient data structure. We're already working on that.
 [availability]: https://github.com/crystal-lang/rfcs/blob/main/text/0009-lifetime-event_loop.md#availability
 [RFC #0002]: https://github.com/crystal-lang/rfcs/pull/2
 [RFC #0009]: https://github.com/crystal-lang/rfcs/blob/main/text/0009-lifetime-event_loop.md
+[1.15.0]: /2025/01/09/1.15.0-released/index.html
