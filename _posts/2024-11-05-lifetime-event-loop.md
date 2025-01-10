@@ -101,4 +101,4 @@ efficient data structure. We're already working on that.
 [availability]: https://github.com/crystal-lang/rfcs/blob/main/text/0009-lifetime-event_loop.md#availability
 [RFC #0002]: https://github.com/crystal-lang/rfcs/pull/2
 [RFC #0009]: https://github.com/crystal-lang/rfcs/blob/main/text/0009-lifetime-event_loop.md
-[1.15.0]: /releases/2025-01-09-1.15.0-released.md
+[1.15.0]: /2025/01/09/1.15.0-released/index.html
