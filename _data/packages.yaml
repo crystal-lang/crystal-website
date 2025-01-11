@@ -193,7 +193,7 @@
 
 - type: crystal
   os: Windows
-  arch: [x86_64-msvc, x86_64-gnu]
+  arch: [aarch64-gnu, x86_64-msvc, x86_64-gnu]
   title: Portable Archive (`.zip`)
   instructions_href: /install/on_windows/
   archive_href: https://github.com/crystal-lang/crystal/releases/download/{{ version }}/crystal-{{ version }}-windows-{{ arch }}-unsupported.zip
