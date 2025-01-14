@@ -12,8 +12,9 @@ I'm giving a talk about Crystal at FOSDEM 2025 in Brussels:
 It's in the [Declarative and Minimalistic Computing track](https://fosdem.org/2025/schedule/track/declarative/),
 on Sunday, 2 February 2025 at 16:30 in room H.1308 (Rolin).
 
-The talk is going to be an introduction into some concepts of Crystals, so
-it might be a bit boring if you are already familiar with the language.
+The talk is going to be an introduction into some concepts of Crystals.
+It might be a tiny bit boring if you are already familiar with the language,
+but I'm sure it'll still be worthwile.
 
 If a couple of people are interested in a Crystal meetup, maybe
 we can arrange to gather somewhere during FOSDEM. Let me know in the comments.
