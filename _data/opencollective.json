@@ -10,7 +10,7 @@
   {
     "name": "MailerToGo",
     "url": "https://MailerToGo.com",
-    "logo": "sponsors/mailertogo.png",
+    "logo": "sponsors/mailertogo.svg",
     "last_payment": 2000,
     "time_last_payment": "Jan 3, 2025",
     "all_time": 4000,
@@ -101,8 +101,7 @@
   },
   {
     "name": "JuicyAuth",
-    "url": "https://juicyauth.dev",
-    "last_payment": 25,
+    "last_payment": 0,
     "time_last_payment": "Nov 10, 2024",
     "all_time": 75,
     "since": "Oct 10, 2024"
@@ -279,7 +278,7 @@
   },
   {
     "name": "Alexander Kutsan",
-    "last_payment": 10,
+    "last_payment": 0,
     "time_last_payment": "Nov 8, 2024",
     "all_time": 70,
     "since": "Apr 29, 2024"
@@ -470,8 +469,8 @@
     "name": "TopCasinoSearch",
     "url": "https://www.topcasinosearch.com/",
     "last_payment": 5,
-    "time_last_payment": "Dec 13, 2024",
-    "all_time": 75,
+    "time_last_payment": "Jan 13, 2025",
+    "all_time": 80,
     "since": "Oct 13, 2023"
   },
   {
@@ -680,8 +679,8 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5,
-    "time_last_payment": "Dec 13, 2024",
-    "all_time": 115,
+    "time_last_payment": "Jan 13, 2025",
+    "all_time": 120,
     "since": "Feb 13, 2023"
   },
   {
@@ -1066,8 +1065,8 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5,
-    "time_last_payment": "Dec 11, 2024",
-    "all_time": 190,
+    "time_last_payment": "Jan 11, 2025",
+    "all_time": 195,
     "since": "Nov 11, 2021"
   },
   {
@@ -1270,8 +1269,8 @@
   {
     "name": "Joseph Method",
     "last_payment": 5,
-    "time_last_payment": "Dec 9, 2024",
-    "all_time": 210,
+    "time_last_payment": "Jan 9, 2025",
+    "all_time": 215,
     "since": "Jul 9, 2021"
   },
   {
@@ -1828,7 +1827,7 @@
   {
     "name": "Open Collective",
     "last_payment": 0,
-    "time_last_payment": "Jan 7, 2025",
+    "time_last_payment": "Jan 14, 2025",
     "all_time": 305,
     "since": "Aug 24, 2020"
   },
@@ -1874,13 +1873,6 @@
     "time_last_payment": "Jan 1, 2025",
     "all_time": 270,
     "since": "Aug 7, 2020"
-  },
-  {
-    "name": "Andrew Lewman",
-    "last_payment": 0,
-    "time_last_payment": "Feb 1, 2021",
-    "all_time": 1050,
-    "since": "Aug 6, 2020"
   },
   {
     "name": "Gabriel Sales Seixas",
@@ -2303,7 +2295,7 @@
   {
     "name": "Triplebyte",
     "last_payment": 0,
-    "time_last_payment": "Jan 7, 2025",
+    "time_last_payment": "Jan 14, 2025",
     "all_time": 640,
     "since": "Dec 28, 2018"
   },
