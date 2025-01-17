@@ -1,0 +1,14 @@
+---
+layout: email
+---
+
+<tr>
+  <td align="left" valign="top">
+{% for issue in site.newsletter limit: 1 %}
+  <div class="textContent">
+    {{ issue.title}}
+    {{ issue.content | markdownify }}
+  </div>
+{% endfor %}
+</td>
+</tr>

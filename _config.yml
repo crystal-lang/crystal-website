@@ -17,6 +17,8 @@ collections:
     permalink: /:path/
   samples:
     output: false
+  newsletter:
+    output: false
 
 defaults:
   -
