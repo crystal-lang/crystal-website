@@ -235,9 +235,9 @@
     ```shell
     pacman -S mingw-w64-x86_64-crystal
     ```
-  repo_href: https://packages.msys2.org/packages/mingw-w64-x86_64-crystal
+  repo_href: https://packages.msys2.org/base/mingw-w64-crystal
   repo_description: Crystal package in MSYS2
-  repology: msys2_mingw
+  repology: msys2_ucrt64
 
 ### FreeBSD
 
