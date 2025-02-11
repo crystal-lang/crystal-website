@@ -221,6 +221,18 @@
   repo_description: Crystal manifest in WinGet packages repository
   repology: winget
 
+- type: community
+  os: Windows
+  arch: [x86_64]
+  title: Msys2
+  example: |
+    ```shell
+    pacman -S mingw-w64-x86_64-crystal
+    ```
+  repo_href: https://packages.msys2.org/packages/mingw-w64-x86_64-crystal
+  repo_description: Crystal package in Msys2
+  repology: msys2_mingw
+
 ### FreeBSD
 
 - type: system
