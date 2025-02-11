@@ -227,6 +227,12 @@
   title: MSYS2
   example: |
     ```shell
+    pacman -S mingw-w64-ucrt-x86_64-crystal
+    ```
+    ```shell
+    pacman -S mingw-w64-clang-x86_64-crystal
+    ```
+    ```shell
     pacman -S mingw-w64-x86_64-crystal
     ```
   repo_href: https://packages.msys2.org/packages/mingw-w64-x86_64-crystal
