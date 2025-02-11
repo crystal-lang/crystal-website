@@ -8,7 +8,7 @@ link_actions:
 image: /assets/events/2025-stockholm-meetup.webp
 ---
 
-Hej! We're exited to announce a Crystal user meetup on 18 February 2025 in Stockholm.
+Hej! We're excited to announce a Crystal user meetup on 18 February 2025 in Stockholm.
 It's a joint effort together with [LavinMQ], a message broker application
 written in Crystal.
 
