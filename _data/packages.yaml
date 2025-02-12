@@ -224,20 +224,38 @@
 - type: community
   os: Windows
   arch: [x86_64]
-  title: MSYS2
+  title: "MSYS2: UCRT42"
   example: |
     ```shell
     pacman -S mingw-w64-ucrt-x86_64-crystal mingw-w64-ucrt-x86_64-shards
     ```
+  repo_href: https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-crystal
+  repo_description: Crystal package in MSYS2
+  repology: msys2_ucrt64
+
+- type: community
+  os: Windows
+  arch: [x86_64]
+  title: "MSYS2: Clang64"
+  example: |
     ```shell
     pacman -S mingw-w64-clang-x86_64-crystal mingw-w64-clang-x86_64-shards
     ```
+  repo_href: https://packages.msys2.org/packages/mingw-w64-clang-x86_64-crystal
+  repo_description: Crystal package in MSYS2
+  repology: msys2_clang64
+
+- type: community
+  os: Windows
+  arch: [x86_64]
+  title: "MSYS2: MinGW64"
+  example: |
     ```shell
     pacman -S mingw-w64-x86_64-crystal mingw-w64-x86_64-shards
     ```
-  repo_href: https://packages.msys2.org/base/mingw-w64-crystal
+  repo_href: https://packages.msys2.org/packages/mingw-w64-x86_64-crystal
   repo_description: Crystal package in MSYS2
-  repology: msys2_ucrt64
+  repology: msys2_clang64
 
 ### FreeBSD
 
