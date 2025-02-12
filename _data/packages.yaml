@@ -227,13 +227,13 @@
   title: MSYS2
   example: |
     ```shell
-    pacman -S mingw-w64-ucrt-x86_64-crystal
+    pacman -S mingw-w64-ucrt-x86_64-crystal mingw-w64-ucrt-x86_64-shards
     ```
     ```shell
-    pacman -S mingw-w64-clang-x86_64-crystal
+    pacman -S mingw-w64-clang-x86_64-crystal mingw-w64-clang-x86_64-shards
     ```
     ```shell
-    pacman -S mingw-w64-x86_64-crystal
+    pacman -S mingw-w64-x86_64-crystal mingw-w64-x86_64-shards
     ```
   repo_href: https://packages.msys2.org/base/mingw-w64-crystal
   repo_description: Crystal package in MSYS2
