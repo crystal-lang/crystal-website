@@ -224,7 +224,7 @@
 - type: community
   os: Windows
   arch: [x86_64]
-  title: "MSYS2: UCRT42"
+  title: "MSYS2: UCRT64"
   example: |
     ```shell
     pacman -S mingw-w64-ucrt-x86_64-crystal mingw-w64-ucrt-x86_64-shards
@@ -255,7 +255,7 @@
     ```
   repo_href: https://packages.msys2.org/packages/mingw-w64-x86_64-crystal
   repo_description: Crystal package in MSYS2
-  repology: msys2_clang64
+  repology: msys2_mingw
 
 ### FreeBSD
 
