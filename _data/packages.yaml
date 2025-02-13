@@ -185,18 +185,18 @@
 
 - type: crystal
   os: Windows
-  arch: [x86_64]
+  arch: [x86_64-msvc]
   title: Installer (`.exe`)
   instructions_href: /install/on_windows/
-  archive_href: https://github.com/crystal-lang/crystal/releases/download/{{ version }}/crystal-{{ version }}-windows-{{ arch }}-msvc-unsupported.exe
+  archive_href: https://github.com/crystal-lang/crystal/releases/download/{{ version }}/crystal-{{ version }}-windows-{{ arch }}-unsupported.exe
   repology: crystal
 
 - type: crystal
   os: Windows
-  arch: [x86_64]
+  arch: [x86_64-msvc, x86_64-gnu]
   title: Portable Archive (`.zip`)
   instructions_href: /install/on_windows/
-  archive_href: https://github.com/crystal-lang/crystal/releases/download/{{ version }}/crystal-{{ version }}-windows-{{ arch }}-msvc-unsupported.zip
+  archive_href: https://github.com/crystal-lang/crystal/releases/download/{{ version }}/crystal-{{ version }}-windows-{{ arch }}-unsupported.zip
   repology: crystal
 
 - type: community
@@ -225,6 +225,7 @@
   os: Windows
   arch: [x86_64]
   title: "MSYS2: UCRT64"
+  instructions_href: /install/on_msys2/
   example: |
     ```shell
     pacman -S mingw-w64-ucrt-x86_64-crystal mingw-w64-ucrt-x86_64-shards
@@ -237,6 +238,7 @@
   os: Windows
   arch: [x86_64]
   title: "MSYS2: Clang64"
+  instructions_href: /install/on_msys2/
   example: |
     ```shell
     pacman -S mingw-w64-clang-x86_64-crystal mingw-w64-clang-x86_64-shards
@@ -249,6 +251,7 @@
   os: Windows
   arch: [x86_64]
   title: "MSYS2: MinGW64"
+  instructions_href: /install/on_msys2/
   example: |
     ```shell
     pacman -S mingw-w64-x86_64-crystal mingw-w64-x86_64-shards
