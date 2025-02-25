@@ -1,5 +1,37 @@
 [
   {
+    "name": "Harut",
+    "last_payment": 10,
+    "time_last_payment": "Feb 22, 2025",
+    "all_time": 10,
+    "since": "Feb 22, 2025"
+  },
+  {
+    "name": "Genadii Ganebnyi",
+    "last_payment": 20,
+    "time_last_payment": "Feb 18, 2025",
+    "all_time": 20,
+    "since": "Feb 18, 2025"
+  },
+  {
+    "name": "Playfortune.net.br",
+    "url": "https://playfortune.net.br/",
+    "logo": "sponsors/playfortune_net_br.png",
+    "last_payment": 75,
+    "time_last_payment": "Feb 14, 2025",
+    "all_time": 75,
+    "since": "Feb 14, 2025"
+  },
+  {
+    "name": "Playfortuneforfun.com",
+    "url": "https://playfortuneforfun.com/",
+    "logo": "sponsors/playfortuneforfun_com.png",
+    "last_payment": 75,
+    "time_last_payment": "Feb 14, 2025",
+    "all_time": 75,
+    "since": "Feb 14, 2025"
+  },
+  {
     "name": "Buy TikTok Followers from SocialWick",
     "url": "https://www.socialwick.com/tiktok/followers",
     "last_payment": 25,
@@ -120,8 +152,8 @@
     "name": "Media Mister",
     "url": "https://mediamister.com/",
     "last_payment": 25,
-    "time_last_payment": "Jan 17, 2025",
-    "all_time": 100,
+    "time_last_payment": "Feb 17, 2025",
+    "all_time": 125,
     "since": "Oct 18, 2024"
   },
   {
@@ -170,8 +202,8 @@
   {
     "name": "Andrzej Kilijański",
     "last_payment": 1,
-    "time_last_payment": "Jan 21, 2025",
-    "all_time": 5,
+    "time_last_payment": "Feb 21, 2025",
+    "all_time": 6,
     "since": "Sep 21, 2024"
   },
   {
@@ -186,8 +218,8 @@
     "name": "Best Instagram Growth Service",
     "url": "https://www.reddit.com/r/TikTokExpert/comments/1egk7tn/whats_the_best_instagram_growth_service_or_tool/",
     "last_payment": 25,
-    "time_last_payment": "Jan 5, 2025",
-    "all_time": 80,
+    "time_last_payment": "Feb 16, 2025",
+    "all_time": 105,
     "since": "Sep 4, 2024"
   },
   {
@@ -452,8 +484,8 @@
     "name": "SnapTik",
     "url": "https://snaptik.pro/id",
     "last_payment": 5,
-    "time_last_payment": "Jan 23, 2025",
-    "all_time": 70,
+    "time_last_payment": "Feb 23, 2025",
+    "all_time": 75,
     "since": "Dec 23, 2023"
   },
   {
@@ -509,8 +541,8 @@
     "name": "TopCasinoSearch",
     "url": "https://www.topcasinosearch.com/",
     "last_payment": 5,
-    "time_last_payment": "Jan 13, 2025",
-    "all_time": 80,
+    "time_last_payment": "Feb 13, 2025",
+    "all_time": 85,
     "since": "Oct 13, 2023"
   },
   {
@@ -522,9 +554,10 @@
   },
   {
     "name": "Chudovo",
-    "last_payment": 0,
-    "time_last_payment": "Jul 2, 2024",
-    "all_time": 50,
+    "url": "https://chudovo.com/",
+    "last_payment": 5,
+    "time_last_payment": "Feb 21, 2025",
+    "all_time": 55,
     "since": "Sep 22, 2023"
   },
   {
@@ -718,8 +751,8 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5,
-    "time_last_payment": "Jan 13, 2025",
-    "all_time": 120,
+    "time_last_payment": "Feb 13, 2025",
+    "all_time": 125,
     "since": "Feb 13, 2023"
   },
   {
@@ -778,8 +811,8 @@
     "name": "Hiptoro",
     "url": "https://hiptoro.com",
     "last_payment": 5,
-    "time_last_payment": "Jan 17, 2025",
-    "all_time": 125,
+    "time_last_payment": "Feb 17, 2025",
+    "all_time": 130,
     "since": "Jan 17, 2023"
   },
   {
@@ -1020,8 +1053,8 @@
     "name": "PROXYONE LLC",
     "url": "https://proxyone.eu/",
     "last_payment": 5,
-    "time_last_payment": "Jan 21, 2025",
-    "all_time": 180,
+    "time_last_payment": "Feb 21, 2025",
+    "all_time": 185,
     "since": "Feb 21, 2022"
   },
   {
@@ -1104,8 +1137,8 @@
   {
     "name": "Michael Wagner",
     "last_payment": 5,
-    "time_last_payment": "Jan 11, 2025",
-    "all_time": 195,
+    "time_last_payment": "Feb 11, 2025",
+    "all_time": 200,
     "since": "Nov 11, 2021"
   },
   {
@@ -1133,8 +1166,8 @@
     "name": "maltidsbarometeret",
     "url": "https://maltidsbarometeret.dk",
     "last_payment": 5,
-    "time_last_payment": "Jan 19, 2025",
-    "all_time": 200,
+    "time_last_payment": "Feb 19, 2025",
+    "all_time": 205,
     "since": "Oct 19, 2021"
   },
   {
@@ -1357,8 +1390,8 @@
   {
     "name": "lowkey",
     "last_payment": 75,
-    "time_last_payment": "Jan 18, 2025",
-    "all_time": 3370,
+    "time_last_payment": "Feb 18, 2025",
+    "all_time": 3445,
     "since": "Jun 12, 2021"
   },
   {
@@ -1864,7 +1897,7 @@
   {
     "name": "Open Collective",
     "last_payment": 0,
-    "time_last_payment": "Feb 11, 2025",
+    "time_last_payment": "Feb 25, 2025",
     "all_time": 305,
     "since": "Aug 24, 2020"
   },
@@ -2332,7 +2365,7 @@
   {
     "name": "Triplebyte",
     "last_payment": 0,
-    "time_last_payment": "Feb 11, 2025",
+    "time_last_payment": "Feb 25, 2025",
     "all_time": 640,
     "since": "Dec 28, 2018"
   },
@@ -2383,7 +2416,7 @@
   {
     "name": "nditada",
     "last_payment": 0,
-    "time_last_payment": "May 23, 2022",
+    "time_last_payment": "Jul 30, 2024",
     "all_time": 30,
     "since": "Dec 12, 2018"
   }
