@@ -42,7 +42,7 @@ We are working on a summary of the state of all these topics for a future post o
 
 ## A Meetup Full of Energy
 
-On the evening of the 18th, we co-hosted a public Crystal meetup, where Beta and Carl Hörberg (84codes' founder) delivered interesting and complementary talks.
+On the evening of the 18th, we co-hosted a public Crystal meetup, where Beta Ziliani (Crystal team lead) and Carl Hörberg (84codes' founder) delivered interesting and complementary talks.
 
 Beta used a zoo metaphor to try to explain where we see Crystal fit in the programming language space. Is it more akin to Java, Ruby, Go or Rust? What makes it unique?
 
