@@ -38,7 +38,7 @@ These topics are likely nothing new to you if are an active member of the Crysta
 
 One of the key takeaways from our discussions was how aligned we are with the broader vision for Crystal. Rather than worrying about specific features, the conversation revolved around current challenges and opportunities in each of those areas. This reaffirmed our shared commitment to building Crystal for long-term success.
 
-We are working on a summary of the state of all these topics for a future post or webpage, so stay tuned!
+We are working on a summary of the state of all these topics for a future post, so stay tuned!
 
 ## A Meetup Full of Energy
 
