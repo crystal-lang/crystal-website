@@ -13,7 +13,7 @@ tags: [talk, 84codes, ecosystem, events]
   </figcaption>
 </figure>
 
-On February 17-18, 2025, we had the pleasure to gather in Stockholm for a two-day workshop with [84codes](https://www.84codes.com/<D-s>), our main sponsor and long-time supporter. These days were filled with deep technical discussions, forward-looking strategy sessions, and a shared commitment to the future of Crystal. We also co-hosted a public meetup to engage with the local and international Crystal community.
+On February 17-18, 2025, we had the pleasure to gather in Stockholm for a two-day workshop with [84codes](https://www.84codes.com/), our main sponsor and long-time supporter. These days were filled with deep technical discussions, forward-looking strategy sessions, and a shared commitment to the future of Crystal. We also co-hosted a public meetup to engage with the local and international Crystal community.
 
 ## A Workshop Focused on the Future
 
