@@ -72,4 +72,4 @@ We returned home with our notebooks brimming with ideas, ready to translate them
 
 A heartfelt thank you to 84codes for their unwavering support, hospitality, and shared vision. This meetup strengthened our collaboration and reinforced our motivation to push Crystal forward.
 
-Stay tuned for more updates as we work on putting these discussions into action. And if you’re interested in joining the conversation, keep an eye out on our <a href="/community">community channels!</a>
+Stay tuned for more updates as we work on putting these discussions into action. And if you’re interested in joining the conversation, keep an eye out on our [community channels!](/community).
