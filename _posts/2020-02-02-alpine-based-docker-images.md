@@ -8,7 +8,7 @@ tags: packaging
 ---
 
 
-The Crystal team provides Docker images with installed Crystal compiler on Docker Hub at [`crystallang/crystal`](https://hub.docker.com/r/crystallang/crystal/). Crystal versions since 0.13.0 are available as Docker images based on different versions of [Ubuntu Linux](https://ubuntu.org/).
+The Crystal team provides Docker images with installed Crystal compiler on Docker Hub at [`crystallang/crystal`](https://hub.docker.com/r/crystallang/crystal/). Crystal versions since 0.13.0 are available as Docker images based on different versions of [Ubuntu Linux](https://ubuntu.com/).
 Images based on [Alpine Linux](https://alpinelinux.org/) are now also vailable, starting with [0.32.1-alpine](https://hub.docker.com/layers/crystallang/crystal/0.32.1-alpine/images/sha256-8f66a0a36a7e7c396944f64c89fa81a3b488ca6c82ce55ca5d5f1edd348d14e6).
 Alpine images are a bit more lightweight than Ubuntu images, for 0.32.1 it's 185 MB vs. 115 MB. A few bytes saved.
 
