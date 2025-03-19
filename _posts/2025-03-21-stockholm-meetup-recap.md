@@ -1,5 +1,5 @@
 ---
-title: Crystal Meetup in Stockholm
+title: Imagining the future of Crystal together in Stockholm
 summary: Recap of two days reflecting and sharing experiences on Crystal
 author: mverzilli
 categories: project community
@@ -7,7 +7,7 @@ tags: [talk, 84codes, ecosystem, events]
 ---
 
 <figure>
-  <img src="/assets/blog/2025/stockholmmeetupintro.jpg" alt="Christina Dahlén (84codes) welcomes the Crystal community to the Stockholm Crystal Meetup" />
+  <img src="/assets/blog/2025/stockholmmeetupintro.jpg" />
   <figcaption>
     Christina Dahlén (84codes) welcomes the Crystal community to the Stockholm Crystal Meetup. Photo: <a href="https://www.linkedin.com/company/fotograf-engstrom/" target="_blank">fotograf Engström</a>
   </figcaption>
@@ -28,7 +28,7 @@ Our time at 84codes HQ was dedicated to exploring the present and future of Crys
 - Marketing strategies
 
 <figure>
-  <img src="/assets/blog/2025/stockholmworkshoptopics.jpg" alt="More topics than time to discuss them, means we need to vote and prioritize.">
+  <img src="/assets/blog/2025/stockholmworkshoptopics.jpg" />
   <figcaption>
     More topics than time to discuss them, means we need to vote and prioritize!
   </figcaption>
@@ -47,7 +47,7 @@ On the evening of the 18th, we co-hosted a public Crystal meetup, where Beta Zil
 Beta used a zoo metaphor to try to explain where we see Crystal fit in the programming language space. Is it more akin to Java, Ruby, Go or Rust? What makes it unique?
 
 <figure>
-  <img src="/assets/blog/2025/stockholmbeta.jpg" alt="Beta Ziliani helps us find the right place for Crystal in the Programming Language Zoo" />
+  <img src="/assets/blog/2025/stockholmbeta.jpg" />
   <figcaption>
     Beta Ziliani helps us find the right place for Crystal in the Programming Language Zoo. Photo: <a href="https://www.linkedin.com/company/fotograf-engstrom/" target="_blank">fotograf Engström</a>
   </figcaption>
@@ -56,14 +56,15 @@ Beta used a zoo metaphor to try to explain where we see Crystal fit in the progr
 Carl showed us how 84codes leverages Crystal to build high performance and low-resource queue systems, highlighting Crystal's flexibility and gentle learning curve while not relinquishing power: you can start coding your program at a high level like you do in Ruby, but it still gives you tools to go deep down the rabbit hole as you need to get more and more in control of your stack. This includes the sometimes overlooked advantages of having an FOSS standard library completely written in the same language you are programming your app in, paired with the ability to monkey patch it to customize it to your needs.
 
 <figure>
-  <img src="/assets/blog/2025/stockholmcarl.jpg" alt="Carl Höberg (84codes) shares how you can build extremely scalable systems without giving up developer happiness with Crystal" />
+  <img src="/assets/blog/2025/stockholmcarl.jpg" />
   <figcaption>
     Carl Hörberg (84codes) shares how you can build extremely scalable systems without giving up developer happiness with Crystal. Photo: <a href="https://www.linkedin.com/company/fotograf-engstrom/" target="_blank">fotograf Engström</a>
   </figcaption>
 </figure>
 
-
 Around 30 attendees joined, ranging from seasoned Crystal developers to newcomers intrigued by the language’s potential. It was inspiring to see firsthand the growing interest and enthusiasm for Crystal.
+
+You can check out more pictures of the event at <a href="https://www.84codes.com/blog/crystal-meetup-in-pictures" target="_blank">84code's own recap of it</a>.
 
 ## Looking Ahead
 
