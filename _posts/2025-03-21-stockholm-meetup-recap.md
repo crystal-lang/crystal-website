@@ -64,7 +64,7 @@ Carl showed us how 84codes leverages Crystal to build high performance and low-r
 
 Around 30 attendees joined, ranging from seasoned Crystal developers to newcomers intrigued by the language’s potential. It was inspiring to see firsthand the growing interest and enthusiasm for Crystal.
 
-You can check out more pictures of the event at <a href="https://www.84codes.com/blog/crystal-meetup-in-pictures" target="_blank">84code's own recap of it</a>.
+You can check out more pictures of the event at [84code's own recap of it](https://www.84codes.com/blog/crystal-meetup-in-pictures).
 
 ## Looking Ahead
 
