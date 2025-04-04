@@ -1,4 +1,16 @@
 ---
-redirect_to: "https://us6.campaign-archive.com/home/?u=68338ca88d5d6326c9a824317&id=6f80e8b0be"
+title: Newsletter archive
 section: newsletter
 ---
+<tr>
+  <td align="left" valign="top">
+{% for issue in site.newsletter limit: 1 %}
+  <div class="textContent">
+    {{ issue.title}}
+    {{ issue.content | markdownify }}
+  </div>
+{% endfor %}
+</td>
+</tr>
+
+<a href="https://us6.campaign-archive.com/home/?u=68338ca88d5d6326c9a824317&id=6f80e8b0be">Older archives</a>
