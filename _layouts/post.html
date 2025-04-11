@@ -23,6 +23,10 @@ layout: base
   <div class="post__body">
     <div class="content" itemprop="articleBody">{{ content }}</div>
 
+    {% if page.discussions %}
+      {% include posts/discussions.html %}
+    {% endif %}
+
     {% include discourse_comments.html %}
 
     {% if page.comment_href %}
