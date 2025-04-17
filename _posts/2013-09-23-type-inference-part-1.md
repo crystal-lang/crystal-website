@@ -30,13 +30,13 @@ Compiler needs to know the type of each variable. Variables also have a context 
 
 Type inference algorithm register on each context which variables exist. So compiler would be able to declare them explicitly.
 
-The very basic statement that determines the type of a variable is an assigment.
+The very basic statement that determines the type of a variable is an assignment.
 
 ```ruby
 v = true
 ```
 
-The AST node of the assignement has 1) a target (left hand side), 2) an expression (right hand side). When the type of the rhs is determined, the type inference algorithm states that the lhs should be able to store a value of that type.
+The AST node of the assignment has 1) a target (left hand side), 2) an expression (right hand side). When the type of the rhs is determined, the type inference algorithm states that the lhs should be able to store a value of that type.
 
 Instead of computing it in a backtracking fashion (in order to support more complex scenarios) the algorithm works by building a graph of dependencies over the AST nodes.
 

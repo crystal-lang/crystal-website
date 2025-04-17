@@ -303,7 +303,7 @@ entry:
 }
 ```
 
-A bit harder to digest than the above examples, but it's basically assining a pointer to `~fun_literal_1` in the first
+A bit harder to digest than the above examples, but it's basically assigning a pointer to `~fun_literal_1` in the first
 position and `null` in the second. If our Proc captures a local variable:
 
 ```ruby
@@ -686,7 +686,7 @@ obj = # ... a union of the above types
 obj.foo
 ```
 
-First, the compiler will type `obj` as `Foo+`, meaning it can be Foo or one of its sublcasses (read
+First, the compiler will type `obj` as `Foo+`, meaning it can be Foo or one of its subclasses (read
 more about this [here](http://crystal-lang.org/docs/syntax_and_semantics/virtual_and_abstract_types.html)).
 In this case, there will be only two different method instantiations: one for `Foo+` and one for `Bar+`, since
 Baz and Qux don't redefine that method. To know which one we need to call, we load the type id. Then, instead

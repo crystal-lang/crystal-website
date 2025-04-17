@@ -68,7 +68,7 @@ install:
   weight: 22
 
 internal:
-  titel: Internal
+  title: Internal
   breadcrumbs:
     - title: Internal
 

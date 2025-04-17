@@ -117,7 +117,7 @@ The third method is [`Int#humanize_bytes`](https://crystal-lang.org/api/0.28.0/I
 1073741824.humanize_bytes(format: :JEDEC) # => "1.0GB"
 ```
 
-The [implementation of this method](https://github.com/crystal-lang/crystal/blob/639e4765f3f4137f90c5b7da24d8ccb5b0bfec35/src/humanize.cr#L304) is another example for a custom format based on `Numer#humanize`.
+The [implementation of this method](https://github.com/crystal-lang/crystal/blob/639e4765f3f4137f90c5b7da24d8ccb5b0bfec35/src/humanize.cr#L304) is another example for a custom format based on `Number#humanize`.
 
 ## Summary
 

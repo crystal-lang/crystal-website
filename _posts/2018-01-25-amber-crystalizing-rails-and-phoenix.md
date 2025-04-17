@@ -53,7 +53,7 @@ Crystal does a great job of complaining when a method call on a variable isn’t
 Observe what happens when compiling an Amber application with this broken template:
 
 ```ruby
-- if domain.nam.blank?
+- if domain.name.blank?
   p No domain name
 ```
 
@@ -62,7 +62,7 @@ The compiler complains, notifies you of the problem, and even suggests a correct
 ```ruby
 in macro 'macro_4598546880' expanded macro: embed:1, line 1:
 
->  1. if domain.nam.blank?
+>  1. if domain.name.blank?
    2. __kilt_io__ << "
    3. "
    4. __kilt_io__ << "<p"
@@ -71,7 +71,7 @@ in macro 'macro_4598546880' expanded macro: embed:1, line 1:
    7. __kilt_io__ << "</p>"
    8. end
 
-undefined method 'nam' for Domain (did you mean 'name'?)
+undefined method 'name' for Domain (did you mean 'name'?)
 ```
 
 These compile time checks can save your sanity when an accidental typo slips its way into your routes file, or accidentally forgetting to commit a view template.
