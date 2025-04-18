@@ -7,9 +7,11 @@ tags: devnotes
 ---
 
 ## Intro
+
 As we shared at [the end of 2017](https://crystal-lang.org/2017/12/19/this-is-not-a-new-years-resolution.html), we restarted this year working on a plan towards 1.0. Our first stop was improving the automation of releases. Thanks to the ~~[donations](https://salt.bountysource.com/teams/crystal-lang)~~ of December and part of January, we managed to put 80 hours of work into this. Thanks as usual for the help!
 
 ## How things used to be
+
 For a long time, we managed Crystal’s release and distribution process through  [omnibus-crystal](https://github.com/crystal-lang/omnibus-crystal). Even though parts of the process were automatic, it involved many manual steps that required  launching virtual machines for different distros to generate pkg, deb, tar.gz, etc.
 
 This process used to be enough for our needs, when only one or two people (Ary and Waj) would be in charge of releasing versions of the language. But as the project and the core team grew, we were afraid that some parts of the process were not properly documented, depending on information sitting in their heads or work-of-art environments in their machines.
@@ -25,6 +27,7 @@ Despite all this manual process, @waj, @asterite, @jhass, @matiasgarciaisaia hav
 Some releases ago, @RX14 wrote a new build process to improve the packages for some Linux distros. As a result, we decided to drop omnibus in favor of a multi stage Docker image to ship a compiler with musl and an up to date LLVM version when possible.
 
 ## What we want?
+
 Our main goals are
 
 1. Fully automate the process of building released binaries, including the provisioning of the machine where they are built.
@@ -111,6 +114,7 @@ Today, we use [these ecosystem tests](https://github.com/bcardiff/test-ecosystem
 It’s not perfect, but it is an effort to at least know beforehand that something could be broken for the upcoming release.
 
 ## How will we do things from now on?
+
 Let’s recap, what happens every night and for a proper release.
 
 Every night on master and every time a commit is tagged the following workflow will be executed.
@@ -140,14 +144,14 @@ Well, there are still a couple of things more to improve and get done. It never 
 
 ## Automated Release Backlog
 
-* Update distribution-scripts to emit 32 bits binaries so the binary creation is fully automated.
-* We should be able to use the new Docker {version}-build images in the CI. That will remove the extra dependency of [jhass’ crystal build images](https://github.com/jhass/crystal-build-docker) that ran the CI until now.
-* Move the manual build steps for publishing docker image with the signed packages and the publishing of the docs into jobs in circleci. These jobs will remain on hold waiting for a [manual approval](https://circleci.com/blog/manual-job-approval-and-scheduled-workflow-runs/) signaling that the packages were signed and published.
-* There is some cleanup to do regarding dockerfiles and vagrantfile in the compiler repo. These are most probably outdated and some former use cases have changed.
-* A proper nightly repo for Linux distributions would be great. There is one that is mainly used by Travis to allow `crystal: stable` and `crystal: nightly` options. In the future it would be great to automate updates on a nightly repo directly from the CI.
-* We still haven’t updated the LLVM version used in the release process for OSX. Currently a custom LLVM 3.9.1 is embedded so the shipped binaries are a bit smaller. But for historical reasons before LLVM 3.8 we were forced to custom build to use some edge features. Maybe we could switch to official LLVM releases now. We are now using LLVM precompiled by 3rd parties for Linux since we started drifting from omnibus. If you use OSX you might notice that your LLVM uses 4.0 or 5.0 because probably you installed Crystal from Homebrew. That compiler is built by Homebrew and they use the latest stable release.
-* The creation of a patch of Homebrew formula could be automated so submitting a PR for the new release could be really fancy and, more importantly, unforgettable.
-* Shipping the compiler for more platforms is something that can be done, but as long as it can be automated. Eventually something that would make sense is to ship one version of the compiler that could be used to create packages for the different distros and use when possible native packages. That way the Crystal compiler package of each distro could be smaller and would play well regarding how dependencies need to be declared [^distro-deps]
+- Update distribution-scripts to emit 32 bits binaries so the binary creation is fully automated.
+- We should be able to use the new Docker {version}-build images in the CI. That will remove the extra dependency of [jhass’ crystal build images](https://github.com/jhass/crystal-build-docker) that ran the CI until now.
+- Move the manual build steps for publishing docker image with the signed packages and the publishing of the docs into jobs in circleci. These jobs will remain on hold waiting for a [manual approval](https://circleci.com/blog/manual-job-approval-and-scheduled-workflow-runs/) signaling that the packages were signed and published.
+- There is some cleanup to do regarding dockerfiles and vagrantfile in the compiler repo. These are most probably outdated and some former use cases have changed.
+- A proper nightly repo for Linux distributions would be great. There is one that is mainly used by Travis to allow `crystal: stable` and `crystal: nightly` options. In the future it would be great to automate updates on a nightly repo directly from the CI.
+- We still haven’t updated the LLVM version used in the release process for OSX. Currently a custom LLVM 3.9.1 is embedded so the shipped binaries are a bit smaller. But for historical reasons before LLVM 3.8 we were forced to custom build to use some edge features. Maybe we could switch to official LLVM releases now. We are now using LLVM precompiled by 3rd parties for Linux since we started drifting from omnibus. If you use OSX you might notice that your LLVM uses 4.0 or 5.0 because probably you installed Crystal from Homebrew. That compiler is built by Homebrew and they use the latest stable release.
+- The creation of a patch of Homebrew formula could be automated so submitting a PR for the new release could be really fancy and, more importantly, unforgettable.
+- Shipping the compiler for more platforms is something that can be done, but as long as it can be automated. Eventually something that would make sense is to ship one version of the compiler that could be used to create packages for the different distros and use when possible native packages. That way the Crystal compiler package of each distro could be smaller and would play well regarding how dependencies need to be declared [^distro-deps]
 
 ## Next steps
 
