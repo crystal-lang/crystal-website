@@ -18,7 +18,7 @@ Months pass...
 
 My hope for the wonderful future of the product turns into hope that the latest commits won’t break anything.
 
-I begin to focus more on how my changes might cause a bug than how to make the app better. *I write and run tests, hoping that I thought of everything that could be an issue.* It  becomes harder and harder to keep simple and understandable.
+I begin to focus more on how my changes might cause a bug than how to make the app better. _I write and run tests, hoping that I thought of everything that could be an issue._ It  becomes harder and harder to keep simple and understandable.
 
 ## Lucky helps you focus on building your app
 
@@ -53,9 +53,9 @@ Here’s an example for deleting a comment:
 link_to "Delete", comment_path(@comment)
 ```
 
-*Can you spot the issue?* The path is right, but I forgot to specify the HTTP verb. This is especially confusing for team members that are new to web development or REST.
+_Can you spot the issue?_ The path is right, but I forgot to specify the HTTP verb. This is especially confusing for team members that are new to web development or REST.
 
-*In Lucky, the HTTP verb is automatically used in links, forms, and buttons. You never have to even think about it.* It just works.
+_In Lucky, the HTTP verb is automatically used in links, forms, and buttons. You never have to even think about it._ It just works.
 
 The right verb (DELETE) is automatically set for you:
 
@@ -80,7 +80,7 @@ class SamlSignIns::Create < BrowserAction
 end
 ```
 
-*Lucky will catch a bug for you and give you a helpful message to guide you in the right direction:*
+_Lucky will catch a bug for you and give you a helpful message to guide you in the right direction:_
 
 ```ruby
 SamlSignIns::Create returned Lucky::Response | Nil, but it must return a Lucky::Response.
@@ -94,7 +94,6 @@ Try this...
 In this case, we forgot to add an `else` condition that lets the user know that we couldn’t find a user account for them. Lucky is helpful enough to help guide us toward this solution.
 
 > This is just a taste of what Lucky can do to help you focus on building the best app possible. Check out “[Why Lucky?](https://luckyframework.org/why-lucky)” and “[Designing Lucky: Rock Solid Actions & Routing](https://robots.thoughtbot.com/designing-lucky-actions-routing)” to learn more.
-
 
 ## Give Lucky a spin
 

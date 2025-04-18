@@ -17,7 +17,7 @@ Alpine Linux makes this easy enough. For example, the offical Crystal compiler b
 
 [Crystal packages for APK (Alpine's package manager)](https://pkgs.alpinelinux.org/package/edge/community/x86_64/crystal) have been available for quite some time and the edge releases are usually updated pretty quickly. Updated Docker images are going to be available immediately on a new Crystal release. And they're always based on a stable version of Alpine Linux but provide the latest Crystal release.
 
-Here's an example how the Docker image can be used to build a statically linked *Hello World* program:
+Here's an example how the Docker image can be used to build a statically linked _Hello World_ program:
 
 ```terminal
 $ echo 'puts "Hello World!"' > hello-world.cr

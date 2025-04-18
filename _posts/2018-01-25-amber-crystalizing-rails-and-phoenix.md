@@ -43,6 +43,7 @@ Rails veterans will recognize many of these files and folders immediately:
 Models, views, controllers, and migrations are all right where you’d expect them. You’ll feel right at home. Environment config files follow a familiar style and a working asset pipeline is available right out of the box, if you want it (thanks to webpack).
 
 ## Compile Time checks
+
 Thanks to Crystal, a large portion of an Amber project is evaluated at compile time. Never again get an email from production complaining about something so mundane as a `Missing Template`, `controller#action missing`, or `Undefined method .downcase for nil:NilClass`.
 
 Amber even parses and compiles templates and layout files which not only verifies that the code is calling methods and getters safely, it saves a lot of time during a request.
@@ -76,12 +77,14 @@ undefined method 'nam' for Domain (did you mean 'name'?)
 These compile time checks can save your sanity when an accidental typo slips its way into your routes file, or accidentally forgetting to commit a view template.
 
 ## Open and welcoming dev team
+
 The Amber project is _active_. Development on the tools, framework, libraries, and documentation is constant. Yet I've felt welcomed into the fold as an Amber contributor as the core team readily reviews and merges my pull requests, discusses framework direction and goals, and openly accepts suggestions and contributions from casual contributors as well as frequent benefactors.
 This picture is from the [Github Pulse](https://github.com/amberframework/amber/pulse/monthly) and shows how active the project has been this month:
 
 <img src="/assets/blog/amber-pulse.png" class="center"/>
 
 ## Raw Speed
+
 Last but certainly not least, thanks to Crystal, Amber is _**fast**_. The compiled web is real, and it’s far more friendly now than ever before.
 
 Check out this log excerpt from a project I've been working on:
@@ -149,6 +152,7 @@ Amazingly, because Amber views are compiled in, rendering a template and layout 
 No matter what your application is doing, Amber can do it _faster_.
 
 ## Summary
+
 A lot of software is written for the web today. Ruby and Rails showed the world that development doesn't need to be painful for developers. Crystal is a language where development ease meets speed, and Amber is a framework built on that tradition. Developer friendliness meets raw speed and power, for the web. Or to borrow from Amber’s tag-line: Productivity. Performance. Happiness.
 
 [^select]: [Relevant log](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5#file-ab_crystal_logs-txt-L1)

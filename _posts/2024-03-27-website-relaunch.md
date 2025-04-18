@@ -14,16 +14,16 @@ But the limitations of the old website have been quite substantial and finally w
 
 Some of the highlight improvements:
 
-* Responsive layout that fits small and large viewports
-* Refined typography
-* Enhanced site navigation system
-* Completely reorganized [homepage](/)
-* Completely reorganized [_Install_ page](/install/)
-* Completely reorganized [_Community_ page](/community/)
-* New [_Releases_ page](/releases/)
-* New [_Sponsors_](/sponsors/) options
-* Taxonomy (categories and tags) for blog posts
-* Dark mode support
+- Responsive layout that fits small and large viewports
+- Refined typography
+- Enhanced site navigation system
+- Completely reorganized [homepage](/)
+- Completely reorganized [_Install_ page](/install/)
+- Completely reorganized [_Community_ page](/community/)
+- New [_Releases_ page](/releases/)
+- New [_Sponsors_](/sponsors/) options
+- Taxonomy (categories and tags) for blog posts
+- Dark mode support
 
 For comparison, the new and old homepage:
 

@@ -137,7 +137,7 @@ And… performance is crashing down.
 
 We still only allocate 80B in the HEAP because structs are allocated on the stack, so what’s going on? Aren’t wrapping structs supposed to be free abstractions in Crystal? Because this is clearly not the case here. Is LLVM failing to inline the struct and method calls, and is BLAKE3 so fast that any overhead degrades performance?
 
-There are no more hints to understand what’s happening here. We must dig into the generated code to do any further investigation. I generated the LLVM IR for the above benchmark: 
+There are no more hints to understand what’s happening here. We must dig into the generated code to do any further investigation. I generated the LLVM IR for the above benchmark:
 
 ```console
 $ crystal build --release --emit llvm-ir --no-debug bench.cr
@@ -224,11 +224,11 @@ SHA256 944.38k (  1.06µs) (± 0.97%)   225B/op   3.50× slower
 Blake3   3.30M (302.91ns) (± 2.24%)  80.0B/op        fastest
 ```
 
-Performance is finally on par with calling the C functions directly. It means that LLVM is now doing its job at optimizing the abstraction away. Looking at the disassembly, the generated block is *identical* to the direct C function calls that I listed above. LLVM did a perfect job at optimizing the struct away!
+Performance is finally on par with calling the C functions directly. It means that LLVM is now doing its job at optimizing the abstraction away. Looking at the disassembly, the generated block is _identical_ to the direct C function calls that I listed above. LLVM did a perfect job at optimizing the struct away!
 
 ## What’s happening
 
-The struct is first initialized, then the 2KB are *copied* using too many assembly instructions to count them. Sure, it all happens on the stack, but it takes an awful lot of CPU time to copy all that, and it appears to do so *twice*? No wonder performance gets destroyed.
+The struct is first initialized, then the 2KB are _copied_ using too many assembly instructions to count them. Sure, it all happens on the stack, but it takes an awful lot of CPU time to copy all that, and it appears to do so _twice_? No wonder performance gets destroyed.
 
 Structs are initialized exactly like classes are: through constructor methods. While classes return a reference (one pointer) structs return the value itself that must be copied which can be an expensive operation. This is the origin of the problem. The Crystal codegen always generates a constructor method that looks like that:
 
@@ -255,9 +255,9 @@ Instead of generating a constructor for structs, the Crystal codegen could decla
 
 We saw that LLVM sometimes optimizes the copy away and sometimes doesn’t. But what's the threshold? I ran some tests and reading the disassembly or release builds I found out that:
 
-* When the ivar is a `Pointer` (64-bit), the struct is fully abstracted away;
-* When the ivar is an `UInt64` or `UInt64[1]` (64-bit) the assembly changes slightly (a few MOV and LEA instructions more) despite the struct being exactly the same size than the pointer with the same alignment;
-* When the ivar is a `UInt64[2]` or two pointers (128-bit), the assembly starts to involve some XMM registers to copy the struct.
+- When the ivar is a `Pointer` (64-bit), the struct is fully abstracted away;
+- When the ivar is an `UInt64` or `UInt64[1]` (64-bit) the assembly changes slightly (a few MOV and LEA instructions more) despite the struct being exactly the same size than the pointer with the same alignment;
+- When the ivar is a `UInt64[2]` or two pointers (128-bit), the assembly starts to involve some XMM registers to copy the struct.
 
 > **NOTE:** Tip
 > The struct is a free abstraction (in terms of runtime) when it wraps one pointer. It involves some overhead as soon as it wraps anything else or more data.

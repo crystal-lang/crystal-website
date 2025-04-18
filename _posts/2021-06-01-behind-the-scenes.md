@@ -29,9 +29,7 @@ We want the community to know when to expect each new release, so we are working
 
 Aiming for wider adoption, we want every major platform to have a native Crystal compiler. We have made significant steps towards Windows support, with the sockets library being almost ready. As for the ARM Macs, we need to get our compiler working with the latest versions of the LLVM framework, a hard stone to crack in which we have already made good progress.
 
-
 As you can see, these past two months have been quite busy attacking several fronts, including the preparation of what will surely be an amazing [conference](https://crystal-lang.org/2021/04/22/crystal-conference-1.0-launch.html).
-
 
 We have been able to do all of this thanks to the continued support of [84codes](https://www.84codes.com/), [Nikola Motor Company](https://nikolamotor.com/) and every other [sponsor](/sponsors). To maintain and increase the development pace, donations and sponsorships are essential. [OpenCollective](https://opencollective.com/crystal-lang) is available for that. Reach out to [crystal@manas.tech](mailto:crystal@manas.tech) if you’d like to become a direct sponsor or find other ways to support Crystal. We thank you in advance!
 
