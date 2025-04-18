@@ -24,6 +24,7 @@
   '';
 
   pre-commit.hooks = {
+    actionlint.enable = true;
     markdownlint.enable = true;
     prettier = {
       enable = true;

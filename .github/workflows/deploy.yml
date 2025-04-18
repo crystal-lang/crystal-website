@@ -42,10 +42,10 @@ jobs:
         run: |
           docker compose run --rm web /bin/bash -c "bundle check || bundle install --jobs=3"
           docker compose run -e O --rm web make build
-          sudo chown -R $(whoami):$(whoami) $O
+          sudo chown -R "$(whoami)":"$(whoami)" "$O"
       - name: Fetch install.sh
         run: |
-          make $O/install.sh
+          make "$O/install.sh"
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -55,5 +55,5 @@ jobs:
           aws-region: us-east-1
       - name: Sync to S3
         run: |
-          aws s3 sync ./$O s3://crystal-website --delete
+          aws s3 sync "./$O" s3://crystal-website --delete
           ./scripts/set-legacy-url-redirects.bash crystal-website < ./_data/legacy_non_pretty_urls.txt
