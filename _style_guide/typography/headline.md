@@ -2,6 +2,7 @@
 title: Headlines
 type: typography
 ---
+<!-- markdownlint-disable single-title no-duplicate-heading -->
 
 # Headline 1
 

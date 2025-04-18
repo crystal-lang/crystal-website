@@ -18,15 +18,15 @@ Sponsors data is grabbed from Bountysource API, OpenCollective API and manual en
 
 3. Update `_data/opencollective.json`
 
-```
-$ crystal scripts/opencollective.cr
-```
+   ```
+   $ crystal scripts/opencollective.cr
+   ```
 
 4. Merge sponsors `.json` files
 
-```
-$ crystal scripts/merge.cr
-```
+   ```
+   $ crystal scripts/merge.cr
+   ```
 
 The `_data/[bountysource|opencollective].json` files will have a stable ordering to minimize diff.
 
