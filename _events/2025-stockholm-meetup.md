@@ -19,9 +19,9 @@ We're expecting guests with and without a Crystal background.
 
 The evening will feature two exciting talks:
 
-* Project lead Beta Ziliani shares the journey of Crystal and gives an
+- Project lead Beta Ziliani shares the journey of Crystal and gives an
   introduction to the language.
-* Carl Hörberg, CEO at 84codes/LavinMQ talks about the experience of building
+- Carl Hörberg, CEO at 84codes/LavinMQ talks about the experience of building
   LavinMQ with Crystal.
 
 After the talks, there will be time to mingle, ask questions, and get to know

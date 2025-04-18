@@ -103,23 +103,23 @@ about it.
 
 ## Questions and Answers
 
-* **When will you finish the new compiler?** We don't know yet. We are working on it slowly but steadily,
+- **When will you finish the new compiler?** We don't know yet. We are working on it slowly but steadily,
   writing it with readability, extensibility and efficiency in mind, and focusing on the hardest parts first.
   Now that we know most of the features the language supports, it's easier. Remember that the current compiler
   started as an experiment, and as a port of a compiler written in Ruby, so its code is not the best Crystal
   code out there.
-* **Will you continue working on the current compiler?** Yes and no. We will fix bugs if they are easy to fix,
+- **Will you continue working on the current compiler?** Yes and no. We will fix bugs if they are easy to fix,
   and we will continue extending and improving the standard library.
-* **Will all my code stop compiling?** Probably. However, you can use the current compiler's `tool hierarchy`
+- **Will all my code stop compiling?** Probably. However, you can use the current compiler's `tool hierarchy`
   to ask it the types of instance variables to make the upgrade easier. In fact we might probably include a tool
   to do the upgrade automatically, it's really that simple.
-* **Will the new compiler include other features?** We hope so! With this change we also plan to support forwarding
+- **Will the new compiler include other features?** We hope so! With this change we also plan to support forwarding
   blocks with the usual `&block` syntax. Right now this is possible but it always ends up creating a closure, but this
   can be done much better. We also plan to allow recursive calls with blocks, something that you can do in Ruby but
   not in Crystal. We also want to be able to have `Array(Object)` or `Array(T)` with any kind of `T`, something that,
   again, is not quite possible with the current version of the language. So these new type annotations will bring a lot
   more power to the language as a compensation.
-* **Will there be more breaking changes like this in the future?** We are pretty sure the answer is no. If we know
+- **Will there be more breaking changes like this in the future?** We are pretty sure the answer is no. If we know
   the types of instance, class, and global variables then given a method, the type of `self` and the type of its
   arguments we can infer its type by just analyzing that method and the methods it calls. Right now this is not
   possible because the type of some methods depends on how you use a class (what you assign to it). So this change

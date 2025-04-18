@@ -13,14 +13,14 @@ Crystal can use either Microsoft Visual C++ or MinGW-w64 as the toolchain.
 
 The MSVC variant of Crystal requires the following prerequisites:
 
-* Microsoft Visual Studio build tools, which may be downloaded at one of the following locations:
+- Microsoft Visual Studio build tools, which may be downloaded at one of the following locations:
 
-  * [https://aka.ms/vs/17/release/vs_BuildTools.exe](https://aka.ms/vs/17/release/vs_BuildTools.exe)
-  * [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/) (also includes the Visual Studio IDE)
+  - [https://aka.ms/vs/17/release/vs_BuildTools.exe](https://aka.ms/vs/17/release/vs_BuildTools.exe)
+  - [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/) (also includes the Visual Studio IDE)
 
   Either the "Desktop development with C++" workload or the "MSVC v143 - VS 2022 C++ x64/x86 build tools" components should be selected.
-* Windows 10 SDK, which is available as a component from the above installers.
-* [Developer mode is enabled](https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development) in Windows Settings.
+- Windows 10 SDK, which is available as a component from the above installers.
+- [Developer mode is enabled](https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development) in Windows Settings.
 
 Next download a Crystal release file with `-msvc-` in its name (see above).
 
