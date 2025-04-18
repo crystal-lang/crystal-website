@@ -11,7 +11,7 @@ type: typography
 >
 > Breaking changes are marked with ⚠️.
 >
-> * Point 1
-> * Point 2
+> - Point 1
+> - Point 2
 
 > `Multi assign = heaven`.
