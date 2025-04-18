@@ -30,13 +30,13 @@ Literals in the language, like array, hash and regular expression (regex) litera
 regular standard library calls. In the case of a regex, this:
 
 ```ruby
-/fo(o+)/
+/foo(o+)/
 ```
 
 is rewritten to:
 
 ```ruby
-Regex.new("fo(o+)")
+Regex.new("foo(o+)")
 ```
 
 The rewrite of array literals needs a bit more thought. Arrays are generic, meaning that they are parameterized

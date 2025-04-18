@@ -29,5 +29,5 @@ The new versioned packages are available for all architectures in all repositori
 Our own installation instructions at [crystal-lang.org/install](/install) have been updated,
 including the automatic installer script.
 
-The installer script allows selecting the version to be installed via tha `--version=x.y` argument.
+The installer script allows selecting the version to be installed via the `--version=x.y` argument.
 This argument was previously called `--crystal` and while this name continues to work, it is now considered deprecated.
