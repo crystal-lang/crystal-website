@@ -47,7 +47,6 @@ q = Queue.new
 e, q = q.pop # => EmptyQueueRuntimeError :-(
 ```
 
-
 Going in a a similar direction of the [NullPointerException](/2013/07/13/null-pointer-exception/), we could try to split the queue values that will help us move from this `EmptyQueueRuntimeError` to a compile error. For that, we need to differentiate the `EmptyQueue` from the non-empty Queues.
 
 ```ruby

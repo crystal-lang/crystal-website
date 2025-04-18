@@ -140,8 +140,8 @@ We asked what tools would make Crystal developers more productive.
 
 ### Which learning resources, if any, did you use to learn Crystal?
 
-- The official Crystal docs (https://crystal-lang.org/reference/)
-- Crystal for Rubyists (http://www.crystalforrubyists.com/)
+- The official Crystal docs (<https://crystal-lang.org/reference/>)
+- Crystal for Rubyists (<http://www.crystalforrubyists.com/>)
 - Gitter/IRC/Help from the community
 - Ruby background :)
 

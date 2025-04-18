@@ -157,8 +157,8 @@ Thanks for reading!
 
 ## Links & Sources
 
-* Leonard Schütz: [leonardschuetz.ch](https://leonardschuetz.ch)
-* Charly Programming Language: [charly-lang/charly](https://github.com/charly-lang/charly)
-* GraphViz (used for AST visualisations): [www.graphviz.org](http://www.graphviz.org/)
-* "Ruby open file" on stackoverflow: [how-to-read-an-open-file-in-ruby](http://stackoverflow.com/questions/4475957/how-to-read-an-open-file-in-ruby)
-* Old test suite used for the ruby interpreter: [test/main.ch](https://github.com/charly-lang/charly/blob/92bc26e06068bdce926f01f1cd49a5faeb01180c/test/main.ch)
+- Leonard Schütz: [leonardschuetz.ch](https://leonardschuetz.ch)
+- Charly Programming Language: [charly-lang/charly](https://github.com/charly-lang/charly)
+- GraphViz (used for AST visualisations): [www.graphviz.org](http://www.graphviz.org/)
+- "Ruby open file" on stackoverflow: [how-to-read-an-open-file-in-ruby](http://stackoverflow.com/questions/4475957/how-to-read-an-open-file-in-ruby)
+- Old test suite used for the ruby interpreter: [test/main.ch](https://github.com/charly-lang/charly/blob/92bc26e06068bdce926f01f1cd49a5faeb01180c/test/main.ch)
