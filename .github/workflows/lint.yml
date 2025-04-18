@@ -1,0 +1,28 @@
+name: Lint
+on:
+  push:
+    paths:
+      - '**/*.md'
+      - '_{pages,events,releases,posts,style_guide}/**/*.html'
+      - .github/workflows/lint.yml
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '_{pages,events,releases,posts,style_guide}/**/*.html'
+      - .github/workflows/lint.yml
+
+permissions: {}
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download source
+        uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+      - uses: cachix/cachix-action@v16
+        with:
+          name: devenv
+      - name: Install devenv.sh
+        run: nix profile install tarball+https://install.devenv.sh/latest
+      - run: devenv shell make lint-markdown
