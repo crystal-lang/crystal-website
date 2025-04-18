@@ -47,5 +47,3 @@ We hope this will help build DB tools and shards that work with multiple drivers
 * To [@spalladino](https://github.com/spalladino), [@asterite](https://github.com/asterite), [@waj](https://github.com/waj) for reviewing and discussing the code.
 * To [@will](https://github.com/will) for joining the game.
 * To the early adopters [@crisward](https://github.com/crisward), ~~[@raydf](https://github.com/raydf)~~, [@drujensen](https://github.com/drujensen), [@fridgerator](https://github.com/fridgerator), [@tbrand](https://github.com/tbrand) and many others.
-
-
