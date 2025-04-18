@@ -101,7 +101,7 @@ end
 ## Methods
 
 In Crystal methods can be overloaded. The overloads come from the number of arguments,
-type restrictions and *yieldness* of a method.
+type restrictions and _yieldness_ of a method.
 
 ```ruby
 # foo 1

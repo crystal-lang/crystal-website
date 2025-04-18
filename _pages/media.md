@@ -77,9 +77,9 @@ to use our brand and logos.
 
 **Don’t hesitate to contact us if:**
 
-* You want permission to sell Crystal merchandise.
-* You want to use these logos for commercial purposes.
-* You have questions about the use of Crystal brand and logos.
+- You want permission to sell Crystal merchandise.
+- You want to use these logos for commercial purposes.
+- You have questions about the use of Crystal brand and logos.
 
 <div class="link-item">
   <a href="mailto:crystal@manas.tech">

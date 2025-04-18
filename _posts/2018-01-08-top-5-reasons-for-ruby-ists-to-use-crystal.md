@@ -77,7 +77,8 @@ Does [that method](https://repl.it/@marksiemers1/LeapYearOverloads) look good to
 
 In Crystal, we have the option of explicitly typing our inputs (and outputs). We can change the method signature to `self.leap?(year : Int)` and we are guaranteed to have an integer as input.
 
-We get helpful messages __at compile time__, rather than runtime:
+We get helpful messages **at compile time**, rather than runtime:
+
 ```ruby
 Year.leap?("2016")
 Error in line 10: no overload matches 'Year.leap?' with type String
@@ -107,7 +108,7 @@ Speaking of production, how about...
 
 Another advantage of compilation is speed and optimization. When comparing the performance of Ruby to Crystal, often, it can be stated in orders of magnitude rather than percentages.
 
-In one example, [summing random numbers in crystal](https://github.com/marksiemers/ruby-to-crystal/blob/master/src/enumerables/reduce_bench.cr) can be __10 orders of magnitude faster__ than Ruby (~ 37 million percent faster). This is due to compiler optimizations and the ability to use primitive data types in Crystal. This does come with the risk of integer overflow for large numbers ([See Ary's explanation](https://crystal-lang.org/2016/07/15/fibonacci-benchmark.html)).
+In one example, [summing random numbers in crystal](https://github.com/marksiemers/ruby-to-crystal/blob/master/src/enumerables/reduce_bench.cr) can be **10 orders of magnitude faster** than Ruby (~ 37 million percent faster). This is due to compiler optimizations and the ability to use primitive data types in Crystal. This does come with the risk of integer overflow for large numbers ([See Ary's explanation](https://crystal-lang.org/2016/07/15/fibonacci-benchmark.html)).
 
 Crystal's built-in HTTP server has been able to handle over [2 million requests per second in benchmark testing](https://www.techempower.com/benchmarks/previews/round15/#section=data-r15&hw=ph&test=plaintext&l=zdk8an&c=3). And many of the web frameworks are consistently delivering sub-millisecond response times for web applications.
 
@@ -152,7 +153,7 @@ end
 
 How long did that take to figure out? If you know Ruby or Crystal, probably a matter of seconds.
 
-With this in mind, consider that __98.4% of Crystal is written in Crystal__ and only 0.3% is written in C++.
+With this in mind, consider that **98.4% of Crystal is written in Crystal** and only 0.3% is written in C++.
 
 Ruby is written 30.6% in C and 64.8% in Ruby.
 

@@ -7,9 +7,9 @@ categories: success
 company: Charly Language
 ---
 
-*This post is the first from our guest writers series. If you have built something awesome using Crystal and want to share your experience here on the blog, [let us know](http://twitter.com/intent/tweet?text=@CrystalLanguage%20I%20want%20to%20write%20about...)!*
+_This post is the first from our guest writers series. If you have built something awesome using Crystal and want to share your experience here on the blog, [let us know](http://twitter.com/intent/tweet?text=@CrystalLanguage%20I%20want%20to%20write%20about...)!_
 
-*Today’s guest author is Leonard Schütz. He created the Charly programming language as a means to learn how to create a programming language, and after a first iteration in Ruby, he moved to Crystal to implement the language interpreter. In this post, he presents the language, shows how it works, and why he chose Crystal to implement it.*
+_Today’s guest author is Leonard Schütz. He created the Charly programming language as a means to learn how to create a programming language, and after a first iteration in Ruby, he moved to Crystal to implement the language interpreter. In this post, he presents the language, shows how it works, and why he chose Crystal to implement it._
 
 ## Introduction
 

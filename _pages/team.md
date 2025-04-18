@@ -11,8 +11,8 @@ section: community
   <h2 id="core">Core Team</h2>
   <aside markdown="1">
 
-The *Core Team* leads the development of Crystal and its ecosystem under the
-guidance of the *Steering Council*. Both bodies are defined in the
+The _Core Team_ leads the development of Crystal and its ecosystem under the
+guidance of the _Steering Council_. Both bodies are defined in the
 [Governance document](/_pages/community/governance.md).
 
   </aside>
@@ -121,7 +121,7 @@ assign issues/PRs and request reviews.
   <h2 id="crys">Language Mascot</h2>
   <aside markdown="1">
 
-Meet *Crys*, the mascot of Crystal. He's smart and likes shiny things, so feed him with your best shards! 🔮
+Meet _Crys_, the mascot of Crystal. He's smart and likes shiny things, so feed him with your best shards! 🔮
 
   </aside>
   <div>
