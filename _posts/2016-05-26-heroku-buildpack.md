@@ -187,7 +187,7 @@ The buildpack will:
 3. Compile the main source file in release mode.
 4. Run the web server process with `--port` option.
 
-# Specify the crystal version
+## Specify the crystal version
 
 If you want to use a different Crystal version, create a `.crystal-version` file with the desired version, following [crenv](https://github.com/pine/crenv)’s convention.
 

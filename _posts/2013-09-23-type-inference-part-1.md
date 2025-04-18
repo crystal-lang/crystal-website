@@ -15,7 +15,7 @@ Like most type inference algorithms, the explanation is guided by the AST. Each 
 
 The whole program AST is traversed while the type inference binds AST nodes in order to mimic the deductions a programmer would make to discover the types.
 
-**Literals**
+## Literals
 
 These are easy. Booleans, numbers, chars and values that are explicitly written have the type determined directly by syntax.
 
@@ -24,7 +24,7 @@ true # : Boolean
 1    # : Int32
 ```
 
-**Variables**
+## Variables
 
 Compiler needs to know the type of each variable. Variables also have a context where they can be evaluated.
 
@@ -44,7 +44,7 @@ The next picture shows the AST nodes, the context where the variables and their 
 
 <img src="/assets/type-inference/assign-variable.png" width="374" height="203" class="center"/>
 
-**Conditionals (a.k.a. Ifs)**
+## Conditionals (a.k.a. Ifs)
 
 Crystal supports [union types](http://en.wikipedia.org/wiki/Union_type). When a variable is assigned multiple times in the same context (but in different branches) its expected type is the one that can handle all the assignments. So if the following code is given:
 
