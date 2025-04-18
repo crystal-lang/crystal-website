@@ -10,8 +10,8 @@ tags: [language, types]
 Let's play with an immutable Queue type. We want to:
 
 1. Create an empty queue
-1. Push things into a queue and get a new queue with the added element
-1. Pop the next element of the queue and also get the rest of the queue.
+2. Push things into a queue and get a new queue with the added element
+3. Pop the next element of the queue and also get the rest of the queue.
 
 So something like this:
 
@@ -89,8 +89,8 @@ The fact that popping from a nonempty queue *may* lead to an empty queue stands 
 We could try to do something _crazy_. What if `Queue` contains the amount of elements in its type. We know that if you:
 
 1. Push an element to a `Queue(N)`, you will get a `Queue(N+1)`
-1. Pop from a `Queue(1)`, you will get an `EmptyQueue`
-1. Pop from a `Queue(N)` with `N > 1`, you wil get a `Queue(N-1)`
+2. Pop from a `Queue(1)`, you will get an `EmptyQueue`
+3. Pop from a `Queue(N)` with `N > 1`, you wil get a `Queue(N-1)`
 
 It seems reasonable (and a bit crazy).
 

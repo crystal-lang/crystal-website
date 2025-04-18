@@ -1,5 +1,5 @@
-Crystal Website
-===============
+# Crystal Website
+
 Powered by [Jekyll](https://jekyllrb.com/)
 
 ## Development setup (via docker)
