@@ -3,12 +3,10 @@ on:
   push:
     paths:
       - '**/*.md'
-      - '_{pages,events,releases,posts,style_guide}/**/*.html'
       - .github/workflows/lint.yml
   pull_request:
     paths:
       - '**/*.md'
-      - '_{pages,events,releases,posts,style_guide}/**/*.html'
       - .github/workflows/lint.yml
 
 permissions: {}
