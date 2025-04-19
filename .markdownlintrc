@@ -25,6 +25,8 @@
     "front_matter_title": "^\\s*(page_)?title\\s*[:=]"
   },
 
+  "no-alt-text": false,
+
   "hard_tab": {
     "code_blocks": false
   }
