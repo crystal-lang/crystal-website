@@ -1,5 +1,20 @@
 [
   {
+    "name": "Masal Oku",
+    "last_payment": 1,
+    "time_last_payment": "Apr 19, 2025",
+    "all_time": 1,
+    "since": "Apr 19, 2025"
+  },
+  {
+    "name": "Miramtech",
+    "url": "https://miramtech.com",
+    "last_payment": 25,
+    "time_last_payment": "Apr 18, 2025",
+    "all_time": 25,
+    "since": "Apr 18, 2025"
+  },
+  {
     "name": "Alex Herrmann",
     "last_payment": 30,
     "time_last_payment": "Apr 12, 2025",
@@ -39,7 +54,7 @@
   },
   {
     "name": "Genadii Ganebnyi",
-    "last_payment": 20,
+    "last_payment": 0,
     "time_last_payment": "Feb 18, 2025",
     "all_time": 20,
     "since": "Feb 18, 2025"
@@ -94,8 +109,7 @@
   },
   {
     "name": "1Petinya",
-    "url": "https://1petinya.org/",
-    "last_payment": 5,
+    "last_payment": 0,
     "time_last_payment": "Mar 2, 2025",
     "all_time": 10,
     "since": "Jan 17, 2025"
@@ -117,7 +131,7 @@
   },
   {
     "name": "howonplanetearth.com",
-    "last_payment": 5,
+    "last_payment": 0,
     "time_last_payment": "Mar 5, 2025",
     "all_time": 20,
     "since": "Dec 5, 2024"
@@ -228,8 +242,8 @@
   {
     "name": "Andrzej Kilijański",
     "last_payment": 1,
-    "time_last_payment": "Mar 21, 2025",
-    "all_time": 7,
+    "time_last_payment": "Apr 21, 2025",
+    "all_time": 8,
     "since": "Sep 21, 2024"
   },
   {
@@ -683,8 +697,7 @@
   },
   {
     "name": "Poprey",
-    "url": "https://poprey.com/get-free-instagram-views",
-    "last_payment": 10,
+    "last_payment": 0,
     "time_last_payment": "Mar 1, 2025",
     "all_time": 210,
     "since": "Jun 16, 2023"
@@ -1070,8 +1083,8 @@
     "name": "PROXYONE LLC",
     "url": "https://proxyone.eu/",
     "last_payment": 5,
-    "time_last_payment": "Mar 21, 2025",
-    "all_time": 190,
+    "time_last_payment": "Apr 21, 2025",
+    "all_time": 195,
     "since": "Feb 21, 2022"
   },
   {
@@ -1183,8 +1196,8 @@
     "name": "maltidsbarometeret",
     "url": "https://maltidsbarometeret.dk",
     "last_payment": 5,
-    "time_last_payment": "Mar 19, 2025",
-    "all_time": 210,
+    "time_last_payment": "Apr 19, 2025",
+    "all_time": 215,
     "since": "Oct 19, 2021"
   },
   {
@@ -1203,8 +1216,7 @@
   },
   {
     "name": "Mauricio Gomes",
-    "url": "https://mauriciogomes.com",
-    "last_payment": 25,
+    "last_payment": 0,
     "time_last_payment": "Mar 2, 2025",
     "all_time": 715,
     "since": "Oct 8, 2021"
@@ -1407,8 +1419,8 @@
   {
     "name": "lowkey",
     "last_payment": 75,
-    "time_last_payment": "Mar 18, 2025",
-    "all_time": 3520,
+    "time_last_payment": "Apr 18, 2025",
+    "all_time": 3595,
     "since": "Jun 12, 2021"
   },
   {
@@ -1914,7 +1926,7 @@
   {
     "name": "Open Collective",
     "last_payment": 0,
-    "time_last_payment": "Apr 15, 2025",
+    "time_last_payment": "Apr 22, 2025",
     "all_time": 305,
     "since": "Aug 24, 2020"
   },
@@ -2381,7 +2393,7 @@
   {
     "name": "Triplebyte",
     "last_payment": 0,
-    "time_last_payment": "Apr 15, 2025",
+    "time_last_payment": "Apr 22, 2025",
     "all_time": 640,
     "since": "Dec 28, 2018"
   },
