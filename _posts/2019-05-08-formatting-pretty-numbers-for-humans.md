@@ -38,7 +38,7 @@ The number of digits in a thousands group is also configurable. This works for e
 
 There are many different styles used in different cultural contexts, and this method is flexible enough to represent most common formats.
 
-[*How the world separates its digits*](http://www.statisticalconsultants.co.nz/blog/how-the-world-separates-its-digits.html) provides an overview of international styles, and the [Wikipedia article on *Decimal Separators*](https://en.wikipedia.org/wiki/Decimal_separator) provides some more insight on this topic.
+[_How the world separates its digits_](http://www.statisticalconsultants.co.nz/blog/how-the-world-separates-its-digits.html) provides an overview of international styles, and the [Wikipedia article on _Decimal Separators_](https://en.wikipedia.org/wiki/Decimal_separator) provides some more insight on this topic.
 
 ### Decimal places
 
@@ -85,7 +85,7 @@ Quantifiers are by default the SI prefixes (`k`, `M`, `G`, etc.), but they're co
 
 `Number#humanize` can take a proc argument that calculates the number of digits and the quantifier for a specific magnitude.
 
-The following example shows how to format a length in metric units, including the unit designator. It derives from the default implementation by using the common *centimeter* unit for values between `0.01` and `0.99` (which the generic mapping would express as *millimeter*). All other values use the generic SI prefixes (provided by [`Number.si_prefix`](https://crystal-lang.org/api/0.28.0/Number.html#si_prefix(magnitude:Int,prefixes=SI_PREFIXES):Char?-class-method)).
+The following example shows how to format a length in metric units, including the unit designator. It derives from the default implementation by using the common _centimeter_ unit for values between `0.01` and `0.99` (which the generic mapping would express as _millimeter_). All other values use the generic SI prefixes (provided by [`Number.si_prefix`](https://crystal-lang.org/api/0.28.0/Number.html#si_prefix(magnitude:Int,prefixes=SI_PREFIXES):Char?-class-method)).
 
 ```crystal
 def humanize_length(number)

@@ -69,7 +69,7 @@ Online attendance: A link to join the conference video call will be shared with 
 
 ## Venue
 
-The conference took place at [*Haus der Kreislaufwirtschaft*](https://www.bde.de/presse/haus-der-krw/) in Berlin.
+The conference took place at [_Haus der Kreislaufwirtschaft_](https://www.bde.de/presse/haus-der-krw/) in Berlin.
 Drinks and finger food options are included in the ticket price.
 
 <address>

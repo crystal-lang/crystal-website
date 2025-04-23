@@ -37,10 +37,10 @@ entry:
 
 Without going into the details of how exactly Crystal compiles the method into this LLVM function (although we did actually have a [write-up](https://crystal-lang.org/2015/03/04/internals/) on this in the past), we know that it:
 
-* Takes as arguments a `%self` parameter, the `Foo` object being constructed, and the `%x` parameter coming from `Foo#initialize`;
-* Assigns the address of the `Foo` object's `@x` instance variable into the local variable `%0`;
-* Stores the `%x` parameter into `@x` via `%0`;
-* Returns `%x` to the caller. (This caller is normally `Foo.new`, so it goes unused most of the time.)
+- Takes as arguments a `%self` parameter, the `Foo` object being constructed, and the `%x` parameter coming from `Foo#initialize`;
+- Assigns the address of the `Foo` object's `@x` instance variable into the local variable `%0`;
+- Stores the `%x` parameter into `@x` via `%0`;
+- Returns `%x` to the caller. (This caller is normally `Foo.new`, so it goes unused most of the time.)
 
 We can see that the types of `%self` and `%0` are `%Foo*` and `i32*` respectively. These are _typed pointers_, which LLVM has been using for a long time. In LLVM, typed pointers of different pointee types must be explicitly converted using the `bitcast` LLVM instruction, otherwise the resulting LLVM IR is ill-formed. As more and more LLVM frontends came into existence, it was soon realized that typed pointers do not offer many useful semantics, and instead add an unnecessary layer of complexity over IR generation and analysis.
 
@@ -64,15 +64,15 @@ To get to there, a few LLVM instructions have to be built differently depending 
 
 Work on the migration to opaque pointers started in October 2022, a month after LLVM 15's release, and after countless segfaults and spec failures, [Crystal now supports LLVM 15 on the master branch](https://github.com/crystal-lang/crystal/pull/13173). As it was a rather huge effort, surely we want the opaque pointers to deliver the performance benefits that LLVM promises. So here are some numbers collected from re-building the compiler itself on an Apple M2, first with an LLVM 14 compiler, then with an LLVM 15 one:
 
-* Non-release build:
-  * Codegen (crystal): 2.65s → 2.84s
-  * Codegen (bc+obj): 5.91s → 5.20s
-  * Codegen (linking): 0.76s → 0.34s
-  * dsymutil: 0.35s → 0.39s
-* Release build:
-  * Codegen (bc+obj): 247.86s → 184.37s
-  * Codegen (linking): 0.45s → 0.33s
-  * dsymutil: 0.63s → 0.52s
+- Non-release build:
+  - Codegen (crystal): 2.65s → 2.84s
+  - Codegen (bc+obj): 5.91s → 5.20s
+  - Codegen (linking): 0.76s → 0.34s
+  - dsymutil: 0.35s → 0.39s
+- Release build:
+  - Codegen (bc+obj): 247.86s → 184.37s
+  - Codegen (linking): 0.45s → 0.33s
+  - dsymutil: 0.63s → 0.52s
 
 If we consider only the last 3 stages, which are fully in LLVM's control, that's a 18% speed-up for non-release builds and 34% speed-up for release builds! Similar figures were reported by developers who were eager enough to re-build Crystal with LLVM 15. Although it takes 0.2 second more on average to generate the LLVM IR for a program as large as Crystal itself, LLVM's improvement outweighs it by a large margin. That migration effort has certainly paid off.
 
@@ -85,15 +85,15 @@ If your Crystal project uses the stdlib's LLVM API directly, there are some depr
 
 On the other hand, if you do use Crystal to build other LLVM frontends using Crystal's `LLVM` APIs, please note that Crystal will stop supporting LLVM versions below 8.0 as part of the migration, because 8.0 is the first version where LLVM accepts a separate type for the instructions affected by opaque pointers, like the `getelementptr` above. [All features that depend on typed pointers are deprecated](https://github.com/crystal-lang/crystal/pull/13172), regardless of whether LLVM 15 is actually used. The following is the full list of affected methods:
 
-* `LLVM::Type#element_type`:
+- `LLVM::Type#element_type`:
   On LLVM 15 or above, calling this method on a pointer type raises an exception.
-* `LLVM::Function#function_type`, `#return_type`, `#varargs?`
+- `LLVM::Function#function_type`, `#return_type`, `#varargs?`
   There is no quick migration for these methods. However, if the function was constructed via `LLVM::FunctionCollection#add`, that method now has additional overloads that can take an LLVM function type directly. This allows you to use `LLVM::Type.function` and store the type somewhere else before constructing the function.
-* `LLVM::Builder#call(func : LLVM::Function, ...)`, `#invoke(fn : LLVM::Function, ...)`
+- `LLVM::Builder#call(func : LLVM::Function, ...)`, `#invoke(fn : LLVM::Function, ...)`
   They are equivalent to `call(func.function_type, func, ...)` and `invoke(fn.function_type, fn, ...)` respectively. Note that `#function_type` is deprecated and does not work on LLVM 15+.
-* `LLVM::Builder#load(ptr, ...)`
+- `LLVM::Builder#load(ptr, ...)`
   This is equivalent to `load(ptr.type.element_type, ptr, ...)`. Note that `#element_type` will raise on LLVM 15+.
-* `LLVM::Builder#gep(value, ...)`, `LLVM::Builder#inbounds_gep(value, ...)`
+- `LLVM::Builder#gep(value, ...)`, `LLVM::Builder#inbounds_gep(value, ...)`
   They are equivalent to `gep(value.type, value, ...)` and `inbounds_gep(value.type, value, ...)` respectively. Note that `#type` is simply the opaque pointer type on LLVM 15+.
 
 Additionally, even though LLVM 15 provides an opt-in flag to enable typed pointer support, Crystal does not use this flag at all, which makes upgrading to LLVM 16 and above much easier, as LLVM will eventually remove this flag.

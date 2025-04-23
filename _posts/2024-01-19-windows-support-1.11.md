@@ -41,19 +41,19 @@ With everything combined, the interpreter will now more or less run on Windows. 
 
 As before, the list of outstanding issues on Windows can be found in [this GitHub project](https://github.com/orgs/crystal-lang/projects/11), and we hope to squash the "Todo" and "In progress" columns by the time an official Windows release is available. The main remaining issues, in order of importance, are:
 
-* Finalizing the details for dynamic linking ([#11575])
-* `crystal i` ([#12396])
-* Behavior of `Process.new(shell: true)` ([#9030])
-* Channels do not behave correctly under `-Dpreview_mt` ([#14222])
-* Support for case-insensitive `Dir.glob` ([#13510])
-* Support for long paths in file APIs ([#13420])
-* Making `/SUBSYSTEM:WINDOWS` more usable ([#13330])
+- Finalizing the details for dynamic linking ([#11575])
+- `crystal i` ([#12396])
+- Behavior of `Process.new(shell: true)` ([#9030])
+- Channels do not behave correctly under `-Dpreview_mt` ([#14222])
+- Support for case-insensitive `Dir.glob` ([#13510])
+- Support for long paths in file APIs ([#13420])
+- Making `/SUBSYSTEM:WINDOWS` more usable ([#13330])
 
 Regarding dynamic linking, if everything goes as intended, a future Crystal version will make the following **breaking changes**:
 
-* The compiler itself will be dynamically linked, as described above, once LLVM 18 is generally available.
-* All builds will assume dynamic linking by default; `-Dpreview_dll` will have no effect, and `--static` becomes mandatory to preserve the current behavior.
-* The delay-load helper and `Crystal::LIBRARY_RPATH` will be removed.
+- The compiler itself will be dynamically linked, as described above, once LLVM 18 is generally available.
+- All builds will assume dynamic linking by default; `-Dpreview_dll` will have no effect, and `--static` becomes mandatory to preserve the current behavior.
+- The delay-load helper and `Crystal::LIBRARY_RPATH` will be removed.
 
 [#9030]: https://github.com/crystal-lang/crystal/pull/9030
 [#11575]: https://github.com/crystal-lang/crystal/pull/11575

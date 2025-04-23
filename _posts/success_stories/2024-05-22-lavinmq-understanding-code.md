@@ -16,13 +16,13 @@ LavinMQ can handle numerous connections between the publisher, the queue, and th
 
 LavinMQ includes all the features people want the most and leaves just a small memory footprint, supporting:
 
-* Streaming
-* Flexible Routing
-* AMQP 0.9.1 Protocol
-* Acknowledgments and Confirms
-* Stream Queue
-* Unlimited Queue Length (dependent on disk space)
-* Replication
+- Streaming
+- Flexible Routing
+- AMQP 0.9.1 Protocol
+- Acknowledgments and Confirms
+- Stream Queue
+- Unlimited Queue Length (dependent on disk space)
+- Replication
 
 We highlighted the characteristics that stand out from a technical point of view. How does it manage to handle more than a million messages per second, and have a low memory footprint? Half of it is due to, and we quote:
 
@@ -36,7 +36,7 @@ But the other half, as mentioned in [their blog](https://lavinmq.com/blog/crysta
 
 3. Crystal's stdlib and compiler are written in Crystal itself. One of Crystal's golden characteristics is its readability, making it possible to read the code that is going to be run by the program without having to resort to another, typically lower-level  language.
 
-The latter is the main point of this post. In fact, the documentation of the standard library points to the code, making the performance implications of calling a certain method explicit. For example, look at the [documentation for `Digest.file`](https://crystal-lang.org/api/1.12.1/Digest.html#file%28file_name%3APath%7CString%29%3Aself-instance-method). Clicking on [*View source*](https://github.com/crystal-lang/crystal/blob/4cea10199/src/digest/digest.cr#L214) we land in the method’s code.
+The latter is the main point of this post. In fact, the documentation of the standard library points to the code, making the performance implications of calling a certain method explicit. For example, look at the [documentation for `Digest.file`](https://crystal-lang.org/api/1.12.1/Digest.html#file%28file_name%3APath%7CString%29%3Aself-instance-method). Clicking on [_View source_](https://github.com/crystal-lang/crystal/blob/4cea10199/src/digest/digest.cr#L214) we land in the method’s code.
 
 The importance of being able to read, understand, and even contribute to the language and its stdlib is exemplified in [one](https://github.com/crystal-lang/crystal/pull/13780) of the [several PRs](https://github.com/crystal-lang/crystal/pulls?q=is%3Apr+author%3Acarlhoerberg+) that 84codes contributed to Crystal. Details are not important, but if you’re curious, they noted that in the aforementioned `Digest` class’s method there was a duplication of buffering. The following extract shows the main part of the contribution; the diff with the added line and comment explaining why it makes sense to remove the buffering in the `io` object.
 
