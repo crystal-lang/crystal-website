@@ -1,7 +1,35 @@
-# MD013/line-length - Line length
-# Not enforce line length limitations
-MD013: false
+default: true
 
-# MD033/no-inline-html - Inline HTML
-# We sometimes need inline HTML
-MD033: false
+heading-style: "setext"
+
+no-inline-html: false
+line-length: false
+
+ol-prefix:
+  style: "ordered"
+ul-style:
+  style: "dash"
+ul-indent:
+  indent: 2
+
+no-blanks-blockquote: false
+
+emphasis-style:
+  style: "underscore"
+strong-style:
+  style: "asterisk"
+
+no-duplicate-heading:
+  siblings_only: true
+no-bare-urls: false
+
+fenced-code-language: false
+commands-show-output: false
+
+first-line-h1:
+  front_matter_title: "^\\s*(page_)?title\\s*[:=]"
+
+no-alt-text: false
+
+hard_tab:
+  code_blocks: false
