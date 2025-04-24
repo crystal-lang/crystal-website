@@ -35,12 +35,12 @@ The Sikoba back-end has three components:
 
 All of these components are written in the Crystal programming language using the [Lucky](https://www.luckyframework.org/) web framework, and it uses PostgreSQL to store data and Redis to store queued transactions. The entire system is built with and runs in Docker.
 
-The Sikoba front-end consists of the **sikobaPay mobile app**, available for both [Android](https://play.google.com/store/apps/details?id=com.sikoba.dev&hl=es_GT) and iOS (currently in beta) and a web interface (currently under development).
+The Sikoba front-end consists of the **sikobaPay mobile app**, available for both ~~[Android](https://play.google.com/store/apps/details?id=com.sikoba.dev&hl=es_GT)~~ and iOS (currently in beta) and a web interface (currently under development).
 
 The mobile app is written in React Native, while the web interface is written in React JS. Both communicate with the backend via a RESTful API.
 
 ## The road ahead
 
-The Sikoba team has of late been focused on developing the blockchain infrastructure for their ecosystem, and on the launch of the Sikoba mainnet. In parallel, they have been busy with the development of the [BekiPay app](https://play.google.com/store/apps/details?id=com.sikoba.bekiPay&hl=en&gl=US), which will allow people and businesses of Luxembourg’s canton of Redange to use e-Bekis instead of paper Bekis, and cooperating with “Proyecto Banco Mujer” in Peru, a group of business women in Peru who are operating a small credit and savings ring that has started using the SikobaPay app to register loans.
+The Sikoba team has of late been focused on developing the blockchain infrastructure for their ecosystem, and on the launch of the Sikoba mainnet. In parallel, they have been busy with the development of the ~~[BekiPay app](https://play.google.com/store/apps/details?id=com.sikoba.bekiPay&hl=en&gl=US)~~, which will allow people and businesses of Luxembourg’s canton of Redange to use e-Bekis instead of paper Bekis, and cooperating with “Proyecto Banco Mujer” in Peru, a group of business women in Peru who are operating a small credit and savings ring that has started using the SikobaPay app to register loans.
 
 {% include components/testimonial-profile.html handle="alex-kampa" role="Founder & Director, Sikoba" %}
