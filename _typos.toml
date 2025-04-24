@@ -22,4 +22,5 @@ extend-exclude = [
   "_sass/components/_highlight.scss",
   "/_site*/",
   "**/crystal-pgp-key.txt", "gemset.nix",
+  "_style_guide/typography/footnotes.md",
 ]
