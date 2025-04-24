@@ -1,5 +1,5 @@
-Crystal Website
-===============
+# Crystal Website
+
 Powered by [Jekyll](https://jekyllrb.com/)
 
 ## Development setup (via docker)
@@ -25,7 +25,7 @@ Using [devenv](https://devenv.sh)
 - Open a browser in `localhost:4000`
 - Run `devenv shell` to get a shell with all development environment
 
-## Thanks!
+## Thanks
 
 As always, thanks to the community who contributes to Crystal and its infrastructure and projects.
 

@@ -145,7 +145,7 @@ Listening on http://0.0.0.0:9090
 ^C
 </pre>
 
-## Deploy!
+## Deploy
 
 When you are ready to go live with your app just deploy it the usual way with `git push heroku master`.
 
@@ -187,7 +187,7 @@ The buildpack will:
 3. Compile the main source file in release mode.
 4. Run the web server process with `--port` option.
 
-# Specify the crystal version
+## Specify the crystal version
 
 If you want to use a different Crystal version, create a `.crystal-version` file with the desired version, following [crenv](https://github.com/pine/crenv)’s convention.
 
@@ -219,7 +219,7 @@ You will now notice the `(0.17.1 due to .crystal-version file)` legend.
 
 Whenever you are ready to upgrade to the latest crystal version, update the content of the file or just remove it and deploy again.
 
-## Show me the code!
+## Show me the code
 
 Find all the sample source code used at
 [https://github.com/bcardiff/sample-crystal-heroku101](https://github.com/bcardiff/sample-crystal-heroku101).

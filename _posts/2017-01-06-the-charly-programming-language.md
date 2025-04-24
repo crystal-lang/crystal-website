@@ -7,9 +7,9 @@ categories: success
 company: Charly Language
 ---
 
-*This post is the first from our guest writers series. If you have built something awesome using Crystal and want to share your experience here on the blog, [let us know](http://twitter.com/intent/tweet?text=@CrystalLanguage%20I%20want%20to%20write%20about...)!*
+_This post is the first from our guest writers series. If you have built something awesome using Crystal and want to share your experience here on the blog, [let us know](http://twitter.com/intent/tweet?text=@CrystalLanguage%20I%20want%20to%20write%20about...)!_
 
-*Today’s guest author is Leonard Schütz. He created the Charly programming language as a means to learn how to create a programming language, and after a first iteration in Ruby, he moved to Crystal to implement the language interpreter. In this post, he presents the language, shows how it works, and why he chose Crystal to implement it.*
+_Today’s guest author is Leonard Schütz. He created the Charly programming language as a means to learn how to create a programming language, and after a first iteration in Ruby, he moved to Crystal to implement the language interpreter. In this post, he presents the language, shows how it works, and why he chose Crystal to implement it._
 
 ## Introduction
 
@@ -157,8 +157,8 @@ Thanks for reading!
 
 ## Links & Sources
 
-* Leonard Schütz: [leonardschuetz.ch](https://leonardschuetz.ch)
-* Charly Programming Language: [charly-lang/charly](https://github.com/charly-lang/charly)
-* GraphViz (used for AST visualisations): [www.graphviz.org](http://www.graphviz.org/)
-* "Ruby open file" on stackoverflow: [how-to-read-an-open-file-in-ruby](http://stackoverflow.com/questions/4475957/how-to-read-an-open-file-in-ruby)
-* Old test suite used for the ruby interpreter: [test/main.ch](https://github.com/charly-lang/charly/blob/92bc26e06068bdce926f01f1cd49a5faeb01180c/test/main.ch)
+- Leonard Schütz: [leonardschuetz.ch](https://leonardschuetz.ch)
+- Charly Programming Language: [charly-lang/charly](https://github.com/charly-lang/charly)
+- GraphViz (used for AST visualisations): [www.graphviz.org](http://www.graphviz.org/)
+- "Ruby open file" on stackoverflow: [how-to-read-an-open-file-in-ruby](http://stackoverflow.com/questions/4475957/how-to-read-an-open-file-in-ruby)
+- Old test suite used for the ruby interpreter: [test/main.ch](https://github.com/charly-lang/charly/blob/92bc26e06068bdce926f01f1cd49a5faeb01180c/test/main.ch)

@@ -11,8 +11,8 @@ In this post, we'll cover how to automatically recompile and execute your code w
 
 ## Requirements
 
-* Have `watchexec` installed (check [github](https://github.com/watchexec/watchexec) for installation instructions)
-* Use shards’ `targets`
+- Have `watchexec` installed (check [github](https://github.com/watchexec/watchexec) for installation instructions)
+- Use shards’ `targets`
 
 ## Setup
 

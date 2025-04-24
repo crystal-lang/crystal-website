@@ -17,20 +17,20 @@ The role of `crystal-db` is to abstract from SQL DB drivers which will implement
 
 Current `crystal-db` implementations are:
 
-* [crystal-lang/crystal-sqlite3](https://github.com/crystal-lang/crystal-sqlite3) that binds libsqlite3.
-* [crystal-lang/crystal-mysql](https://github.com/crystal-lang/crystal-mysql) that talks to MySQL using a **100% crystal** implementation.
-* [will/crystal-pg](https://github.com/will/crystal-pg) that talks to PostgreSQL using a **100% crystal** implementation.
+- [crystal-lang/crystal-sqlite3](https://github.com/crystal-lang/crystal-sqlite3) that binds libsqlite3.
+- [crystal-lang/crystal-mysql](https://github.com/crystal-lang/crystal-mysql) that talks to MySQL using a **100% crystal** implementation.
+- [will/crystal-pg](https://github.com/will/crystal-pg) that talks to PostgreSQL using a **100% crystal** implementation.
 
 **Why are 100% crystal implementations important?** Usually this means:
 
-* Less pain with binary dependencies,
-* You can go down the rabbit hole with protocols.
+- Less pain with binary dependencies,
+- You can go down the rabbit hole with protocols.
 
 But even more important:
 
-* Reduce memory footprint,
-* Read/write directly on the socket to the server without leaving the joy of the language,
-* Take advantage of all the native async I/O in crystal, thus not blocking the current fiber.
+- Reduce memory footprint,
+- Read/write directly on the socket to the server without leaving the joy of the language,
+- Take advantage of all the native async I/O in crystal, thus not blocking the current fiber.
 
 Also, besides a unified query API, `crystal-db` ships with a connection pool, prepared statements, and nested transactions.
 
@@ -44,8 +44,6 @@ We hope this will help build DB tools and shards that work with multiple drivers
 
 ## Special thanks
 
-* To [@spalladino](https://github.com/spalladino), [@asterite](https://github.com/asterite), [@waj](https://github.com/waj) for reviewing and discussing the code.
-* To [@will](https://github.com/will) for joining the game.
-* To the early adopters [@crisward](https://github.com/crisward), ~~[@raydf](https://github.com/raydf)~~, [@drujensen](https://github.com/drujensen), [@fridgerator](https://github.com/fridgerator), [@tbrand](https://github.com/tbrand) and many others.
-
-
+- To [@spalladino](https://github.com/spalladino), [@asterite](https://github.com/asterite), [@waj](https://github.com/waj) for reviewing and discussing the code.
+- To [@will](https://github.com/will) for joining the game.
+- To the early adopters [@crisward](https://github.com/crisward), ~~[@raydf](https://github.com/raydf)~~, [@drujensen](https://github.com/drujensen), [@fridgerator](https://github.com/fridgerator), [@tbrand](https://github.com/tbrand) and many others.

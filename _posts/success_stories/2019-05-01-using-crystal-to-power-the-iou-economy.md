@@ -27,11 +27,11 @@ The team estimated the scope of work, and held a round of spikes to reduce uncer
 
 The Sikoba back-end has three components:
 
-* Server to handle user requests
+- Server to handle user requests
 
-* Transaction Processor to manage and execute submitted transactions
+- Transaction Processor to manage and execute submitted transactions
 
-* Services component to execute periodic actions and perform clearing
+- Services component to execute periodic actions and perform clearing
 
 All of these components are written in the Crystal programming language using the [Lucky](https://www.luckyframework.org/) web framework, and it uses PostgreSQL to store data and Redis to store queued transactions. The entire system is built with and runs in Docker.
 

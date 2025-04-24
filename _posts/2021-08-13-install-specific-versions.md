@@ -17,9 +17,9 @@ There are individual packages for each minor release.
 
 At the moment, there are three different packages available at [build.opensuse.org/package/show/devel:languages:crystal](https://build.opensuse.org/project/show/devel:languages:crystal):
 
-* `crystal1.0` (1.0.0)
-* `crystal1.1` (1.1.1)
-* `crystal` (1.1.1)
+- `crystal1.0` (1.0.0)
+- `crystal1.1` (1.1.1)
+- `crystal` (1.1.1)
 
 The non-versioned `crystal` package keeps tracking the latest stable release,
 versioned packages keep tracking the latest patch release of the respective minor version.

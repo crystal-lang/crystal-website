@@ -63,6 +63,10 @@ check_html: $(O) ## Validates generated HTML
 check_external_links: $(O) ## Validates external links in generated HTML
 	$(htmltest)
 
+.PHONY: lint-markdown
+lint-markdown: ## Run markdownlint
+	markdownlint '**/*.md' '_{pages,events,releases,posts,style_guide}/**/*.html'
+
 .PHONY: clean
 clean: ## Removes output directory
 	rm -rf $(O)

@@ -18,11 +18,11 @@ We're effectively a Crystal-lang house for all things backend. Most of what we d
 
 We're also a big proponent of open source, so you can find our work at:
 
-* [spider-gazelle](https://github.com/spider-gazelle) - shards we consider reusable with community benefit
+- [spider-gazelle](https://github.com/spider-gazelle) - shards we consider reusable with community benefit
 
-* [PlaceOS](https://github.com/PlaceOS) - our core platform, primarily useful for partner organizations
+- [PlaceOS](https://github.com/PlaceOS) - our core platform, primarily useful for partner organizations
 
-* [place-labs](https://github.com/place-labs) - mostly supporting shards for PlaceOS
+- [place-labs](https://github.com/place-labs) - mostly supporting shards for PlaceOS
 
 Also, some of our SaSS / cloud platform software, which includes platform management and billing software, is closed source —but that's all Crystal-lang too.
 

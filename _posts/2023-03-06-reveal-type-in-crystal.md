@@ -34,7 +34,6 @@ maybe(sometimes_a_string, "a default value")
 
 Debugging the execution of a program using `printf`/`print`/`puts` is widely used. In Crystal we could write some variation of:
 
-
 ```crystal
 puts "x = #{x.inspect} : #{x.class}"
 #
@@ -76,7 +75,6 @@ pp! typeof(x)
 About 8 years ago Crystal [gained some built-in tooling](/2015/09/05/tools/) and one of those tools would give us exactly the information we are looking for.
 
 Assuming the previous `def maybe` is defined at the beginning of a  `program.cr` we could use the context tool as follows:
-
 
 ```console
 % crystal tool context -c program.cr:2:3 program.cr
@@ -135,7 +133,6 @@ Crystal macros can print during compile time and we have access to the expressio
 
 The following will give us the first part of the message.
 
-
 ```crystal
 {% raw %}
 macro reveal_type(t)
@@ -149,7 +146,6 @@ end
 
 If we try to get the compile-time type of the expression `t` we will stumble on the infamous “can't execute TypeOf in a macro”.
 
-
 ```console
 {% raw %}
 In program.ign.cr:4:26
@@ -161,7 +157,6 @@ Error: can't execute TypeOf in a macro
 ```
 
 To overcome this we can use the fact that `def`s can have macro code.
-
 
 ```crystal
 {% raw %}
@@ -210,11 +205,9 @@ end
 
 The `l` argument will have a tuple of type `{ <loc>: Int32 }` where `<loc>` is an identifier that depends on the invocation location of the `reveal_type` macro. 🤯
 
-
 ## Caveats
 
 There are a couple of more caveats of this solution that are worth mentioning. A proper built-in feature in the compiler would not be affected by all of them. Essentially these can be summed up as:
-
 
 - The `reveal_type` needs to be within used code
 - Our implementation is very sensible to the internals compiler’s execution order
@@ -277,7 +270,6 @@ Revealed type /path/to/program.cr:6:17
 
 We mostly care about the compile-time experience here, but the `reveal_type_helper` invocation duplicates value-type values and **could change the semantic of the running program**.
 
-
 ```crystal
 struct SmtpConfig
   property host : String = ""
@@ -306,7 +298,6 @@ config # => Config(@smtp=SmtpConfig(@host=""))
 ```
 
 We could do an alternative `reveal_type` implementation that will preserve the memory layout, but it fails even to compile the previous recursive program. Either way, the following would be that variation:
-
 
 ```crystal
 {% raw %}
@@ -355,7 +346,6 @@ Error: Lorem ipsum
 
 If we would like to keep the `reveal_type` defined in user code I think it would be nice to have something similar to `AST#raise` to print information only. This could have the location, expression and `^-------` already solved, while allowing use to customize the message. Additionally,
 
-
 - It could allow multiple information invocation and not abort the compilation as `AST#raise` does.
 - It could have access to some additional information as final node type by having specific execution live-cycle: `AST#at_exit_info` for example.
 - It could be used to experiment with additional compile-time tooling (eg: checking if a database and model is up-to-date with one another)
@@ -383,7 +373,6 @@ end
 ```
 
 If we have an expression like `foo(bar.baz)` in which we are uncertain about the type of `bar` we can:
-
 
 1. Surround `bar` with `reveal_type` as in `foo(reveal_type(bar).baz)`
 2. Build the program as usual.
