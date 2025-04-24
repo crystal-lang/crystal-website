@@ -31,15 +31,7 @@ jobs:
             ~/.cache/bundle
           key: gem-${{ hashFiles('Gemfile.lock') }}
           restore-keys: gem-
-      - name: Cache htmltest
-        uses: actions/cache@v4
-        with:
-          path: |
-            tmp/.htmltest
-          key: htmltest
       - name: Build website
         run: devenv shell make build
       - name: Test `check_html`
         run: devenv shell make check_html
-      - name: Test `check_external_links` (allowed to fail)
-        run: devenv shell make check_external_links || true
