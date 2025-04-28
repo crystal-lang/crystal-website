@@ -13,7 +13,7 @@ Here we tell the community what's been on the team's plate for the last couple o
 We directed efforts to [improve the documentation](https://github.com/crystal-lang/crystal-book/pulls?page=1&q=is%3Apr++merged%3A%3E%3D2022-01-01), since that's where users are guided to when first learning the language. This is part of an on-going task to improve newcomers experience with the language.
 
 > **NOTE:** Shameless plug #1
-> Our @ftarulla is writting about his experience with Crystal in his [dev.to channel](https://dev.to/franciscello/) that you can follow.
+> Our @ftarulla is writing about his experience with Crystal in his [dev.to channel](https://dev.to/franciscello/) that you can follow.
 
 ## A long and exciting hiring process
 

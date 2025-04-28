@@ -93,10 +93,10 @@ Crystal developers do love using Vim, here's the major editors being used
 
 Linux is the main platform Crystal developers choose followed by Mac OS. There's also a notable amount (17.9%) of Crystal developers using Windows.
 
-![Linux 91.2%, Mac OS 41.5%, Windows 31.1%, Android 13.1%, iOS 10.9%, 5.3% BSD-variant, 9.4% Javascript, 6% Embeeded](https://cdn.pbrd.co/images/GPbIN3w.png
-  "Linux 91.2%, Mac OS 41.5%, Windows 31.1%, Android 13.1%, iOS 10.9%, 5.3% BSD-variant, 9.4% Javascript, 6% Embeeded")
+![Linux 91.2%, Mac OS 41.5%, Windows 31.1%, Android 13.1%, iOS 10.9%, 5.3% BSD-variant, 9.4% Javascript, 6% Embedded](https://cdn.pbrd.co/images/GPbIN3w.png
+  "Linux 91.2%, Mac OS 41.5%, Windows 31.1%, Android 13.1%, iOS 10.9%, 5.3% BSD-variant, 9.4% Javascript, 6% Embedded")
 
-We see a similar pattern in target platforms. Linux is the most targeted platform. Interestingly we see Android, iOS and Javascript in a noticable ratio.
+We see a similar pattern in target platforms. Linux is the most targeted platform. Interestingly we see Android, iOS and Javascript in a noticeable ratio.
 
 ### Towards 1.0
 
@@ -106,8 +106,8 @@ We see a similar pattern in target platforms. Linux is the most targeted platfor
 
 Crystal developers tend to follow the latest stable release.
 
-![No 60.7%, Yes, but it happens rarely 29.8%, Yes, and it happens oftern 9.4%](https://cdn.pbrd.co/images/GPdzxCW.png
-  "No 60.7%, Yes, but it happens rarely 29.8%, Yes, and it happens oftern 9.4%")
+![No 60.7%, Yes, but it happens rarely 29.8%, Yes, and it happens often 9.4%](https://cdn.pbrd.co/images/GPdzxCW.png
+  "No 60.7%, Yes, but it happens rarely 29.8%, Yes, and it happens often 9.4%")
 (hover for more info)
 
 We try to keep breaking changes as minimum as possible. More than %60 of Crystal developers don't have any significant changes to their code when upgrading to a new version.

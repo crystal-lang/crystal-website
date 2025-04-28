@@ -107,7 +107,7 @@ This procedure follows the [Visitor pattern](https://en.wikipedia.org/wiki/Visit
 Take a `BinaryExpression` as an example. It has three properties. The two values of the expression and an operator.
 This operator could be a plus, minus or any other operator the language supports.
 It first resolves the two values, checks what operator is being used and applies it to the two values.
-Depending on which value is on which side, this procedure might produce completly different results.
+Depending on which value is on which side, this procedure might produce completely different results.
 `3 + [1, 2]` is not the same as `[1, 2] + 3` (`NAN` and `[1, 2, 3]`).
 
 A `IdentifierLiteral` would load a value from the current scope, a `CallExpression` would invoke a pre-defined function and so on.

@@ -68,7 +68,7 @@ In this example we can see that multi-thread is not a silver bullet. The single-
 
 <center>wall time for channel-primes. less is better</center>
 
-Although, depending on the number of workers the wall time difference is less noticable, the cpu time difference will be huge.
+Although, depending on the number of workers the wall time difference is less noticeable, the cpu time difference will be huge.
 
 <img src="/assets/blog/2019-08-channel-primes-cpu-time.png" class="center"/>
 

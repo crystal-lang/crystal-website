@@ -18,7 +18,7 @@ At that moment the language was really like Ruby: to create an empty Array you w
 exponential, unbearable, and got sad.
 
 We spent an awful time trying to make it work with no avail. Finally, we decided to make a change:
-speficy the types of empty generic types, for example `[] of Int32` or `Set(Int32).new`.
+specify the types of empty generic types, for example `[] of Int32` or `Set(Int32).new`.
 Compile times were back to normal. And we were kind of happy again, but at the same time felt
 that we were leaving behind some of Ruby's feeling. The language diverged.
 

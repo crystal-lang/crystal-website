@@ -32,5 +32,6 @@
         write = true;
       };
     };
+    typos.enable = true;
   };
 }

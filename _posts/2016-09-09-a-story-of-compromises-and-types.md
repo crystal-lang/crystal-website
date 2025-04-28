@@ -89,7 +89,7 @@ We could try to do something _crazy_. What if `Queue` contains the amount of ele
 
 1. Push an element to a `Queue(N)`, you will get a `Queue(N+1)`
 2. Pop from a `Queue(1)`, you will get an `EmptyQueue`
-3. Pop from a `Queue(N)` with `N > 1`, you wil get a `Queue(N-1)`
+3. Pop from a `Queue(N)` with `N > 1`, you will get a `Queue(N-1)`
 
 It seems reasonable (and a bit crazy).
 

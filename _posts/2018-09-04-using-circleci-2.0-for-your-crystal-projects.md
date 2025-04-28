@@ -92,7 +92,7 @@ workflows:
       - test
 ```
 
-**Note:** The `dry` key is not standard. It’s just a placeholder of values that will be used multiple times later or that helps reading the job’s steps. If prefered, you can inline their contents directly.
+**Note:** The `dry` key is not standard. It’s just a placeholder of values that will be used multiple times later or that helps reading the job’s steps. If preferred, you can inline their contents directly.
 
 ## Reduce CI delays
 
