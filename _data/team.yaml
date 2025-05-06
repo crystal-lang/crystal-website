@@ -54,6 +54,10 @@ core:
     status: active
     affiliation: Manas.Tech
 
+  nobodywasishere:
+    name: Margret Riegert
+    status: active
+
 admin:
   nditada:
     name: Nicolás di Tada
