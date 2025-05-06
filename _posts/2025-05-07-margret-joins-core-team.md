@@ -17,7 +17,7 @@ She participates in the [tree-sitter grammar](https://github.com/crystal-lang-to
 In [Ameba](https://github.com/crystal-ameba/ameba), she has implemented a number of rules, and is trying to bring [semantic analysis into the linter](https://github.com/crystal-ameba/ameba/issues/513).
 She also started [larimar](https://github.com/nobodywasishere/larimar), a new LSP for Crystal ([forum thread](https://forum.crystal-lang.org/t/why-isnt-there-an-lsp-for-crystal/7687)).
 
-We are thrilled to have Margret join the Core Team and look forward to her continued contributions to the Crystal ecosystem. Welcome aboard, Margret!
+We are thrilled to have Margret join the Core Team and look forward to her continued contributions to Crystal and its ecosystem. Welcome aboard, Margret!
 
 <div class="testimonial-profile">
   <img src="/assets/authors/nobodywasishere.jpg" alt="Margret Riegert's avatar">
