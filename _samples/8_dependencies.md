@@ -5,7 +5,7 @@ description: |
   Crystal libraries are packed with *Shards*, a distributed dependency manager without a centralised repository.
 
   It reads dependencies defined in `shard.yml` and fetches the source code from their repositories.
-read_more: '[Read more about Shards](https://github.com/crystal-lang/shards)'
+read_more: '[Read more about Shards](https://crystal-lang.org/reference/latest/man/shards)'
 runnable: playground
 ---
 ```yaml
