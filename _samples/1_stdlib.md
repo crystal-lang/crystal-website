@@ -7,17 +7,13 @@ read_more: '[Check the API docs](https://crystal-lang.org/api/)'
 playground: false
 ---
 ```crystal
-# A very basic HTTP server
-require "http/server"
+require "http/client"
+require "xml"
 
-server = HTTP::Server.new do |context|
-  context.response.content_type = "text/plain"
-  context.response.print "Hello world, got #{context.request.path}!"
-end
+response = HTTP::Client.get("https://crystal-lang.org")
+html = XML.parse(response.body)
+node = html.xpath_node(%(//div[@class="latest-release-info"]//strong))
+version = node.try(&.text)
 
-address = server.bind_tcp(8080)
-puts "Listening on http://#{address}"
-
-# This call blocks until the process is terminated
-server.listen
+puts "Latest Crystal version: #{version || "Unknown"}"
 ```
