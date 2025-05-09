@@ -9,7 +9,7 @@ read_more: '[Read more about Shards](https://github.com/crystal-lang/shards)'
 runnable: playground
 ---
 ```yaml
-name: my-first-crystal-app
+name: hello-world
 version: 1.0.0
 license: Apache-2.0
 
@@ -20,8 +20,4 @@ dependencies:
   mysql:
     github: crystal-lang/crystal-mysql
     version: ~>0.16.0
-
-development_dependencies:
-  ameba:
-    github: crystal-ameba/ameba
 ```
