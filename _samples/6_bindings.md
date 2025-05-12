@@ -2,6 +2,7 @@
 title: C-bindings
 description: |
   Bindings for C libraries makes it easy to use existing tools.
+  Crystal calls lib functions natively without any runtime overhead.
 
   No need to implement the entire program in Crystal when there are already
   good libraries for some jobs.
