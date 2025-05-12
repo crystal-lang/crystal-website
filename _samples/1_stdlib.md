@@ -8,12 +8,11 @@ playground: false
 ---
 ```crystal
 require "http/client"
-require "xml"
+require "json"
 
-response = HTTP::Client.get("https://crystal-lang.org")
-html = XML.parse(response.body)
-node = html.xpath_node(%(//div[@class="latest-release-info"]//strong))
-version = node.try(&.text)
+response = HTTP::Client.get("https://crystal-lang.org/api/versions.json")
+json = JSON.parse(response.body)
+version = json["versions"].as_a.find! { |entry| entry["released"]? != false }["name"]
 
 puts "Latest Crystal version: #{version || "Unknown"}"
 ```
