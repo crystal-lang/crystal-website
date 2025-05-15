@@ -61,7 +61,6 @@ home:
 install:
   title: Install
   breadcrumbs:
-    - title: Docs
     - title: Install
       url: /install/
       nav: install
