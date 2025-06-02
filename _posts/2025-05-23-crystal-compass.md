@@ -12,7 +12,7 @@ tags: [Crystal Compass, ecosystem, Manas.Tech]
 is a paid subscription that offers technical support and code reviews from the
 creators of the Crystal language.
 
-This is a service for companies who use or prepare to use Crystal in production.
+This is a service for companies who use, or prepare to use, Crystal in production.
 Our support service pairs production teams with Crystal experts,
 providing PR reviews, architectural input, language guidance, and critical conversations.
 
