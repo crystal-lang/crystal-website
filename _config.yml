@@ -17,6 +17,8 @@ collections:
     permalink: /:path/
   samples:
     output: false
+  newsletter:
+    output: true
 
 defaults:
   -
@@ -64,6 +66,15 @@ defaults:
       type: samples
     values:
       playground: true
+
+  -
+    scope:
+      path: ""
+      type: newsletter
+    values:
+      layout: newsletter
+      permalink: /newsletter/:title/
+      section: newsletter
 
 # Used by https://github.com/jekyll/jekyll-seo-tag
 twitter:
