@@ -14,7 +14,7 @@ creators of the Crystal language.
 
 This is a service for people who use, or prepare to use, Crystal in production.
 Our support service pairs production teams with Crystal experts,
-providing PR reviews, architectural input, language guidance, and critical conversations.
+providing PR reviews, architectural input, language guidance, and in general, help with the critical aspects that entails running a Crystal application.
 
 Its goal is to strengthen Crystal's user community. We want to help both
 current users and new adopters with simple and practical support.
