@@ -32,7 +32,7 @@
   },
   {
     "name": "Alex Herrmann",
-    "last_payment": 30,
+    "last_payment": 0,
     "time_last_payment": "Apr 12, 2025",
     "all_time": 30,
     "since": "Apr 12, 2025"
@@ -270,8 +270,7 @@
   },
   {
     "name": "Ausm2Kind",
-    "url": "https://ausm2kind.de/",
-    "last_payment": 5,
+    "last_payment": 0,
     "time_last_payment": "May 2, 2025",
     "all_time": 45,
     "since": "Sep 5, 2024"
@@ -598,8 +597,8 @@
     "name": "TopCasinoSearch",
     "url": "https://www.topcasinosearch.com/",
     "last_payment": 5,
-    "time_last_payment": "May 13, 2025",
-    "all_time": 100,
+    "time_last_payment": "Jun 13, 2025",
+    "all_time": 105,
     "since": "Oct 13, 2023"
   },
   {
@@ -805,8 +804,8 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5,
-    "time_last_payment": "May 13, 2025",
-    "all_time": 140,
+    "time_last_payment": "Jun 13, 2025",
+    "all_time": 145,
     "since": "Feb 13, 2023"
   },
   {
