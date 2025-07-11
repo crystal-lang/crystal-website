@@ -1,0 +1,135 @@
+---
+layout: none
+---
+{
+  "version": "v1.0.0",
+  "entity": {
+    "type": "organisation",
+    "role": "steward",
+    "name": "Manas Technology Solutions",
+    "email": "crystal@manas.tech",
+    "description": "Manas.Tech has created and been leading the development of the Crystal programming language since 2015",
+    "webpageUrl": {
+      "url": "https://crystal-lang.org/"
+    }
+  },
+  "projects": [
+    {
+      "guid": "crystal-lang",
+      "name": "Crystal",
+      "description": "Crystal is a general-purpose, object-oriented programming language. With syntax inspired by Ruby, it’s a compiled language with static type-checking. Types are resolved by an advanced type inference algorithm.",
+      "webpageUrl": {
+        "url": "https://crystal-lang.org/"
+      },
+      "repositoryUrl": {
+        "url": "https:///github.com/crystal-lang/crystal",
+        "wellKnown": "https://github.com/crystal-lang/crystal/blob/master/.well-known/funding-manifest-urls"
+      },
+      "licenses": [
+        "spdx:Apache-2.0"
+      ],
+      "tags": [
+        "programming",
+        "programming-language",
+        "developer-tools",
+        "development"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "open-collective",
+        "type": "payment-provider",
+        "address": "https://opencollective.com/crystal-lang",
+        "description": "Support Crystal Language's development on OpenCollective"
+      }
+    ],
+    "plans": [
+      {
+        "guid": "backer-s",
+        "status": "active",
+        "name": "Backer S",
+        "description": "Show your love for Crystal ❤️",
+        "amount": 5,
+        "currency": "USD",
+        "frequency": "monthly",
+        "channels": [
+          "open-collective"
+        ]
+      },
+      {
+        "guid": "backer-m",
+        "status": "active",
+        "name": "Backer M",
+        "description": "Show your love for Crystal ❤️",
+        "amount": 10,
+        "currency": "USD",
+        "frequency": "monthly",
+        "channels": [
+          "open-collective"
+        ]
+      },
+      {
+        "guid": "backer-l",
+        "status": "active",
+        "name": "Backer L",
+        "description": "Show your love for Crystal ❤️ and add a link to your site on the Sponsors page",
+        "amount": 25,
+        "currency": "USD",
+        "frequency": "monthly",
+        "channels": [
+          "open-collective"
+        ]
+      },
+      {
+        "guid": "bronze-sponsor",
+        "status": "active",
+        "name": "Bronze Sponsor",
+        "description": "Show your link and logo on the Sponsors page",
+        "amount": 75,
+        "currency": "USD",
+        "frequency": "monthly",
+        "channels": [
+          "open-collective"
+        ]
+      },
+      {
+        "guid": "silver-sponsor",
+        "status": "active",
+        "name": "Silver Sponsor",
+        "description": "Show your link and logo on the Sponsors page, and a link with small logo on the Home Page and every Release note",
+        "amount": 350,
+        "currency": "USD",
+        "frequency": "monthly",
+        "channels": [
+          "open-collective"
+        ]
+      },
+      {
+        "guid": "gold-sponsor",
+        "status": "active",
+        "name": "Gold Sponsor",
+        "description": "Show your link and a big logo in the Home Page and Sponsors page, mentions in communications (Newsletter, presentations), and your logo on the project's README.md after three consecutive months",
+        "amount": 750,
+        "currency": "USD",
+        "frequency": "monthly",
+        "channels": [
+          "open-collective"
+        ]
+      },
+      {
+        "guid": "corporate-sponsor",
+        "status": "active",
+        "name": "Corporate Sponsor",
+        "description": "Get support from the Crystal team at Manas.Tech: development hours, teaching, and prioritization of issues. Contact us at crystal@manas.tech",
+        "amount": 2000,
+        "currency": "USD",
+        "frequency": "monthly",
+        "channels": [
+          "open-collective"
+        ]
+      }
+    ]
+  }
+}
