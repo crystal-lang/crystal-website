@@ -1,0 +1,80 @@
+# This action checks links in a PR to ensure they are valid.
+# If link is valid but failing, it can be added to the .lycheeignore file
+# Adapted from https://lychee.cli.rs/github_action_recipes/pull-requests/
+
+name: Check Links In Pull Requests
+
+on:
+  pull_request:
+    paths: '**/*.md'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{github.event.pull_request.head.ref}}
+          repository: ${{github.event.pull_request.head.repo.full_name}}
+
+      - name: Check out base branch
+        run: git checkout ${{github.event.pull_request.base.ref}}
+
+      - name: Dump all links from ${{github.event.pull_request.base.ref}}
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: |
+            --dump
+            --include-fragments
+            .
+          output: ./existing-links.txt
+        continue-on-error: true # Don't fail if base branch check has issues
+
+      - name: Stash untracked files
+        run: git stash push --include-untracked
+
+      - name: Check out feature branch
+        run: git checkout "$HEAD_REF"
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+
+      - name: Apply stashed changes
+        run: git stash pop || true
+
+      - name: Update ignore file
+        run: |
+          if [ -f "existing-links.txt" ]; then
+            # deduplicate list and escape regex special characters
+            sort -u existing-links.txt | sed 's/[.^$*+?()[{|\]/\\&/g' | sed 's/^/^/; s/$/$/' >> .lycheeignore
+          fi
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: |
+            --no-progress
+            --include-fragments
+            --extensions md
+            .
+
+      - name: Provide helpful failure message
+        if: failure()
+        run: |
+          echo "::error::Link check failed! Please review the broken links reported above."
+          echo ""
+          echo "If certain links are valid but fail due to:"
+          echo "- CAPTCHA challenges"
+          echo "- IP blocking"
+          echo "- Authentication requirements"
+          echo "- Rate limiting"
+          echo ""
+          echo "Consider adding them to .lycheeignore to bypass future checks."
+          echo "Format: Add one URL regex pattern per line"
+          exit 1
