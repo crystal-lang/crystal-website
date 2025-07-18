@@ -34,4 +34,6 @@
     };
     typos.enable = true;
   };
+
+  dotenv.enable = true;
 }
