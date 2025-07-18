@@ -1,0 +1,5 @@
+# URL patterns to be ignored during the link check with lychee.
+#
+# The format is one regular expression per line. Make sure to escape regex
+# special characters.
+# Please add comments to detail why a URL pattern is to be ignored.
