@@ -22,7 +22,7 @@ layout: none
         "url": "https://crystal-lang.org/"
       },
       "repositoryUrl": {
-        "url": "https:///github.com/crystal-lang/crystal",
+        "url": "https://github.com/crystal-lang/crystal",
         "wellKnown": "https://github.com/crystal-lang/crystal/blob/master/.well-known/funding-manifest-urls"
       },
       "licenses": [
