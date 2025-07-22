@@ -7,7 +7,7 @@ Crystal on Windows is currently distributed as both portable and installer previ
 
 Portable packages are available in two flavours:
 
-- `*-windows-mscv`: built with Microsoft Visual Studio
+- `*-windows-msvc`: built with Microsoft Visual Studio
 - `*-windows-gnu`: build with MinGW-w64
 
 ## Install
