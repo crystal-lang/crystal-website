@@ -108,7 +108,7 @@ li {
   align-items: center;
   gap: var(--padding-xxs);
 
-  > :link {
+  > :any-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
