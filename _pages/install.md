@@ -34,11 +34,7 @@ repository and we provide an installer script for convenience.
 
 Linux-based [Docker images](#docker) and [developer tools](#developer-tools) are also available.
 
-<div class="link-actions" markdown=1>
-
-[![](/assets/install/linux.svg)**Read more about installing on _Linux_**](/install/on_linux)
-
-</div>
+[**Read more about installing on _Linux_**](/install/on_linux)
 
 ## MacOS
 
@@ -51,11 +47,7 @@ The most popular installation method is via Homebrew.
 
 Crystal is also available in [developer tooling](#developer-tools) on macOS.
 
-<div class="link-actions" markdown=1>
-
-[![](/assets/install/apple.svg)**Read more about installing on _MacOS_**](/install/on_mac_os)
-
-</div>
+[**Read more about installing on _MacOS_**](/install/on_mac_os)
 
 <span id="windows"></span>
 
@@ -71,31 +63,19 @@ Official builds are available as a ZIP archive or installer.
 
 Crystal is also available in [developer tooling](#developer-tools) on Windows.
 
-<div class="link-actions" markdown=1>
-
-[![](/assets/install/windows.svg)**Read more about installing on _Windows_**](/install/on_windows)
-
-</div>
+[**Read more about installing on _Windows_**](/install/on_windows)
 
 ## FreeBSD
 
 {% include pages/install/section.html os="FreeBSD" %}
 
-<div class="link-actions" markdown=1>
-
-[![](/assets/install/freebsd.svg)**Read more about installing on _FreeBSD_**](/install/on_freebsd)
-
-</div>
+[**Read more about installing on _FreeBSD_**](/install/on_freebsd)
 
 ## OpenBSD
 
 {% include pages/install/section.html os="OpenBSD" %}
 
-<div class="link-actions" markdown=1>
-
-[![](/assets/install/openbsd.svg)**Read more about installing on _OpenBSD_**](/install/on_openbsd)
-
-</div>
+[**Read more about installing on _OpenBSD_**](/install/on_openbsd)
 
 ## Android
 
@@ -118,11 +98,7 @@ features and testing compatibility with existing code bases.
 It's recommended to test against nightlies regularly in order to notice any issues
 timely and avoid surprises after the next release.
 
-<div class="link-actions" markdown=1>
-
-[![](/assets/icons/build-circle.svg)**Read more about _Nightly Builds_**](/install/nightlies/)
-
-</div>
+[**Read more about _Nightly Builds_**](/install/nightlies/)
 
 <span id="from_source"></span>
 
@@ -132,11 +108,7 @@ The Crystal compiler is self-hosted, so in order to build it you need a Crystal 
 Hence from source installation is not an ideal way to get Crystal in the first place.
 However it is possible to bootstrap from a different platform through cross-compiling.
 
-<div class="link-actions" markdown=1>
-
-[![](/assets/icons/source-branch.svg)**Read more about _Building from Source_**](/install/from_sources/)
-
-</div>
+[**Read more about _Building from Source_**](/install/from_sources/)
 
 <script src="/assets/js/copy-action.js"></script>
 <script>
