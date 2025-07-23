@@ -60,8 +60,6 @@ jobs:
         with:
           args: |
             --no-progress
-            --include-fragments
-            --extensions md
             .
 
       - name: Provide helpful failure message
