@@ -13,13 +13,14 @@ Pacman-based package repository for both applications and development libraries.
 
 MSYS2 comes in multiple [environments](https://www.msys2.org/docs/environments/)
 which determine the active toolchain and C/C++ runtime libraries. Crystal is
-currently available for the UCRT64, CLANG64, and MINGW64 environments. To
-install or upgrade Crystal for one of the environments:
+currently available for the UCRT64, CLANG64, CLANGARM64, and MINGW64
+environments. To install or upgrade Crystal for one of the environments:
 
 ```bash
-pacman -Sy mingw-w64-ucrt-x86_64-crystal  # UCRT64 environment
-pacman -Sy mingw-w64-clang-x86_64-crystal # CLANG64 environment
-pacman -Sy mingw-w64-x86_64-crystal       # MINGW64 environment
+pacman -Sy mingw-w64-ucrt-x86_64-crystal   # UCRT64 environment
+pacman -Sy mingw-w64-clang-x86_64-crystal  # CLANG64 environment
+pacman -Sy mingw-w64-clang-aarch64-crystal # CLANGARM64 environment
+pacman -Sy mingw-w64-x86_64-crystal        # MINGW64 environment
 ```
 
 Shards can be installed or upgraded similarly:
