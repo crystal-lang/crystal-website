@@ -18,8 +18,8 @@ link_actions:
 - '[![](/assets/install/android.svg) #Android](#android)'
 - '[![](/assets/install/docker.svg) #Docker](#docker)'
 - '[![](/assets/install/construction.svg) #Tools](#developer-tools)'
-- '[![](/assets/icons/build-circle.svg) Nightlies](/install/nightlies)'
-- '[![](/assets/icons/source-branch.svg) Source](/install/from_sources)'
+- '[Nightlies](/install/nightlies/)'
+- '[Source](/install/from_sources/)'
 ---
 ## Linux
 

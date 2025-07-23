@@ -157,3 +157,9 @@ img.version-badge {
     }
   }
 }
+
+.install-panels ~ p > :link:has(strong:first-child:last-child) {
+  @include link-with-icon-themed;
+
+  display: inline-flex;
+}
