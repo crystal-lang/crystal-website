@@ -5,6 +5,11 @@ page_title: Install on Windows (Preview)
 
 Crystal on Windows is currently distributed as both portable and installer preview packages. They are available on the [GitHub releases page](https://github.com/crystal-lang/crystal/releases). **Be aware that Crystal on Windows is** [**not yet complete**](https://github.com/crystal-lang/crystal/issues/5430).
 
+Portable packages are available in two flavours:
+
+- `*-windows-msvc`: built with Microsoft Visual Studio
+- `*-windows-gnu`: build with MinGW-w64
+
 ## Install
 
 Crystal can use either Microsoft Visual C++ or MinGW-w64 as the toolchain.
