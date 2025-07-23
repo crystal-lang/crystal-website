@@ -1,7 +1,6 @@
 ---
 title: INSERT INTO shard VALUES ("crystal-db")
 summary: One db api to rule them all
-thumbnail: DB
 author: bcardiff
 categories: community
 tags: [ecosystem, database]

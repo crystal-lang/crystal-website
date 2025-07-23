@@ -1,7 +1,6 @@
 ---
 title: Internals
 summary: Memory representation
-thumbnail: 0x
 author: asterite
 categories: technical
 tags: [language, codegen]

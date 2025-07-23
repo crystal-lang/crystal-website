@@ -2,7 +2,6 @@
 title: "Crystal Survey 2017 Results"
 author: sdogruyol
 summary: ""
-thumbnail: ""
 categories: community
 ---
 

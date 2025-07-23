@@ -1,7 +1,6 @@
 ---
 title: "Launching the 2017 State of Crystal Survey"
 summary: ""
-thumbnail: ""
 author: sdogruyol
 categories: community
 ---

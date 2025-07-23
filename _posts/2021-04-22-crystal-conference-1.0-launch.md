@@ -1,7 +1,6 @@
 ---
 title: Announcing Crystal 1.0 Conference
 summary: Let's celebrate the release
-thumbnail: +
 author: beta-ziliani
 categories: community
 tags: [community, events]

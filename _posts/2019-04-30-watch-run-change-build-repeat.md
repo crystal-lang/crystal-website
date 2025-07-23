@@ -1,7 +1,6 @@
 ---
 title: "Watch: Run, change, build, repeat"
 summary: How to improve the development cycle with a watch experience
-thumbnail: W
 author: bcardiff
 categories: technical
 tags: misc

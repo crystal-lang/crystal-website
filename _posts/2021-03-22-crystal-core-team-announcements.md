@@ -1,7 +1,6 @@
 ---
 title: Crystal Core Team Announcements
 summary: A lot has been going on in the Crystal Core Team ...
-thumbnail: +
 author: nditada
 release_notes: false
 comment_href: https://disqus.com/home/discussion/crystal-lang/crystal_core_team_announcements/

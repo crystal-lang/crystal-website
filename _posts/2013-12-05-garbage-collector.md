@@ -1,7 +1,6 @@
 ---
 title: Garbage Collector
 summary: Enabled the Boehm GC
-thumbnail: gc
 author: waj
 categories: technical
 tags: language

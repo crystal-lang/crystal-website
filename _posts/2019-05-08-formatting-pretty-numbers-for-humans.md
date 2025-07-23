@@ -1,7 +1,6 @@
 ---
 title: "Formatting pretty numbers for humans"
 summary: "Crystal 0.28.0 comes with new features for formatting neat numbers for human readers."
-thumbnail: W
 author: straight-shoota
 categories: technical
 tags: feature

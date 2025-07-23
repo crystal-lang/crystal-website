@@ -1,7 +1,6 @@
 ---
 title: Fibonacci benchmark
 summary: "Ruby vs. Crystal"
-thumbnail: f
 author: asterite
 categories: technical
 tags: performance

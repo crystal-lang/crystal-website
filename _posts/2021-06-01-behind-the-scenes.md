@@ -1,7 +1,6 @@
 ---
 title: Behind the scenes of the past two months
 summary: What’s been going on after the 1.0 release
-thumbnail: +
 author: beta-ziliani
 comment_href: https://disqus.com/home/discussion/crystal-lang/behind_the_scenes_of_the_past_two_months/
 categories: project

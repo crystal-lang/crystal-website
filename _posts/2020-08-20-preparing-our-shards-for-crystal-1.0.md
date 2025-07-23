@@ -1,7 +1,6 @@
 ---
 title: Preparing our shards for Crystal 1.0
 summary: How we can prepare our shards for Crystal 1.0 or for upstream changes of dependencies at any time.
-thumbnail: +
 author: bcardiff
 comment_href: https://disqus.com/home/discussion/crystal-lang/preparing_our_shards_for_crystal_10/
 categories: technical

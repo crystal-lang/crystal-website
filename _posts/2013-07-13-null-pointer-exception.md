@@ -1,6 +1,5 @@
 ---
 title: Null Pointer Exception
-thumbnail: NP
 summary: Crystal doesn't let you have a Null Pointer Exception
 author: asterite
 categories: technical

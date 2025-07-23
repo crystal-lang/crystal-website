@@ -1,7 +1,6 @@
 ---
 title: Organising a Crystal conference in 2020
 summary: An overview of what you can expect at Raw Crystal 2020 and some insight on the organisation process.
-thumbnail: +
 author: lbarasti
 comment_href: https://disqus.com/home/discussion/crystal-lang/organising_a_crystal_conference_in_2020/
 categories: community

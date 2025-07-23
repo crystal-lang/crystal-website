@@ -1,7 +1,6 @@
 ---
 title: IRC channel moved to Libera Chat
 author: jhass
-thumbnail: +
 categories: project
 ---
 
