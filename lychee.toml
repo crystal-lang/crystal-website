@@ -1,0 +1,31 @@
+#############################  Cache  ###############################
+
+# Enable link caching. This can be helpful to avoid checking the same links on
+# multiple runs.
+cache = true
+
+# Discard all cached requests older than this duration.
+max_cache_age = "7d"
+
+#############################  Requests  ############################
+
+exclude_path = ["_site", "_plugins", "_layouts", "_includes"]
+
+# Enable the checking of fragments in links.
+include_fragments = true
+
+#############################  Exclusions  ##########################
+
+exclude = [
+  "^https?://twitter\\.com/",                # all requests result in 400
+  "^https?://t\\.co/",                       # all requests result in 400
+  "^https?://(www\\.)?reddit\\.com/",        # all requests result in 403
+  "^https?://(www\\.)?linkedin\\.com/",      # all requests result in 999
+  "^https://us6\\.campaign-archive\\.com/",  # all requests result in 404
+  "^https://software\\.opensuse\\.org/",     # all requests result in 400
+  "^https://(www\\.)?youtube\\.com/",        # all requests result in 404
+
+  # Skip archive.org links to avoid unnecessary requests.
+  # Archive links should usually exists, but requests are heavy.
+  "^https://web\\.archive\\.org/",
+]
