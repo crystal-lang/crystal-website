@@ -121,7 +121,9 @@ li {
       display: block;
     }
   }
-  &:not(:hover) > :link {
-    visibility: hidden;
+  @media (hover: hover) and (pointer: fine) {
+    &:not(:hover, :focus) > :any-link {
+      visibility: hidden;
+    }
   }
 }
