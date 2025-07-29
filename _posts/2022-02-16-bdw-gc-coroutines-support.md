@@ -1,13 +1,12 @@
 ---
 title: bdw-gc coroutines support
 summary: The support for multi-thread coroutines was gained by allowing the user to control the stack bottom of each thread.
-thumbnail: +
 author: bcardiff
 categories: technical
 tags: feature
 ---
 
-[Crystal](https://crystal-lang.org) uses bdw-gc and supports coroutines. Fibers is how coroutines are called here. For many years Crystal has been single-thread with fibers. Single-thread is still the default alternative. Sometime ago we added muti-thread support where each thread can run concurrently multiple fibers. This required some patches and eventual contributions to bdw-gc in order to achieve this since there was no built-in support for coroutines in the library.
+[Crystal](https://crystal-lang.org) uses bdw-gc and supports coroutines. Fibers is how coroutines are called here. For many years Crystal has been single-thread with fibers. Single-thread is still the default alternative. Sometime ago we added multi-thread support where each thread can run concurrently multiple fibers. This required some patches and eventual contributions to bdw-gc in order to achieve this since there was no built-in support for coroutines in the library.
 
 The support for multi-thread coroutines was gained by allowing the user to control the stack bottom of each thread. Changing the stack bottom and the instruction pointer is what effectively gives life to the coroutines. This is, letting the program choose what portion of the program to execute next without needing to tell the OS about it. Telling the OS would be equivalent to using threads and that would be more expensive.
 
@@ -45,7 +44,7 @@ The current coroutine stack is already known by the GC via the `GC_stackbottom` 
 
 Now that the simpler single-thread is covered we can discuss the multi-thread one.
 
-So far we didn’t need to disable the GC for the single-thread, and it’s better to keep it that way for performance reasons. But for the muti-thread environment we are going to need some lock around the switching fibers routine. We use a global [Read/Write Lock](https://en.wikipedia.org/wiki/Readers%E2%80%93writer_lock).
+So far we didn’t need to disable the GC for the single-thread, and it’s better to keep it that way for performance reasons. But for the multi-thread environment we are going to need some lock around the switching fibers routine. We use a global [Read/Write Lock](https://en.wikipedia.org/wiki/Readers%E2%80%93writer_lock).
 
 When the current coroutine `C_0` needs to be switched another one `C_1`,
 

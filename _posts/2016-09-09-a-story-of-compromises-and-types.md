@@ -1,7 +1,5 @@
 ---
 title: A story of compromises and types
-summary:
-thumbnail: 👻
 author: bcardiff
 categories: technical
 tags: [language, types]
@@ -10,8 +8,8 @@ tags: [language, types]
 Let's play with an immutable Queue type. We want to:
 
 1. Create an empty queue
-1. Push things into a queue and get a new queue with the added element
-1. Pop the next element of the queue and also get the rest of the queue.
+2. Push things into a queue and get a new queue with the added element
+3. Pop the next element of the queue and also get the rest of the queue.
 
 So something like this:
 
@@ -40,13 +38,12 @@ class Queue
 end
 ```
 
-This could work. However, there are some kinds of programs that will compile, but will *always* fail to run:
+This could work. However, there are some kinds of programs that will compile, but will _always_ fail to run:
 
 ```ruby
 q = Queue.new
 e, q = q.pop # => EmptyQueueRuntimeError :-(
 ```
-
 
 Going in a a similar direction of the [NullPointerException](/2013/07/13/null-pointer-exception/), we could try to split the queue values that will help us move from this `EmptyQueueRuntimeError` to a compile error. For that, we need to differentiate the `EmptyQueue` from the non-empty Queues.
 
@@ -84,13 +81,13 @@ e, q4 = q3.pop        # => Compile Error :-( , but *we* know q3 is not empty...
 
 The compile error is because `typeof(q3) :: EmptyQueue | Queue`.
 
-The fact that popping from a nonempty queue *may* lead to an empty queue stands between us and what we want to do. A “*may* lead” is translated to the return type since it is one of the possible results in runtime.
+The fact that popping from a nonempty queue _may_ lead to an empty queue stands between us and what we want to do. A “_may_ lead” is translated to the return type since it is one of the possible results in runtime.
 
 We could try to do something _crazy_. What if `Queue` contains the amount of elements in its type. We know that if you:
 
 1. Push an element to a `Queue(N)`, you will get a `Queue(N+1)`
-1. Pop from a `Queue(1)`, you will get an `EmptyQueue`
-1. Pop from a `Queue(N)` with `N > 1`, you wil get a `Queue(N-1)`
+2. Pop from a `Queue(1)`, you will get an `EmptyQueue`
+3. Pop from a `Queue(N)` with `N > 1`, you will get a `Queue(N-1)`
 
 It seems reasonable (and a bit crazy).
 
@@ -98,9 +95,9 @@ In a static typed language the compiler will use the types of the expressions. I
 
 For this we will need:
 
-* A way to declare overloads `Queue(1)` and `Queue(N)` (with `N > 1`)
-* Be able to use Math operators in types: given `N`, return `Queue(N+1)`.
-  * And teach the type inference how to deduce these things so we don’t need to always write them.
+- A way to declare overloads `Queue(1)` and `Queue(N)` (with `N > 1`)
+- Be able to use Math operators in types: given `N`, return `Queue(N+1)`.
+  - And teach the type inference how to deduce these things so we don’t need to always write them.
 
 Even if we added this, it’s a risky business: Let's imagine we want a `#filter` operation that will remove from the queue all elements that are equal to a certain value. What will be the return type of `Queue(N)#filter(e)`?
 
@@ -119,11 +116,11 @@ It the type ignores lots of details, then we will get lots of exceptions in runt
 
 This situation has been coming up all the time since we began designing Crystal's type system and API. We aim to define a useful type system that will help programmers catch runtime exceptions, but we want it to be usable and easy-going. That is why:
 
-* `Nil` is not a value of every type `T`. You need to use unions of `T | Nil` (or `T?`)
-* `Array(T)` is able to hold only one type (although it can be a union), but we don’t know which indices are valid in compile time.
-* `Tuples(*T)` are not as flexible as an `Array(T)` but given a literal we can know if it is a valid index and which type it corresponds to in compile time.
-* `Array(T)`/`Tuple(*T)` relationship is analogous to `Hash(K,V)`/`NamedTuple(**T)`.
-* `Array(T?)#compact` returns an `Array(T)`
+- `Nil` is not a value of every type `T`. You need to use unions of `T | Nil` (or `T?`)
+- `Array(T)` is able to hold only one type (although it can be a union), but we don’t know which indices are valid in compile time.
+- `Tuples(*T)` are not as flexible as an `Array(T)` but given a literal we can know if it is a valid index and which type it corresponds to in compile time.
+- `Array(T)`/`Tuple(*T)` relationship is analogous to `Hash(K,V)`/`NamedTuple(**T)`.
+- `Array(T?)#compact` returns an `Array(T)`
 
 Although the `Queue` story didn’t end up so well, it did end up well for all of the above types,
 allowing us to have a happy time while crystalling. Success!

@@ -8,10 +8,10 @@ tags: devnotes
 
 It’s been a while since we wrote [Using CircleCI for your Crystal projects](https://manas.tech/blog/2016/06/13/using-circleci-for-your-crystal-projects/). Since then the following things happened:
 
-* [CircleCI 2.0](https://circleci.com/docs/2.0/) was announced and 1.0 is deprecated.
-* Crystal build process is partially [automated in CircleCI](/2018/03/09/crystal-automated-release/)
-* Docker nightly images are pushed as `crystallang/crystal:nightly` to Docker Hub
-* Shards added a cache to avoid downloading from scratch dependencies
+- [CircleCI 2.0](https://circleci.com/docs/2.0/) was announced and 1.0 is deprecated.
+- Crystal build process is partially [automated in CircleCI](/2018/03/09/crystal-automated-release/)
+- Docker nightly images are pushed as `crystallang/crystal:nightly` to Docker Hub
+- Shards added a cache to avoid downloading from scratch dependencies
 
 It’s time to review how to take advantage of the awesome features in CircleCI, to ensure your application or shard is up to date not only with the current Crystal release, but with the upcoming one. Doing this helps to detect early unwanted breaking changes in your dependences or, at least, be ready to release earlier.
 
@@ -92,7 +92,7 @@ workflows:
       - test
 ```
 
-**Note:** The `dry` key is not standard. It’s just a placeholder of values that will be used multiple times later or that helps reading the job’s steps. If prefered, you can inline their contents directly.
+**Note:** The `dry` key is not standard. It’s just a placeholder of values that will be used multiple times later or that helps reading the job’s steps. If preferred, you can inline their contents directly.
 
 ## Reduce CI delays
 

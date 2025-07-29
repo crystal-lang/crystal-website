@@ -1,7 +1,6 @@
 ---
 title: "Watch: Run, change, build, repeat"
 summary: How to improve the development cycle with a watch experience
-thumbnail: W
 author: bcardiff
 categories: technical
 tags: misc
@@ -11,8 +10,8 @@ In this post, we'll cover how to automatically recompile and execute your code w
 
 ## Requirements
 
-* Have `watchexec` installed (check [github](https://github.com/watchexec/watchexec) for installation instructions)
-* Use shards’ `targets`
+- Have `watchexec` installed (check [github](https://github.com/watchexec/watchexec) for installation instructions)
+- Use shards’ `targets`
 
 ## Setup
 

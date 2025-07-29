@@ -1,7 +1,6 @@
 ---
 title: "Announcing Crystal CodeCamp SF2017"
 summary: ""
-thumbnail: "SF17"
 author: mdavid
 categories: community
 tags: [community, events]

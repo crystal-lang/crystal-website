@@ -1,12 +1,11 @@
 ---
 title: Heroku Buildpack
-thumbnail: H
 author: bcardiff
 categories: technical
 tags: tooling
 ---
 
-At the end of 2014 a [first draft](https://github.com/manastech/heroku-buildpack-crystal/commit/b364f9115706a2a1c97ff40bd44aef1cf73e6288) of a [Heroku](//heroku.com) buildpack for crystal was createad. This was truly great. Being able to run crystal apps in the Heroku stack was charm idea.
+At the end of 2014 a [first draft](https://github.com/manastech/heroku-buildpack-crystal/commit/b364f9115706a2a1c97ff40bd44aef1cf73e6288) of a [Heroku](//heroku.com) buildpack for crystal was created. This was truly great. Being able to run crystal apps in the Heroku stack was charm idea.
 
 While we continued to develop the language, the tools, and the standard library, the community around Crystal grew. Many were interested in trying their Crystal-powered web apps in Heroku. The [network graph](https://github.com/crystal-lang/heroku-buildpack-crystal/network) at github for the buildpack is quite big, especially for just a bunch of bash scripts!
 
@@ -145,7 +144,7 @@ Listening on http://0.0.0.0:9090
 ^C
 </pre>
 
-## Deploy!
+## Deploy
 
 When you are ready to go live with your app just deploy it the usual way with `git push heroku master`.
 
@@ -187,7 +186,7 @@ The buildpack will:
 3. Compile the main source file in release mode.
 4. Run the web server process with `--port` option.
 
-# Specify the crystal version
+## Specify the crystal version
 
 If you want to use a different Crystal version, create a `.crystal-version` file with the desired version, following [crenv](https://github.com/pine/crenv)’s convention.
 
@@ -219,7 +218,7 @@ You will now notice the `(0.17.1 due to .crystal-version file)` legend.
 
 Whenever you are ready to upgrade to the latest crystal version, update the content of the file or just remove it and deploy again.
 
-## Show me the code!
+## Show me the code
 
 Find all the sample source code used at
 [https://github.com/bcardiff/sample-crystal-heroku101](https://github.com/bcardiff/sample-crystal-heroku101).

@@ -79,20 +79,6 @@
 #   instructions_href: /install/on_windows/
 #   archive_href: https://nightly.link/crystal-lang/crystal/workflows/win/master/crystal.zip
 
-- type: community
-  os: Windows
-  arch: [x86_64]
-  title: Scoop
-  instructions_href: /install/from_scoop/
-  example: |
-    ```powershell
-    scoop install git
-    scoop bucket add crystal-preview https://github.com/neatorobito/scoop-crystal
-    scoop install vs_2022_cpp_build_tools crystal-nightly
-    ```
-  repo_href: https://github.com/neatorobito/scoop-crystal
-  repo_description: Scoop repository for Crystal on GitHub
-
 ## Docker
 
 - type: crystal

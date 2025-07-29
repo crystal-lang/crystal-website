@@ -9,7 +9,7 @@ tags: [talk, 84codes, ecosystem, events]
 <figure>
   <img src="/assets/blog/2025/stockholmmeetupintro.jpg" />
   <figcaption>
-    Christina Dahlén (84codes) welcomes the Crystal community to the Stockholm Crystal Meetup. Photo: <a href="https://www.linkedin.com/company/fotograf-engstrom/" target="_blank">fotograf Engström</a>
+    Christina Dahlén (84codes) welcomes the Crystal community to the Stockholm Crystal Meetup. Photo: <a href="https://www.linkedin.com/company/fotograf-engstrom/" target="_blank">photograph Engström</a>
   </figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ Beta used a zoo metaphor to try to explain where we see Crystal fit in the progr
 <figure>
   <img src="/assets/blog/2025/stockholmbeta.jpg" />
   <figcaption>
-    Beta Ziliani helps us find the right place for Crystal in the Programming Language Zoo. Photo: <a href="https://www.linkedin.com/company/fotograf-engstrom/" target="_blank">fotograf Engström</a>
+    Beta Ziliani helps us find the right place for Crystal in the Programming Language Zoo. Photo: <a href="https://www.linkedin.com/company/fotograf-engstrom/" target="_blank">photograph Engström</a>
   </figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ Carl showed us how 84codes leverages Crystal to build high performance and low-r
 <figure>
   <img src="/assets/blog/2025/stockholmcarl.jpg" />
   <figcaption>
-    Carl Hörberg (84codes) shares how you can build extremely scalable systems without giving up developer happiness with Crystal. Photo: <a href="https://www.linkedin.com/company/fotograf-engstrom/" target="_blank">fotograf Engström</a>
+    Carl Hörberg (84codes) shares how you can build extremely scalable systems without giving up developer happiness with Crystal. Photo: <a href="https://www.linkedin.com/company/fotograf-engstrom/" target="_blank">photograph Engström</a>
   </figcaption>
 </figure>
 

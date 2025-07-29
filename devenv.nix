@@ -23,7 +23,8 @@
     bundle install --quiet
   '';
 
-  pre-commit.hooks = {
+  git-hooks.hooks = {
+    actionlint.enable = true;
     markdownlint.enable = true;
     prettier = {
       enable = true;
@@ -31,5 +32,8 @@
         write = true;
       };
     };
+    typos.enable = true;
   };
+
+  dotenv.enable = true;
 }

@@ -16,7 +16,7 @@ O ?= _site## Output path
 htmltest = htmltest
 
 CONTENT_SOURCES := $(wildcard assets/**) $(wildcard _data/**) $(wildcard _events/**) $(wildcard _pages/**) $(wildcard _posts/**) $(wildcard _releases/**)
-SITE_SOURCES := feed.xml _config.yml index.html Makefile $(wildcard _includes/**) $(wildcard _layouts/**) $(wildcard _plugins/**) $(wildcard _sass/**) $(wildcard scripts/**) $(wildcard _style_guide/**)
+SITE_SOURCES := funding.json feed.xml _config.yml index.html Makefile $(wildcard _includes/**) $(wildcard _layouts/**) $(wildcard _plugins/**) $(wildcard _sass/**) $(wildcard scripts/**) $(wildcard _style_guide/**)
 ALL_SOURCES := $(CONTENT_SOURCES) $(THEME_SOURCES)
 
 .PHONY: all
@@ -62,6 +62,10 @@ check_html: $(O) ## Validates generated HTML
 .PHONY: check_external_links
 check_external_links: $(O) ## Validates external links in generated HTML
 	$(htmltest)
+
+.PHONY: lint-markdown
+lint-markdown: ## Run markdownlint
+	markdownlint '**/*.md' '_{pages,events,releases,posts,style_guide}/**/*.html'
 
 .PHONY: clean
 clean: ## Removes output directory

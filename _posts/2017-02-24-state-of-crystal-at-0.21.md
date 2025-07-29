@@ -1,7 +1,6 @@
 ---
 title: State of Crystal at 0.21
 summary: What did we do since new year?
-thumbnail: ℹ️
 author: spalladino
 categories: project
 ---

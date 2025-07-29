@@ -124,7 +124,7 @@ class SponsorsBuilder
     # skip logo if below threshold
     return nil if sponsor.last_payment < SHOW_LOGO_FROM
 
-    # resuse logo if one with name exist
+    # reuse logo if one with name exist
     logo_prefix = "sponsors/#{sponsor.name.downcase.gsub(/\W/, "_")}"
     logos_dir = "#{__DIR__}/../assets/"
 

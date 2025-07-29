@@ -9,6 +9,7 @@ type: typography
 4. Crystal libraries are packed as Shards, and distributed via Git without needing a centralised repository.
 
    Built in commands allow dependencies to be easily specified through a YAML file and fetched from their respective repositories.
+
 5. ```text
    Crystal 1.3.0 (2022-01-06)
 

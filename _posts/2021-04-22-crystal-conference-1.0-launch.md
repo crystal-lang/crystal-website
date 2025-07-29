@@ -1,7 +1,6 @@
 ---
 title: Announcing Crystal 1.0 Conference
 summary: Let's celebrate the release
-thumbnail: +
 author: beta-ziliani
 categories: community
 tags: [community, events]
@@ -16,9 +15,9 @@ The online conference takes place on **July 8, 2021**.
 
 ## Why a Crystal 1.0 Launch Conference?
 
-* Many people have been a part of the Crystal universe for years, and many others are only now hearing about it. A conference is an ideal vehicle for those who’ve been around for a long time to show the newcomers what it’s all about.
-* Over the years, organizations and individuals have trusted Crystal and used it for their projects, some of them experiments and some of them core to their business. We want to give them a platform to share their stories in the hopes that it inspires others to follow in their footsteps.
-* We believe that dialogue is a central element in the evolution of initiatives like Crystal, and a conference creates a space to amplify the conversation channels between the Core Team and the community.
+- Many people have been a part of the Crystal universe for years, and many others are only now hearing about it. A conference is an ideal vehicle for those who’ve been around for a long time to show the newcomers what it’s all about.
+- Over the years, organizations and individuals have trusted Crystal and used it for their projects, some of them experiments and some of them core to their business. We want to give them a platform to share their stories in the hopes that it inspires others to follow in their footsteps.
+- We believe that dialogue is a central element in the evolution of initiatives like Crystal, and a conference creates a space to amplify the conversation channels between the Core Team and the community.
 
 The Conference will feature talks from the team developing the language, people using Crystal in production, folks who have been conducting experiments with Crystal, people who come from other languages and can bring cool insights to our community, and we are extending the invitation to users, developers, and contributors in general who want to present a talk.
 

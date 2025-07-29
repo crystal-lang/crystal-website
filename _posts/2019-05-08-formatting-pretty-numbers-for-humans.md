@@ -1,7 +1,6 @@
 ---
 title: "Formatting pretty numbers for humans"
 summary: "Crystal 0.28.0 comes with new features for formatting neat numbers for human readers."
-thumbnail: W
 author: straight-shoota
 categories: technical
 tags: feature
@@ -38,7 +37,7 @@ The number of digits in a thousands group is also configurable. This works for e
 
 There are many different styles used in different cultural contexts, and this method is flexible enough to represent most common formats.
 
-[*How the world separates its digits*](http://www.statisticalconsultants.co.nz/blog/how-the-world-separates-its-digits.html) provides an overview of international styles, and the [Wikipedia article on *Decimal Separators*](https://en.wikipedia.org/wiki/Decimal_separator) provides some more insight on this topic.
+[_How the world separates its digits_](http://www.statisticalconsultants.co.nz/blog/how-the-world-separates-its-digits.html) provides an overview of international styles, and the [Wikipedia article on _Decimal Separators_](https://en.wikipedia.org/wiki/Decimal_separator) provides some more insight on this topic.
 
 ### Decimal places
 
@@ -85,7 +84,7 @@ Quantifiers are by default the SI prefixes (`k`, `M`, `G`, etc.), but they're co
 
 `Number#humanize` can take a proc argument that calculates the number of digits and the quantifier for a specific magnitude.
 
-The following example shows how to format a length in metric units, including the unit designator. It derives from the default implementation by using the common *centimeter* unit for values between `0.01` and `0.99` (which the generic mapping would express as *millimeter*). All other values use the generic SI prefixes (provided by [`Number.si_prefix`](https://crystal-lang.org/api/0.28.0/Number.html#si_prefix(magnitude:Int,prefixes=SI_PREFIXES):Char?-class-method)).
+The following example shows how to format a length in metric units, including the unit designator. It derives from the default implementation by using the common _centimeter_ unit for values between `0.01` and `0.99` (which the generic mapping would express as _millimeter_). All other values use the generic SI prefixes (provided by [`Number.si_prefix`](https://crystal-lang.org/api/0.28.0/Number.html#si_prefix(magnitude:Int,prefixes=SI_PREFIXES):Char?-class-method)).
 
 ```crystal
 def humanize_length(number)
@@ -117,7 +116,7 @@ The third method is [`Int#humanize_bytes`](https://crystal-lang.org/api/0.28.0/I
 1073741824.humanize_bytes(format: :JEDEC) # => "1.0GB"
 ```
 
-The [implementation of this method](https://github.com/crystal-lang/crystal/blob/639e4765f3f4137f90c5b7da24d8ccb5b0bfec35/src/humanize.cr#L304) is another example for a custom format based on `Numer#humanize`.
+The [implementation of this method](https://github.com/crystal-lang/crystal/blob/639e4765f3f4137f90c5b7da24d8ccb5b0bfec35/src/humanize.cr#L304) is another example for a custom format based on `Number#humanize`.
 
 ## Summary
 
@@ -125,7 +124,7 @@ These new methods provide great features for making numbers look pretty to the r
 
 They do not provide style mappings for specific locales. This is a non-trivial task that should be left for dedicated I18N libraries. But they're useful building blocks that such libraries can build upon. And they're immediatetly usable when you don't need to support different locales.
 
-The implementation is not perfect, though. Localization is complex and hard to get right. As always, the devil lies in the details. For example, the thousands delimiter and group size are configurable, but have fixed values. The [Indian numbering system](https://en.wikipedia.org/wiki/Indian_numbering_system) can't be represented in this way. Then only arabic numbers are supported. And there are probably lots of other cases which would require more specialiced behaviour.
+The implementation is not perfect, though. Localization is complex and hard to get right. As always, the devil lies in the details. For example, the thousands delimiter and group size are configurable, but have fixed values. The [Indian numbering system](https://en.wikipedia.org/wiki/Indian_numbering_system) can't be represented in this way. Then only arabic numbers are supported. And there are probably lots of other cases which would require more specialized behaviour.
 
 But it's probably good for more than 90% of typical use cases, and already useful in many places. And there is always room for improvement.
 

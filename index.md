@@ -31,4 +31,5 @@ description: |
 <div class="link-actions">
   <a href="/success-stories/">More success stories</a>
   <a href="/used_in_prod/">Used in production</a>
+  <a href="https://manas.tech/projects/crystal/crystal-compass/" title="Code Review as a Service from the makers of the language">>Crystal Compass</a>
 </div>

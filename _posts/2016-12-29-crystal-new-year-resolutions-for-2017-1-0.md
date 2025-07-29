@@ -1,7 +1,6 @@
 ---
 title: "Crystal new year resolutions for 2017: 1.0"
 summary: ""
-thumbnail: "🎉"
 author: spalladino
 categories: project
 ---

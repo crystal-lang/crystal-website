@@ -1,15 +1,14 @@
 ---
 title: "The Charly programming language"
 summary: "Guest blog post by Leonard Schütz"
-thumbnail: "ch"
 author: lschutz
 categories: success
 company: Charly Language
 ---
 
-*This post is the first from our guest writers series. If you have built something awesome using Crystal and want to share your experience here on the blog, [let us know](http://twitter.com/intent/tweet?text=@CrystalLanguage%20I%20want%20to%20write%20about...)!*
+_This post is the first from our guest writers series. If you have built something awesome using Crystal and want to share your experience here on the blog, [let us know](http://twitter.com/intent/tweet?text=@CrystalLanguage%20I%20want%20to%20write%20about...)!_
 
-*Today’s guest author is Leonard Schütz. He created the Charly programming language as a means to learn how to create a programming language, and after a first iteration in Ruby, he moved to Crystal to implement the language interpreter. In this post, he presents the language, shows how it works, and why he chose Crystal to implement it.*
+_Today’s guest author is Leonard Schütz. He created the Charly programming language as a means to learn how to create a programming language, and after a first iteration in Ruby, he moved to Crystal to implement the language interpreter. In this post, he presents the language, shows how it works, and why he chose Crystal to implement it._
 
 ## Introduction
 
@@ -107,7 +106,7 @@ This procedure follows the [Visitor pattern](https://en.wikipedia.org/wiki/Visit
 Take a `BinaryExpression` as an example. It has three properties. The two values of the expression and an operator.
 This operator could be a plus, minus or any other operator the language supports.
 It first resolves the two values, checks what operator is being used and applies it to the two values.
-Depending on which value is on which side, this procedure might produce completly different results.
+Depending on which value is on which side, this procedure might produce completely different results.
 `3 + [1, 2]` is not the same as `[1, 2] + 3` (`NAN` and `[1, 2, 3]`).
 
 A `IdentifierLiteral` would load a value from the current scope, a `CallExpression` would invoke a pre-defined function and so on.
@@ -157,8 +156,8 @@ Thanks for reading!
 
 ## Links & Sources
 
-* Leonard Schütz: [leonardschuetz.ch](https://leonardschuetz.ch)
-* Charly Programming Language: [charly-lang/charly](https://github.com/charly-lang/charly)
-* GraphViz (used for AST visualisations): [www.graphviz.org](http://www.graphviz.org/)
-* "Ruby open file" on stackoverflow: [how-to-read-an-open-file-in-ruby](http://stackoverflow.com/questions/4475957/how-to-read-an-open-file-in-ruby)
-* Old test suite used for the ruby interpreter: [test/main.ch](https://github.com/charly-lang/charly/blob/92bc26e06068bdce926f01f1cd49a5faeb01180c/test/main.ch)
+- Leonard Schütz: [leonardschuetz.ch](https://leonardschuetz.ch)
+- Charly Programming Language: [charly-lang/charly](https://github.com/charly-lang/charly)
+- GraphViz (used for AST visualisations): [www.graphviz.org](http://www.graphviz.org/)
+- "Ruby open file" on stackoverflow: [how-to-read-an-open-file-in-ruby](http://stackoverflow.com/questions/4475957/how-to-read-an-open-file-in-ruby)
+- Old test suite used for the ruby interpreter: [test/main.ch](https://github.com/charly-lang/charly/blob/92bc26e06068bdce926f01f1cd49a5faeb01180c/test/main.ch)

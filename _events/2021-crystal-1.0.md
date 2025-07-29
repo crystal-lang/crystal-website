@@ -33,25 +33,25 @@ We invite all those who participate in the Crystal 1.0 Conference to help us cre
 Intentional, positive action is essential to avoid replicating within our conference community the many forms of inequality that exist in greater society. For this reason, we outline in this Code of Conduct expected behaviour as well as prohibited behavior.
 The following behaviors are expected and requested of all participants:
 
-* Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this conference community.
-* Exercise consideration and respect in your speech and actions.
-* Attempt collaboration before conflict.
-* Refrain from demeaning, discriminatory, or harassing behavior and speech.
-* Be mindful of your fellow participants.
+- Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this conference community.
+- Exercise consideration and respect in your speech and actions.
+- Attempt collaboration before conflict.
+- Refrain from demeaning, discriminatory, or harassing behavior and speech.
+- Be mindful of your fellow participants.
 
 ### Unacceptable behavior
 
 The following behaviors are considered harassment and are unacceptable within our conference community:
 
-* Violence, threats of violence and incitement of violence towards any individual.
-* Derogatory comments related to gender, gender identity and expression, sexual orientation, disability, mental illness, neuro(a)typicality, physical appearance, body size, race, religion, or socio-economic status.
-* Gratuitous or off-topic sexual images or behavior, sexualised comments or jokes.
-* Posting or threatening to post other people’s personally identifying information (“doxing”).
-* Deliberate misgendering or use of “dead” or rejected names.
-* Inappropriate photography or recording.
-* Deliberate intimidation or stalking.
-* Sustained disruption of talks and presentations.
-* Advocating for, or encouraging, any of the above behavior.
+- Violence, threats of violence and incitement of violence towards any individual.
+- Derogatory comments related to gender, gender identity and expression, sexual orientation, disability, mental illness, neuro(a)typicality, physical appearance, body size, race, religion, or socio-economic status.
+- Gratuitous or off-topic sexual images or behavior, sexualised comments or jokes.
+- Posting or threatening to post other people’s personally identifying information (“doxing”).
+- Deliberate misgendering or use of “dead” or rejected names.
+- Inappropriate photography or recording.
+- Deliberate intimidation or stalking.
+- Sustained disruption of talks and presentations.
+- Advocating for, or encouraging, any of the above behavior.
 
 ### Consequences of unacceptable behavior
 

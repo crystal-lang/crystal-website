@@ -1,7 +1,6 @@
 ---
 title: Buenos Aires Crystal Meetup
 summary: First meetup in Argentina
-thumbnail: m
 author: mdavid
 categories: community
 tags: [community, events]
