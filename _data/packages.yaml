@@ -260,6 +260,19 @@
   repo_description: Crystal package in MSYS2
   repology: msys2_mingw
 
+- type: community
+  os: Windows
+  arch: [aarch64-gnu]
+  title: "MSYS2: CLANGARM64"
+  instructions_href: /install/on_msys2/
+  example: |
+    ```shell
+    pacman -S mingw-w64-clang-aarch64-crystal mingw-w64-clang-aarch64-shards
+    ```
+  repo_href: https://packages.msys2.org/packages/mingw-w64-clang-aarch64-crystal
+  repo_description: Crystal package in MSYS2
+  repology: msys2_clangarm64
+
 ### FreeBSD
 
 - type: system
