@@ -1,0 +1,109 @@
+### Linux
+
+- type: crystal
+  os: Linux
+  arch: [x86_64]
+  title: Installer (DEB &amp; RPM)
+  label: Linux installer
+  instructions_href: /install/on_linux#installer
+  example: |
+    ```shell
+    curl -fsSL https://crystal-lang.org/install.sh | sudo bash -s - --channel=nightly
+    ```
+  repo_ref: https://build.opensuse.org/project/show/devel:languages:crystal
+  repo_description: Crystal repository on OBS
+
+- type: crystal
+  os: Linux
+  arch: [x86_64]
+  title: Tarball (`.tar.gz`)
+  instructions_href: /install/from_targz/
+  archive_href: https://artifacts.crystal-lang.org/dist/crystal-nightly-linux-{{ arch }}.tar.gz
+
+- type: community
+  os: Linux
+  arch: [x86_64]
+  title: Homebrew/Linuxbrew
+  example: |
+    ```shell
+    brew install crystal --HEAD
+    ```
+  repo_href: https://formulae.brew.sh/formula/crystal
+  repo_description: Crystal package on Homebrew
+
+- type: community
+  os: Linux
+  arch: [x86_64]
+  title: Snapcraft
+  instructions_href: /install/from_snapcraft/
+  example: |
+    ```shell
+    snap install crystal --classic --edge
+    ```
+  repo_href: https://snapcraft.io/crystal
+  repo_description: Crystal on Snapcraft
+
+### MacOS
+
+- type: crystal
+  os: MacOS
+  arch: [universal]
+  title: Tarball (`.tar.gz`)
+  instructions_href: /install/from_targz/
+  archive_href: https://artifacts.crystal-lang.org/dist/crystal-nightly-darwin-universal.tar.gz
+
+- type: community
+  os: MacOS
+  arch: [x86_64, aarch64]
+  title: Homebrew
+  example: |
+    ```shell
+    brew install crystal --HEAD
+    ```
+  repo_href: https://formulae.brew.sh/formula/crystal
+  repo_description: Crystal package on Homebrew
+
+### Windows
+
+# - type: crystal
+#   os: Windows
+#   arch: [x86_64]
+#   title: Installer (`.exe`)
+#   instructions_href: /install/on_windows/
+#   archive_href: https://nightly.link/crystal-lang/crystal/workflows/win/master/crystal-installer.zip
+
+# - type: crystal
+#   os: Windows
+#   arch: [x86_64]
+#   title: Portable Archive (`.zip`)
+#   instructions_href: /install/on_windows/
+#   archive_href: https://nightly.link/crystal-lang/crystal/workflows/win/master/crystal.zip
+
+## Docker
+
+- type: crystal
+  os: Docker
+  arch: [x86_64]
+  title: crystallang
+  example: |
+    ```shell
+    docker pull crystallang/crystal:nightly
+    ```
+  repo_href: https://hub.docker.com/r/crystallang/crystal/
+  repo_description: crystallang's Crystal image on Docker Hub
+
+## Developer Tools
+
+- type: crystal
+  os: Tools
+  arch: [x86_64, aarch64]
+  title: GitHub Actions
+  instructions_href: https://crystal-lang.github.io/install-crystal/
+  example: |
+    ```yaml
+    - uses: crystal-lang/install-crystal@v1
+      with:
+        crystal: nightly
+    ```
+  repo_href: https://github.com/crystal-lang/install-crystal
+  repo_description: GitHub repo for `install-crystal` action

@@ -1,0 +1,74 @@
+.callout {
+  border: 1.5px solid var(--border-color-heavy);
+  border-radius: 4px;
+  --content-width: auto;
+
+  --callout-color: var(--lighter-text);
+
+  @extend .small;
+
+  > .callout-title {
+    color: var(--light-text);
+    font-weight: 500;
+    background-color: color-mix(in srgb, var(--callout-color) 18%, transparent);
+    padding: var(--padding-xs) var(--padding-xs);
+
+    &::before {
+      content: "";
+      -webkit-mask: var(--callout-mask) center / contain no-repeat;
+      mask: var(--callout-mask) center / contain no-repeat;
+      width: 1.3em;
+      vertical-align: text-bottom;
+      aspect-ratio: 1;
+      display: inline-block;
+      background: var(--callout-color);
+      margin-right: 0.3em;
+    }
+  }
+
+  > :not(.callout-title) {
+    margin: var(--padding-xs);
+  }
+
+  --callout-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z' /%3E%3C/svg%3E");
+
+  &--note {
+    --callout-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 12,22C17.53,22 22,17.53 22,12C22,6.47 17.53,2 12,2M15.1,7.07C15.24,7.07 15.38,7.12 15.5,7.23L16.77,8.5C17,8.72 17,9.07 16.77,9.28L15.77,10.28L13.72,8.23L14.72,7.23C14.82,7.12 14.96,7.07 15.1,7.07M13.13,8.81L15.19,10.87L9.13,16.93H7.07V14.87L13.13,8.81Z' /%3E%3C/svg%3E");
+  }
+
+  &--thanks {
+    --callout-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13.5,20C6.9,13.9 3.5,10.8 3.5,7.1C3.5,4 5.9,1.6 9,1.6C10.7,1.6 12.4,2.4 13.5,3.7C14.6,2.4 16.3,1.6 18,1.6C21.1,1.6 23.5,4 23.5,7.1C23.5,10.9 20.1,14 13.5,20M12,21.1C5.4,15.2 1.5,11.7 1.5,7C1.5,6.8 1.5,6.6 1.5,6.4C0.9,7.3 0.5,8.4 0.5,9.6C0.5,13.4 3.9,16.5 10.5,22.4L12,21.1Z' /%3E%3C/svg%3E");
+
+    p {
+      a {
+        @include link-with-colored-icon-base;
+        display: inline flex;
+        vertical-align: bottom;
+
+        $icon-mappings: (
+          "https://www.84codes.com/": "/assets/sponsors/84codes.svg",
+          "https://nikolamotor.com/": "/assets/sponsors/nikola.svg",
+        );
+
+        @each $href, $url in $icon-mappings {
+          @include link-with-icon-href($href, url($url));
+        }
+      }
+    }
+  }
+
+  &--warning {
+    --callout-color: var(--warning);
+    --callout-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 14H11V9H13M13 18H11V16H13M1 21H23L12 2L1 21Z' /%3E%3C/svg%3E");
+  }
+
+  &:has(.hex:last-child) {
+    padding-block-end: 0;
+
+    > .hex:last-child {
+      translate: 0 50%;
+      margin: auto;
+      margin-block-start: calc(-1 * var(--padding-xs));
+    }
+  }
+}

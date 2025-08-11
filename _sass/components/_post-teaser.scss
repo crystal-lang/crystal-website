@@ -1,0 +1,169 @@
+.post-teaser,
+.post {
+  display: grid;
+  grid-template-columns: 4.5em 1fr;
+
+  &.post-teaser {
+    grid-template-rows: 1.4em 1.4em auto auto 1fr auto;
+    grid-template-areas:
+      "avatars names"
+      "avatars date"
+      "avatars title"
+      "avatars image"
+      "avatars body"
+      ". body"
+      ". taxonomy";
+  }
+  &.post {
+    grid-template-rows: 1.4em 1.4em auto auto auto 1fr;
+    column-gap: var(--padding-xs);
+    grid-template-areas:
+      "avatars names"
+      "avatars date"
+      "avatars title"
+      "avatars taxonomy"
+      "avatars image"
+      "avatars body"
+      ". body";
+
+    @media (max-width: 80ch) {
+      grid-template-areas:
+        "avatars names"
+        "avatars date"
+        "avatars title"
+        "avatars taxonomy"
+        "image image"
+        "body body";
+    }
+  }
+
+  @media (max-width: 80ch) {
+    grid-template-columns: 3.5em 1fr;
+  }
+
+  > .avatar-list {
+    grid-area: avatars;
+    justify-self: center;
+  }
+
+  > .author-names {
+    grid-area: names;
+    align-self: end;
+  }
+
+  > .post-date {
+    grid-area: date;
+  }
+
+  > .post-title,
+  > hgroup {
+    grid-area: title;
+  }
+
+  > .excerpt,
+  > .post__body {
+    grid-area: body;
+  }
+
+  > .post-image,
+  > .partner-images {
+    grid-area: image;
+  }
+
+  > .taxonomy {
+    margin-block-start: var(--padding-xs);
+    grid-area: taxonomy;
+  }
+}
+
+.post {
+  @media (max-width: 80ch) {
+    grid-template-areas:
+      "avatars names"
+      "avatars date"
+      "title title"
+      "image image"
+      "body body";
+  }
+}
+
+.post-date {
+  color: var(--lighter-text);
+}
+
+.post-date,
+.author-names {
+  font-size: font-size(xsmall);
+  line-height: var(--line-height-sm);
+}
+
+.author-names {
+  > .author-name:not(:last-child)::after {
+    content: ", ";
+  }
+}
+
+.excerpt {
+  margin-block-start: 0.2em;
+  line-height: var(--line-height-md);
+}
+
+.post-image,
+.post > .partner-images {
+  max-width: min(100%, var(--content-width));
+  margin-block-start: var(--block-flow-md);
+}
+
+.taxonomy {
+  @extend .ui-link;
+
+  font-size: font-size(xsmall);
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  column-gap: var(--padding-xxs);
+  color: var(--lighter-text);
+  font-size: font-size(xsmall);
+  line-height: var(--line-height-sm);
+
+  .category {
+    @extend .pill-form;
+    @include link-with-icon-themed;
+
+    font-weight: 500;
+  }
+}
+
+.post-title {
+  --link-color: currentcolor;
+  --link-hover-color: var(--light-text);
+
+  font-weight: 400;
+  font-size: 150%;
+  line-height: var(--line-height-heading);
+
+  margin-right: auto;
+  margin-left: -0.1ch;
+
+  text-wrap: balance;
+
+  &:is(h1) {
+    font-size: 300%;
+  }
+
+  + .subtitle {
+    margin-block-start: 0.4em;
+    color: var(--light-gray);
+  }
+}
+
+.post > .post__body {
+  @include blockflow;
+  margin-block-start: var(--block-flow-md);
+}
+
+#discourse-comments {
+  max-width: var(--content-width);
+}

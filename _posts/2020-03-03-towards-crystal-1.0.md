@@ -1,8 +1,9 @@
 ---
 title: Towards Crystal 1.0
 summary: The upcoming efforts to release Crystal 1.0
-thumbnail: +
 author: bcardiff
+comment_href: https://disqus.com/home/discussion/crystal-lang/towards_crystal_10_23/
+categories: project
 ---
 
 Currently the main goal of the Crystal core team is to reach 1.0 in the near future. Since achieving that goal involves a number of non-obvious tradeoffs, we want to use this post to shed some light on those inherent tensions and how they drive our work and priorities for the next few releases.
@@ -54,4 +55,3 @@ With this post, we want to provide some clarity on what to expect and what not t
 Of course, other areas that are not mentioned can still receive contributions. But we want to be transparent on the need to aim for fewer, smaller and self-contained changes in the API to include them in 1.0. Said another way, we’ll be much more conservative as regards our merge policy until we get to 1.0.
 
 We already have many plans for after 1.0 that we’ll be excited to start sharing and investing efforts on after celebrating Crystal 1.0. Let’s get there first!
-

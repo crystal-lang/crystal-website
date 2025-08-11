@@ -1,8 +1,8 @@
 ---
 title: "Crystal new year resolutions for 2017: 1.0"
 summary: ""
-thumbnail: "🎉"
 author: spalladino
+categories: project
 ---
 
 Crystal has gone a long way since we [started it over five years ago](https://manas.tech/blog/2016/04/01/the-story-behind-crystal/). What was once an experiment to see if it was possible to have a compiled yet Ruby-like language, is now a trending language with over [7,000 github stargazers](https://github.com/crystal-lang/crystal/stargazers) and almost [1,400 shards](http://crystalshards.xyz/). Its popularity has risen considerably in the last few years, and we are incredibly proud to see something we have built resonating so much with the development community.
@@ -13,11 +13,11 @@ The major issue is clear: **stability**. While Crystal is a beautiful language t
 
 As such, and in line with our goal of seeing the language grow, we are setting a **new year resolution to have Crystal reach the 1.0 milestone in 2017**.
 
-# What 1.0 means
+## What 1.0 means
 
 Alpha, beta, and stable (i.e. 1.0) might mean different things for different people, even within the very Crystal team. The fundamental idea behind achieving a 1.0 milestone is to **reach a point where breaking changes to the core of the language are down to a minimum**. There can (and will, believe me) be more additions and features to the language afterwards, of course, or even modifications to tools or the standard library, but we want to assure that migrating to a subsequent version of the language should be an easy task.
 
-# The road towards a 1.0 release
+## The road towards a 1.0 release
 
 To reach 1.0 we need to work on those key features that could require breaking changes to the language; and we have identified the following:
 
@@ -28,7 +28,7 @@ To reach 1.0 we need to work on those key features that could require breaking c
 - **Macros**: Crystal’s response to dynamic languages metaprogramming feature are [compile-time macros](https://crystal-lang.org/reference/syntax_and_semantics/macros.html), which provide a way to solve most of the same problems. Macros can manipulate an AST to output new code, call external programs, have access to the type system, or even hook into the compilation process. As such, part of the work before 1.0 will be to review them, and make sure they play along well with the rest of the language, as we don’t want to have any breaking changes to the macro language after 1.0.
 - **Syntax**: Similar to the point above, once 1.0 is released, any changes to the language’s syntax will be frozen. Though Crystal has inherited most of Ruby’s syntax, some Crystal-specific items need a syntax of their own. Sincerely, we don’t anticipate any big changes here, but it would be irresponsible to freeze it without a proper review.
 
-# How to get there
+## How to get there
 
 Considering we still plan on working on the standard library in parallel, as well as in fixing any bugs that come along the way, achieving all of the items above within a year is no easy feat.
 
@@ -38,7 +38,7 @@ And second, but not less important, we plan on **leveraging all the power of the
 
 After that, from the community perspective, we plan to work on **lowering the barrier for newcomers to the language**. We want to make sure it’s clear what Crystal is and what it is not, especially with so many people coming directly from a dynamic languages background. We will focus not just in documentation but in tutorials as well, and assist in defining use cases for Crystal that could in turn shape the language itself.
 
-# Next steps
+## Next steps
 
 As excited as we are about all the things to come to Crystal during 2017, we don’t want to lose track of the **immediate next steps**. We will be working heavily on parallelism first, and on leveraging any existing efforts towards Windows support. From the community standpoint, we will be reviewing the contribution guidelines and rethink the GitHub issues labels, then re-tag issues as appropriate; we want to have issues ready for newcomers to contribute, as well as for more experienced members of the community to tackle.
 
@@ -50,4 +50,4 @@ Please do leave us your comments either here or through any of the [community ch
 
 <br/>
 
-If you want to help us achieve this goal, please consider supporting Crystal on [BountySource](https://salt.bountysource.com/teams/crystal-lang)!
+If you want to help us achieve this goal, please consider supporting Crystal on ~~[BountySource](https://salt.bountysource.com/teams/crystal-lang)~~!

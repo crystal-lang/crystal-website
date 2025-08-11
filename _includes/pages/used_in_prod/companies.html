@@ -1,0 +1,17 @@
+<ul>
+{%- assign companies = site.data.companies | where: 'category', include.section %}
+{%- for entry in companies %}
+  <li>
+    <strong>
+    {%- if entry.url -%}
+      <a href="{{ entry.url }}" target="_blank" rel="sponsored nofollow">
+    {%- endif -%}
+    {{ entry.name -}}
+    {%- if entry.url -%}
+      </a>
+    {%- endif -%}
+    :</strong>
+    {{ entry.description | markdownify | remove: '<p>' | remove: '</p>' }}
+  </li>
+{% endfor %}
+</ul>

@@ -1,8 +1,9 @@
 ---
 title: Good bye Ruby Thursday
-thumbnail: :)
 summary: Bootstraped the compiler
 author: asterite
+categories: technical
+tags: compiler
 ---
 
 If you don't know it already, Crystal is a programming language with syntax and semantics
@@ -43,11 +44,11 @@ But still we couldn't finish the new compiler.
 
 ### Lack of features
 
-In the compiler written in Ruby we used Array, Hash and Set. We accesed the filesystem and we used
+In the compiler written in Ruby we used Array, Hash and Set. We accessed the filesystem and we used
 bindings to LLVM. Unless we had those same features in our language and standard library, we would never be able to
 implement a compiler in Crystal.
 
-So we added a lot of funcionality to the standard library. We added bindings to C. We have C structs and unions. We have function pointers. And all of these
+So we added a lot of functionality to the standard library. We added bindings to C. We have C structs and unions. We have function pointers. And all of these
 are specified in Crystal, no need to write those in another language.
 
 But still...
@@ -102,4 +103,4 @@ our needs. Yes, yes, we like a lot of things about you, but this is a compiler w
 
 Now we have to fix the remaining bugs in the compiler. We don't like buggy software so we won't just continue adding features to the language unless we make it rock solid.
 
-Then we can start thinking about concurrency, better macros, better funcion pointers, structs for real, named arguments, tuples, fibers, a debugger...
+Then we can start thinking about concurrency, better macros, better function pointers, structs for real, named arguments, tuples, fibers, a debugger...

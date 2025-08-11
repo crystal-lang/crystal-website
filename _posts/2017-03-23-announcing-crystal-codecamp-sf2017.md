@@ -1,8 +1,9 @@
 ---
 title: "Announcing Crystal CodeCamp SF2017"
 summary: ""
-thumbnail: "SF17"
 author: mdavid
+categories: community
+tags: [community, events]
 ---
 
 We’re happy to announce that the Crystal team is coming to San Francisco!

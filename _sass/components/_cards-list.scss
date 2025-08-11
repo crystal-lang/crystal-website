@@ -1,0 +1,28 @@
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: var(--padding-sm);
+  padding: 0;
+  &ul {
+    margin: inherit;
+  }
+
+  > * {
+    margin: 0;
+  }
+
+  &.centered {
+    justify-content: center;
+  }
+
+  // indicator for empty list
+  > em {
+    font-weight: 500;
+    color: var(--border-color-heavy);
+    font-size: 200%;
+    font-style: normal;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}

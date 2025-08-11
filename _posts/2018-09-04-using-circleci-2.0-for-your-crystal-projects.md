@@ -2,20 +2,22 @@
 title: 'Using CircleCI 2.0 for your Crystal projects'
 author: bcardiff
 description: "An up to date article showing how to use CircleCI 2.0 for your Crystal projects."
+categories: technical
+tags: devnotes
 ---
 
 It’s been a while since we wrote [Using CircleCI for your Crystal projects](https://manas.tech/blog/2016/06/13/using-circleci-for-your-crystal-projects/). Since then the following things happened:
 
-* [CircleCI 2.0](https://circleci.com/docs/2.0/) was announced and 1.0 is deprecated.
-* Crystal build process is partially [automated in CircleCI](/2018/03/09/crystal-automated-release.html)
-* Docker nightly images are pushed as `crystallang/crystal:nightly` to Docker Hub
-* Shards added a cache to avoid downloading from scratch dependencies
+- [CircleCI 2.0](https://circleci.com/docs/2.0/) was announced and 1.0 is deprecated.
+- Crystal build process is partially [automated in CircleCI](/2018/03/09/crystal-automated-release/)
+- Docker nightly images are pushed as `crystallang/crystal:nightly` to Docker Hub
+- Shards added a cache to avoid downloading from scratch dependencies
 
 It’s time to review how to take advantage of the awesome features in CircleCI, to ensure your application or shard is up to date not only with the current Crystal release, but with the upcoming one. Doing this helps to detect early unwanted breaking changes in your dependences or, at least, be ready to release earlier.
 
 As a case study, we will use a fake app that requires a database. The final example will cover a couple more of the basic needs and show a more realistic scenario.
 
-# Using Crystal latest release for builds
+## Using Crystal latest release for builds
 
 You probably use `$ shards` to install dependencies of your application and `$ crystal spec` to run specs.
 
@@ -47,7 +49,7 @@ workflows:
 
 It will show the specific compiler version used thanks to `crystal --version`. And you can force a specific version using `crystallang/crystal:VERSION` docker images instead of `crystallang/crystal:latest`.
 
-# Using a database server
+## Using a database server
 
 In your development environment you either have a database server installed or use docker and have probably mapped the ports to your host. So either way, if you use MySQL you can access the service as `localhost:3306`.
 
@@ -90,9 +92,9 @@ workflows:
       - test
 ```
 
-**Note:** The `dry` key is not standard. It’s just a placeholder of values that will be used multiple times later or that helps reading the job’s steps. If prefered, you can inline their contents directly.
+**Note:** The `dry` key is not standard. It’s just a placeholder of values that will be used multiple times later or that helps reading the job’s steps. If preferred, you can inline their contents directly.
 
-# Reduce CI delays
+## Reduce CI delays
 
 CircleCI caches docker images in each host and it even provides some [additional features](https://circleci.com/docs/2.0/docker-layer-caching/) to reduce downloading and building docker images. This greatly reduces the time spent in each build.
 
@@ -154,7 +156,7 @@ workflows:
 
 Notice how the cache key involves the checksum of the content of `shard.lock`. If you are using this for a shard, there should be no `shard.lock` file checked in and the `shard.yml` should be used instead.
 
-# Checked code against Crystal nightly
+## Checked code against Crystal nightly
 
 Crystal keeps evolving and, while the ecosystem is still growing, some dependencies may or may not need to be updated on every release. Some shards don’t have constant commit activity and CI usually runs on every push and PRs. This leads to the possibility of not running specs while the compiler and the std libs are still evolving and might break.
 

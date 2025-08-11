@@ -1,34 +1,57 @@
 ---
 layout: none
-# Basic HTML skeleton with only the top nav and otherwise blank content
+# Basic HTML skeleton with empty body
 ---
+
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
     <title>
       {%- if layout.site_title -%}
-        {{ layout.site_title}}
+        {{- layout.site_title}}
       {%- else -%}
-        {{ layout.page_title | liquify | default: page.title }} - The Crystal Programming Language
+        {{- layout.page_title | liquify | default: page.title | strip_html }} - The Crystal Programming Language
       {%- endif -%}
     </title>
-    <meta charset='utf-8'>
-    <!-- Import Google Icon Font -->
-    <link href='https://fonts.googleapis.com/icon?family=Material+Icons|Roboto+Mono' rel='stylesheet'>
-    <link href="/assets/stylesheet.css" rel="stylesheet" />
-    <link href='/feed.xml' rel='alternate' title='Atom 1.0' type='application/atom+xml'>
-    <link href='/favicon.png' rel='icon' type='image/png'>
-    <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
-    {% seo %}
-    <!-- Let browser know website is optimized for mobile -->
-    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-    <script src='https://code.jquery.com/jquery-3.1.1.min.js' type='text/javascript'></script>
-  </head>
-  <body>
-    {{ content }}
+    <meta charset="utf-8">
+    <link href="/assets/stylesheet.css" rel="stylesheet">
+    <link
+      href="/feed.xml"
+      rel="alternate"
+      title="Newsfeed (Atom)"
+      type="application/atom+xml"
+    >
+    {%- if page.url == "/" %}
+    <link href="https://fosstodon.org/@CrystalLanguage" rel="me">
+    {%- endif %}
+    <link href="/favicon.png" rel="icon" type="image/png">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <script src="/assets/js/bundle.js" defer></script>
+    {%- seo title=false %}
 
-    <script id="dsq-count-scr" src="//crystal-lang.disqus.com/count.js" async></script>
-    <script src="/assets/js/bundle.js"></script>
-    {% include google_analytics.html %}
+    {%- unless page.image %}
+      {%- assign default_image = page.default_image | default: site.default_image %}
+      <meta property="og:image" content="{{ default_image.path }}" />
+      <meta property="twitter:image" content="{{ default_image.path }}" />
+      {%- if default_image.height %}
+        <meta property="og:image:height" content="{{ default_image.height }}" />
+      {%- endif %}
+      {%- if default_image.width %}
+        <meta property="og:image:width" content="{{ default_image.width }}" />
+      {%- endif %}
+      {%- if default_image.alt %}
+        <meta property="og:image:alt" content="{{ default_image.alt }}" />
+      {%- endif %}
+    {%- endunless %}
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="preload" href="/assets/fonts/roboto/roboto-v30-latin-300.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/assets/fonts/roboto/roboto-v30-latin-regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/assets/fonts/roboto/roboto-v30-latin-500.woff2" as="font" type="font/woff2">
+  </head>
+
+  <body class="layout--{{ page.layout }}">
+    {{- content }}
+    {% include site/google_analytics.html %}
   </body>
 </html>

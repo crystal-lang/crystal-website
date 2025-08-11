@@ -1,0 +1,15 @@
+<section>
+  <h2 class="full-width-rule">
+    <a href="/sponsors/" class="hex">
+      <span>Top Sponsors</span>
+    </a>
+  </h2>
+
+  {% if include.description %}
+    <div class="center">
+      {{ include.description | markdownify }}
+    </div>
+  {% endif %}
+
+  {% include components/top-sponsors-icons.html %}
+</section>

@@ -1,0 +1,43 @@
+<table class="table" id="sponsors-tbl">
+  <thead>
+    <tr>
+      <th scope="col" class="name"><span>Supporter</span></th>
+      <th scope="col" class="currency" data-sort-method="number" aria-sort="descending"><span>This month</span></th>
+      <th scope="col" class="currency" data-sort-method="number"><span>All time</span></th>
+      <th scope="col" class="since" data-sort-method="date"><span>Since</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for sp in site.data.sponsors %}
+      {%- capture sponsor_class %}level-{{sp.level}} sponsor{% endcapture %}
+      <tr class="{{sponsor_class}}">
+        <th class="name" scope="row">
+          {%- if sp.url %}
+            <a href="{{sp.url}}" rel="sponsored nofollow" data-proofer-ignore>
+          {%- endif %}
+              {%- if sp.logo %}
+                <img src="/assets/{{ sp.logo }}" alt="" />
+              {%- endif %}
+              <span>{{sp.name}}</span>
+          {%- if sp.url %}
+            </a>
+          {%- endif %}
+        </th>
+        <td class="currency">
+          {{sp.last_payment}}
+        </td>
+        <td class="currency">
+          {{sp.all_time}}
+        </td>
+        <td class="since">
+          {{sp.since}}
+        </td>
+      </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+
+<script src="/assets/js/tablesort.js" defer></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => Tablesort(document.getElementById("sponsors-tbl")));
+</script>

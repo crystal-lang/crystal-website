@@ -1,0 +1,134 @@
+.example-tabs {
+  > .example-tabs__controls {
+    grid-area: sample-controls;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    --link-color: var(--lighter-gray);
+    --link-hover-color: var(--light-gray);
+    text-transform: uppercase;
+    font-size: font-size(xsmall);
+    padding: 0;
+    justify-content: center;
+    column-gap: 2px;
+    margin-block: var(--padding-xs);
+
+    > a {
+      display: block;
+      border-radius: 4px;
+      padding: var(--padding-xxs) var(--padding-xs);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex-shrink: 1;
+
+      &:is(:target, :active, [active]) {
+        color: var(--tainted-white);
+        background-color: var(--code-bg);
+      }
+    }
+  }
+
+  display: grid;
+  grid-template-columns: min(18em, 50cqw) 1fr;
+  grid-template-areas:
+    "sample-controls sample-controls"
+    "sample          sample";
+  column-gap: var(--padding-sm);
+
+  .example-tabs__tabs {
+    grid-area: sample;
+
+    block-size: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    column-gap: 1em;
+
+    @extend .scroll-snap-x;
+
+    > .example-tab:target,
+    .example-tab.target,
+    &:not(:has(> :target)) > .example-tab:first-of-type {
+      > .example-description {
+        animation-name: slide-example-description;
+        animation-duration: 0.5s;
+      }
+    }
+
+    > .example-tab {
+      scroll-snap-align: start;
+      scroll-padding-block-start: 2rem;
+
+      overflow-y: auto;
+      overscroll-behavior-y: contain;
+
+      display: grid;
+      grid-template-columns: 18em 1fr;
+      grid-template-areas:
+        "sample-side sample-content"
+        ".           sample-content";
+      column-gap: var(--padding-sm);
+      align-content: start;
+
+      @media (max-width: 35em) {
+        grid-template-areas:
+          "sample-side    sample-side"
+          "sample-content sample-content";
+        row-gap: var(--padding-sm);
+      }
+
+      // FIXME(#759): This is disabled as a workaround for vanishing scroll bars
+      // padding-inline-start: var(--padding-xs);
+      // margin-inline-start: calc(-1 * var(--padding-xs));
+
+      > .example-description {
+        grid-area: sample-side;
+        --link-underline: var(--link-underline-default);
+
+        > h3 {
+          color: currentColor;
+          font-weight: 300;
+          margin-block: var(--block-flow-xs);
+        }
+
+        > p {
+          @extend .small;
+        }
+
+        > .read-more {
+          font-weight: 500;
+          margin-top: var(--padding-md);
+          line-height: var(--line-height-sm);
+
+          > a {
+            // FIXME: This rule is deactivated because it's wonky in WebKit
+            // Apparently `fit-content` isn't calculated properly and the text
+            // regularly includes a line break, even though there would be enough
+            // space to grow.
+            // width: fit-content;
+
+            @include link-with-icon(
+              url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z'/%3E%3C/svg%3E")
+            );
+          }
+        }
+      }
+
+      > .example-code {
+        grid-area: sample-content;
+        max-height: 21em;
+        overflow: auto;
+      }
+    }
+  }
+}
+
+@keyframes slide-example-description {
+  from {
+    transform: translateX(-105%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

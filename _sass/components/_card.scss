@@ -1,0 +1,67 @@
+.card {
+  box-shadow:
+    0 1px 2px 0 color-mix(in srgb, var(--primary-text) 25%, transparent),
+    0 1px 3px 0 color-mix(in srgb, var(--primary-text) 15%, transparent);
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: none;
+    border: 1px solid color-mix(in srgb, var(--primary-text) 25%, transparent);
+  }
+
+  &.card--borderless {
+    box-shadow: none;
+    border: none;
+  }
+
+  padding: var(--padding-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 23ch;
+  font-size: font-size(xsmall);
+  position: relative;
+  line-height: var(--line-height-sm);
+  text-wrap: balance;
+
+  --card-padding: var(--padding-sm);
+
+  > * {
+    margin-inline: var(--card-padding);
+    + * {
+      margin-block-start: var(--card-padding);
+    }
+    &:last-child {
+      margin-block-end: var(--card-padding);
+    }
+  }
+
+  > img,
+  > picture {
+    width: 55%;
+    object-fit: contain;
+    aspect-ratio: 1;
+    order: -1;
+    margin: var(--card-padding);
+  }
+
+  > .name {
+    @extend .ui-link;
+
+    font-weight: 500;
+    font-size: 112.5%;
+    &:where(:not(:last-child)) {
+      margin-block-end: auto;
+    }
+
+    --link-color: currentcolor;
+
+    &:any-link {
+      @include box-link;
+
+      > img {
+        transition: filter 0.3s;
+      }
+    }
+  }
+}

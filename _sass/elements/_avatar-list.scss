@@ -1,0 +1,68 @@
+.avatar-list {
+  --avatar-size: 2.5rem;
+  --avatar-count: 3;
+
+  display: grid;
+  /* Default to displaying most of the avatar to
+  enable easier access on touch devices, ensuring
+  the WCAG touch target size is met or exceeded */
+  grid-template-rows: repeat(
+    var(--avatar-count),
+    #{"max(44px, calc(var(--avatar-size) / 1.15))"}
+  );
+  /* `padding` matches added visual dimensions of
+  the `box-shadow` to help create a more accurate
+  computed component size */
+  padding: 0.08em;
+  font-size: var(--avatar-size);
+
+  list-style: none;
+  margin: 0;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+  .avatar-list {
+    /* We create 1 extra cell to enable the computed
+    width to match the final visual width */
+    grid-template-rows: repeat(
+      calc(var(--avatar-count) + 1),
+      calc(var(--avatar-size) / 1.5)
+    );
+  }
+}
+
+.avatar-list li {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+}
+
+.avatar-list li:hover ~ li a,
+.avatar-list li:focus-within ~ li a {
+  transform: translateY(25%);
+}
+
+.avatar-list img,
+.avatar-list a {
+  display: block;
+  border-radius: 50%;
+}
+
+.avatar-list a {
+  transition: transform 180ms ease-in-out;
+}
+
+.avatar-list img {
+  @include circle-image;
+  background-color: var(--background-main);
+  box-shadow:
+    0 0 0 0.05em var(--background-main),
+    0 0 0 0.08em color-mix(in srgb, var(--primary-text) 20%, transparent);
+}
+
+.avatar-list a:focus {
+  outline: 2px solid transparent;
+  /* Double-layer trick to work for dark and light backgrounds */
+  box-shadow:
+    0 0 0 0.08em #29344b,
+    0 0 0 0.12em var(--background-main);
+}

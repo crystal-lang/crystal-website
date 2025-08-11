@@ -2,6 +2,8 @@
 title: Snapcraft Summit Montréal
 summary: Updates in Crystal distributions and other news
 author: bcardiff
+categories: community
+tags: [events, packaging]
 ---
 
 The [Snapcraft Summit Montréal](https://snapcraft.io/blog/snapcraft-summit-montreal) took place between June 11th and June 13th, 2019 and people from different open-source projects gathered to iterate and work in a flawless manner, that would have taken far more time and resources if it wasn't for the summit. The shared goal was to improve the presence of each individual project in the [snapcraft.io](https://snapcraft.io) store. The plus side of the story was being able to meet the people behind different projects and share past experiences and current ideas.
@@ -21,13 +23,13 @@ Before jumping into the technical changes for Crystal itself, I would like to me
 
 You can jump and find the snap installation instructions in the new shinny [snapcraft.io/crystal](https://snapcraft.io/crystal) page.
 
-The store has the notion of channels, which helps support the release process with *edge*, *beta*, *candidate*, and *stable* versions.
+The store has the notion of channels, which helps support the release process with _edge_, _beta_, _candidate_, and _stable_ versions.
 
-The CI script has been updated to publish the content of *master* to the edge channel every night. So now nightlies are available there, as well as in `crystal-lang/crystal:nightly` docker image, and in the artifacts of the build itself.
+The CI script has been updated to publish the content of _master_ to the edge channel every night. So now nightlies are available there, as well as in `crystal-lang/crystal:nightly` docker image, and in the artifacts of the build itself.
 
 Upon tagging and releasing a new version, the package will be available also in the edge channel and will be moved to the stable channel manually. For now, beta and candidate channel are not expected to be used, but the ability to do so in the future is great.
 
-Since the Crystal snap runs in the *classic* confinement level (more about this later), the installation from the terminal in Ubuntu package is:
+Since the Crystal snap runs in the _classic_ confinement level (more about this later), the installation from the terminal in Ubuntu package is:
 
 ```shell
 $ sudo snap install crystal --classic        # For stable releases
@@ -67,8 +69,8 @@ A basic `snapcraft.yaml` file to declare all the parts will look as follows:
 ```yaml
 name: crystal-hello
 version: "1.0"
-summary: Create the hello snap
 description: Create the hello snap
+summary: Create the hello snap
 
 grade: devel
 confinement: strict
@@ -97,13 +99,13 @@ If you can't wait, you can grab the PR code and use it as a [local plugin](https
 
 ## Some technical details of the crystal snap
 
-While starting to develop the Crystal snap we try to make it work in the *strict* confinement. The challenge to make it work as strict is how to get libraries and toolchain of host and snap to coexist.
+While starting to develop the Crystal snap we try to make it work in the _strict_ confinement. The challenge to make it work as strict is how to get libraries and toolchain of host and snap to coexist.
 
 When installing a snap there is no package dependencies that can be declared (like in the `.deb` packages). So it would require to have all the libraries included by default in order to have a smooth fresh experience.
 
 As soon as the program to compile becomes more advanced, or a shard library links against a C library, the user will need to deal with some abstraction leaks in packaging related to how those libraries are to be found.
 
-That is the main reason why we stick to the *classic* confinement model. The caveat is how to let the user know that some native package of the Linux distribution needs to be available as a post-installation step.
+That is the main reason why we stick to the _classic_ confinement model. The caveat is how to let the user know that some native package of the Linux distribution needs to be available as a post-installation step.
 
 [The current solution](https://github.com/crystal-lang/distribution-scripts/pull/39) is that the crystal command installed with the snap is actually a wrapper that checks the compiler can be used successfully for simple programs. A message regarding required packages is shown if something goes wrong with that check.
 
@@ -111,13 +113,13 @@ While working on this we push to perform some updates in CircleCI regarding its 
 
 ## Version management
 
-The store works with a concept called [channel](https://docs.snapcraft.io/channels). For each channel a single version is available. A channel full name is `<track>/<risk>/<branch>` where the default track is called *latest*.
+The store works with a concept called [channel](https://docs.snapcraft.io/channels). For each channel a single version is available. A channel full name is `<track>/<risk>/<branch>` where the default track is called _latest_.
 
 As stated before, the most recent release will be available in the `latest/stable` channel, and nightlies in `latest/edge`. We have already set up the CI to be able to deliver some `latest/edge/<feature-branch>` on demand.
 
 While crystal does not reach `1.0`, this schema is enough. You are able to access the latest stable release, _and_ the future version.
 
-There were some discussions regarding how to handle explicit version availability in the store for projects following semver. The general consensus is to create a *track* for each `Major.minor` release, leaving only the latest `Major.minor.patch` available in the store. In this schema some projects might leave the `latest` track empty to force the user to make an explicit decision. What schema we will follow is still open.
+There were some discussions regarding how to handle explicit version availability in the store for projects following semver. The general consensus is to create a _track_ for each `Major.minor` release, leaving only the latest `Major.minor.patch` available in the store. In this schema some projects might leave the `latest` track empty to force the user to make an explicit decision. What schema we will follow is still open.
 
 <br/>
 

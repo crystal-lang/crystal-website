@@ -1,0 +1,14 @@
+<figure class="partner-images">
+  {%- for image in include.images %}
+    {%- unless forloop.first %}
+    <span>+</span>
+    {%- endunless %}
+    {%- if image.href %}
+      <a href="{{ image.href}}" title="{{ image.name }}">
+    {%- endif %}
+    <img src="{{ image.src }}" alt="{{ image.name }}">
+    {%- if image.href %}
+      </a>
+    {%- endif %}
+  {%- endfor %}
+</figure>

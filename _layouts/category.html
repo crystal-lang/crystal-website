@@ -1,0 +1,7 @@
+---
+layout: wide
+---
+{% assign posts = site.categories[page.category_name] %}
+{% include posts/recent_news.html posts=posts extra=true %}
+
+{% include posts/more_articles.html posts=posts %}

@@ -1,0 +1,31 @@
+.book-presenter {
+  font-size: var(--font-size-lead);
+  display: grid;
+  grid-template-areas:
+    "cover"
+    "main"
+    "details";
+  row-gap: var(--padding-md);
+  column-gap: var(--padding-md);
+
+  > .cover {
+    grid-area: cover;
+  }
+
+  > .description {
+    @include blockflow;
+    grid-area: main;
+  }
+
+  > .details {
+    grid-area: details;
+  }
+}
+
+@media (min-width: 35em) {
+  .book-presenter {
+    grid-template-areas:
+      "cover main"
+      "details details";
+  }
+}

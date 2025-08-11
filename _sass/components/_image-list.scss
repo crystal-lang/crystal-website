@@ -1,0 +1,14 @@
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30ch, 1fr));
+  align-items: center;
+  row-gap: var(--block-flow-sm);
+  column-gap: var(--padding-md);
+
+  > .item {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    column-gap: var(--padding-xs);
+  }
+}

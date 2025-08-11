@@ -1,0 +1,19 @@
+@mixin box-link {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &:focus {
+    outline: none;
+
+    &::before {
+      outline: 0.14rem dotted var(--lighter-gray);
+      outline-offset: 0.08em;
+    }
+  }
+}

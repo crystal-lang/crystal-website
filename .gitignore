@@ -6,3 +6,10 @@
 .bundle/
 /vendor/
 .ruby_version
+/tmp/
+
+# Devenv
+.devenv*
+devenv.local.nix
+.direnv
+.pre-commit-config.yaml

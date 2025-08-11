@@ -1,9 +1,0 @@
-{% assign navigation_pages = site.data.nav.main %}
-{% for item in navigation_pages %}
-  {%- assign proto = item.url | slice: 0, 8 -%}
-  <li>
-    <a href="{{ item.url }}"{% if item.url == page.url %} class="selected"{% endif %}{% if proto == "https://" %} target="_blank"{% endif %}>
-      {{ item.label }}
-    </a>
-  </li>
-{% endfor %}

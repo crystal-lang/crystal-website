@@ -1,22 +1,207 @@
-footer {
-  margin-top: 60px;
-  border-top: 1px solid $light-gray;
-  height: 78px;
-  padding: 27px;
-  p.inline {
-    display: inline-block;
+.edit-on-github {
+  @include external-links;
+
+  max-width: none;
+  text-align: center;
+  padding: var(--padding-sm);
+  background-color: var(--background-tertiary);
+  font-size: font-size(small);
+  color: var(--light-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  svg {
+    translate: 0 0.5ch;
+    fill: var(--light-gray);
   }
-  p.manas {
-    color: $black;
-    a {
-      color: $black;
-      &:hover {
-        color: $black;
+}
+
+footer {
+  --container-max: 130ch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--block-flow-md);
+  align-items: center;
+  padding-inline: 1.5rem;
+
+  padding-block: var(--block-flow-sm);
+  --link-color: var(--light-text);
+  --link-hover-color: var(--lighter-text);
+
+  border-top: 1.5px solid var(--border-color);
+  background-color: var(--background-secondary);
+
+  > * {
+    width: 100%;
+    max-width: var(--container-max, 120ch);
+    line-height: var(--line-height-md);
+    font-size: font-size(small);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    --hex-color: var(--lighter-text);
+    --hex-bg: var(--black);
+    --hex-bg-hover: var(--pitch-black);
+  }
+}
+
+.footer-nav {
+  @extend .ui-link;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(17%, 9em, 100%), 1fr));
+  gap: var(--block-flow-md) var(--block-flow-sm);
+
+  .link-items {
+    > h3 {
+      @extend .h5;
+    }
+
+    .link-item + .link-item {
+      margin-top: 0;
+    }
+  }
+}
+
+nav.footer-section {
+  > a {
+    font-weight: 500;
+  }
+
+  > ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0.2em;
+    gap: 0.2em;
+  }
+}
+
+.footer-extra {
+  --hex-height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--padding-md);
+  align-items: flex-end;
+  justify-content: space-between;
+
+  > * {
+    flex-grow: 1;
+    max-width: max-content;
+  }
+}
+
+.newsletter-footer {
+  flex-basis: 40%;
+}
+
+.newsletter-form {
+  display: grid;
+  grid-template-columns: minmax(15em, 25em) auto;
+  grid-template-areas:
+    "label label"
+    "input button";
+  @media (max-width: 20em) {
+    grid-template-areas: "label" "input" "button";
+  }
+  column-gap: var(--padding-sm);
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--padding-sm);
+
+  > form {
+    display: contents;
+
+    > label {
+      grid-area: label;
+      font-weight: 500;
+      justify-self: start;
+    }
+
+    > input[type="email"] {
+      grid-area: input;
+      width: 100%;
+      height: var(--hex-height);
+      border: 1px solid var(--border-color);
+      padding-inline: var(--padding-xs);
+
+      @media (prefers-color-scheme: dark) {
+        color: var(--lighter-text);
+        background-color: var(--mine-shaft);
       }
     }
-    a.logo {
-      margin-left: 10px;
-      border-bottom: 0;
+
+    > button {
+      grid-area: button;
     }
+  }
+}
+
+.link-items--social {
+  @extend .ui-link;
+
+  flex-basis: 30%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding-xs) var(--padding-md);
+  align-items: center;
+  min-height: var(--hex-height);
+
+  .link-item {
+    margin-block-start: 0;
+  }
+}
+
+.imprint {
+  opacity: 0.7;
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--padding-xs);
+
+  svg {
+    height: 2em;
+    width: auto;
+    vertical-align: middle;
+    margin-block-start: -0.2em;
+    fill: currentColor;
+    margin-inline-start: var(--padding-xs);
+  }
+
+  &::before {
+    content: "";
+
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    border-block-start: 1.5px solid var(--border-color);
+    margin-block-start: calc(-1 * var(--block-flow-sm));
+  }
+
+  a[href="https://manas.tech"]
+  {
+    white-space: nowrap;
+  }
+
+  // FIXME: The following two rules are a workaround for WebKit which would
+  // otherwise not stretch the paragraphs wide enough so that the second one
+  // would be rendered with a line break despite being enough space available.
+  > * {
+    flex-grow: 1;
+  }
+  > :last-child {
+    text-align: right;
   }
 }

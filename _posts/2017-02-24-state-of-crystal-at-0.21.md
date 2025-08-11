@@ -1,8 +1,8 @@
 ---
 title: State of Crystal at 0.21
 summary: What did we do since new year?
-thumbnail: ℹ️
 author: spalladino
+categories: project
 ---
 
 With the release of [version 0.21](https://groups.google.com/d/msg/crystal-lang/sGxeIxlLKX4/VFIM-iTECwAJ), we wanted to share with you the state of Crystal development so far this year, aiming towards a [1.0 version](https://crystal-lang.org/2016/12/29/crystal-new-year-resolutions-for-2017-1-0.html) by the end of the year.

@@ -1,0 +1,20 @@
+---
+title: Post Teaser
+type: components
+module: _includes/posts/meta.html
+post:
+  title: Installing specific versions of Crystal's binary packages
+  author: straight-shoota,beta-ziliani
+  summary: Binary packages are now available for older releases on the Open Build Service
+  date: 2021-08-13
+  id: /2021/08/13/install-specific-versions
+  url: /2021/08/13/install-specific-versions/
+  summary: >
+    Lorem ipsum dolor sit amet consectatur elit.
+---
+
+<div class="post-teaser">
+  {%- include posts/meta.html post=page.post %}
+  <a href="{{ page.post.url }}" class="post-title">{{ page.post.title }}</a>
+  <div class="excerpt">{{ page.post.summary }}</div>
+</div>

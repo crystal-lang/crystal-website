@@ -2,7 +2,7 @@ name: Update Sponsors
 
 on:
   schedule:
-    - cron:  '0 9 1,8,15,23 * *'
+    - cron:  '0 9 * * 2'
 
   workflow_dispatch:
 
@@ -15,17 +15,15 @@ jobs:
       image: crystallang/crystal
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Update OC
-      run: crystal scripts/opencollective.cr
-    - name: Merge
-      run: crystal scripts/merge.cr
+    - uses: actions/checkout@v4
+    - name: Update sponsors
+      run: make update_sponsors
 
     # workaround to https://github.com/peter-evans/create-pull-request/issues/1170
     - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
     - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v4
+      uses: peter-evans/create-pull-request@v7
       with:
         commit-message: "Updating sponsors"
         title: "Updating sponsors"

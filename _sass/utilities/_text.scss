@@ -1,0 +1,15 @@
+.center {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  margin-inline: auto;
+
+  > p {
+    margin-inline: auto;
+  }
+}
+
+.small {
+  font-size: $font-size-sm;
+  line-height: var(--line-height-md);
+}

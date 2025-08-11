@@ -1,0 +1,51 @@
+{% if page.url != "/" %}
+<div class="nav-start">
+  <a class="site-logo" id="logo-container" {% if page.url != "/" %}href="/"{% endif %} aria-label="Homepage">
+    <canvas height="70" id="logo-canvas" width="70" role="presentation"></canvas>
+  </a>
+</div>
+{% endif %}
+
+{% if page.url != "/" %}
+  <div class="section-nav">
+    {%- include site/breadcrumbs.html page=page %}
+  </div>
+{% endif %}
+
+<nav class="mainnav" aria-label="Quick links">
+  {%- include site/nav_links.html section="main" %}
+</nav>
+
+<div class="utilnav">
+  <a
+    class="icon"
+    href="https://github.com/crystal-lang/crystal"
+    rel="me"
+    title="Crystal repository on GitHub"
+    aria-label="GitHub"
+  >
+    {%- include icons/github.svg %}
+    <span class="visually-hidden">GitHub Repository</span>
+  </a>
+  <a
+    class="icon"
+    href="https://forum.crystal-lang.org/"
+    rel="me"
+    title="Crystal Forum"
+    aria-label="Crystal Forum"
+  >
+    {%- include icons/discourse.svg %}
+    <span class="visually-hidden">Forum</span>
+  </a>
+  <a
+    class="icon"
+    href="/feed.xml"
+    rel="alternate"
+    title="Newsfeed for Crystal blog posts and releases"
+    aria-label="Newsfeed"
+    type="application/atom+xml"
+  >
+    {%- include icons/rss.svg %}
+    <span class="visually-hidden">RSS-Newsfeed</span>
+  </a>
+</div>

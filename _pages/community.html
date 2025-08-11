@@ -1,0 +1,262 @@
+---
+title: Community
+description: There are so many ways to get involved in Crystal. Here's a list of our main communication channels and resources.
+layout: page-wide
+section: community
+---
+<section id="channels">
+  <div class="topics">
+    <div id="discuss" class="link-items">
+      <h3>Discuss</h3>
+
+      <div class="link-item">
+        <a class="link-item__main" href="https://forum.crystal-lang.org" title="Crystal Forum">
+          {%- include icons/discourse.svg %}
+          Crystal forum
+        </a>
+        <p>The place for general discussions. Ask for help, share your project, or anything else Crystal.</p>
+      </div>
+
+      <div class="link-item">
+        <a class="link-item__main" href="https://github.com/crystal-lang/crystal/issues" title="Crystal issue tracker on GitHub">
+          {%- include icons/github.svg %}
+          Issue tracker
+        </a>
+        <p>Reports bugs and talk about enhancements.</p>
+      </div>
+
+      <div class="link-item">
+        <a class="link-item__main" href="https://www.reddit.com/r/crystal_programming/" title="Crystal Programming on Reddit">
+          {%- include icons/reddit.svg %}
+          r/crystal_programming
+        </a>
+        <p>The subreddit is a good place to share your work and talk about Crystal in a wider community.</p>
+      </div>
+
+      <div class="link-item">
+        <a class="link-item__main" href="https://stackoverflow.com/questions/tagged/crystal-lang?sort=newest" title="crystal-lang on StackOverflow">
+          {%- include icons/stack-overflow.svg %}
+          crystal-lang
+        </a>
+        <p>Ask for help on StackOverflow, or help other people – learning &amp; sharing all the way through.</p>
+      </div>
+    </div>
+
+    <div class="link-items" id="chat">
+      <h3>Chat</h3>
+
+      <div class="link-item">
+        <a class="link-item__main" href="ircs://irc.libera.chat:6697#crystal-lang">
+          {%- include icons/liberachat.svg %}
+          IRC: <em>#crystal-lang</em>
+        </a> (<a href="https://web.libera.chat/#crystal-lang">web</a>, <a href="http://irclog.crystal-lang.org">logs</a>)
+        <p>The official IRC channel at Libera Chat.</p>
+      </div>
+
+      <div class="link-item">
+        <a class="link-item__main" href="https://matrix.to/#/#crystal-lang_crystal:gitter.im">
+          {%- include icons/matrix.svg %}
+          Matrix: <em>#crystal-lang_crystal:gitter.im</em>
+        </a>(<a href="https://gitter.im/crystal-lang/crystal">web</a>)
+        <p>The official chat room at Matrix (previously Gitter).</p>
+      </div>
+
+      <div class="link-item">
+        <a class="link-item__main" href="https://discord.gg/YS7YvQy">
+          {%- include icons/discord.svg %}
+          Crystal Discord
+        </a>
+        <p>The Discord server is community operated and has many channels for topics around Crystal.</p>
+      </div>
+
+      <div class="link-item">
+        <a class="link-item__main" href="https://github.com/veelenga/awesome-crystal#unofficial">
+          {%- include icons/telegram.svg %}
+          Localized Telegram groups
+        </a>
+      </div>
+    </div>
+
+    <div class="link-items" id="news">
+      <h3>News</h3>
+
+      <div class="link-item" id="blog">
+        {%- include icons/rss.svg %}
+        <a class="link-item__main" href="/blog">Crystal Blog</a> (<a href="/feed.xml">feed</a>)
+        <p>Release announcements, use cases, features and other news from the Crystal team.</p>
+      </div>
+
+      <div class="link-item" id="newsletter">
+        <a class="link-item__main" href="/newsletter">
+          {%- include icons/newsletter.svg %}
+          Crystal Newsletter
+        </a> (<a href="/newsletter/archive">archive</a>)
+        <p>Our newsletter regularly shares highlights and insights on the Crystal language and community.</p>
+      </div>
+
+      <div class="link-item">
+        <a class="link-item__main" href="https://fosstodon.org/@CrystalLanguage">
+          {%- include icons/mastodon.svg %}
+          @CrystalLanguage
+        </a>
+        <br/>
+        <a class="link-item__main" href="https://twitter.com/CrystalLanguage">
+          {%- include icons/twitter.svg %}
+          @CrystalLanguage
+        </a>
+        <p>Get news and engage in discussions on Mastodon and Twitter.<br> Be sure to mention us in your toots and tweets!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="full-width-rule">
+    <a href="/team" class="hex">
+      <span>Meet the Team</span>
+    </a>
+  </div>
+
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <a href="/team">
+      <img src="https://opencollective.com/crystal-lang/contributors.svg?width=960" alt="Collection of all collaborator profile images">
+    </a>
+  </div>
+</section>
+
+<section id="ecosystem">
+  <span id="shards"></span>
+  <h2>Crystal Ecosystem</h2>
+
+  <p>The Crystal ecosystem is backed by libraries called <em>shards</em>; many are available as Open Source software. Dependencies are managed by the eponymous program <a href="https://github.com/crystal-lang/shards/">shards</a> which is included in most Crystal distributions. Since shards is a decentralized dependency system and there is no central registry. Instead, there are indices which allow you discover shards.</p>
+
+  <div class="topics">
+    <div class="link-items">
+      <h3>Shard Indices</h3>
+
+      <div class="link-item" id="shardbox">
+        <a class="link-item__main" href="https://shardbox.org/">
+          {%- include icons/manage-search.svg %}
+          Shardbox.org
+        </a>
+        <p>A curated database of Crystal shards. It helps developers to discover shards and the Shards ecosystem.</p>
+      </div>
+
+      <div class="link-item" id="shards.info">
+        <a class="link-item__main" href="https://shards.info/">
+          {%- include icons/manage-search.svg %}
+          shards.info
+        </a>
+        <p >Lists shard repositories on GitHub and GitLab with dependencies and releases.</p>
+      </div>
+
+      <div class="link-item" id="awesome">
+        <a class="link-item__main" href="https://github.com/veelenga/awesome-crystal">
+          {%- include icons/manage-search.svg %}
+          awesome-crystal
+        </a>
+        <p>A curated Awesome List of Crystal shards, tools and tutorials.</p>
+      </div>
+    </div>
+
+
+    <div class="link-items">
+      <h3>Tooling</h3>
+
+      <div class="link-item">
+        <a class="link-item__main" href="https://github.com/veelenga/awesome-crystal#editor-plugins">
+          {%- include icons/extensions.svg %}
+          Editor Plugins
+        </a>
+        <p>Compilation of plugins for source editors and IDEs.</p>
+      </div>
+
+      <div class="link-item">
+        <a class="link-item__main" href="https://crystal-ameba.github.io/">
+          {%- include icons/ameba.svg %}
+          Ameba
+        </a>
+        <p>Code style linter for Crystal</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<h2>Crystal Sphere</h2>
+
+<section>
+
+  <div class="topics">
+    <div class="link-items">
+      <h3>Podcasts &amp; Videos</h3>
+
+      <div class="link-item">
+        <a class="link-item__main" href="https://www.youtube.com/@CrystalLanguage" rel="me">
+          {%- include icons/youtube.svg %}
+          Crystal Channel on YouTube
+        </a>
+      </div>
+      <div class="link-item">
+        <a class="link-item__main" href="https://podcast.chicagocrystal.org/">
+          {%- include icons/podcasts.svg %}
+          Chicago Crystal Podcast
+        </a>
+      </div>
+      <div class="link-item">
+        <a class="link-item__main" href="https://www.youtube.com/channel/UCI1RvHPG6S9mw4eRoJfH2kA">
+          {%- include icons/subscriptions.svg %}
+          Chicago Crystal Videos</a>
+      </div>
+    </div>
+    <div class="link-items">
+      <h3>Blogs</h3>
+
+      <div class="link-item">
+        <a class="link-item__main" href="/blog/">
+          {%- include icons/crystal.svg %}
+          Crystal Blog</a>
+      </div>
+      <div class="link-item">
+        <a class="link-item__main" href="https://dev.to/t/crystal">
+          {%- include icons/dev.to.svg %}
+          Crystal on dev.to</a>
+      </div>
+      <div class="link-item">
+        <a class="link-item__main" href="https://medium.com/tag/crystal-lang">
+          {%- include icons/medium.svg %}
+          Crystal on Medium</a>
+      </div>
+      <div class="link-item">
+        <a class="link-item__main" href="https://lbarasti.com/tags/crystal/">
+          {%- include icons/newsmode.svg %}
+          Lorenzo Barasti</a>
+      </div>
+      <div class="link-item">
+        <a class="link-item__main" href="https://manas.tech/blog/tagged/crystal">
+          {%- include icons/manas.svg %}
+          Manas.Tech Blog</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="side-section">
+  <h2 id="events">Events</h2>
+  <aside markdown="1">
+  </aside>
+  <div class="events-list">
+    {%- assign events = site.events | reverse %}
+    {%- for event in events %}
+      <article class="event-card">
+        <img src="/assets{{ event.id }}.webp" alt="">
+        <time datetime="{{ event.start_date }}" itemprop="startDate">{{ event.date_text }}</time>
+        <time datetime="{{ event.end_date }}" itemprop="endDate"></time>
+
+        <a href="{{ event.url }}" class="name">{{ event.title }}</a>
+
+        <span class="location">{{ event.location }}</span>
+      </article>
+    {%- endfor %}
+  </div>
+</section>

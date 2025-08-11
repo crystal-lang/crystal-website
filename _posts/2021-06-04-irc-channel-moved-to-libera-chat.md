@@ -1,7 +1,7 @@
 ---
 title: IRC channel moved to Libera Chat
 author: jhass
-thumbnail: +
+categories: project
 ---
 
 Due to the recent changes on management in the Freenode network and the subsequent migration of the majority of active users to Libera Chat, we have moved our IRC presence there, too.

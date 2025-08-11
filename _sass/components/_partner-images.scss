@@ -1,0 +1,18 @@
+.partner-images {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: min(22%, 8rem);
+  grid-auto-columns: auto min(22%, 8rem);
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  column-gap: var(--padding-xs);
+
+  > a {
+    display: block;
+    width: 100%;
+  }
+  > span {
+    font-size: 300%;
+  }
+}

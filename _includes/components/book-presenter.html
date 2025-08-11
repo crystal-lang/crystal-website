@@ -1,0 +1,25 @@
+<div class="book-presenter">
+  <div class="cover">
+    <img src="{{ include.book.cover_image }}" alt="" aria-label="Book cover" />
+  </div>
+
+  <div class="description">
+    <p>
+      {{- include.book.description }}
+    </p>
+
+    <p>You can get it from these vendors:</p>
+
+    {%- for vendor in include.book.vendors %}
+      <div class="link-item">
+        <a class="link-item__main" href="{{ vendor.url }}">
+          {%- include icons/book.svg %}
+          Buy on {{ vendor.name }}</a>
+      </div>
+    {%- endfor %}
+  </div>
+
+  <div class="details">
+    {{- include.book.details }}
+  </div>
+</div>

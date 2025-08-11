@@ -1,0 +1,11 @@
+@mixin external-links {
+  a[href]:where(
+    [href*="//"]
+  ):not(:where(
+    [href*="//crystal-lang.org/"],
+    [href*="//forum.crystal-lang.org/"],
+    :has(> img:first-child:last-child, > svg:first-child:last-child)
+  )) {
+    @extend .external;
+  }
+}

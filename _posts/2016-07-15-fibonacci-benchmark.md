@@ -1,8 +1,9 @@
 ---
 title: Fibonacci benchmark
 summary: "Ruby vs. Crystal"
-thumbnail: f
 author: asterite
+categories: technical
+tags: performance
 ---
 
 When trying out Crystal it's tempting, and very fun, to write small benchmarks to see
@@ -89,7 +90,7 @@ irb(main):002:0> a << a
 </pre>
 
 Note that when printing an array, Ruby notices that it reached the same array it was printing,
-so it printed `[...]` to show this. The program didn't hang up, recurisvely trying to print the
+so it printed `[...]` to show this. The program didn't hang up, recursively trying to print the
 same array over and over. To implement this, Ruby has to remember that this Array is being printed,
 probably putting it in a Hash of some sort, and when printing an object inside this Array a hash
 lookup is performed.
@@ -256,10 +257,10 @@ Hmmm... it didn't change much. But if we try with a bigger number, say 300_000, 
 
 <pre>
 $ ruby fib.rb
-# number ommited
+# number omitted
 1.880515
 $ crystal fib.cr --release
-# number ommited
+# number omitted
 00:00:00.7621470
 </pre>
 

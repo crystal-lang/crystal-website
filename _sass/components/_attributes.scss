@@ -1,0 +1,16 @@
+.attributes {
+  display: grid;
+  grid-template-columns: minmax(15%, min-content) 1fr;
+  column-gap: var(--padding-xs);
+
+  > dt {
+    font-weight: 300;
+    justify-self: end;
+    color: var(--light-text);
+    margin: unset;
+  }
+  > dd {
+    grid-column: 2;
+    text-indent: unset;
+  }
+}

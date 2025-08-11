@@ -1,10 +1,11 @@
 ---
 title: Heroku Buildpack
-thumbnail: H
 author: bcardiff
+categories: technical
+tags: tooling
 ---
 
-At the end of 2014 a [first draft](https://github.com/manastech/heroku-buildpack-crystal/commit/b364f9115706a2a1c97ff40bd44aef1cf73e6288) of a [Heroku](//heroku.com) buildpack for crystal was createad. This was truly great. Being able to run crystal apps in the Heroku stack was charm idea.
+At the end of 2014 a [first draft](https://github.com/manastech/heroku-buildpack-crystal/commit/b364f9115706a2a1c97ff40bd44aef1cf73e6288) of a [Heroku](//heroku.com) buildpack for crystal was created. This was truly great. Being able to run crystal apps in the Heroku stack was charm idea.
 
 While we continued to develop the language, the tools, and the standard library, the community around Crystal grew. Many were interested in trying their Crystal-powered web apps in Heroku. The [network graph](https://github.com/crystal-lang/heroku-buildpack-crystal/network) at github for the buildpack is quite big, especially for just a bunch of bash scripts!
 
@@ -12,7 +13,7 @@ However, due to some flaws in the approach, the buildpack failed to stay up to d
 
 While efforts to develop web frameworks continue nowadays, we wanted to share the very basic steps to use the Crystal buildpack to deploy a web application in Heroku without the need for any additional dependencies.
 
-# Create a Crystal project
+## Create a Crystal project
 
 This assumes you already have [crystal installed](http://crystal-lang.org/docs/installation/).
 
@@ -70,13 +71,13 @@ $ crystal src/heroku101.cr
 Listening on http://0.0.0.0:8080
 </pre>
 
-Open your browser at [http://0.0.0.0:8080](http://0.0.0.0:8080).
+Open your browser at <a href="http://0.0.0.0:8080" data-proofer-ignore>http://0.0.0.0:8080</a>.
 
 To stop the server just terminate the process by pressing `Ctrl+C`.
 
-# Herokufy it
+## Herokufy it
 
-Right now the project knows nothing about Heroku. To get started, a Heroku application needs first to be registered. The easiest way to do this is via the [Heroku toolbelt](https://toolbelt.heroku.com/):
+Right now the project knows nothing about Heroku. To get started, a Heroku application needs first to be registered. The easiest way to do this is via the ~~[Heroku toolbelt](https://toolbelt.heroku.com/)~~:
 
 <pre class="code">
 $ heroku create --buildpack https://github.com/crystal-lang/heroku-buildpack-crystal.git
@@ -143,7 +144,7 @@ Listening on http://0.0.0.0:9090
 ^C
 </pre>
 
-# Deploy!
+## Deploy
 
 When you are ready to go live with your app just deploy it the usual way with `git push heroku master`.
 
@@ -185,7 +186,7 @@ The buildpack will:
 3. Compile the main source file in release mode.
 4. Run the web server process with `--port` option.
 
-# Specify the crystal version
+## Specify the crystal version
 
 If you want to use a different Crystal version, create a `.crystal-version` file with the desired version, following [crenv](https://github.com/pine/crenv)’s convention.
 
@@ -217,11 +218,9 @@ You will now notice the `(0.17.1 due to .crystal-version file)` legend.
 
 Whenever you are ready to upgrade to the latest crystal version, update the content of the file or just remove it and deploy again.
 
-## Show me the code!
+## Show me the code
 
 Find all the sample source code used at
 [https://github.com/bcardiff/sample-crystal-heroku101](https://github.com/bcardiff/sample-crystal-heroku101).
 
 To contribute to crystal buildpack, just [fork it](https://github.com/crystal-lang/heroku-buildpack-crystal). Contributions are welcome!
-
-

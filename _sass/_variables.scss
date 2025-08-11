@@ -1,14 +1,147 @@
-// Colors
-// --------------------------------------------------
-$white:         #ffffff;
-$black:         #000000;
-$primary-text:  #777777;
-$separator:     #EBEBEB;
-$light-gray:    #D7D7D7;
-$lighter-gray:  #CCCCCC;
-$chart:         $lighter-gray;
+@use "sass:map";
+@use "sass:math";
 
-// Fonts
-// -----------
-$sans:          'Roboto', Arial, Helvetica, sans-serif;
-$codeFont:      'Roboto Mono', monospace;
+$font-size-ratio: 1.25 !default;
+$font-size-base: 1rem !default;
+$font-size-sm: 0.9rem !default;
+$font-size-lg: 1.1rem !default;
+$font-sizes: (
+  page_title: math.pow($font-size-ratio, 5) * $font-size-base,
+  h1: math.pow($font-size-ratio, 4) * $font-size-base,
+  h2: math.pow($font-size-ratio, 3) * $font-size-base,
+  h3: math.pow($font-size-ratio, 2) * $font-size-base,
+  h4: math.pow($font-size-ratio, 1) * $font-size-base,
+  h5: $font-size-base,
+  h6: $font-size-base,
+  small: math.pow($font-size-ratio, -0.5) * $font-size-base,
+  xsmall: math.pow($font-size-ratio, -1) * $font-size-base,
+  xxsmall: math.pow($font-size-ratio, -1.5) * $font-size-base,
+);
+
+:root {
+  --golden-ratio: 1.618;
+
+  // Colors
+  // -------------
+  --white: hsl(0, 0%, 100%);
+  --tainted-white: hsl(0, 0%, 96%);
+  --alabaster: rgb(237, 237, 237);
+  --black: hsl(0, 0%, 3%);
+  --pitch-black: var(--black);
+  --light-gray: hsl(0, 0%, 44%);
+  --tainted-black: hsl(0, 0%, 11%);
+  --lighter-gray: hsl(0, 0%, 65%);
+
+  --background-main: var(--white);
+  --background-secondary: var(--tainted-white);
+  --background-tertiary: var(--alabaster);
+
+  --primary-text: var(--black);
+  --primary-code: var(--light-gray);
+  --light-text: hsl(0, 0%, 25%);
+  --lighter-text: var(--light-gray);
+
+  --link-color: currentColor;
+  --link-hover-color: var(--light-text);
+
+  --header-color: var(--light-gray);
+
+  --highlight-bg: var(--tainted-white);
+  --code-bg: var(--tainted-white);
+
+  --border-color-light: var(--alabaster);
+  --border-color: hsl(0, 0%, 87%);
+  --border-color-heavy: hsl(0, 0%, 84%);
+
+  --warning: hsl(31.2deg 100% 45%);
+
+  // Code color shades
+  --md-code-fg-color: hsla(200, 18%, 26%, 1);
+  --md-code-bg-color: hsla(200, 0%, 96%, 1);
+
+  // Code highlighting syntax color shades
+  --md-code-hl-number-color: hsla(291, 45%, 50%, 1);
+  --md-code-hl-special-color: hsla(0, 67%, 50%, 1);
+  --md-code-hl-function-color: hsla(219, 54%, 51%, 1);
+  --md-code-hl-constant-color: hsla(17, 52%, 42%, 1);
+  --md-code-hl-keyword-color: hsla(219, 54%, 45%, 1);
+  --md-code-hl-string-color: hsla(130, 48%, 33%, 1);
+
+  --md-code-hl-name-color: var(--md-code-fg-color);
+  --md-code-hl-operator-color: var(--light-gray);
+  --md-code-hl-punctuation-color: var(--light-gray);
+  --md-code-hl-comment-color: var(--light-gray);
+  --md-code-hl-generic-color: var(--light-gray);
+  --md-code-hl-variable-color: hsla(45, 28%, 38%, 1);
+
+  // Fonts
+  // -------------
+  --body-font: "Roboto", arial, helvetica, sans-serif;
+  --code-font: "Roboto Mono", monospace;
+
+  --content-width: 85ch;
+}
+
+@mixin dark-mode-highlight {
+  --code-bg: var(--tainted-black);
+  --md-code-fg-color: var(--lighter-text);
+
+  --md-code-hl-number-color: hsla(291, 45%, 65%, 1);
+  --md-code-hl-special-color: hsla(0, 67%, 65%, 1);
+  --md-code-hl-function-color: hsla(219, 54%, 68%, 1);
+  --md-code-hl-constant-color: hsla(17, 52%, 61%, 1);
+  --md-code-hl-keyword-color: hsla(219, 54%, 64%, 1);
+  --md-code-hl-string-color: hsla(130, 48%, 51%, 1);
+
+  --md-code-hl-name-color: var(--md-code-fg-color);
+  --md-code-hl-operator-color: var(--lighter-gray);
+  --md-code-hl-punctuation-color: var(--lighter-gray);
+  --md-code-hl-comment-color: var(--lighter-gray);
+  --md-code-hl-generic-color: var(--lighter-gray);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pitch-black: hsl(0, 0%, 3%);
+    --black: hsl(0, 0%, 11%);
+    --tainted-black: hsl(0, 0%, 16%);
+    --mine-shaft: hsl(0, 0%, 19%);
+
+    --light-gray: hsl(0, 0%, 56%);
+
+    --background-main: var(--black);
+    --background-secondary: var(--tainted-black);
+    --background-tertiary: var(--mine-shaft);
+
+    --primary-text: hsl(0, 0%, 84%);
+    --primary-code: var(--tainted-white);
+    --light-text: var(--lighter-gray);
+    --lighter-text: var(--tainted-white);
+    --header-color: var(--white);
+    --page-title-color: var(--white);
+
+    --link-color: currentColor;
+    --link-hover-color: var(--light-gray);
+
+    --highlight-bg: hsl(0, 0%, 27%);
+    --code-bg: hsl(0, 0%, 27%);
+
+    --border-light: hsl(0, 0%, 14%);
+    --border-color: hsl(0, 0%, 25%);
+    --border-color-heavy: hsl(0, 0%, 32%);
+
+    --hex-color: var(--lighter-text);
+    --hex-bg: var(--black);
+    --hex-bg-hover: var(--tainted-black);
+
+    --hex-shadow: drop-shadow(0 0 1px rgb(255 255 255 / 40%))
+      drop-shadow(0 0 1px rgb(255 255 255 / 10%));
+
+    --hex-hover-shadow: drop-shadow(0 0 1px rgba(255 255 255 / 100%))
+      drop-shadow(0 0 1px rgb(255 255 255 / 10%));
+
+    @include dark-mode-highlight;
+
+    --code-bg: var(--mine-shaft);
+  }
+}

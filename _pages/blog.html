@@ -1,0 +1,41 @@
+---
+title: News
+excerpt: Blog posts
+layout: wide
+section: blog
+link_actions:
+- |
+  <a href="/feed.xml" rel="alternate" title="Newsfeed for Crystal blog posts" aria-label="Blog newsfeed" type="application/atom+xml">
+    RSS
+  </a>
+- |
+  <a href="/blog/tags">
+    Tags
+  </a>
+---
+
+<div class="featured-posts featured-posts--extra-highlight">
+  {%- assign post = site.posts.first %}
+  <div class="post-teaser">
+    <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+
+    {%- include posts/meta.html post=post %}
+
+    <div class="excerpt">{{ post.summary | default: post.excerpt | markdownify }}</div>
+  </div>
+
+  {%- assign latest_release = site.releases | reverse | first %}
+  <div class="releases-info">
+    <strong>Latest release</strong>
+
+    <a href="{{ latest_release.url }}" class="hex">Crystal {{ latest_release.version }}</a>
+
+    <div class="link-actions">
+      <a href="/releases/">All release notes</a>
+    </div>
+  </div>
+</div>
+
+{% include posts/recent_news.html offset=1 %}
+
+{% include posts/more_articles.html posts=posts %}

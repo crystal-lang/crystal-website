@@ -1,0 +1,53 @@
+.used-in-production {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25em), 1fr));
+  gap: var(--block-flow-md);
+
+  > section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "icon headline"
+      ".    description"
+      ".    list";
+    column-gap: var(--padding-sm);
+    align-self: start;
+
+    > h3 {
+      grid-area: headline;
+      margin: 0;
+      align-self: center;
+      font-weight: 500;
+      color: var(--primary-text);
+      font-size: font-size(h4);
+    }
+
+    > .hex-icon {
+      grid-area: icon;
+      align-self: center;
+    }
+
+    > p {
+      grid-area: description;
+      color: var(--light-text);
+    }
+
+    > ul {
+      > li > strong:first-child {
+        --link-external-postfix: none;
+      }
+
+      grid-area: list;
+      display: flex;
+      flex-direction: column;
+      gap: var(--padding-xs);
+      list-style: none;
+      padding: 0;
+      line-height: var(--line-height-md);
+
+      // FIXME: No idea why this is necessary, but without it the element is a
+      // bit too short and overflows.
+      height: fit-content;
+    }
+  }
+}

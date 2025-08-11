@@ -1,0 +1,77 @@
+:root {
+  --padding-xxs: clamp(0.25rem, 0.75%, 0.5rem);
+  --padding-xs: clamp(0.5rem, 1.5%, 0.75rem);
+  --padding-sm: clamp(1rem, 3%, 1.5rem);
+  --padding-md: clamp(1.5rem, 6%, 3rem);
+  --padding-lg: clamp(3rem, 12%, 6rem);
+  --block-flow-xs: min(1rem, 2vh);
+  --block-flow-sm: min(2rem, 4vh);
+  --block-flow-md: min(4rem, 8vh);
+  --block-flow-lg: min(8rem, 16vh);
+}
+
+body {
+  --layout-spacing: max(8vh, 3rem);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-main);
+
+  overflow: auto;
+}
+
+body > header {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+body:not(:has(.edit-on-github)) > footer,
+body > .edit-on-github {
+  margin-top: auto;
+}
+
+body > main {
+  @include blockflow(var(--block-flow-lg));
+  margin-inline: 1.5rem;
+  align-self: center;
+  max-width: var(--container-max, 120ch);
+
+  margin-block-end: var(--block-flow-lg);
+
+  > header {
+    margin-block: var(--block-flow-md);
+
+    h1 {
+      font-size: font-size(page_title);
+    }
+
+    + * {
+      margin-top: 0;
+    }
+  }
+}
+
+body > main > article {
+  margin-block: var(--block-flow-md);
+}
+
+article.page,
+article.page > header,
+.page-header {
+  @include blockflow(var(--block-flow-md));
+}
+
+article > .content {
+  @include blockflow(var(--block-flow-lg));
+}
+
+section:not([class]) {
+  @include blockflow(var(--block-flow-sm));
+}
+
+hr {
+  border: none;
+  border-block-end: 0.16ch solid var(--border-color);
+}

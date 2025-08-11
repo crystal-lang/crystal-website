@@ -1,8 +1,8 @@
 ---
 title: Split the repo!
 summary: where the git...
-thumbnail: G
 author: bcardiff
+categories: project
 ---
 
 Crystal is made of many parts. Some of them migrated to other repositories this week.

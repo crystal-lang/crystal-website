@@ -1,16 +1,17 @@
 ---
 title: "Watch: Run, change, build, repeat"
 summary: How to improve the development cycle with a watch experience
-thumbnail: W
 author: bcardiff
+categories: technical
+tags: misc
 ---
 
 In this post, we'll cover how to automatically recompile and execute your code when you modify your source files. This technique can be applied easily on apps ranging from a CLI app, to a full web server.
 
 ## Requirements
 
-* Have `watchexec` installed (check [github](https://github.com/watchexec/watchexec) for installation instructions)
-* Use shards’ `targets`
+- Have `watchexec` installed (check [github](https://github.com/watchexec/watchexec) for installation instructions)
+- Use shards’ `targets`
 
 ## Setup
 

@@ -1,0 +1,22 @@
+<div class="top-sponsors top-sponsors--corporate">
+  {%- for sponsor in site.data.sponsor_logos_corporate %}
+    <a href="{{ sponsor.url }}" rel="nofollow sponsored">
+      <img src="/assets/{{ sponsor.logo }}" alt="">
+      {{- sponsor.name }}
+    </a>
+  {%- endfor %}
+</div>
+<div class="top-sponsors top-sponsors--gold">
+  {%- for sponsor in site.data.sponsor_logos_gold %}
+    <a href="{{ sponsor.url }}" rel="nofollow sponsored" title="{{- sponsor.name }}">
+      <img src="/assets/{{ sponsor.logo }}" alt="{{- sponsor.name }}">
+    </a>
+  {%- endfor %}
+</div>
+<div class="top-sponsors top-sponsors--silver">
+  {%- for sponsor in site.data.sponsor_logos_silver %}
+    <a href="{{ sponsor.url }}" rel="nofollow sponsored" title="{{- sponsor.name }}">
+      <img src="/assets/{{ sponsor.logo }}" alt="{{- sponsor.name }}">
+    </a>
+  {%- endfor %}
+</div>

@@ -1,0 +1,76 @@
+.profile-card {
+  --card-padding: var(--padding-xs);
+
+  @extend .card;
+
+  > .name {
+    margin-block: var(--padding-sm) var(--padding-xxs);
+  }
+
+  > .handle {
+    color: var(--lighter-text);
+    margin-block-start: 0;
+  }
+
+  > .roles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > .profiles,
+  > .roles {
+    font-size: 87.5%;
+  }
+
+  > .profiles {
+    color: var(--lighter-text);
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    justify-content: center;
+    margin-block-start: auto;
+    padding-top: var(--padding-sm);
+  }
+}
+
+.profile-mini {
+  display: grid;
+  line-height: 1.2;
+  grid-template-columns: 4.7em 1fr;
+  column-gap: var(--padding-xs);
+  font-size: font-size(xsmall);
+  align-items: center;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    font-weight: 500;
+    font-size: 1.125em;
+  }
+
+  > img {
+    align-self: center;
+    width: 100%;
+  }
+}
+
+.card-list > .profile-mini {
+  margin: 0 calc(var(--padding-sm) / 2);
+}
+
+.profile-mini,
+.profile-card {
+  > img {
+    @include circle-image;
+  }
+}
+
+a.ico {
+  @extend .ui-link;
+
+  color: var(--lighter-text);
+  text-decoration: none;
+}

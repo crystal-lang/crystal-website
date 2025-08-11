@@ -336,7 +336,7 @@ function Viewer3D(container) {
         computeNormals();
         animate();
       } else {
-        alert("xml request error: " + _req.statusText);
+        console.error("xml request error: " + _req.status + " (" + _req.statusText + ")");
       }
     }
   }
@@ -347,7 +347,7 @@ function Viewer3D(container) {
     } else if (window.ActiveXObject) {
       return new ActiveXObject("Microsoft.XMLHTTP");
     }
-    alert("Can't find XML Http Request object!");
+    console.error("Can't find XML Http Request object!");
   }
 
   function mouseDownHandler(event) {

@@ -2,6 +2,9 @@
 title: Parallelism in Crystal
 summary: Use more of your core power
 author: waj,bcardiff
+comment_href: https://disqus.com/home/discussion/crystal-lang/parallelism_in_crystal_88/
+categories: technical
+tags: feature
 ---
 
 Crystal has made a huge step forward to have parallelism as a first class citizen. In short, you can set up the number of worker threads on runtime and each new fiber will be scheduled to run on one of them. Channel and select will work seamlessly. You are allowed to share memory between workers, but you will probably need to take care of some synchronization to keep the state consistent.
@@ -65,12 +68,11 @@ In this example we can see that multi-thread is not a silver bullet. The single-
 
 <center>wall time for channel-primes. less is better</center>
 
-Although, depending on the number of workers the wall time difference is less noticable, the cpu time difference will be huge.
+Although, depending on the number of workers the wall time difference is less noticeable, the cpu time difference will be huge.
 
 <img src="/assets/blog/2019-08-channel-primes-cpu-time.png" class="center"/>
 
 <center>cpu time for channel-primes. less is better</center>
-
 
 ## Detailed description
 
@@ -137,9 +139,9 @@ The behaviour of closed channels was revisited. From now on, either in single-th
 
 Mixing fork and multi-thread programs is problematic. There are a couple of references describing issues on that scenario:
 
-* [Fork and existing threads?](https://stackoverflow.com/a/1074663/30948)
-* [Why threads can't fork](https://thorstenball.com/blog/2014/10/13/why-threads-cant-fork/)
-* [Threads and fork(): think twice before mixing them](http://www.linuxprogrammingblog.com/threads-and-fork-think-twice-before-using-them)
+- [Fork and existing threads?](https://stackoverflow.com/a/1074663/30948)
+- [Why threads can't fork](https://thorstenball.com/blog/2014/10/13/why-threads-cant-fork/)
+- [Threads and fork(): think twice before mixing them](https://web.archive.org/web/20190322202710/http://www.linuxprogrammingblog.com/threads-and-fork-think-twice-before-using-them)
 
 The `fork` method will not be available in multi-thread and will probably go away as a public API. The std-lib still needs fork to start subprocesses, but this scenario is safe because an exec is performed after the fork.
 
@@ -172,7 +174,7 @@ Constants and class variables are lazily initialized in some scenarios. We would
 
 We mentioned that the starting scheduling algorithm is a round-robin without fiber stealing. We attempted to have a metric of the load of each worker, but since workers can communicate within each other to delegate new fibers, computing the load would imply more state that needs to be synced. On top of that, in the current implementation there are references to fibers in the pipe used for communication, so the `@runnables` queue sizes are not an accurate metric.
 
-The GC had multi-thread support in the past, but the performance was not good enough. We finally implemented a RW-Lock between context switches (the readers) and the GC collection (the writer). The implementation of the RW-Lock is inspired in [Concurrency Kit](http://concurrencykit.org/) and does not use a Mutex.
+The GC had multi-thread support in the past, but the performance was not good enough. We finally implemented a RW-Lock between context switches (the readers) and the GC collection (the writer). The implementation of the RW-Lock is inspired in [Concurrency Kit](https://github.com/concurrencykit/ck) and does not use a Mutex.
 
 Unsurprisingly, but worth noticing, a compiler built with multi-thread support does not yet take advantage of the cores. Up until now, the compiler used `fork` when building programs in debug mode. So the `--threads` compiler option is ignored on multi-thread due to the issues described [before](#fork). This is a use case of `fork` that will not be supported in the future and will need to be rewritten with other constructs.
 
@@ -190,11 +192,11 @@ In Crystal, unions between value-types and reference-types are represented as a 
 
 Regarding Array, something similar can happen. An Array of a reference type (without `nil` as value) can lead to a segfault, because one thread might remove an item while another is dereferencing the last one. Removing items writes a zero in the memory, so the GC can claim the memory, but the zero address is not a value that can be dereferenced.
 
-There are a couple of ideas to perform the codegen of unions in a different way. And one of them is already working, but at the cost of increasing both the memory footprint and the binary size of the program. We want to iterate on other alternatives and compare them before choosing one. *For now* you will need to be aware that shared unions that can appear in class variables, instance variables, constants or closured variables are not safe (but will be).
+There are a couple of ideas to perform the codegen of unions in a different way. And one of them is already working, but at the cost of increasing both the memory footprint and the binary size of the program. We want to iterate on other alternatives and compare them before choosing one. _For now_ you will need to be aware that shared unions that can appear in class variables, instance variables, constants or closured variables are not safe (but will be).
 
 To deal with the Array unsafe behavior, there needs to be a discussion regarding the different approaches and guarantees one might want in shared mutable data structures. The strongest guarantee would be similar to serializing its access (think of a Mutex around every method); a weaker guarantee would be that access is not serialized but will always lead to consistent state (think that every call will produce a consistent final state, but there is no guarantee which one will be the one used); and finally, the void guarantee that is allowing interleaved manipulation of the state.
 
-After the guarantee level is chosen we need to find an algorithm for it. So far, we have worked around an implementation with the weaker one. But it requires some integration with the GC. That integration is currently a bottleneck and we are still iterating. *For now* you will need to be aware that shared arrays are not safe unless manually synchronized.
+After the guarantee level is chosen we need to find an algorithm for it. So far, we have worked around an implementation with the weaker one. But it requires some integration with the GC. That integration is currently a bottleneck and we are still iterating. _For now_ you will need to be aware that shared arrays are not safe unless manually synchronized.
 
 The challenges found in Array appear in every manipulation of pointers. Pointers are unsafe and, while working on the code of Array, we definitely wished to have  safe/unsafe sections in the language to guide the review process. There are other structures like Deque that suffer from the same issues.
 
@@ -202,4 +204,4 @@ The challenges found in Array appear in every manipulation of pointers. Pointers
 
 Although there is some pending work to be done before we can claim that multi-thread mode is a first class citizen of the language, having this update in the runtime is definitely a huge step forward. We want to collect feedback and keep iterating so that, in the next couple of releases, we can remove the `preview` from `preview_mt`.
 
-We have been able to do all of this thanks to the continued support of [84codes](https://www.84codes.com/), and every other [sponsor](/sponsors). It is extremely important for us to sustain the support through donations, so that we can maintain this development pace. [OpenCollective](https://opencollective.com/crystal-lang) and [Bountysource](https://salt.bountysource.com/teams/crystal-lang) are two available channels for that. Reach out to [crystal@manas.tech](mailto:crystal@manas.tech) if you’d like to become a direct sponsor or find other ways to support Crystal. We thank you in advance!
+We have been able to do all of this thanks to the continued support of [84codes](https://www.84codes.com/), and every other [sponsor](/sponsors). It is extremely important for us to sustain the support through donations, so that we can maintain this development pace. [OpenCollective](https://opencollective.com/crystal-lang) and ~~[Bountysource](https://salt.bountysource.com/teams/crystal-lang)~~ are two available channels for that. Reach out to [crystal@manas.tech](mailto:crystal@manas.tech) if you’d like to become a direct sponsor or find other ways to support Crystal. We thank you in advance!

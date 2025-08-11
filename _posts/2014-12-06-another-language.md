@@ -1,8 +1,9 @@
 ---
 title: Another language
 summary: What if...
-thumbnail: ??
 author: asterite
+categories: technical
+tags: [language, types]
 ---
 
 Crystal has global type inference. You can program without type annotations except
@@ -23,7 +24,7 @@ possible types it will hold.
 
 But there are also some downsides to this approach. Let's analyze each of them.
 
-**Code becomes harder to understand and follow**
+## Code becomes harder to understand and follow
 
 Some say that without type annotations a code becomes harder to follow. Let's look
 at an example.
@@ -103,7 +104,7 @@ exact type. This will be mostly useful if you run it in your spec files because 
 show a class' usage. And in the future it will be possible to view this
 information in a documentation format like RDoc.
 
-**Incremental compilation is not possible**
+## Incremental compilation is not possible
 
 Because there are no type annotations, the compiler needs to figure out the type
 of everything, each time, from scratch. There's no way to compile a module to an

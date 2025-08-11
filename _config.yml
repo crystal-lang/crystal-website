@@ -1,5 +1,5 @@
-name: The Crystal Programming Language
-description: A language for humans and computers
+title: The Crystal Programming Language
+tagline: A language for humans and computers
 url: https://crystal-lang.org
 logo: /assets/media/crystal_logo.svg
 
@@ -10,6 +10,13 @@ collections:
     output: true
   style_guide:
     output: false
+  events:
+    output: true
+  pages:
+    output: true
+    permalink: /:path/
+  samples:
+    output: false
 
 defaults:
   -
@@ -17,37 +24,62 @@ defaults:
       path: ""
       type: pages
     values:
-      image: /assets/icon.png
       layout: page
+      section: unspecified
   -
     scope:
       path: ""
       type: posts
     values:
-      image: /assets/icon.png
       layout: post
+      permalink: /:year/:month/:day/:title/
       is_post: true
+      section: posts
   -
     scope:
-      path: "install"
+      path: "_pages/install"
       type: pages
     values:
-      image: /assets/icon.png
       layout: install
-      permalink: /install/:basename/
+      section: install
+
   - scope:
       path: ""
       type: releases
     values:
-      layout: post
-      permalink: /:year/:month/:day/:title.html
-      image: /assets/icon.png
+      layout: release
+      permalink: /:year/:month/:day/:title/
+      section: releases
+  -
+    scope:
+      path: ""
+      type: events
+    values:
+      layout: event
+      permalink: /events/:title/
+      section: events
+      class: release
+  - scope:
+      path: ""
+      type: samples
+    values:
+      playground: true
 
+# Used by https://github.com/jekyll/jekyll-seo-tag
 twitter:
   username: CrystalLanguage
 
+# Used by https://github.com/jekyll/jekyll-seo-tag
+social:
+  name: Crystal Language
+  links:
+  - https://fosstodon.org/@CrystalLanguage
+  - https://github.com/crystal-lang
+
 exclude:
 - "*.nix"
+- "devenv*"
+- ".devenv/"
 - docker-compose.yml
 - docker-compose.*.yml
 - Gemfile
@@ -59,6 +91,9 @@ exclude:
 - vendor
 - netlify.toml
 
+sass:
+  style: compressed
+
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -68,3 +103,19 @@ kramdown:
       css_class: code_section
 
 repository: crystal-lang/crystal-website
+
+callouts: ["INFO", "NOTE", "THANKS", "WARNING"]
+
+relative_links:
+  enabled:     true
+  collections: true
+
+jekyll-archives:
+  enabled: [tags]
+  layouts:
+    tag: tag
+  permalinks:
+    tag: 'blog/tags/:name/'
+
+default_image:
+  path: /assets/banner.webp

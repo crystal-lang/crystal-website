@@ -1,20 +1,36 @@
 [
   {
-    "name": "Nikola Motor Company",
-    "url": "https://nikolamotor.com/",
-    "logo": "sponsors/nikola_motor_company.png",
+    "name": "Manas.Tech",
+    "url": "https://manas.tech/",
+    "logo": "manas-orange.svg",
     "last_payment": 5000,
-    "all_time": 130000,
+    "time_last_payment": "Aug 5, 2025",
+    "all_time": 1385000,
+    "since": "Jun 19, 2009"
+  },
+  {
+    "name": "Nikola Motor Company",
+    "last_payment": 0,
+    "all_time": 165000,
     "since": "Mar 1, 2020"
   },
   {
-    "name": "84 codes",
+    "name": "84codes",
     "url": "https://www.84codes.com/",
     "logo": "sponsors/84.png",
-    "last_payment": 5000,
-    "all_time": 191000,
+    "last_payment": 22000,
+    "time_last_payment": "Aug 5, 2025",
+    "all_time": 743000,
     "currency": "€",
     "since": "Apr 1, 2018"
+  },
+  {
+    "overrides": "MailerToGo",
+    "name": "MailerToGo",
+    "logo": "sponsors/mailertogo.svg",
+    "last_payment": 0,
+    "all_time": 0,
+    "since": "Dec 7, 2024"
   },
   {
     "overrides": "Bookyourdata.com",
@@ -24,10 +40,28 @@
     "since": "Apr 14, 2019"
   },
   {
-    "overrides": "Screen Recorder",
-    "name": "Screen capture",
+    "name": "Works on Arm",
+    "url": "https://developer.arm.com/solutions/infrastructure/works-on-arm",
+    "logo": "sponsors/woa.png",
     "last_payment": 0,
     "all_time": 0,
-    "since": "Dec 31, 2222"
+    "since": "Jul 22, 2021",
+    "listed": false
+  },
+  {
+    "overrides": "Austin Robert Bales",
+    "name": "Austin Robert Bales",
+    "logo": "sponsors/empty.svg",
+    "last_payment": 0,
+    "all_time": 0,
+    "since": "May 4, 2024"
+  },
+  {
+    "overrides": "Buy Instagram Followers & Likes",
+    "name": "LeoFame",
+    "url": "https://leofame.com",
+    "last_payment": 25,
+    "all_time": 0,
+    "since": "Jun 28, 2024"
   }
 ]

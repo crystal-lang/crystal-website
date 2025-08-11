@@ -1,0 +1,23 @@
+<div class="post-discussions">
+  <h2 id="discussions">Discussions on the web</h2>
+
+  <ul>
+  {% for discussion in page.discussions %}
+    <li><a href="{{ discussion.url }}"><strong>{{ discussion.title }}</strong></a> (<time datetime="{{ discussion.timestamp | date_to_xml }}"
+      >{{ discussion.timestamp | date_to_string }}</time
+    >) on {{ discussion.site }}
+    {% if discussion.comments_count or discussion.score %}
+      <em class="post-discussion-stats">
+        ({% if discussion.score -%}
+          {{ discussion.score }} points
+        {% endif %}
+        {% if discussion.score and discussion.comments_count %} · {% endif %}
+        {% if discussion.comments_count %}
+          {{ discussion.comments_count }} comments{%
+          endif %})
+      </em>
+    {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>

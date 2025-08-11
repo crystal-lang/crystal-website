@@ -1,0 +1,9 @@
+{%- assign nav = site.data.nav[include.section] -%}
+<ul>
+  {%- for item in nav %}
+    <li>
+      <a href="{{ item.url }}" {% if item.url == page.url %} aria-current="page"{% endif %}
+        >{{ item.label }}</a>
+    </li>
+  {%- endfor %}
+</ul>
