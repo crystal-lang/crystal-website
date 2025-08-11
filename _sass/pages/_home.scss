@@ -5,6 +5,7 @@
     1fr;
   grid-template-areas:
     ". main    util    util"
+    ". search search   .   "
     ". intro   intro   .   "
     ". samples samples .   ";
 
@@ -57,6 +58,9 @@
 
   > * {
     z-index: 1;
+  }
+  > .search {
+    z-index: 2;
   }
 
   > .mainnav {
