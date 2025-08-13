@@ -1,9 +1,17 @@
 ---
 title: External resources
-description: Here is a collection of learning material from third parties that might help you master the language.
+description: Here is a collection of learning material that can help you get familiar and master the language.
 layout: page-wide
 section: docs
 ---
+
+<a markdown="1" id="language-introduction">
+
+### Language Introduction
+
+This course is targeted at novice Crystal programmers and conveys a basic understanding of the language's core concepts. Prior programming experience is recommended, but not required. This course can help you learn your first programming language.
+
+[Tutorial: Language Introduction](https://crystal-lang.org/reference/tutorials/basics/index.html)
 
 <a markdown="1" id="crystalProgramming"></a>
 
@@ -13,7 +21,7 @@ Crystal Programming is a project-based book by George Dietrich and Guilherme Ber
 It covers all the fundamental concepts needed to start programming in Crystal
 such as OOP and concurrent programming.
 
-[Crystal Programming](crystal_programming)
+[Crystal Programming](./learning/crystal_programming.html)
 
 <span id="crystal4Rubyists"></span>
 
