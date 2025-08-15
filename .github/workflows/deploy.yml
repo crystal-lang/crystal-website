@@ -26,7 +26,7 @@ jobs:
       GIT_REF: "${{ (github.event_name == 'workflow_dispatch' && inputs.ref) || github.ref }}"
     steps:
       - name: Checkout ${{ env.GIT_REF }}
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ env.GIT_REF }}
       - name: Cache dependencies
