@@ -2,8 +2,8 @@
 title: "Current project goals"
 summary: "An overview of active and future efforts in the project"
 author: mverzilli
-categories: roadmap
-tags: [roadmap]
+categories: project
+tags: [project, sponsors]
 ---
 
 In this post, we share a summary of current active efforts by the Crystal core team and the community. We also share whether these efforts are being funded and to what extent (to the best of our knowledge anyway!). We hope by doing this we can motivate more people to contribute, be it through work or funding :-). The list is by no means exhaustive: we want to provide a bird's eye view of the main current drivers of the project. There's much, much more work being done by the community at large and the core team to keep the Crystal train chugging along.
