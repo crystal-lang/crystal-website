@@ -8,6 +8,31 @@ tags: [roadmap]
 
 In this post, we share a summary of current active efforts by the Crystal core team and the community. We also share whether these efforts are being funded and to what extent (to the best of our knowledge anyway!). We hope by doing this we can motivate more people to contribute, be it through work or funding :-). The list is by no means exhaustive: we want to provide a bird's eye view of the main current drivers of the project. There's much, much more work being done by the community at large and the core team to keep the Crystal train chugging along.
 
+<details>
+<summary><strong>Goal summary</strong></summary>
+🧪 Research => 🔵 In Progress => ✅ Completed
+<ul>
+  <li>🔵 <a href="#windows-support">Windows Support</a></li>
+  <li>🔵 <a href="#multi-threading">Multi-threading</a>
+    <ul>
+      <li>🔵 <a href="#execution-contexts">Execution contexts</a></li>
+      <li>🧪 <a href="#fiber-local-storage">Fiber local storage</a></li>
+      <li>🧪 <a href="#stdlib-thread-safety">Stdlib thread-safety</a></li>
+      <li>🧪 <a href="#compiler-thread-safety">Compiler thread-safety</a></li>
+      <li>🧪 <a href="#io-buffer-thread-safety">IO buffer thread-safety</a></li>
+    </ul>
+  </li>
+  <li><a href="#event-loop">Event Loop</a>
+    <ul>
+      <li>✅ <a href="#event-loop-refactor">Event Loop Refactor</a></li>
+      <li>🔵 <a href="#event-loop-on-io_uring">Event loop on io_uring</a></li>
+    </ul>
+  </li>
+  <li>🧪 <a href="#structured-concurrency">Structured Concurrency</a></li>
+  <li>🧪 <a href="#simd">SIMD</a></li>
+</ul>
+</details>
+
 If you want to see any of these goals _crystallize_ faster please consider engaging the linked conversations, sponsoring one of these projects, or donating to the project in general at [OpenCollective](https://opencollective.com/crystal-lang). Every penny we get translates directly into extra brain cycles spent on Crystal 🚀.
 
 # Windows Support
@@ -240,11 +265,11 @@ There are some concrete issues with how Crystal manages IO buffers in a multi-th
 </tbody>
 </table>
 
-# Event Loop
+# Event loop
 
 Crystal's evented IO loop has also been getting a lot of love, in part motivated by the multi-threading work.
 
-## Event Loop Refactor
+## Event loop Refactor
 
 The original event loop API in Crystal was directly influenced by its underlying implementation based on `libevent`. This was limiting, as different platforms present different constraints. Additionally, with the multi-threading project in the horizon, we found ourselves in need of more flexibility and efficiency. So we set out to refactor Crystal's event loop API. This project is now complete, we have a generic API and multiple implementations: IOCP for Windows, io_uring for Linux (see above), and even the legacy `libevent` based one.
 
