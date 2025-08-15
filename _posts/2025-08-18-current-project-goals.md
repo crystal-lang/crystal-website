@@ -139,48 +139,6 @@ At the center of the multi-threading epic lies the design and implementation of 
 </tbody>
 </table>
 
-## Event loop on io_uring
-
-Linux 5.1 brought us _io_uring_, a new interface that makes it possible to run asynchronous IO with zero (or very few) system calls. It works by keeping a lock-free IO submission queue and a lock-free IO completion queue in a memory shared between the kernel and the application (thus reducing context switches). The performance improvements are impressive. Now that Crystal has a revamped event loop explicitly designed to swap underlying implementations, the time is ripe to experiment with an _io_uring_ backed event loop.
-
-<table class="properties">
-<tbody>
-  <tr>
-    <th scope="row">
-      Status
-    </th>
-    <td>
-      🔵 In Progress, led by <a href="https://github.com/ysbaddaden">@ysbaddaden</a>
-    </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Sponsored by
-    </th>
-    <td>
-      <a href="https://84.codes/">84codes</a>
-    </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Start date
-    </th>
-    <td>
-      April 2025
-    </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Learn more
-    </th>
-    <td>
-      <a href="https://github.com/crystal-lang/crystal/issues/10740">Original issue</a>,
-      <a href="https://github.com/crystal-lang/crystal/pull/15634">Epic issue</a>
-    </td>
-  </tr>
-</tbody>
-</table>
-
 ## Fiber local storage
 
 We are analyzing structured approaches to storing data in the context of a fiber.
@@ -282,7 +240,102 @@ There are some concrete issues with how Crystal manages IO buffers in a multi-th
 </tbody>
 </table>
 
-## Structured Concurrency
+# Event Loop
+
+Crystal's evented IO loop has also been getting a lot of love, in part motivated by the multi-threading work.
+
+## Event Loop Refactor
+
+The original event loop API in Crystal was directly influenced by its underlying implementation based on `libevent`. This was limiting, as different platforms present different constraints. Additionally, with the multi-threading project in the horizon, we found ourselves in need of more flexibility and efficiency. So we set out to refactor Crystal's event loop API. This project is now complete, we have a generic API and multiple implementations: IOCP for Windows, io_uring for Linux (see above), and even the legacy `libevent` based one.
+
+<table class="properties">
+<tbody>
+  <tr>
+    <th scope="row">
+      Status
+    </th>
+    <td>
+      ✅ Completed, led by <a href="https://github.com/ysbaddaden">@ysbaddaden</a>
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">
+      Sponsored by
+    </th>
+    <td>
+      <a href="https://84.codes/">84codes</a>
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">
+      Start date
+    </th>
+    <td>
+      May 2023
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">
+      Released
+    </th>
+    <td>
+      Crystal 1.15 (January 2025)
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">
+      Learn more
+    </th>
+    <td>
+      <a href="https://github.com/crystal-lang/rfcs/blob/main/text/0007-event_loop-refactor.md">RFC</a><br/><a href="https://github.com/crystal-lang/rfcs/blob/main/text/0009-lifetime-event_loop.md">Event loop lifetimes RFC</a><br/><a href="https://crystal-lang.org/2024/11/05/lifetime-event-loop/">Announcement blogpost</a>
+    </td>
+  </tr>
+</tbody>
+</table>
+
+## Event loop on io_uring
+
+Linux 5.1 brought us _io_uring_, a new interface that makes it possible to run asynchronous IO with zero (or very few) system calls. It works by keeping a lock-free IO submission queue and a lock-free IO completion queue in a memory shared between the kernel and the application (thus reducing context switches). The performance improvements are impressive. Now that Crystal has a revamped event loop explicitly designed to swap underlying implementations, the time is ripe to experiment with an _io_uring_ backed event loop.
+
+<table class="properties">
+<tbody>
+  <tr>
+    <th scope="row">
+      Status
+    </th>
+    <td>
+      🔵 In Progress, led by <a href="https://github.com/ysbaddaden">@ysbaddaden</a>
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">
+      Sponsored by
+    </th>
+    <td>
+      <a href="https://84.codes/">84codes</a>
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">
+      Start date
+    </th>
+    <td>
+      April 2025
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">
+      Learn more
+    </th>
+    <td>
+      <a href="https://github.com/crystal-lang/crystal/issues/10740">Original issue</a>,
+      <a href="https://github.com/crystal-lang/crystal/pull/15634">Epic issue</a>
+    </td>
+  </tr>
+</tbody>
+</table>
+
+# Structured Concurrency
 
 With a solid concurrency model based on fibers and channels, and with the multi-threading runtime getting close to being enabled by default, we can start looking into higher level concurrency abstractions. The idea of structured concurrency is to ensure that fibers have lifetimes nested within program scopes, which should make it easier to reason about them, guarantee that they are properly and timely disposed of, etc.
 
@@ -327,55 +380,6 @@ Support Single Instruction Multiple Data in the language and standard library.
     </th>
     <td>
       <a href="https://github.com/crystal-lang/crystal/issues/3057">Original issue</a>
-    </td>
-  </tr>
-</tbody>
-</table>
-
-# Event Loop Refactor
-
-The original event loop API in Crystal was directly influenced by its underlying implementation based on `libevent`. This was limiting, as different platforms present different constraints. Additionally, with the multi-threading project in the horizon, we found ourselves in need of more flexibility and efficiency. So we set out to refactor Crystal's event loop API. This project is now complete, we have a generic API and multiple implementations: IOCP for Windows, io_uring for Linux (see above), and even the legacy `libevent` based one.
-
-<table class="properties">
-<tbody>
-  <tr>
-    <th scope="row">
-      Status
-    </th>
-    <td>
-      ✅ Completed, led by <a href="https://github.com/ysbaddaden">@ysbaddaden</a>
-    </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Sponsored by
-    </th>
-    <td>
-      <a href="https://84.codes/">84codes</a>
-    </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Start date
-    </th>
-    <td>
-      May 2023
-    </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Released
-    </th>
-    <td>
-      Crystal 1.15 (January 2025)
-    </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Learn more
-    </th>
-    <td>
-      <a href="https://github.com/crystal-lang/rfcs/blob/main/text/0007-event_loop-refactor.md">RFC</a><br/><a href="https://github.com/crystal-lang/rfcs/blob/main/text/0009-lifetime-event_loop.md">Event loop lifetimes RFC</a><br/><a href="https://crystal-lang.org/2024/11/05/lifetime-event-loop/">Announcement blogpost</a>
     </td>
   </tr>
 </tbody>
