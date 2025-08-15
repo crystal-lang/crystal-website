@@ -27,8 +27,12 @@
   th,
   td {
     padding: 0.75em 0.9em;
-    border-block-end: 1px solid var(--border-color);
+    border-block-start: 1px solid var(--border-color);
     line-height: var(--line-height-md);
+  }
+
+  tr:last-child {
+    border-block-end: 1px solid var(--border-color);
   }
 
   &.properties {
@@ -37,12 +41,9 @@
       padding: 0.5em 0.9em;
     }
 
-    tr:first-child {
-      border-top: 1px solid var(--border-color);
-    }
-
     th {
       vertical-align: top;
+      width: 14em;
     }
 
     td {
@@ -60,9 +61,31 @@
       }
     }
 
-    tr:nth-child(2n + 1) td,
-    tr:nth-child(2n + 1) th {
+    :where(tr:nth-child(2n + 1)) td,
+    :where(tr:nth-child(2n + 1)) th {
       background-color: var(--background-secondary);
+    }
+
+    @media (width < 30em) {
+      tr,
+      td,
+      th {
+        display: block;
+      }
+
+      tr + tr {
+        margin-block-start: var(--padding-xs);
+      }
+
+      tr td {
+        background: none;
+      }
+
+      th {
+        background-color: var(--background-secondary);
+        border-block-end: none;
+        width: 100%;
+      }
     }
   }
 }
