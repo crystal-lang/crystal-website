@@ -1,4 +1,5 @@
-.attributes {
+.attributes,
+.content dl:not([class]) {
   display: grid;
   grid-template-columns: minmax(15%, min-content) 1fr;
   column-gap: var(--padding-xs);
