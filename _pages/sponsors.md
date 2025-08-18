@@ -31,48 +31,39 @@ and below is a list of all the humans and organizations that have made it possib
 
    {%- include pages/sponsors/table.html %}
 
-  <aside class="sponsors-sidebar" id="contribute">
-  <p>If you like this project, you can become a sponsor in only 3 simple steps via OpenCollective.</p>
-  <a href="https://opencollective.com/crystal-lang" class="hex">Contribute</a>
+<aside class="sponsors-sidebar" id="contribute" markdown="1">
 
-  <h3>FAQ</h3>
-  <dl>
-  <dt>What is this list?</dt>
-  <dd markdown="1">
-  These are the companies and individuals contributing to help sustain
+If you like this project, you can become a sponsor in only 3 simple steps via OpenCollective.
+
+<a href="https://opencollective.com/crystal-lang" class="hex">Contribute</a>
+
+### FAQ
+
+What is this list?
+: These are the companies and individuals contributing to help sustain
   Crystal's development. See the [Open Collective campaign](https://opencollective.com/crystal-lang)
   for more details.
-  </dd>
 
-  <dt>My URL is not listed</dt>
-  <dd markdown="1">
-  When eligible, we grab the website and avatar from the sponsor's [Open Collective profile](https://opencollective.com).
+My URL is not listed
+: When eligible, we grab the website and avatar from the sponsor's [Open Collective profile](https://opencollective.com).
   If that fails, we try to use your GitHub or Twitter accounts listed in that same profile.
-  </dd>
 
-  <dt>When is this page updated?</dt>
-  <dd markdown="1">
-  We update the current sponsors in this page weekly.
-  </dd>
+When is this page updated?
+: We update the current sponsors in this page weekly.
 
-  <dt>How is the list ordered?</dt>
-  <dd markdown="1">
-  It is ordered by level of contribution and total amount contributed so
+How is the list ordered?
+: It is ordered by level of contribution and total amount contributed so
   far. Columns are sortable.
-  </dd>
 
-  <dt>How long are contributors listed?</dt>
-  <dd markdown="1">
-  Contributors are listed forever, but after two months of the last payment they are considered as contributing $0.
-  </dd>
+How long are contributors listed?
+: Contributors are listed forever, but after two months of the last payment they are considered as contributing $0.
 
-  <dt>There seems to be an error, how can I fix it?</dt>
-  <dd markdown="1">
-  If there is any mismatch information you would like to correct, please [contact us](mailto:crystal@manas.tech).
-  </dd>
-  </dl>
+There seems to be an error, how can I fix it?
+: If there is any mismatch information you would like to correct, please [contact us](mailto:crystal@manas.tech).
 
-  <h3>Original Sponsors</h3>
-  <p>Meet our <a href="https://crystal-lang.org/sponsors/original-sponsors/">original sponsors</a>.</p>
-  </aside>
+### Original Sponsors
+
+Meet our [original sponsors](sponsors/original-sponsors.html).
+
+</aside>
 </section>
