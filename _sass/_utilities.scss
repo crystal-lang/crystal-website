@@ -101,3 +101,29 @@ li {
   background: var(--white);
   color: var(--black);
 }
+
+.header-wrapper {
+  --link-color: var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: var(--padding-xxs);
+  margin-left: calc(-1.2em - var(--padding-xxs));
+
+  > :any-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    order: -1;
+
+    svg {
+      width: 1.2em;
+      height: auto;
+      display: block;
+    }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &:not(:hover, :focus) > :any-link {
+      visibility: hidden;
+    }
+  }
+}
