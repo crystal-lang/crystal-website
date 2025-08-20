@@ -124,7 +124,7 @@ We want Crystal to have a world class runtime, supporting multi-threading in a w
 
 ### Execution contexts
 
-At the center of the multi-threading epic lies the design and implementation of _execution contexts_. An execution context creates and manages a dedicated pool of one or more threads where fibers can be executed into. Each context manages the rules to run, suspend and swap fibers internally. Execution contexts give developers greater control over how fibers are orchestrated and picked up by threads, resulting in more predictable and customizable runtime behavior. If you want to delve deeper, please check out [Crystal's RFC #2](https://github.com/crystal-lang/rfcs/blob/main/text/0002-execution-contexts.md).
+At the center of the multi-threading epic lies the design and implementation of _execution contexts_. An execution context creates and manages a dedicated pool of one or more threads where fibers can be executed into. Each context manages the rules to run, suspend and swap fibers internally. Execution contexts give developers greater control over how fibers are orchestrated and picked up by threads, resulting in more predictable and customizable runtime behavior. If you want to delve deeper, please check out [RFC #2: MT Execution Contexts](https://github.com/crystal-lang/rfcs/blob/main/text/0002-execution-contexts.md).
 
 <table class="properties">
 <tbody>
@@ -157,7 +157,7 @@ At the center of the multi-threading epic lies the design and implementation of 
       Learn more
     </th>
     <td>
-      <a href="https://github.com/crystal-lang/rfcs/blob/main/text/0002-execution-contexts.md">RFC</a>,
+      <a href="https://github.com/crystal-lang/rfcs/blob/main/text/0002-execution-contexts.md">RFC #2: MT Execution Contexts</a>,
       <a href="https://github.com/crystal-lang/crystal/issues/15342">Epic Issue</a>
     </td>
   </tr>
@@ -243,7 +243,7 @@ There are some concrete issues with how Crystal manages IO buffers in a multi-th
 
 Crystal's evented IO loop has also been getting a lot of love, in part motivated by the multi-threading work.
 
-### Event loop Refactor
+### Event loop refactor
 
 The original event loop API in Crystal was directly influenced by its underlying implementation based on `libevent`. This was limiting, as different platforms present different constraints. Additionally, with the multi-threading project in the horizon, we found ourselves in need of more flexibility and efficiency. So we set out to refactor Crystal's event loop API. This project is now complete, we have a generic API and multiple implementations: IOCP for Windows, io_uring for Linux (see above), and even the legacy `libevent` based one.
 
@@ -286,7 +286,7 @@ The original event loop API in Crystal was directly influenced by its underlying
       Learn more
     </th>
     <td>
-      <a href="https://github.com/crystal-lang/rfcs/blob/main/text/0007-event_loop-refactor.md">RFC</a><br/><a href="https://github.com/crystal-lang/rfcs/blob/main/text/0009-lifetime-event_loop.md">Event loop lifetimes RFC</a><br/><a href="https://crystal-lang.org/2024/11/05/lifetime-event-loop/">Announcement blogpost</a>
+      <a href="https://github.com/crystal-lang/rfcs/blob/main/text/0007-event_loop-refactor.md">RFC #7: Event Loop Refactor</a><br/><a href="https://github.com/crystal-lang/rfcs/blob/main/text/0009-lifetime-event_loop.md">RFC #9: Lifetime Event Loop</a><br/><a href="https://crystal-lang.org/2024/11/05/lifetime-event-loop/">Announcement blogpost</a>
     </td>
   </tr>
 </tbody>
