@@ -18,7 +18,7 @@ In this post, we share a summary of current active efforts by the Crystal core t
       <li>🔵 <a href="#execution-contexts">Execution contexts</a></li>
       <li>🧪 <a href="#fiber-local-storage">Fiber local storage</a></li>
       <li>🧪 <a href="#stdlib-thread-safety">Stdlib thread-safety</a></li>
-      <li>🧪 <a href="#compiler-thread-safety">Compiler thread-safety</a></li>
+      <li>🧪 <a href="#generated-code-thread-safety">Generated code thread-safety</a></li>
       <li>🧪 <a href="#io-buffer-thread-safety">IO buffer thread-safety</a></li>
     </ul>
   </li>
@@ -215,9 +215,9 @@ The standard library predates even the earliest experimental work on multi-threa
 </tbody>
 </table>
 
-### Compiler thread-safety
+### Generated code thread-safety
 
-Similar to the standard library, there are parts of the compiler with potential thread-safety problems. We are reviewing the compiler to surface those issues.
+Similar to the standard library, the compiler can generate code with potential thread-safety problems. We are reviewing the compiler codebase to surface those issues.
 
 <table class="properties">
 <tbody>
