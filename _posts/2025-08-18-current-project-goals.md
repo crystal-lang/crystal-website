@@ -43,7 +43,7 @@ Status
 : 🔵 In Progress, led by [@HertzDevil](https://github.com/HertzDevil)
 
 Sponsored by
-: Next to zero contributions at the moment. [Funding status at
+: [Funding status at
 OpenCollective](https://opencollective.com/crystal-lang/projects/windows-support)
 
 Start Date
