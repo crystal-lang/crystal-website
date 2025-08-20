@@ -69,8 +69,14 @@ Windows support has historically been one of the most requested features in Crys
       Learn more
     </th>
     <td>
-      <a href="https://github.com/orgs/crystal-lang/projects/11/views/5">Project board</a>,
-      <a href="https://github.com/crystal-lang/crystal/issues/26">Original issue</a>
+      <ul>
+        <li>
+          <a href="https://github.com/orgs/crystal-lang/projects/11/views/5">Project board</a>
+        </li>
+        <li>
+          <a href="https://github.com/crystal-lang/crystal/issues/26">Original issue</a>
+        </li>
+      </ul>
     </td>
   </tr>
 </tbody>
@@ -157,8 +163,14 @@ At the center of the multi-threading epic lies the design and implementation of 
       Learn more
     </th>
     <td>
-      <a href="https://github.com/crystal-lang/rfcs/blob/main/text/0002-execution-contexts.md">RFC #2: MT Execution Contexts</a>,
-      <a href="https://github.com/crystal-lang/crystal/issues/15342">Epic Issue</a>
+      <ul>
+        <li>
+          <a href="https://github.com/crystal-lang/rfcs/blob/main/text/0002-execution-contexts.md">RFC #2: MT Execution Contexts</a>
+        </li>
+        <li>
+          <a href="https://github.com/crystal-lang/crystal/issues/15342">Epic Issue</a>
+        </li>
+      </ul>
     </td>
   </tr>
 </tbody>
@@ -347,8 +359,14 @@ Linux 5.1 brought us _io_uring_, a new interface that makes it possible to run a
       Learn more
     </th>
     <td>
-      <a href="https://github.com/crystal-lang/crystal/issues/10740">Original issue</a>,
-      <a href="https://github.com/crystal-lang/crystal/pull/15634">Epic issue</a>
+      <ul>
+        <li>
+          <a href="https://github.com/crystal-lang/crystal/issues/10740">Original issue</a>
+        </li>
+        <li>
+          <a href="https://github.com/crystal-lang/crystal/pull/15634">Epic issue</a>
+        </li>
+      </ul>
     </td>
   </tr>
 </tbody>
@@ -373,8 +391,14 @@ We are analyzing structured approaches to storing data in the context of a fiber
       Learn more
     </th>
     <td>
-      <a href="https://github.com/crystal-lang/crystal/pull/15889">Proof of concept</a>,
-      <a href="https://forum.crystal-lang.org/t/field-study-of-fiber-local-storage/8325">Field study</a>
+      <ul>
+        <li>
+          <a href="https://github.com/crystal-lang/crystal/pull/15889">Proof of concept</a>
+        </li>
+        <li>
+          <a href="https://forum.crystal-lang.org/t/field-study-of-fiber-local-storage/8325">Field study</a>
+        </li>
+      </ul>
     </td>
   </tr>
 </tbody>
