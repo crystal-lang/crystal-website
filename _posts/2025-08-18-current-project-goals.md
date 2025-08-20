@@ -233,7 +233,17 @@ There are some concrete issues with how Crystal manages IO buffers in a multi-th
       Learn more
     </th>
     <td>
-      <a href="https://github.com/crystal-lang/crystal/issues/8438">IO can be duplicated in MT</a><br/><a href="https://github.com/crystal-lang/crystal/issues/8140#top">puts in a multi-threaded environment</a><br/><a href="https://github.com/crystal-lang/crystal/issues/13995">Flush file output on program exit</a>
+      <ul>
+        <li>
+          <a href="https://github.com/crystal-lang/crystal/issues/8438">IO can be duplicated in MT</a>
+        </li>
+        <li>
+          <a href="https://github.com/crystal-lang/crystal/issues/8140#top">puts in a multi-threaded environment</a>
+        </li>
+        <li>
+          <a href="https://github.com/crystal-lang/crystal/issues/13995">Flush file output on program exit</a>
+        </li>
+      </ul>
     </td>
   </tr>
 </tbody>
@@ -286,7 +296,17 @@ The original event loop API in Crystal was directly influenced by its underlying
       Learn more
     </th>
     <td>
-      <a href="https://github.com/crystal-lang/rfcs/blob/main/text/0007-event_loop-refactor.md">RFC #7: Event Loop Refactor</a><br/><a href="https://github.com/crystal-lang/rfcs/blob/main/text/0009-lifetime-event_loop.md">RFC #9: Lifetime Event Loop</a><br/><a href="https://crystal-lang.org/2024/11/05/lifetime-event-loop/">Announcement blogpost</a>
+      <ul>
+        <li>
+          <a href="https://github.com/crystal-lang/rfcs/blob/main/text/0007-event_loop-refactor.md">RFC #7: Event Loop Refactor</a>
+        </li>
+        <li>
+          <a href="https://github.com/crystal-lang/rfcs/blob/main/text/0009-lifetime-event_loop.md">RFC #9: Lifetime Event Loop</a>
+        </li>
+        <li>
+          <a href="https://crystal-lang.org/2024/11/05/lifetime-event-loop/">Announcement blogpost</a>
+        </li>
+      </ul>
     </td>
   </tr>
 </tbody>
