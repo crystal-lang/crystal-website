@@ -16,7 +16,6 @@ In this post, we share a summary of current active efforts by the Crystal core t
   <li>🔵 <a href="#multi-threading">Multi-threading</a>
     <ul>
       <li>🔵 <a href="#execution-contexts">Execution contexts</a></li>
-      <li>🧪 <a href="#fiber-local-storage">Fiber local storage</a></li>
       <li>🧪 <a href="#stdlib-thread-safety">Stdlib thread-safety</a></li>
       <li>🧪 <a href="#generated-code-thread-safety">Generated code thread-safety</a></li>
       <li>🧪 <a href="#io-buffer-thread-safety">IO buffer thread-safety</a></li>
@@ -28,6 +27,7 @@ In this post, we share a summary of current active efforts by the Crystal core t
       <li>🔵 <a href="#event-loop-on-io_uring">Event loop on io_uring</a></li>
     </ul>
   </li>
+  <li>🧪 <a href="#fiber-local-storage">Fiber local storage</a></li>
   <li>🧪 <a href="#structured-concurrency">Structured Concurrency</a></li>
   <li>🧪 <a href="#simd">SIMD</a></li>
 </ul>
@@ -159,32 +159,6 @@ At the center of the multi-threading epic lies the design and implementation of 
     <td>
       <a href="https://github.com/crystal-lang/rfcs/blob/main/text/0002-execution-contexts.md">RFC</a>,
       <a href="https://github.com/crystal-lang/crystal/issues/15342">Epic Issue</a>
-    </td>
-  </tr>
-</tbody>
-</table>
-
-### Fiber local storage
-
-We are analyzing structured approaches to storing data in the context of a fiber.
-
-<table class="properties">
-<tbody>
-  <tr>
-    <th scope="row">
-      Status
-    </th>
-    <td>
-      🧪 Research
-    </td>
-  </tr>
-  <tr>
-    <th scope="row">
-      Learn more
-    </th>
-    <td>
-      <a href="https://github.com/crystal-lang/crystal/pull/15889">Proof of concept</a>,
-      <a href="https://forum.crystal-lang.org/t/field-study-of-fiber-local-storage/8325">Field study</a>
     </td>
   </tr>
 </tbody>
@@ -355,6 +329,32 @@ Linux 5.1 brought us _io_uring_, a new interface that makes it possible to run a
     <td>
       <a href="https://github.com/crystal-lang/crystal/issues/10740">Original issue</a>,
       <a href="https://github.com/crystal-lang/crystal/pull/15634">Epic issue</a>
+    </td>
+  </tr>
+</tbody>
+</table>
+
+## Fiber local storage
+
+We are analyzing structured approaches to storing data in the context of a fiber.
+
+<table class="properties">
+<tbody>
+  <tr>
+    <th scope="row">
+      Status
+    </th>
+    <td>
+      🧪 Research
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">
+      Learn more
+    </th>
+    <td>
+      <a href="https://github.com/crystal-lang/crystal/pull/15889">Proof of concept</a>,
+      <a href="https://forum.crystal-lang.org/t/field-study-of-fiber-local-storage/8325">Field study</a>
     </td>
   </tr>
 </tbody>
