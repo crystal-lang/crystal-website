@@ -379,7 +379,7 @@ With a solid concurrency model based on fibers and channels, and with the multi-
       Learn more
     </th>
     <td>
-      <a href="https://github.com/crystal-lang/crystal/issues/6468">RFC</a>
+      <a href="https://github.com/crystal-lang/crystal/issues/6468">Original issue</a>
     </td>
   </tr>
 </tbody>
