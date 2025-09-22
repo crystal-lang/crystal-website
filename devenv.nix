@@ -25,6 +25,12 @@
 
   git-hooks.hooks = {
     actionlint.enable = true;
+    lychee = {
+      enable = true;
+      settings = {
+        flags = "--no-progress";
+      };
+    };
     markdownlint.enable = true;
     prettier = {
       enable = true;
