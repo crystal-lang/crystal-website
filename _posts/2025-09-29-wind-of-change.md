@@ -1,5 +1,5 @@
 ---
-title: "Wind of change (or maybe not so much)"
+title: "Wind of change (or maybe not)"
 summary: "Beta is stepping down from the lead position, which Johannes will take"
 author: beta-ziliani
 categories: community
