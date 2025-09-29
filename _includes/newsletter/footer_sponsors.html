@@ -1,18 +1,29 @@
-
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
-    <td colspan="4" valign="top" width="25%" style="text-align: center; padding-top: 37px; padding-bottom: 32px;" class="textContent">
-       <h3 style="text-align: center">Thanks to our sponsors</h3>
+    <td colspan="4" valign="top" style="text-align: center; padding-top: 37px; padding-bottom: 32px;" class="textContent">
+      <h3 style="text-align: center">Thanks to our sponsors</h3>
     </td>
   </tr>
   <tr>
     {%- for sp in site.data.sponsor_logos_corporate %}
     <td valign="top" width="25%" style="text-align: center" class="textContent">
-          <a href="{{ sp.url }}" target="_blank" class="sponsor" title="{{ sp.name }}" rel="sponsored nofollow">
-              <img src="/assets/{{ sp.logo }}" width="82" border="0">
+      <table border="0" cellpadding="0" cellspacing="0" align="center">
+        <tr>
+          <td align="center">
+            <a href="{{ sp.url }}" target="_blank" class="sponsor" title="{{ sp.name }}" rel="sponsored nofollow">
+              <img src="https://crystal-lang.org/assets/{{ sp.logo_email }}" width="82" border="0" style="display:block;">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding-top:6px;">
+            <a href="{{ sp.url }}" target="_blank" class="sponsor" title="{{ sp.name }}" rel="sponsored nofollow" style="text-decoration:none; color:#000000;">
               <span class="small">{{ sp.name }}</span>
-          </a>
-      </td>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
     {%- endfor %}
   </tr>
 </table>
