@@ -1,8 +1,14 @@
 core:
+  straight-shoota:
+    name: Johannes Müller
+    status: active
+    role: Team lead
+    affiliation: Manas.Tech
+    
   beta-ziliani:
     name: Beta Ziliani
     status: active
-    role: Team lead, Steering Council
+    role: Steering Council
     affiliation: Manas.Tech
 
   asterite:
@@ -22,11 +28,6 @@ core:
   sdogruyol:
     name: Serdar Doğruyol
     status: active
-
-  straight-shoota:
-    name: Johannes Müller
-    status: active
-    affiliation: Manas.Tech
 
   oprypin:
     name: Oleh Prypin
