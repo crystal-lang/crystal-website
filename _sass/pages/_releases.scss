@@ -4,7 +4,7 @@ table.releases {
   --link-color: var(--primary-text);
   --link-hover-color: var(--light-text);
 
-  tr {
+  > tbody > tr {
     border-left: 0.5ch solid transparent;
     &.latest-release {
       border-left-color: currentcolor;
@@ -13,6 +13,8 @@ table.releases {
     &:not(.minor-release) th {
       font-weight: 400;
       --link-color: var(--light-text);
+      padding-left: 2.5ch;
+      font-size: font-size(xsmall);
     }
   }
 
@@ -25,6 +27,7 @@ table.releases {
     text-align: right;
     padding-right: 0;
     white-space: nowrap;
+    font-size: font-size(xsmall);
   }
 
   .release-links:not(:hover) {
