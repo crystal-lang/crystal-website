@@ -9,7 +9,14 @@ max_cache_age = "7d"
 
 #############################  Requests  ############################
 
-exclude_path = ["_site", "_plugins", "_layouts", "_includes"]
+exclude_path = [
+  "_site", # build output
+  # partial and incomplete paths
+  "_plugins",
+  "_layouts",
+  "_includes",
+  "_sass/mixins/_link-with-icon.scss", # lists URL prefixes
+]
 
 # Enable the checking of fragments in links.
 include_fragments = true
