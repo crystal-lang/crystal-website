@@ -73,7 +73,7 @@
 
 - type: community
   os: Linux
-  arch: [x86_64]
+  arch: [aarch64, x86_64]
   title: Homebrew/Linuxbrew
   example: |
     ```shell
@@ -85,7 +85,7 @@
 
 - type: community
   os: Linux
-  arch: [x86_64]
+  arch: [aarch64, x86_64]
   title: asdf
   instructions_href: /install/from_asdf/
   example: |
