@@ -36,7 +36,7 @@
 
 - type: system
   os: Linux
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: Apk (Alpine Linux)
   example: |
     ```shell
@@ -110,7 +110,7 @@
 
 - type: community
   os: Linux
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: Nix
   example: '`crystal` package'
   repo_href: https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal
@@ -119,7 +119,7 @@
 
 - type: community
   os: Linux
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: 84codes (DEB &amp; RPM)
   instructions_href: https://packagecloud.io/84codes/crystal
   repo_href: https://packagecloud.io/84codes/crystal
@@ -137,7 +137,7 @@
 
 - type: community
   os: MacOS
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: Homebrew
   example: |
     ```shell
@@ -162,7 +162,7 @@
 
 - type: community
   os: MacOS
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: Nix
   example: '`crystal` package'
   repo_href: https://search.nixos.org/packages?show=crystal&channel=unstable&from=0&size=50&sort=relevance&type=packages&query=crystal
@@ -171,7 +171,7 @@
 
 - type: community
   os: MacOS
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: MacPorts
   example: |
     ```shell
@@ -276,7 +276,7 @@
 
 - type: system
   os: FreeBSD
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: Package
   instructions_href: /install/on_freebsd/#install-package
   example: |
@@ -286,7 +286,7 @@
 
 - type: system
   os: FreeBSD
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: Port
   instructions_href: /install/on_freebsd/#install-port
   example: |
@@ -302,7 +302,7 @@
 
 - type: system
   os: OpenBSD
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: Package
   instructions_href: /install/on_openbsd/#install-package
   example: |
@@ -312,7 +312,7 @@
 
 - type: system
   os: OpenBSD
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: Port
   instructions_href: /install/on_openbsd/#install-port
   example: |
@@ -354,7 +354,7 @@
 
 - type: community
   os: Docker
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: 84codes
   example: |
     ```shell
@@ -367,7 +367,7 @@
 
 - type: crystal
   os: Tools
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: GitHub Actions
   instructions_href: https://crystal-lang.github.io/install-crystal/
   example: |
@@ -379,7 +379,7 @@
 
 - type: community
   os: Tools
-  arch: [x86_64, aarch64]
+  arch: [aarch64, x86_64]
   title: devenv.sh
   example: |
     ```nix
