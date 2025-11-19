@@ -2,7 +2,7 @@
 
 - type: crystal
   os: Linux
-  arch: [x86_64]
+  arch: [aarch64, x86_64]
   title: Installer (DEB &amp; RPM)
   label: Linux installer
   instructions_href: /install/on_linux/#installer
@@ -16,7 +16,7 @@
 
 - type: crystal
   os: Linux
-  arch: [x86_64, x86_64-bundled]
+  arch: [aarch64, aarch64-bundled, x86_64, x86_64-bundled]
   title: Tarball (`.tar.gz`)
   instructions_href: /install/from_targz/
   archive_href: https://github.com/crystal-lang/crystal/releases/download/{{ version }}/crystal-{{ version }}-1-linux-{{ arch }}.tar.gz
