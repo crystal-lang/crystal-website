@@ -15,7 +15,7 @@ jobs:
       image: crystallang/crystal
 
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - name: Update sponsors
       run: make update_sponsors
 
