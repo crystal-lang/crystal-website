@@ -1,11 +1,11 @@
 [default.extend-words]
 contextful = "contextful"
+MacOS = "macOS"
 
 [default.extend-identifiers]
 ba = "ba"
 Flate = "Flate"
 "Haß" = "Haß"
-MacOS = "macOS"
 wrk = "wrk"
 SEH = "SEH"
 Packt = "Packt"
