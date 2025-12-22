@@ -219,7 +219,6 @@
   title: WinGet
   repo_href: https://github.com/microsoft/winget-pkgs/tree/master/manifests/c/CrystalLang/Crystal/
   repo_description: Crystal manifest in WinGet packages repository
-  repology: winget
 
 - type: community
   os: Windows
