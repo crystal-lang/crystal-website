@@ -11,7 +11,7 @@ description: |
   This page gives an overview of available installation methods.
 link_actions:
 - '[![](/assets/install/linux.svg) #Linux](#linux)'
-- '[![](/assets/install/apple.svg) #MacOS](#macos)'
+- '[![](/assets/install/apple.svg) #macOS](#macos)'
 - '[![](/assets/install/windows.svg) #Windows](#windows)'
 - '[![](/assets/install/freebsd.svg) #FreeBSD](#freebsd)'
 - '[![](/assets/install/openbsd.svg) #OpenBSD](#openbsd)'
