@@ -56,28 +56,6 @@ docs_intern:
 
 install:
 - label: Linux
-  url: /install/on_linux
-- label: MacOS
-  url: /install/on_mac_os
-- label: Windows
-  url: /install/on_windows
-- label: Nightlies
-  url: /install/nightlies
-
-home:
-- label: Blog
-  url: /blog/
-- label: Install
-  url: /install/
-- label: Releases
-  url: /releases/
-- label: Success stories
-  url: /success-stories/
-- label: Sitemap
-  url: /sitemap/
-
-install:
-- label: Linux
   url: /install/on_linux/
 - label: MacOS
   url: /install/on_mac_os/
@@ -103,3 +81,15 @@ install:
   url: /install/from_sources/
 - label: Nightlies
   url: /install/nightlies/
+
+home:
+- label: Blog
+  url: /blog/
+- label: Install
+  url: /install/
+- label: Releases
+  url: /releases/
+- label: Success stories
+  url: /success-stories/
+- label: Sitemap
+  url: /sitemap/
