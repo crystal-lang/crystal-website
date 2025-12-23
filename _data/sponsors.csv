@@ -1,13 +1,10 @@
 logo,name,url,last_payment,all_time,since,level
 sponsors/84.png,84codes,https://www.84codes.com/,"€22,000","€831,000","Apr 1, 2018",5000
 manas-orange.svg,Manas.Tech,https://manas.tech/,"$5,000","$1,405,000","Jun 19, 2009",5000
-,PlaceOS,https://place.technology/,$250,"$12,500","Jul 26, 2021",75
+sponsors/placeos.png,PlaceOS,https://place.technology/,$250,"$12,500","Jul 26, 2021",75
 ,lowkey,https://www.kaffeinlabs.com/,$100,"$4,245","Jun 12, 2021",75
 sponsors/blitline.png,Blitline,https://www.blitline.com,$75,"$6,375","Dec 12, 2018",75
 sponsors/concentric.png,Concentric,https://concentric.health,$75,"$2,625","Feb 2, 2023",75
-sponsors/playfortune_net_br.png,Playfortune.net.br,https://playfortune.net.br/,$75,$750,"Feb 14, 2025",75
-sponsors/playfortuneforfun_com.png,Playfortuneforfun.com,https://playfortuneforfun.com/,$75,$750,"Feb 14, 2025",75
-sponsors/https___casinosdeargentina_com_pago_litecoin_.png,https://casinosdeargentina.com/pago/litecoin/,https://casinosdeargentina.com/pago/litecoin/,$75,$600,"Mar 21, 2025",75
 ,Marek Stapff,https://www.marek-stapff.de/,$50,$50,"Nov 29, 2025",25
 ,isaacsloan,https://isaacsloan.com,$36,"$2,506","Mar 24, 2016",25
 ,Thomas Peter Berntsen,https://twitter.com/tpberntsen,$25,"$4,375","Sep 20, 2015",25
@@ -24,14 +21,12 @@ sponsors/https___casinosdeargentina_com_pago_litecoin_.png,https://casinosdearge
 ,Buzzoid - Buy Instagram Followers,https://buzzoid.com/buy-instagram-followers/,$25,$375,"Aug 25, 2024",25
 ,Paulo Gabriel da Silveira Sarlo,,$25,$375,"Sep 30, 2024",25
 ,Writing Metier,https://writingmetier.com/,$25,$350,"Nov 15, 2024",25
-,Backlink Bento,https://www.backlinkbento.com/,$25,$300,"Dec 10, 2024",25
 ,Buy Google Reviews from ReputationManage,https://reputationmanage.co/buy-google-reviews/,$25,$150,"Jun 22, 2025",25
 ,Mercury Jets,https://www.mercuryjets.com,$25,$150,"Jul 1, 2025",25
 ,Monarch Air Group,https://monarchairgroup.com/,$25,$150,"Jul 1, 2025",25
 ,Buy X Followers,https://billingsgazette.com/exclusive/article_9b8dde48-5da7-55c0-8f47-b9dcb5b28a30.html,$25,$100,"May 6, 2025",25
 ,Buy FIFA Coins,https://www.reddit.com/r/GamingInsider/comments/1nnkoq4/where_to_buy_fifa_coins_any_recommendations_for/,$25,$75,"Oct 6, 2025",25
 ,Best crypto trading signals,https://www.reddit.com/r/BinanceTrading/comments/1o5hhfh/best_trading_signals_for_crypto_forex_any/,$25,$50,"Nov 3, 2025",25
-,Buy TikTok Likes and Views,https://www.reddit.com/r/TikTokSocialMediaTips/comments/1okvm6j/where_can_i_buy_tiktok_views_and_likes_safely/,$25,$25,"Nov 5, 2025",25
 ,Vincent Willo,,$25,$25,"Nov 13, 2025",25
 ,Buy TikTok Comments,https://buylikesservices.com/buy-tiktok-custom-comments/,$25,$25,"Nov 25, 2025",25
 ,Buy Instagram Story Views,https://riverjournalonline.com/business/3-best-sites-to-buy-instagram-story-views-real-instant/195065/,$25,$25,"Nov 27, 2025",25
@@ -75,7 +70,7 @@ sponsors/https___casinosdeargentina_com_pago_litecoin_.png,https://casinosdearge
 ,Auttawut Wiriyakreng,,$5,$285,"Mar 25, 2021",5
 ,Joseph Method,,$5,$270,"Jul 9, 2021",5
 ,Mia Bennett,https://chillfox.com/,$5,$255,"Oct 1, 2021",5
-,PROXYONE LLC,https://proxyone.eu/,$5,$230,"Feb 21, 2022",5
+,PROXYONE LLC,https://proxyone.eu/,$5,$235,"Feb 21, 2022",5
 ,igorkasyanchuk,https://phototo.com.ua/,$5,$205,"Nov 2, 2017",5
 ,Martin Honermeyer,,$5,$205,"Jul 24, 2018",5
 ,SocialWick,https://www.socialwick.com/instagram/followers,$5,$190,"Feb 14, 2024",5
@@ -134,11 +129,14 @@ sponsors/empty.svg,Austin Robert Bales,,$0,"$1,234","May 4, 2024",0
 ,Screen recorder,,$0,"$1,000","Nov 19, 2021",0
 ,Kevin Hovsäter,,$0,$980,"May 22, 2020",0
 ,Jeremy Woertink,,$0,$875,"Mar 30, 2023",0
+,Playfortune.net.br,,$0,$750,"Feb 14, 2025",0
+,Playfortuneforfun.com,,$0,$750,"Feb 14, 2025",0
 ,Mauricio Gomes,,$0,$715,"Oct 8, 2021",0
 ,ATNOS,,$0,$675,"Dec 11, 2020",0
 ,Josephine Pfeiffer,,$0,$655,"Dec 16, 2022",0
 ,CHUNG TSAI,,$0,$625,"Sep 3, 2021",0
 ,Nookwit,,$0,$600,"Aug 27, 2020",0
+,https://casinosdeargentina.com/pago/litecoin/,,$0,$600,"Mar 21, 2025",0
 ,Lampros Chaidas,,$0,$560,"Mar 29, 2021",0
 ,DocSpring,,$0,$450,"Jun 1, 2020",0
 ,Writers Per Hour,,$0,$425,"Mar 6, 2021",0
@@ -153,6 +151,7 @@ sponsors/empty.svg,Austin Robert Bales,,$0,"$1,234","May 4, 2024",0
 ,Alex Malone,,$0,$300,"Mar 15, 2019",0
 ,mointech GmbH,,$0,$300,"Apr 8, 2021",0
 ,Josh Rickard,,$0,$300,"May 10, 2023",0
+,Backlink Bento,,$0,$300,"Dec 10, 2024",0
 ,Philipp Claßen,,$0,$290,"Aug 27, 2020",0
 ,OvrClock,,$0,$280,"Dec 11, 2020",0
 ,Buy TikTok Likes & Views,,$0,$275,"Nov 14, 2024",0
@@ -308,6 +307,7 @@ sponsors/empty.svg,Austin Robert Bales,,$0,"$1,234","May 4, 2024",0
 ,Stellarlikes,,$0,$25,"Feb 5, 2025",0
 ,Buy TikTok Followers from SocialWick,,$0,$25,"Feb 8, 2025",0
 ,BuyTikTokFollowers.co,,$0,$25,"Aug 13, 2025",0
+,Buy TikTok Likes and Views,,$0,$25,"Nov 5, 2025",0
 ,Luan Dias,,$0,$22,"May 28, 2020",0
 ,Daniel Sokil,,$0,$20,"Feb 23, 2019",0
 ,Julien Elbaz,,$0,$20,"Jan 11, 2020",0
