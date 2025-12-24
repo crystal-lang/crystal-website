@@ -11,7 +11,7 @@ description: |
   This page gives an overview of available installation methods.
 link_actions:
 - '[![](/assets/install/linux.svg) #Linux](#linux)'
-- '[![](/assets/install/apple.svg) #MacOS](#macos)'
+- '[![](/assets/install/apple.svg) #macOS](#macOS)'
 - '[![](/assets/install/windows.svg) #Windows](#windows)'
 - '[![](/assets/install/freebsd.svg) #FreeBSD](#freebsd)'
 - '[![](/assets/install/openbsd.svg) #OpenBSD](#openbsd)'
@@ -36,18 +36,18 @@ Linux-based [Docker images](#docker) and [developer tools](#developer-tools) are
 
 [**Read more about installing on _Linux_**](/install/on_linux)
 
-## MacOS
+## macOS
 
-The Crystal project provides universal archives for MacOS that work on both,
+The Crystal project provides universal archives for macOS that work on both,
 Apple Silicon and Intel.
 
-The most popular installation method is via Homebrew.
+The most popular installation method is via [Homebrew](https://brew.sh).
 
-{% include pages/install/section.html os="MacOS" %}
+{% include pages/install/section.html os="macOS" %}
 
 Crystal is also available in [developer tooling](#developer-tools) on macOS.
 
-[**Read more about installing on _MacOS_**](/install/on_mac_os)
+[**Read more about installing on _macOS_**](/install/on_mac_os)
 
 <span id="windows"></span>
 
