@@ -22,3 +22,10 @@ I'll bring some Crystal merch.
 Hope to see you in Brussels!
 
 In case you can't make it, the talk is being recorded.
+
+**UPDATE:** The talk recording is now available. Thanks to the video team at FOSDEM!
+
+<video preload="none" controls="controls" width="75%" style="aspect-ratio: 16/9;" poster="/assets/blog/2026/fosdem-talk-screenshot.jpg">
+  <source src="https://video.fosdem.org/2026/ub4136/N3AFSF-crystal.av1.webm" type="video/webm; codecs=&quot;av01.0.08M.08.0.110.01.01.01.0&quot;">
+  <source src="https://video.fosdem.org/2026/ub4136/N3AFSF-crystal.mp4" type="video/mp4">
+</video>
