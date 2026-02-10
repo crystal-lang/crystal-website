@@ -1,5 +1,37 @@
 [
   {
+    "name": "YouTube Downloader",
+    "url": "https://orbitdownloader.com/youtube-downloader",
+    "last_payment": 5,
+    "time_last_payment": "Feb 5, 2026",
+    "all_time": 5,
+    "since": "Feb 5, 2026"
+  },
+  {
+    "name": "Network Tools",
+    "url": "https://gf.dev/",
+    "last_payment": 5,
+    "time_last_payment": "Feb 4, 2026",
+    "all_time": 5,
+    "since": "Feb 4, 2026"
+  },
+  {
+    "name": "Calculators",
+    "url": "https://calculator.now/",
+    "last_payment": 5,
+    "time_last_payment": "Feb 4, 2026",
+    "all_time": 5,
+    "since": "Feb 4, 2026"
+  },
+  {
+    "name": "Wallpapers.Com",
+    "url": "https://wallpapers.com/",
+    "last_payment": 5,
+    "time_last_payment": "Feb 4, 2026",
+    "all_time": 5,
+    "since": "Feb 4, 2026"
+  },
+  {
     "name": "UnAIMyText",
     "url": "https://unaimytext.com/",
     "last_payment": 25,
@@ -590,8 +622,8 @@
     "name": "Social followers",
     "url": "https://www.socialfollowers.uk/",
     "last_payment": 25,
-    "time_last_payment": "Jan 5, 2026",
-    "all_time": 500,
+    "time_last_payment": "Feb 5, 2026",
+    "all_time": 525,
     "since": "Apr 19, 2024"
   },
   {
@@ -1551,8 +1583,8 @@
   {
     "name": "Joseph Method",
     "last_payment": 5,
-    "time_last_payment": "Jan 9, 2026",
-    "all_time": 275,
+    "time_last_payment": "Feb 9, 2026",
+    "all_time": 280,
     "since": "Jul 9, 2021"
   },
   {
