@@ -12,6 +12,7 @@ Packt = "Packt"
 
 [default]
 extend-ignore-re = [
+  "Ingenius System Manager",
   "Ruby-ists",
   "ruby-ists",
   "Nikola TRE",
