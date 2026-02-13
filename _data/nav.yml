@@ -57,7 +57,7 @@ docs_intern:
 install:
 - label: Linux
   url: /install/on_linux/
-- label: MacOS
+- label: macOS
   url: /install/on_mac_os/
 - label: Windows
   url: /install/on_windows/

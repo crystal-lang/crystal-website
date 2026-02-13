@@ -1,5 +1,6 @@
 [default.extend-words]
 contextful = "contextful"
+MacOS = "macOS"
 
 [default.extend-identifiers]
 ba = "ba"
@@ -11,6 +12,7 @@ Packt = "Packt"
 
 [default]
 extend-ignore-re = [
+  "Ingenius System Manager",
   "Ruby-ists",
   "ruby-ists",
   "Nikola TRE",
