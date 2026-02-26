@@ -1,16 +1,25 @@
-.attributes {
+.attributes,
+.content dl:not([class]) {
   display: grid;
-  grid-template-columns: minmax(15%, min-content) 1fr;
-  column-gap: var(--padding-xs);
+  grid-template-columns: [dt] minmax(15%, min-content) [dd] 1fr;
+  gap: var(--padding-xxs) var(--padding-xs);
 
   > dt {
+    grid-column: dt;
     font-weight: 300;
     justify-self: end;
+    text-align: right;
     color: var(--light-text);
     margin: unset;
   }
+
   > dd {
-    grid-column: 2;
+    grid-column: dd;
     text-indent: unset;
+
+    ul,
+    ol {
+      padding-left: var(--padding-sm);
+    }
   }
 }
