@@ -10,7 +10,12 @@
   # `encode': "\\xC3" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
   env.RUBYOPT = "-Eutf-8";
 
-  languages.crystal.enable = true;
+  languages.crystal = {
+    enable = true;
+    # The Crystal language configuration uses `crystalline` as LSP, but the
+    # nix package seems to be temporarily broken.
+    lsp.enable = false;
+  };
 
   packages = (with pkgs; [
     htmltest
