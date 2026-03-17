@@ -65,8 +65,7 @@
   },
   {
     "name": "UnAIMyText",
-    "url": "https://unaimytext.com/",
-    "last_payment": 25,
+    "last_payment": 0,
     "time_last_payment": "Jan 28, 2026",
     "all_time": 25,
     "since": "Jan 28, 2026"
@@ -821,8 +820,8 @@
     "name": "TopCasinoSearch",
     "url": "https://www.topcasinosearch.com/",
     "last_payment": 5,
-    "time_last_payment": "Feb 13, 2026",
-    "all_time": 145,
+    "time_last_payment": "Mar 13, 2026",
+    "all_time": 150,
     "since": "Oct 13, 2023"
   },
   {
@@ -1027,8 +1026,8 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5,
-    "time_last_payment": "Feb 13, 2026",
-    "all_time": 185,
+    "time_last_payment": "Mar 13, 2026",
+    "all_time": 190,
     "since": "Feb 13, 2023"
   },
   {
