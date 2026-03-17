@@ -1,0 +1,10 @@
+<ul>
+{% for highlight in include.highlights %}
+  <li>
+    <span class="highlight">
+      <span>{{ highlight.text | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+      <span class="label">{{ highlight.label }}</span>
+    </span>
+  </li>
+{% endfor %}
+</ul>
