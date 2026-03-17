@@ -1,0 +1,17 @@
+{%- assign releases = site.releases | reverse %}
+{%- for release in releases %}
+  {%- assign suffix = release.version | slice: -2, 2 %}
+  {%- assign highlights = release.highlights %}
+  {% if highlights %}
+  <div class="release-highlights">
+    <h2>
+      <a href="{{ release.url }}">{{release.version}}</a>
+    <span class="release-date">
+      <time datetime="{{ release.date | date: '%F' }}">{{ release.date | date_to_string }}</time>
+    </span>
+    </h2>
+
+    {% include releases/highlights.html highlights=highlights %}
+  </div>
+  {% endif %}
+{%- endfor %}
