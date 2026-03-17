@@ -91,6 +91,7 @@ releases:
   breadcrumbs:
   - title: Releases
     url: /releases/
+    nav: releases
   weight: 24
 
 unspecified:

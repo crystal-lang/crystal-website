@@ -93,3 +93,9 @@ home:
   url: /success-stories/
 - label: Sitemap
   url: /sitemap/
+
+releases:
+- label: Highlights
+  url: /releases/highlights/
+- label: Release Policy
+  url: https://crystal-lang.org/reference/project/release-policy.html
