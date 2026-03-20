@@ -1,8 +1,9 @@
 <ul>
 {% for highlight in include.highlights %}
+  {%- assign href_replacement = '<a href="' |append: include.link_prefix | append: '#' -%}
   <li>
     <span class="highlight">
-      <span>{{ highlight.text | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+      <span>{{ highlight.text | markdownify | remove: "<p>" | remove: "</p>" | replace: '<a href="#', href_replacement }}</span>
       <span class="label">{{ highlight.label }}</span>
     </span>
   </li>
