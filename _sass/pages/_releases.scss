@@ -34,3 +34,47 @@ table.releases {
     opacity: 0.25;
   }
 }
+
+.release-highlights {
+  &:not(:has(.release-date)) {
+    border-block: 1px solid var(--alabaster);
+    padding-block: var(--padding-sm);
+  }
+
+  > h2:not(:has(.release-date)) {
+    display: none;
+  }
+
+  + .release-highlights {
+    border-block-start: 1px solid var(--alabaster);
+    padding-block-start: var(--block-flow, var(--block-flow-sm));
+  }
+
+  &:has(.release-date) {
+    > h2 {
+      font-size: 1em;
+      font-weight: 500;
+      color: var(--light-text);
+      margin-block-end: var(--padding-sm);
+
+      > .release-date {
+        color: var(--lighter-text);
+        font-weight: 400;
+      }
+    }
+  }
+
+  > ul {
+    padding-inline: 0;
+    margin-block: 0;
+
+    > li {
+      > .highlight {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: var(--padding-xxs);
+      }
+    }
+  }
+}

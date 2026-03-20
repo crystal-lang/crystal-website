@@ -13,7 +13,6 @@ link_actions:
   </a>
 - '[Installation instructions](/install)'
 - '[GitHub Releases](https://github.com/crystal-lang/crystal/releases)'
-- '[Release Policy](https://crystal-lang.org/reference/project/release-policy.html)'
 ---
 
 {% include pages/releases/releases-table.html %}
