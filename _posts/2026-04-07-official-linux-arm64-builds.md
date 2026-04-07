@@ -16,9 +16,10 @@ The wait is now over. During the development of Crystal 1.19 we bootstrapped a
 nightlies and the 1.19 release.
 
 The builds are available everywhere we provide an AMD64 build of the compiler
-for Linux: nightly builds, [release tarballs], [Docker images], [Snap], as well
+for Linux: [nightly builds], [release tarballs], [Docker images], [Snap], as well
 as the [install-crystal] GitHub action — just select an ubuntu arm runner.
 
+[nightly builds]: https://crystal-lang.org/install/nightlies/
 [release tarballs]: https://github.com/crystal-lang/crystal/releases
 [Docker images]: https://hub.docker.com/r/crystallang/crystal
 [Snap]: https://snapcraft.io/crystal
