@@ -9,8 +9,6 @@ max_cache_age = "7d"
 
 #############################  Requests  ############################
 
-base_url = "https://crystal-lang.org"
-
 exclude_path = [
   "_site", # build output
   # partial and incomplete paths
