@@ -3,7 +3,8 @@
 {
   languages.ruby = {
     enable = true;
-    package = pkgs.ruby_3_3;
+    package = pkgs.ruby_3_4;
+    bundler.enable = true;
   };
 
   # This is required to fix encoding errors in Jekyll.
@@ -22,11 +23,6 @@
   ]);
 
   processes.serve.exec = "make serve";
-
-  enterShell = ''
-    # Automatically run bundler upon enterting the shell.
-    bundle install --quiet
-  '';
 
   git-hooks.hooks = {
     actionlint.enable = true;
