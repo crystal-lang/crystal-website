@@ -15,7 +15,9 @@ exclude_path = [
   "_plugins",
   "_layouts",
   "_includes",
-  "_sass/mixins/_link-with-icon.scss", # lists URL prefixes
+  "_sass/mixins/_link-with-icon.scss", # lists URL prefixes,
+  "_data/packages.yaml", # contains URL templates
+  "_data/packages-nightly.yaml", # contains URL templates
 ]
 
 # Enable the checking of fragments in links.

@@ -15,7 +15,7 @@
 
 - type: crystal
   os: Linux
-  arch: [x86_64]
+  arch: [aarch64, x86_64]
   title: Tarball (`.tar.gz`)
   instructions_href: /install/from_targz/
   archive_href: https://artifacts.crystal-lang.org/dist/crystal-nightly-linux-{{ arch }}.tar.gz
