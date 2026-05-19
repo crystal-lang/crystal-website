@@ -32,9 +32,10 @@
   },
   {
     "name": "ViewSnapStories",
-    "last_payment": 0,
-    "time_last_payment": "Mar 2, 2026",
-    "all_time": 5,
+    "url": "https://viewsnapstories.com/",
+    "last_payment": 5,
+    "time_last_payment": "May 15, 2026",
+    "all_time": 10,
     "since": "Mar 2, 2026"
   },
   {
@@ -845,8 +846,8 @@
     "name": "TopCasinoSearch",
     "url": "https://www.topcasinosearch.com/",
     "last_payment": 5,
-    "time_last_payment": "Apr 13, 2026",
-    "all_time": 155,
+    "time_last_payment": "May 13, 2026",
+    "all_time": 160,
     "since": "Oct 13, 2023"
   },
   {
@@ -1051,8 +1052,8 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5,
-    "time_last_payment": "Apr 13, 2026",
-    "all_time": 195,
+    "time_last_payment": "May 13, 2026",
+    "all_time": 200,
     "since": "Feb 13, 2023"
   },
   {
@@ -1964,7 +1965,7 @@
   },
   {
     "name": "Josh Hollenbeck",
-    "last_payment": 10,
+    "last_payment": 0,
     "time_last_payment": "Apr 1, 2026",
     "all_time": 640,
     "since": "Dec 19, 2020"
