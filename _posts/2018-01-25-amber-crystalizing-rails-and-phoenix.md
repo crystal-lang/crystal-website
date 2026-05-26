@@ -158,5 +158,5 @@ A lot of software is written for the web today. Ruby and Rails showed the world 
 [^select]: [Relevant log](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5#file-ab_crystal_logs-txt-L1)
 [^validating]: [Relevant log](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5#file-crystal_controller-cr)
 [^rendering]: [Relevant log](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5#file-crystal_view-slim)
-[^unedited-logs]: Unedited logs and code samples comparing Rails and Amber [here](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5)
+[^unedited-logs]: Unedited [logs and code samples comparing Rails and Amber](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5)
 [^configuration]: In order to render templates and views as fast as possible, the route pipeline must be slimmed down to almost nothing, rendering many features inoperable.

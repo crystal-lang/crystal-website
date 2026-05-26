@@ -36,7 +36,7 @@ end
 
 **A:** Trick question - it's both. The modules above will work in [Ruby](https://repl.it/@marksiemers1/HammingLeapYear) or [Crystal](https://play.crystal-lang.org/#/r/3ayq). How cool is that?
 
-See more examples of code similarities [here](https://github.com/marksiemers/ruby-to-crystal).
+See more examples of code similarities in [ruby-to-crystal](https://github.com/marksiemers/ruby-to-crystal).
 
 This doesn't mean that all Ruby code will work in Crystal (and vice-versa), but you can do an awful lot with Crystal immediately and be productive on day one, even minute one.
 
