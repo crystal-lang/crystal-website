@@ -106,7 +106,7 @@ Additionally, the compiler remembers that both an ```Int32``` and a ```String```
 assigned to ```a```. When generating LLVM code, the compiler will represent ```a```
 as a union type that can be Int32 or String. It would be something like this in C:
 
-```crystal
+```c
 struct Int32OrString {
   int type_id;
   union {

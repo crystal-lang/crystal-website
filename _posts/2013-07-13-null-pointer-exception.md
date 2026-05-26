@@ -28,7 +28,7 @@ nil.foo
 
 Compiling the above program gives this error:
 
-```crystal
+```text
 Error in foo.cr:1: undefined method 'foo' for Nil
 
 nil.foo

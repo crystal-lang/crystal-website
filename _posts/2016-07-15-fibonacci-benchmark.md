@@ -81,8 +81,7 @@ might give incorrect results, while Ruby makes sure to always give the correct r
 In my opinion, Ruby's philosophy is, whenever there's a choice between correct behavior and
 good performance, to favor correct behaviour. One can see this in this small example:
 
-```console
-$ irb
+```irb
 irb(main):001:0> a = []
 => []
 irb(main):002:0> a << a
