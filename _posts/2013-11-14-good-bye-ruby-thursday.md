@@ -18,7 +18,7 @@ So we chose to implement a compiler for Crystal in Ruby. Why?
 
 We tried many times to implement the compiler in Crystal. But we always had problems with it.
 
-### Compile times were too big
+## Compile times were too big
 
 This, we thought at first, is because Ruby is sometimes slow.
 

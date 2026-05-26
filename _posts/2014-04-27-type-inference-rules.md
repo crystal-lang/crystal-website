@@ -15,7 +15,7 @@ We'll start with literals, C functions and some primitives. Then we'll continue 
 control structures, like `if`, `while`, and blocks. Then we'll talk about the special
 `NoReturn` type and type filters.
 
-### Literals
+## Literals
 
 Literals have a type of their own, known by the compiler:
 
