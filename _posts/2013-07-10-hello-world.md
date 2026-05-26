@@ -16,7 +16,7 @@ But if you feel like it, you can also use some object oriented programming:
 
 ```crystal
 class Greeter
-  def initialize(@name : String )
+  def initialize(@name : String)
   end
 
   def salute

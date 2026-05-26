@@ -23,10 +23,10 @@ It allows printing numbers in a customizable format, that can represent the way 
 Numbers can be formatted using configurable decimal separator and thousands delimiter:
 
 ```crystal
-123_456.789.format('.', ',')   # => "123,456.789"
-123_456.789.format(',', '.')   # => "123.456,789"
-123_456.789.format(',', ' ')   # => "123 456,789"
-123_456.789.format(',', '\'')  # => "123'456,789"
+123_456.789.format('.', ',')  # => "123,456.789"
+123_456.789.format(',', '.')  # => "123.456,789"
+123_456.789.format(',', ' ')  # => "123 456,789"
+123_456.789.format(',', '\'') # => "123'456,789"
 ```
 
 The number of digits in a thousands group is also configurable. This works for example for Chinese numbers grouped by tenthousands:

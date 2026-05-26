@@ -96,8 +96,8 @@ Little did we know that `typeof` would bring a lot of power to the language.
 One obvious use-case of typeof is to ask the compiler the inferred type of an expression. For example:
 
 ```crystal
-puts typeof(1) #=> Int32
-puts typeof([1, 2, 3].map &.to_s) #=> Array(String)
+puts typeof(1)                    # => Int32
+puts typeof([1, 2, 3].map &.to_s) # => Array(String)
 ```
 
 At this point you might think that `typeof(exp)` is similar to `exp.class`. However,
@@ -105,15 +105,15 @@ the first gives you the compile-time type, while the second gives you the runtim
 
 ```crystal
 exp = rand(0..1) == 0 ? 'a' : true
-puts typeof(exp) #=> Char | Bool
-puts exp.class   #=> Char (or Bool, depending on the chosen random value)
+puts typeof(exp) # => Char | Bool
+puts exp.class   # => Char (or Bool, depending on the chosen random value)
 ```
 
 Another simple use case is to create a type based on another object's type:
 
 ```crystal
 hash = {1 => 'a', 2 => 'b'}
-other_hash = typeof(hash).new #:: Hash(Int32, Char)
+other_hash = typeof(hash).new # :: Hash(Int32, Char)
 ```
 
 In this way we can avoid repeating or hardcoding a type name.
@@ -145,8 +145,8 @@ end
 If `exp` is `Nil` we raise an exception, otherwise we return `exp`. Let's check its type:
 
 ```crystal
-puts typeof(not_nil(1))   #=> Int32
-puts typeof(not_nil(nil)) #=> NoReturn
+puts typeof(not_nil(1))   # => Int32
+puts typeof(not_nil(nil)) # => NoReturn
 ```
 
 Thanks to the way [if var.is_a?(...)](http://crystal-lang.org/docs/syntax_and_semantics/if_varis_a.html) works,
@@ -159,8 +159,8 @@ Let's try and give `not_nil` something that's a union type:
 
 ```crystal
 element = rand(0..1) == 0 ? 1 : nil
-puts typeof(element)          #=> Int32 | Nil
-puts typeof(not_nil(element)) #=> Int32
+puts typeof(element)          # => Int32 | Nil
+puts typeof(not_nil(element)) # => Int32
 ```
 
 Note that the `NoReturn` type is gone: the "expected" type of the last expression would be `Int32 | NoReturn`, that
@@ -183,11 +183,11 @@ class Array
 end
 
 ary = [1, nil, 2, nil, 3]
-puts typeof(ary)       #=> Array(Int32 | Nil)
+puts typeof(ary) # => Array(Int32 | Nil)
 
 compacted = ary.compact
-puts compacted         #=> [1, 2, 3]
-puts typeof(compacted) #=> Array(Int32)
+puts compacted         # => [1, 2, 3]
+puts typeof(compacted) # => Array(Int32)
 ```
 
 The magical line is the first one in the method:
@@ -214,11 +214,11 @@ Note that this has to work recursively. Let's see some expected behaviour:
 
 ```crystal
 ary1 = [1, [2, [3], 'a']]
-puts typeof(ary1)             #=> Array(Int32 | Array(Int32 | Array(Int32) | Char))
+puts typeof(ary1) # => Array(Int32 | Array(Int32 | Array(Int32) | Char))
 
 ary1_flattened = ary1.flatten
-puts ary1_flattened           #=> [1, 2, 3, 'a']
-puts typeof(ary1_flattened)   #=> Array(Int32 | Char)
+puts ary1_flattened         # => [1, 2, 3, 'a']
+puts typeof(ary1_flattened) # => Array(Int32 | Char)
 ```
 
 Like before, let's start by writing a method whose type will have the type that we need for the flattened
@@ -233,9 +233,9 @@ def flatten_type(object)
   end
 end
 
-puts typeof(flatten_type(1))                          #=> Int32
-puts typeof(flatten_type([1, [2]]))                   #=> Int32
-puts typeof(flatten_type([1, [2, ['a', 'b']]]))       #=> Int32 | Char
+puts typeof(flatten_type(1))                    # => Int32
+puts typeof(flatten_type([1, [2]]))             # => Int32
+puts typeof(flatten_type([1, [2, ['a', 'b']]])) # => Int32 | Char
 ```
 
 The method is simple: if the object is an array, we want the flatten type of any of its elements. Otherwise,

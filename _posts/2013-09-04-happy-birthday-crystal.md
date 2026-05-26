@@ -44,7 +44,7 @@ They come in many flavors, like in Ruby, and they also support interpolation.
 
 ```crystal
 a = "World"
-b = "Hello #{a}" #=> "Hello World"
+b = "Hello #{a}" # => "Hello World"
 ```
 
 We still need to decide what's the best way to deal with different encodings, so this
@@ -116,14 +116,14 @@ end
 def foo(x : Float)
 end
 
-def foo(x)
+def foo(x, &)
   yield
 end
 
-foo 1, 1      # Invokes foo 1
-foo 1         # Invokes foo 2
-foo 1.5       # Invokes foo 3
-foo(1) { }    # Invokes foo 4
+foo 1, 1   # Invokes foo 1
+foo 1      # Invokes foo 2
+foo 1.5    # Invokes foo 3
+foo(1) { } # Invokes foo 4
 ```
 
 Contrast this with having to check **at runtime** the number of arguments of the method,
@@ -175,11 +175,11 @@ class Foo(T)
   end
 end
 
-foo = Foo.new(1)    # T is inferred to be an Int32, and foo is a Foo(Int32)
-foo.value.abs       # Ok
+foo = Foo.new(1) # T is inferred to be an Int32, and foo is a Foo(Int32)
+foo.value.abs    # Ok
 
 foo2 = Foo.new('a') # T is inferred to be a Char, and foo2 is a Foo(Char)
-foo2.value.ord            # Ok
+foo2.value.ord      # Ok
 
 # You can also explicitly specify the generic type variable
 foo3 = Foo(String).new("hello")
@@ -190,9 +190,9 @@ literals. When elements are specified, the generic type variables are inferred.
 If no element is specified, you have to tell Crystal the generic type variables.
 
 ```crystal
-a = [1, 2, 3]            # a is an Array(Int32)
-b = [1, 1.5, 'a']        # b is an Array(Int32 | Float64 | Char)
-c = [] of String         # c is an Array(String), same as doing Array(String).new
+a = [1, 2, 3]     # a is an Array(Int32)
+b = [1, 1.5, 'a'] # b is an Array(Int32 | Float64 | Char)
+c = [] of String  # c is an Array(String), same as doing Array(String).new
 
 d = {1 => 2, 3 => 4}     # d is a Hash(Int32, Int32)
 e = {} of String => Bool # e is a Hash(String, Bool), same as doing Hash(String, Bool).new
@@ -259,9 +259,9 @@ Regular expressions are implemented, for now, with C bindings to the PCRE librar
 `Regexp` is entirely written in Crystal.
 
 ```crystal
-"foobarbaz" =~ /(.+)bar(.+)/ #=> 0
-$1                           #=> "foo"
-$2                           #=> "baz
+"foobarbaz" =~ /(.+)bar(.+)/ # => 0
+$1                           # => "foo"
+$2                           # => "baz
 ```
 
 ## Ranges
@@ -320,7 +320,7 @@ end
 
 foo do |x|
   # Invokes "abs" on -1
-  puts abs + x #=> 3
+  puts abs + x # => 3
 end
 ```
 

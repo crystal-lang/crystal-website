@@ -146,7 +146,7 @@ end
 
 If we try to get the compile-time type of the expression `t` we will stumble on the infamous “can't execute TypeOf in a macro”.
 
-```console
+```text
 {% raw %}
 In program.ign.cr:4:26
 
@@ -253,7 +253,7 @@ def dig_first(xs)
   end
 end
 
-dig_first([[1,[2],3]])
+dig_first([[1, [2], 3]])
 ```
 
 ```console
@@ -330,9 +330,11 @@ In the `reveal_type` macro we needed to show the expression and its location. Th
 
 ```crystal
 {% raw %}
+
 macro reveal_type(t)
   {%- t.raise "Lorem ipsum" %}
 end
+
 {% endraw %}
 ```
 

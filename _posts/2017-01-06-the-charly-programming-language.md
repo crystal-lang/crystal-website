@@ -19,7 +19,7 @@ Charly is a dynamically typed and object-oriented programming language. The synt
 Below is an implementation of the [Bubblesort algorithm](https://en.wikipedia.org/wiki/Bubblesort) written in Charly. It is part of the standard library which is also written in Charly.
 
 ```javascript
-  func sort(sort_function) {
+func sort(sort_function) {
     const sorted = @copy()
 
     let left
