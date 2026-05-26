@@ -79,7 +79,7 @@ To stop the server just terminate the process by pressing `Ctrl+C`.
 
 Right now the project knows nothing about Heroku. To get started, a Heroku application needs first to be registered. The easiest way to do this is via the ~~[Heroku toolbelt](https://toolbelt.heroku.com/)~~:
 
-```crystal
+```console
 $ heroku create --buildpack https://github.com/crystal-lang/heroku-buildpack-crystal.git
 Creating app... done, ⬢ sleepy-thicket-16179
 Setting buildpack to https://github.com/crystal-lang/heroku-buildpack-crystal.git... done

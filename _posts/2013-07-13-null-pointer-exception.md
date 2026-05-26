@@ -67,7 +67,7 @@ Can you spot the bug?
 
 Compiling the above program, Crystal says:
 
-```crystal
+```text
 Error in foo.cr:20: undefined method 'value' for Nil
 
 puts box.value
@@ -123,7 +123,7 @@ So `capitalize` might be called on `nil`.
 
 And Crystal prevents you from writing such a program:
 
-```crystal
+```text
 Error in foo.cr:10: undefined method 'capitalize' for Nil
 
 puts socket.gets.capitalize

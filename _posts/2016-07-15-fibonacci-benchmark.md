@@ -97,7 +97,7 @@ lookup is performed.
 
 The same happens when you inspect an object, and the object has a reference to itself:
 
-```console
+```irb
 irb(main):001:0> class Foo
 irb(main):002:1>   def initialize
 irb(main):003:2>     @self = self
