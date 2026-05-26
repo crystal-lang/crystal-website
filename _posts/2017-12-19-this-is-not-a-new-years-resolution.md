@@ -4,6 +4,7 @@ author: nditada
 description: "Almost 1 year ago, we committed to 1.0. Here's Crystal's current status & future."
 categories: project
 ---
+
 Almost 1 year ago, riding the wave of end of year optimism, [Manas.Tech](https://manas.tech/) ("we" from here on in this post) decided to commit to wrap up a 1.0 release during 2017 that would include all possible breaking changes to the language.
 
 As with many other new year's resolutions, this was wishful thinking. At the time of our post, things felt a little closer than what they actually were. Also, due to an influx of new projects we couldn’t put the amount of time we wanted.

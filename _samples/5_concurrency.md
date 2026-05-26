@@ -6,6 +6,7 @@ description: |
   Fibers communicate with each other via channels without having to turn to shared memory or locks ([CSP](https://www.wikiwand.com/en/Communicating_sequential_processes)).
 read_more: "[Read more about concurrency](https://crystal-lang.org/reference/guides/concurrency.html)"
 ---
+
 ```crystal
 channel = Channel(Int32).new
 

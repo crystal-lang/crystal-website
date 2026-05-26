@@ -7,6 +7,7 @@ description: |
   The code is still clean and feels like a dynamic language.
 read_more: "[More about the type system](https://crystal-lang.org/reference/syntax_and_semantics/types_and_methods.html)"
 ---
+
 ```crystal
 def add(a, b)
   a + b

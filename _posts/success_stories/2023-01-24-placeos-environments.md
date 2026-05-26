@@ -8,6 +8,7 @@ image: /assets/blog/2023-01-24-placeos.png
 company: PlaceOS
 categories: success
 ---
+
 [PlaceOS](https://place.technology/) provides a platform that allows a seamless integration between the physical and the digital. And then they automate it all, to create state-of-the-art cohesive ecosystems in the traditionally conservative space of facility management.
 
 We sat down with **Stephen Von Takach Dukai**, **Engineering Lead** at Place, to talk about their experience working with Crystal.
