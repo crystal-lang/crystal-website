@@ -45,11 +45,11 @@ Ok, but what's the purpose of learning a language if we cannot run the damn thin
 First create a file `hello.cr` containing your preferred choice of the previous examples.
 Then type in the console:
 
-<pre class="code">
+```crystal
 $ bin/crystal hello.cr
 $ ./hello
 Hello World
 $
-</pre>
+```
 
 The compiled output is a standalone executable without any specific runtime dependency. Neat! Isn't it?

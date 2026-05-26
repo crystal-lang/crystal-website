@@ -78,7 +78,7 @@ This program prints out the [Mandelbrot set](https://en.wikipedia.org/wiki/Mande
 First, Charly turns the source file into a list of tokens. A token is basically just a string with a type.
 A simple hello-world program may consist of the following tokens:
 
-<pre class="code">
+```console
 $ cat test/debug.ch
 print("Hello World")
 $ charly test/debug.ch -f lint -f tokens
@@ -88,7 +88,7 @@ $ charly test/debug.ch -f lint -f tokens
 1:20:1    │ RightParen  │ )
 1:21:1    │ Newline     │
 2:1:1     │ EOF         │
-</pre>
+```
 
 This part of the program is called the lexer (Lexical Analysis). It turns the source-code into logical groups of characters. For example, the print identifier is now a token of the type Identifier, containing the string print. Same goes for the text which is being printed. It is now a token of the type String, containing the string Hello World.
 

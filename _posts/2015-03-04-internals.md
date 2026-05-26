@@ -30,9 +30,9 @@ x = true
 
 To see the generated LLVM we can use this command:
 
-<pre class="code">
+```shell
 crystal build test.cr --emit llvm-ir --prelude=empty
-</pre>
+```
 
 The `--emit llvm-ir` flag tells the compiler to dump the resulting LLVM IR code to a test.ll file.
 The `--prelude=empty` tells the compiler to not use
