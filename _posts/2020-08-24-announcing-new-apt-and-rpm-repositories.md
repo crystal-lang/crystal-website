@@ -80,7 +80,7 @@ The installation script requires `gnupg`, `ca-certificates`, and `apt-transport-
 
 ## What if I already have crystal installed via apt/rpm?
 
-The installation script will overwrite `/etc/apt/sources.list.d/crystal.list` and  `/etc/yum.repos.d/crystal.repo` on every execution. These are the same files used in the former official apt and rpm repositories.
+The installation script will overwrite `/etc/apt/sources.list.d/crystal.list` and `/etc/yum.repos.d/crystal.repo` on every execution. These are the same files used in the former official apt and rpm repositories.
 
 If you already have the latest version of Crystal (0.35.1) and run the installation scripts you will see
 

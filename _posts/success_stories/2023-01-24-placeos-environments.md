@@ -43,7 +43,7 @@ Coming from Ruby I personally have found Crystal to be a breath of fresh air. I 
 
 Productivity with Ruby on Rails felt so much higher, I could move fast and be more creative. However, more recently, especially when the solutions were getting bigger and more complex, Ruby felt like an achilles heel: random bugs that are hard to reproduce with unexpected objects in unexpected code paths were really eating up developer time.
 
-Crystal solved most of what felt wrong with Ruby. Types and  the smart features of the compiler being the obvious first thing, we were definitely writing better Ruby code after dipping our toes into Crystal. But we also found the Crystal tooling to be great, the formatter, linters like Ameba, testing tools, leveraging LLVM, minimal Docker containers and the community, all helped sway us.
+Crystal solved most of what felt wrong with Ruby. Types and the smart features of the compiler being the obvious first thing, we were definitely writing better Ruby code after dipping our toes into Crystal. But we also found the Crystal tooling to be great, the formatter, linters like Ameba, testing tools, leveraging LLVM, minimal Docker containers and the community, all helped sway us.
 
 The biggest problem was probably a lack of mature shards at the time, but this just meant we could shape the missing pieces to meet our needs and porting Ruby Gems is typically not much of an issue. Frankly, it's amazing how many bugs we found in every gem we ported just thanks to the Crystal compiler.
 

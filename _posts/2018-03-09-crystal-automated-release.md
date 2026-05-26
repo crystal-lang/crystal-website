@@ -12,11 +12,11 @@ As we shared at [the end of 2017](https://crystal-lang.org/2017/12/19/this-is-no
 
 ## How things used to be
 
-For a long time, we managed Crystal’s release and distribution process through  [omnibus-crystal](https://github.com/crystal-lang/omnibus-crystal). Even though parts of the process were automatic, it involved many manual steps that required  launching virtual machines for different distros to generate pkg, deb, tar.gz, etc.
+For a long time, we managed Crystal’s release and distribution process through [omnibus-crystal](https://github.com/crystal-lang/omnibus-crystal). Even though parts of the process were automatic, it involved many manual steps that required launching virtual machines for different distros to generate pkg, deb, tar.gz, etc.
 
 This process used to be enough for our needs, when only one or two people (Ary and Waj) would be in charge of releasing versions of the language. But as the project and the core team grew, we were afraid that some parts of the process were not properly documented, depending on information sitting in their heads or work-of-art environments in their machines.
 
-Another important part of the release process is publishing the docs in the website. Up to now, we’ve been doing this with Travis. Whenever we tagged a build,  we would have Travis sync the output of the `docs` command to S3. Then with some route redirect logic we would ensure that links to the latest release docs such as `/api/Array.html` would redirect to `/api/0.24.1/Array.html`, so we could use the former in articles or the Crystal book.
+Another important part of the release process is publishing the docs in the website. Up to now, we’ve been doing this with Travis. Whenever we tagged a build, we would have Travis sync the output of the `docs` command to S3. Then with some route redirect logic we would ensure that links to the latest release docs such as `/api/Array.html` would redirect to `/api/0.24.1/Array.html`, so we could use the former in articles or the Crystal book.
 
 Then there’s Docker. Nowadays a release that doesn’t include an official Docker image seems off. So after building and publishing the packages for each platform a Docker image is built, tagged, and published to [https://hub.docker.com/r/crystallang/crystal/](https://hub.docker.com/r/crystallang/crystal/). Yet again this was not automated, and we sometimes would even forget to do it for a couple of days.
 
@@ -45,7 +45,7 @@ While trying to accomplish those goals we wanted to also address some technical 
 
 ### Hello CircleCI 2.0
 
-We migrated from a  CI setup that was running on CircleCI 1.0 to test OSX only to a CircleCI 2.0 workflow that will stress Linux32, Linux64 and OSX builds. Changing a cloud CI configuration it’s always a slow task: it feels like you send a script by email, then wait in queue, fail (many times) for silly details you missed, and retry once and again.
+We migrated from a CI setup that was running on CircleCI 1.0 to test OSX only to a CircleCI 2.0 workflow that will stress Linux32, Linux64 and OSX builds. Changing a cloud CI configuration it’s always a slow task: it feels like you send a script by email, then wait in queue, fail (many times) for silly details you missed, and retry once and again.
 
 ### Nightly for Linux 64 bits
 
@@ -71,9 +71,9 @@ Doing 2 or 3 would change the packaging, and align the changes of the path intro
 
 So we tried option 1. The result was - we hit [a bug in Boehm's GC](https://github.com/ivmai/bdwgc/issues/133) specific to 32-bit Docker containers, that was fixed in a release newer than the one our Omnibus setup was using.
 
-So we couldn't use Crystal 0.24.1 (with the buggy GC version) inside the Docker containers.  As a consequence, we built Crystal 0.24.2 for 32 bits manually, with a newer GC version. That will allow us to release 0.25.0 using the `distribution-scripts` in the future. Probably still sticking to option 1.
+So we couldn't use Crystal 0.24.1 (with the buggy GC version) inside the Docker containers. As a consequence, we built Crystal 0.24.2 for 32 bits manually, with a newer GC version. That will allow us to release 0.25.0 using the `distribution-scripts` in the future. Probably still sticking to option 1.
 
-The bottom line: there are no 32-bit nightly packages for  0.24.2, but we should be able to introduce them in the future.
+The bottom line: there are no 32-bit nightly packages for 0.24.2, but we should be able to introduce them in the future.
 
 ### Nightly for Docs
 

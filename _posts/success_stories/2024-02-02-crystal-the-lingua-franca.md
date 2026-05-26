@@ -16,7 +16,7 @@ Previously, when Bright was called NeuraLegion, they started coding their exploi
 
 Fast-forward to today, many developers came and went, each with their own language of choice: those working in the core functionalities of the exploiter are mostly proficient in Ruby or C++, while AppSec researchers typically work in Python. How do they find a common language to develop the engine and the attacks?
 
-Crystal sits well between dynamic languages like Ruby or Python and static languages like Java and C++. Thus, it sounds like it could be  the language to help developers communicate, no matter from which end of the spectrum they come from.
+Crystal sits well between dynamic languages like Ruby or Python and static languages like Java and C++. Thus, it sounds like it could be the language to help developers communicate, no matter from which end of the spectrum they come from.
 
 As C++ developer Alexander Kutsan [explained at length](https://www.youtube.com/watch?v=baoDYTD_cjY) in [CrystalConf 2023](https://www.youtube.com/watch?v=baoDYTD_cjY), learning Crystal is not only easy for Ruby devs: those coming from backgrounds as different as Python and C++ can also learn it pretty quickly. This eliminates the need to hire specialized Crystal devs: the language has low entry barriers, and more advanced topics can be learned on the way.
 

@@ -184,7 +184,7 @@ Some of the memory representation and the low level instructions emitted by the 
 
 ### Language type-safety
 
-When a data structure is accessed concurrently from different threads, if there is no synchronization, the instructions can get interleaved  and lead to unexpected results. This problem is not new and many languages suffer it. When dealing with data structures like Array one can think of some synchronization around the public API in a worst case scenario. But sometimes the inconsistent state can manifest in more subtle ways.
+When a data structure is accessed concurrently from different threads, if there is no synchronization, the instructions can get interleaved and lead to unexpected results. This problem is not new and many languages suffer it. When dealing with data structures like Array one can think of some synchronization around the public API in a worst case scenario. But sometimes the inconsistent state can manifest in more subtle ways.
 
 If the language allows value-types larger than the amount of memory than can be atomically written, then you might notice some oddities. Let’s assume we have a shared `Tuple(Int32, Bool)` in which a thread constantly sets the value `{0, false}`, a second thread sets the value `{1, true}`, and a third thread will read the value. Due to interleaved instructions, the last thread will every now and then find the values `{1, false}` and `{0, true}`. Nothing unsafe happens here, they are possible values of `Tuple(Int32, Bool)`, but it’s odd that a value that was never written can be read. Many languages that have value types of arbitrary size usually exhibit this issue.
 
@@ -198,7 +198,7 @@ To deal with the Array unsafe behavior, there needs to be a discussion regarding
 
 After the guarantee level is chosen we need to find an algorithm for it. So far, we have worked around an implementation with the weaker one. But it requires some integration with the GC. That integration is currently a bottleneck and we are still iterating. _For now_ you will need to be aware that shared arrays are not safe unless manually synchronized.
 
-The challenges found in Array appear in every manipulation of pointers. Pointers are unsafe and, while working on the code of Array, we definitely wished to have  safe/unsafe sections in the language to guide the review process. There are other structures like Deque that suffer from the same issues.
+The challenges found in Array appear in every manipulation of pointers. Pointers are unsafe and, while working on the code of Array, we definitely wished to have safe/unsafe sections in the language to guide the review process. There are other structures like Deque that suffer from the same issues.
 
 ## Next Steps
 
