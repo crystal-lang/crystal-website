@@ -31,6 +31,7 @@ For comparison, the new and old homepage:
 
 New and old install and community pages:
 
+<!-- rumdl-disable-next-line MD075 -->
 | [![New install page](/assets/blog/2024/2024-03-27-website-install-new.webp)](/install) | ![Old install page](/assets/blog/2024/2024-03-27-website-install-old.webp) |
 | [![New community page](/assets/blog/2024/2024-03-27-website-community-new.webp)](/community) | ![Old community page](/assets/blog/2024/2024-03-27-website-community-old.webp) |
 
