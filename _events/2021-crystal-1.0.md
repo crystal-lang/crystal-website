@@ -17,7 +17,7 @@ The Crystal Conference will be livestreamed, to make sure that the entire global
 
 {% include event/session-list.html %}
 
-### Time
+## Time
 
 The conference took place on Thursday, 8 July 2021, from 12:30 pm to 9:30 pm UTC.
 
