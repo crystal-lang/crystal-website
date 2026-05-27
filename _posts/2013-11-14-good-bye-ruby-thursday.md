@@ -1,6 +1,6 @@
 ---
 title: Good bye Ruby Thursday
-summary: Bootstraped the compiler
+summary: Bootstrapped the compiler
 author: asterite
 categories: technical
 tags: compiler

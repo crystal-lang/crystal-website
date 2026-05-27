@@ -6,6 +6,7 @@ MacOS = "macOS"
 ba = "ba"
 Flate = "Flate"
 "Haß" = "Haß"
+macos = "macos"
 wrk = "wrk"
 SEH = "SEH"
 Packt = "Packt"
@@ -13,6 +14,7 @@ Packt = "Packt"
 [default]
 extend-ignore-re = [
   "Ingenius System Manager",
+  "Releaf Medical Cannabis Glossary",
   "Ruby-ists",
   "ruby-ists",
   "Nikola TRE",
@@ -24,5 +26,6 @@ extend-exclude = [
   "_sass/components/_highlight.scss",
   "/_site*/",
   "**/crystal-pgp-key.txt", "gemset.nix",
+  "_posts/2022-06-13-latests-from-the-team.md", # typo in slug
   "_style_guide/typography/footnotes.md",
 ]

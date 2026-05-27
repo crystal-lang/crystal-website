@@ -122,7 +122,7 @@ The [implementation of this method](https://github.com/crystal-lang/crystal/blob
 
 These new methods provide great features for making numbers look pretty to the reader.
 
-They do not provide style mappings for specific locales. This is a non-trivial task that should be left for dedicated I18N libraries. But they're useful building blocks that such libraries can build upon. And they're immediatetly usable when you don't need to support different locales.
+They do not provide style mappings for specific locales. This is a non-trivial task that should be left for dedicated I18N libraries. But they're useful building blocks that such libraries can build upon. And they're immediately usable when you don't need to support different locales.
 
 The implementation is not perfect, though. Localization is complex and hard to get right. As always, the devil lies in the details. For example, the thousands delimiter and group size are configurable, but have fixed values. The [Indian numbering system](https://en.wikipedia.org/wiki/Indian_numbering_system) can't be represented in this way. Then only arabic numbers are supported. And there are probably lots of other cases which would require more specialized behaviour.
 
