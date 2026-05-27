@@ -1,5 +1,5 @@
 ---
-page_title: Nightly Builds
+title: Nightly Builds
 layout: page-wide
 page_class: page--segmented
 description: |
