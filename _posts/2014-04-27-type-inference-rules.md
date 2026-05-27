@@ -106,7 +106,7 @@ Additionally, the compiler remembers that both an ```Int32``` and a ```String```
 assigned to ```a```. When generating LLVM code, the compiler will represent ```a```
 as a union type that can be Int32 or String. It would be something like this in C:
 
-<pre class="code">
+```c
 struct Int32OrString {
   int type_id;
   union {
@@ -114,7 +114,7 @@ struct Int32OrString {
     string string_value;
   } data;
 }
-</pre>
+```
 
 This might seem inefficient if we continually assign different types to the same variable.
 However, the compiler knows that when you invoked ```abs```, ```a``` was an Int32, so it never

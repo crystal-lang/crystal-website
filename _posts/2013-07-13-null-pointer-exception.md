@@ -28,12 +28,12 @@ nil.foo
 
 Compiling the above program gives this error:
 
-<pre class="code">
+```text
 Error in foo.cr:1: undefined method 'foo' for Nil
 
 nil.foo
     ^~~
-</pre>
+```
 
 `nil`, the only instance of the [Nil](https://github.com/crystal-lang/crystal/blob/master/src/nil.cr) class, behaves just like any other class in Crystal.
 And since it doesn't have a method named "foo", an error is issued **at compile time**.
@@ -67,7 +67,7 @@ Can you spot the bug?
 
 Compiling the above program, Crystal says:
 
-<pre class="code">
+```text
 Error in foo.cr:20: undefined method 'value' for Nil
 
 puts box.value
@@ -96,7 +96,7 @@ Nil trace:
 
       case n
       ^
-</pre>
+```
 
 Not only it tells you that you might have a null pointer exception (in this case, when n is not one of 1, 2, 3, 4, 5, 6),
 but it also shows you where the `nil` originated. It's in the `case` expression, which has a default empty `else` clause, which has a `nil` value.
@@ -123,7 +123,7 @@ So `capitalize` might be called on `nil`.
 
 And Crystal prevents you from writing such a program:
 
-<pre class="code">
+```text
 Error in foo.cr:10: undefined method 'capitalize' for Nil
 
 puts socket.gets.capitalize
@@ -147,7 +147,7 @@ Nil trace:
 
         size > 0 ? String.from_cstr(buffer) : nil
                                                 ^
-</pre>
+```
 
 To prevent this error, you can do the following:
 

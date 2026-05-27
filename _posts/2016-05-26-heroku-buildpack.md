@@ -19,7 +19,7 @@ This assumes you already have [crystal installed](http://crystal-lang.org/docs/i
 
 Use `crystal init app` to create the app.
 
-<pre class="code">
+```console
 $ crystal init app heroku101
     create  heroku101/.gitignore
     create  heroku101/LICENSE
@@ -33,18 +33,18 @@ $ crystal init app heroku101
 Initialized empty Git repository in /Users/bcardiff/Work/Manas/crystal/heroku101/.git/
 
 $ cd heroku101/
-</pre>
+```
 
 **Note:** During the rest of the post all the commands are executed from the `heroku101/` directory.
 
 The `shard.yml` file declares the name of the project as `heroku101`. This will be used by the buildpack to determine the main source file to compile: `./src/heroku101.cr`.
 
-<pre class="code">
+```console
 $ cat shard.yml
 name: heroku101
 version: 0.1.0
 ...
-</pre>
+```
 
 To create a simple http server edit the `src/heroku101.cr` file and add the following content:
 
@@ -66,10 +66,10 @@ server.listen
 
 To build and run the program:
 
-<pre class="code">
+```console
 $ crystal src/heroku101.cr
 Listening on http://0.0.0.0:8080
-</pre>
+```
 
 Open your browser at <a href="http://0.0.0.0:8080" data-proofer-ignore>http://0.0.0.0:8080</a>.
 
@@ -79,12 +79,12 @@ To stop the server just terminate the process by pressing `Ctrl+C`.
 
 Right now the project knows nothing about Heroku. To get started, a Heroku application needs first to be registered. The easiest way to do this is via the ~~[Heroku toolbelt](https://toolbelt.heroku.com/)~~:
 
-<pre class="code">
+```console
 $ heroku create --buildpack https://github.com/crystal-lang/heroku-buildpack-crystal.git
 Creating app... done, ⬢ sleepy-thicket-16179
 Setting buildpack to https://github.com/crystal-lang/heroku-buildpack-crystal.git... done
 https://sleepy-thicket-16179.herokuapp.com/ | https://git.heroku.com/sleepy-thicket-16179.git
-</pre>
+```
 
 The above command will generate a random app name. Check the [docs](https://devcenter.heroku.com/articles/creating-apps) to give your app a name from the beginning.
 
@@ -127,14 +127,14 @@ server.listen
 
 To build and run with `--port` option:
 
-<pre class="code">
+```console
 $ crystal src/heroku101.cr -- --port 9090
 Listening on http://0.0.0.0:9090
-</pre>
+```
 
 Or build an optimised release locally and execute it via:
 
-<pre class="code">
+```console
 $ crystal build src/heroku101.cr --release
 $ ./heroku101
 Listening on http://0.0.0.0:8080
@@ -142,13 +142,13 @@ Listening on http://0.0.0.0:8080
 $ ./heroku101 --port 9090
 Listening on http://0.0.0.0:9090
 ^C
-</pre>
+```
 
 ## Deploy
 
 When you are ready to go live with your app just deploy it the usual way with `git push heroku master`.
 
-<pre class="code">
+```console
 $ git push heroku master
 Counting objects: 22, done.
 Delta compression using up to 8 threads.
@@ -177,7 +177,7 @@ remote:
 remote: Verifying deploy.... done.
 To https://git.heroku.com/sleepy-thicket-16179.git
  * [new branch]      master -> master
-</pre>
+```
 
 The buildpack will:
 
@@ -190,13 +190,13 @@ The buildpack will:
 
 If you want to use a different Crystal version, create a `.crystal-version` file with the desired version, following [crenv](https://github.com/pine/crenv)’s convention.
 
-<pre class="code">
+```console
 $ echo '0.17.1' > .crystal-version
-</pre>
+```
 
 Commit the changes in `.crystal-version` and deploy.
 
-<pre class="code">
+```console
 $ git push heroku master
 Counting objects: 3, done.
 Delta compression using up to 8 threads.
@@ -212,7 +212,7 @@ remote: -----> Installing Crystal (0.17.1 due to .crystal-version file)
 remote: -----> Installing Dependencies
 remote: -----> Compiling src/heroku101.cr (auto-detected from shard.yml)
 ...
-</pre>
+```
 
 You will now notice the `(0.17.1 due to .crystal-version file)` legend.
 

@@ -10,7 +10,7 @@ This is the simplest way to write the Hello World program in Crystal:
 
 ```ruby
 puts "Hello World"
-```</div>
+```
 
 But if you feel like it, you can also use some object oriented programming:
 
@@ -45,11 +45,10 @@ Ok, but what's the purpose of learning a language if we cannot run the damn thin
 First create a file `hello.cr` containing your preferred choice of the previous examples.
 Then type in the console:
 
-<pre class="code">
+```console
 $ bin/crystal hello.cr
 $ ./hello
 Hello World
-$
-</pre>
+```
 
 The compiled output is a standalone executable without any specific runtime dependency. Neat! Isn't it?

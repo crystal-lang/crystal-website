@@ -30,14 +30,14 @@ puts Time.now - time
 
 Let's compare the times.
 
-<pre>
+```console
 $ ruby fib.cr
 433494437
 37.105234
 $ crystal fib.cr --release
 433494437
 00:00:00.9999380
-</pre>
+```
 
 As can be seen, Crystal is giving us a huge increase in performance. Nice!
 
@@ -47,14 +47,14 @@ we aren't comparing the same function, the same algorithm.
 To see that this is true, let's try increasing the number 42 to 46 and run
 the programs again:
 
-<pre>
+```console
 $ ruby fib.cr
 2971215073
 260.206918
 $ crystal fib.cr --release
 -1323752223
 00:00:06.8042220
-</pre>
+```
 
 What did just happen?
 
@@ -81,13 +81,12 @@ might give incorrect results, while Ruby makes sure to always give the correct r
 In my opinion, Ruby's philosophy is, whenever there's a choice between correct behavior and
 good performance, to favor correct behaviour. One can see this in this small example:
 
-<pre>
-$ irb
+```irb
 irb(main):001:0> a = []
 => []
 irb(main):002:0> a << a
 => [[...]]
-</pre>
+```
 
 Note that when printing an array, Ruby notices that it reached the same array it was printing,
 so it printed `[...]` to show this. The program didn't hang up, recursively trying to print the
@@ -97,7 +96,7 @@ lookup is performed.
 
 The same happens when you inspect an object, and the object has a reference to itself:
 
-<pre>
+```irb
 irb(main):001:0> class Foo
 irb(main):002:1>   def initialize
 irb(main):003:2>     @self = self
@@ -106,7 +105,7 @@ irb(main):005:1> end
 => :initialize
 irb(main):006:0> Foo.new
 => #<Foo:0x007fc7429bbe30 @self=#<Foo:0x007fc7429bbe30 ...>>
-</pre>
+```
 
 These subtleties aren't immediately visible in Ruby, but once you discover them they make
 you have a profound respect for Matz and his team.
@@ -139,11 +138,11 @@ puts Time.now - time
 
 Let's run it:
 
-<pre>
+```console
 $ crystal fib.cr --release
 433494437
 00:02:28.8212840
-</pre>
+```
 
 Now we get the correct result, but note that this is about 4~5 times slower than Ruby.
 Why?
@@ -178,11 +177,11 @@ puts Time.now - time
 
 Running it:
 
-<pre>
+```console
 $ crystal fib.cr --release
 433494437
 00:00:00.0006460
-</pre>
+```
 
 Much better! And way faster than Ruby. But, of course, we are cheating because Ruby still
 uses the old, slow algorithm. So to be fair, we must update our Ruby implementation:
@@ -205,11 +204,11 @@ puts Time.now - time
 
 Running it:
 
-<pre>
+```console
 $ ruby fib.rb
 433494437
 3.6e-05
-</pre>
+```
 
 Ruby is still faster than Crystal in this case, maybe because no Bignum was created in this
 case.
@@ -247,22 +246,22 @@ puts Time.now - time
 
 Running it:
 
-<pre>
+```console
 $ crystal fib.cr --release
 433494437
 00:00:00.0006910
-</pre>
+```
 
 Hmmm... it didn't change much. But if we try with a bigger number, say 300_000, these are the times:
 
-<pre>
+```console
 $ ruby fib.rb
 # number omitted
 1.880515
 $ crystal fib.cr --release
 # number omitted
 00:00:00.7621470
-</pre>
+```
 
 It seems that with big numbers, and avoiding creating multiple BigInt instance, Crystal performs
 a bit better than Ruby in this case.
