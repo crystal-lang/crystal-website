@@ -52,7 +52,7 @@ Crystal does a great job of complaining when a method call on a variable isn’t
 
 Observe what happens when compiling an Amber application with this broken template:
 
-```ruby
+```slim
 - if domain.name.blank?
   p No domain name
 ```
