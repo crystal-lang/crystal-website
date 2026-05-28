@@ -5,7 +5,7 @@ page_title: Install on macOS
 
 The easiest way to install Crystal on macOS is with [Homebrew](http://brew.sh/).
 
-```bash
+```sh
 brew update
 brew install crystal
 ```
@@ -14,7 +14,7 @@ brew install crystal
 
 When a new Crystal version is released you can upgrade your system using:
 
-```bash
+```sh
 brew update
 brew upgrade crystal
 ```

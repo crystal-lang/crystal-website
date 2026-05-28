@@ -11,13 +11,13 @@ Download the file for your platform and uncompress it. Inside it you will have a
 
 To make it simpler to use, you can create a symbolic link available in the path:
 
-```bash
+```sh
 ln -s /full/path/to/bin/crystal /usr/local/bin/crystal
 ```
 
 Then you can invoke the compiler by just typing:
 
-```bash
+```sh
 crystal --version
 ```
 

@@ -16,7 +16,7 @@ which determine the active toolchain and C/C++ runtime libraries. Crystal is
 currently available for the UCRT64, CLANG64, CLANGARM64, and MINGW64
 environments. To install or upgrade Crystal for one of the environments:
 
-```bash
+```sh
 pacman -Sy mingw-w64-ucrt-x86_64-crystal   # UCRT64 environment
 pacman -Sy mingw-w64-clang-x86_64-crystal  # CLANG64 environment
 pacman -Sy mingw-w64-clang-aarch64-crystal # CLANGARM64 environment
@@ -25,7 +25,7 @@ pacman -Sy mingw-w64-x86_64-crystal        # MINGW64 environment
 
 Shards can be installed or upgraded similarly:
 
-```bash
+```sh
 pacman -Sy mingw-w64-ucrt-x86_64-shards # ditto for other environments
 ```
 
@@ -34,7 +34,7 @@ the installation process by not having to supply the full environment prefix; it
 provides `pacboy`, a Pacman wrapper that automatically infers this prefix from
 the currently active environment. To install Crystal and Shards this way:
 
-```bash
+```sh
 pacman -Sy pactoys
 pacboy -S crystal shards
 ```
@@ -43,6 +43,6 @@ pacboy -S crystal shards
 
 To remove Crystal on MSYS2:
 
-```bash
+```sh
 pacman -R mingw-w64-ucrt-x86_64-crystal # ditto for other environments
 ```

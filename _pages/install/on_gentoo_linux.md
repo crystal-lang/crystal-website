@@ -24,7 +24,7 @@ You might want to take a look at the available configuration flags first:
 
 ## Install
 
-```bash
+```sh
 su -
 emerge -a dev-lang/crystal
 ```
