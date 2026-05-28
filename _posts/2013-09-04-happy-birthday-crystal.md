@@ -29,7 +29,7 @@ smart as possible and infers the types for you.
 
 Primitive types map to native machine types.
 
-```ruby
+```crystal
 true    # Bool
 1       # Int32
 1_u64   # UInt64
@@ -42,7 +42,7 @@ true    # Bool
 
 They come in many flavors, like in Ruby, and they also support interpolation.
 
-```ruby
+```crystal
 a = "World"
 b = "Hello #{a}" #=> "Hello World"
 ```
@@ -56,7 +56,7 @@ size and pointer to the chars buffers, but everything else is built on top of th
 
 ## Symbols
 
-```ruby
+```crystal
 :foo
 ```
 
@@ -68,7 +68,7 @@ implementing Symbol#to_s (but there's no way right now to do String#intern).
 You don't need to specify the type of a variable. If it is assigned multiple types,
 it will have those types at compile-time. At run-time it will have only one.
 
-```ruby
+```crystal
 if some_condition
   a = 1
 else
@@ -83,7 +83,7 @@ a.succ # Error, Float64 doesn't have a 'succ' method
 
 You can use "is_a?" to check for a type:
 
-```ruby
+```crystal
 if a.is_a?(Int32)
   a.succ # Ok, here a can only be an Int32
 end
@@ -91,7 +91,7 @@ end
 
 You can even use "responds_to?":
 
-```ruby
+```crystal
 if a.responds_to?(:succ)
   a.succ # Ok
 end
@@ -102,7 +102,7 @@ end
 In Crystal methods can be overloaded. The overloads come from the number of arguments,
 type restrictions and _yieldness_ of a method.
 
-```ruby
+```crystal
 # foo 1
 def foo(x, y)
   x + y
@@ -141,7 +141,7 @@ and needs to be re-thought.
 No need to specify the types of instance variables, but all types assigned to
 an instance variable will make that variable have a union type.
 
-```ruby
+```crystal
 class Foo
   # We prefer getter, setter and property over
   # attr_reader, attr_writer and attr_accessor
@@ -167,7 +167,7 @@ foo2 = Foo.new('a')
 If you really need different Foo classes with different types for @value,
 you can use a generic class:
 
-```ruby
+```crystal
 class Foo(T)
   getter :value
 
@@ -189,7 +189,7 @@ Array and Hash are generic classes too, but they can also be constructed using
 literals. When elements are specified, the generic type variables are inferred.
 If no element is specified, you have to tell Crystal the generic type variables.
 
-```ruby
+```crystal
 a = [1, 2, 3]            # a is an Array(Int32)
 b = [1, 1.5, 'a']        # b is an Array(Int32 | Float64 | Char)
 c = [] of String         # c is an Array(String), same as doing Array(String).new
@@ -224,7 +224,7 @@ so we need some time to think it over.
 You can declare bindings to C in Crystal, no need to use C, make wrappers or
 use another language. For example, this is part of the SDL binding:
 
-```ruby
+```crystal
 lib LibSDL("SDL")
   INIT_TIMER       = 0x00000001_u32
   INIT_AUDIO       = 0x00000010_u32
@@ -249,7 +249,7 @@ value = LibSDL.init(LibSDL.INIT_TIMER)
 
 You can allocate memory and interface with C by having Pointers as a type in the language.
 
-```ruby
+```crystal
 values = Pointer(Int32).malloc(10) # Ask for 10 ints
 ```
 
@@ -258,7 +258,7 @@ values = Pointer(Int32).malloc(10) # Ask for 10 ints
 Regular expressions are implemented, for now, with C bindings to the PCRE library. Again,
 `Regexp` is entirely written in Crystal.
 
-```ruby
+```crystal
 "foobarbaz" =~ /(.+)bar(.+)/ #=> 0
 $1                           #=> "foo"
 $2                           #=> "baz
@@ -278,7 +278,7 @@ numbers and filenames in the stacktraces.
 You can declare functions to be exported to C, so you can compile Crystal code and use it in C
 (although there's still no compiler flag to generate an object file, but it should be easy to implement).
 
-```ruby
+```crystal
 fun my_c_function(x : Int32) : Int32
   "Yay, I can use string interpolation and call it #{x} times from C"
 end
@@ -289,7 +289,7 @@ end
 This is an experimental feature of the language where you can generate source code
 from AST nodes.
 
-```ruby
+```crystal
 macro generate_method(name, value)
   "
   def #{name}
@@ -311,7 +311,7 @@ feature might disappear.
 
 Similar to yield, but changes the implicit scope of the block.
 
-```ruby
+```crystal
 def foo
   # -1 becomes the default scope where methods
   # are looked up in the given block
@@ -335,7 +335,7 @@ we find it easier to implement it this way, and maybe easier to use.
 We'be built a [very small clone of RSpec](https://github.com/crystal-lang/crystal/blob/master/src/spec.cr) and we are using it to test the standard
 library as well as the new compiler. Here's a sample spec for the Array class:
 
-```ruby
+```crystal
 require "spec"
 
 describe "Array" do

@@ -8,13 +8,13 @@ tags: language
 
 This is the simplest way to write the Hello World program in Crystal:
 
-```ruby
+```crystal
 puts "Hello World"
 ```
 
 But if you feel like it, you can also use some object oriented programming:
 
-```ruby
+```crystal
 class Greeter
   def initialize(@name : String )
   end
@@ -30,7 +30,7 @@ g.salute
 
 Or maybe with blocks:
 
-```ruby
+```crystal
 "Hello world".each_char do |char|
   print char
 end

@@ -10,14 +10,14 @@ tags: [language, types]
 
 The story of the `typeof` expression begins with array literals. In Crystal you can write
 
-```ruby
+```crystal
 array = [1, 2, 3]
 ```
 
 and the compiler will infer that the array is an `Array(Int32)`, meaning it can only contain
 32 bits integers. And you can also write:
 
-```ruby
+```crystal
 array = [1, 'a', true]
 ```
 
@@ -28,13 +28,13 @@ program's execution.
 Literals in the language, like array, hash and regular expression (regex) literals, are simple syntax rewrites to
 regular standard library calls. In the case of a regex, this:
 
-```ruby
+```crystal
 /foo(o+)/
 ```
 
 is rewritten to:
 
-```ruby
+```crystal
 Regex.new("foo(o+)")
 ```
 
@@ -42,7 +42,7 @@ The rewrite of array literals needs a bit more thought. Arrays are generic, mean
 with a type `T` that specifies what type they can hold, like the `Array(Int32)` and `Array(Int32 | Char | Bool)`
 mentioned earlier. The non-literal way to create one is:
 
-```ruby
+```crystal
 Array(Int32 | Char | Bool).new
 ```
 
@@ -51,7 +51,7 @@ And so, `typeof` was born. In the beginning this was called `type merge` and it 
 that you couldn't express (there was no syntax for it), but the compiler used it for these literals. An
 example rewrite:
 
-```ruby
+```crystal
 array = [1, 'a', true]
 
 # Rewritten to this, where <type_merge>(exp1, exp2, ...) computes
@@ -72,13 +72,13 @@ We later decided that because this `<type_merge>` node worked pretty well, and w
 to let users use this `<type_merge>` node, and named it `typeof`, because this name is pretty familiar in other languages. Now
 writing this:
 
-```ruby
+```crystal
 array = [1, 'a', true]
 ```
 
 and this:
 
-```ruby
+```crystal
 Array(typeof(1, 'a', true)).build(3) do |buffer|
   buffer[0] = 1
   buffer[1] = 'a'
@@ -95,7 +95,7 @@ Little did we know that `typeof` would bring a lot of power to the language.
 
 One obvious use-case of typeof is to ask the compiler the inferred type of an expression. For example:
 
-```ruby
+```crystal
 puts typeof(1) #=> Int32
 puts typeof([1, 2, 3].map &.to_s) #=> Array(String)
 ```
@@ -103,7 +103,7 @@ puts typeof([1, 2, 3].map &.to_s) #=> Array(String)
 At this point you might think that `typeof(exp)` is similar to `exp.class`. However,
 the first gives you the compile-time type, while the second gives you the runtime type:
 
-```ruby
+```crystal
 exp = rand(0..1) == 0 ? 'a' : true
 puts typeof(exp) #=> Char | Bool
 puts exp.class   #=> Char (or Bool, depending on the chosen random value)
@@ -111,7 +111,7 @@ puts exp.class   #=> Char (or Bool, depending on the chosen random value)
 
 Another simple use case is to create a type based on another object's type:
 
-```ruby
+```crystal
 hash = {1 => 'a', 2 => 'b'}
 other_hash = typeof(hash).new #:: Hash(Int32, Char)
 ```
@@ -132,7 +132,7 @@ write this method.
 
 First, we define a method whose type will be the one we want:
 
-```ruby
+```crystal
 def not_nil(exp)
   if exp.is_a?(Nil)
     raise "oops, nil"
@@ -144,7 +144,7 @@ end
 
 If `exp` is `Nil` we raise an exception, otherwise we return `exp`. Let's check its type:
 
-```ruby
+```crystal
 puts typeof(not_nil(1))   #=> Int32
 puts typeof(not_nil(nil)) #=> NoReturn
 ```
@@ -157,7 +157,7 @@ Another expression that has `NoReturn` is, for example, `exit`.
 
 Let's try and give `not_nil` something that's a union type:
 
-```ruby
+```crystal
 element = rand(0..1) == 0 ? 1 : nil
 puts typeof(element)          #=> Int32 | Nil
 puts typeof(not_nil(element)) #=> Int32
@@ -171,7 +171,7 @@ through the stack.
 
 Now we are ready to implement the compact method:
 
-```ruby
+```crystal
 class Array
   def compact
     result = Array(typeof(not_nil(self[0]))).new
@@ -192,7 +192,7 @@ puts typeof(compacted) #=> Array(Int32)
 
 The magical line is the first one in the method:
 
-```ruby
+```crystal
 Array(typeof(not_nil(self[0]))).new
 ```
 
@@ -212,7 +212,7 @@ array.
 
 Note that this has to work recursively. Let's see some expected behaviour:
 
-```ruby
+```crystal
 ary1 = [1, [2, [3], 'a']]
 puts typeof(ary1)             #=> Array(Int32 | Array(Int32 | Array(Int32) | Char))
 
@@ -224,7 +224,7 @@ puts typeof(ary1_flattened)   #=> Array(Int32 | Char)
 Like before, let's start by writing a method whose type will have the type that we need for the flattened
 array:
 
-```ruby
+```crystal
 def flatten_type(object)
   if object.is_a?(Array)
     flatten_type(object[0])
@@ -243,7 +243,7 @@ the type is that of the object.
 
 And with this, we are ready to implement flatten:
 
-```ruby
+```crystal
 class Array
   def flatten
     result = Array(typeof(flatten_type(self))).new
