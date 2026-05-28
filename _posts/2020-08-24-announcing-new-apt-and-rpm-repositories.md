@@ -193,7 +193,7 @@ As before, the repository metadata is signed with the Bintray shared GPG key and
 
 Replace the `{DISTRO}` and `{CHANNEL}` and you are all set.
 
-```txt
+```ini
 [crystal]
 name=Crystal
 baseurl=https://dl.bintray.com/crystal/rpm/{DISTRO}/x86_64/{CHANNEL}
