@@ -9,7 +9,7 @@ Gentoo Linux includes the Crystal compiler in the main overlay.
 
 You might want to take a look at the available configuration flags first:
 
-```bash
+```text
 # equery u dev-lang/crystal
 [ Legend : U - final flag setting for installation]
 [        : I - package is installed with flag     ]

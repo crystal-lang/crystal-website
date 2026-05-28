@@ -23,7 +23,7 @@ Amber projects follow similar design to Rails and other MVC focused web framewor
 
 Rails veterans will recognize many of these files and folders immediately:
 
-```plaintext
+```text
 .. (up a dir)
 </repositories/offline_pink/
 ▸ db/migrations/
@@ -59,7 +59,7 @@ Observe what happens when compiling an Amber application with this broken templa
 
 The compiler complains, notifies you of the problem, and even suggests a correction:
 
-```ruby
+```text
 in macro 'macro_4598546880' expanded macro: embed:1, line 1:
 
 >  1. if domain.name.blank?
@@ -104,7 +104,7 @@ This particular request is _slow_ by Amber standards, but it checks all the boxe
 
 Compare to a page with similar database and rendering overhead in a Rails 5 application:
 
-```plaintext
+```text
 processing by BookmarksController#index as HTML
 Completed 200 OK in 251ms (Views: 217.9ms | ActiveRecord: 15.9ms)
 ```

@@ -153,7 +153,7 @@ What follows is a description of how these repositories are laid out for the sak
 
 The deb repository declared with `deb_distribution=all` and `deb_component` is used for the channel.
 
-```txt
+```text
 deb https://dl.bintray.com/crystal/deb all stable
 deb https://dl.bintray.com/crystal/deb all unstable
 deb https://dl.bintray.com/crystal/deb all nightly
