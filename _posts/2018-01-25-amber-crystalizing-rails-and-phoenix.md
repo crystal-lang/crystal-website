@@ -89,7 +89,7 @@ Last but certainly not least, thanks to Crystal, Amber is _**fast**_. The compil
 
 Check out this log excerpt from a project I've been working on:
 
-```plaintext
+```log
 10:49:15 Request	| Started 2018-01-11 10:49:15 -07:00
 10:49:15 Request	| Status: 200  Method: GET  Pipeline: web Format: html
 10:49:15 Request	| Requested Url: /domain/30
@@ -113,14 +113,14 @@ That's right. Thanks to the speed of Crystal, Amber can complete an entire reque
 
 For a real sample of speed, this excerpt is from a basic Read route such as this:
 
-```ruby
+```crystal
   def profile
     user = current_user
     render "show.slang"
   end
 ```
 
-```plaintext
+```log
 01:19:11 Request    | Started 2018-01-11 13:19:11 -07:00
 01:19:11 Request    | Status: 200  Method: GET  Pipeline: web Format: html
 01:19:11 Request    | Requested Url: /my/profile
@@ -129,7 +129,7 @@ For a real sample of speed, this excerpt is from a basic Read route such as this
 
 Or even faster, serving a static file:
 
-```plaintext
+```log
 01:19:11 Request    | Started 2018-01-11 13:19:11 -07:00
 01:19:11 Request    | Status: 200  Method: GET  Pipeline: static Format:
 01:19:11 Request    | Requested Url: /dist/main.bundle.js
@@ -138,7 +138,7 @@ Or even faster, serving a static file:
 
 Amazingly, because Amber views are compiled in, rendering a template and layout can be _significantly faster_ than serving static files when the application is configured for it[^configuration]:
 
-```plaintext
+```log
 01:45:15 Request	| Started 2018-01-17 13:45:15 -07:00
 01:45:15 Request	| Status: 200  Method: GET  Pipeline: web Format: html
 01:45:15 Request	| Requested Url: /
