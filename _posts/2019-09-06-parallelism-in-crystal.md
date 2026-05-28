@@ -104,7 +104,7 @@ To keep things as simple as possible, regarding the scheduling, once a fiber sta
 
 Compiling programs with multi-threading support is available behind the `preview_mt` flag for now. And check that you are using Crystal 0.31.0 (not yet released) or a local build of master.
 
-```bash
+```console
 $ crystal --version
 Crystal 0.31.0
 
@@ -115,7 +115,7 @@ $ crystal build -Dpreview_mt main.cr -o main
 
 The number of worker threads can be customized via `CRYSTAL_WORKERS` env var. Its default is `4`.
 
-```bash
+```console
 $ ./main # will use 4 workers
 $ CRYSTAL_WORKERS=4 ./main
 $ CRYSTAL_WORKERS=8 ./main
