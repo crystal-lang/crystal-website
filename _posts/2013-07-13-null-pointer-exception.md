@@ -22,7 +22,7 @@ The good news? **Crystal doesn't allow you to have null pointer exceptions**.
 
 Let's start with the simplest example:
 
-```ruby
+```crystal
 nil.foo
 ```
 
@@ -40,7 +40,7 @@ And since it doesn't have a method named "foo", an error is issued **at compile 
 
 Let's try with a slightly more complex, but made up, example:
 
-```ruby
+```crystal
 class Box
   getter :value
 
@@ -103,7 +103,7 @@ but it also shows you where the `nil` originated. It's in the `case` expression,
 
 One last example, which might well be real code:
 
-```ruby
+```crystal
 require "socket"
 
 # Create a new TCPServer at port 8080
@@ -151,7 +151,7 @@ Nil trace:
 
 To prevent this error, you can do the following:
 
-```ruby
+```crystal
 require "socket"
 
 server = TCPServer.new(8080)

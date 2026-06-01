@@ -18,7 +18,7 @@ How easy? Let's take a look at some code.
 
 **Q:** Which of the following modules are written in Ruby? Which in Crystal?
 
-```ruby
+```crystal
 module Year
   def self.leap?(year)
     year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)
@@ -26,7 +26,7 @@ module Year
 end
 ```
 
-```ruby
+```crystal
 module Hamming
   def self.distance(a,b)
     a.chars.zip(b.chars).count{|first, second| first != second }
@@ -52,14 +52,14 @@ Crystal is a compiled language and checks all your method inputs and outputs at 
 
 Let's revisit the `Year::leap?` example from above. In Ruby, what happens when the input isn't an integer?
 
-```ruby
+```crystal
 Year.leap?("2016") #=> false
 Year.leap?(Date.new(2016, 1, 1)) #=> undefined method `%' for #<Date: 2016-01-01 ... >
 ```
 
 For a `String` we get the wrong answer, for a `Date` we get a runtime exception. Fixing things in Ruby would require at least one `is_a?` statement:
 
-```ruby
+```crystal
 module Year
   def self.leap?(input)
     if input.is_a? Integer
@@ -79,7 +79,7 @@ In Crystal, we have the option of explicitly typing our inputs (and outputs). We
 
 We get helpful messages **at compile time**, rather than runtime:
 
-```ruby
+```crystal
 Year.leap?("2016")
 Error in line 10: no overload matches 'Year.leap?' with type String
 Overloads are:
@@ -88,7 +88,7 @@ Overloads are:
 
 If we want to add support for `Time` (think `DateTime` in Ruby) in our module, we can overload `Year::leap?`:
 
-```ruby
+```crystal
 module Year
   def self.leap?(year : Int)
     year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)
@@ -144,7 +144,7 @@ How long does it take to figure out what that code is doing? If you've never wor
 
 Compare that to [Crystal's implementation of `Enumerable#all?`](https://github.com/crystal-lang/crystal/blob/v0.24.1/src/enumerable.cr#L46)
 
-```ruby
+```crystal
 def all?
   each { |e| return false unless yield e }
   true

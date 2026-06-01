@@ -5,13 +5,13 @@ page_title: Install from Snapcraft
 
 The Crystal snap requires to be run in classic confinement. If you have `snapd` installed you're ready to install Crystal:
 
-```bash
+```sh
 sudo snap install crystal --classic
 ```
 
 You can also install the latest nightly build by using the `edge` channel.
 
-```bash
+```sh
 sudo snap install crystal --classic --edge
 ```
 

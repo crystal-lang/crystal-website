@@ -48,7 +48,7 @@ version: 0.1.0
 
 To create a simple http server edit the `src/heroku101.cr` file and add the following content:
 
-```ruby
+```crystal
 # file: src/heroku101.cr
 require "http/server"
 
@@ -92,7 +92,7 @@ Before deploying, we need to make a small change. Heroku randomly assigns a port
 
 So, add a `require "option_parser"` at the beginning of `src/heroku101.cr` and override the `port` variable default with:
 
-```ruby
+```crystal
 OptionParser.parse! do |opts|
   opts.on("-p PORT", "--port PORT", "define port to run server") do |opt|
     port = opt.to_i
@@ -102,7 +102,7 @@ end
 
 The full `src/heroku101.cr` should be:
 
-```ruby
+```crystal
 # file: src/heroku101.cr
 require "http/server"
 require "option_parser"

@@ -23,7 +23,7 @@ Amber projects follow similar design to Rails and other MVC focused web framewor
 
 Rails veterans will recognize many of these files and folders immediately:
 
-```plaintext
+```text
 .. (up a dir)
 </repositories/offline_pink/
 ▸ db/migrations/
@@ -52,14 +52,14 @@ Crystal does a great job of complaining when a method call on a variable isn’t
 
 Observe what happens when compiling an Amber application with this broken template:
 
-```ruby
+```slim
 - if domain.name.blank?
   p No domain name
 ```
 
 The compiler complains, notifies you of the problem, and even suggests a correction:
 
-```ruby
+```text
 in macro 'macro_4598546880' expanded macro: embed:1, line 1:
 
 >  1. if domain.name.blank?
@@ -89,7 +89,7 @@ Last but certainly not least, thanks to Crystal, Amber is _**fast**_. The compil
 
 Check out this log excerpt from a project I've been working on:
 
-```plaintext
+```log
 10:49:15 Request	| Started 2018-01-11 10:49:15 -07:00
 10:49:15 Request	| Status: 200  Method: GET  Pipeline: web Format: html
 10:49:15 Request	| Requested Url: /domain/30
@@ -104,7 +104,7 @@ This particular request is _slow_ by Amber standards, but it checks all the boxe
 
 Compare to a page with similar database and rendering overhead in a Rails 5 application:
 
-```plaintext
+```text
 processing by BookmarksController#index as HTML
 Completed 200 OK in 251ms (Views: 217.9ms | ActiveRecord: 15.9ms)
 ```
@@ -113,14 +113,14 @@ That's right. Thanks to the speed of Crystal, Amber can complete an entire reque
 
 For a real sample of speed, this excerpt is from a basic Read route such as this:
 
-```ruby
+```crystal
   def profile
     user = current_user
     render "show.slang"
   end
 ```
 
-```plaintext
+```log
 01:19:11 Request    | Started 2018-01-11 13:19:11 -07:00
 01:19:11 Request    | Status: 200  Method: GET  Pipeline: web Format: html
 01:19:11 Request    | Requested Url: /my/profile
@@ -129,7 +129,7 @@ For a real sample of speed, this excerpt is from a basic Read route such as this
 
 Or even faster, serving a static file:
 
-```plaintext
+```log
 01:19:11 Request    | Started 2018-01-11 13:19:11 -07:00
 01:19:11 Request    | Status: 200  Method: GET  Pipeline: static Format:
 01:19:11 Request    | Requested Url: /dist/main.bundle.js
@@ -138,7 +138,7 @@ Or even faster, serving a static file:
 
 Amazingly, because Amber views are compiled in, rendering a template and layout can be _significantly faster_ than serving static files when the application is configured for it[^configuration]:
 
-```plaintext
+```log
 01:45:15 Request	| Started 2018-01-17 13:45:15 -07:00
 01:45:15 Request	| Status: 200  Method: GET  Pipeline: web Format: html
 01:45:15 Request	| Requested Url: /

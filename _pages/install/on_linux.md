@@ -17,7 +17,7 @@ for DEB- and RPM-based package managers and installs the respective `crystal` pa
 
 To install the latest stable Crystal release:
 
-```bash
+```sh
 curl -fsSL https://crystal-lang.org/install.sh | sudo bash
 ```
 
@@ -28,13 +28,13 @@ The install script accepts optional arguments for selecting a specific Crystal v
 
 Install nightly build:
 
-```bash
+```sh
 curl -fsSL https://crystal-lang.org/install.sh | sudo bash -s -- --channel=nightly
 ```
 
 Install the 1.10 release:
 
-```bash
+```sh
 curl -fsSL https://crystal-lang.org/install.sh | sudo bash -s -- --version=1.10
 ```
 

@@ -153,7 +153,7 @@ What follows is a description of how these repositories are laid out for the sak
 
 The deb repository declared with `deb_distribution=all` and `deb_component` is used for the channel.
 
-```txt
+```text
 deb https://dl.bintray.com/crystal/deb all stable
 deb https://dl.bintray.com/crystal/deb all unstable
 deb https://dl.bintray.com/crystal/deb all nightly
@@ -193,7 +193,7 @@ As before, the repository metadata is signed with the Bintray shared GPG key and
 
 Replace the `{DISTRO}` and `{CHANNEL}` and you are all set.
 
-```txt
+```ini
 [crystal]
 name=Crystal
 baseurl=https://dl.bintray.com/crystal/rpm/{DISTRO}/x86_64/{CHANNEL}

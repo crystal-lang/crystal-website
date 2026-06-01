@@ -23,7 +23,7 @@ These are Nil, Bool, Char and the various number types (Int32, Float64, etc.), S
 
 Let's check how a Bool is represented. For this, let's write this small program:
 
-```ruby
+```crystal
 # test.cr
 x = true
 ```
@@ -72,7 +72,7 @@ That is, the compiler represents a Bool as a single bit, which is pretty efficie
 
 Let's do the same for an int:
 
-```ruby
+```crystal
 x = 1
 ```
 
@@ -92,7 +92,7 @@ is as efficient as possible.
 
 Let's see Symbol now:
 
-```ruby
+```crystal
 x = :one
 y = :two
 ```
@@ -145,7 +145,7 @@ This makes symbols very attractive to use for small groups of constants, because
 
 A Pointer is a generic type that represents a typed pointer to some memory location. For example:
 
-```ruby
+```crystal
 x = Pointer(Int32).malloc(1_u64)
 x.value = 1
 x.value #=> 1
@@ -166,7 +166,7 @@ is very similar to what would be generated in C.
 
 A Tuple is a fixed-size, immutable sequence of values, where the types at each position are known at compile time.
 
-```ruby
+```crystal
 x = {1, true}
 ```
 
@@ -182,7 +182,7 @@ As we can see, a tuple is represented as an [LLVM structure](http://llvm.org/doc
 packs values sequentially. This representation of tuples allows us, for example, to decompose an Int32 into its bytes,
 in this way:
 
-```ruby
+```crystal
 x = 1234
 ptr = pointerof(x) as {UInt8, UInt8, UInt8, UInt8}*
 puts ptr.value #=> {21, 205, 91, 7}
@@ -194,7 +194,7 @@ A StaticArray is a fixed-size, mutable sequence of values of a same type, alloca
 The prelude includes safe ways to create them, but since we are using a bare-bones prelude an unsafe (will be initialized
 to data containing garbage) way to create them is this:
 
-```ruby
+```crystal
 x = uninitialized Int32[8]
 ```
 
@@ -211,7 +211,7 @@ recommended type for all other operations.
 
 Here's an enum:
 
-```ruby
+```crystal
 enum Color
   Red
   Green
@@ -225,7 +225,7 @@ An enum is, in a way, similar to Symbol: numbers associated to names so we can u
 magic numbers. As expected, an enum is represented as an i32, that is four bytes, unless specified otherwise
 in its declaration:
 
-```ruby
+```crystal
 enum Color : UInt8
   Red
   Green
@@ -235,7 +235,7 @@ end
 
 The nice thing about enums is that you can print them and you get their name, not their value:
 
-```ruby
+```crystal
 puts Color::Green #=> Green
 ```
 
@@ -247,7 +247,7 @@ and also comfortable to use and to debug with (like, you get names instead of nu
 
 A Proc is a function pointer with an optional closure data information. For example:
 
-```ruby
+```crystal
 f = ->(x : Int32) { x + 1 }
 ```
 
@@ -305,7 +305,7 @@ entry:
 A bit harder to digest than the above examples, but it's basically assigning a pointer to `~fun_literal_1` in the first
 position and `null` in the second. If our Proc captures a local variable:
 
-```ruby
+```crystal
 a = 1
 f = ->(x : Int32) { x + a }
 ```
@@ -371,13 +371,13 @@ will be allocated by the GC and released when no longer needed.
 
 Classes are objects too:
 
-```ruby
+```crystal
 x = Int32
 ```
 
 Not surprisingly, a class is represented as an Int32:
 
-```ruby
+```crystal
 %x = alloca i32
 ...
 store i32 45, i32* %x
@@ -394,7 +394,7 @@ struct's value is passed, copied, across variables and methods.
 
 Let's try it:
 
-```ruby
+```crystal
 class Point
   def initialize(@x, @y)
   end
@@ -417,7 +417,7 @@ right now, but when we'll talk about how unions are represented it will make mor
 
 Let's see the same for a struct:
 
-```ruby
+```crystal
 struct Point
   def initialize(@x, @y)
   end
@@ -442,7 +442,7 @@ Now comes the fun part: unions!
 
 Crystal supports unions of arbitrary types. For example you can have a variable that has either an Int32 or a Bool:
 
-```ruby
+```crystal
 if 1 == 2
   x = 3
 else
@@ -482,13 +482,13 @@ that are very common: nilable types.
 We didn't talk about Nil previously, but since it can only contain a single value, and you can't use `void` for a value,
 its represented as i1:
 
-```ruby
+```crystal
 x = nil # %x = alloca i1
 ```
 
 Let's make now a union of nil and a class:
 
-```ruby
+```crystal
 if 1 == 2
   x = nil
 else
@@ -524,7 +524,7 @@ talked before). We try to minimize the runtime data needed for a program to work
 execution, sometimes sacrificing the resulting binary size (which doesn't grow a lot, either). For example, let's
 consider this class hierarchy:
 
-```ruby
+```crystal
 module Moo
   def foo
     1
@@ -571,7 +571,7 @@ entry:
 
 What happens if we create an instance of Bar and we invoke `foo` on it too:
 
-```ruby
+```crystal
 Bar.new.foo
 Baz.new.foo
 ```
@@ -611,7 +611,7 @@ All of the above is possible because the compiler knows the exact type of `Bar.n
 if the compiler doesn't know this? Let's start with a simple union where types are not classes
 in the same hierarchy:
 
-```ruby
+```crystal
 class Foo
   def foo
     1
@@ -651,7 +651,7 @@ Although you can do this without a class hierarchy, they are a very common way o
 
 Consider this class hierarchy:
 
-```ruby
+```crystal
 class Foo; end
 class Bar < Foo; end
 class Baz < Bar; end
@@ -665,7 +665,7 @@ range 1-3, and for Foo it assigns the range 1-4.
 
 Now, consider this:
 
-```ruby
+```crystal
 class Foo
   def foo
     1
@@ -697,7 +697,7 @@ or one of its subclasses, we can solve this with at most two comparisons.
 
 Finally, an interesting aspect of Crystal is that method dispatch happens based on possibly many types:
 
-```ruby
+```crystal
 def foo(x : Int32, y : Char)
 end
 

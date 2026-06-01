@@ -34,7 +34,7 @@ This  allows you to focus on how to delight your customers with a speedy, reliab
 
 Let’s say we want to get all users whose names include “kat”. Here’s how we’d do it in Lucky:
 
-```ruby
+```crystal
 # Will find users with the name "Kathryn", "Katy", etc.
 UserQuery.new.name.ilike("kat%")
 ```
@@ -49,7 +49,7 @@ One of the more annoying issues in Rails is forgetting to set the right HTTP met
 
 Here’s an example for deleting a comment:
 
-```ruby
+```crystal
 link_to "Delete", comment_path(@comment)
 ```
 
@@ -59,7 +59,7 @@ _In Lucky, the HTTP verb is automatically used in links, forms, and buttons. You
 
 The right verb (DELETE) is automatically set for you:
 
-```ruby
+```crystal
 link "Delete comment", to: Comment::Delete.with(@comment.id)
 ```
 
@@ -67,7 +67,7 @@ link "Delete comment", to: Comment::Delete.with(@comment.id)
 
 Let’s say you have any action with a conditional like this:
 
-```ruby
+```crystal
 class SamlSignIns::Create < BrowserAction
   action do
     if user.present? && sso_enabled?
@@ -82,7 +82,7 @@ end
 
 _Lucky will catch a bug for you and give you a helpful message to guide you in the right direction:_
 
-```ruby
+```crystal
 SamlSignIns::Create returned Lucky::Response | Nil, but it must return a Lucky::Response.
 
 Try this...

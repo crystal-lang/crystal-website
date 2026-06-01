@@ -12,7 +12,7 @@ To my surprise, performance was pretty bad. This post is the written legacy of t
 
 Here's a `shard.yml` if you want to try to run the benchmarks at home:
 
-```yml
+```yaml
 name: blake3-struct-test
 version: 0.1.0
 dependencies:
