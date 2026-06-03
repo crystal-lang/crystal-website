@@ -1,6 +1,7 @@
 default: true
 
-heading-style: "setext"
+heading-style:
+  style: "atx"
 
 no-inline-html: false
 line-length: false
