@@ -28,6 +28,3 @@ fenced-code-language: false
 commands-show-output: false
 
 no-alt-text: false
-
-hard_tab:
-  code_blocks: false
