@@ -33,7 +33,7 @@ Well, we talked about several different alternatives. Rust wasn’t as conducive
 
 <u>It's a lot faster, twice as fast as Go, for example</u>. We tried using Go at first, because it's 1.0 and it’s quite popular, but in our experience Crystal outperformed Go and is more enjoyable to write. Both our investors and stakeholders love the infotainment system and how fast it runs.
 
-For what we are trying to do, either C or C++ are pretty much the standard. We are also trying to work with web utilities and web languages like html, javascript and chromium. We talked to a lot of people on the WebOS project, because they proved that it worked on very small processors and mobile devices as an interface.
+For what we are trying to do, either C or C++ are pretty much the standard. We are also trying to work with web utilities and web languages like html, JavaScript and chromium. We talked to a lot of people on the WebOS project, because they proved that it worked on very small processors and mobile devices as an interface.
 
 It’s also reasonably easy to write C Bindings in Crystal. With Python or Ruby if there isn’t already a binding or wrapper for a C Library it takes a lot more time. I have been using Crystal for a lot of years now, on servers and clients, and it never crashed. It may not be stable in the sense of “no breaking changes”, but <u>it’s very stable in the sense that once it compiles it won’t crash. Either way, it’s more stable than Java</u>.
 

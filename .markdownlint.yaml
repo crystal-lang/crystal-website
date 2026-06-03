@@ -44,6 +44,15 @@ no-blanks-blockquote: false
 # FIXME: We're using some legacy inline HTML.
 no-inline-html: false
 
+# MD044 - Use Proper Capitalization for Names
+proper-names:
+  enabled: true
+  names:
+    - "GitHub"
+    - "Python"
+    - "Markdown"
+    - "JavaScript"
+
 # MD049 - Keep italic text formatting consistent
 emphasis-style:
   style: "underscore"
