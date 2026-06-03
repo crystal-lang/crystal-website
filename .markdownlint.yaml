@@ -28,3 +28,9 @@ fenced-code-language: false
 commands-show-output: false
 
 no-alt-text: false
+
+## Table Rules
+
+# MD060 - Table column style
+# FIXME: Deferred
+table-column-style: false
