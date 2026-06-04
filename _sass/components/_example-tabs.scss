@@ -60,9 +60,6 @@
       scroll-snap-align: start;
       scroll-padding-block-start: 2rem;
 
-      overflow-y: auto;
-      overscroll-behavior-y: contain;
-
       display: grid;
       grid-template-columns: 18em 1fr;
       grid-template-areas:
