@@ -84,8 +84,8 @@ li {
 }
 
 .scroll-snap-x {
-  /* browser decide if x is ok to scroll and show bars on, y hidden */
-  overflow: auto hidden;
+  /* keep horizontal scrolling for tabs; don't block vertical page scroll */
+  overflow-x: auto;
   /* prevent scroll chaining on x scroll */
   overscroll-behavior-x: contain;
   /* scrolling should snap children on x */
