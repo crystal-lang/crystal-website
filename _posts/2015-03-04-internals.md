@@ -686,7 +686,7 @@ obj.foo
 ```
 
 First, the compiler will type `obj` as `Foo+`, meaning it can be Foo or one of its subclasses (read
-more about this [here](http://crystal-lang.org/docs/syntax_and_semantics/virtual_and_abstract_types.html)).
+more about this [in the language reference](http://crystal-lang.org/docs/syntax_and_semantics/virtual_and_abstract_types.html)).
 In this case, there will be only two different method instantiations: one for `Foo+` and one for `Bar+`, since
 Baz and Qux don't redefine that method. To know which one we need to call, we load the type id. Then, instead
 of having to say "if the type id is that of Bar, or Baz or Qux, call Bar#foo, otherwise call Foo#foo`, we

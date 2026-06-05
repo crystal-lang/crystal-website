@@ -15,7 +15,7 @@ We'll start with literals, C functions and some primitives. Then we'll continue 
 control structures, like `if`, `while`, and blocks. Then we'll talk about the special
 `NoReturn` type and type filters.
 
-### Literals
+## Literals
 
 Literals have a type of their own, known by the compiler:
 
@@ -378,7 +378,7 @@ b = a.try &.abs # b is Int32 or Nil
 
 Since doing something depending on whether a value is `Nil` or not is so common, Crystal
 provides another way to do the above. This was shortly explained
-[here](/2013/07/13/null-pointer-exception/), but now we'll explain it
+[in the blog post _Null Pointer Exception_](/2013/07/13/null-pointer-exception/), but now we'll explain it
 better and combine it with the previous explanations.
 
 If a variable is an `if`'s condition, the compiler assumes the variable is not `nil`

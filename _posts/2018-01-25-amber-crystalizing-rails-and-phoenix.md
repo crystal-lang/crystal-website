@@ -29,15 +29,15 @@ Rails veterans will recognize many of these files and folders immediately:
 ▸ db/migrations/
 ▾ src/
   ▾ controllers/
-  	application_controller.cr
-  	user_controller.cr
+    application_controller.cr
+    user_controller.cr
   ▸ mailers/
   ▾ models/
-  	user.cr
+    user.cr
   ▾ views/
-	▾ user/
-    	  new.slang
-    	  show.slang
+  ▾ user/
+        new.slang
+        show.slang
 ```
 
 Models, views, controllers, and migrations are all right where you’d expect them. You’ll feel right at home. Environment config files follow a familiar style and a working asset pipeline is available right out of the box, if you want it (thanks to webpack).
@@ -90,10 +90,10 @@ Last but certainly not least, thanks to Crystal, Amber is _**fast**_. The compil
 Check out this log excerpt from a project I've been working on:
 
 ```log
-10:49:15 Request	| Started 2018-01-11 10:49:15 -07:00
-10:49:15 Request	| Status: 200  Method: GET  Pipeline: web Format: html
-10:49:15 Request	| Requested Url: /domain/30
-10:49:15 Request	| Time Elapsed: 17.52ms
+10:49:15 Request  | Started 2018-01-11 10:49:15 -07:00
+10:49:15 Request  | Status: 200  Method: GET  Pipeline: web Format: html
+10:49:15 Request  | Requested Url: /domain/30
+10:49:15 Request  | Time Elapsed: 17.52ms
 ```
 
 This particular request is _slow_ by Amber standards, but it checks all the boxes:
@@ -139,14 +139,14 @@ Or even faster, serving a static file:
 Amazingly, because Amber views are compiled in, rendering a template and layout can be _significantly faster_ than serving static files when the application is configured for it[^configuration]:
 
 ```log
-01:45:15 Request	| Started 2018-01-17 13:45:15 -07:00
-01:45:15 Request	| Status: 200  Method: GET  Pipeline: web Format: html
-01:45:15 Request	| Requested Url: /
-01:45:15 Request	| Time Elapsed: 371.0µs
-01:45:16 Request	| Started 2018-01-17 13:45:15 -07:00
-01:45:16 Request	| Status: 200  Method: GET  Pipeline: static Format: js
-01:45:16 Request	| Requested Url: /dist/main.bundle.js
-01:45:16 Request	| Time Elapsed: 80.01ms
+01:45:15 Request  | Started 2018-01-17 13:45:15 -07:00
+01:45:15 Request  | Status: 200  Method: GET  Pipeline: web Format: html
+01:45:15 Request  | Requested Url: /
+01:45:15 Request  | Time Elapsed: 371.0µs
+01:45:16 Request  | Started 2018-01-17 13:45:15 -07:00
+01:45:16 Request  | Status: 200  Method: GET  Pipeline: static Format: js
+01:45:16 Request  | Requested Url: /dist/main.bundle.js
+01:45:16 Request  | Time Elapsed: 80.01ms
 ```
 
 No matter what your application is doing, Amber can do it _faster_.
@@ -158,5 +158,5 @@ A lot of software is written for the web today. Ruby and Rails showed the world 
 [^select]: [Relevant log](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5#file-ab_crystal_logs-txt-L1)
 [^validating]: [Relevant log](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5#file-crystal_controller-cr)
 [^rendering]: [Relevant log](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5#file-crystal_view-slim)
-[^unedited-logs]: Unedited logs and code samples comparing Rails and Amber [here](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5)
+[^unedited-logs]: Unedited [logs and code samples comparing Rails and Amber](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5)
 [^configuration]: In order to render templates and views as fast as possible, the route pipeline must be slimmed down to almost nothing, rendering many features inoperable.
