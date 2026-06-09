@@ -1,0 +1,18 @@
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td colspan="4" valign="top" width="25%" style="text-align: center; padding-top: 37px; padding-bottom: 32px;" class="textContent">
+       <h3 style="text-align: center">Thanks to our sponsors</h3>
+    </td>
+  </tr>
+  <tr>
+    {%- for sp in site.data.sponsor_logos_corporate %}
+    <td valign="top" width="25%" style="text-align: center" class="textContent">
+          <a href="{{ sp.url }}" target="_blank" class="sponsor" title="{{ sp.name }}" rel="sponsored nofollow">
+              <img src="/assets/{{ sp.logo }}" width="82" border="0">
+              <span class="small">{{ sp.name }}</span>
+          </a>
+      </td>
+    {%- endfor %}
+  </tr>
+</table>
