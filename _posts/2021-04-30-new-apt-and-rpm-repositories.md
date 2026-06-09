@@ -23,7 +23,7 @@ including the automatic installer script.
 Since bintray is shutting down all operations on May 1st, 2021 our previous repositories
 won't be available anymore. Please update to the new OBS repositories.
 Running the updated installation script should override the previous configuration
-in  `/etc/apt/sources.list.d/crystal.list` and  `/etc/yum.repos.d/crystal.repo`.
+in `/etc/apt/sources.list.d/crystal.list` and `/etc/yum.repos.d/crystal.repo`.
 
 ```shell-session
 $ curl -fsSL https://crystal-lang.org/install.sh | sudo bash

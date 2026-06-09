@@ -32,13 +32,13 @@
         flags = "--no-progress";
       };
     };
-    markdownlint.enable = true;
     prettier = {
       enable = true;
       settings = {
         write = true;
       };
     };
+    rumdl.enable = true;
     typos.enable = true;
   };
 

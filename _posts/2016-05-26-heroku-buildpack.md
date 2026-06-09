@@ -9,7 +9,7 @@ At the end of 2014 a [first draft](https://github.com/manastech/heroku-buildpack
 
 While we continued to develop the language, the tools, and the standard library, the community around Crystal grew. Many were interested in trying their Crystal-powered web apps in Heroku. The [network graph](https://github.com/crystal-lang/heroku-buildpack-crystal/network) at github for the buildpack is quite big, especially for just a bunch of bash scripts!
 
-However, due to some flaws in the approach, the buildpack failed to stay up to date with the latest versions of Crystal; but that is now solved!  Yay!
+However, due to some flaws in the approach, the buildpack failed to stay up to date with the latest versions of Crystal; but that is now solved! Yay!
 
 While efforts to develop web frameworks continue nowadays, we wanted to share the very basic steps to use the Crystal buildpack to deploy a web application in Heroku without the need for any additional dependencies.
 

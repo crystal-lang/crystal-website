@@ -21,6 +21,7 @@ link_actions:
 - '[Nightlies](/install/nightlies/)'
 - '[Source](/install/from_sources/)'
 ---
+
 ## Linux
 
 Many Linux distribution provide Crystal in their system packages.

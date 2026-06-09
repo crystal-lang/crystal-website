@@ -5,6 +5,7 @@ description: |
   The compiler tracks the type of variables at each point,
   and restricts types according to conditions.
 ---
+
 ```crystal
 loop do
   case message = gets # type is `String | Nil`

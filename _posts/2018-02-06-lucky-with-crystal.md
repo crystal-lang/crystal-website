@@ -18,7 +18,7 @@ Months pass...
 
 My hope for the wonderful future of the product turns into hope that the latest commits won’t break anything.
 
-I begin to focus more on how my changes might cause a bug than how to make the app better. _I write and run tests, hoping that I thought of everything that could be an issue._ It  becomes harder and harder to keep simple and understandable.
+I begin to focus more on how my changes might cause a bug than how to make the app better. _I write and run tests, hoping that I thought of everything that could be an issue._ It becomes harder and harder to keep simple and understandable.
 
 ## Lucky helps you focus on building your app
 
@@ -26,7 +26,7 @@ I begin to focus more on how my changes might cause a bug than how to make the a
 
 [Lucky’s route handling](https://robots.thoughtbot.com/designing-lucky-actions-routing), [record saving](https://luckyframework.org/guides/saving-with-forms/), and [querying](https://luckyframework.org/guides/querying-the-database/) are all type-safe. Even the configuration will cause failures at compile time, so you know you haven’t accidentally messed anything up when upgrading dependencies.
 
-This  allows you to focus on how to delight your customers with a speedy, reliable, and value-packed web application.
+This allows you to focus on how to delight your customers with a speedy, reliable, and value-packed web application.
 
 ## Alright, so how does Lucky catch bugs that other frameworks won’t?
 
@@ -39,7 +39,7 @@ Let’s say we want to get all users whose names include “kat”. Here’s how
 UserQuery.new.name.ilike("kat%")
 ```
 
-In Lucky you’ll get methods specific to the type of the column. This means that methods like  `lower` and `ilike` are only available for String columns. If you tried to call `lower` on an integer column by accident, Lucky will let you know at compile time. If you rename the `name` column to `full_name`, Lucky will show you all the places where you also need to make that change at compile-time.
+In Lucky you’ll get methods specific to the type of the column. This means that methods like `lower` and `ilike` are only available for String columns. If you tried to call `lower` on an integer column by accident, Lucky will let you know at compile time. If you rename the `name` column to `full_name`, Lucky will show you all the places where you also need to make that change at compile-time.
 
 If you try to pass `nil` to a column that doesn’t allow `nil`, Lucky will let you know at compile time so you can avoid dreaded logical errors and `nil` errors.
 

@@ -8,6 +8,7 @@ description: |
 read_more: '[Read more about Shards](https://crystal-lang.org/reference/latest/man/shards)'
 runnable: playground
 ---
+
 ```yaml
 name: hello-world
 version: 1.0.0
