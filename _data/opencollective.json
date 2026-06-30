@@ -1,10 +1,17 @@
 [
   {
+    "name": "SuperClones",
+    "last_payment": 0,
+    "time_last_payment": "Jun 30, 2026",
+    "all_time": 5,
+    "since": "Jun 24, 2026"
+  },
+  {
     "name": "StoryLooker",
     "url": "https://storylooker.com/",
     "last_payment": 5,
-    "time_last_payment": "May 24, 2026",
-    "all_time": 5,
+    "time_last_payment": "Jun 24, 2026",
+    "all_time": 10,
     "since": "May 24, 2026"
   },
   {
@@ -851,8 +858,7 @@
   },
   {
     "name": "TopCasinoSearch",
-    "url": "https://www.topcasinosearch.com/",
-    "last_payment": 5,
+    "last_payment": 0,
     "time_last_payment": "May 13, 2026",
     "all_time": 160,
     "since": "Oct 13, 2023"
