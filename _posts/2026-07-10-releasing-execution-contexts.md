@@ -5,9 +5,10 @@ categories: project
 tags: [multithreading]
 ---
 
-Two and a half years ago and with the invaluable support from 84codes we decided
-to rethink the multithreading model inherited from Crystal 0.28 (preview MT), by
-analyzing its strenghs and shortcomings.
+[Two and a half years ago](./2024-02-09-84codes-manas-mt.md) and with the
+invaluable support from 84codes we decided to rethink the multithreading model
+inherited from Crystal 0.28 (preview MT), by analyzing its strenghs and
+shortcomings.
 
 There are different ways to spread an application to multiple CPU cores. While
 we love the runtime model proposed by Go for example, we sometimes need more
@@ -73,9 +74,9 @@ We currently provide three different context types:
 
 ## Can execution contexts communicate?
 
-Fibers run normally in any context. Fibers can always communicate and
-synchronize with other fibers regardless of their context. Use I/O, `Channel`
-and `Sync` types normally.
+Fibers can always communicate and synchronize with any other fibers running in
+any other execution context. Use I/O, `Channel` and `Sync` types normally,
+regardless of their execution context.
 
 Note that cross context communication requires more synchronization than
 internal communication, and can thus be slower. This is mostly noticeable in
@@ -99,7 +100,27 @@ Execution contexts solves all these issues.
 
 The fiber scheduler has seen a complete overhaul. It is nothing like before. Not
 only is it faster than the legacy schedulers, including both single thread and
-preview MT, fibers will now autoscale to as many CPU cores as needed.
+preview MT, fibers will now autoscale to as many CPU cores as needed at runtime.
+
+### The `CRYSTAL_WORKERS` environment variable
+
+The `CRYSTAL_WORKERS` environment variable is no longer used by default. You can
+use it manually to resize the default context or start a parallel context. For
+example:
+
+```crystal
+count = ENV["CRYSTAL_WORKERS"]?.try(&.to_i?) || 4
+Fiber::ExecutionContext.default.resize(count)
+```
+
+Alternatively, the `Fiber::ExecutionContext.default_workers_count` method also
+uses it `CRYSTAL_WORKERS` when present and valid, and otherwise defaults to the
+number of available logical CPUs. For example:
+
+```crystal
+count = Fiber::ExecutionContext.default_workers_count
+Fiber::ExecutionContext.default.resize(count)
+```
 
 ## Breaking changes
 
@@ -109,54 +130,71 @@ continue running normally by keeping their default context concurrent.
 If you experience issues, you may revert to the legacy, single threaded,
 scheduler using the `without_mt` compilation flag.
 
+The `preview_mt` compilation flag is still supported. Using the flag will revert
+to the legacy, multi threaded, preview scheduler.
+
+The `-Dpreview_mt -Dexecution_context` combo of flags is still supported, and
+won't revert to the legacy preview MT scheduler.
+
 > [!WARNING]
-> If you need the `without_mt` flag, and it's unrelated to the below breaking
-> change, then we consider this to be a bug in the Crystal runtime.
+> You are heavily encouraged to upgrade to execution contexts because we can't
+> guarantee legacy support will continue in upcoming releases.
 >
-> Please report the issue!
+> If you need the `without_mt` or `preview_mt` flag, and it's unrelated to the
+> below breaking changes, then we consider this to be a bug in the Crystal
+> runtime.
+>
+> Please report any issues!
 
-The `preview_mt` compilation flag is still supported for the time being. Using
-the flag will revert to the legacy, multi threaded, preview scheduler. You are
-heavily encouraged to upgrade to execution contexts because support will
-disappear at some point.
+### 1. Fibers can switch threads (parallel contexts)
 
-> [!NOTE]
-> The `-Dpreview_mt -Dexecution_context` combo of flags is still supported, and
-> won't revert to the legacy preview MT scheduler.
+**Unlike the previous models (single threaded and preview MT), the execution of
+Fibers can move to another thread at runtime.**
 
-### 1. Schedulers switch threads on blocking syscalls
+Fibers spawned in a parallel context can be resumed by any thread in the
+context. Fibers can start on one system thread, wait on I/O or a channel, then
+be resumed by another thread in the context. This feature is known as work
+stealing, and allows to scale fibers across CPU cores.
+
+### 2. Schedulers switch threads on blocking syscalls
 
 **Unlike the previous schedulers (single threaded and preview MT), the new
 schedulers can move to another thread at runtime.**
 
-This can happen for some specific syscalls, such as `getaddrinfo(3)` that can
-block the current thread and thus block the other fibers from progressing. The
-syscall will keep executing in the current thread, but the scheduler will be
-resumed on another thread, that will resumed another fiber; when the syscall
-returns, the blocked fiber will be enqueued back into its context.
+A scheduler runs fibers sequentially on a single thread. The previous models
+kept schedulers tied to their thread, but with execution contexts schedulers can
+jump to another thread.
 
-This applies to both the concurrent and parallel contexts, including the default
+This can happen for some specific syscalls, such as `getaddrinfo(3)` that can
+block the current thread and thus block the other fibers from progressing. When
+that happens the scheduler can move to another thread to continue executing
+runnable fibers while the current thread is blocked on the syscall. When the
+syscall returns, the fiber is stopped and will eventually be resumed on the new
+thread.
+
+This applies to both concurrent and parallel contexts, including the default
 context. It doesn't apply to the isolated context where blocking the thread is
-expected.
+the expected behavior.
 
 We don't expect many applications to break, unless you rely on external C
 libraries that expect to keep running on the main thread, or heavily rely on
 thread locals. In that case, you may backup/restore thread local state, or
 consider isolated contexts.
 
-### 2. Execution contexts don't support the `spawn(same_thread: true)` argument
+### 3. Execution contexts don't support the `spawn(same_thread: true)` argument
 
 This is affecting the preview MT model. The argument is deprecated and the
 behavior depends on the execution context:
 
 The concurrent execution context skips `same_thread` argument (noop).
 
-The parallel schedulers skip the `same_thread: false` argument (noop), but don't
-support the `same_thread: true` argument by design and will raise an exception
-at runtime.
+The parallel execution context skips the `same_thread: false` argument (noop),
+but don't support the `same_thread: true` argument by design and will raise an
+exception at runtime because the feature can't be guaranteed.
 
 The default execution context is parallel, so `same_thread: true` will raise an
-exception at runtime.
+exception at runtime, even if you never resize the context to opt in to MT,
+because the context might be resized in the future.
 
 The isolated context can't directly spawn fibers, but instead spawns into the
 default context or another specified context, so the behavior depends on the
@@ -167,15 +205,15 @@ target context.
 If the value for `same_thread` is set to `false` you can safely drop the
 argument.
 
-If set to `true`, you will have to investigate if there is an actual
-parallelism issue.
+If set to `true`, you will have to investigate if there is an actual issue
+regarding parallelism.
 
 If there is an issue, you can either fix the issue (for example by using `Sync`
 primitives), or start a concurrent execution context and spawn the fibers that
 can't run in parallel there, or choose to not resize the default execution
 context (no parallelism until you opt-in).
 
-In any case, you can now drop the argument.
+In any case, drop the argument.
 
 ## Notes
 
