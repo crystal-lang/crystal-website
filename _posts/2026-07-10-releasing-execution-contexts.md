@@ -67,7 +67,8 @@ We currently provide three different context types:
 
 - **Parallel**: Fibers spawned in a parallel context run concurrently and in
   parallel to each other, in addition to fibers running in other contexts. The
-  context automatically scales to many CPU cores.
+  context automatically scales to multiple CPU cores, up to the configured
+  maximum.
 
 - **Isolated**: Spawn a single fiber to a system thread. The fiber owns the
   thread for its whole lifetime. The fiber can block the thread however it wants
