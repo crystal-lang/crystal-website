@@ -5,10 +5,9 @@ categories: project
 tags: [multithreading]
 ---
 
-[Two and a half years ago](./2024-02-09-84codes-manas-mt.md) and with the
-invaluable support from 84codes we decided to rethink the multithreading model
-inherited from Crystal 0.28 (preview MT), by analyzing its strengths and
-shortcomings.
+[Two and a half years ago](./2024-02-09-84codes-manas-mt.md), with the
+invaluable support from 84codes, we re-examined the multithreading model
+inherited from Crystal 0.28 (preview MT).
 
 There are different ways to spread an application to multiple CPU cores. While
 we love the runtime model proposed by Go, for example, we sometimes need more
@@ -18,7 +17,7 @@ control over where and how a specific piece of code must run.
 - Sometimes we need a set of fibers to run concurrently.
 - Sometimes we need fibers to scale to as many CPU cores as needed.
 
-Inspired by Kotlin contexts, we realized that we didn't have to choose just
+Inspired by Kotlin contexts, we realized that we didn't have to pick just
 one model. What if we designed an _interface_ instead?
 
 Hence came **Execution Contexts**. Plural, because there are multiple ways to
@@ -27,14 +26,14 @@ interface public, so you may write your own models.
 
 ## The default execution context
 
-Applications run in the default context that starts on the main thread. It's a
-parallel context that defaults to a parallelism of 1, and fibers thus only run
-concurrently on a single thread. This avoids a breaking change to existing
+Applications run in a default context that is automatically created on the main
+thread. It's a parallel context that defaults to a parallelism of 1, so fibers
+run concurrently on just one thread. This avoids a breaking change to existing
 applications that may not be ready for MT.
 
-You can resize the default context to increase the parallelism and make it truly
-parallel and let it automatically scale fibers across CPU cores as needed at
-runtime:
+You can resize the default context to increase parallelism, making it truly
+parallel, and letting it automatically scale fibers across CPU cores as needed
+at runtime:
 
 ```
 Fiber::ExecutionContext.default.resize(maximum: System.cpu_count)
@@ -75,9 +74,9 @@ We currently provide three different context types:
 
 ## Can execution contexts communicate?
 
-Fibers can always communicate and synchronize with any other fibers running in
-any other execution context. Use I/O, `Channel` and `Sync` types normally,
-regardless of their execution context.
+Fibers can always communicate and synchronize with any other fibers, regardless
+of the execution context in which they run. Use I/O, `Channel` and `Sync` types
+normally.
 
 Note that cross context communication requires more synchronization than
 internal communication, and can thus be slower. This is mostly noticeable in
@@ -85,15 +84,15 @@ extreme situations, notably benchmarks.
 
 ## How are execution contexts different from the 'preview MT' model?
 
-Preview MT starts a fixed number of threads, and ties each fiber to one thread
-where it would always be resumed on. You have no control over where a fiber
+Preview MT starts a fixed number of threads and ties each fiber to a single
+thread on which it is always resumed. You have no control over where a fiber
 would start aside from "spawn on the current thread of the current fiber"; you
-can't isolate a fiber to a thread, and more.
+can't isolate a fiber to a thread, and other limitations.
 
-Fibers could get stuck on one thread busy running a CPU heavy computation, while
-other threads are idle. A slow `getaddrinfo` DNS request for example might block
-your whole application from making any progress, maybe even be incapable to
-respond to Ctrl+C or SIGINT to terminate the process.
+Fibers can get stuck on one thread busy running a CPU-intesnsive work, while
+other threads are idle. A slow `getaddrinfo` DNS request, for example, might
+block your whole application from making any progress, or event fail to respond
+to Ctrl+C or SIGINT to terminate the process.
 
 Execution contexts solve all these issues.
 
@@ -126,7 +125,7 @@ Fiber::ExecutionContext.default.resize(count)
 
 ## Breaking changes
 
-We have kept the breaking changes to a minimum, and expect most applications to
+We have kept the breaking changes to a minimum and expect most applications to
 continue running normally by keeping their default context concurrent.
 
 If you experience issues, you may revert to the legacy, single-threaded,
@@ -135,8 +134,8 @@ scheduler using the `without_mt` compilation flag.
 The `preview_mt` compilation flag is still supported; using it reverts to the
 legacy, multi-threaded, preview scheduler.
 
-The `-Dpreview_mt -Dexecution_context` combo of flags is still supported, and
-won't revert to the legacy preview MT scheduler.
+The `-Dpreview_mt -Dexecution_context` combinaition of flags is still supported,
+and won't revert to the legacy preview MT scheduler.
 
 > [!WARNING]
 > You are heavily encouraged to upgrade to execution contexts because we can't
@@ -180,19 +179,20 @@ the expected behavior.
 
 We don't expect many applications to break, unless you rely on external C
 libraries that expect to keep running on the main thread, or heavily rely on
-thread locals. In that case, you may backup and restore thread local state, or
+thread locals. In that case, you may backup and restore thread-local state, or
 consider isolated contexts.
 
 ### 3. Execution contexts don't support the `spawn(same_thread: true)` argument
 
-This is affecting the preview MT model. The argument is deprecated and the
-behavior depends on the execution context:
+This impacts the preview MT model. The argument is deprecated and the behavior
+depends on the execution context:
 
-The concurrent execution context skips `same_thread` argument (noop).
+The concurrent execution context simple ignores the `same_thread` argument
+(noop).
 
-The parallel execution context skips the `same_thread: false` argument (noop),
-but don't support the `same_thread: true` argument by design and will raise an
-exception at runtime because the feature can't be guaranteed.
+The parallel execution context ignores `same_thread: false` (noop), but doesn't
+support `same_thread: true` argument and will raise an exception at runtime
+because that feature can't be guaranteed.
 
 The default execution context is parallel, so `same_thread: true` will raise an
 exception at runtime, even if you never resize the context to opt in to MT;
@@ -219,9 +219,9 @@ In any case, drop the argument.
 
 ## Notes
 
-Auto scaling roughly happens every 100ms, and stems from the idea that there's
-no need to eagerly spread work across until it's needed. Another name for the
-feature is "slow-parallelism". While it improves efficiency, this can affect
-parallelism expectations, especially in benchmarks that can finish before the
-executable ever needed to scale to multiple threads. That's the whole point of
-the feature, but it defeats the point of the benchmark.
+Auto-scaling roughly occurs every 100 ms, and stems from the idea that there's
+no need to spread work until it's required. Another name for the feature is
+"slow-parallelism". While it improves efficiency, it can alter parallelism
+expectations, especially in benchmarks that may finish before the executable
+needs to scale to multiple threads. That's the point of the feature, yet it
+defeats the point of a benchmark.
