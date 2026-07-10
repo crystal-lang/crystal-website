@@ -111,17 +111,8 @@ use it manually to resize the default context, or start a parallel context. For
 example:
 
 ```
-count = ENV["CRYSTAL_WORKERS"]?.try(&.to_i?) || 4
-Fiber::ExecutionContext.default.resize(count)
-```
-
-Alternatively, the `Fiber::ExecutionContext.default_workers_count` method also
-uses it `CRYSTAL_WORKERS` when present and valid, and otherwise defaults to the
-number of available logical CPUs. For example:
-
-```
-count = Fiber::ExecutionContext.default_workers_count
-Fiber::ExecutionContext.default.resize(count)
+maximum = ENV["CRYSTAL_WORKERS"]?.try(&.to_i?) || 4
+Fiber::ExecutionContext.default.resize(maximum)
 ```
 
 ## Breaking changes
