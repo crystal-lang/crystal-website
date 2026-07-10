@@ -137,7 +137,7 @@ legacy, multi-threaded, preview scheduler.
 The `-Dpreview_mt -Dexecution_context` combinaition of flags is still supported,
 and won't revert to the legacy preview MT scheduler.
 
-> [!WARNING]
+> **WARNING:**
 > You are heavily encouraged to upgrade to execution contexts because we can't
 > guarantee legacy support will continue in upcoming releases.
 >
