@@ -9,9 +9,10 @@ tags: [multithreading]
 invaluable support from 84codes, we re-examined the multithreading model
 inherited from Crystal 0.28 (preview MT).
 
-There are different ways to spread an application to multiple CPU cores. While
-we love the runtime model proposed by Go, for example, we sometimes need more
-control over where and how a specific piece of code must run.
+There are different ways to spread an application to multiple CPU cores. So far,
+preview MT proposed a simple solution, and it worked great for many cases, yet
+sometimes we need more control over where and how a specific piece of code must
+run.
 
 - Sometimes we need a fiber to own a thread, notably GUI and game loops.
 - Sometimes we need a set of fibers to run concurrently.
