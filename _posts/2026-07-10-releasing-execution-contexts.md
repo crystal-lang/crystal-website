@@ -87,9 +87,9 @@ extreme situations, notably benchmarks.
 Preview MT starts a fixed number of threads and ties each fiber to a single
 thread on which it is always resumed. You have no control over where a fiber
 would start aside from "spawn on the current thread of the current fiber"; you
-can't isolate a fiber to a thread, and other limitations.
+can't isolate a fiber to a thread, plus other limitations.
 
-Fibers can get stuck on one thread busy running a CPU-intesnsive work, while
+Fibers can get stuck on one thread busy running a CPU-intensive work, while
 other threads are idle. A slow `getaddrinfo` DNS request, for example, might
 block your whole application from making any progress, or event fail to respond
 to Ctrl+C or SIGINT to terminate the process.
