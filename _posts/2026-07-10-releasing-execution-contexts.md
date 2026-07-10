@@ -7,11 +7,11 @@ tags: [multithreading]
 
 [Two and a half years ago](./2024-02-09-84codes-manas-mt.md) and with the
 invaluable support from 84codes we decided to rethink the multithreading model
-inherited from Crystal 0.28 (preview MT), by analyzing its strenghs and
+inherited from Crystal 0.28 (preview MT), by analyzing its strengths and
 shortcomings.
 
 There are different ways to spread an application to multiple CPU cores. While
-we love the runtime model proposed by Go for example, we sometimes need more
+we love the runtime model proposed by Go, for example, we sometimes need more
 control over where and how a specific piece of code must run.
 
 - Sometimes we need a fiber to own a thread, notably GUI and game loops.
@@ -27,13 +27,14 @@ interface public, so you may write your own models.
 
 ## The default execution context
 
-Applications run in the default execution context that starts on the main
-thread. It's a parallel context that defaults to a parallelism of 1, and will
-thus only run concurrently on a single thread. This avoids a breaking change to
-existing applications that may not be ready for MT.
+Applications run in the default context that starts on the main thread. It's a
+parallel context that defaults to a parallelism of 1, and fibers thus only run
+concurrently on a single thread. This avoids a breaking change to existing
+applications that may not be ready for MT.
 
 You can resize the default context to increase the parallelism and make it truly
-parallel and let it autoscale fibers across CPU cores as needed at runtime:
+parallel and let it automatically scale fibers across CPU cores as needed at
+runtime:
 
 ```
 Fiber::ExecutionContext.default.resize(maximum: System.cpu_count)
@@ -47,26 +48,26 @@ parallel = Fiber::ExecutionContext::Parallel.new("MT", maximum: 4)
 parallel.spawn { }
 ```
 
-You can keep it single threaded if you don't need parallelism, or let users
+You can keep it single-threaded if you don't need parallelism, or let users
 determine the parallelism through a `--threads N` argument.
 
-Your application. Your choice.
+Your application, your choice.
 
 ## What do execution contexts provide?
 
 Execution contexts allow you to start one or many fiber orchestrators to run
 fibers in different manners. Fibers are tied to their execution context, and the
-execution of fibers depend on its context.
+execution of fibers depends on the context they belong to.
 
 We currently provide three different context types:
 
 - **Concurrent**: Fibers spawned into the context run concurrently to each
-  others, and will never run in parallel, they only run in parallel to fibers
+  other, and will never run in parallel; they only run in parallel to fibers
   running in other contexts.
 
 - **Parallel**: Fibers spawned in a parallel context run concurrently and in
-  parallel to each others, in addition to fibers running in other contexts. The
-  context auto scales to many CPU cores.
+  parallel to each other, in addition to fibers running in other contexts. The
+  context automatically scales to many CPU cores.
 
 - **Isolated**: Spawn a single fiber to a system thread. The fiber owns the
   thread for its whole lifetime. The fiber can block the thread however it wants
@@ -94,21 +95,22 @@ other threads are idle. A slow `getaddrinfo` DNS request for example might block
 your whole application from making any progress, maybe even be incapable to
 respond to Ctrl+C or SIGINT to terminate the process.
 
-Execution contexts solves all these issues.
+Execution contexts solve all these issues.
 
 ## What changes?
 
 The fiber scheduler has seen a complete overhaul. It is nothing like before. Not
 only is it faster than the legacy schedulers, including both single thread and
-preview MT, fibers will now autoscale to as many CPU cores as needed at runtime.
+preview MT, fibers will now automatically scale to as many CPU cores as needed
+at runtime.
 
 ### The `CRYSTAL_WORKERS` environment variable
 
 The `CRYSTAL_WORKERS` environment variable is no longer used by default. You can
-use it manually to resize the default context or start a parallel context. For
+use it manually to resize the default context, or start a parallel context. For
 example:
 
-```crystal
+```
 count = ENV["CRYSTAL_WORKERS"]?.try(&.to_i?) || 4
 Fiber::ExecutionContext.default.resize(count)
 ```
@@ -117,21 +119,21 @@ Alternatively, the `Fiber::ExecutionContext.default_workers_count` method also
 uses it `CRYSTAL_WORKERS` when present and valid, and otherwise defaults to the
 number of available logical CPUs. For example:
 
-```crystal
+```
 count = Fiber::ExecutionContext.default_workers_count
 Fiber::ExecutionContext.default.resize(count)
 ```
 
 ## Breaking changes
 
-We kept the breaking changes to a minimum. We expect most applications to
+We have kept the breaking changes to a minimum, and expect most applications to
 continue running normally by keeping their default context concurrent.
 
-If you experience issues, you may revert to the legacy, single threaded,
+If you experience issues, you may revert to the legacy, single-threaded,
 scheduler using the `without_mt` compilation flag.
 
-The `preview_mt` compilation flag is still supported. Using the flag will revert
-to the legacy, multi threaded, preview scheduler.
+The `preview_mt` compilation flag is still supported; using it reverts to the
+legacy, multi-threaded, preview scheduler.
 
 The `-Dpreview_mt -Dexecution_context` combo of flags is still supported, and
 won't revert to the legacy preview MT scheduler.
@@ -148,7 +150,7 @@ won't revert to the legacy preview MT scheduler.
 
 ### 1. Fibers can switch threads (parallel contexts)
 
-**Unlike the previous models (single threaded and preview MT), the execution of
+**Unlike the previous models (single-threaded and preview MT), the execution of
 Fibers can move to another thread at runtime.**
 
 Fibers spawned in a parallel context can be resumed by any thread in the
@@ -156,9 +158,9 @@ context. Fibers can start on one system thread, wait on I/O or a channel, then
 be resumed by another thread in the context. This feature is known as work
 stealing, and allows to scale fibers across CPU cores.
 
-### 2. Schedulers switch threads on blocking syscalls
+### 2. Schedulers can switch threads on blocking syscalls
 
-**Unlike the previous schedulers (single threaded and preview MT), the new
+**Unlike the previous schedulers (single-threaded and preview MT), the new
 schedulers can move to another thread at runtime.**
 
 A scheduler runs fibers sequentially on a single thread. The previous models
@@ -178,7 +180,7 @@ the expected behavior.
 
 We don't expect many applications to break, unless you rely on external C
 libraries that expect to keep running on the main thread, or heavily rely on
-thread locals. In that case, you may backup/restore thread local state, or
+thread locals. In that case, you may backup and restore thread local state, or
 consider isolated contexts.
 
 ### 3. Execution contexts don't support the `spawn(same_thread: true)` argument
@@ -193,7 +195,7 @@ but don't support the `same_thread: true` argument by design and will raise an
 exception at runtime because the feature can't be guaranteed.
 
 The default execution context is parallel, so `same_thread: true` will raise an
-exception at runtime, even if you never resize the context to opt in to MT,
+exception at runtime, even if you never resize the context to opt in to MT;
 because the context might be resized in the future.
 
 The isolated context can't directly spawn fibers, but instead spawns into the
@@ -210,8 +212,8 @@ regarding parallelism.
 
 If there is an issue, you can either fix the issue (for example by using `Sync`
 primitives), or start a concurrent execution context and spawn the fibers that
-can't run in parallel there, or choose to not resize the default execution
-context (no parallelism until you opt-in).
+can't run in parallel there, or choose to not resize the default context (no
+parallelism until you opt-in).
 
 In any case, drop the argument.
 
@@ -219,7 +221,7 @@ In any case, drop the argument.
 
 Auto scaling roughly happens every 100ms, and stems from the idea that there's
 no need to eagerly spread work across until it's needed. Another name for the
-feature is "slow parallelism". While it improves efficiency, this can affect
+feature is "slow-parallelism". While it improves efficiency, this can affect
 parallelism expectations, especially in benchmarks that can finish before the
 executable ever needed to scale to multiple threads. That's the whole point of
 the feature, but it defeats the point of the benchmark.
