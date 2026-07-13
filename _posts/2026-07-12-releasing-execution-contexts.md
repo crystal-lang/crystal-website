@@ -77,7 +77,7 @@ We currently provide three different context types:
 ## Can execution contexts communicate?
 
 Fibers can always communicate and synchronize with any other fibers, regardless
-of the execution context in which they run. Use I/O, `Channel` and `Sync` types
+of the execution context in which they run. Use `Channel` and `Sync` types
 normally.
 
 Note that cross context communication requires more synchronization than
@@ -180,7 +180,7 @@ consider isolated contexts.
 This impacts the preview MT model. The argument is deprecated and the behavior
 depends on the execution context:
 
-The concurrent execution context simple ignores the `same_thread` argument
+The concurrent execution context simply ignores the `same_thread` argument
 (noop).
 
 The parallel execution context ignores `same_thread: false` (noop), but doesn't
