@@ -144,6 +144,7 @@ pre > code {
 pre {
   white-space: pre-wrap;
   padding: 1.25em;
+  line-height: var(--line-height-md);
 }
 
 :not(pre) > code,
