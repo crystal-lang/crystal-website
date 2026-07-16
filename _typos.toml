@@ -19,6 +19,7 @@ extend-ignore-re = [
   "ruby-ists",
   "Nikola TRE",
   "Ryan Worl",
+  "(?Rm)^.*(#|//|<!--)\\s*spellchecker:disable-line(\\s*-->)?$"
 ]
 
 [files]
