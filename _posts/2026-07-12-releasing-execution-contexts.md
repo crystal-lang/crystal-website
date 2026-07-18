@@ -48,8 +48,10 @@ parallel = Fiber::ExecutionContext::Parallel.new("MT", maximum: 4)
 parallel.spawn { }
 ```
 
-You can keep it single-threaded if you don't need parallelism, or let users
-determine the parallelism through a `--threads N` argument.
+You can keep it single-threaded if you don't need parallelism.
+Or you can scale it to a fixed or flexible number of maximum parallelism.
+Or let users configure the parallelism at runtime, for example through a command line
+option (e.g. `--threads 8`) or an environment variable (e.g. `THREADS=8`).
 
 Your application, your choice.
 
