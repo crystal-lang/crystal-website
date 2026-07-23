@@ -148,7 +148,7 @@ A Pointer is a generic type that represents a typed pointer to some memory locat
 ```crystal
 x = Pointer(Int32).malloc(1_u64)
 x.value = 1
-x.value #=> 1
+x.value # => 1
 ```
 
 If you look at the generated LLVM IR code you will see a bunch of code. First, `x` is represented like this:
@@ -236,7 +236,7 @@ end
 The nice thing about enums is that you can print them and you get their name, not their value:
 
 ```crystal
-puts Color::Green #=> Green
+puts Color::Green # => Green
 ```
 
 This is done in a different way than with Symbol, [using compile-time reflection and macros](https://github.com/crystal-lang/crystal/blob/965d6959163717d72cd3703159d60004ebf7f266/src/enum.cr#L4).
@@ -544,7 +544,7 @@ end
 class Baz < Bar
 end
 
-Baz.new.foo #=> 1
+Baz.new.foo # => 1
 ```
 
 Wow, a big class hierarchy and even an included module, and two definitions for `foo`. By looking at the code,
@@ -653,8 +653,11 @@ Consider this class hierarchy:
 
 ```crystal
 class Foo; end
+
 class Bar < Foo; end
+
 class Baz < Bar; end
+
 class Qux < Bar; end
 ```
 

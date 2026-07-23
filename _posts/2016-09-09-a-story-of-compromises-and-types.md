@@ -14,8 +14,8 @@ Let's play with an immutable Queue type. We want to:
 So something like this:
 
 ```crystal
-q = build_queue  # q = {}
-new_q = q.push 2 # q = {2}
+q = build_queue      # q = {}
+new_q = q.push 2     # q = {2}
 e, old_q = new_q.pop # e = 2, q = {}
 ```
 
@@ -72,11 +72,11 @@ q.pop # => Compile Error :-) EmptyQueue does not have EmptyQueue#pop
 But is it really useful?
 
 ```crystal
-q0 = EmptyQueue.new   # q0 = {}
-q1 = q0.push 1        # q1 = {1}
-q2 = q1.push 2        # q2 = {2, 1}
-e, q3 = q2.pop        # q3 = {1}, e = 2
-e, q4 = q3.pop        # => Compile Error :-( , but *we* know q3 is not empty...
+q0 = EmptyQueue.new # q0 = {}
+q1 = q0.push 1      # q1 = {1}
+q2 = q1.push 2      # q2 = {2, 1}
+e, q3 = q2.pop      # q3 = {1}, e = 2
+e, q4 = q3.pop      # => Compile Error :-( , but *we* know q3 is not empty...
 ```
 
 The compile error is because `typeof(q3) :: EmptyQueue | Queue`.

@@ -28,8 +28,8 @@ end
 
 ```crystal
 module Hamming
-  def self.distance(a,b)
-    a.chars.zip(b.chars).count{|first, second| first != second }
+  def self.distance(a, b)
+    a.chars.zip(b.chars).count { |first, second| first != second }
   end
 end
 ```
@@ -53,8 +53,8 @@ Crystal is a compiled language and checks all your method inputs and outputs at 
 Let's revisit the `Year::leap?` example from above. In Ruby, what happens when the input isn't an integer?
 
 ```crystal
-Year.leap?("2016") #=> false
-Year.leap?(Date.new(2016, 1, 1)) #=> undefined method `%' for #<Date: 2016-01-01 ... >
+Year.leap?("2016")               # => false
+Year.leap?(Date.new(2016, 1, 1)) # => undefined method `%' for #<Date: 2016-01-01 ... >
 ```
 
 For a `String` we get the wrong answer, for a `Date` we get a runtime exception. Fixing things in Ruby would require at least one `is_a?` statement:
@@ -81,9 +81,9 @@ We get helpful messages **at compile time**, rather than runtime:
 
 ```crystal
 Year.leap?("2016")
-Error in line 10: no overload matches 'Year.leap?' with type String
-Overloads are:
- - Year.leap?(year : Int)
+# Error in line 1: no overload matches 'Year.leap?' with type String
+# Overloads are:
+# - Year.leap?(year : Int)
 ```
 
 If we want to add support for `Time` (think `DateTime` in Ruby) in our module, we can overload `Year::leap?`:
@@ -131,12 +131,10 @@ Have you ever read Ruby’s source code? Tried to figure out how some `Enumerabl
 [Ruby’s Implementation of `Enumerable#all?`](https://github.com/ruby/ruby/blob/v2_5_0/enum.c#L1215)
 
 ```c
-static VALUE
-enum_all(int argc, VALUE *argv, VALUE obj)
-{
-    struct MEMO *memo = MEMO_ENUM_NEW(Qtrue);
-    rb_block_call(obj, id_each, 0, 0, ENUMFUNC(all), (VALUE)memo);
-    return memo->v1;
+static VALUE enum_all(int argc, VALUE *argv, VALUE obj) {
+  struct MEMO *memo = MEMO_ENUM_NEW(Qtrue);
+  rb_block_call(obj, id_each, 0, 0, ENUMFUNC(all), (VALUE)memo);
+  return memo->v1;
 }
 ```
 
@@ -145,7 +143,7 @@ How long does it take to figure out what that code is doing? If you've never wor
 Compare that to [Crystal's implementation of `Enumerable#all?`](https://github.com/crystal-lang/crystal/blob/v0.24.1/src/enumerable.cr#L46)
 
 ```crystal
-def all?
+def all?(&)
   each { |e| return false unless yield e }
   true
 end

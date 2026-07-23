@@ -82,7 +82,7 @@ end
 
 _Lucky will catch a bug for you and give you a helpful message to guide you in the right direction:_
 
-```crystal
+```txt
 SamlSignIns::Create returned Lucky::Response | Nil, but it must return a Lucky::Response.
 
 Try this...

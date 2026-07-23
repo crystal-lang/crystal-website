@@ -20,10 +20,10 @@ control structures, like `if`, `while`, and blocks. Then we'll talk about the sp
 Literals have a type of their own, known by the compiler:
 
 ```crystal
-true     # Boolean
-1        # Int32
-"hello"  # String
-1.5      # Float64
+true    # Boolean
+1       # Int32
+"hello" # String
+1.5     # Float64
 ```
 
 ### C functions
@@ -93,7 +93,7 @@ you can assign multiple times to a variable:
 a = 1       # a is Int32
 a.abs       # ok, Int32 has a method 'abs'
 a = "hello" # a is now String
-a.size    # ok, String has a method 'size'
+a.size      # ok, String has a method 'size'
 ```
 
 To achieve this, the compiler remembers which expression was the last one assigned
@@ -201,9 +201,9 @@ while some_condition
   a           # here a is actually Int32 or String
   a = false   # here a is Bool
   a = "hello" # here a is String
-  a.size    # ok, a is String
+  a.size      # ok, a is String
 end
-a             # here a is Int32 or String
+a # here a is Int32 or String
 ```
 
 Some other things to consider inside a `while` are `break` and `next`. A `break`
@@ -212,14 +212,14 @@ makes the types right before the break add to the type at the exit of the `while
 ```crystal
 a = 1
 while some_condition
-  a             # here a is Int32 or Bool
+  a # here a is Int32 or Bool
   if some_other_condition
     a = "hello" # we break, so at the exit a can also be String
     break
   end
-  a = false     # here a is Bool
+  a = false # here a is Bool
 end
-a               # here a is Int32 or String or Bool
+a # here a is Int32 or String or Bool
 ```
 
 A `next` adds the type to the beginning of the `while`:
@@ -227,14 +227,14 @@ A `next` adds the type to the beginning of the `while`:
 ```crystal
 a = 1
 while some_condition
-  a             # here a is Int32 or String or Bool
+  a # here a is Int32 or String or Bool
   if some_other_condition
     a = "hello" # we next, so in the next iteration a can be String
     next
   end
-  a = false     # here a is Bool
+  a = false # here a is Bool
 end
-a               # here a is Int32 or String or Bool
+a # here a is Int32 or String or Bool
 ```
 
 ### Blocks
@@ -359,7 +359,7 @@ We can define another method, `try`:
 
 ```crystal
 class Object
-  def try
+  def try(&)
     yield self
   end
 end
@@ -387,7 +387,7 @@ inside the `then` branch:
 ```crystal
 a = some_condition ? 1 : nil # a is Int32 or Nil
 if a
-  a.abs                      # a is Int32
+  a.abs # a is Int32
 end
 ```
 
@@ -398,11 +398,11 @@ whatever type `a` has in the `else` branch. For example:
 ```crystal
 a = some_condition ? 1 : nil
 if a
-  a.abs   # ok, here a is Int32
+  a.abs # ok, here a is Int32
 else
-  a = 1   # here a is Int32
+  a = 1 # here a is Int32
 end
-a.abs     # ok, a can only be Int32 here
+a.abs # ok, a can only be Int32 here
 ```
 
 Just like a programmer expects the above to always work in Ruby (never raise an

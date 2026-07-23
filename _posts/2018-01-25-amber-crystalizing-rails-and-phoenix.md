@@ -114,10 +114,10 @@ That's right. Thanks to the speed of Crystal, Amber can complete an entire reque
 For a real sample of speed, this excerpt is from a basic Read route such as this:
 
 ```crystal
-  def profile
-    user = current_user
-    render "show.slang"
-  end
+def profile
+  user = current_user
+  render "show.slang"
+end
 ```
 
 ```log
