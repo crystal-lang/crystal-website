@@ -1,0 +1,10 @@
+<div class="profile-mini" itemscope itemtype="https://schema.org/Person">
+  <img src="/assets/authors/{{ include.slug }}.jpg" alt="Profile picture of {{ profile.name }}" />
+  <div>
+    {%- if profile.role %}
+      <span class="member_role">{{ profile.role }}</span>
+    {%- endif %}
+    <span class="name" itemprop="name">{{ profile.name }}</span>
+    <a href="https://github.com/{{ profile.github_handle | default: include.slug }}" itemprop="url" title="GitHub profile" class="ico github">@{{ profile.GitHub_handle | default: include.slug }}</a>
+  </div>
+</div>
