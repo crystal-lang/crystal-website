@@ -19,12 +19,12 @@ The end of the year has been much slower than the beginning, as we had to cope w
 
 We have now gone through a collective estimate and have a solid plan to reach 1.0.
 
-| Area               | Details | ~Effort in hours |
-|--------------------|---------|------------------|
-| Distributions      | Release builds, distro packages, Docker images, etc | 120 |
-| Multi-threading    | Rework the fiber scheduler to handle multiple threads in parallel | 680 |
-| Better debugging   | Develop compiler and runtime support for a reasonable debugging experience | 680 |
-| Language semantics | Consider interfaces, generics, macros and interactions between all of them. Remove inessential or redundant language features. | 600 |
+| Area               | Details                                                                                                                        | ~Effort in hours |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------|------------------|
+| Distributions      | Release builds, distro packages, Docker images, etc                                                                            | 120              |
+| Multi-threading    | Rework the fiber scheduler to handle multiple threads in parallel                                                              | 680              |
+| Better debugging   | Develop compiler and runtime support for a reasonable debugging experience                                                     | 680              |
+| Language semantics | Consider interfaces, generics, macros and interactions between all of them. Remove inessential or redundant language features. | 600              |
 
 Come January, we will restart our work on Crystal in the areas above and will continue to invest at least 2x the hours covered with donations. Please help us ~~[spread the word](https://salt.bountysource.com/teams/crystal-lang)~~ so that we can get to this first production-ready release as soon as possible.
 
