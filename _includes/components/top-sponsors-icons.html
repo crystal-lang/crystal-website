@@ -1,22 +1,11 @@
-<div class="top-sponsors top-sponsors--corporate">
-  {%- for sponsor in site.data.sponsor_logos_corporate %}
-    <a href="{{ sponsor.url }}" rel="nofollow sponsored">
-      <img src="/assets/{{ sponsor.logo }}" alt="">
-      {{- sponsor.name }}
-    </a>
-  {%- endfor %}
-</div>
-<div class="top-sponsors top-sponsors--gold">
-  {%- for sponsor in site.data.sponsor_logos_gold %}
+<div class="top-sponsors top-sponsors--{{ include.tier }}">
+  {% assign key = "sponsor_logos_" | append: include.tier %}
+  {%- for sponsor in site.data[key] %}
     <a href="{{ sponsor.url }}" rel="nofollow sponsored" title="{{- sponsor.name }}">
       <img src="/assets/{{ sponsor.logo }}" alt="{{- sponsor.name }}">
-    </a>
-  {%- endfor %}
-</div>
-<div class="top-sponsors top-sponsors--silver">
-  {%- for sponsor in site.data.sponsor_logos_silver %}
-    <a href="{{ sponsor.url }}" rel="nofollow sponsored" title="{{- sponsor.name }}">
-      <img src="/assets/{{ sponsor.logo }}" alt="{{- sponsor.name }}">
+      {% if include.tier == "corporate" %}
+        {{- sponsor.name }}
+      {% endif %}
     </a>
   {%- endfor %}
 </div>
