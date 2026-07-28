@@ -5,9 +5,9 @@ categories: success
 company: Neuralegion
 ---
 
-> _This is a guest post from the team at [NeuraLegion](http://neuralegion.com), telling their Crystal in Production story. We'd like to thank them for taking the time to share their experience, and to invite any other companies or individuals using Crystal in a production environment to share theirs too - [**reach out**](/_pages/community.html) if you'd like to!_
+> _This is a guest post from the team at [NeuraLegion], telling their Crystal in Production story. We'd like to thank them for taking the time to share their experience, and to invite any other companies or individuals using Crystal in a production environment to share theirs too - [**reach out**](/_pages/community.html) if you'd like to!_
 
-At [NeuraLegion](http://neuralegion.com), we have been using Crystal for quite some time now.
+At [NeuraLegion], we have been using Crystal for quite some time now.
 We would like to share our experience in this brief article, starting from how we discovered Crystal, fell in love with it, and why we decided to make Crystal our language of choice.
 
 ## About Us
@@ -53,6 +53,8 @@ Here is a comparison between some of the parameters which were important to us:
 
 ## Useful Links
 
-[Our website](http://neuralegion.com)
+[Our website][Neuralegion]
 
 [FANN machine learning library](http://leenissen.dk/fann/wp/)
+
+[Neuralegion]: https://web.archive.org/web/20170917150121/https://neuralegion.com/
