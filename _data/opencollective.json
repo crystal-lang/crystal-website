@@ -1,17 +1,18 @@
 [
   {
     "name": "SuperClones",
-    "last_payment": 0,
-    "time_last_payment": "Jul 21, 2026",
-    "all_time": 5,
+    "url": "https://www.superclones.io/",
+    "last_payment": 5,
+    "time_last_payment": "Jun 24, 2026",
+    "all_time": 10,
     "since": "Jun 24, 2026"
   },
   {
     "name": "StoryLooker",
     "url": "https://storylooker.com/",
     "last_payment": 5,
-    "time_last_payment": "Jun 24, 2026",
-    "all_time": 10,
+    "time_last_payment": "Jul 24, 2026",
+    "all_time": 15,
     "since": "May 24, 2026"
   },
   {
@@ -23,8 +24,7 @@
   },
   {
     "name": "Buy TikTok Views",
-    "url": "https://buylikesservices.com/buy-tiktok-views/",
-    "last_payment": 25,
+    "last_payment": 0,
     "time_last_payment": "Jun 11, 2026",
     "all_time": 75,
     "since": "Apr 13, 2026"
