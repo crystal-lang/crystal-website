@@ -18,10 +18,10 @@ Some of the highlight improvements:
 - Refined typography
 - Enhanced site navigation system
 - Completely reorganized [homepage](/)
-- Completely reorganized [_Install_ page](/install/)
-- Completely reorganized [_Community_ page](/community/)
-- New [_Releases_ page](/releases/)
-- New [_Sponsors_](/sponsors/) options
+- Completely reorganized [_Install_ page](/_pages/install.md)
+- Completely reorganized [_Community_ page](/_pages/community.html)
+- New [_Releases_ page](/_pages/releases.md)
+- New [_Sponsors_](/_pages/sponsors.md) options
 - Taxonomy (categories and tags) for blog posts
 - Dark mode support
 
@@ -36,7 +36,7 @@ New and old install and community pages:
 | [![New community page](/assets/blog/2024/2024-03-27-website-community-new.webp)](https://crystal-lang.org/community) | ![Old community page](/assets/blog/2024/2024-03-27-website-community-old.webp) |
 
 A particular focus was revamping the sponsorship options.
-Previously announced [changes to the sponsorship tiers](/2024/03/25/new-sponsoring-tiers/)
+Previously announced [changes to the sponsorship tiers](2024-03-25-new-sponsoring-tiers.md)
 got implemented with different logo sizes on the homepage, extra cards for highlighting
 top supporters on the _Sponsors_ page and enhanced thank-you messages in release notes.
 

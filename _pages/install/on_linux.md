@@ -46,4 +46,4 @@ for many distribution package managers as well as binary downloads.
 ## Tarball
 
 Alternatively, there are `.tar.gz` archives in each [release](https://github.com/crystal-lang/crystal/releases)
-for x86-64. See [Install from a tar.gz](/install/from_targz) for instructions.
+for x86-64. See [Install from a tar.gz](from_targz.md) for instructions.
