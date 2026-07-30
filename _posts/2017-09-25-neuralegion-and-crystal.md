@@ -31,7 +31,7 @@ For the reasons we mentioned and some others, we needed a programming language w
 
 ## How To Make Crystal Even Better
 
-Now let's be fair - we love Crystal, however there is always some room for improvement. One of the challenges we faced with Crystal was the lack of shards (Crystal's "gems") for machine learning and scientific tools. However, expecting other people to add shards is unfair, so we decided to create a shard for [Crystal-FANN](https://github.com/NeuraLegion/crystal-fann) as the groundwork for our needs (and we made it available on our Github page for anyone who may need it). For now, Crystal-FANN seems to hit the spot for us, but we are still considering the addition of Torch or TensorFlow if we conclude that FANN by itself is not enough.
+Now let's be fair - we love Crystal, however there is always some room for improvement. One of the challenges we faced with Crystal was the lack of shards (Crystal's "gems") for machine learning and scientific tools. However, expecting other people to add shards is unfair, so we decided to create a shard for [Crystal-FANN](https://github.com/NeuraLegion/crystal-fann) as the groundwork for our needs (and we made it available on our GitHub page for anyone who may need it). For now, Crystal-FANN seems to hit the spot for us, but we are still considering the addition of Torch or TensorFlow if we conclude that FANN by itself is not enough.
 
 ## Summary
 
