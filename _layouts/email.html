@@ -1,0 +1,535 @@
+---
+layout: none
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>*|MC:SUBJECT|*</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+
+        /*////// RESET STYLES //////*/
+        body, #bodyTable, #bodyCell {
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        img, a img {
+            border: 0;
+            outline: none;
+            text-decoration: none;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        p + p {
+            margin-top: 20px;
+        }
+
+        /*////// FONTS //////*/
+        h1, h1, h3, h4, h5, h6,
+        .headerCell, .footerCell,
+        .textContent, .textContentLast,
+        .buttonContent,
+        .emailCalendarDay, .emailCalendarMonth {
+            font-family: "Roboto", -apple-system, "Segoe UI", sans-serif;
+        }
+
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xIIzI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 700;
+          src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /*////// CLIENT-SPECIFIC STYLES //////*/
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        /* Force Hotmail/Outlook.com to display emails at full width. */
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+
+        /* Force Hotmail/Outlook.com to display line heights normally. */
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /* Remove spacing between tables in Outlook 2007 and up. */
+        #outlook a {
+            padding: 0;
+        }
+
+        /* Force Outlook 2007 and up to provide a "view in browser" message. */
+        img {
+            -ms-interpolation-mode: bicubic;
+            height: auto;
+        }
+
+        /* Force IE to smoothly render resized images. */
+        body, table, td, p, a, li, blockquote {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
+
+        /*////// FRAMEWORK STYLES //////*/
+
+        .emailLogo {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .mcnPreviewText {
+            display: none !important;
+        }
+
+        .flexibleContainerCell {
+            padding-top: 40px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+        }
+
+        .flexibleImage {
+            max-width: 100% !important;
+        }
+
+        .bottomShim {
+            padding-bottom: 20px;
+        }
+
+        .imageContent, .imageContentLast {
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        .nestedContainerCell {
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        /*////// GENERAL STYLES //////*/
+        body, #bodyTable {
+            background-color: #FFFFFF;
+        }
+
+        #bodyCell {
+            padding-bottom: 40px;
+            padding-top: 40px;
+        }
+
+        #emailBody {
+            background-color: #FFFFFF;
+            border: 0px solid #DDDDDD;
+            border-collapse: separate;
+            overflow: hidden;
+            max-width: 620px;
+        }
+
+        h1, h1, h3, h4, h5, h6 {
+            font-size: 18px;
+            line-height: 125%;
+            text-align: left;
+        }
+
+        .textContent, .textContentLast {
+            color: #777777;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 145%;
+            text-align: left;
+            padding-bottom: 20px;
+        }
+
+        .textContent.callout {
+            color: #000000;
+        }
+
+        .textContent a, .textContentLast a {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        .headerCell, .footerCell {
+            font-size: 11px;
+            color: #000000;
+        }
+
+        .headerCell {
+            padding: 20px 20px 0 20px;
+        }
+
+        .footerCell {
+            font-size: 16px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            background-color: #F0F0F0;
+        }
+
+        .headerCell a, .footerCell a {
+            font-size: 16px;
+            color: #000000;
+        }
+
+        .nestedContainer {
+            background-color: #ededf5;
+            border-radius: 3px;
+        }
+
+        .nestedContainer h1, .nestedContainer h1, .nestedContainer h3 {
+            color: #000000;
+        }
+
+        .nestedContainer .textContent, .nestedContainer .textContentLast {
+            color: #777777;
+        }
+
+        .nestedContainer .emailButton {
+            background-color: #000000;
+        }
+
+        .emailButton {
+            background-color: #e5e5e5;
+            border-collapse: separate;
+            border-radius: 5px;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+
+        .buttonContent {
+            color: #000000;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 100%;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .buttonContent a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .emailCalendar {
+            background-color: #ffffff;
+        }
+
+        .emailCalendarMonth {
+            background-color: #ededf5;
+            color: #000000;
+            font-size: 12px;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .emailCalendarDay {
+            color: #000000;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .logoCell {
+            padding: 80px 0;
+        }
+
+        .callout {
+            font-size: 16px;
+            padding-top: 4px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .callout h2 {
+            font-weight: 700;
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 4px;
+        }
+
+        .sponsor > .small {
+          display: block;
+        }
+
+        /*////// EDITOR STYLES //////*/
+        /**
+        * @style Title
+        */
+        h2 {
+            font-weight: 700;
+            font-size: 24px;
+            color: #000000;
+            font-weight: normal;
+            margin-bottom: 20px;
+            margin-top: 60px;
+        }
+
+        /*////// DRAGNDROP STYLES //////*/
+        .dojoDndItemOver {
+            outline: solid 1px orange;
+        }
+
+        /*////// MOBILE STYLES //////*/
+        @media only screen and (max-width: 480px) {
+            /*////// CLIENT-SPECIFIC STYLES //////*/
+            body {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+
+            /* Force iOS Mail to render the email at full width. */
+            /*////// FRAMEWORK STYLES //////*/
+            /*
+                CSS selectors are written in attribute
+                selector format to prevent Yahoo Mail
+                from rendering media query styles on
+                desktop.
+            */
+            table[id="emailBody"], table[class="flexibleContainer"] {
+                width: 100% !important;
+            }
+
+            /*
+                The following style rule makes any
+                image classed with 'flexibleImage'
+                fluid when the query activates.
+                Make sure you add an inline max-width
+                to those images to prevent them
+                from blowing out.
+                We gave them different classes for each width, because Mailchimp mixes max-widths between different formats.
+            */
+            img[class="flexibleImage"] {
+                height: auto !important;
+                width: 100% !important;
+            }
+
+            td[class="emailLogo"] {
+                padding-left: 0;
+            }
+
+            /*
+                Make buttons in the email span the
+                full width of their container, allowing
+                for left- or right-handed ease of use.
+            */
+            table[class="emailButton"] {
+                width: 100% !important;
+                padding: 0;
+            }
+
+            td[class="buttonContent"] {
+                padding: 0 !important;
+            }
+
+            td[class="buttonContent"] a {
+                padding: 15px !important;
+            }
+
+            td[class="textContentLast"], td[class="imageContentLast"] {
+                padding-top: 20px !important;
+            }
+
+            /*////// GENERAL STYLES //////*/
+            td[id="bodyCell"] {
+                padding-top: 10px !important;
+                padding-right: 10px !important;
+                padding-left: 10px !important;
+            }
+        }
+    </style>
+    <!--
+        Outlook Conditional CSS
+
+        These two style blocks target Outlook 2007 & 2010 specifically, forcing
+        columns into a single vertical stack as on mobile clients. This is
+        primarily done to avoid the 'page break bug' and is optional.
+
+        Third block targets Outlook 2013, having troubles with webfonts
+
+        More information here:
+        http://templates.mailchimp.com/development/css/outlook-conditional-css
+    -->
+    <!--[if mso 12]>
+    <style type="text/css">
+        .flexibleContainer {
+            display: block !important;
+            width: 100% !important;
+        }
+    </style>
+    <![endif]-->
+    <!--[if mso 14]>
+    <style type="text/css">
+        .flexibleContainer {
+            display: block !important;
+            width: 100% !important;
+        }
+    </style>
+    <![endif]-->
+    <!--[if mso 15]>
+    <style type="text/css">
+        h1, h2, h3, h4, h5, h6,
+        .headerCell, .footerCell,
+        .textContent, .textContentLast,
+        .buttonContent,
+        .emailCalendarDay, .emailCalendarMonth {
+            font-family: Arial, sans-serif !important;
+            mso-line-height-rule: exactly;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+<!--*|IF:MC_PREVIEW_TEXT|*-->
+<!--[if !gte mso 9]><!----><span class="mcnPreview Text" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span><!--<![endif]-->
+<!--*|END:IF|*-->
+<center>
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+
+        <tr>
+            <td class=headerCell>
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                    <tr>
+                        <td align="left">
+                            *|MC:SUBJECT|* — *|DATE:F j, Y|*
+                        </td>
+                        <td align="right">
+                            *|IFNOT:ARCHIVE_PAGE|*
+                            <a href="*|ARCHIVE|*" target="_blank"  style="font-size: 16px;">Read on the Web</a>
+                            *|END:IF|*
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="top" style="padding-top: 10px;">
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 620px;">
+                    <!-- LOGO HEADER // -->
+                    <tr>
+                        <th align="left" valign="top" class="emailLogo">
+                            <a href="https://crystal-lang.org/"><img border=0 src="/assets/icon.png" width="145"></a>
+                        </th>
+                    </tr>
+                    <!-- // LOGO HEADER -->
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="top" id="bodyCell">
+                <!-- EMAIL CONTAINER // -->
+                <!--
+                    The table "emailBody" is the email's container.
+                    Its width can be set to 100% for a color band
+                    that spans the width of the page.
+                -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailBody">
+                    <tbody>
+
+                    {{ content }}
+
+                    <tr>
+                      <td align="center" valign="top">
+                       <!-- CENTERING TABLE // -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top: 1px solid #cecece;">
+                                <tr>
+                                  <td align="center" valign="top">
+                                        <!-- FLEXIBLE CONTAINER // -->
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                               class="flexibleContainer">
+                                            <tr>
+                                                <td align="center" valign="top"
+                                                    class="flexibleContainerCell">
+                                                    <!-- CONTENT TABLE // -->
+                                                      {% include newsletter/footer_sponsors.html %}
+                                                    <!-- // CONTENT TABLE -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- // FLEXIBLE CONTAINER -->
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- // CENTERING TABLE -->
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+                <!-- // EMAIL CONTAINER -->
+            </td>
+        </tr>
+        <!-- FOOTER // -->
+        <tr>
+            <td align="center" class=footerCell>
+                © *|CURRENT_YEAR|* *|LIST:COMPANY|*
+                <br>
+                *|IFNOT:ARCHIVE_PAGE|*
+                *|LIST:DESCRIPTION|*<br>
+                <br>
+                *|HTML:LIST_ADDRESS_HTML|*
+                *|END:IF|*<br>
+                <br>
+                <a href="*|UNSUB|*">Unsubscribe</a>&nbsp;&nbsp;&nbsp;<a href="*|UPDATE_PROFILE|*">Update preferences</a>&nbsp;&nbsp;&nbsp;<a href="#">Privacy policy</a><br>
+                <br>
+                *|IF:REWARDS|*
+                *|HTML:REWARDS|*
+                *|END:IF|*
+            </td>
+        </tr>
+        <!-- // FOOTER -->
+    </table>
+</center>
+</body>
+</html>
