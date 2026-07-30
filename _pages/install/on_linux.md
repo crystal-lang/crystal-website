@@ -8,7 +8,7 @@ on the [Open Build Service (OBS)](https://build.opensuse.org) and we provide an
 installer script for convenience.
 
 Many Linux distributions provide Crystal in their system packages.
-There are several community-maintained packages as well, see [the install overview](../#linux).
+There are several community-maintained packages as well, see [the install overview](../install.md#linux).
 
 ## Installer
 
