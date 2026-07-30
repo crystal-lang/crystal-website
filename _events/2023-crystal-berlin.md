@@ -17,7 +17,7 @@ Attendees were able to join in person in Berlin or connect via live stream. Reco
 
 [Playlist](https://youtube.com/playlist?list=PLt-CsM4G1WoadONHl3zPN_Ts5PqH8TgMZ)
 
-We had a blast at the conference, it was a real success getting all these great people to meet up. Read more in [the blog post](/2023/11/09/memories-from-crystalconf/).
+We had a blast at the conference, it was a real success getting all these great people to meet up. Read more in [the blog post](/_posts/2023-11-09-memories-from-crystalconf.md).
 
 ![Photo from the panel discussion](/assets/events/crystalconf2023/panel.jpg)
 

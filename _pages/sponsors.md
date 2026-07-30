@@ -73,6 +73,6 @@ and below is a list of all the humans and organizations that have made it possib
   </dl>
 
   <h3>Original Sponsors</h3>
-  <p>Meet our <a href="/sponsors/original-sponsors/">original sponsors</a>.</p>
+  <p>Meet our <a href="https://crystal-lang.org/sponsors/original-sponsors/">original sponsors</a>.</p>
   </aside>
 </section>

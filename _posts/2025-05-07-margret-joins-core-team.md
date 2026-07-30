@@ -6,7 +6,7 @@ categories: project
 tags: [people, core-team]
 ---
 
-With great pleasure we announce that Margret Riegert ([nobodywasishere](https://github.com/nobodywasishere)) has joined the [Crystal Core Team](/team).
+With great pleasure we announce that Margret Riegert ([nobodywasishere](https://github.com/nobodywasishere)) has joined the [Crystal Core Team](/_pages/team.md).
 
 As an active contributor in the Crystal community for many years, she has shown great efforts, especially around improving tooling and developer experience.
 

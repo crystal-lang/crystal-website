@@ -5,7 +5,7 @@ page_title: Build from sources
 
 If you want to contribute then you might want to install Crystal from sources.
 
-1. [Install the latest Crystal release](/install). To compile Crystal, you need Crystal :).
+1. [Install the latest Crystal release](/_pages/install.md). To compile Crystal, you need Crystal :).
 
 2. Make sure a supported LLVM version is present in the path. When possible, use [the latest supported version](https://github.com/crystal-lang/crystal/blob/master/src/llvm/ext/llvm-versions.txt).
 
