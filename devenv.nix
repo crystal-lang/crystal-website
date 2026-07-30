@@ -36,6 +36,7 @@
 
   git-hooks.hooks = {
     actionlint.enable = true;
+    check-toml.enable = true;
     lychee = {
       enable = true;
       settings = {
