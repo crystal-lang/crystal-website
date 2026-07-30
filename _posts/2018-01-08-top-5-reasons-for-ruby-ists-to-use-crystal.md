@@ -164,7 +164,7 @@ Reading, understanding, and contributing to Crystal is easier than just about an
 If you’re looking to try out the Crystal programming language, here are some good resources to get started:
 
 - [Crystal Play](https://play.crystal-lang.org/#/cr) - an online REPL-like tool for Crystal
-- [Install Crystal](/install)
+- [Install Crystal](/_pages/install.md)
 - [Crystal for Rubyists](http://www.crystalforrubyists.com/)
 - [Crystal Exercisms](http://exercism.io/tracks/crystal/about)
 - [Create your own HTTP Server in minutes](https://crystal-lang.org/reference/getting_started/http_server.html)

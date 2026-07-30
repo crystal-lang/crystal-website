@@ -9,7 +9,7 @@ tags: devnotes
 It’s been a while since we wrote [Using CircleCI for your Crystal projects](https://manas.tech/blog/2016/06/13/using-circleci-for-your-crystal-projects/). Since then the following things happened:
 
 - [CircleCI 2.0](https://circleci.com/docs/2.0/) was announced and 1.0 is deprecated.
-- Crystal build process is partially [automated in CircleCI](/2018/03/09/crystal-automated-release/)
+- Crystal build process is partially [automated in CircleCI](2018-03-09-crystal-automated-release.md)
 - Docker nightly images are pushed as `crystallang/crystal:nightly` to Docker Hub
 - Shards added a cache to avoid downloading from scratch dependencies
 

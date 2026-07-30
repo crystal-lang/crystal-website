@@ -5,7 +5,7 @@ layout: page-wide
 page_class: page--segmented
 section: install
 description: |
-  Packages for [Crystal releases](/releases) are available from different sources.
+  Packages for [Crystal releases](https://crystal-lang.org/releases/) are available from different sources.
   There are official ones provided the Crystal project, system packages and
   community-maintained packages.
   This page gives an overview of available installation methods.
@@ -18,8 +18,8 @@ link_actions:
 - '[![](/assets/install/android.svg) #Android](#android)'
 - '[![](/assets/install/docker.svg) #Docker](#docker)'
 - '[![](/assets/install/construction.svg) #Tools](#developer-tools)'
-- '[Nightlies](/install/nightlies/)'
-- '[Source](/install/from_sources/)'
+- '[Nightlies](https://crystal-lang.org/install/nightlies/)'
+- '[Source](https://crystal-lang.org/install/from_sources/)'
 ---
 
 ## Linux
@@ -35,7 +35,7 @@ repository and we provide an installer script for convenience.
 
 Linux-based [Docker images](#docker) and [developer tools](#developer-tools) are also available.
 
-[**Read more about installing on _Linux_**](/install/on_linux)
+[**Read more about installing on _Linux_**](install/on_linux.md)
 
 ## macOS
 
@@ -48,7 +48,7 @@ The most popular installation method is via [Homebrew](https://brew.sh).
 
 Crystal is also available in [developer tooling](#developer-tools) on macOS.
 
-[**Read more about installing on _macOS_**](/install/on_mac_os)
+[**Read more about installing on _macOS_**](install/on_mac_os.md)
 
 <span id="windows"></span>
 
@@ -64,19 +64,19 @@ Official builds are available as a ZIP archive or installer.
 
 Crystal is also available in [developer tooling](#developer-tools) on Windows.
 
-[**Read more about installing on _Windows_**](/install/on_windows)
+[**Read more about installing on _Windows_**](install/on_windows.md)
 
 ## FreeBSD
 
 {% include pages/install/section.html os="FreeBSD" %}
 
-[**Read more about installing on _FreeBSD_**](/install/on_freebsd)
+[**Read more about installing on _FreeBSD_**](install/on_freebsd.md)
 
 ## OpenBSD
 
 {% include pages/install/section.html os="OpenBSD" %}
 
-[**Read more about installing on _OpenBSD_**](/install/on_openbsd)
+[**Read more about installing on _OpenBSD_**](install/on_openbsd.md)
 
 ## Android
 
@@ -99,7 +99,7 @@ features and testing compatibility with existing code bases.
 It's recommended to test against nightlies regularly in order to notice any issues
 timely and avoid surprises after the next release.
 
-[**Read more about _Nightly Builds_**](/install/nightlies/)
+[**Read more about _Nightly Builds_**](install/nightlies.md)
 
 <span id="from_source"></span>
 
@@ -109,7 +109,7 @@ The Crystal compiler is self-hosted, so in order to build it you need a Crystal 
 Hence from source installation is not an ideal way to get Crystal in the first place.
 However it is possible to bootstrap from a different platform through cross-compiling.
 
-[**Read more about _Building from Source_**](/install/from_sources/)
+[**Read more about _Building from Source_**](install/from_sources.md)
 
 <script src="/assets/js/copy-action.js"></script>
 <script>

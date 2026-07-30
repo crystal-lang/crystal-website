@@ -6,7 +6,7 @@ categories: technical
 tags: packaging
 ---
 
-When we [moved hosting of Crystal's binary packages](/2021/04/30/new-apt-and-rpm-repositories/) to the [Open Build Service (OBS)](https://build.opensuse.org),
+When we [moved hosting of Crystal's binary packages](2021-04-30-new-apt-and-rpm-repositories.md) to the [Open Build Service (OBS)](https://build.opensuse.org),
 in May 2021, only the latest release (1.0.0 at that time) was available.
 
 Since then, there have been more releases (1.1.0 and 1.1.1) but in the package repositories only the latest one was available at any time.
@@ -25,7 +25,7 @@ versioned packages keep tracking the latest patch release of the respective mino
 
 The new versioned packages are available for all architectures in all repositories on OBS.
 
-Our own installation instructions at [crystal-lang.org/install](/install) have been updated,
+Our own installation instructions at [crystal-lang.org/install](/_pages/install.md) have been updated,
 including the automatic installer script.
 
 The installer script allows selecting the version to be installed via the `--version=x.y` argument.

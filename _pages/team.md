@@ -13,7 +13,7 @@ section: community
 
 The _Core Team_ leads the development of Crystal and its ecosystem under the
 guidance of the _Steering Council_. Both bodies are defined in the
-[Governance document](/_pages/community/governance.md).
+[Governance document](community/governance.md).
 
   </aside>
 
@@ -128,7 +128,7 @@ who put their work into the project.
 If you want to become a contributor, see our [Contributing Instructions](https://github.com/crystal-lang/crystal/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/crystal-lang/crystal/blob/master/CODE_OF_CONDUCT.md).
   </aside>
   <div>
-    <img src="https://opencollective.com/crystal-lang/contributors.svg?width=960" alt="">
+    <img src="/assets/community/contributors.svg" alt="">
   </div>
 </section>
 
