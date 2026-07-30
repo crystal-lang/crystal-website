@@ -25,8 +25,6 @@ disable = [
   # MD033 - Inline HTML
   # FIXME: We're using some legacy inline HTML.
   "no-inline-html",
-  # FIXME: Bug in rumdl: https://github.com/rvben/rumdl/issues/665
-  "no-space-in-code",
   # MD034 - Bare URL used
   "no-bare-urls",
 ]
