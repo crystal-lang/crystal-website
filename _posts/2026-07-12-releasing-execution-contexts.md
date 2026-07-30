@@ -5,7 +5,7 @@ categories: project
 tags: [multithreading]
 ---
 
-[Two and a half years ago](./2024-02-09-84codes-manas-mt.md), with the
+[Two and a half years ago](2024-02-09-84codes-manas-mt.md), with the
 invaluable support from 84codes, we re-examined the multithreading model
 inherited from Crystal 0.28 (preview MT).
 

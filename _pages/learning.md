@@ -21,7 +21,7 @@ Crystal Programming is a project-based book by George Dietrich and Guilherme Ber
 It covers all the fundamental concepts needed to start programming in Crystal
 such as OOP and concurrent programming.
 
-[Crystal Programming](./learning/crystal_programming.md)
+[Crystal Programming](learning/crystal_programming.md)
 
 <span id="crystal4Rubyists"></span>
 
