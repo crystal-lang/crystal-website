@@ -8,7 +8,7 @@ on the [Open Build Service (OBS)](https://build.opensuse.org) and we provide an
 installer script for convenience.
 
 Many Linux distributions provide Crystal in their system packages.
-There are several community-maintained packages as well, see [the install overview](../#linux).
+There are several community-maintained packages as well, see [the install overview](../install.md#linux).
 
 ## Installer
 
@@ -46,4 +46,4 @@ for many distribution package managers as well as binary downloads.
 ## Tarball
 
 Alternatively, there are `.tar.gz` archives in each [release](https://github.com/crystal-lang/crystal/releases)
-for x86-64. See [Install from a tar.gz](/install/from_targz) for instructions.
+for x86-64. See [Install from a tar.gz](from_targz.md) for instructions.

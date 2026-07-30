@@ -50,14 +50,7 @@ sections:
       Organizations that provide software engineering services
 ---
 
-<div class="top-sponsors top-sponsors--corporate">
-  {%- for sponsor in site.data.sponsor_logos_corporate %}
-    <a href="{{ sponsor.url }}" rel="nofollow sponsored">
-      <img src="/assets/{{ sponsor.logo }}" alt="">
-      {{- sponsor.name }}
-    </a>
-  {%- endfor %}
-</div>
+{% include components/top-sponsors-icons.html tier="corporate" %}
 
 <hr />
 
@@ -80,5 +73,5 @@ sections:
 {% include components/posts-list.html posts=site.categories.success limit=3 %}
 
 <div class="link-actions">
-  <a href="/success-stories/">More success stories</a>
+  <a href="https://crystal-lang.org/success-stories/">More success stories</a>
 </div>

@@ -17,7 +17,7 @@ but more platforms and architectures will follow.
 All packages are available on OBS at [build.opensuse.org/package/show/devel:languages:crystal](https://build.opensuse.org/project/show/devel:languages:crystal).
 It offers an [installation page](https://software.opensuse.org/download.html?project=devel%3Alanguages%3Acrystal&package=crystal) with detailed instructions for the many different
 target systems.
-Our own installation instructions at [crystal-lang.org/install](/install) have been updated,
+Our own installation instructions at [crystal-lang.org/install](/_pages/install.md) have been updated,
 including the automatic installer script.
 
 Since bintray is shutting down all operations on May 1st, 2021 our previous repositories

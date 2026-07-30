@@ -15,7 +15,7 @@ partner_images:
   href: https://brightsec.com/
 ---
 
-In the recent [Crystal 1.10 release](/2023/10/09/1.10.0-released/) two new compiler tools were introduced: `crystal tool dependencies` and `crystal tool unreachable`. In parallel, the Crystal team also released [perf-tools](https://github.com/crystal-lang/perf-tools), a shard with tools for tracking memory usage and fibers. In this post, we delve into the story of how these tools came to be.
+In the recent [Crystal 1.10 release](/_releases/2023-10-09-1.10.0-released.md) two new compiler tools were introduced: `crystal tool dependencies` and `crystal tool unreachable`. In parallel, the Crystal team also released [perf-tools](https://github.com/crystal-lang/perf-tools), a shard with tools for tracking memory usage and fibers. In this post, we delve into the story of how these tools came to be.
 
 The development of these tools was sponsored by [Bright](https://brightsec.com/), makers of an intelligent exploiter for securing websites. The exploiter works by searching for endpoints and attacking them with a large set of potential security threats. As an established product, it has grown organically over the years, requiring special tools to improve it. Therefore, Bright asked Manas to help out in two major subjects: refactoring of the application and hunting memory leaks.
 
