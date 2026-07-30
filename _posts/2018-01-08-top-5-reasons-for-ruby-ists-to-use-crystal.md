@@ -110,7 +110,7 @@ Another advantage of compilation is speed and optimization. When comparing the p
 
 In one example, [summing random numbers in crystal](https://github.com/marksiemers/ruby-to-crystal/blob/master/src/enumerables/reduce_bench.cr) can be **10 orders of magnitude faster** than Ruby (~ 37 million percent faster). This is due to compiler optimizations and the ability to use primitive data types in Crystal. This does come with the risk of integer overflow for large numbers ([See Ary's explanation](https://crystal-lang.org/2016/07/15/fibonacci-benchmark.html)).
 
-Crystal's built-in HTTP server has been able to handle over [2 million requests per second in benchmark testing](https://www.techempower.com/benchmarks/previews/round15/#section=data-r15&hw=ph&test=plaintext&l=zdk8an&c=3). And many of the web frameworks are consistently delivering sub-millisecond response times for web applications.
+Crystal's built-in HTTP server has been able to handle over [2 million requests per second in benchmark testing](https://www.techempower.com/benchmarks/#section=data-r15&test=plaintext). And many of the web frameworks are consistently delivering sub-millisecond response times for web applications.
 
 Which brings us to the next point...
 
