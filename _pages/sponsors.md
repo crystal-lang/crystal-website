@@ -5,6 +5,7 @@ section: community
 ---
 
 <section markdown="1" class="content">
+
 Building a programming language from scratch is not an easy feat.
 It takes long hours, quite a few headaches and some very talented developers.
 It’s also not cheap, and we don’t have the financial backing that a multinational corporation would:
@@ -13,23 +14,31 @@ this project was funded with our own work and the contribution of a bunch of gen
 While we have a dedicated team working on the development of Crystal,
 we need all the help we can get to realize its potential,
 and below is a list of all the humans and organizations that have made it possible for us to get this far.
+
 </section>
 
-<section class="side-section">
-  <h2>Enterprise Support</h2>
-  <aside class="content">
-  <p>Our Corporate Sponsorship tiers start at $5,000/month, but let’s talk and find a partnership model that suits you.</p>
-  <a href="mailto:crystal@manas.tech" class="hex">Contact Us</a>
-  </aside>
-  {%- include pages/sponsors/sponsor-cards.html %}
+<section class="side-section" markdown="1">
+
+## Enterprise Support
+
+<aside class="content" markdown="1">
+
+Our Corporate Sponsorship tiers start at $5,000/month, but let’s talk and find a partnership model that suits you.
+
+<a href="mailto:crystal@manas.tech" class="hex">Contact Us</a>
+
+</aside>
+{%- include pages/sponsors/sponsor-cards.html %}
+
 </section>
 
-<hr />
+-----
 
-<section class="side-section reversed">
-  <h2>Supporters</h2>
+<section class="side-section reversed" markdown="1">
 
-   {%- include pages/sponsors/table.html %}
+## Supporters
+
+{%- include pages/sponsors/table.html %}
 
 <aside class="sponsors-sidebar" id="contribute" markdown="1">
 
