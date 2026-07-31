@@ -247,7 +247,6 @@ section: community
           Crystal Community</a>
       </div>
     </div>
-    </div>
   </div>
 </section>
 
