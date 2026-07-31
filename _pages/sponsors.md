@@ -28,7 +28,8 @@ Our Corporate Sponsorship tiers start at $5,000/month, but let’s talk and find
 <a href="mailto:crystal@manas.tech" class="hex">Contact Us</a>
 
 </aside>
-{%- include pages/sponsors/sponsor-cards.html %}
+
+{% include pages/sponsors/sponsor-cards.html %}
 
 </section>
 
@@ -38,7 +39,7 @@ Our Corporate Sponsorship tiers start at $5,000/month, but let’s talk and find
 
 ## Supporters
 
-{%- include pages/sponsors/table.html %}
+{% include pages/sponsors/table.html %}
 
 <aside class="sponsors-sidebar" id="contribute" markdown="1">
 
