@@ -2,6 +2,7 @@
 title: Sitemap
 section: internal
 ---
+
 <section class="content">
   {%- assign sections = site.data.sections | h_to_a | sort: "weight", "last" %}
   {%- for section in sections %}

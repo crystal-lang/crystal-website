@@ -19,7 +19,7 @@ Some of the highlight improvements:
 - Enhanced site navigation system
 - Completely reorganized [homepage](/)
 - Completely reorganized [_Install_ page](/_pages/install.md)
-- Completely reorganized [_Community_ page](/_pages/community.html)
+- Completely reorganized [_Community_ page](/_pages/community.md)
 - New [_Releases_ page](/_pages/releases.md)
 - New [_Sponsors_](/_pages/sponsors.md) options
 - Taxonomy (categories and tags) for blog posts
