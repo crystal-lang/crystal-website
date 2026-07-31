@@ -72,6 +72,6 @@ sections:
 
 {% include components/posts-list.html posts=site.categories.success limit=3 %}
 
-<div class="link-actions">
-  <a href="https://crystal-lang.org/success-stories/">More success stories</a>
+<div class="link-actions" markdown="1">
+  [More success stories](success-stories.md)
 </div>
