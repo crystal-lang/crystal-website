@@ -10,9 +10,6 @@ disable = [
   # MD014 - Show command output in documentation
   # TODO: Not sure if this is generally useful.
   "commands-show-output",
-  # MD040 - Code blocks should have a language specified
-  # FIXME: Deferred
-  "fenced-code-language",
   # TODO: We might want to consider automatic wrapping (maybe with https://github.com/razziel89/mdslw ?)
   "line-length",
   # MD045 - Add Descriptive Text to Images
@@ -58,6 +55,15 @@ style = "ordered"
 style = "dash"
 
 ## Formatting Rules
+
+# MD044 - Use Proper Capitalization for Names
+[MD044]
+names = [
+  "GitHub",
+  "Python",
+  "Markdown",
+  "JavaScript",
+]
 
 # MD049 - Keep italic text formatting consistent
 [MD049]

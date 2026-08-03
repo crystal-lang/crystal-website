@@ -28,7 +28,7 @@ This being my first conference as organiser, I thought I should put into words t
 After reading a few articles on the subject, I realised that finding speakers was going to be the most challenging part of the organisation. So before even thinking of a landing page for the conference, I launched [a simple Google form](https://forms.gle/tDSfrTQuWhSVmQo4A) to gather talk proposals.
 
 Only a handful of talks came through over the first week, so I decided to proactively get in touch with prospective speakers to prompt them to contribute.
-I selected a few people based on their activity on the various Crystal channels - e.g. forum, gitter, github - and on their involvement in interesting projects - cherry-picked from shard aggregators websites such as [crystalshards.xyz](http://crystalshards.xyz).
+I selected a few people based on their activity on the various Crystal channels - e.g. forum, gitter, GitHub - and on their involvement in interesting projects - cherry-picked from shard aggregators websites such as [crystalshards.xyz](http://crystalshards.xyz).
 
 I also leveraged my network of Crystal friends. In particular, I asked Jack Thorne - of [Chicago Crystal](https://www.buzzsprout.com/1030945) fame - to look after and moderate a panel discussion to close the event - kudos Jack!
 <img src="/assets/blog/2020-11-raw-crystal-jack.png" width="617" class="center" alt="A couple of messages I exchanged Jack on Slack. I asked: would you be up for moderating a panel discussion at a conference, if we were to have one? He answered: yes!"/>

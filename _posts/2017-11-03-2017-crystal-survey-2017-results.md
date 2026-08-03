@@ -86,9 +86,9 @@ Crystal developers do love using Vim, here's the major editors being used
 
 Linux is the main platform Crystal developers choose followed by Mac OS. There's also a notable amount (17.9%) of Crystal developers using Windows.
 
-![Linux 91.2%, Mac OS 41.5%, Windows 31.1%, Android 13.1%, iOS 10.9%, 5.3% BSD-variant, 9.4% Javascript, 6% Embedded](https://cdn.pbrd.co/images/GPbIN3w.png "Linux 91.2%, Mac OS 41.5%, Windows 31.1%, Android 13.1%, iOS 10.9%, 5.3% BSD-variant, 9.4% Javascript, 6% Embedded")
+![Linux 91.2%, Mac OS 41.5%, Windows 31.1%, Android 13.1%, iOS 10.9%, 5.3% BSD-variant, 9.4% JavaScript, 6% Embedded](https://cdn.pbrd.co/images/GPbIN3w.png "Linux 91.2%, Mac OS 41.5%, Windows 31.1%, Android 13.1%, iOS 10.9%, 5.3% BSD-variant, 9.4% Javascript, 6% Embedded")
 
-We see a similar pattern in target platforms. Linux is the most targeted platform. Interestingly we see Android, iOS and Javascript in a noticeable ratio.
+We see a similar pattern in target platforms. Linux is the most targeted platform. Interestingly we see Android, iOS and JavaScript in a noticeable ratio.
 
 ### Towards 1.0
 
