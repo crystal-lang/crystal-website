@@ -93,7 +93,7 @@ When building the `.snap` the following things will happen:
 3. Packaging all executables in `./bin` in the final `.snap`.
 4. Packaging all linked libraries required to run those binaries (detected via `ldd`)
 
-In case the app requires some C libraries that are not available by default, you will need to list them as [build-packages](https://docs.snapcraft.io/t/build-and-staging-dependencies/11451).
+In case the app requires some C libraries that are not available by default, you will need to list them as [build-packages](https://web.archive.org/web/20240715184137/https://snapcraft.io/docs/build-and-staging-dependencies).
 
 If you can't wait, you can grab the PR code and use it as a [local plugin](https://docs.snapcraft.io/writing-local-plugins).
 
