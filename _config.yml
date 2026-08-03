@@ -58,7 +58,7 @@ defaults:
       layout: event
       permalink: /events/:title/
       section: events
-      class: release
+      class: event
   - scope:
       path: ""
       type: samples
