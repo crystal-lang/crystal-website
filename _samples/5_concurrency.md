@@ -3,7 +3,7 @@ title: Concurrency Model
 short_name: Concurrency
 description: |
   Crystal uses green threads, called fibers, to achieve concurrency.
-  Fibers communicate with each other via channels without having to turn to shared memory or locks ([CSP](https://www.wikiwand.com/en/Communicating_sequential_processes)).
+  Fibers communicate with each other via channels without having to turn to shared memory or locks ([CSP](https://en.wikipedia.org/wiki/Communicating_sequential_processes)).
 read_more: "[Read more about concurrency](https://crystal-lang.org/reference/guides/concurrency.html)"
 ---
 
