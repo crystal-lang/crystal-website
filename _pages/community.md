@@ -4,6 +4,7 @@ description: There are so many ways to get involved in Crystal. Here's a list of
 layout: page-wide
 section: community
 ---
+
 <section id="channels">
   <div class="topics">
     <div id="discuss" class="link-items">
@@ -245,7 +246,6 @@ section: community
           {%- include icons/map.svg %}
           Crystal Community</a>
       </div>
-    </div>
     </div>
   </div>
 </section>

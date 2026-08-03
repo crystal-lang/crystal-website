@@ -8,4 +8,4 @@ Due to the recent changes on management in the Freenode network and the subseque
 
 [#crystal-lang](https://web.libera.chat/#crystal-lang) on Libera Chat will be our primary IRC presence from now on. The bridge to our Gitter room has moved there, too.
 
-Learn more about meeting other Crystal users on our [community page](/_pages/community.html)!
+Learn more about meeting other Crystal users on our [community page](/_pages/community.md)!
