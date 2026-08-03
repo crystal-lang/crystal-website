@@ -21,8 +21,8 @@ exclude_path = [
   "_includes",
   "_style_guide",
   "_pages/blog/authors.html",
-  "_pages/blog/tags.html",
-  "_pages/sitemap.html",
+  "_pages/blog/tags.md",
+  "_pages/sitemap.md",
   "index.md",
 ]
 
