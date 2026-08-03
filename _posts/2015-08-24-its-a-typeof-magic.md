@@ -64,7 +64,7 @@ Array(<type_merge>(1, 'a', true)).build(3) do |buffer|
 end
 ```
 
-Now this literal is invoking a [regular method](http://crystal-lang.org/api/Array.html#build%28capacity%20%3A%20Int%2C%20%26block%29-class-method)
+Now this literal is invoking a [regular method](https://crystal-lang.org/api/0.20.0/Array.html#build%28capacity%3AInt%2C%26block%29-class-method)
 to build an array. The catch is that you couldn't write this: `<type_merge>` is only the representation of this internal node
 that allows you to compute a type, but if you wrote the above you would get a syntax error.
 
