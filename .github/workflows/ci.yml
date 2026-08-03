@@ -33,5 +33,5 @@ jobs:
           restore-keys: gem-
       - name: Build website
         run: devenv shell make build
-      - name: Test `check_html`
-        run: devenv shell make check_html
+      - name: Test local links
+        run: devenv shell make check_internal_links

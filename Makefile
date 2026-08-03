@@ -23,13 +23,13 @@ ALL_SOURCES := $(CONTENT_SOURCES) $(THEME_SOURCES)
 all: build
 
 .PHONY: build
-build: $(O) ## Build site
+build: deps $(O) ## Build site
 
 .PHONY: serve
 serve: deps ## Run a local HTTP server with this site
 	bundle exec jekyll serve --watch --livereload --incremental --strict_front_matter --host 0.0.0.0 --destination $(O)
 
-$(O): deps $(ALL_SOURCES)
+$(O): $(ALL_SOURCES)
 	bundle exec jekyll build --strict_front_matter --destination $(O)
 
 .PHONY: deps
@@ -55,13 +55,13 @@ update_sponsors: scripts/merge.cr fetch_opencollective ## Update sponsor data (f
 fetch_opencollective: scripts/opencollective.cr
 	crystal $<
 
-.PHONY: check_html
-check_html: $(O) ## Validates generated HTML
-	$(htmltest) --skip-external
-
 .PHONY: check_external_links
 check_external_links: $(O) ## Validates external links in generated HTML
 	$(htmltest)
+
+.PHONY: check_internal_links
+check_internal_links: $(O) ## Validates internal links in generated HTML
+	lychee --config /dev/null --offline --root-dir $(O) --include-fragments --hidden --index-files index.html $(O)
 
 .PHONY: lint-markdown
 lint-markdown: ## Run markdownlint

@@ -36,14 +36,14 @@ You can resize the default context to increase parallelism, making it truly
 parallel, and letting it automatically scale fibers across CPU cores as needed
 at runtime:
 
-```
+```crystal
 Fiber::ExecutionContext.default.resize(maximum: System.cpu_count)
 ```
 
 You can keep it concurrent and start additional contexts to control the
 execution and let the OS preempt the threads:
 
-```
+```crystal
 parallel = Fiber::ExecutionContext::Parallel.new("MT", maximum: 4)
 parallel.spawn { }
 ```
@@ -114,7 +114,7 @@ The `CRYSTAL_WORKERS` environment variable is no longer used by default. You can
 use it manually to resize the default context, or start a parallel context. For
 example:
 
-```
+```crystal
 maximum = ENV["CRYSTAL_WORKERS"]?.try(&.to_i?) || 4
 Fiber::ExecutionContext.default.resize(maximum)
 ```

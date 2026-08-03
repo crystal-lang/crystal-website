@@ -79,7 +79,7 @@ These compile time checks can save your sanity when an accidental typo slips its
 ## Open and welcoming dev team
 
 The Amber project is _active_. Development on the tools, framework, libraries, and documentation is constant. Yet I've felt welcomed into the fold as an Amber contributor as the core team readily reviews and merges my pull requests, discusses framework direction and goals, and openly accepts suggestions and contributions from casual contributors as well as frequent benefactors.
-This picture is from the [Github Pulse](https://github.com/amberframework/amber/pulse/monthly) and shows how active the project has been this month:
+This picture is from the [GitHub Pulse](https://github.com/amberframework/amber/pulse/monthly) and shows how active the project has been this month:
 
 <img src="/assets/blog/amber-pulse.png" class="center"/>
 
