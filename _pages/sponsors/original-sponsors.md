@@ -1,6 +1,6 @@
 ---
 title: Original Sponsors
-description: Thank you to everyone who backed our <a href="https://www.bountysource.com/teams/crystal-lang/fundraiser" data-dead-link data-proofer-ignore target="_blank">Bountysource fundraiser</a>!
+description: Thank you to everyone who backed our _Bountysource fundraiser_!
 section: community
 ---
 
