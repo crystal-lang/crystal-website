@@ -97,4 +97,4 @@ In this case, we forgot to add an `else` condition that lets the user know that 
 
 ## Give Lucky a spin
 
-We have designed Lucky to help people avoid common pitfalls, and make programming fun years into a project. If you’re interested in Lucky, [throw us a star on the Github](https://github.com/luckyframework/lucky), [check out the guides](https://luckyframework.org/guides/), or [learn more about what makes Lucky special](https://luckyframework.org/why-lucky/). Happy coding!
+We have designed Lucky to help people avoid common pitfalls, and make programming fun years into a project. If you’re interested in Lucky, [throw us a star on the GitHub](https://github.com/luckyframework/lucky), [check out the guides](https://luckyframework.org/guides/), or [learn more about what makes Lucky special](https://luckyframework.org/why-lucky/). Happy coding!
