@@ -55,7 +55,7 @@ section: community
           </tr>
           <tr>
             <td class="col-logo">
-              <a href="http://blog.mmediasys.com/" target="_blank" data-dead-link data-proofer-ignore>Luis Lavena</a>
+              <a href="https://web.archive.org/web/20210704044938/https://blog.mmediasys.com/" target="_blank" data-dead-link data-proofer-ignore>Luis Lavena</a>
             </td>
           </tr>
           <tr>

@@ -76,3 +76,9 @@ style = "asterisk"
 [MD060]
 enabled = true
 style = "aligned-no-space"
+
+## Other rules
+
+# MD057 - Check that file links work
+[MD057]
+compact-paths = true
