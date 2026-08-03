@@ -46,6 +46,8 @@ exclude = [
   "^https?://t\\.co/",                                       # all requests result in 400
   "^https?://twitter\\.com/",                                # all requests result in 400
   "^https?://us6\\.campaign-archive\\.com/",                 # all requests result in 404
+  "^https?://(www\\.)?packtpub\\.com/",                      # all requests result in 403
+  "^https://(www\\.)?gnu.org/",                              # all requests result in 429
 
   # Fragment links that are not valid URLs
   "^https?://app\\.gitter\\.im/#/room/#crystal-lang_crystal:gitter\\.im$",
