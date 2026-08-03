@@ -6,6 +6,9 @@
 # * TODO: The rule might be useful, but we need to investigate whether we want to use it or not.
 
 [global]
+
+flavor = "kramdown"
+
 disable = [
   # MD014 - Show command output in documentation
   # TODO: Not sure if this is generally useful.
