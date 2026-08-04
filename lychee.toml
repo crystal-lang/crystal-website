@@ -14,6 +14,11 @@ exclude_path = [
   "_sass/mixins/_link-with-icon.scss", # lists URL prefixes,
   "_data/packages.yaml",               # contains URL templates
   "_data/packages-nightly.yaml",       # contains URL templates
+  "_data/bountysource.json",           # potentially obsolete URLs
+  "_data/opencollective.json",         # potentially obsolete URLs
+  "_data/others.json",                 # potentially obsolete URLs
+  ".*\\.csv",                          # parser misreads URLs in CSV files
+  "assets/community/contributors.svg", # pre-generated asset
 
   # contains templates with incomplete URLs
   "_plugins",
@@ -26,6 +31,9 @@ exclude_path = [
   "_pages/sitemap.md",
   "feed.xml",
   "index.md",
+
+  # page contains user-controlled links that are potentially obsolete
+  "sponsors/index.html",
 ]
 
 # Enable the checking of fragments in links.
@@ -50,6 +58,9 @@ exclude = [
   "^https?://us6\\.campaign-archive\\.com/",                 # all requests result in 404
   "^https?://(www\\.)?packtpub\\.com/",                      # all requests result in 403
   "^https://(www\\.)?gnu.org/",                              # all requests result in 429
+  "^https?://(www\\.)?stackoverflow.com/",                   # all requests result in 403
+  "^https?://joystick\\.tv/",                                # all requests result in 403
+  "^https?://www\\.jsonkeeper\\.com/",                       # connection refused
 
   # Fragment links that are not valid URLs
   "^https?://app\\.gitter\\.im/#/room/#crystal-lang_crystal:gitter\\.im$",
@@ -68,4 +79,5 @@ exclude = [
   # accessible.
   "^https?://github\\.com/ivmai/bdwgc/issues/133$",
   "^https?://github\\.com/ivmai/bdwgc/issues/225$",
+  "^https?://github\\.com/crystal-lang/crystal/commit/c948b31ee6d5414050e771f89955c7dc02883ebc",
 ]
