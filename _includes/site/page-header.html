@@ -2,7 +2,7 @@
   <h1>{{ include.page_title | default: page.page_title | default: page.title | liquify }}</h1>
 
   <div class="page-description">
-    {{- page.description | markdownify }}
+    {{- page.description | markdownify | rellinks }}
   </div>
 
   {%- if page.link_actions %}
