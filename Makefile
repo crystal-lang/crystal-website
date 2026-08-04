@@ -16,8 +16,8 @@ O ?= _site## Output path
 htmltest = htmltest
 
 CONTENT_SOURCES := $(wildcard assets/**) $(wildcard _data/**) $(wildcard _events/**) $(wildcard _pages/**) $(wildcard _posts/**) $(wildcard _releases/**)
-SITE_SOURCES := funding.json feed.xml _config.yml index.html Makefile $(wildcard _includes/**) $(wildcard _layouts/**) $(wildcard _plugins/**) $(wildcard _sass/**) $(wildcard scripts/**) $(wildcard _style_guide/**)
-ALL_SOURCES := $(CONTENT_SOURCES) $(THEME_SOURCES)
+SITE_SOURCES := funding.json feed.xml _config.yml index.md Makefile $(wildcard _includes/**) $(wildcard _layouts/**) $(wildcard _plugins/**) $(wildcard _sass/**) $(wildcard scripts/**) $(wildcard _style_guide/**)
+ALL_SOURCES := $(CONTENT_SOURCES) $(SITE_SOURCES)
 
 .PHONY: all
 all: build
