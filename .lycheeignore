@@ -21,6 +21,9 @@
 ^https?://(www\.)?youtube\.com/
 ^https?://us6\.campaign-archive\.com/
 
+# all requests result in 405
+^https?://datanews\.knack\.be/
+
 # all requests result in 429
 ^https://(www\.)?gnu.org/
 
@@ -29,6 +32,9 @@
 
 # connection refused
 ^https?://www\.jsonkeeper\.com/
+
+# timeout
+^https?://gmplib\.org/
 
 # local development server
 ^https?://0\.0\.0\.0:
