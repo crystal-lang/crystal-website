@@ -75,9 +75,6 @@ exclude = [
   # Archive links should usually exists, but requests are heavy.
   "^https?://web\\.archive\\.org/",
 
-  # Skip generated links to GitHub
-  "^https?://github\\.com/crystal-lang/crystal-website/edit/master/",
-
   # FIXME: These URLs keep returning 404 errors, although they should be publicly
   # accessible.
   "^https?://github\\.com/ivmai/bdwgc/issues/133$",
