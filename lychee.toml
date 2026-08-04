@@ -31,9 +31,6 @@ exclude_path = [
   "_pages/sitemap.md",
   "feed.xml",
   "index.md",
-
-  # page contains user-controlled links that are potentially obsolete
-  "sponsors/index.html",
 ]
 
 # Enable the checking of fragments in links.

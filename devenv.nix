@@ -19,7 +19,6 @@
   };
 
   packages = (with pkgs; [
-    htmltest
     # TODO: We don't run mdsf automatically with git-hooks due to several issue:
     # - mdsf itself has critical bugs (e.g. https://github.com/hougesen/mdsf/issues/1702)
     # - mdsf has no mechanism to exclude or disable specific files or lines
