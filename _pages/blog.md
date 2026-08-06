@@ -8,7 +8,7 @@ link_actions:
   <a href="/feed.xml" rel="alternate" title="Newsfeed for Crystal blog posts" aria-label="Blog newsfeed" type="application/atom+xml">
     RSS
   </a>
-- "[Tags](https://crystal-lang.org/blog/tags/)"
+- "[Tags](blog/tags.md)"
 ---
 
 {% include posts/featured_news.html %}

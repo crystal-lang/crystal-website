@@ -5,7 +5,7 @@ layout: page-wide
 page_class: page--segmented
 section: install
 description: |
-  Packages for [Crystal releases](https://crystal-lang.org/releases/) are available from different sources.
+  Packages for [Crystal releases](releases.md) are available from different sources.
   There are official ones provided the Crystal project, system packages and
   community-maintained packages.
   This page gives an overview of available installation methods.
@@ -18,8 +18,8 @@ link_actions:
 - '[![](/assets/install/android.svg) #Android](#android)'
 - '[![](/assets/install/docker.svg) #Docker](#docker)'
 - '[![](/assets/install/construction.svg) #Tools](#developer-tools)'
-- '[Nightlies](https://crystal-lang.org/install/nightlies/)'
-- '[Source](https://crystal-lang.org/install/from_sources/)'
+- '[Nightlies](install/nightlies.md)'
+- '[Source](install/from_sources.md)'
 ---
 
 ## Linux
