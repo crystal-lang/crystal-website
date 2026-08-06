@@ -8,6 +8,28 @@
   </thead>
   <tbody>
     {%- assign releases = site.releases | reverse %}
+    <tr class="unreleased">
+      <th scope="row">master</th>
+      <td class="release-date">
+        rolling
+      </td>
+      <td>
+      </td>
+      <td class="release-links">
+        <div class="link-actions">
+          <a href="https://crystal-lang.org/api/master/">
+            API Docs
+          </a>
+          <a href="https://github.com/crystal-lang/crystal/compare/{{ releases[0].version }}...master">
+            Changes
+          </a>
+          <a href="https://github.com/crystal-lang/crystal/tree/master/">
+            Source
+          </a>
+        </div>
+      </td>
+    </tr>
+
     {%- for release in releases %}
       {%- assign suffix = release.version | slice: -2, 2 %}
       <tr class="{% if forloop.index0 == 0 %}latest-release{% endif %}{% if suffix == '.0' %} minor-release{% endif %}">
