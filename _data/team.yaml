@@ -4,12 +4,11 @@ core:
     status: active
     role: Team lead
     affiliation: Manas.Tech
-    
+
   beta-ziliani:
     name: Beta Ziliani
     status: active
     role: Steering Council
-    affiliation: Manas.Tech
 
   asterite:
     name: Ary Borenzweig
@@ -36,6 +35,7 @@ core:
   HertzDevil:
     name: Quinton Miller
     status: active
+    affiliation: Manas.Tech
 
   Blacksmoke16:
     status: active
@@ -53,7 +53,6 @@ core:
   mverzilli:
     name: Martin Verzilli
     status: active
-    affiliation: Manas.Tech
 
   nobodywasishere:
     name: Margret Riegert
@@ -75,11 +74,6 @@ admin:
   pettimart:
     name: Martin Pettinati
     role: Communication
-    affiliation: Manas.Tech
-
-  mverzilli:
-    name: Martin Verzilli
-    role: CTO
     affiliation: Manas.Tech
 
   manumoreira:
