@@ -4,12 +4,11 @@ core:
     status: active
     role: Team lead
     affiliation: Manas.Tech
-    
+
   beta-ziliani:
     name: Beta Ziliani
     status: active
     role: Steering Council
-    affiliation: Manas.Tech
 
   asterite:
     name: Ary Borenzweig
@@ -36,6 +35,7 @@ core:
   HertzDevil:
     name: Quinton Miller
     status: active
+    affiliation: Manas.Tech
 
   Blacksmoke16:
     status: active
@@ -53,13 +53,17 @@ core:
   mverzilli:
     name: Martin Verzilli
     status: active
-    affiliation: Manas.Tech
 
   nobodywasishere:
     name: Margret Riegert
     status: active
 
 admin:
+  manumoreira:
+    name: Manuel Moreira
+    role: Project Manager
+    affiliation: Manas.Tech
+
   nditada:
     name: Nicolás di Tada
     role: CFO
@@ -72,24 +76,14 @@ admin:
     forum_handle: matiasgarciaisaia
     github_handle: matiasgarciaisaia
 
+  ggiraldez:
+    name: Gustavo Giraldez
+    role: Engineering Manager
+    affiliation: Manas.Tech
+
   pettimart:
     name: Martin Pettinati
     role: Communication
-    affiliation: Manas.Tech
-
-  ftarulla:
-    name: Francisco Tarulla
-    role: Developer
-    affiliation: Manas.Tech
-
-  mverzilli:
-    name: Martin Verzilli
-    role: CTO
-    affiliation: Manas.Tech
-
-  manumoreira:
-    name: Manuel Moreira
-    role: Project Management
     affiliation: Manas.Tech
 
 admin_alumni:
@@ -104,6 +98,11 @@ admin_alumni:
     affiliation: Manas.Tech
     github_handle: mekhla18
     forum_handle: mekhla18
+
+  ftarulla:
+    name: Francisco Tarulla
+    role: Developer
+    affiliation: Manas.Tech
 
 alumni:
   waj:
