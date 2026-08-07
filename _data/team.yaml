@@ -59,6 +59,11 @@ core:
     status: active
 
 admin:
+  manumoreira:
+    name: Manuel Moreira
+    role: Project Manager
+    affiliation: Manas.Tech
+
   nditada:
     name: Nicolás di Tada
     role: CFO
@@ -74,11 +79,6 @@ admin:
   pettimart:
     name: Martin Pettinati
     role: Communication
-    affiliation: Manas.Tech
-
-  manumoreira:
-    name: Manuel Moreira
-    role: Project Management
     affiliation: Manas.Tech
 
 admin_alumni:
