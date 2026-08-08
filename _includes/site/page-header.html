@@ -2,13 +2,13 @@
   <h1>{{ include.page_title | default: page.page_title | default: page.title | liquify }}</h1>
 
   <div class="page-description">
-    {{- page.description | markdownify }}
+    {{- page.description | markdownify | rellinks }}
   </div>
 
   {%- if page.link_actions %}
     <nav class="link-actions" aria-label="Table of Contents">
       {%- for action in page.link_actions %}
-        {{- action | markdownify | remove: "<p>" | remove: "</p>" }}
+        {{- action | markdownify | rellinks | remove: "<p>" | remove: "</p>" }}
       {%- endfor %}
     </nav>
   {%- endif %}
