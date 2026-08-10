@@ -8,7 +8,7 @@ tags: devnotes
 
 It’s been a while since we wrote [Using CircleCI for your Crystal projects](https://manas.tech/blog/2016/06/13/using-circleci-for-your-crystal-projects/). Since then the following things happened:
 
-- [CircleCI 2.0](https://circleci.com/docs/2.0/) was announced and 1.0 is deprecated.
+- [CircleCI 2.0](https://web.archive.org/web/20180830130109/https://circleci.com/docs/2.0/) was announced and 1.0 is deprecated.
 - Crystal build process is partially [automated in CircleCI](2018-03-09-crystal-automated-release.md)
 - Docker nightly images are pushed as `crystallang/crystal:nightly` to Docker Hub
 - Shards added a cache to avoid downloading from scratch dependencies
@@ -53,7 +53,7 @@ It will show the specific compiler version used thanks to `crystal --version`. A
 
 In your development environment you either have a database server installed or use docker and have probably mapped the ports to your host. So either way, if you use MySQL you can access the service as `localhost:3306`.
 
-In CircleCI you can use [multiple docker images](https://circleci.com/docs/2.0/executor-types/#using-multiple-docker-images) and the ports of the additional images will be mapped to the first container. Pretty much as if the service would have been installed locally.
+In CircleCI you can use [multiple docker images](https://web.archive.org/web/20180827112222/https://circleci.com/docs/2.0/executor-types/#using-multiple-docker-images) and the ports of the additional images will be mapped to the first container. Pretty much as if the service would have been installed locally.
 
 Adding the `mysql:5.7` image with some environment configuration and giving it some time to start property should be enough. The resulting config is as follows:
 
@@ -96,9 +96,9 @@ workflows:
 
 ## Reduce CI delays
 
-CircleCI caches docker images in each host and it even provides some [additional features](https://circleci.com/docs/2.0/docker-layer-caching/) to reduce downloading and building docker images. This greatly reduces the time spent in each build.
+CircleCI caches docker images in each host and it even provides some [additional features](https://web.archive.org/web/20180827112222/https://circleci.com/docs/2.0/docker-layer-caching/) to reduce downloading and building docker images. This greatly reduces the time spent in each build.
 
-Another source of delay is downloading dependencies from scratch in every build. There are [solutions](https://circleci.com/docs/2.0/caching/#full-example-of-saving-and-restoring-cache) to store some files on a build to be used on a subsequent ones.
+Another source of delay is downloading dependencies from scratch in every build. There are [solutions](https://web.archive.org/web/20180827112222/https://circleci.com/docs/2.0/caching/#full-example-of-saving-and-restoring-cache) to store some files on a build to be used on a subsequent ones.
 
 Adding steps to save and restore the path used as `SHARDS_CACHE_PATH` allows the build to run faster.
 

@@ -13,11 +13,9 @@
 
 O ?= _site## Output path
 
-htmltest = htmltest
-
 CONTENT_SOURCES := $(wildcard assets/**) $(wildcard _data/**) $(wildcard _events/**) $(wildcard _pages/**) $(wildcard _posts/**) $(wildcard _releases/**)
-SITE_SOURCES := funding.json feed.xml _config.yml index.html Makefile $(wildcard _includes/**) $(wildcard _layouts/**) $(wildcard _plugins/**) $(wildcard _sass/**) $(wildcard scripts/**) $(wildcard _style_guide/**)
-ALL_SOURCES := $(CONTENT_SOURCES) $(THEME_SOURCES)
+SITE_SOURCES := funding.json feed.xml _config.yml index.md Makefile $(wildcard _includes/**) $(wildcard _layouts/**) $(wildcard _plugins/**) $(wildcard _sass/**) $(wildcard scripts/**) $(wildcard _style_guide/**)
+ALL_SOURCES := $(CONTENT_SOURCES) $(SITE_SOURCES)
 
 .PHONY: all
 all: build
@@ -56,12 +54,15 @@ fetch_opencollective: scripts/opencollective.cr
 	crystal $<
 
 .PHONY: check_external_links
-check_external_links: $(O) ## Validates external links in generated HTML
-	$(htmltest)
+check_external_links: check_all_links
+
+.PHONY: check_all_links
+check_all_links: $(O) ## Validates all links in generated HTML
+	lychee --config lychee.site.toml --root-dir $(O) $(O)
 
 .PHONY: check_internal_links
 check_internal_links: $(O) ## Validates internal links in generated HTML
-	lychee --config /dev/null --offline --root-dir $(O) --include-fragments --hidden --index-files index.html $(O)
+	lychee --config /dev/null --offline --root-dir $(O) --hidden --index-files index.html $(O)
 
 .PHONY: lint-markdown
 lint-markdown: ## Run markdownlint

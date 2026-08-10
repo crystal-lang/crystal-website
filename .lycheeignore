@@ -3,3 +3,60 @@
 # The format is one regular expression per line. Make sure to escape regex
 # special characters.
 # Please add comments to detail why a URL pattern is to be ignored.
+
+# all requests result in 400
+^https?://software\.opensuse\.org/
+^https?://t\.co/
+^https?://twitter\.com/
+
+# all requests result in 403
+^https?://(www\.)?medium\.com/
+^https?://(www\.)?packtpub\.com/
+^https?://(www\.)?reddit\.com/
+^https?://(www\.)?stackoverflow.com/
+^https?://cdn\.pbrd\.co/
+^https?://joystick\.tv/
+
+# all requests result in 404
+^https?://(www\.)?youtube\.com/
+^https?://us6\.campaign-archive\.com/
+
+# all requests result in 405
+^https?://datanews\.knack\.be/
+
+# all requests result in 429
+^https://(www\.)?gnu.org/
+
+# all requests result in 999
+^https?://(www\.)?linkedin\.com/
+
+# connection refused
+^https?://www\.jsonkeeper\.com/
+
+# timeout
+^https?://gmplib\.org/
+
+# local development server
+^https?://0\.0\.0\.0:
+
+# only available to logged-in users
+^https?://github\.com/crystal-lang/crystal/stargazers$
+
+# Fragment links that are not valid URLs
+^https?://app\.gitter\.im/#/room/#crystal-lang_crystal:gitter\.im$
+^https?://github\.com/.*#issuecomment-.*$
+^https?://github\.com/.*#L[0-9]+(-L[0-9]+)?$
+^https?://matrix\.to/#/#crystal-lang_crystal:gitter\.im$
+^https?://play\.crystal-lang\.org/#/
+^https?://web\.libera\.chat/#crystal-lang$
+^https?://www\.techempower\.com/benchmarks/#section=data-r15&test=plaintext
+
+# Skip archive.org links to avoid unnecessary requests.
+# Archive links should usually exists, but requests are heavy.
+^https?://web\.archive\.org/
+
+# FIXME: These URLs keep returning 404 errors, although they should be publicly
+# accessible.
+^https?://github\.com/crystal-lang/crystal/commit/c948b31ee6d5414050e771f89955c7dc02883ebc
+^https?://github\.com/ivmai/bdwgc/issues/133$
+^https?://github\.com/ivmai/bdwgc/issues/225$

@@ -1,6 +1,6 @@
 ---
 title: Original Sponsors
-description: Thank you to everyone who backed our <a href="https://www.bountysource.com/teams/crystal-lang/fundraiser" data-dead-link data-proofer-ignore target="_blank">Bountysource fundraiser</a>!
+description: Thank you to everyone who backed our _Bountysource fundraiser_!
 section: community
 ---
 
@@ -55,7 +55,7 @@ section: community
           </tr>
           <tr>
             <td class="col-logo">
-              <a href="http://blog.mmediasys.com/" target="_blank" data-dead-link data-proofer-ignore>Luis Lavena</a>
+              <a href="https://web.archive.org/web/20210704044938/https://blog.mmediasys.com/" target="_blank" data-dead-link data-proofer-ignore>Luis Lavena</a>
             </td>
           </tr>
           <tr>

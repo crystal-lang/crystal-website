@@ -34,7 +34,7 @@ module Hamming
 end
 ```
 
-**A:** Trick question - it's both. The modules above will work in [Ruby](https://repl.it/@marksiemers1/HammingLeapYear) or [Crystal](https://play.crystal-lang.org/#/r/3ayq). How cool is that?
+**A:** Trick question - it's both. The modules above will work in [Ruby](https://web.archive.org/web/20240715184230/https://repl.it/@marksiemers1/HammingLeapYear) or [Crystal](https://play.crystal-lang.org/#/r/3ayq). How cool is that?
 
 See more examples of code similarities in [ruby-to-crystal](https://github.com/marksiemers/ruby-to-crystal).
 
@@ -73,7 +73,7 @@ module Year
 end
 ```
 
-Does [that method](https://repl.it/@marksiemers1/LeapYearOverloads) look good to you? We still have a chance at a runtime exception, just with a more helpful error message.
+Does [that method](https://web.archive.org/web/20240715184230/https://replit.com/@marksiemers1/LeapYearOverloads) look good to you? We still have a chance at a runtime exception, just with a more helpful error message.
 
 In Crystal, we have the option of explicitly typing our inputs (and outputs). We can change the method signature to `self.leap?(year : Int)` and we are guaranteed to have an integer as input.
 
@@ -110,7 +110,7 @@ Another advantage of compilation is speed and optimization. When comparing the p
 
 In one example, [summing random numbers in crystal](https://github.com/marksiemers/ruby-to-crystal/blob/master/src/enumerables/reduce_bench.cr) can be **10 orders of magnitude faster** than Ruby (~ 37 million percent faster). This is due to compiler optimizations and the ability to use primitive data types in Crystal. This does come with the risk of integer overflow for large numbers ([See Ary's explanation](https://crystal-lang.org/2016/07/15/fibonacci-benchmark.html)).
 
-Crystal's built-in HTTP server has been able to handle over [2 million requests per second in benchmark testing](https://www.techempower.com/benchmarks/previews/round15/#section=data-r15&hw=ph&test=plaintext&l=zdk8an&c=3). And many of the web frameworks are consistently delivering sub-millisecond response times for web applications.
+Crystal's built-in HTTP server has been able to handle over [2 million requests per second in benchmark testing](https://www.techempower.com/benchmarks/#section=data-r15&test=plaintext). And many of the web frameworks are consistently delivering sub-millisecond response times for web applications.
 
 Which brings us to the next point...
 
