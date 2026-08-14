@@ -73,7 +73,7 @@ There seems to be an error, how can I fix it?
 
 ### Original Sponsors
 
-Meet our [original sponsors](sponsors/original-sponsors.html).
+Meet our [original sponsors](sponsors/original-sponsors.md).
 
 </aside>
 </section>
