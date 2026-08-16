@@ -52,7 +52,7 @@
   title: Pacman (Arch Linux)
   example: |
     ```shell
-    pacman -S crystal shards
+    pacman -Syu crystal shards
     ```
   repo_href: https://archlinux.org/packages/extra/x86_64/crystal/
   repo_description: Crystal package on Arch Linux package index
