@@ -1064,8 +1064,8 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5,
-    "time_last_payment": "Jul 13, 2026",
-    "all_time": 210,
+    "time_last_payment": "Aug 13, 2026",
+    "all_time": 215,
     "since": "Feb 13, 2023"
   },
   {
@@ -2302,7 +2302,7 @@
   },
   {
     "name": "Oleksii Neishchenko",
-    "last_payment": 5,
+    "last_payment": 0,
     "time_last_payment": "Jul 1, 2026",
     "all_time": 370,
     "since": "Jun 9, 2020"
