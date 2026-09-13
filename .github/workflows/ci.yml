@@ -33,5 +33,17 @@ jobs:
           restore-keys: gem-
       - name: Build website
         run: devenv shell make build
-      - name: Test local links
-        run: devenv shell make check_internal_links
+      - name: Restore lycheecache
+        id: lycheecache
+        uses: actions/cache/restore@v6
+        with:
+            path: .lycheecache
+            key: lycheecache
+      - name: Test links
+        run: devenv shell make check_all_links
+      - name: Save lycheecache
+        uses: actions/cache/save@v6
+        with:
+            path: .lycheecache
+            key: ${{ steps.lycheecache.outputs.cache-primary-key }}
+        if: always()
