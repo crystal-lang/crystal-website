@@ -1070,8 +1070,8 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5,
-    "time_last_payment": "Aug 13, 2026",
-    "all_time": 215,
+    "time_last_payment": "Sep 13, 2026",
+    "all_time": 220,
     "since": "Feb 13, 2023"
   },
   {
@@ -1653,8 +1653,8 @@
   {
     "name": "Joseph Method",
     "last_payment": 5,
-    "time_last_payment": "Aug 9, 2026",
-    "all_time": 310,
+    "time_last_payment": "Sep 9, 2026",
+    "all_time": 315,
     "since": "Jul 9, 2021"
   },
   {
@@ -2242,8 +2242,8 @@
     "since": "Aug 7, 2020"
   },
   {
-    "name": "Matt Berry",
-    "url": "https://mattrb.com",
+    "name": "Matt Beck",
+    "url": "https://mattrb.com/",
     "last_payment": 5,
     "time_last_payment": "Sep 1, 2026",
     "all_time": 370,
