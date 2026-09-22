@@ -24,7 +24,6 @@ sponsors/concentric.png,Concentric,https://concentric.health,$75,"$3,300","Feb 2
 ,Mercury Jets,https://www.mercuryjets.com,$25,$375,"Jul 1, 2025",25
 ,Monarch Air Group,https://monarchairgroup.com/,$25,$375,"Jul 1, 2025",25
 ,SocialDawn,https://www.socialdawn.com/,$25,$200,"Feb 14, 2026",25
-,FBPostLikes,https://www.fbpostlikes.com/,$25,$150,"Feb 20, 2026",25
 ,Liothen,,$25,$125,"Apr 29, 2026",25
 ,pitosalas,,$20,$825,"Dec 20, 2017",10
 ,Andrey A. Konovalov,http://sysadminblog.ru,$14,$428,"Mar 6, 2018",10
@@ -48,6 +47,7 @@ sponsors/concentric.png,Concentric,https://concentric.health,$75,"$3,300","Feb 2
 ,rigani,https://twitter.com/rigani_c,$10,$310,"Dec 28, 2018",10
 ,Håkan Nylén,,$10,$220,"Mar 26, 2020",10
 ,Jeffrey Crochet,https://www.linkedin.com/in/jeffrey-crochet-21008b199/,$10,$130,"Aug 25, 2020",10
+,Francesco Fassi,,$10,$10,"Sep 20, 2026",10
 ,jeron,,$5,"$1,160","Jan 18, 2018",5
 ,Sho Kusano,https://aduca.org,$5,$483,"Aug 4, 2015",5
 ,msky026,http://qiita.com/msky026,$5,$450,"Oct 23, 2015",5
@@ -61,7 +61,7 @@ sponsors/concentric.png,Concentric,https://concentric.health,$75,"$3,300","Feb 2
 ,Joseph Method,,$5,$315,"Jul 9, 2021",5
 ,Mia Bennett,https://chillfox.com/,$5,$300,"Oct 1, 2021",5
 ,ʕ·ᴥ·ʔAKJ,,$5,$295,"Jan 6, 2017",5
-,PROXYONE LLC,https://proxyone.eu/,$5,$275,"Feb 21, 2022",5
+,PROXYONE LLC,https://proxyone.eu/,$5,$280,"Feb 21, 2022",5
 ,SocialWick,https://www.socialwick.com/instagram/followers,$5,$235,"Feb 14, 2024",5
 ,CasinoWizard,https://thecasinowizard.com/,$5,$230,"Oct 19, 2022",5
 ,Bubble Shooter,https://www.bubbleshooter.net/,$5,$220,"Feb 13, 2023",5
@@ -191,6 +191,7 @@ sponsors/empty.svg,Austin Robert Bales,,$0,"$1,234","May 4, 2024",0
 ,Eddy Luten,,$0,$155,"Jun 18, 2023",0
 ,Hendrik Mans,,$0,$150,"Dec 13, 2018",0
 ,WPsetup,,$0,$150,"Sep 2, 2019",0
+,FBPostLikes,,$0,$150,"Feb 20, 2026",0
 ,Provided.io,,$0,$140,"Jun 15, 2021",0
 ,eason.ye,,$0,$140,"Sep 17, 2021",0
 ,Hiptoro,,$0,$130,"Jan 17, 2023",0
@@ -204,7 +205,7 @@ sponsors/empty.svg,Austin Robert Bales,,$0,"$1,234","May 4, 2024",0
 ,Casino Extreme No Deposit Bonus,,$0,$120,"Jan 17, 2024",0
 ,HelppoHinta.fi,,$0,$115,"Oct 1, 2021",0
 ,bit4bit,,$0,$115,"Mar 9, 2022",0
-,FameBull,,$0,$115,"Jul 1, 2025",0
+,TikTokFame,,$0,$115,"Jul 1, 2025",0
 ,Instagram Story Viewer,,$0,$110,"Jun 29, 2022",0
 ,LightNode,,$0,$110,"Dec 7, 2023",0
 ,Kasper Holbek Jensen,,$0,$105,"Mar 11, 2020",0
