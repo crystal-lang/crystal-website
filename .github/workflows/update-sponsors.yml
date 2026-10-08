@@ -15,6 +15,8 @@ jobs:
       image: crystallang/crystal
 
     steps:
+    - name: Install curl
+      run: apt-get update && apt-get install -y curl
     - uses: actions/checkout@v7
     - name: Update sponsors
       run: make update_sponsors
