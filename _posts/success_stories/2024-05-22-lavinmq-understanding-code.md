@@ -34,7 +34,7 @@ But the other half, as mentioned in [their blog](https://lavinmq.com/blog/crysta
 
 2. Crystal helps developers allocate their data either on the heap or on the stack. Heap allocations are expensive, so allocating data on the stack in the hot-path of the program brings an important boost in performance. Crystal makes it easy to choose where data should be stored.
 
-3. Crystal's stdlib and compiler are written in Crystal itself. One of Crystal's golden characteristics is its readability, making it possible to read the code that is going to be run by the program without having to resort to another, typically lower-level  language.
+3. Crystal's stdlib and compiler are written in Crystal itself. One of Crystal's golden characteristics is its readability, making it possible to read the code that is going to be run by the program without having to resort to another, typically lower-level language.
 
 The latter is the main point of this post. In fact, the documentation of the standard library points to the code, making the performance implications of calling a certain method explicit. For example, look at the [documentation for `Digest.file`](https://crystal-lang.org/api/1.12.1/Digest.html#file%28file_name%3APath%7CString%29%3Aself-instance-method). Clicking on [_View source_](https://github.com/crystal-lang/crystal/blob/4cea10199/src/digest/digest.cr#L214) we land in the method’s code.
 

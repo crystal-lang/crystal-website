@@ -1,0 +1,14 @@
+<div class="events-list">
+  {%- assign events = site.events | reverse %}
+  {%- for event in events %}
+    <article class="event-card">
+      <img src="/assets{{ event.id }}.webp" alt="">
+      <time datetime="{{ event.start_date }}" itemprop="startDate">{{ event.date_text }}</time>
+      <time datetime="{{ event.end_date }}" itemprop="endDate"></time>
+
+      <a href="{{ event.url }}" class="name">{{ event.title }}</a>
+
+      <span class="location">{{ event.location }}</span>
+    </article>
+  {%- endfor %}
+</div>

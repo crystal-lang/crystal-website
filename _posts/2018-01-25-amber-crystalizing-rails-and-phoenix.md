@@ -23,21 +23,21 @@ Amber projects follow similar design to Rails and other MVC focused web framewor
 
 Rails veterans will recognize many of these files and folders immediately:
 
-```plaintext
+```text
 .. (up a dir)
 </repositories/offline_pink/
 ▸ db/migrations/
 ▾ src/
   ▾ controllers/
-  	application_controller.cr
-  	user_controller.cr
+    application_controller.cr
+    user_controller.cr
   ▸ mailers/
   ▾ models/
-  	user.cr
+    user.cr
   ▾ views/
-	▾ user/
-    	  new.slang
-    	  show.slang
+  ▾ user/
+        new.slang
+        show.slang
 ```
 
 Models, views, controllers, and migrations are all right where you’d expect them. You’ll feel right at home. Environment config files follow a familiar style and a working asset pipeline is available right out of the box, if you want it (thanks to webpack).
@@ -52,14 +52,14 @@ Crystal does a great job of complaining when a method call on a variable isn’t
 
 Observe what happens when compiling an Amber application with this broken template:
 
-```ruby
+```slim
 - if domain.name.blank?
   p No domain name
 ```
 
 The compiler complains, notifies you of the problem, and even suggests a correction:
 
-```ruby
+```text
 in macro 'macro_4598546880' expanded macro: embed:1, line 1:
 
 >  1. if domain.name.blank?
@@ -79,7 +79,7 @@ These compile time checks can save your sanity when an accidental typo slips its
 ## Open and welcoming dev team
 
 The Amber project is _active_. Development on the tools, framework, libraries, and documentation is constant. Yet I've felt welcomed into the fold as an Amber contributor as the core team readily reviews and merges my pull requests, discusses framework direction and goals, and openly accepts suggestions and contributions from casual contributors as well as frequent benefactors.
-This picture is from the [Github Pulse](https://github.com/amberframework/amber/pulse/monthly) and shows how active the project has been this month:
+This picture is from the [GitHub Pulse](https://github.com/amberframework/amber/pulse/monthly) and shows how active the project has been this month:
 
 <img src="/assets/blog/amber-pulse.png" class="center"/>
 
@@ -89,11 +89,11 @@ Last but certainly not least, thanks to Crystal, Amber is _**fast**_. The compil
 
 Check out this log excerpt from a project I've been working on:
 
-```plaintext
-10:49:15 Request	| Started 2018-01-11 10:49:15 -07:00
-10:49:15 Request	| Status: 200  Method: GET  Pipeline: web Format: html
-10:49:15 Request	| Requested Url: /domain/30
-10:49:15 Request	| Time Elapsed: 17.52ms
+```log
+10:49:15 Request  | Started 2018-01-11 10:49:15 -07:00
+10:49:15 Request  | Status: 200  Method: GET  Pipeline: web Format: html
+10:49:15 Request  | Requested Url: /domain/30
+10:49:15 Request  | Time Elapsed: 17.52ms
 ```
 
 This particular request is _slow_ by Amber standards, but it checks all the boxes:
@@ -104,7 +104,7 @@ This particular request is _slow_ by Amber standards, but it checks all the boxe
 
 Compare to a page with similar database and rendering overhead in a Rails 5 application:
 
-```plaintext
+```text
 processing by BookmarksController#index as HTML
 Completed 200 OK in 251ms (Views: 217.9ms | ActiveRecord: 15.9ms)
 ```
@@ -113,14 +113,14 @@ That's right. Thanks to the speed of Crystal, Amber can complete an entire reque
 
 For a real sample of speed, this excerpt is from a basic Read route such as this:
 
-```ruby
-  def profile
-    user = current_user
-    render "show.slang"
-  end
+```crystal
+def profile
+  user = current_user
+  render "show.slang"
+end
 ```
 
-```plaintext
+```log
 01:19:11 Request    | Started 2018-01-11 13:19:11 -07:00
 01:19:11 Request    | Status: 200  Method: GET  Pipeline: web Format: html
 01:19:11 Request    | Requested Url: /my/profile
@@ -129,7 +129,7 @@ For a real sample of speed, this excerpt is from a basic Read route such as this
 
 Or even faster, serving a static file:
 
-```plaintext
+```log
 01:19:11 Request    | Started 2018-01-11 13:19:11 -07:00
 01:19:11 Request    | Status: 200  Method: GET  Pipeline: static Format:
 01:19:11 Request    | Requested Url: /dist/main.bundle.js
@@ -138,15 +138,15 @@ Or even faster, serving a static file:
 
 Amazingly, because Amber views are compiled in, rendering a template and layout can be _significantly faster_ than serving static files when the application is configured for it[^configuration]:
 
-```plaintext
-01:45:15 Request	| Started 2018-01-17 13:45:15 -07:00
-01:45:15 Request	| Status: 200  Method: GET  Pipeline: web Format: html
-01:45:15 Request	| Requested Url: /
-01:45:15 Request	| Time Elapsed: 371.0µs
-01:45:16 Request	| Started 2018-01-17 13:45:15 -07:00
-01:45:16 Request	| Status: 200  Method: GET  Pipeline: static Format: js
-01:45:16 Request	| Requested Url: /dist/main.bundle.js
-01:45:16 Request	| Time Elapsed: 80.01ms
+```log
+01:45:15 Request  | Started 2018-01-17 13:45:15 -07:00
+01:45:15 Request  | Status: 200  Method: GET  Pipeline: web Format: html
+01:45:15 Request  | Requested Url: /
+01:45:15 Request  | Time Elapsed: 371.0µs
+01:45:16 Request  | Started 2018-01-17 13:45:15 -07:00
+01:45:16 Request  | Status: 200  Method: GET  Pipeline: static Format: js
+01:45:16 Request  | Requested Url: /dist/main.bundle.js
+01:45:16 Request  | Time Elapsed: 80.01ms
 ```
 
 No matter what your application is doing, Amber can do it _faster_.
@@ -158,5 +158,5 @@ A lot of software is written for the web today. Ruby and Rails showed the world 
 [^select]: [Relevant log](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5#file-ab_crystal_logs-txt-L1)
 [^validating]: [Relevant log](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5#file-crystal_controller-cr)
 [^rendering]: [Relevant log](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5#file-crystal_view-slim)
-[^unedited-logs]: Unedited logs and code samples comparing Rails and Amber [here](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5)
+[^unedited-logs]: Unedited [logs and code samples comparing Rails and Amber](https://gist.github.com/robacarp/d20ed807003d96e76a8538fab17e8af5)
 [^configuration]: In order to render templates and views as fast as possible, the route pipeline must be slimmed down to almost nothing, rendering many features inoperable.

@@ -1,5 +1,5 @@
 ---
-title: Latests news from the Crystal Team
+title: Latest news from the Crystal Team
 summary: A sneak peak of what kept the team busy in the past months
 author: beta-ziliani
 categories: project

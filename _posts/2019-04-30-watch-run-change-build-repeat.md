@@ -10,7 +10,7 @@ In this post, we'll cover how to automatically recompile and execute your code w
 
 ## Requirements
 
-- Have `watchexec` installed (check [github](https://github.com/watchexec/watchexec) for installation instructions)
+- Have `watchexec` installed (check [GitHub](https://github.com/watchexec/watchexec) for installation instructions)
 - Use shards’ `targets`
 
 ## Setup
@@ -33,7 +33,7 @@ watchexec -r -w src --signal SIGTERM -- ./dev/build-exec.sh "$@"
 
 Allow them to be executed:
 
-```shell
+```console
 $ chmod +x ./dev/build-exec.sh ./dev/watch.sh
 ```
 
@@ -43,7 +43,7 @@ If you created your app with `$ crystal init app awesome_app`
 
 There should be a target named `awesome_app`
 
-```shell
+```console
 $ cat shard.yml
 name: awesome_app
 
@@ -56,13 +56,13 @@ targets:
 
 You can start running the app and watching for changes doing
 
-```shell
+```console
 $ ./dev/watch.sh awesome_app
 ```
 
 And you can even pass arguments
 
-```shell
+```console
 $ ./dev/watch.sh awesome_app first second
 ```
 

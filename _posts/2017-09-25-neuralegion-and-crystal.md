@@ -5,9 +5,9 @@ categories: success
 company: Neuralegion
 ---
 
-> _This is a guest post from the team at [NeuraLegion](http://neuralegion.com), telling their Crystal in Production story. We'd like to thank them for taking the time to share their experience, and to invite any other companies or individuals using Crystal in a production environment to share theirs too - [**reach out**](/community/) if you'd like to!_
+> _This is a guest post from the team at [NeuraLegion], telling their Crystal in Production story. We'd like to thank them for taking the time to share their experience, and to invite any other companies or individuals using Crystal in a production environment to share theirs too - [**reach out**](/_pages/community.md) if you'd like to!_
 
-At [NeuraLegion](http://neuralegion.com), we have been using Crystal for quite some time now.
+At [NeuraLegion], we have been using Crystal for quite some time now.
 We would like to share our experience in this brief article, starting from how we discovered Crystal, fell in love with it, and why we decided to make Crystal our language of choice.
 
 ## About Us
@@ -31,7 +31,7 @@ For the reasons we mentioned and some others, we needed a programming language w
 
 ## How To Make Crystal Even Better
 
-Now let's be fair - we love Crystal, however there is always some room for improvement. One of the challenges we faced with Crystal was the lack of shards (Crystal's "gems") for machine learning and scientific tools. However, expecting other people to add shards is unfair, so we decided to create a shard for [Crystal-FANN](https://github.com/NeuraLegion/crystal-fann) as the groundwork for our needs (and we made it available on our Github page for anyone who may need it). For now, Crystal-FANN seems to hit the spot for us, but we are still considering the addition of Torch or TensorFlow if we conclude that FANN by itself is not enough.
+Now let's be fair - we love Crystal, however there is always some room for improvement. One of the challenges we faced with Crystal was the lack of shards (Crystal's "gems") for machine learning and scientific tools. However, expecting other people to add shards is unfair, so we decided to create a shard for [Crystal-FANN](https://github.com/NeuraLegion/crystal-fann) as the groundwork for our needs (and we made it available on our GitHub page for anyone who may need it). For now, Crystal-FANN seems to hit the spot for us, but we are still considering the addition of Torch or TensorFlow if we conclude that FANN by itself is not enough.
 
 ## Summary
 
@@ -43,16 +43,18 @@ We want to point out that this article is solely our personal experience and opi
 
 Here is a comparison between some of the parameters which were important to us:
 
-Ruby|Crystal
-:---: | :---:
-Dynamically typed | Statically typed
-Nil reference errors in runtime | Nil reference error checks at compile time
-Vast amount of existing libraries | Relatively small amount of existing libraries
-Limited runtime performance | Fast runtime performance
-Runs in virtual machine | Compiled native code
+|               Ruby                |                    Crystal                    |
+|:---------------------------------:|:---------------------------------------------:|
+|         Dynamically typed         |               Statically typed                |
+|  Nil reference errors in runtime  |  Nil reference error checks at compile time   |
+| Vast amount of existing libraries | Relatively small amount of existing libraries |
+|    Limited runtime performance    |           Fast runtime performance            |
+|      Runs in virtual machine      |             Compiled native code              |
 
 ## Useful Links
 
-[Our website](http://neuralegion.com)
+[Our website][Neuralegion]
 
 [FANN machine learning library](http://leenissen.dk/fann/wp/)
+
+[Neuralegion]: https://web.archive.org/web/20170917150121/https://neuralegion.com/

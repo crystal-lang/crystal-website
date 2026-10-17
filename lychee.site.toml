@@ -1,0 +1,36 @@
+# Lychee configuration for testing generated build output in _site
+
+#############################  Cache  ###############################
+
+# Enable link caching. This can be helpful to avoid checking the same links on
+# multiple runs.
+cache = true
+
+# Discard all cached requests older than this duration.
+max_cache_age = "7d"
+
+#############################  Requests  ############################
+
+exclude_path = [
+  # page contains user-controlled links that are potentially obsolete
+  "_site/sponsors/index.html",
+]
+
+# Enable the checking of fragments in links.
+include_fragments = "full"
+
+# Root path to use when checking absolute local links, must be an absolute path
+root_dir = "_site"
+
+index_files = [
+  "index.html",
+]
+
+hidden = true
+
+#############################  Exclusions  ##########################
+
+exclude = [
+  # Skip generated links to GitHub
+  "^https?://github\\.com/crystal-lang/crystal-website/edit/master/",
+]

@@ -10,31 +10,31 @@ max_cache_age = "7d"
 #############################  Requests  ############################
 
 exclude_path = [
-  "_site", # build output
-  # partial and incomplete paths
+  "_site",                             # build output
+  "_sass/mixins/_link-with-icon.scss", # lists URL prefixes,
+  "_data/packages.yaml",               # contains URL templates
+  "_data/packages-nightly.yaml",       # contains URL templates
+  "_data/bountysource.json",           # potentially obsolete URLs
+  "_data/opencollective.json",         # potentially obsolete URLs
+  "_data/others.json",                 # potentially obsolete URLs
+  ".*\\.csv",                          # parser misreads URLs in CSV files
+  "assets/community/contributors.svg", # pre-generated asset
+
+  # contains templates with incomplete URLs
   "_plugins",
   "_layouts",
   "_includes",
-  "_sass/mixins/_link-with-icon.scss", # lists URL prefixes,
-  "_data/packages.yaml", # contains URL templates
-  "_data/packages-nightly.yaml", # contains URL templates
+  "_style_guide",
+  "_pages/blog/authors.html",
+  "_pages/blog/tags.md",
+  "_pages/releases/feed.xml",
+  "_pages/sitemap.md",
+  "feed.xml",
+  "index.md",
 ]
 
 # Enable the checking of fragments in links.
-include_fragments = true
+include_fragments = "full"
 
-#############################  Exclusions  ##########################
-
-exclude = [
-  "^https?://twitter\\.com/",                # all requests result in 400
-  "^https?://t\\.co/",                       # all requests result in 400
-  "^https?://(www\\.)?reddit\\.com/",        # all requests result in 403
-  "^https?://(www\\.)?linkedin\\.com/",      # all requests result in 999
-  "^https://us6\\.campaign-archive\\.com/",  # all requests result in 404
-  "^https://software\\.opensuse\\.org/",     # all requests result in 400
-  "^https://(www\\.)?youtube\\.com/",        # all requests result in 404
-
-  # Skip archive.org links to avoid unnecessary requests.
-  # Archive links should usually exists, but requests are heavy.
-  "^https://web\\.archive\\.org/",
-]
+# Root path to use when checking absolute local links, must be an absolute path
+root_dir = "."

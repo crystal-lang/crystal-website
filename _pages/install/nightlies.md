@@ -1,5 +1,5 @@
 ---
-page_title: Nightly Builds
+title: Nightly Builds
 layout: page-wide
 page_class: page--segmented
 description: |
@@ -38,4 +38,4 @@ ahead of time and avoid surprises with the next release.
 
 ## From Sources
 
-See [_Build from sources_](../from_sources) for further instructions and pull the content of the `master` branch, instead of a tagged release version.
+See [_Build from sources_](from_sources.md) for further instructions and pull the content of the `master` branch, instead of a tagged release version.

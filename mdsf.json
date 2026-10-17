@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/hougesen/mdsf/main/schemas/v0.11.1/mdsf.schema.json",
+  "languages": {
+    "c": "clang-format",
+    "console": [],
+    "crystal": "crystal:format",
+    "diff": [],
+    "http": [],
+    "ini": [],
+    "irb": [],
+    "llvm": [],
+    "log": [],
+    "javascript": "prettier",
+    "powershell": [],
+    "pry": [],
+    "ruby": [
+      [
+        "rufo"
+      ]
+    ],
+    "shell": [
+      [
+        "shfmt",
+        "beautysh"
+      ]
+    ],
+    "slim": [],
+    "text": [],
+    "ucl": [],
+    "yaml": "prettier"
+  },
+  "language_aliases": {
+    "cr": "crystal",
+    "sh": "shell",
+    "shell-session": "console",
+    "terminal": "console"
+  }
+}

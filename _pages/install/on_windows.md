@@ -39,7 +39,7 @@ By default it adds crystal to the `PATH` environment variable.
 
 It is highly recommended to use the MinGW-w64 variant of Crystal inside an MSYS2
 shell, which sets up a toolchain automatically and provides a package manager.
-See [Install on MSYS2](/install/on_msys2) for instructions.
+See [Install on MSYS2](on_msys2.md) for instructions.
 
 Using Crystal without MSYS2 is also possible. The `*-gnu-unsupported.zip` file
 is a portable package and can be extracted into any location. A separate,

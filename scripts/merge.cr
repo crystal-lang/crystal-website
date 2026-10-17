@@ -25,7 +25,7 @@ SPONSOR_DATA = begin
   hash
 end
 
-%w(opencollective.json bountysource.json others.json).each do |filename|
+%w(opencollective.json bountysource.json others.json github_sponsors.json).each do |filename|
   path = "#{__DIR__}/../_data/#{filename}"
   sponsors = Array(Sponsor).from_json(File.read(path))
 

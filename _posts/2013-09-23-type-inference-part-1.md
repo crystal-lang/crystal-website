@@ -18,7 +18,7 @@ The whole program AST is traversed while the type inference binds AST nodes in o
 
 These are easy. Booleans, numbers, chars and values that are explicitly written have the type determined directly by syntax.
 
-```ruby
+```crystal
 true # : Boolean
 1    # : Int32
 ```
@@ -31,7 +31,7 @@ Type inference algorithm register on each context which variables exist. So comp
 
 The very basic statement that determines the type of a variable is an assignment.
 
-```ruby
+```crystal
 v = true
 ```
 
@@ -47,7 +47,7 @@ The next picture shows the AST nodes, the context where the variables and their 
 
 Crystal supports [union types](http://en.wikipedia.org/wiki/Union_type). When a variable is assigned multiple times in the same context (but in different branches) its expected type is the one that can handle all the assignments. So if the following code is given:
 
-```ruby
+```crystal
 if false
   v = false
 else

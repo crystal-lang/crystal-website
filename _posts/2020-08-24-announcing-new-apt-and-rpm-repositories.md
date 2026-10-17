@@ -27,7 +27,7 @@ This will allow:
 - having statistics of version adoption
 - eventually splitting the current package in compiler, shards and maybe tools
 
-We will be hosting these packages at ~~[https://bintray.com/crystal](https://bintray.com/crystal)~~
+We will be hosting these packages at [https://bintray.com/crystal](https://web.archive.org/web/20210501234418/https://bintray.com/crystal)
 
 The current apt and rpm packages in `dist.crystal-lang.org` will be available and receive stable updates until November 2020 as a transition period.
 
@@ -80,7 +80,7 @@ The installation script requires `gnupg`, `ca-certificates`, and `apt-transport-
 
 ## What if I already have crystal installed via apt/rpm?
 
-The installation script will overwrite `/etc/apt/sources.list.d/crystal.list` and  `/etc/yum.repos.d/crystal.repo` on every execution. These are the same files used in the former official apt and rpm repositories.
+The installation script will overwrite `/etc/apt/sources.list.d/crystal.list` and `/etc/yum.repos.d/crystal.repo` on every execution. These are the same files used in the former official apt and rpm repositories.
 
 If you already have the latest version of Crystal (0.35.1) and run the installation scripts you will see
 
@@ -153,7 +153,7 @@ What follows is a description of how these repositories are laid out for the sak
 
 The deb repository declared with `deb_distribution=all` and `deb_component` is used for the channel.
 
-```txt
+```text
 deb https://dl.bintray.com/crystal/deb all stable
 deb https://dl.bintray.com/crystal/deb all unstable
 deb https://dl.bintray.com/crystal/deb all nightly
@@ -193,7 +193,7 @@ As before, the repository metadata is signed with the Bintray shared GPG key and
 
 Replace the `{DISTRO}` and `{CHANNEL}` and you are all set.
 
-```txt
+```ini
 [crystal]
 name=Crystal
 baseurl=https://dl.bintray.com/crystal/rpm/{DISTRO}/x86_64/{CHANNEL}

@@ -72,9 +72,9 @@ pp! typeof(x)
 
 ## Existing Solution: context tool
 
-About 8 years ago Crystal [gained some built-in tooling](/2015/09/05/tools/) and one of those tools would give us exactly the information we are looking for.
+About 8 years ago Crystal [gained some built-in tooling](2015-09-05-tools.md) and one of those tools would give us exactly the information we are looking for.
 
-Assuming the previous `def maybe` is defined at the beginning of a  `program.cr` we could use the context tool as follows:
+Assuming the previous `def maybe` is defined at the beginning of a `program.cr` we could use the context tool as follows:
 
 ```console
 % crystal tool context -c program.cr:2:3 program.cr
@@ -146,7 +146,7 @@ end
 
 If we try to get the compile-time type of the expression `t` we will stumble on the infamous “can't execute TypeOf in a macro”.
 
-```console
+```text
 {% raw %}
 In program.ign.cr:4:26
 
@@ -253,7 +253,7 @@ def dig_first(xs)
   end
 end
 
-dig_first([[1,[2],3]])
+dig_first([[1, [2], 3]])
 ```
 
 ```console
@@ -330,9 +330,11 @@ In the `reveal_type` macro we needed to show the expression and its location. Th
 
 ```crystal
 {% raw %}
+
 macro reveal_type(t)
   {%- t.raise "Lorem ipsum" %}
 end
+
 {% endraw %}
 ```
 

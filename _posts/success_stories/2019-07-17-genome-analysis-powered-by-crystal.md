@@ -29,9 +29,9 @@ Peter Schols, Diploid’s CEO, was very satisfied with these results.
 
 [http://www.diploid.com/moon](http://www.diploid.com/moon)
 
-[https://researchstash.com/2017/06/14/a-european-startup-is-revolutionizing-the-genome-diagnostics-through-artificial-intelligence/](https://researchstash.com/2017/06/14/a-european-startup-is-revolutionizing-the-genome-diagnostics-through-artificial-intelligence/)
+[https://researchstash.com/2017/06/14/a-european-startup-is-revolutionizing-the-genome-diagnostics-through-artificial-intelligence/](https://web.archive.org/web/20180217144253/https://www.researchstash.com/2017/06/14/a-european-startup-is-revolutionizing-the-genome-diagnostics-through-artificial-intelligence/)
 
-[https://www.bio-itworld.com/2018/05/16/2018-best-of-show-winners.aspx](https://www.bio-itworld.com/2018/05/16/2018-best-of-show-winners.aspx)
+[https://www.bio-itworld.com/2018/05/16/2018-best-of-show-winners.aspx](https://web.archive.org/web/20200602034847/http://www.bio-itworld.com/2018/05/16/2018-best-of-show-winners.aspx)
 
 [https://www.genomeweb.com/informatics/moon-software-launch-diploid-aims-accelerate-diagnosis-rare-genetic-diseases](https://www.genomeweb.com/informatics/moon-software-launch-diploid-aims-accelerate-diagnosis-rare-genetic-diseases)
 

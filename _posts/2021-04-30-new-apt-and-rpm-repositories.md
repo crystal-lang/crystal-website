@@ -6,7 +6,7 @@ categories: technical
 tags: packaging
 ---
 
-With our previous distribution hosting at ~~[bintray](https://bintray.com/crystal)~~
+With our previous distribution hosting at [bintray](https://web.archive.org/web/20210501234418/https://bintray.com/crystal/)
 shutting down, we transitioned to the [Open Build Service (OBS)](https://build.opensuse.org),
 a cross-platform package building service provided by openSUSE.
 
@@ -17,13 +17,13 @@ but more platforms and architectures will follow.
 All packages are available on OBS at [build.opensuse.org/package/show/devel:languages:crystal](https://build.opensuse.org/project/show/devel:languages:crystal).
 It offers an [installation page](https://software.opensuse.org/download.html?project=devel%3Alanguages%3Acrystal&package=crystal) with detailed instructions for the many different
 target systems.
-Our own installation instructions at [crystal-lang.org/install](/install) have been updated,
+Our own installation instructions at [crystal-lang.org/install](/_pages/install.md) have been updated,
 including the automatic installer script.
 
 Since bintray is shutting down all operations on May 1st, 2021 our previous repositories
 won't be available anymore. Please update to the new OBS repositories.
 Running the updated installation script should override the previous configuration
-in  `/etc/apt/sources.list.d/crystal.list` and  `/etc/yum.repos.d/crystal.repo`.
+in `/etc/apt/sources.list.d/crystal.list` and `/etc/yum.repos.d/crystal.repo`.
 
 ```shell-session
 $ curl -fsSL https://crystal-lang.org/install.sh | sudo bash

@@ -10,7 +10,7 @@ The [Snapcraft Summit Montréal](https://snapcraft.io/blog/snapcraft-summit-mont
 
 Day by day, there were steady updates for the projects. Some were not new to the platform and sought improvements and problem solving. Others learnt about the confinement capabilities, the different pieces that make the store come to life, and take the first steps towards integrating them. At the end of each day a massive status check of almost forty parties was held, and a summary was dropped in [forum.snapcraft.io](https://forum.snapcraft.io/t/snapcraft-summit-montreal-2019-day-1-2-3/11763).
 
-Before jumping into the technical changes for Crystal itself, I would like to mention the people with whom I shared some chats, ideas and work that definitely can impact in future proposals. These people are [Daniel Silverstone](https://twitter.com/dsilverstone) from **rustup**, [Ana Rosas](https://twitter.com/ana_rosas) & [María de Antón](https://twitter.com/amalulla) from **TravisCI**, [Alex Arslan](https://github.com/ararslan) & [Jeff Bezanson](https://twitter.com/jeffbezanson) from **Julia**, [Graham Christensen](https://twitter.com/grhmc) from  **NixOS**, and [Sergio Schvezov](https://twitter.com/sergiusens) from **Snapcraft**. Meeting them helped me get to know better some aspects of the projects, challenges, and solutions that are not in clear sight. I can't stress enough how much I enjoyed meeting them all.
+Before jumping into the technical changes for Crystal itself, I would like to mention the people with whom I shared some chats, ideas and work that definitely can impact in future proposals. These people are [Daniel Silverstone](https://twitter.com/dsilverstone) from **rustup**, [Ana Rosas](https://twitter.com/ana_rosas) & [María de Antón](https://twitter.com/amalulla) from **TravisCI**, [Alex Arslan](https://github.com/ararslan) & [Jeff Bezanson](https://twitter.com/jeffbezanson) from **Julia**, [Graham Christensen](https://twitter.com/grhmc) from **NixOS**, and [Sergio Schvezov](https://twitter.com/sergiusens) from **Snapcraft**. Meeting them helped me get to know better some aspects of the projects, challenges, and solutions that are not in clear sight. I can't stress enough how much I enjoyed meeting them all.
 
 ## What's new?
 
@@ -93,7 +93,7 @@ When building the `.snap` the following things will happen:
 3. Packaging all executables in `./bin` in the final `.snap`.
 4. Packaging all linked libraries required to run those binaries (detected via `ldd`)
 
-In case the app requires some C libraries that are not available by default, you will need to list them as [build-packages](https://docs.snapcraft.io/t/build-and-staging-dependencies/11451).
+In case the app requires some C libraries that are not available by default, you will need to list them as [build-packages](https://web.archive.org/web/20240715184137/https://snapcraft.io/docs/build-and-staging-dependencies).
 
 If you can't wait, you can grab the PR code and use it as a [local plugin](https://docs.snapcraft.io/writing-local-plugins).
 

@@ -24,9 +24,13 @@
                 {%- endif %}
                 <div>
                   <div>{{ session["Presenter"] }}</div>
-                    {%- if session["Link"] %}
+                    {%- assign link = session["Link"] %}
+                    {%- if link %}
+                      {%- unless link contains "https://" %}
+                        {%- assign link = link | prepend: "https://github.com/" %}
+                      {%- endunless %}
                       <p class="session-link">
-                        <a href="https://github.com/{{ session["Link"] }}">@{{ session["Link"] }}</a>
+                        <a href="{{ link }}">@{{ link | split: "/" | last }}</a>
                       </p>
                     {%- endif %}
                 </div>

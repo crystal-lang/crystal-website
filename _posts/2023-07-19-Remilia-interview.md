@@ -25,10 +25,10 @@ Yes, that's correct. Part of this is just due to my history of using Common Lisp
 However, my Lisp code stays as a prototype in most cases because my Lisp code is never as memory efficient as Crystal. In most cases I see a roughly 50-75% decrease in memory usage going from my initial Lisp prototype to Crystal. Shipping a source repo that someone can download and compile also isn't as clean as with Shards, and even if it was, I don't think most users wanting to compile their own software know the idiosyncrasies of the various Lisp compilers out there. So really, Crystal ends up making a lot more sense to me past the prototype stage in most cases.
 
 Also, a Hello World binary built with Common Lisp is somewhere around 42mb (and can't be run through strip), whereas a Hello World in Crystal is only like 300k.
-
+win
 **Tell us about three projects that you're most proud of.**
 
-I think the three I'm most proud of right now are [Benben](https://chiselapp.com/user/MistressRemilia/repository/benben/index), a player for a music format called VGM; [midi123](https://chiselapp.com/user/MistressRemilia/repository/midi123/index), a command line MIDI player that can use SoundFonts for audio synthesis; and [RemiAudio](https://chiselapp.com/user/MistressRemilia/repository/remiaudio/index), a general purpose audio processing library that is shared between them.
+I think the three I'm most proud of right now are [Benben](https://chiselapp.com/user/MistressRemilia/repository/benben/index), a player for a music format called VGM; [midi123](https://web.archive.org/web/20251201133339/https://chiselapp.com/user/MistressRemilia/repository/midi123/index), a command line MIDI player that can use SoundFonts for audio synthesis; and [RemiAudio](https://chiselapp.com/user/MistressRemilia/repository/remiaudio/index), a general purpose audio processing library that is shared between them.
 
 **You add audio chipsets to Benben.What's the story there?**
 

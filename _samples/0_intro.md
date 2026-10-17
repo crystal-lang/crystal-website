@@ -8,6 +8,7 @@ description: |
 read_more: '[Language specification](https://crystal-lang.org/reference/syntax_and_semantics/)'
 playground: false
 ---
+
 ```crystal
 # A very basic HTTP server
 require "http/server"

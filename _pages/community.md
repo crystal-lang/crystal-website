@@ -4,6 +4,7 @@ description: There are so many ways to get involved in Crystal. Here's a list of
 layout: page-wide
 section: community
 ---
+
 <section id="channels">
   <div class="topics">
     <div id="discuss" class="link-items">
@@ -57,7 +58,7 @@ section: community
         <a class="link-item__main" href="https://matrix.to/#/#crystal-lang_crystal:gitter.im">
           {%- include icons/matrix.svg %}
           Matrix: <em>#crystal-lang_crystal:gitter.im</em>
-        </a>(<a href="https://gitter.im/crystal-lang/crystal">web</a>)
+        </a>(<a href="https://app.gitter.im/#/room/#crystal-lang_crystal:gitter.im">web</a>)
         <p>The official chat room at Matrix (previously Gitter).</p>
       </div>
 
@@ -82,15 +83,15 @@ section: community
 
       <div class="link-item" id="blog">
         {%- include icons/rss.svg %}
-        <a class="link-item__main" href="/blog">Crystal Blog</a> (<a href="/feed.xml">feed</a>)
+        <a class="link-item__main" href="https://crystal-lang.org/blog/">Crystal Blog</a> (<a href="https://crystal-lang.org/feed.xml">feed</a>)
         <p>Release announcements, use cases, features and other news from the Crystal team.</p>
       </div>
 
       <div class="link-item" id="newsletter">
-        <a class="link-item__main" href="/newsletter">
+        <a class="link-item__main" href="https://crystal-lang.org/newsletter/">
           {%- include icons/newsletter.svg %}
           Crystal Newsletter
-        </a> (<a href="/newsletter/archive">archive</a>)
+        </a> (<a href="https://crystal-lang.org/newsletter/archive/">archive</a>)
         <p>Our newsletter regularly shares highlights and insights on the Crystal language and community.</p>
       </div>
 
@@ -112,14 +113,14 @@ section: community
 
 <section>
   <div class="full-width-rule">
-    <a href="/team" class="hex">
+    <a href="https://crystal-lang.org/team/" class="hex">
       <span>Meet the Team</span>
     </a>
   </div>
 
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <a href="/team">
-      <img src="https://opencollective.com/crystal-lang/contributors.svg?width=960" alt="Collection of all collaborator profile images">
+    <a href="https://crystal-lang.org/team/">
+      <img src="/assets/community/contributors.svg" alt="Collection of all collaborator profile images">
     </a>
   </div>
 </section>
@@ -213,7 +214,7 @@ section: community
       <h3>Blogs</h3>
 
       <div class="link-item">
-        <a class="link-item__main" href="/blog/">
+        <a class="link-item__main" href="https://crystal-lang.org/blog/">
           {%- include icons/crystal.svg %}
           Crystal Blog</a>
       </div>
@@ -233,11 +234,11 @@ section: community
           Lorenzo Barasti</a>
       </div>
       <div class="link-item">
-        <a class="link-item__main" href="https://manas.tech/blog/tagged/crystal">
+        <a class="link-item__main" href="https://manas.tech/search/?q=tag%3Acrystal">
           {%- include icons/manas.svg %}
           Manas.Tech Blog</a>
       </div>
-    </div>  
+    </div>
     <div class="link-items">
       <h3>People</h3>
       <div class="link-item">
@@ -246,7 +247,6 @@ section: community
           Crystal Community</a>
       </div>
     </div>
-    </div>
   </div>
 </section>
 
@@ -254,18 +254,5 @@ section: community
   <h2 id="events">Events</h2>
   <aside markdown="1">
   </aside>
-  <div class="events-list">
-    {%- assign events = site.events | reverse %}
-    {%- for event in events %}
-      <article class="event-card">
-        <img src="/assets{{ event.id }}.webp" alt="">
-        <time datetime="{{ event.start_date }}" itemprop="startDate">{{ event.date_text }}</time>
-        <time datetime="{{ event.end_date }}" itemprop="endDate"></time>
-
-        <a href="{{ event.url }}" class="name">{{ event.title }}</a>
-
-        <span class="location">{{ event.location }}</span>
-      </article>
-    {%- endfor %}
-  </div>
+  {% include pages/community/events-list.html %}
 </section>

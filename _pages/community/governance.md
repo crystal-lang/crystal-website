@@ -198,7 +198,7 @@ members; and, if they later want to resume contributing, they can ask to be
 considered back again **subject to core team voting**.
 
 The initial active core team members will consist of everyone currently listed
-in the "Crystallers" team on Github (access granted for core members only) that
+in the "Crystallers" team on GitHub (access granted for core members only) that
 have been active in the past two years, and the initial alumni will consist of
 everyone in that list that have been inactive in the past two years.
 

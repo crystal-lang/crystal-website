@@ -5,7 +5,7 @@ date_text: 8 July 2021
 location: online
 ---
 
-We are unbelievably proud to announce that, after years of hard work, we finally have a [1.0 version of Crystal!](/2021/03/22/crystal-1.0-what-to-expect/)
+We are unbelievably proud to announce that, after years of hard work, we finally have a [1.0 version of Crystal!](/_releases/2021-03-22-crystal-1.0-what-to-expect.md)
 
 For a long, long time, it was accepted that programming languages couldn’t be simultaneously programmer-friendly and efficient. In 2011, we set out to prove that assumption was wrong. Crystal is the result of that experiment, and the source of much joy, fun and growth for everyone involved.
 
@@ -17,7 +17,7 @@ The Crystal Conference will be livestreamed, to make sure that the entire global
 
 {% include event/session-list.html %}
 
-### Time
+## Time
 
 The conference took place on Thursday, 8 July 2021, from 12:30 pm to 9:30 pm UTC.
 
@@ -70,4 +70,4 @@ We expect all conference participants to abide by this Code of Conduct in all co
 
 ### Attribution
 
-This Code of Conduct was adapted from the ~~[#causeascene CoC](https://hashtagcauseascene.com/code-of-conduct/)~~.
+This Code of Conduct was adapted from the [#causeascene CoC](https://web.archive.org/web/20220202025000/https://hashtagcauseascene.com/code-of-conduct/).

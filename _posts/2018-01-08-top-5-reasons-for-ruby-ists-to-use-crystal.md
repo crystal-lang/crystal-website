@@ -18,7 +18,7 @@ How easy? Let's take a look at some code.
 
 **Q:** Which of the following modules are written in Ruby? Which in Crystal?
 
-```ruby
+```crystal
 module Year
   def self.leap?(year)
     year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)
@@ -26,17 +26,17 @@ module Year
 end
 ```
 
-```ruby
+```crystal
 module Hamming
-  def self.distance(a,b)
-    a.chars.zip(b.chars).count{|first, second| first != second }
+  def self.distance(a, b)
+    a.chars.zip(b.chars).count { |first, second| first != second }
   end
 end
 ```
 
-**A:** Trick question - it's both. The modules above will work in [Ruby](https://repl.it/@marksiemers1/HammingLeapYear) or [Crystal](https://play.crystal-lang.org/#/r/3ayq). How cool is that?
+**A:** Trick question - it's both. The modules above will work in [Ruby](https://web.archive.org/web/20240715184230/https://repl.it/@marksiemers1/HammingLeapYear) or [Crystal](https://play.crystal-lang.org/#/r/3ayq). How cool is that?
 
-See more examples of code similarities [here](https://github.com/marksiemers/ruby-to-crystal).
+See more examples of code similarities in [ruby-to-crystal](https://github.com/marksiemers/ruby-to-crystal).
 
 This doesn't mean that all Ruby code will work in Crystal (and vice-versa), but you can do an awful lot with Crystal immediately and be productive on day one, even minute one.
 
@@ -52,14 +52,14 @@ Crystal is a compiled language and checks all your method inputs and outputs at 
 
 Let's revisit the `Year::leap?` example from above. In Ruby, what happens when the input isn't an integer?
 
-```ruby
-Year.leap?("2016") #=> false
-Year.leap?(Date.new(2016, 1, 1)) #=> undefined method `%' for #<Date: 2016-01-01 ... >
+```crystal
+Year.leap?("2016")               # => false
+Year.leap?(Date.new(2016, 1, 1)) # => undefined method `%' for #<Date: 2016-01-01 ... >
 ```
 
 For a `String` we get the wrong answer, for a `Date` we get a runtime exception. Fixing things in Ruby would require at least one `is_a?` statement:
 
-```ruby
+```crystal
 module Year
   def self.leap?(input)
     if input.is_a? Integer
@@ -73,22 +73,22 @@ module Year
 end
 ```
 
-Does [that method](https://repl.it/@marksiemers1/LeapYearOverloads) look good to you? We still have a chance at a runtime exception, just with a more helpful error message.
+Does [that method](https://web.archive.org/web/20240715184230/https://replit.com/@marksiemers1/LeapYearOverloads) look good to you? We still have a chance at a runtime exception, just with a more helpful error message.
 
 In Crystal, we have the option of explicitly typing our inputs (and outputs). We can change the method signature to `self.leap?(year : Int)` and we are guaranteed to have an integer as input.
 
 We get helpful messages **at compile time**, rather than runtime:
 
-```ruby
+```crystal
 Year.leap?("2016")
-Error in line 10: no overload matches 'Year.leap?' with type String
-Overloads are:
- - Year.leap?(year : Int)
+# Error in line 1: no overload matches 'Year.leap?' with type String
+# Overloads are:
+# - Year.leap?(year : Int)
 ```
 
 If we want to add support for `Time` (think `DateTime` in Ruby) in our module, we can overload `Year::leap?`:
 
-```ruby
+```crystal
 module Year
   def self.leap?(year : Int)
     year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)
@@ -110,7 +110,7 @@ Another advantage of compilation is speed and optimization. When comparing the p
 
 In one example, [summing random numbers in crystal](https://github.com/marksiemers/ruby-to-crystal/blob/master/src/enumerables/reduce_bench.cr) can be **10 orders of magnitude faster** than Ruby (~ 37 million percent faster). This is due to compiler optimizations and the ability to use primitive data types in Crystal. This does come with the risk of integer overflow for large numbers ([See Ary's explanation](https://crystal-lang.org/2016/07/15/fibonacci-benchmark.html)).
 
-Crystal's built-in HTTP server has been able to handle over [2 million requests per second in benchmark testing](https://www.techempower.com/benchmarks/previews/round15/#section=data-r15&hw=ph&test=plaintext&l=zdk8an&c=3). And many of the web frameworks are consistently delivering sub-millisecond response times for web applications.
+Crystal's built-in HTTP server has been able to handle over [2 million requests per second in benchmark testing](https://www.techempower.com/benchmarks/#section=data-r15&test=plaintext). And many of the web frameworks are consistently delivering sub-millisecond response times for web applications.
 
 Which brings us to the next point...
 
@@ -131,12 +131,10 @@ Have you ever read Ruby’s source code? Tried to figure out how some `Enumerabl
 [Ruby’s Implementation of `Enumerable#all?`](https://github.com/ruby/ruby/blob/v2_5_0/enum.c#L1215)
 
 ```c
-static VALUE
-enum_all(int argc, VALUE *argv, VALUE obj)
-{
-    struct MEMO *memo = MEMO_ENUM_NEW(Qtrue);
-    rb_block_call(obj, id_each, 0, 0, ENUMFUNC(all), (VALUE)memo);
-    return memo->v1;
+static VALUE enum_all(int argc, VALUE *argv, VALUE obj) {
+  struct MEMO *memo = MEMO_ENUM_NEW(Qtrue);
+  rb_block_call(obj, id_each, 0, 0, ENUMFUNC(all), (VALUE)memo);
+  return memo->v1;
 }
 ```
 
@@ -144,8 +142,8 @@ How long does it take to figure out what that code is doing? If you've never wor
 
 Compare that to [Crystal's implementation of `Enumerable#all?`](https://github.com/crystal-lang/crystal/blob/v0.24.1/src/enumerable.cr#L46)
 
-```ruby
-def all?
+```crystal
+def all?(&)
   each { |e| return false unless yield e }
   true
 end
@@ -166,7 +164,7 @@ Reading, understanding, and contributing to Crystal is easier than just about an
 If you’re looking to try out the Crystal programming language, here are some good resources to get started:
 
 - [Crystal Play](https://play.crystal-lang.org/#/cr) - an online REPL-like tool for Crystal
-- [Install Crystal](/install)
+- [Install Crystal](/_pages/install.md)
 - [Crystal for Rubyists](http://www.crystalforrubyists.com/)
 - [Crystal Exercisms](http://exercism.io/tracks/crystal/about)
 - [Create your own HTTP Server in minutes](https://crystal-lang.org/reference/getting_started/http_server.html)

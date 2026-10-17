@@ -6,6 +6,7 @@ description: |
 read_more: '[Check the API docs](https://crystal-lang.org/api/)'
 playground: false
 ---
+
 ```crystal
 require "http/client"
 require "json"

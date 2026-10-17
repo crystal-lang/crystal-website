@@ -58,7 +58,7 @@ defaults:
       layout: event
       permalink: /events/:title/
       section: events
-      class: release
+      class: event
   - scope:
       path: ""
       type: samples
@@ -78,18 +78,21 @@ social:
 
 exclude:
 - "*.nix"
+- "*.toml"
+- "*.yml"
+- "*.json"
 - "devenv*"
 - ".devenv/"
-- docker-compose.yml
-- docker-compose.*.yml
 - Gemfile
 - Gemfile.lock
 - Makefile
 - Rakefile
 - README.md
-- /scripts/
-- vendor
-- netlify.toml
+- scripts/
+- vendor/
+
+include:
+- "funding.json"
 
 sass:
   style: compressed

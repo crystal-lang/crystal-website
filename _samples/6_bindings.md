@@ -8,6 +8,7 @@ description: |
   good libraries for some jobs.
 read_more: '[Learn how to bind to C libraries](https://crystal-lang.org/reference/syntax_and_semantics/c_bindings/)'
 ---
+
 ```crystal
 # Define the lib bindings and link info:
 @[Link("m")]

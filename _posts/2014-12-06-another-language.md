@@ -29,7 +29,7 @@ But there are also some downsides to this approach. Let's analyze each of them.
 Some say that without type annotations a code becomes harder to follow. Let's look
 at an example.
 
-```ruby
+```crystal
 def sum(values)
   count = 0
   values.each do |value|

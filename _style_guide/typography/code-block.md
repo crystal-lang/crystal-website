@@ -30,7 +30,7 @@ dependencies:
 
 All types are non-nilable in Crystal, and nilable variables are represented as a union between the type and nil.
 
-```
+```crystal
 if rand(2) > 0
   my_string = "hello world"
 end

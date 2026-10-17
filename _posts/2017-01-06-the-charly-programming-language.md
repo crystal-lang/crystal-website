@@ -19,7 +19,7 @@ Charly is a dynamically typed and object-oriented programming language. The synt
 Below is an implementation of the [Bubblesort algorithm](https://en.wikipedia.org/wiki/Bubblesort) written in Charly. It is part of the standard library which is also written in Charly.
 
 ```javascript
-  func sort(sort_function) {
+func sort(sort_function) {
     const sorted = @copy()
 
     let left
@@ -78,7 +78,7 @@ This program prints out the [Mandelbrot set](https://en.wikipedia.org/wiki/Mande
 First, Charly turns the source file into a list of tokens. A token is basically just a string with a type.
 A simple hello-world program may consist of the following tokens:
 
-<pre class="code">
+```console
 $ cat test/debug.ch
 print("Hello World")
 $ charly test/debug.ch -f lint -f tokens
@@ -88,7 +88,7 @@ $ charly test/debug.ch -f lint -f tokens
 1:20:1    │ RightParen  │ )
 1:21:1    │ Newline     │
 2:1:1     │ EOF         │
-</pre>
+```
 
 This part of the program is called the lexer (Lexical Analysis). It turns the source-code into logical groups of characters. For example, the print identifier is now a token of the type Identifier, containing the string print. Same goes for the text which is being printed. It is now a token of the type String, containing the string Hello World.
 
@@ -117,7 +117,7 @@ The main reasons behind using Crystal for this project were speed and simplicity
 
 Crystal’s syntax and standard library are both inspired by Ruby. This means you can reuse a lot of knowledge and established principles and practices from the Ruby world, in your Crystal projects. A lot of the API details are pretty similar. For example, if you’re unable to find any information on how to open files in Crystal, you can even google "Ruby open file" and you’ll discover that the first answer on StackOverflow is 100% valid Crystal code. Of course this doesn’t hold up for more complicated things but you can always use it as a place of inspiration.
 
-Another great thing about Crystal is that you don’t have to deal with a lot of low-level stuff. Crystal’s standard library takes care of most things you’d consider low-level, even memory management. If you really need to do low-level stuff, you have access to [raw pointers](https://crystal-lang.org/api/master/Pointer.html) and [bindings to C](https://crystal-lang.org/reference/syntax_and_semantics/c_bindings/). This is also how the regex literal is implemented in Crystal. Internally it binds to the [PCRE Library](http://www.pcre.org/) and places an easy-to-use abstraction over it. Instead of reinventing the wheel, Crystal just binds to already existing C libraries. Crystal also binds to the C standard library, [OpenSSL](https://www.openssl.org/), [LibGMP](https://gmplib.org/), [LibXML2](http://xmlsoft.org/), [LibYAML](http://pyyaml.org/wiki/LibYAML) and many others.
+Another great thing about Crystal is that you don’t have to deal with a lot of low-level stuff. Crystal’s standard library takes care of most things you’d consider low-level, even memory management. If you really need to do low-level stuff, you have access to [raw pointers](https://crystal-lang.org/api/0.20.3/Pointer.html) and [bindings to C](https://crystal-lang.org/reference/syntax_and_semantics/c_bindings/). This is also how the regex literal is implemented in Crystal. Internally it binds to the [PCRE Library](http://www.pcre.org/) and places an easy-to-use abstraction over it. Instead of reinventing the wheel, Crystal just binds to already existing C libraries. Crystal also binds to the C standard library, [OpenSSL](https://www.openssl.org/), [LibGMP](https://gmplib.org/), [LibXML2](http://xmlsoft.org/), [LibYAML](http://pyyaml.org/wiki/LibYAML) and many others.
 
 Another big reason for switching to Crystal was speed. Crystal is [blazingly](https://github.com/kostya/benchmarks) fast. The old Charly implementation, which used Ruby 2.3, took over 300 milliseconds just to parse a single file. On top of that, it took about 1.8 seconds to run the test suite. The program written in Crystal and compiled with the `--release` option, took about 1-2 milliseconds to do all of that! Pretty impressive.
 
@@ -136,7 +136,7 @@ For some real examples of how the Macro system could be used, look at these file
 - [syntax/ast.cr](https://github.com/charly-lang/charly/blob/c8827b1e52b844afc705d1a00033044d5d49f444/src/charly/syntax/ast.cr#L72-L85)
 - [interpreter/internals.cr](https://github.com/charly-lang/charly/blob/67342f7430602ee89bfa8d10b2784f354c1c9d42/src/charly/interpreter/internals.cr#L19-L51)
 
-Crystal's standard library for example, uses macros to provide the [property](https://crystal-lang.org/api/master/Class.html#property%28%2Anames%29-macro) method. You can use it to avoid boilerplate when introducing new instance variables to your classes.
+Crystal's standard library for example, uses macros to provide the [property](https://crystal-lang.org/api/0.20.3/Class.html#property%28%2Anames%29-macro) method. You can use it to avoid boilerplate when introducing new instance variables to your classes.
 
 ## Conclusion
 
