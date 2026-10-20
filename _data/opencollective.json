@@ -1,5 +1,13 @@
 [
   {
+    "name": "Snap Story Viewer",
+    "url": "https://snapstoryviewer.net/",
+    "last_payment": 5,
+    "time_last_payment": "Oct 19, 2026",
+    "all_time": 5,
+    "since": "Oct 19, 2026"
+  },
+  {
     "name": "Francesco Fassi",
     "last_payment": 10,
     "time_last_payment": "Sep 20, 2026",
@@ -575,8 +583,7 @@
   },
   {
     "name": "Buzzoid - Buy Instagram Followers",
-    "url": "https://buzzoid.com/buy-instagram-followers/",
-    "last_payment": 25,
+    "last_payment": 0,
     "time_last_payment": "Sep 1, 2026",
     "all_time": 600,
     "since": "Aug 25, 2024"
