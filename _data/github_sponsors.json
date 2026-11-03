@@ -1,5 +1,13 @@
 [
   {
+    "name": "Philippe Nénert",
+    "url": "https://github.com/papilip",
+    "last_payment": 50,
+    "time_last_payment": "Oct 20, 2026",
+    "all_time": 50,
+    "since": "Oct 20, 2026"
+  },
+  {
     "name": "hahwul",
     "last_payment": 1,
     "time_last_payment": "Sep 29, 2026",
@@ -10,8 +18,8 @@
     "name": "Wilson",
     "url": "https://krthr.co/",
     "last_payment": 5,
-    "time_last_payment": "Sep 21, 2026",
-    "all_time": 45,
+    "time_last_payment": "Oct 21, 2026",
+    "all_time": 50,
     "since": "Jan 21, 2026"
   },
   {
