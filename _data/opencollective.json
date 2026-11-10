@@ -1,5 +1,20 @@
 [
   {
+    "name": "buongiorno immagini",
+    "last_payment": 1,
+    "time_last_payment": "Nov 6, 2026",
+    "all_time": 1,
+    "since": "Nov 6, 2026"
+  },
+  {
+    "name": "View TikTok Stories",
+    "url": "https://viewtikstories.com/",
+    "last_payment": 5,
+    "time_last_payment": "Nov 4, 2026",
+    "all_time": 5,
+    "since": "Nov 4, 2026"
+  },
+  {
     "name": "Zafame - Buy TikTok Likes, Followers & Views",
     "url": "https://zafame.com/",
     "last_payment": 25,
@@ -39,16 +54,14 @@
   },
   {
     "name": "SuperClones",
-    "url": "https://www.superclones.io/",
-    "last_payment": 5,
+    "last_payment": 0,
     "time_last_payment": "Sep 23, 2026",
     "all_time": 20,
     "since": "Jun 24, 2026"
   },
   {
     "name": "StoryKeek",
-    "url": "https://storykeek.com/",
-    "last_payment": 5,
+    "last_payment": 0,
     "time_last_payment": "Sep 24, 2026",
     "all_time": 25,
     "since": "May 24, 2026"
@@ -1683,8 +1696,8 @@
   {
     "name": "Joseph Method",
     "last_payment": 5,
-    "time_last_payment": "Oct 9, 2026",
-    "all_time": 320,
+    "time_last_payment": "Nov 9, 2026",
+    "all_time": 325,
     "since": "Jul 9, 2021"
   },
   {
