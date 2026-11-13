@@ -15,7 +15,9 @@ body > header {
       )
     )
     minmax(min-content, var(--main-width)) auto max-content;
-  grid-template-areas: "logo breadcrumbs main util";
+  grid-template-areas:
+    "logo breadcrumbs main util"
+    ".    search    search    .";
 
   column-gap: var(--padding-sm);
 
@@ -37,6 +39,11 @@ body > header {
 
   > .section-nav {
     margin: 0;
+  }
+
+  .search {
+    grid-area: search;
+    z-index: 10;
   }
 }
 
