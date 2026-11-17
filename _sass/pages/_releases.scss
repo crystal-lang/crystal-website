@@ -16,6 +16,10 @@ table.releases {
       padding-left: 2.5ch;
       font-size: font-size(xsmall);
     }
+
+    &.unreleased {
+      font-style: italic;
+    }
   }
 
   > tbody > tr:hover {
