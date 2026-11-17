@@ -493,8 +493,7 @@
   },
   {
     "name": "Writing Metier",
-    "url": "https://writingmetier.com/",
-    "last_payment": 25,
+    "last_payment": 0,
     "time_last_payment": "Oct 1, 2026",
     "all_time": 600,
     "since": "Nov 15, 2024"
@@ -1113,8 +1112,8 @@
     "name": "Bubble Shooter",
     "url": "https://www.bubbleshooter.net/",
     "last_payment": 5,
-    "time_last_payment": "Oct 13, 2026",
-    "all_time": 225,
+    "time_last_payment": "Nov 13, 2026",
+    "all_time": 230,
     "since": "Feb 13, 2023"
   },
   {
@@ -1579,8 +1578,7 @@
   },
   {
     "name": "Alexander Adam",
-    "url": "https://github.com/alexanderadam/alexanderadam#-about-me",
-    "last_payment": 10,
+    "last_payment": 0,
     "time_last_payment": "Oct 1, 2026",
     "all_time": 610,
     "since": "Oct 1, 2021"
