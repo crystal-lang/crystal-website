@@ -45,20 +45,11 @@ Gemfile.lock: Gemfile
 $(O)/install.sh: ## Fetch install.sh from distribution-scripts repository
 	wget -O "$@" -N https://raw.githubusercontent.com/crystal-lang/distribution-scripts/master/packages/scripts/install.sh
 
-.PHONY: update_sponsors
-update_sponsors: scripts/merge.cr fetch_opencollective fetch_github_sponsors ## Update sponsor data (fetch from opencollective and crystal-sponsors, merge into _data/sponsors.csv)
-	crystal $<
+.PHONY: sync_sponsors update_sponsors
+sync_sponsors: ## Download sponsor CSVs and logos from crystal-sponsors
+	crystal scripts/sync_sponsors.cr
 
-.PHONY: fetch_opencollective
-fetch_opencollective: scripts/opencollective.cr
-	crystal $<
-
-SPONSORS_DATA_URL = https://raw.githubusercontent.com/crystal-lang/crystal-sponsors/master/_data
-
-.PHONY: fetch_github_sponsors
-fetch_github_sponsors:
-	curl --fail --silent --show-error --location \
-		-o _data/github_sponsors.json $(SPONSORS_DATA_URL)/github_sponsors.json
+update_sponsors: sync_sponsors
 		
 .PHONY: check_external_links
 check_external_links: check_all_links

@@ -3,7 +3,9 @@ name: Update Sponsors
 on:
   schedule:
     - cron:  '0 9 * * 2'
-
+  repository_dispatch:
+      types: [sponsors-updated]
+  
   workflow_dispatch:
 
 jobs:
@@ -18,7 +20,10 @@ jobs:
     - name: Install curl
       run: apt-get update && apt-get install -y curl
     - uses: actions/checkout@v7
+  
     - name: Update sponsors
+      env:
+        SPONSORS_REF: ${{ github.event.client_payload.sha || 'master' }}
       run: make update_sponsors
 
     # workaround to https://github.com/peter-evans/create-pull-request/issues/1170
