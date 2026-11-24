@@ -3,8 +3,8 @@
     "name": "Philippe Nénert",
     "url": "https://github.com/papilip",
     "last_payment": 50,
-    "time_last_payment": "Oct 20, 2026",
-    "all_time": 50,
+    "time_last_payment": "Nov 20, 2026",
+    "all_time": 100,
     "since": "Oct 20, 2026"
   },
   {
@@ -18,16 +18,16 @@
     "name": "Wilson",
     "url": "https://krthr.co/",
     "last_payment": 5,
-    "time_last_payment": "Oct 21, 2026",
-    "all_time": 50,
+    "time_last_payment": "Nov 21, 2026",
+    "all_time": 55,
     "since": "Jan 21, 2026"
   },
   {
     "name": "Omar Alani",
     "url": "https://omaralani.dev",
     "last_payment": 20,
-    "time_last_payment": "Oct 15, 2026",
-    "all_time": 220,
+    "time_last_payment": "Nov 15, 2026",
+    "all_time": 240,
     "since": "Dec 15, 2025"
   }
 ]
