@@ -6,7 +6,8 @@ sponsors/concentric.png,Concentric,https://concentric.health,$150,"$3,525","Feb 
 ,lowkey,https://www.kaffeinlabs.com/,$100,"$5,345","Jun 12, 2021",75
 sponsors/blitline.png,Blitline,https://www.blitline.com,$75,"$7,200","Dec 12, 2018",75
 ,Releaf Medical Cannabis Glossary,https://releaf.co.uk/medical-cannabis-glossary,$75,$825,"Dec 23, 2025",75
-,Philippe Nénert,https://github.com/papilip,$50,$50,"Oct 20, 2026",25
+,Marek Stapff,https://www.marek-stapff.de/,$50,$250,"Nov 29, 2025",25
+,Philippe Nénert,https://github.com/papilip,$50,$100,"Oct 20, 2026",25
 ,isaacsloan,https://isaacsloan.com,$36,"$2,506","Mar 24, 2016",25
 ,Thomas Peter Berntsen,https://twitter.com/tpberntsen,$25,"$4,375","Sep 20, 2015",25
 ,Raels Koder,,$25,"$2,125","Oct 30, 2019",25
@@ -26,7 +27,7 @@ sponsors/blitline.png,Blitline,https://www.blitline.com,$75,"$7,200","Dec 12, 20
 ,Liothen,,$25,$175,"Apr 29, 2026",25
 ,"Zafame - Buy TikTok Likes, Followers & Views",https://zafame.com/,$25,$25,"Oct 29, 2026",25
 ,pitosalas,,$20,$825,"Dec 20, 2017",10
-,Omar Alani,https://omaralani.dev,$20,$220,"Dec 15, 2025",10
+,Omar Alani,https://omaralani.dev,$20,$240,"Dec 15, 2025",10
 ,Andrey A. Konovalov,http://sysadminblog.ru,$14,$428,"Mar 6, 2018",10
 ,Ricardo Tomasi,https://ricardo.cc/,$10,"$1,480","Oct 9, 2020",10
 ,Bookyourdata.com,https://www.bookyourdata.com,$10,"$1,065","Apr 14, 2019",10
@@ -47,7 +48,6 @@ sponsors/blitline.png,Blitline,https://www.blitline.com,$75,"$7,200","Dec 12, 20
 ,rigani,https://twitter.com/rigani_c,$10,$310,"Dec 28, 2018",10
 ,Håkan Nylén,,$10,$220,"Mar 26, 2020",10
 ,Jeffrey Crochet,https://www.linkedin.com/in/jeffrey-crochet-21008b199/,$10,$130,"Aug 25, 2020",10
-,Francesco Fassi,,$10,$10,"Sep 20, 2026",10
 ,jeron,,$5,"$1,160","Jan 18, 2018",5
 ,Sho Kusano,https://aduca.org,$5,$483,"Aug 4, 2015",5
 ,msky026,http://qiita.com/msky026,$5,$450,"Oct 23, 2015",5
@@ -61,7 +61,7 @@ sponsors/blitline.png,Blitline,https://www.blitline.com,$75,"$7,200","Dec 12, 20
 ,Joseph Method,,$5,$325,"Jul 9, 2021",5
 ,Mia Bennett,https://chillfox.com/,$5,$310,"Oct 1, 2021",5
 ,ʕ·ᴥ·ʔAKJ,,$5,$295,"Jan 6, 2017",5
-,PROXYONE LLC,https://proxyone.eu/,$5,$285,"Feb 21, 2022",5
+,PROXYONE LLC,https://proxyone.eu/,$5,$290,"Feb 21, 2022",5
 ,SocialWick,https://www.socialwick.com/instagram/followers,$5,$245,"Feb 14, 2024",5
 ,CasinoWizard,https://thecasinowizard.com/,$5,$240,"Oct 19, 2022",5
 ,Bubble Shooter,https://www.bubbleshooter.net/,$5,$230,"Feb 13, 2023",5
@@ -83,7 +83,7 @@ sponsors/blitline.png,Blitline,https://www.blitline.com,$75,"$7,200","Dec 12, 20
 ,ryan-senn,https://tt.edu.au,$5,$120,"Jan 4, 2020",5
 ,Marco Roth,https://marcoroth.dev,$5,$110,"Mar 4, 2020",5
 ,Wolfgang Klinger,,$5,$110,"Mar 9, 2020",5
-,Wilson,https://krthr.co/,$5,$50,"Jan 21, 2026",5
+,Wilson,https://krthr.co/,$5,$55,"Jan 21, 2026",5
 ,Calculators,https://calculator.now/,$5,$50,"Feb 4, 2026",5
 ,Network Tools,https://gf.dev/,$5,$50,"Feb 4, 2026",5
 ,Wallpapers.Com,https://wallpapers.com/,$5,$50,"Feb 4, 2026",5
@@ -97,6 +97,7 @@ sponsors/blitline.png,Blitline,https://www.blitline.com,$75,"$7,200","Dec 12, 20
 ,Snap Story Viewer,https://snapstoryviewer.net/,$5,$5,"Oct 19, 2026",5
 ,Pocket Option Promo Code: OGZ124 (2026),https://pocketoptionpromocode.net/,$5,$5,"Oct 25, 2026",5
 ,View TikTok Stories,https://viewtikstories.com/,$5,$5,"Nov 4, 2026",5
+,Fameoria,https://fameoria.com/,$5,$5,"Nov 19, 2026",5
 ,Martin Luder,,$1,$76,"Aug 14, 2015",1
 ,Shigenobu Nishikawa,,$1,$74,"Oct 23, 2015",1
 ,Joris Vanhecke,,$1,$66,"Jun 15, 2016",1
@@ -178,7 +179,6 @@ sponsors/empty.svg,Austin Robert Bales,,$0,"$1,234","May 4, 2024",0
 ,Buy TikTok Likes,,$0,$210,"Oct 2, 2024",0
 ,Michael Wagner,,$0,$205,"Nov 11, 2021",0
 ,Twicsy,,$0,$200,"Dec 14, 2022",0
-,Marek Stapff,,$0,$200,"Nov 29, 2025",0
 ,NekoIT,,$0,$190,"May 31, 2020",0
 ,Netin nopeustesti,,$0,$190,"May 27, 2021",0
 ,EaseUS Germany,,$0,$190,"Jun 28, 2023",0
@@ -407,6 +407,7 @@ sponsors/empty.svg,Austin Robert Bales,,$0,"$1,234","May 4, 2024",0
 ,Araba Fiyat Listesi,,$0,$10,"Jan 17, 2025",0
 ,Harut,,$0,$10,"Feb 22, 2025",0
 ,Instagram Free Views,,$0,$10,"Jul 30, 2025",0
+,Francesco Fassi,,$0,$10,"Sep 20, 2026",0
 ,Andrzej Kilijański,,$0,$8,"Sep 21, 2024",0
 ,Takuya Matsunaga,,$0,$5,"Oct 24, 2019",0
 ,Massimiliano Bertinetti,,$0,$5,"Apr 9, 2020",0
@@ -422,7 +423,7 @@ sponsors/empty.svg,Austin Robert Bales,,$0,"$1,234","May 4, 2024",0
 ,Igor Polyakov,,$0,$5,"Oct 16, 2021",0
 ,Blackjack77russia.com,,$0,$5,"Nov 1, 2021",0
 ,Tracy Nowak,,$0,$5,"Apr 7, 2022",0
-,"RushRadar: The Best Articles, Reviews, and Referral Codes",,$0,$5,"Jul 30, 2022",0
+,RushRadar,,$0,$5,"Jul 30, 2022",0
 ,hasan kahraman,,$0,$5,"Jan 28, 2023",0
 ,kachick,,$0,$5,"Jan 29, 2023",0
 ,ReverseProxy.com,,$0,$5,"Jun 19, 2023",0

@@ -1,5 +1,13 @@
 [
   {
+    "name": "Fameoria",
+    "url": "https://fameoria.com/",
+    "last_payment": 5,
+    "time_last_payment": "Nov 19, 2026",
+    "all_time": 5,
+    "since": "Nov 19, 2026"
+  },
+  {
     "name": "buongiorno immagini",
     "last_payment": 1,
     "time_last_payment": "Nov 6, 2026",
@@ -40,7 +48,7 @@
   },
   {
     "name": "Francesco Fassi",
-    "last_payment": 10,
+    "last_payment": 0,
     "time_last_payment": "Sep 20, 2026",
     "all_time": 10,
     "since": "Sep 20, 2026"
@@ -204,9 +212,10 @@
   },
   {
     "name": "Marek Stapff",
-    "last_payment": 0,
-    "time_last_payment": "Jul 6, 2026",
-    "all_time": 200,
+    "url": "https://www.marek-stapff.de/",
+    "last_payment": 50,
+    "time_last_payment": "Nov 19, 2026",
+    "all_time": 250,
     "since": "Nov 29, 2025"
   },
   {
@@ -1267,7 +1276,7 @@
     "since": "Aug 6, 2022"
   },
   {
-    "name": "RushRadar: The Best Articles, Reviews, and Referral Codes",
+    "name": "RushRadar",
     "last_payment": 0,
     "time_last_payment": "Jul 30, 2022",
     "all_time": 5,
@@ -1410,8 +1419,8 @@
     "name": "PROXYONE LLC",
     "url": "https://proxyone.eu/",
     "last_payment": 5,
-    "time_last_payment": "Oct 21, 2026",
-    "all_time": 285,
+    "time_last_payment": "Nov 21, 2026",
+    "all_time": 290,
     "since": "Feb 21, 2022"
   },
   {
